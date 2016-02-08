@@ -31,7 +31,7 @@
 
 <div class="outer-container content white_bg cart_review">
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Select</th>
@@ -44,7 +44,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -79,7 +79,7 @@
 						<span class="purple_text">$25,500</span>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -113,7 +113,7 @@
 						<span class="purple_text">$25,500</span>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -167,7 +167,7 @@
 
 <div class="outer-container content white_bg cart_review">
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Select</th>
@@ -180,7 +180,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -238,7 +238,7 @@
 
 <div class="outer-container content white_bg cart_review">
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Select</th>
@@ -251,7 +251,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
