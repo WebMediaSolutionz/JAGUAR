@@ -28,7 +28,15 @@
 	</td>
 	<td class="existing_phone_nbr hide">
 		<div class="empty"></div>
-		<input class='frg-input-field short hide' />
+		<div class="input_error_tooltip hide">
+			<input class='frg-input-field js-phone_nbr short' />
+			<div>
+				<span class="frg-icon icon-warning"></span>
+			</div>
+			<div class="tooltip_bubble">
+				<span>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
+			</div>
+		</div>
 	</td>
 	<td class="account_nbr hide">
 		<div class="empty"></div>

@@ -192,7 +192,7 @@ var JAG = {
 				account_empty_box = clicked.closest( 'tr' ).find( '.account_nbr' ).find( '.empty' ),
 				account_inputbox = clicked.closest( 'tr' ).find( '.account_nbr' ).find( 'input' ),
 				phone_empty_box = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.empty' ),
-				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( 'input' );
+				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.input_error_tooltip' );
 
 			if ( clicked.val() === 'yes' ) {
 				$( '.account_nbr' ).removeClass( 'hide' );
@@ -351,6 +351,16 @@ var JAG = {
 			pages
 				.removeClass( 'current' )
 				.removeClass( 'hide' );
+		});
+
+		$( '.js-phone_nbr' ).blur( function () {
+			var el = $( this ),
+				parent = el.closest( '.input_error_tooltip' ),
+				valid = false;
+
+			if ( !valid ) {
+				parent.addClass( 'error' );
+			}
 		});
 
 		// self.showFakeLinks();
