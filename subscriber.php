@@ -3,20 +3,13 @@
 
 <?php include( 'partials/check_progress_bar.php' ); ?>
 
-<div class="outer-container content purple_bg">
+<div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container clearfix">
+		<div class="left">
 			<h3 class="title">Set up your subscribers for:</h3>
 			<p class="h3">Oder-1 Galaxy Prime (50 devices) <a class="small" href="#">edit name</a></p>
 		</div>
-		<div class="col-xs-offset-3 col-xs-3 no_padding">
-			<?php include( 'partials/shopping_cart.php' ); ?>
-		</div>
-	</div>
-</div>
-
-<div class="outer-container secondary_bg purple_bg multiple_actions">
-	<div class="inner-container clearfix">
-		<div class="right">
+		<div class="right advanced_options">
 			<div class="frg-select-container color-light left gap_right">
 				<select class="advanced_option">
 					<option value="advanced_option" selected="selected">Advanced options</option>
