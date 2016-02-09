@@ -1,4 +1,4 @@
 stylesheet/.sass-cache/
-*.map
-*.scssc
-stylesheet/
+stylesheet/css/
+stylesheet/css/*.map
+stylesheet/css/*.map
