@@ -30,7 +30,7 @@
 
 <div class="outer-container content white_bg order_summary">
 	<div class="inner-container clearfix">
-		<table class="gray_text">
+		<table class="gray_text wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Select</th>
@@ -46,7 +46,7 @@
 				</tr>
 			</thead>
 			<tbody class="small">
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -85,14 +85,14 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr class="hide">
+				<tr class="wide hide">
 					<td colspan="10">
-						<div class="subscriber_list hide">
+						<div class="subscriber_list purple_bg hide">
 							<div class="heading clearfix">
-								<div class="left"><div class="h4">Subscribers</div></div>
-								<div class="right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
+								<div class="left gap_left"><div class="h4">Subscribers</div></div>
+								<div class="right gap_right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
 							</div>
-							<table>
+							<table class="wide center">
 								<thead>
 									<tr>
 										<th></th>
@@ -110,7 +110,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -133,7 +133,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -156,7 +156,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -184,7 +184,7 @@
 						</div>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -223,14 +223,14 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr class="hide">
+				<tr class="wide hide">
 					<td colspan="10">
-						<div class="subscriber_list hide">
+						<div class="subscriber_list purple_bg hide">
 							<div class="heading clearfix">
-								<div class="left"><div class="h4">Subscribers</div></div>
-								<div class="right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
+								<div class="left gap_left"><div class="h4">Subscribers</div></div>
+								<div class="right gap_right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
 							</div>
-							<table>
+							<table class="wide center">
 								<thead>
 									<tr>
 										<th></th>
@@ -248,7 +248,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -271,7 +271,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -294,7 +294,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -322,7 +322,7 @@
 						</div>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -361,14 +361,14 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr class="hide">
+				<tr class="wide hide">
 					<td colspan="10">
-						<div class="subscriber_list hide">
+						<div class="subscriber_list purple_bg hide">
 							<div class="heading clearfix">
-								<div class="left"><div class="h4">Subscribers</div></div>
-								<div class="right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
+								<div class="left gap_left"><div class="h4">Subscribers</div></div>
+								<div class="right gap_right"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span> <span class="frg-icon icon-x-circled purple_text"></span></a></div>
 							</div>
-							<table>
+							<table class="wide center">
 								<thead>
 									<tr>
 										<th></th>
@@ -386,7 +386,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -409,7 +409,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -432,7 +432,7 @@
 										<td>987654321</td>
 										<td>613-555-1234</td>
 									</tr>
-									<tr>
+									<tr class="wide">
 										<td>
 											<div class="frg-checkbox regular small">
 												<div class="inner">
@@ -479,7 +479,7 @@
 
 <div class="outer-container content white_bg order_summary">
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Select</th>
@@ -495,7 +495,7 @@
 				</tr>
 			</thead>
 			<tbody class="small">
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -534,7 +534,7 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
@@ -573,7 +573,7 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr>
+				<tr class="wide">
 					<td>
 						<div class="frg-checkbox regular small">
 							<div class="inner">

@@ -1349,7 +1349,11 @@ span.footnote {
 		tbody {
 			tr.wide {
 				& > td {
-					width: 10% !important;
+					width: 9% !important;
+
+					table.wide {
+						width: 95% !important;
+					}
 
 					&.description {
 						width: 50% !important;
