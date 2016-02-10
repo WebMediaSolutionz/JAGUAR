@@ -50,26 +50,26 @@
 	<div class="description right">
 		<div class="name">
 			<div>
-				<h6><a href="device.php">Samsung Galaxy S6 32GB</a></h6>
+				<h6><a href="device.php"><strong>Samsung Galaxy S6 32GB</strong></a></h6>
 			</div>
-			<div class="status positive">Available</div>
+			<div class="status positive"><strong>Available</strong></div>
 		</div>
 
 		<div class="prices">
 			<div class="no-term left">
-				<h4>$200</h4>
-				<span class="time_period">No term</span>
+				<h4><strong>$200</strong></h4>
+				<strong><span class="time_period">No term</span></strong>
 			</div>
 
 			<div class="long-term right">
-				<h4>$50</h4>
-				<span class="time_period">3 year term</span>
+				<h4><strong>$50</strong></h4>
+				<strong><span class="time_period">3 year term</span></strong>
 			</div>
 			<div class="clear"></div>
 		</div>
 
 		<div class="mtm">
-			<div class="gray_text">$230 Monthly</div>
+			<div class="gray_text"><strong>$230 Monthly</strong></div>
 			<a href="device.php" class="frg-button">Select</a>
 		</div>
 	</div>

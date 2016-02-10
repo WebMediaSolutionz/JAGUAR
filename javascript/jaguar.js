@@ -249,7 +249,7 @@ var JAG = {
 		$( '.edit_name' ).click( function () {
 			var clicked = $( this ),
 				closest = clicked.closest( 'p' ),
-				title = closest.find( 'span' ),
+				title = closest.find( 'span, strong' ),
 				textbox = closest.find( 'input' );
 
 			clicked.addClass( 'hide' );
@@ -262,7 +262,7 @@ var JAG = {
 				value = textbox.val(),
 				closest = textbox.closest( 'p' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( 'span' );
+				title = closest.find( 'span, strong' );
 
 			if ( e.which == 13 && value !== '' ) {
 				textbox.addClass( 'hide' );

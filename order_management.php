@@ -144,7 +144,7 @@
 		</div>
 	</div>
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th class="clearfix">

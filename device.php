@@ -15,7 +15,7 @@
 			</div>
 			<div class="col-xs-5 col-xs-offset-1">
 				<section>
-					<h6>Step 1: Select your device options</h6>
+					<h6><strong>Step 1: Select your device options</strong></h6>
 
 					<table class="table1">
 						<tr>
@@ -38,7 +38,7 @@
 						</tr>
 					</table>
 
-					<h6 class="padding_top">Step 2: Select your service category</h6>
+					<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
 
 					<div class="btn_group">
 						<a class="btn no_horizontal_padding smaller current" href="#">Voice &amp; Data</a>
@@ -49,13 +49,17 @@
 
 					<span>Minimum Monthly Service Commitment: $20/subscriber</span>
 
-					<h6 class="padding_top">Step 3: Select your device price</h6>
+					<h6 class="padding_top"><strong>Step 3: Select your device price</strong></h6>
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
 							<input id="radio-option1" type="radio" name="option" value="Option 1">
 							<div class="icon"></div>
-							<label for="radio-option1"><span class="value">$200</span> Starting at $70 per month on a 3-year plan</label>
+							<label for="radio-option1">
+								<strong>
+									<span class="value">$200</span> Starting at $70 per month on a 3-year plan
+								</strong>
+							</label>
 						</div>
 					</div>
 
@@ -63,7 +67,11 @@
 						<div class="inner">
 							<input id="radio-option2" type="radio" name="option" value="Option 2">
 							<div class="icon"></div>
-							<label for="radio-option2"><span class="value">$995</span> Month to month</label>
+							<label for="radio-option2">
+								<strong>
+									<span class="value">$995</span> Month to month
+								</strong>
+							</label>
 						</div>
 					</div>
 
@@ -71,11 +79,15 @@
 						<div class="inner">
 							<input id="radio-option3" type="radio" name="option" value="Option 3">
 							<div class="icon"></div>
-							<label for="radio-option3"><span class="value">$995</span> Device only (no plan)</label>
+							<label for="radio-option3">
+								<strong>
+									<span class="value">$995</span> Device only (no plan)
+								</strong>
+							</label>
 						</div>
 					</div>
 
-					<h6 class="padding_top">Step 4: Select your account configuration</h6>
+					<h6 class="padding_top"><strong>Step 4: Select your account configuration</strong></h6>
 
 					<table class="table1">
 						<tr>

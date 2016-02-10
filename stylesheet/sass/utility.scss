@@ -495,3 +495,39 @@ a.underline {
 .italics {
 	font-style: italic;
 }
+
+.bold {
+	font-weight: bold;
+}
+
+.address {
+	.frg-checkbox.regular {
+		input[type="radio"] {
+			margin-left: 20px;
+		}
+	}
+}
+
+table {
+	thead {
+		tr {
+			th {
+				font-weight: bold;
+				font-size: 110%;
+			}
+		}
+	}
+}
+
+.subscriber_list {
+	table {
+		thead {
+			tr {
+				th {
+					font-weight: bold;
+					font-size: 108%;
+				}
+			}
+		}
+	}
+}

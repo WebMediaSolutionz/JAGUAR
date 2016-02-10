@@ -7,7 +7,7 @@
 	<div class="inner-container clearfix">
 		<div class="left">
 			<h3 class="title">Set up your subscribers for:</h3>
-			<p class="h3">Oder-1 Galaxy Prime (50 devices) <a class="small" href="#">edit name</a></p>
+			<p class="h3"><strong>Order-1 Galaxy Prime (50 devices)</strong> <input class='frg-input-field hide js-auto_save' placeholder="press 'enter' to save" value='Order-1 Galaxy Prime (50 devices)'/> <a class="small edit_name" href="#">edit name</a></p>
 		</div>
 		<div class="right advanced_options">
 			<div class="frg-select-container color-light left gap_right">

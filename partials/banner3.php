@@ -2,7 +2,7 @@
 	<div class="inner-container main_banner clearfix">
 		<div class="left">
 			<h1>Study your usage trends</h1>
-			<p>Crunch the numbers to confirm your employees have the right plan.</p>
+			<p><strong>Crunch the numbers to confirm your employees have the right plan.</strong></p>
 			<a href='#' class='frg-button color-green'>View analytics</a>
 		</div>
 		<div class="macbook left">

@@ -14,7 +14,7 @@
 
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
 
-		<!-- <link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2"> -->
+		<link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2">
 
 		<link href="images/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon">
 
@@ -31,9 +31,21 @@
 							</a>
 							<nav class="left">
 								<ul class="no_styles clearfix">
-									<li class="left gap_right"><a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">Buy</a></li>
-									<li class="left gap_right"><a class="block" href="#">Manage</a></li>
-									<li class="left"><a class="block" href="#">Support</a></li>
+									<li class="left gap_right">
+										<a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">
+											<strong>Buy</strong>
+										</a>
+									</li>
+									<li class="left gap_right">
+										<a class="block" href="#">
+											<strong>Manage</strong>
+										</a>
+									</li>
+									<li class="left">
+										<a class="block" href="#">
+											<strong>Support</strong>
+										</a>
+									</li>
 								</ul>
 							</nav>
 						</div>
@@ -41,7 +53,8 @@
 							<ul class="menu clearfix">
 								<li class="left gap_right">
 									<a class="user_name" href="#">
-										<div class="left">Stan Smith</div><div class="left frg-icon icon-arrow-down"></div>
+										<div class="left"><strong>Stan Smith</strong></div>
+										<div class="left frg-icon icon-arrow-down"></div>
 									</a>
 									<ul class="no_styles">
 										<li></li>
@@ -67,12 +80,32 @@
 				<?php if ( !$home_page1 ) { ?>
 					<nav>
 						<ul class="no_styles">
-							<li class="left"><a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>block" href="devices.php">Devices</a></li>
-							<li class="left"><a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">Plans</a></li>
+							<li class="left">
+								<a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>block" href="devices.php">
+									<strong>Devices</strong>
+								</a>
+							</li>
+							<li class="left">
+								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
+									<strong>Plans</strong>
+								</a>
+							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
-							<li class="left"><a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>block" href="accessories.php">Accessories</a></li>
-							<li class="left"><a class="<?php echo ( $page === 'upgrade' ) ? 'current ': ''; ?>block" href="upgrade.php">Upgrade</a></li>
-							<li class="left"><a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">Order Management</a></li>
+							<li class="left">
+								<a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>block" href="accessories.php">
+									<strong>Accessories</strong>
+								</a>
+							</li>
+							<li class="left">
+								<a class="<?php echo ( $page === 'upgrade' ) ? 'current ': ''; ?>block" href="upgrade.php">
+									<strong>Upgrade</strong>
+								</a>
+							</li>
+							<li class="left">
+								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
+									<strong>Order Management</strong>
+								</a>
+							</li>
 						</ul>
 					</nav>
 				<?php } ?>
@@ -83,7 +116,7 @@
 							<span class="frg-icon icon-cart"></span>
 						</div>
 						<div class="col-xs-10 status">
-							<div>Cart empty</div>
+							<div><strong>Cart empty</strong></div>
 							<div>Last saved: 2:38 PM EST</div>
 						</div>
 					</div>

@@ -75,27 +75,27 @@
 				</div>
 			</div>
 			<div class="col-xs-2">
-				<label>Name</label>
+				<label class="bold">Name</label>
 				<p>Jonathan Richman</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Address</label>
+				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
 			<div class="col-xs-2">
-				<label>City</label>
+				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
 			<div class="col-xs-1">
-				<label>Province</label>
+				<label class="bold">Province</label>
 				<p>ON</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Postal Code</label>
+				<label class="bold">Postal Code</label>
 				<p>A1B C2D</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Phone Number</label>
+				<label class="bold">Phone Number</label>
 				<p>613 555 1234</p>
 			</div>
 		</div>
@@ -104,33 +104,33 @@
 			<div class="col-xs-1">
 				<div class="frg-checkbox regular">
 					<div class="inner">
-						<input type="radio" value="Option 1" name="option" id="radio-option1">
+						<input type="radio" value="Option 2" name="option" id="radio-option2">
 						<div class="icon"></div>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-2">
-				<label>Name</label>
+				<label class="bold">Name</label>
 				<p>Jonathan Richman</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Address</label>
+				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
 			<div class="col-xs-2">
-				<label>City</label>
+				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
 			<div class="col-xs-1">
-				<label>Province</label>
+				<label class="bold">Province</label>
 				<p>ON</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Postal Code</label>
+				<label class="bold">Postal Code</label>
 				<p>A1B C2D</p>
 			</div>
 			<div class="col-xs-2">
-				<label>Phone Number</label>
+				<label class="bold">Phone Number</label>
 				<p>613 555 1234</p>
 			</div>
 		</div>
