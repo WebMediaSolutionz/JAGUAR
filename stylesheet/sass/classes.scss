@@ -1529,6 +1529,12 @@ span.footnote {
 	border-top: thin solid $dark_gray;
 	border-bottom: thin solid $dark_gray;
 	margin-bottom: 20px;
+
+	.heading {
+		.h4 {
+			margin-top: 15px;
+		}
+	}
 }
 
 .frg-checkbox.regular {
@@ -1650,6 +1656,10 @@ span.footnote {
 
 .advanced_options {
 	margin-top: 60px;
+}
+
+.js-hide_subscribers_list {
+	margin-top: -20px;
 }
 
 @media screen and (max-width: 1260px) {

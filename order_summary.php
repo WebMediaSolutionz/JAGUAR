@@ -42,41 +42,13 @@
 					</td>
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
-						<ul>
+						<ul class="gap_left_small">
 							<li>no commitment, contracts or credit checkes</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<div>
-							<ul class="extra_features no_styles">
-								<li>
-									<div style="padding: 5px;">
-										<table class="vertical_align_top purple_bg">
-											<thead class="gray_text">
-												<tr>
-													<th>Select</th>
-													<th>Subscriber</th>
-													<th>Porting</th>
-													<th>Details</th>
-													<th>SIM details</th>
-													<th>IMEI</th>
-												</tr>
-											</thead>
-											<tbody>
-												<?php 
-													for ( $i = 0; $i < 10; $i++ ) { 
-														include( 'partials/subscriber_row2.php' );
-													}
-												?>
-											</tbody>
-										</table>
-									</div>
-								</li>
-							</ul>
-
-							<a class="js-view_more closed gap_left" href="#"><span class="text">View subscribers</span> <span class="frg-icon icon-plus-circled purple_text"></span></a>
-						</div>
+						<a class="js-show_list" href="#">View List</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -86,6 +58,79 @@
 					</td>
 					<td class="right_align amount_due">
 						<span>$25,500</span>
+					</td>
+				</tr>
+				<tr class="wide hide">
+					<td colspan="10">
+						<div class="subscriber_list purple_bg hide">
+							<table class="wide center">
+								<thead>
+									<tr>
+										<th>Subscriber</th>
+										<th>Porting</th>
+										<th>Details</th>
+										<th>SIM details</th>
+										<th>IMEI</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="heading clearfix">
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+							</div>
+						</div>
 					</td>
 				</tr>
 			</tbody>
@@ -124,41 +169,13 @@
 					</td>
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
-						<ul>
+						<ul class="gap_left_small">
 							<li>no commitment, contracts or credit checkes</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<div>
-							<ul class="extra_features no_styles">
-								<li>
-									<div>
-										<table class="vertical_align_top purple_bg">
-											<thead class="gray_text">
-												<tr>
-													<th>Select</th>
-													<th>Subscriber</th>
-													<th>Porting</th>
-													<th>Details</th>
-													<th>SIM details</th>
-													<th>IMEI</th>
-												</tr>
-											</thead>
-											<tbody>
-												<?php 
-													for ( $i = 0; $i < 10; $i++ ) { 
-														include( 'partials/subscriber_row2.php' );
-													}
-												?>
-											</tbody>
-										</table>
-									</div>
-								</li>
-							</ul>
-
-							<a class="js-view_more closed gap_left" href="#"><span class="text">View subscribers</span> <span class="frg-icon icon-plus-circled purple_text"></span></a>
-						</div>
+						<a class="js-show_list" href="#">View List</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -168,6 +185,77 @@
 					</td>
 					<td class="right_align amount_due">
 						<span>$25,500</span>
+					</td>
+				</tr>
+
+				<tr class="wide hide">
+					<td colspan="10">
+						<div class="subscriber_list purple_bg hide">
+							<table class="wide center">
+								<thead>
+									<tr>
+										<th>Subscriber</th>
+										<th>Porting</th>
+										<th>Details</th>
+										<th>SIM details</th>
+										<th>IMEI</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>No</span>
+										</td>
+										<td class="description">
+											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>SIM provided</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</td>
 				</tr>
 			</tbody>
