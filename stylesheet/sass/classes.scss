@@ -1271,6 +1271,24 @@ span.footnote {
     		}
     	}
 
+    	&.grid {
+    		tbody {
+				tr {
+					td {
+						width: 10.5% !important;
+
+						&:first-child {
+							width: 2% !important;
+
+							.frg-checkbox {
+								margin-top: 6px;
+							}
+						}
+					}
+				}
+			}
+    	}
+
 		tbody {
 			tr {
 				td {

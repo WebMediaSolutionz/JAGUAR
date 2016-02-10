@@ -31,7 +31,7 @@
 
 <div class="outer-container content white_bg top_bottom_padding subscriber">
 	<div class="inner-container clearfix">
-		<table class="vertical_align_top">
+		<table class="vertical_align_top grid">
 			<thead class="gray_text">
 				<tr>
 					<th></th>
