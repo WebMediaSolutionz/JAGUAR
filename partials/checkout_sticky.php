@@ -1,5 +1,5 @@
 <?php if ( $page === 'cart_review' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions sticky">
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-4 no_padding">
 				<div class="left bold clearfix">
@@ -32,7 +32,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'confirm_shipping' || $page === 'order_summary' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions sticky">
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right gap_right">
@@ -45,7 +45,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'payment_options' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions sticky">
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right gap_right">
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 <?php } else { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions sticky">
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">

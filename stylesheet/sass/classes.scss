@@ -106,7 +106,8 @@ h3 {
 	}
 }
 
-.sticky {
+.sticky,
+.stickyFooter {
 	@include primary_bg_color;
 
 	&.actions {
@@ -1496,8 +1497,8 @@ span.footnote {
 	padding-left: 25px;
 }
 
-.sticky {
-	height: 90px;
+.sticky,
+.stickyFooter {
 	width: 100%;
 
 	&.actions {
@@ -1678,6 +1679,14 @@ span.footnote {
 
 .js-hide_subscribers_list {
 	margin-top: -20px;
+}
+
+.stickyFooter.sticky {
+     position: fixed;
+     bottom: 0px;
+     width: 100%;
+     overflow: visible;
+     z-index: 99;
 }
 
 @media screen and (max-width: 1260px) {

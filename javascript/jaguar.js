@@ -488,7 +488,7 @@ var JAG = {
 	stickyFooter: function () {
 		var footerHeight = 0,
 			footerTop = 0,
-			$footer = $( '.sticky' ),
+			$footer = $( '.stickyFooter' ),
 			cutoff = ( $footer.length ) ? $footer[ 0 ].offsetTop : null;
 
 		if ( cutoff !== null ) {
@@ -513,13 +513,9 @@ var JAG = {
 			};
 
 			if ( footerTopInt < cutoff ) {
-				$footer.css(
-					cssSettings.pos_absolute
-				);
+				$footer.addClass( 'sticky' );
 			} else {
-				$footer.css(
-					cssSettings.pos_static
-				);
+				$footer.removeClass( 'sticky' );
 			}
 		}
 
