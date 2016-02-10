@@ -14,6 +14,8 @@
 
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
 
+		<!-- <link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2"> -->
+
 		<link href="images/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon">
 
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/lib/html5shim.js"></script><![end if]-->
@@ -91,6 +93,6 @@
 
 		<?php 
 			if ( $page !== 'accessories2' && $page !== 'addons' && $page !== 'confirm_shipping' && $page !== 'confirmation' && $page !== 'confirmation2' && $page !== 'order_summary' && $page !== 'payment_options' && $page !== 'plans2' && $page !== 'subscriber' ) {
-				include( 'partials/error_message.php' ); 
+				// include( 'partials/error_message.php' ); 
 			}
 		?>
