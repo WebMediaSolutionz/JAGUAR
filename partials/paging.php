@@ -1,7 +1,7 @@
 <div class="pagin clearfix">
 	<?php if ( $page === 'subscriber' || $page === 'order_management' ) { ?>
 		<div class="col-xs-4">
-			<a href="#">Showing 1-10 of 50</a>
+			<a class="paging_display" href="#">Showing <span class="from">1</span>-<span class="to">10</span> of <span class="total">50</span></a>
 		</div>
 		<div class="col-xs-4 center_text">
 			<div class="col-xs-4">

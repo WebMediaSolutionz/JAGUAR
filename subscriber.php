@@ -31,10 +31,10 @@
 
 <div class="outer-container content white_bg top_bottom_padding subscriber">
 	<div class="inner-container clearfix">
-		<table class="vertical_align_top grid">
+		<table class="page current vertical_align_top grid">
 			<thead class="gray_text">
 				<tr>
-					<th></th>
+					<th>1</th>
 					<th>Name</th>
 					<th>Port</th>
 					<th>Calling city</th>
@@ -48,10 +48,77 @@
 			</thead>
 			<tbody>
 				<?php 
-					for ( $i = 0; $i < 50; $i++ ) { 
+					for ( $i = 0; $i < 10; $i++ ) { 
 						include( 'partials/subscriber_row.php' );
 					}
 				?>
+			</tbody>
+		</table>
+
+		<table class="page vertical_align_top grid hide">
+			<thead class="gray_text">
+				<tr>
+					<th>2</th>
+					<th>Name</th>
+					<th>Port</th>
+					<th>Calling city</th>
+					<th>Preferred<br />area code</th>
+					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
+					<th class="account_nbr hide">Account #</th>
+					<th>Voicemail<br />language</th>
+					<th>SIM</th>
+					<th class="sim_nbr hide">SIM #</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					for ( $i = 0; $i < 10; $i++ ) { 
+						include( 'partials/subscriber_row.php' );
+					}
+				?>
+			</tbody>
+		</table>
+
+		<table class="page vertical_align_top grid hide">
+			<thead class="gray_text">
+				<tr>
+					<th>3</th>
+					<th>Name</th>
+					<th>Port</th>
+					<th>Calling city</th>
+					<th>Preferred<br />area code</th>
+					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
+					<th class="account_nbr hide">Account #</th>
+					<th>Voicemail<br />language</th>
+					<th>SIM</th>
+					<th class="sim_nbr hide">SIM #</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php 
+					for ( $i = 0; $i < 10; $i++ ) { 
+						include( 'partials/subscriber_row.php' );
+					}
+				?>
+			</tbody>
+		</table>
+
+		<table class="view_all vertical_align_top grid hide">
+			<thead class="gray_text">
+				<tr>
+					<th>*</th>
+					<th>Name</th>
+					<th>Port</th>
+					<th>Calling city</th>
+					<th>Preferred<br />area code</th>
+					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
+					<th class="account_nbr hide">Account #</th>
+					<th>Voicemail<br />language</th>
+					<th>SIM</th>
+					<th class="sim_nbr hide">SIM #</th>
+				</tr>
+			</thead>
+			<tbody>
 			</tbody>
 		</table>
 

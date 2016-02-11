@@ -15,9 +15,12 @@ var JAG = {
 
 		// self
 		// 	.getPhones()
-		// 	.attachEvents();
+		// 	.attachEvents()
+		// .setupPagination();
 
-		self.attachEvents();
+		self
+			.attachEvents()
+			.setupPagination();
 
 		// $('#myModal').modal();
 
@@ -325,19 +328,24 @@ var JAG = {
 		$( '.js-previous' ).click( function () {
 			var clicked = $( this ),
 				current_page = $( '.current.page' ),
-				previous_page = $( '.current.page' ).prev();
+				previous_page = ( current_page.length > 0 ) ? $( '.current.page' ).prev() : $( '.page:first-child' ),
+				view_all_table = $( '.view_all' );
+
+			view_all_table.addClass( 'hide' );
 
 			if ( previous_page.length > 0 ) {
 				current_page.removeClass( 'current' ).addClass( 'hide' );
 				previous_page.removeClass( 'hide' ).addClass( 'current' );
-				console.info( 'previous' );
 			}
 		});
 
 		$( '.js-next' ).click( function () {
 			var clicked = $( this ),
 				current_page = $( '.current.page' ),
-				next_page = $( '.current.page + .page' );
+				next_page = ( current_page.length > 0 ) ? $( '.current.page + .page' ) : $( '.page:first-child' ),
+				view_all_table = $( '.view_all' );
+
+			view_all_table.addClass( 'hide' );
 
 			if ( next_page.length > 0 ) {
 				current_page.removeClass( 'current' ).addClass( 'hide' );
@@ -346,11 +354,25 @@ var JAG = {
 		});
 
 		$( '.js-view_all' ).click( function () {
-			var pages = $( '.page' );
+			var pages = $( '.page' ),
+				current = $( '.page.current' );
 
-			pages
-				.removeClass( 'current' )
-				.removeClass( 'hide' );
+			if ( current.is( 'table' ) ) {
+				var view_all_table = $( '.view_all' ),
+					rows = pages.find( 'tbody tr' ).clone();
+
+				pages.addClass( 'hide' ).removeClass( 'current' );
+
+				view_all_table
+					.removeClass( 'hide' )
+					.addClass( 'current' )
+					.find( 'tbody' )
+					.html( rows );
+			} else {
+				pages
+					.removeClass( 'current' )
+					.removeClass( 'hide' );
+			}
 		});
 
 		$( '.js-phone_nbr' ).blur( function () {
@@ -610,5 +632,16 @@ var JAG = {
 			allVariants.addClass( 'hide' );
 			matchingVariant.removeClass( 'hide' );
 		});
+	},
+
+	setupPagination: function () {
+		var display = $( '.paging_display' ),
+			from_txt = display.find( '.from' ),
+			to_txt = display.find( '.to' ),
+			total = display.find( '.total' ),
+			nbr_pages = $( '.page' ),
+			nbr_rows = nbr_pages.find( 'tbody tr' );
+
+		total.text( nbr_rows.length );
 	}
 };
