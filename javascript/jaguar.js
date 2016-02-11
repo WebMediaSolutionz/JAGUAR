@@ -337,6 +337,8 @@ var JAG = {
 				current_page.removeClass( 'current' ).addClass( 'hide' );
 				previous_page.removeClass( 'hide' ).addClass( 'current' );
 			}
+
+			self.setupPagination();
 		});
 
 		$( '.js-next' ).click( function () {
@@ -351,11 +353,17 @@ var JAG = {
 				current_page.removeClass( 'current' ).addClass( 'hide' );
 				next_page.removeClass( 'hide' ).addClass( 'current' );
 			}
+
+			self.setupPagination();
 		});
 
 		$( '.js-view_all' ).click( function () {
 			var pages = $( '.page' ),
 				current = $( '.page.current' );
+
+			if ( current.length === 0 ) {
+				current = $( '.current' );
+			}
 
 			if ( current.is( 'table' ) ) {
 				var view_all_table = $( '.view_all' ),
@@ -373,6 +381,8 @@ var JAG = {
 					.removeClass( 'current' )
 					.removeClass( 'hide' );
 			}
+
+			self.setupPagination();
 		});
 
 		$( '.js-phone_nbr' ).blur( function () {
@@ -639,9 +649,16 @@ var JAG = {
 			from_txt = display.find( '.from' ),
 			to_txt = display.find( '.to' ),
 			total = display.find( '.total' ),
-			nbr_pages = $( '.page' ),
-			nbr_rows = nbr_pages.find( 'tbody tr' );
+			pages = $( '.page' ),
+			nbr_rows = pages.find( 'tbody tr' ),
+			current_table = $( '.page.current' );
 
+		if ( current_table.length === 0 ) {
+			current_table = $( '.view_all.current' );
+		}
+
+		from_txt.text( parseInt( current_table.attr( 'data-from' ) ) + 1 );
+		to_txt.text( parseInt( current_table.attr( 'data-from' ) ) + current_table.find( 'tbody tr' ).length );
 		total.text( nbr_rows.length );
 	}
 };
