@@ -1,5 +1,5 @@
 <?php
-	$filter = null;
+	$filter = $status = null;
 
 	switch ( $i ) {
 		case 0 : 	$filter = 'all';
@@ -19,6 +19,14 @@
 
 		case 5 : 	$filter = 'other';
 					break;			
+	}
+
+	if ( $i % 2 === 0 ) {
+		$status = 'limited';
+	} else if ( $i % 3 === 0 ) {
+		$status = 'back order';
+	} else {
+		$status = 'available';
 	}
 ?>
 
@@ -50,9 +58,13 @@
 	<div class="description right">
 		<div class="name">
 			<div>
-				<h6><a href="device.php"><strong>Samsung Galaxy S6 32GB</strong></a></h6>
+				<h6>
+					<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><strong>Samsung Galaxy S6 32GB</strong></a>
+				</h6>
 			</div>
-			<div class="status positive"><strong>Available</strong></div>
+			<div class="status<?php echo ( $status === 'limited' || $status === 'available' ) ? ' positive' : ' negative'; ?>">
+				<strong><?php echo ucfirst( $status ); ?></strong> <span class="frg-icon icon-info back-order right"></span>
+			</div>
 		</div>
 
 		<div class="prices">
@@ -70,7 +82,7 @@
 
 		<div class="mtm">
 			<div class="gray_text"><strong>$230 Monthly</strong></div>
-			<a href="device.php" class="frg-button">Select</a>
+			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>
 	</div>
 	<div class="clear"></div>
