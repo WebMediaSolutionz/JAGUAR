@@ -26,8 +26,16 @@ input.back-order {
 .status {
 	font-size: inherit;
 
+	span.back-order {
+		margin: -5px 0 0 10px;
+	}
+
 	&.positive {
 		color: #47a526;
+
+		span.back-order {
+			display: none;
+		}
 	}
 
 	&.negative {
