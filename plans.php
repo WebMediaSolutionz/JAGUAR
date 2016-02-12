@@ -70,13 +70,11 @@
 				</div>
 			</div>
 			<div class="col-xs-3 right_align vertical_gap_top clearfix">
-				<div class="left">
+				<div class="left_align">
 					<h6 class="price"><span>$60</span> per month</h6>
 				</div>
 
-				<br />
-
-				<div class="left left_align gray_text">
+				<div class="left_align gray_text">
 					<p class="h4">Quantity</p>
 					<input class='frg-input-field short' value='1'/>
 				</div>
@@ -112,13 +110,11 @@
 				</div>
 			</div>
 			<div class="col-xs-3 right_align vertical_gap_top clearfix">
-				<div class="left">
+				<div class="left_align">
 					<h6 class="price"><span>$55</span> per month</h6>
 				</div>
 
-				<br />
-
-				<div class="left left_align gray_text">
+				<div class="left_align gray_text">
 					<p class="h4">Quantity</p>
 					<input class='frg-input-field short' value='1'/>
 				</div>
@@ -154,13 +150,11 @@
 				</div>
 			</div>
 			<div class="col-xs-3 right_align vertical_gap_top clearfix">
-				<div class="left">
+				<div class="left_align">
 					<h6 class="price"><span>$50</span> per month</h6>
 				</div>
 
-				<br />
-
-				<div class="left left_align gray_text">
+				<div class="left_align gray_text">
 					<p class="h4">Quantity</p>
 					<input class='frg-input-field short' value='1'/>
 				</div>
@@ -196,13 +190,11 @@
 				</div>
 			</div>
 			<div class="col-xs-3 right_align vertical_gap_top clearfix">
-				<div class="left">
+				<div class="left_align">
 					<h6 class="price"><span>$45</span> per month</h6>
 				</div>
 
-				<br />
-
-				<div class="left left_align gray_text">
+				<div class="left_align gray_text">
 					<p class="h4">Quantity</p>
 					<input class='frg-input-field short' value='1'/>
 				</div>
@@ -238,13 +230,11 @@
 				</div>
 			</div>
 			<div class="col-xs-3 right_align vertical_gap_top clearfix">
-				<div class="left">
+				<div class="left_align">
 					<h6 class="price"><span>$40</span> per month</h6>
 				</div>
 
-				<br />
-
-				<div class="left left_align gray_text">
+				<div class="left_align gray_text">
 					<p class="h4">Quantity</p>
 					<input class='frg-input-field short' value='1'/>
 				</div>
