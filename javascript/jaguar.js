@@ -22,8 +22,6 @@ var JAG = {
 			.attachEvents()
 			.setupPagination();
 
-		// $('#myModal').modal();
-
 		return self;
 	},
 
@@ -38,13 +36,9 @@ var JAG = {
 
 	    $('.datepicker').datepicker();
 
-	    // console.info( '1' );
 	    $( '#myModal' ).on( 'shown.bs.modal', function () {
-	    	// console.info( '2' );
 		  	$( '#myInput' ).focus();
-		  	// console.info( '3' );
 		});
-		// console.info( '4' );
 
 		$( 'a[href="#"]' ).click( function ( e ) {
 			e.preventDefault();
