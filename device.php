@@ -106,8 +106,10 @@
 							<td>
 								<div class='frg-select-container color-light'>
 									<select>
-										<option>Yes</option>
-										<option>Yes</option>
+										<option>Default: Select</option>
+										<option>[Account Number] - $[50]/subscriber</option>
+										<option>[Account Number] - $[60]/subscriber</option>
+										<option>Do not enroll</option>
 									</select>
 								</div>
 							</td>
