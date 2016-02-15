@@ -1,6 +1,6 @@
 		<div class="outer-container content purple_bg">
 			<div class="inner-container">
-				<div class="sub_footer center">
+				<div class="sub_footer center clearfix">
 					<div class="col6 center_text left">
 						<a class="support block" target="_blank" href="https://www.telus.com/support">
 							<span class="support-footer__icon frg-icon icon-lifesaver"></span>
@@ -13,7 +13,6 @@
 						</div>
 						<div>Chat offline</div>
 					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
