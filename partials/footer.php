@@ -8,10 +8,10 @@
 						<a href="#">Get support online</a>
 					</div>
 					<div class="col6 separator center_text offline left">
-						<a id="ctaBtnChat" class="chat agentonline block" href="#" onclick="lpMTagConfig.dynButton1.actionHook();;">
+						<div id="ctaBtnChat" class="chat agentonline block">
 							<span class="support-footer__icon frg-icon icon-chat-dots"></span>
-						</a>
-						<a href="#">Chat offline</a>
+						</div>
+						<div>Chat offline</div>
 					</div>
 					<div class="clear"></div>
 				</div>
