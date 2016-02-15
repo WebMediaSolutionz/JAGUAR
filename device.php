@@ -32,7 +32,7 @@
 								</div>
 							</td>
 							<td>
-								<input class='frg-input-field back-order' />
+								<input class='frg-input-field js-quantity back-order' />
 								<span class="frg-icon icon-info back-order"></span>
 							</td>
 						</tr>
@@ -57,7 +57,7 @@
 							<div class="icon"></div>
 							<label for="radio-option1">
 								<strong>
-									<span class="value">$200</span> Starting at $70 per month on a 3-year plan
+									<span class="value" data-value="200">$200</span> Starting at $70 per month on a 3-year plan
 								</strong>
 							</label>
 						</div>
@@ -69,7 +69,7 @@
 							<div class="icon"></div>
 							<label for="radio-option2">
 								<strong>
-									<span class="value">$995</span> Month to month
+									<span class="value" data-value="995">$995</span> Month to month
 								</strong>
 							</label>
 						</div>
@@ -81,7 +81,7 @@
 							<div class="icon"></div>
 							<label for="radio-option3">
 								<strong>
-									<span class="value">$995</span> Device only (no plan)
+									<span class="value" data-value="995">$995</span> Device only (no plan)
 								</strong>
 							</label>
 						</div>
@@ -122,7 +122,7 @@
 					<table class="table2 right">
 						<tr>
 							<td><span>Due now</span></td>
-							<td><span class="total">$500</span></td>
+							<td><span class="total">$0</span></td>
 						</tr>
 					</table>
 					<a href='<?php echo $next_step; ?>' class='frg-button color-green'>Add to cart</a>
