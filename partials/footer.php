@@ -8,7 +8,7 @@
 						<a href="#">Get support online</a>
 					</div>
 					<div class="col6 separator center_text offline left">
-						<div id="ctaBtnChat" class="chat agentonline block">
+						<div class="chat agentonline block">
 							<span class="support-footer__icon frg-icon icon-chat-dots"></span>
 						</div>
 						<div>Chat offline</div>
