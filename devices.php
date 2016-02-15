@@ -88,24 +88,15 @@
 			</div>
 		</div>
 
-		<div class="phones">
+		<div class="phones clearfix">
 			<div class="page current clearfix">
 				<?php 
 					for ( $i = 1; $i < 20; $i++ ) { 
 						include( 'partials/phone.php' );
-
-						if ( $i % 9 === 0 ) {
-							echo "</div><div class='page hide clearfix'>";
-						}	
 					} 
 				?>
 			</div>
 		</div>
-		
-
-		<div class="clear"></div>
-
-		<?php include( 'partials/paging.php' ); ?>
 	</div>
 </div>
 
