@@ -59,7 +59,7 @@
 		<div class="name">
 			<div>
 				<h6>
-					<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><strong>Samsung Galaxy S6 32GB</strong></a>
+					<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><strong class="js-ellipsis" data-maxlen="40">Samsung Galaxy S6 32GB </strong></a>
 				</h6>
 			</div>
 			<div class="status<?php echo ( $status === 'limited' || $status === 'available' ) ? ' positive' : ' negative'; ?>">
@@ -67,21 +67,15 @@
 			</div>
 		</div>
 
-		<div class="prices">
+		<div class="prices clearfix">
 			<div class="no-term left">
-				<h4><strong>$200</strong></h4>
-				<strong><span class="time_period">No term</span></strong>
+				<h4><strong>$130.99</strong> <span class="time_period">3 year term</span></h4>
 			</div>
-
-			<div class="long-term right">
-				<h4><strong>$50</strong></h4>
-				<strong><span class="time_period">3 year term</span></strong>
-			</div>
-			<div class="clear"></div>
 		</div>
 
 		<div class="mtm">
-			<div class="gray_text"><strong>$230 Monthly</strong></div>
+			<div class="gray_text"><strong>$200.99 on 2 year term</strong></div>
+			<div class="gray_text"><strong>$800.99 no term</strong></div>
 			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>
 	</div>
