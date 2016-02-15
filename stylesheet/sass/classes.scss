@@ -689,6 +689,11 @@ h3 {
 
 	div {
 		padding-top: 15px;
+
+		&.chat,
+		&.chat + div {
+			padding-top: 0;
+		}
 	}
 
 	& > div:first-child {
