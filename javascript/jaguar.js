@@ -20,7 +20,8 @@ var JAG = {
 
 		self
 			.attachEvents()
-			.setupPagination();
+			.setupPagination()
+			.ellipsis();
 
 		return self;
 	},
@@ -639,7 +640,8 @@ var JAG = {
 	},
 
 	setupPagination: function () {
-		var display = $( '.paging_display' ),
+		var self = this,
+			display = $( '.paging_display' ),
 			from_txt = display.find( '.from' ),
 			to_txt = display.find( '.to' ),
 			total = display.find( '.total' ),
@@ -654,5 +656,23 @@ var JAG = {
 		from_txt.text( parseInt( current_table.attr( 'data-from' ) ) + 1 );
 		to_txt.text( parseInt( current_table.attr( 'data-from' ) ) + current_table.find( 'tbody tr' ).length );
 		total.text( nbr_rows.length );
+
+		return self;
+	},
+
+	ellipsis: function () {
+		var self = this,
+			string = $( '.js-ellipsis' );
+
+		string.each( function () {
+			var str = $( this ),
+				len = str.attr( 'data-maxlen' );
+
+			if ( str.text().length > len ) {
+				str.text( str.text().substr( 0, parseInt(len) - 3 ) + '...' );
+			}
+		});
+
+		return self;
 	}
 };

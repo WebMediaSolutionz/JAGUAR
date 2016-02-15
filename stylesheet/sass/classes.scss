@@ -597,6 +597,12 @@ h3 {
 
 					div:first-child {
 						height: 50px;
+
+						& h6,
+						& h6 a {
+							display: block;
+							height: 50px;
+						}
 					}
 				}
 
@@ -617,8 +623,12 @@ h3 {
 						margin: 0;
 					}
 
-					div {
-						margin: 2px 0;
+					div:first-child {
+						margin-top: 5px;
+					}
+
+					div:nth-child(2) {
+						margin: -10px 0 5px;
 					}
 
 					.frg-button {
@@ -645,7 +655,7 @@ h3 {
 				}
 
 				h4 {
-					font-size: 46px;
+					font-size: 30px;
 				}
 
 				h5 {
