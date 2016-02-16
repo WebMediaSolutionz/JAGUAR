@@ -399,6 +399,33 @@ var JAG = {
 			}
 		});
 
+		$( '.js-quantity' ).keyup( function () {
+			var quantity_field = $( this ),
+				entered_value = quantity_field.val(),
+				status = quantity_field.closest( '.status' ),
+				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() );
+
+			if ( $.isNumeric( entered_value ) ) {
+				if ( entered_value >= max_quantity ) {
+					status
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble span' )
+						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
+				} else {
+					status
+						.removeClass( 'negative' )
+						.addClass( 'positive' );
+				}
+			} else {
+				status
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.tooltip_bubble span' )
+					.text( 'please, enter a valid number' );
+			}
+		});
+
 		// self.showFakeLinks();
 
 		return self;

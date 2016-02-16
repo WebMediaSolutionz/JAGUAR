@@ -38,6 +38,7 @@
 									<div class="tooltip_bubble">
 										<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
 									</div>
+									<input type="hidden" class="js-max_quantity" name="max_quantity" value="100" />
 								</div>
 							</td>
 						</tr>
