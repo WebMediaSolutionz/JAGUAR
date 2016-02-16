@@ -38,6 +38,9 @@
 					<label>Address</label>
 				</td>
 				<td>
+					<label>Apt/Suite</label>
+				</td>
+				<td>
 					<label>City</label>
 				</td>
 				<td>
@@ -54,6 +57,7 @@
 				<td><input type="text" name="firstname"></td>
 				<td><input type="text" name="lastname"></td>
 				<td><input type="text" name="address"></td>
+				<td><input type="text" name="apt_suite"></td>
 				<td><input type="text" name="city"></td>
 				<td><input type="text" name="province"></td>
 				<td><input type="text" name="postal_code"></td>
@@ -84,7 +88,11 @@
 				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-1">
+				<label class="bold">Apt/Suite</label>
+				<p>101</p>
+			</div>
+			<div class="col-xs-1">
 				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
@@ -119,7 +127,11 @@
 				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-1">
+				<label class="bold">Apt/Suite</label>
+				<p>101</p>
+			</div>
+			<div class="col-xs-1">
 				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
