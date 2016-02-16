@@ -32,7 +32,7 @@
 
 <div data-filter="<?php echo $filter; ?> voice_only" class="box phone object clearfix left">
 	<div class="image left">
-		<a href="device.php"><img src="images/phone.jpg" alt="Samsung Galaxy S6 32GB"></a>
+		<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><img src="images/phone.jpg" alt="Samsung Galaxy S6 32GB"></a>
 
 		<div class="device__variant-container">
 
@@ -79,5 +79,4 @@
 			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>
 	</div>
-	<div class="clear"></div>
 </div>
