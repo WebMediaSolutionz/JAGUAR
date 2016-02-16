@@ -85,7 +85,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
@@ -102,7 +102,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
@@ -119,7 +119,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
@@ -213,7 +213,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
@@ -230,7 +230,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
@@ -247,7 +247,7 @@
 											<span>City: Ottawa | Preferred area code: 613 | Voicemail in English</span>
 										</td>
 										<td>
-											<span>SIM provided</span>
+											<span>Nano SIM ($10)</span>
 										</td>
 										<td>
 											<span>41255356535444</span>
