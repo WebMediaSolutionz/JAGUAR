@@ -63,10 +63,14 @@ div.status {
 		color: #d3142e;
 
 		.tooltip_bubble {
-			display: block;
-
 			&::before {
 				left: 183px;
+			}
+		}
+
+		.back-order:hover {
+			& + .tooltip_bubble {
+				display: block;
 			}
 		}
 	}
