@@ -29,9 +29,11 @@
 		<table class="gray_text">
 			<tr>
 				<td>
-					<label>Name</label>
+					<label>First Name</label>
 				</td>
-				<td></td>
+				<td>
+					<label>Last Name</label>
+				</td>
 				<td>
 					<label>Address</label>
 				</td>
