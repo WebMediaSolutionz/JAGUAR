@@ -23,11 +23,28 @@ input.back-order {
 	padding-right: 30px;
 }
 
-.status {
+div.status {
 	font-size: inherit;
+	vertical-align: top !important;
 
 	span.back-order {
 		margin: -5px 0 0 10px;
+	}
+
+	.frg-input-field {
+		border-right: transparent !important;
+		border-radius: 5px 0 0 5px;
+		width: 130px !important;
+	}
+
+	div.frg-icon {
+		border: thin solid #CCC;
+		border-left: transparent;
+		border-radius: 0 5px 5px 0;
+		height: 30px;
+		width: 30px;
+		color: #8c68a6;
+		line-height: 30px;
 	}
 
 	&.positive {
@@ -36,10 +53,22 @@ input.back-order {
 		span.back-order {
 			display: none;
 		}
+
+		div.back-order.frg-icon.icon-info::before {
+			content: '';
+		}
 	}
 
 	&.negative {
 		color: #d3142e;
+
+		.tooltip_bubble {
+			display: block;
+
+			&::before {
+				left: 183px;
+			}
+		}
 	}
 }
 
@@ -495,6 +524,7 @@ h3 {
 
 				.status {
 					font-size: inherit;
+					margin: 2px 0;
 
 					&.positive {
 						color: #47a526;
@@ -1320,7 +1350,7 @@ span.footnote {
 					/*height: 30px;*/
 					vertical-align: top;
 
-					.backorder {
+					.status {
 						margin-top: -20px;
 					}
 

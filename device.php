@@ -31,9 +31,14 @@
 									</select>
 								</div>
 							</td>
-							<td>
-								<input class='frg-input-field js-quantity back-order' />
-								<span class="frg-icon icon-info back-order"></span>
+							<td class="vertical_align_top">
+								<div class="status positive clearfix">
+									<input class='frg-input-field js-quantity back-order left' value='1' />
+									<div class="frg-icon icon-info back-order left"></div>
+									<div class="tooltip_bubble">
+										<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+									</div>
+								</div>
 							</td>
 						</tr>
 					</table>

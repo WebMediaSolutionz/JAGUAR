@@ -133,8 +133,8 @@
 					<td class="description">
 						<p class="big no_margin">iPhone S6 (<a href="device.php">edit</a>)</p>
 					</td>
-					<td class="clearfix">
-						<div class="backorder">
+					<td class="vertical_align_top clearfix">
+						<div class="status negative">
 							<span class="status negative">Back order</span>
 							<span class="frg-icon icon-info back-order right"></span>
 						</div>
