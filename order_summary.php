@@ -54,10 +54,10 @@
 						<span class="status positive">5-10 days</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$5,500</span>
+						<span>$5,500.00</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$25,500</span>
+						<span>$25,500.00</span>
 					</td>
 				</tr>
 				<tr class="wide hide">
@@ -181,10 +181,10 @@
 						<span class="status positive">5-10 days</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$5,500</span>
+						<span>$5,500.00</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$25,500</span>
+						<span>$25,500.00</span>
 					</td>
 				</tr>
 
@@ -273,7 +273,7 @@
 
 <div class="outer-container content white_bg order_summary">
 	<div class="inner-container clearfix">
-		<table>
+		<table class="wide">
 			<thead class="gray_text">
 				<tr>
 					<th>Item</th>
@@ -285,7 +285,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr>
+				<tr class="wide">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -299,10 +299,10 @@
 						<span class="status positive">5-10 days</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$5,500</span>
+						<span>$5,500.00</span>
 					</td>
 					<td class="right_align amount_due">
-						<span>$25,500</span>
+						<span>$25,500.00</span>
 					</td>
 				</tr>
 			</tbody>
@@ -317,8 +317,8 @@
 				<table class="right_align subtotal">
 					<tr>
 						<td>Sub Total</td>
-						<td>$5,500</td>
-						<td class="right_align">$25,500</td>
+						<td>$5,500.00</td>
+						<td class="right_align">$25,500.00</td>
 					</tr>
 					<tr>
 						<td>Shipping</td>
@@ -327,8 +327,8 @@
 					</tr>
 					<tr>
 						<td>Taxes HST</td>
-						<td>$5,500</td>
-						<td class="right_align">$25,500</td>
+						<td>$5,500.00</td>
+						<td class="right_align">$25,500.00</td>
 					</tr>
 				</table>
 			</div>
@@ -343,7 +343,7 @@
 				<table class="right_align total">
 					<tr>
 						<td>Total</td>
-						<td>$6,215</td>
+						<td>$6,215.00</td>
 						<td class="right_align">$31,922.50</td>
 					</tr>
 				</table>
