@@ -125,6 +125,23 @@
 											<span>41255356535444</span>
 										</td>
 									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>Yes</span>
+										</td>
+										<td class="description">
+											<span>Account: 2222222 | Phone Number: (555) 555 5555 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>Nano SIM ($10)</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
 								</tbody>
 							</table>
 							<div class="heading clearfix">
@@ -253,8 +270,28 @@
 											<span>41255356535444</span>
 										</td>
 									</tr>
+									<tr class="wide">
+										<td>
+											<span>John Doe</span>
+										</td>
+										<td>
+											<span>Yes</span>
+										</td>
+										<td class="description">
+											<span>Account: 2222222 | Phone Number: (555) 555 5555 | Voicemail in English</span>
+										</td>
+										<td>
+											<span>Nano SIM ($10)</span>
+										</td>
+										<td>
+											<span>41255356535444</span>
+										</td>
+									</tr>
 								</tbody>
 							</table>
+							<div class="heading clearfix">
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+							</div>
 						</div>
 					</td>
 				</tr>
