@@ -39,7 +39,7 @@ span.status {
 	}
 
 	div.frg-icon {
-		border: thin solid #CCC;
+		border: thin solid $light_light_gray;
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
 		height: 30px;
@@ -1749,6 +1749,16 @@ span.footnote {
 
 .phones {
 	padding-bottom: 30px;
+}
+
+.sim_nbr {
+	.status {
+		height: 50px;
+
+		.frg-input-field {
+			width: 115px !important;
+		}
+	}
 }
 
 @media screen and (max-width: 1260px) {
