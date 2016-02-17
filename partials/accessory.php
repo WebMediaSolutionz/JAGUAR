@@ -15,9 +15,9 @@
 		</button>
 	</div>
 
-	<div>
+	<div class="clearfix">
 		<div class="col-xs-6">
-			<label>Colour</label>
+			<label>Colour</label><br />
 			<div class='frg-select-container color-light'>
 				<select>
 					<option>Option</option>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="col-xs-6">
-			<label>Quantity <span class="status positive">Available</span></label>
+			<label>Quantity <span class="status positive">Available</span></label><br />
 			<div class="status positive clearfix">
 				<input class='frg-input-field js-quantity back-order left' value='1' />
 				<div class="frg-icon icon-info back-order left"></div>

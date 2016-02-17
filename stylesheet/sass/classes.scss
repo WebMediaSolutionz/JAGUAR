@@ -35,7 +35,7 @@ span.status {
 	.frg-input-field {
 		border-right: transparent !important;
 		border-radius: 5px 0 0 5px;
-		width: 130px !important;
+		width: 75% !important;
 	}
 
 	div.frg-icon {
@@ -43,7 +43,7 @@ span.status {
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
 		height: 30px;
-		width: 30px;
+		width: 25%;
 		color: #8c68a6;
 		line-height: 30px;
 	}
@@ -1118,6 +1118,7 @@ span.footnote {
 .accessory {
 	padding: 0 35px;
 	margin-bottom: 50px;
+	min-width: 360px;
 
 	.frg-input-field,
 	.frg-select-container {
