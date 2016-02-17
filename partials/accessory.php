@@ -27,7 +27,14 @@
 		</div>
 		<div class="col-xs-6">
 			<label>Quantity <span class="status positive">Available</span></label>
-			<input class='frg-input-field' value='test'/>
+			<div class="status positive clearfix">
+				<input class='frg-input-field js-quantity back-order left' value='1' />
+				<div class="frg-icon icon-info back-order left"></div>
+				<div class="tooltip_bubble">
+					<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+				</div>
+				<input type="hidden" class="js-max_quantity" name="max_quantity" value="100" />
+			</div>
 		</div>
 	</div>
 	<div class="center_text">

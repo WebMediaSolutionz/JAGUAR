@@ -40,120 +40,20 @@
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container row clearfix">
-		<div class="accessory col-xs-4">
-			<div class="h4">Urbanears Plattan</div>
-			<div class="price">$700</div>
-			<div class="item center_text">
-				<img src="images/beats.jpg">
-			</div>
+		<div class="page current clearfix">
+			<?php 
+				for ( $i = 1; $i < 21; $i++ ) {
+					include( 'partials/accessory.php' );
 
-			<div class="device__variant-container center">
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-space-grey" aria-label="Change device colour to Space Grey">
-					<span class="frg-icon icon-circle-solid" style="color: #595859"></span>
-				</button>
-
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-gold" aria-label="Change device colour to Gold">
-					<span class="frg-icon icon-circle-solid" style="color: #C2B19D"></span>
-				</button>
-			</div>
-
-			<div>
-				<div class="col-xs-6">
-					<label>Colour</label>
-					<div class='frg-select-container color-light'>
-						<select>
-							<option>Option</option>
-							<option>Option</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<label>Quantity <span class="status positive">Available</span></label>
-					<input class='frg-input-field' value='test'/>
-				</div>
-			</div>
-			<div class="center_text">
-				<a class="frg-button select" href="<?php echo $next_step; ?>">Add to cart</a>
-			</div>
-		</div>
-		<div class="accessory separator col-xs-4">
-			<div class="h4">Urbanears Plattan</div>
-			<div class="price">$700</div>
-			<div class="item center_text">
-				<img src="images/jbl.jpg">
-			</div>
-
-			<div class="device__variant-container center">
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-space-grey" aria-label="Change device colour to Space Grey">
-					<span class="frg-icon icon-circle-solid" style="color: #595859"></span>
-				</button>
-
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-gold" aria-label="Change device colour to Gold">
-					<span class="frg-icon icon-circle-solid" style="color: #C2B19D"></span>
-				</button>
-			</div>
-
-			<div>
-				<div class="col-xs-6">
-					<label>Colour</label>
-					<div class='frg-select-container color-light'>
-						<select>
-							<option>Option</option>
-							<option>Option</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<label>Quantity <span class="status positive">Available</span></label>
-					<input class='frg-input-field' value='test'/>
-				</div>
-			</div>
-			<div class="center_text">
-				<a class="frg-button select" href="<?php echo $next_step; ?>">Add to cart</a>
-			</div>
-		</div>
-		<div class="accessory separator col-xs-4">
-			<div class="h4">Urbanears Plattan</div>
-			<div class="price">$700</div>
-			<div class="item center_text">
-				<img src="images/blah.jpg">
-			</div>
-
-			<div class="device__variant-container center">
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-space-grey" aria-label="Change device colour to Space Grey">
-					<span class="frg-icon icon-circle-solid" style="color: #595859"></span>
-				</button>
-
-				<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-gold" aria-label="Change device colour to Gold">
-					<span class="frg-icon icon-circle-solid" style="color: #C2B19D"></span>
-				</button>
-			</div>
-
-			<div>
-				<div class="col-xs-6">
-					<label>Colour</label>
-					<div class='frg-select-container color-light'>
-						<select>
-							<option>Option</option>
-							<option>Option</option>
-						</select>
-					</div>
-				</div>
-				<div class="col-xs-6">
-					<label>Quantity <span class="status positive">Available</span></label>
-					<input class='frg-input-field' value='test'/>
-				</div>
-			</div>
-			<div class="center_text">
-				<a class="frg-button select" href="<?php echo $next_step; ?>">Add to cart</a>
-			</div>
+					if ( $i % 9 === 0 ) {
+						echo "</div><div class='page hide clearfix'>";
+					}	
+				} 
+			?>
 		</div>
 	</div>
 
-	<div class="pagin clearfix">
-		<div class="col-xs-6 text_align_right"><a href="">Next 12</a></div>
-		<div class="col-xs-6 separator"><a href="">View all</a></div>
-	</div>
+	<?php include( 'partials/paging.php' ); ?>
 </div>
 
 <?php include( 'partials/checkout_sticky.php' ); ?>
