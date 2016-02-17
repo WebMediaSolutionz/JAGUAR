@@ -405,7 +405,8 @@ var JAG = {
 				status = quantity_field.closest( '.status' ),
 				accessory_atc = status.closest( '.accessory' ).find( '.frg-button' ),
 				device_atc = status.closest( 'section' ).closest( 'div' ).find( '.frg-button.color-green' ),
-				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() );
+				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() ),
+				availability = $( 'span.status' );
 
 			if ( $.isNumeric( entered_value ) ) {
 				if ( entered_value >= max_quantity ) {
@@ -415,25 +416,49 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
 
-						accessory_atc.addClass( 'state-disabled' );
-						device_atc.addClass( 'state-disabled' );
+					accessory_atc.addClass( 'state-disabled' );
+					device_atc.addClass( 'state-disabled' );
+
+					availability
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.text( 'Back order' );
 				} else {
 					status
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
 						
-						accessory_atc.removeClass( 'state-disabled' );
-						device_atc.removeClass( 'state-disabled' );
+					accessory_atc.removeClass( 'state-disabled' );
+					device_atc.removeClass( 'state-disabled' );
+
+					availability
+						.removeClass( 'negative' )
+						.addClass( 'positive' )
+						.text( 'Available' );
 				}
 			} else {
-				status
-					.removeClass( 'positive' )
-					.addClass( 'negative' )
-					.find( '.tooltip_bubble span' )
-					.text( 'please, enter a valid number' );
-					
-					accessory_atc.addClass( 'state-disabled' );
-					device_atc.addClass( 'state-disabled' );
+				accessory_atc.addClass( 'state-disabled' );
+				device_atc.addClass( 'state-disabled' );
+
+				if ( entered_value !== '' ) {
+					availability
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.text( 'Invalid entry' );
+
+					status
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble span' )
+						.text( 'please, enter a valid number' );	
+				} else {
+					status
+						.removeClass( 'negative' )
+						.addClass( 'positive' );
+
+					availability.text( '' );
+				}
+				
 			}
 		});
 
