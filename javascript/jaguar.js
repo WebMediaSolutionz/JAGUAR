@@ -403,6 +403,8 @@ var JAG = {
 			var quantity_field = $( this ),
 				entered_value = quantity_field.val(),
 				status = quantity_field.closest( '.status' ),
+				accessory_atc = status.closest( '.accessory' ).find( '.frg-button' ),
+				device_atc = status.closest( 'section' ).closest( 'div' ).find( '.frg-button.color-green' ),
 				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() );
 
 			if ( $.isNumeric( entered_value ) ) {
@@ -412,10 +414,16 @@ var JAG = {
 						.addClass( 'negative' )
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
+
+						accessory_atc.addClass( 'state-disabled' );
+						device_atc.addClass( 'state-disabled' );
 				} else {
 					status
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
+						
+						accessory_atc.removeClass( 'state-disabled' );
+						device_atc.removeClass( 'state-disabled' );
 				}
 			} else {
 				status
@@ -423,6 +431,9 @@ var JAG = {
 					.addClass( 'negative' )
 					.find( '.tooltip_bubble span' )
 					.text( 'please, enter a valid number' );
+					
+					accessory_atc.addClass( 'state-disabled' );
+					device_atc.addClass( 'state-disabled' );
 			}
 		});
 
