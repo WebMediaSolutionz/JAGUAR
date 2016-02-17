@@ -211,7 +211,7 @@ var JAG = {
 		$( '.sim select' ).change( function () {
 			var clicked = $( this ),
 				sim_empty_box = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.empty' ),
-				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container' );
+				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container, .status' );
 
 			if ( clicked.val() === 'yes' ) {
 				$( '.sim_nbr' ).removeClass( 'hide' );
@@ -459,6 +459,25 @@ var JAG = {
 					availability.text( '' );
 				}
 				
+			}
+		});
+
+		$( '.js-validate_number' ).keyup( function () {
+			var clicked = $( this ),
+				value = clicked.val(),
+				status = clicked.closest( '.status' ),
+				tooltip_bubble = status.find( '.tooltip_bubble span' );
+
+			if ( value !== '' && !$.isNumeric( value ) ) {
+				status
+					.removeClass( 'positive' )
+					.addClass( 'negative' );
+
+				tooltip_bubble.text( 'Please, enter a valid number' );
+			} else {
+				status
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
 			}
 		});
 

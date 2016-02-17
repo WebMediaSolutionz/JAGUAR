@@ -60,14 +60,12 @@
 	</td>
 	<td class="sim_nbr hide">
 		<div class="empty"></div>
-		<div class="frg-select-container color-light left hide">
-			<select>
-				<option value="no">1</option>
-				<option value="yes">2</option>
-				<option value="yes">3</option>
-				<option value="yes">4</option>
-				<option value="yes">5</option>
-			</select>
+		<div class="status positive hide clearfix">
+			<input class='frg-input-field js-validate_number back-order short left' value='1' />
+			<div class="frg-icon icon-info back-order left"></div>
+			<div class="tooltip_bubble">
+				<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+			</div>
 		</div>
 	</td>
 </tr>
