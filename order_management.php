@@ -189,13 +189,11 @@
 			<tbody id="sortable" class="small">
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 1" name="option" id="radio-option1">
+								<div class="icon"></div>
+								<label for="radio-option1"></label>
 							</div>
 						</div>
 					</td>
@@ -226,13 +224,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 2" name="option" id="radio-option2">
+								<div class="icon"></div>
+								<label for="radio-option2"></label>
 							</div>
 						</div>
 					</td>
@@ -263,13 +259,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 3" name="option" id="radio-option3">
+								<div class="icon"></div>
+								<label for="radio-option3"></label>
 							</div>
 						</div>
 					</td>
@@ -300,13 +294,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 4" name="option" id="radio-option4">
+								<div class="icon"></div>
+								<label for="radio-option4"></label>
 							</div>
 						</div>
 					</td>
