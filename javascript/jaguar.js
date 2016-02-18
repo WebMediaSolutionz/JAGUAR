@@ -22,7 +22,8 @@ var JAG = {
 			.attachEvents()
 			.setupPagination()
 			.ellipsis()
-			.setupDueNow();
+			.setupDueNow()
+			.setupInputMasks();
 
 		return self;
 	},
@@ -405,15 +406,15 @@ var JAG = {
 			self.setupPagination();
 		});
 
-		$( '.js-phone_nbr' ).blur( function () {
-			var el = $( this ),
-				parent = el.closest( '.input_error_tooltip' ),
-				valid = false;
+		// $( '.js-phone_nbr' ).blur( function () {
+		// 	var el = $( this ),
+		// 		parent = el.closest( '.input_error_tooltip' ),
+		// 		valid = false;
 
-			if ( !valid ) {
-				parent.addClass( 'error' );
-			}
-		});
+		// 	if ( !valid ) {
+		// 		parent.addClass( 'error' );
+		// 	}
+		// });
 
 		$( '.js-quantity' ).keyup( function () {
 			var quantity_field = $( this ),
@@ -852,5 +853,13 @@ var JAG = {
 
 	currencyFormat: function ( value ) {
 		return '$' + parseFloat( value, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
+	},
+
+	setupInputMasks: function () {
+		var self = this;
+
+		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
+
+		return self;
 	}
 };

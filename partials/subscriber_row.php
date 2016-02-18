@@ -29,7 +29,7 @@
 	<td class="existing_phone_nbr hide">
 		<div class="empty"></div>
 		<div class="input_error_tooltip hide">
-			<input class='frg-input-field js-phone_nbr short' />
+			<input class='frg-input-field js-phone_nbr js-phone_input_mask short' />
 			<div>
 				<span class="frg-icon icon-warning"></span>
 			</div>
