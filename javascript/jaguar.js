@@ -481,9 +481,44 @@ var JAG = {
 			}
 		});
 
+		$( '.js-form-complete' ).keyup( function () {
+			self.formCompleted();
+		}).click( function () {
+			self.formCompleted();
+		});
+
 		// self.showFakeLinks();
 
 		return self;
+	},
+
+	formCompleted: function () {
+		var fields = $( '.js-form-complete' ),
+			text_form_completed = true,
+			radio_form_completed = false,
+			save_continue = $( '.frg-button' );
+
+		fields.each( function () {
+			var field = $( this );
+
+			if ( field.attr( 'type' ) === 'text' ) {
+				if ( field.val() === '' ) {
+					text_form_completed = false;
+				}
+			}
+
+			if ( field.attr( 'type' ) === 'radio' ) {
+				if ( field.is( ':checked' ) ) {
+					radio_form_completed = true;
+				}
+			}
+		});
+
+		if ( text_form_completed || radio_form_completed ) {
+			save_continue.removeClass( 'state-disabled' );
+		} else {
+			save_continue.addClass( 'state-disabled' );
+		}
 	},
 
 	setupFilters: function () {
