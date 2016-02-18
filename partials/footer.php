@@ -32,6 +32,7 @@
 		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
 		<script type="text/javascript" src="javascript/lib/bootstrap-datepicker.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
+		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
 
 		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
 
