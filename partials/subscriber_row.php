@@ -53,15 +53,16 @@
 	<td class="sim">
 		<div class="frg-select-container color-light left">
 			<select>
-				<option value="no">No</option>
-				<option value="yes">Yes</option>
+				<option value="a">SIM Option A ($10/subscriber)</option>
+				<option value="b">SIM Option B ($10/subscriber)</option>
+				<option value="own">Provide my own SIM</option>
 			</select>
 		</div>
 	</td>
 	<td class="sim_nbr hide">
 		<div class="empty"></div>
 		<div class="status positive hide clearfix">
-			<input class='frg-input-field js-validate_number back-order short left' value='1' />
+			<input class='frg-input-field js-validate_number back-order short left' />
 			<div class="frg-icon icon-info back-order left"></div>
 			<div class="tooltip_bubble">
 				<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
