@@ -21,7 +21,8 @@ var JAG = {
 		self
 			.attachEvents()
 			.setupPagination()
-			.ellipsis();
+			.ellipsis()
+			.setupDueNow();
 
 		return self;
 	},
@@ -213,7 +214,7 @@ var JAG = {
 				sim_empty_box = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.empty' ),
 				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container, .status' );
 
-			if ( clicked.val() === 'own' ) {
+			if ( clicked.val() === '0' ) {
 				$( '.sim_nbr' ).removeClass( 'hide' );
 
 				sim_empty_box.addClass( 'hide' );
@@ -222,6 +223,8 @@ var JAG = {
 				sim_empty_box.removeClass( 'hide' );
 				sim_inputbox.addClass( 'hide' );
 			}
+
+			self.setupDueNow();
 		});
 
 		$( '.frg-checkbox' ).click( function () {
@@ -305,7 +308,7 @@ var JAG = {
 			selects.removeClass( 'current' ).text( 'Select' );
 			select.addClass( 'current' ).text( 'Selected' );
 
-			monthly_balance = '$' + parseFloat( monthly_balance, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
+			monthly_balance = self.currencyFormat( monthly_balance );
 
 			monthly.text( monthly_balance.substring( 0, monthly_balance.indexOf( '.' ) ) );
 		});
@@ -828,5 +831,26 @@ var JAG = {
 		});
 
 		return self;
+	},
+
+	setupDueNow: function () {
+		var self = this,
+			base_total = parseInt( $( '[name=base_total]' ).val() ),
+			sims = $( '.sim select' ),
+			sims_total = 0,
+			due_now_total = base_total,
+			due_now = $( 'p.now' );
+
+		sims.each( function () {
+			sims_total += parseInt( $( this ).val() );
+		});
+
+		due_now.text( self.currencyFormat( base_total + sims_total ) );
+
+		return self;
+	},
+
+	currencyFormat: function ( value ) {
+		return '$' + parseFloat( value, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
 	}
 };

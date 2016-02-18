@@ -66,5 +66,6 @@
 	}
 
 	define( 'DOMAIN', 'http://publishedactiveint-qa1.tmi.telus.com/tm_pep/' );
+	define( 'NBR_DEVICES', 50 );
 	$folder = "WCM_EOF/static_content/jaguar/";
 ?>
