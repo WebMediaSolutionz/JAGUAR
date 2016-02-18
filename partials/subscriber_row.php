@@ -52,16 +52,16 @@
 	</td>
 	<td class="sim">
 		<div class="frg-select-container color-light left">
-			<select>
-				<option value="a">SIM Option A ($10/subscriber)</option>
-				<option value="b">SIM Option B ($10/subscriber)</option>
-				<option value="own">Provide my own SIM</option>
+			<select autocomplete="off">
+				<option value="10">SIM Option A ($10/subscriber)</option>
+				<option value="5">SIM Option B ($10/subscriber)</option>
+				<option value="0" selected>Provide my own SIM</option>
 			</select>
 		</div>
 	</td>
-	<td class="sim_nbr hide">
-		<div class="empty"></div>
-		<div class="status positive hide clearfix">
+	<td class="sim_nbr">
+		<div class="empty hide"></div>
+		<div class="status positive clearfix">
 			<input class='frg-input-field js-validate_number back-order short left' />
 			<div class="frg-icon icon-info back-order left"></div>
 			<div class="tooltip_bubble">
