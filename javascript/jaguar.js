@@ -213,12 +213,12 @@ var JAG = {
 				sim_empty_box = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.empty' ),
 				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container, .status' );
 
-			if ( clicked.val() === 'yes' ) {
+			if ( clicked.val() === 'own' ) {
 				$( '.sim_nbr' ).removeClass( 'hide' );
 
 				sim_empty_box.addClass( 'hide' );
 				sim_inputbox.removeClass( 'hide' );
-			} else if ( clicked.val() === 'no' ) {
+			} else {
 				sim_empty_box.removeClass( 'hide' );
 				sim_inputbox.addClass( 'hide' );
 			}
