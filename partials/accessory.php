@@ -1,6 +1,6 @@
 <div class="<?php echo ( ( $i - 1 ) % 3 === 0 ) ? '' : 'separator '; ?>accessory object col-xs-4" data-filter="audio charging smart_watches">
 	<div class="h4">Urbanears Plattan</div>
-	<div class="price">$700</div>
+	<div class="price">$700.00</div>
 	<div class="item center_text">
 		<img src="images/beats.jpg">
 	</div>

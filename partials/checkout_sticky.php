@@ -63,11 +63,11 @@
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">
 					<p>Due Now</p>
-					<p class="h4 now">$25,500</p>
+					<p class="h4 now">$25,500.00</p>
 				</div>
 				<div class="right gap_right">
 					<p>Due Monthly</p>
-					<p class="h4 monthly">$0</p>
+					<p class="h4 monthly">$0.00</p>
 				</div>
 				<div class="right gap_right">
 					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
