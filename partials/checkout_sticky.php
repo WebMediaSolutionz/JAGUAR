@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
+				<a class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
 			</div>
 		</div>
 	</div>
