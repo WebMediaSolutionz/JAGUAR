@@ -269,9 +269,22 @@ var JAG = {
 				value = textbox.val(),
 				closest = textbox.closest( 'p' ),
 				edit_name = closest.find( '.edit_name' ),
+				title = closest.find( 'span, strong' ),
+				code = e.which || e.keyCode;
+
+			if ( ( code == 13 || code == 9 ) && value !== '' ) {
+				textbox.addClass( 'hide' );
+				edit_name.removeClass( 'hide' );
+				title.text( value ).removeClass( 'hide' );
+			}
+		}).blur( function ( e ) {
+			var textbox = $( this ),
+				value = textbox.val(),
+				closest = textbox.closest( 'p' ),
+				edit_name = closest.find( '.edit_name' ),
 				title = closest.find( 'span, strong' );
 
-			if ( e.which == 13 && value !== '' ) {
+			if ( value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
@@ -490,6 +503,21 @@ var JAG = {
 		// self.showFakeLinks();
 
 		return self;
+	},
+
+	autoSave: function ( e ) {
+		var textbox = $( this ),
+			value = textbox.val(),
+			closest = textbox.closest( 'p' ),
+			edit_name = closest.find( '.edit_name' ),
+			title = closest.find( 'span, strong' ),
+			code = e.which || e.keyCode;
+
+		if ( ( code == 13 || code == 9 ) && value !== '' ) {
+			textbox.addClass( 'hide' );
+			edit_name.removeClass( 'hide' );
+			title.text( value ).removeClass( 'hide' );
+		}
 	},
 
 	formCompleted: function () {
