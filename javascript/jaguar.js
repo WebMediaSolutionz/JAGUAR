@@ -429,8 +429,8 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
 
-					accessory_atc.addClass( 'state-disabled' );
-					device_atc.addClass( 'state-disabled' );
+					accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+					device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
 
 					availability
 						.removeClass( 'positive' )
@@ -441,8 +441,8 @@ var JAG = {
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
 						
-					accessory_atc.removeClass( 'state-disabled' );
-					device_atc.removeClass( 'state-disabled' );
+					accessory_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
+					device_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
 
 					availability
 						.removeClass( 'negative' )
@@ -450,8 +450,8 @@ var JAG = {
 						.text( 'Available' );
 				}
 			} else {
-				accessory_atc.addClass( 'state-disabled' );
-				device_atc.addClass( 'state-disabled' );
+				accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+				device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
 
 				if ( entered_value !== '' ) {
 					availability
