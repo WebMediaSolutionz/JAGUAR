@@ -1777,6 +1777,22 @@ span.footnote {
 	padding: 0;
 }
 
+.js-auto-complete-results {
+	position: absolute;
+	background-color: #FFF;
+	border: thin solid $light_gray;
+	z-index: 99;
+
+	a {
+		padding: 0 20px;
+		
+		&:hover {
+			background-color: blue;
+			color: #FFF;
+		}
+	}
+}
+
 @media screen and (max-width: 1260px) {
     .support_section .headset {
 		width: 40%;

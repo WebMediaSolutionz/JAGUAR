@@ -21,7 +21,8 @@
 		</div>
 	</td>
 	<td>
-		<input class='frg-input-field short' />
+		<input class='frg-input-field short js-cities-auto-complete' />
+		<div class="js-auto-complete-results hide"></div>
 	</td>
 	<td>
 		<input class='frg-input-field short' />
