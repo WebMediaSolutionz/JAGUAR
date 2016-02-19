@@ -61,7 +61,7 @@
 				<td><input class="js-form-complete" type="text" name="city"></td>
 				<td><input class="js-form-complete" type="text" name="province"></td>
 				<td><input class="js-form-complete" type="text" name="postal_code"></td>
-				<td><input class="js-form-complete" type="text" name="phone_number"></td>
+				<td><input class="js-form-complete js-phone_input_mask" type="text" name="phone_number"></td>
 			</tr>
 		</table>
 	</div>
