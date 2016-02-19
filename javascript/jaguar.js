@@ -8,6 +8,8 @@ var JAG = {
 
 	phones: null,
 
+	cities: cities,
+
 	init: function () {
 		var self = this;
 
@@ -520,6 +522,55 @@ var JAG = {
 			}
 		});
 
+		$( '.js-cities-auto-complete' ).keyup( function () {
+			var field = $( this ),
+				field_text = field.val(),
+				results = [],
+				results_box = field.parent().find( '.js-auto-complete-results' );
+
+			if ( field_text.length >=  3 ) {
+				for ( var i = 0; i < self.cities.length; i++ ) {
+					if ( self.cities[ i ].value.toLowerCase().indexOf( field_text ) !== -1 ) {
+						results.push( self.cities[ i ] );
+					} 
+				}
+			}
+
+			results_box.text( '' );
+
+			if ( results.length > 0 ) {
+				results_box.removeClass( 'hide' );
+
+ 				for ( var i = 0; i < results.length; i++ ) {
+					results_box.append( '<a class="block js-auto-complete-result" href="#">' + results[ i ].value + '</a>' );
+				}
+			} else {
+				results_box.addClass( 'hide' );
+			}
+
+			$( '.js-auto-complete-result' ).click( function ( e ) {
+				var clicked = $( this ),
+					results_box = clicked.parent(),
+					field = results_box.parent().find( '.js-cities-auto-complete' );
+
+				e.preventDefault();
+
+				results_box
+					.text( '' )
+					.addClass( 'hide' );
+
+				field.val( clicked.text().toLowerCase() );
+			});
+		});
+
+		$( '.js-cities-auto-complete' ).blur( function () {
+			var field = $( this );
+
+			if ( !self.callingCityCheck( field ) ) {
+				field.val( '' );
+			}
+		});
+
 		// self.showFakeLinks();
 
 		return self;
@@ -527,6 +578,19 @@ var JAG = {
 
 	portabilityCheck: function () {
 		// TODO: put in real code to make ajax call for portability check
+		return false;
+	},
+
+	callingCityCheck: function ( el ) {
+		var self = this,
+			el_text = el.val();
+
+ 		for ( var i = 0; i < self.cities.length; i++ ) {
+			if ( el_text.toLowerCase() === self.cities[ i ].value.toLowerCase() ) {
+				return true;
+			}
+		}
+
 		return false;
 	},
 
