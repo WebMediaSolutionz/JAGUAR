@@ -25,7 +25,12 @@
 		<div class="js-auto-complete-results hide"></div>
 	</td>
 	<td>
-		<input class='frg-input-field short' />
+		<!-- <input class='frg-input-field js-area-codes short' /> -->
+
+		<div class="frg-select-container color-light left">
+			<select class="js-area-codes" autocomplete="off">
+			</select>
+		</div>
 	</td>
 	<td class="existing_phone_nbr hide">
 		<div class="empty"></div>

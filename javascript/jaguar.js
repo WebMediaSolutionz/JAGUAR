@@ -542,7 +542,7 @@ var JAG = {
 				results_box.removeClass( 'hide' );
 
  				for ( var i = 0; i < results.length; i++ ) {
-					results_box.append( '<a class="block js-auto-complete-result" href="#">' + results[ i ].value + '</a>' );
+					results_box.append( '<a class="block js-auto-complete-result" data-areacodes="' + results[ i ].data + '" href="#">' + results[ i ].value + '</a>' );
 				}
 			} else {
 				results_box.addClass( 'hide' );
@@ -551,7 +551,9 @@ var JAG = {
 			$( '.js-auto-complete-result' ).click( function ( e ) {
 				var clicked = $( this ),
 					results_box = clicked.parent(),
-					field = results_box.parent().find( '.js-cities-auto-complete' );
+					field = results_box.parent().find( '.js-cities-auto-complete' ),
+					area_codes_box = clicked.closest( 'tr' ).find( '.js-area-codes' ),
+					area_codes = clicked.attr( 'data-areacodes' );
 
 				e.preventDefault();
 
@@ -560,6 +562,13 @@ var JAG = {
 					.addClass( 'hide' );
 
 				field.val( clicked.text().toLowerCase() );
+
+				area_codes = area_codes.split( ',' );
+				area_codes_box.text( '' );
+
+				for ( var i = 0; i < area_codes.length; i++ ) {
+					area_codes_box.append( '<option value="' + area_codes[ i ] + '">' + area_codes[ i ] + '</option>' );
+				}
 			});
 		});
 
