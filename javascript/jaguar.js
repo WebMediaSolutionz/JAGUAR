@@ -191,10 +191,15 @@ var JAG = {
 
 		$( '.port select' ).change( function () {
 			var clicked = $( this ),
-				account_empty_box = clicked.closest( 'tr' ).find( '.account_nbr' ).find( '.empty' ),
-				account_inputbox = clicked.closest( 'tr' ).find( '.account_nbr' ).find( 'input' ),
-				phone_empty_box = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.empty' ),
-				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.status' );
+				tr = clicked.closest( 'tr' ),
+				account_empty_box = tr.find( '.account_nbr' ).find( '.empty' ),
+				account_inputbox = tr.find( '.account_nbr' ).find( 'input' ),
+				phone_empty_box = tr.find( '.existing_phone_nbr' ).find( '.empty' ),
+				phone_inputbox = tr.find( '.existing_phone_nbr' ).find( '.status' ),
+				calling_city_empty_box = tr.find( '.js-calling-city' ).find( '.empty' ),
+				calling_city_inputbox = tr.find( '.js-calling-city' ).find( 'input' ),
+				area_codes_empty_box = tr.find( '.js-preferred-area-code' ).find( '.empty' ),
+				area_codes_inputbox = tr.find( '.js-preferred-area-code' ).find( '.frg-select-container' );
 
 			if ( clicked.val() === 'yes' ) {
 				$( '.account_nbr' ).removeClass( 'hide' );
@@ -204,11 +209,19 @@ var JAG = {
 				phone_empty_box.addClass( 'hide' );
 				account_inputbox.removeClass( 'hide' );
 				phone_inputbox.removeClass( 'hide' );
+				calling_city_empty_box.removeClass( 'hide' );
+				calling_city_inputbox.addClass( 'hide' );
+				area_codes_empty_box.removeClass( 'hide' );
+				area_codes_inputbox.addClass( 'hide' );
 			} else if ( clicked.val() === 'no' ) {
 				account_empty_box.removeClass( 'hide' );
 				phone_empty_box.removeClass( 'hide' );
 				account_inputbox.addClass( 'hide' );
 				phone_inputbox.addClass( 'hide' );
+				calling_city_empty_box.addClass( 'hide' );
+				calling_city_inputbox.removeClass( 'hide' );
+				area_codes_empty_box.addClass( 'hide' );
+				area_codes_inputbox.removeClass( 'hide' );
 			}
 		});
 

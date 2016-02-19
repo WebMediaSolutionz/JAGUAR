@@ -14,19 +14,19 @@
 	</td>
 	<td class="port">
 		<div class="frg-select-container color-light left">
-			<select>
-				<option value="no">No</option>
+			<select autocomplete="off">
+				<option value="no" selected>No</option>
 				<option value="yes">Yes</option>
 			</select>
 		</div>
 	</td>
-	<td>
+	<td class="js-calling-city">
+		<div class="empty hide"></div>
 		<input class='frg-input-field short js-cities-auto-complete' />
 		<div class="js-auto-complete-results hide"></div>
 	</td>
-	<td>
-		<!-- <input class='frg-input-field js-area-codes short' /> -->
-
+	<td class="js-preferred-area-code">
+		<div class="empty hide"></div>
 		<div class="frg-select-container color-light left">
 			<select class="js-area-codes" autocomplete="off">
 			</select>
