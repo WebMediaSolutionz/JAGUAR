@@ -28,13 +28,11 @@
 	</td>
 	<td class="existing_phone_nbr hide">
 		<div class="empty"></div>
-		<div class="input_error_tooltip hide">
-			<input class='frg-input-field js-phone_nbr js-phone_input_mask short' />
-			<div>
-				<span class="frg-icon icon-warning"></span>
-			</div>
+		<div class="status clearfix hide positive">
+			<input value="1" class="frg-input-field js-phone_input_mask short back-order left">
+			<div class="frg-icon icon-info back-order left"></div>
 			<div class="tooltip_bubble">
-				<span>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</span>
+				<span>This request cannot be completed because this phone number is already an active subscriber. Please select a new number to activate this device or contact TELUS for additional assistance</span>
 			</div>
 		</div>
 	</td>

@@ -192,7 +192,7 @@ var JAG = {
 				account_empty_box = clicked.closest( 'tr' ).find( '.account_nbr' ).find( '.empty' ),
 				account_inputbox = clicked.closest( 'tr' ).find( '.account_nbr' ).find( 'input' ),
 				phone_empty_box = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.empty' ),
-				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.input_error_tooltip' );
+				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.status' );
 
 			if ( clicked.val() === 'yes' ) {
 				$( '.account_nbr' ).removeClass( 'hide' );
@@ -406,15 +406,17 @@ var JAG = {
 			self.setupPagination();
 		});
 
-		// $( '.js-phone_nbr' ).blur( function () {
-		// 	var el = $( this ),
-		// 		parent = el.closest( '.input_error_tooltip' ),
-		// 		valid = false;
+		/* error handling portability */
+		$( '.js-phone_nbr' ).blur( function () {
+			var el = $( this ),
+				parent = el.closest( '.input_error_tooltip' ),
+				valid = false;
 
-		// 	if ( !valid ) {
-		// 		parent.addClass( 'error' );
-		// 	}
-		// });
+			if ( !valid ) {
+				parent.addClass( 'error' );
+			}
+		});
+		/******************************************/
 
 		$( '.js-quantity' ).keyup( function () {
 			var quantity_field = $( this ),
@@ -504,9 +506,28 @@ var JAG = {
 			self.formCompleted();
 		});
 
+		$( '.existing_phone_nbr .js-phone_input_mask' ).blur( function () {
+			var clicked = $( this );
+
+			if ( self.portabilityCheck() ) {
+				clicked.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+			} else {
+				clicked.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' );
+			}
+		});
+
 		// self.showFakeLinks();
 
 		return self;
+	},
+
+	portabilityCheck: function () {
+		// TODO: put in real code to make ajax call for portability check
+		return false;
 	},
 
 	autoSave: function ( e ) {

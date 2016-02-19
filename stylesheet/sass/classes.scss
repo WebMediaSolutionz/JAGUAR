@@ -21,6 +21,10 @@ span.back-order {
 
 input.back-order {
 	padding-right: 30px;
+
+	&.js-phone_input_mask {
+		padding-right: 0;
+	}
 }
 
 div.status,
@@ -65,7 +69,7 @@ span.status {
 
 		.tooltip_bubble {
 			&::before {
-				left: 183px;
+				left: 120px;
 			}
 		}
 
@@ -1760,6 +1764,17 @@ span.footnote {
 			width: 75% !important;
 		}
 	}
+}
+
+.existing_phone_nbr {
+	.status {
+		width: 90%;
+		height: 10px;
+	}
+}
+
+.js-phone_input_mask {
+	padding: 0;
 }
 
 @media screen and (max-width: 1260px) {
