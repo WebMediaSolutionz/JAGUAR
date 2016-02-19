@@ -115,9 +115,9 @@
 							<div class="item_count"><span>5</span></div>
 							<span class="frg-icon icon-cart"></span>
 						</div>
-						<div class="col-xs-10 status">
-							<div><strong>Cart empty</strong></div>
-							<div>Last saved: 2:38 PM EST</div>
+						<div class="col-xs-10 status right_align">
+							<div><strong>Last Saved:</strong></div>
+							<div>2:38 PM EST</div>
 						</div>
 					</div>
 				<?php } ?>
