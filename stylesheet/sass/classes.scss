@@ -130,13 +130,16 @@ span.status {
 	font-size: 80% !important;
 
 	div:first-child {
-		margin-top: 8px;
+		margin-top: 10px;
 	}
 
 	.icon-arrow-down {
 		display: inline-block;
 		margin-left: 10px;
 		color: $white;
+		padding-top: 9px;
+		line-height: 25px;
+		font-size: 14px;
 	}
 }
 
@@ -181,10 +184,16 @@ h3 {
 .header {
 	@include primary_bg_color;
 
-	padding: 19px 0 0 0;
+	padding: 40px 0 0 0;
 
 	.logo {
-		margin-right: 50px;
+		width: 155px;
+		height: 29px;
+		margin-right: 78px;
+
+		& + nav .gap_right {
+			margin-right: 32px;
+		}
 	}
 
 	a:link,
@@ -196,17 +205,17 @@ h3 {
 	}
 
 	nav {
-		margin-top: -19px;
+		margin-top: -40px;
 
 		ul {
 			margin: 0;
 
 			li a {
-				padding-top: 19px;
+				padding-top: 36px;
 
 				&:hover,
 				&.current {
-					padding-top: 13px;
+					padding-top: 30px;
 					border-top: 6px solid $green;
 				}
 			}
