@@ -27,7 +27,7 @@
 					<header class="clearfix">
 						<div class="left clearfix">
 							<a class="logo block left" href="index.php">
-								<img alt="TELUS / Home" src="images/TELUS-logo-white.svg">
+								<img class="logo" src="images/TELUS-logo-white.svg" alt="TELUS / Home" />
 							</a>
 							<nav class="left">
 								<ul class="no_styles clearfix">
