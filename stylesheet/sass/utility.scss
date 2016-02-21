@@ -535,3 +535,13 @@ table {
 .cursor_pointer {
 	cursor: auto;
 }
+
+.vl_gray {
+	border-bottom: thin solid $very_light_gray;
+}
+
+.frg-icon {
+	&.small {
+		font-size: 15px;
+	}
+}
