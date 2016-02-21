@@ -33,7 +33,13 @@
 			<tr>
 				<td>
 					<label class="block">Order ID (#)</label>
-					<input class='frg-input-field small' placeholder='Order ID' />
+					<div class="status clearfix positive">
+						<input class="frg-input-field small js-validate_number left" placeholder='Order ID'>
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 				<td>
 					<label class="block">Date Range</label>
@@ -59,7 +65,13 @@
 				</td>
 				<td>
 					<label class="block">BAN</label>
-					<input class='frg-input-field small' placeholder='BAN' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='BAN' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -73,11 +85,17 @@
 				</td>
 				<td>
 					<label class="block">Phone Number</label>
-					<input class='frg-input-field small' placeholder='Phone Number' />
+					<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
 				</td>
 				<td>
 					<label class="block">Email</label>
-					<input class='frg-input-field small' placeholder='E-mail' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-email_validation left' placeholder='E-mail' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -101,26 +119,44 @@
 				</td>
 				<td>
 					<label class="block">Shipping Postal Code</label>
-					<input class='frg-input-field small' placeholder='Shipping Postal Code' />
+					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
 				</td>
 				<td>
 					<label class="block">SKU</label>
-					<input class='frg-input-field small' placeholder='SKU' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='SKU' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<label class="block">IMEI</label>
-					<input class='frg-input-field small' placeholder='IMEI' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 				<td>
 					<label class="block">SIM Serial Number</label>
-					<input class='frg-input-field small' placeholder='SIM Serial Number' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='SIM Serial Number' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 				<td></td>
 				<td>
 					<label class="block">&nbsp;</label>
-					<a href='#' class='frg-button button-wide color-green'>Search</a>
+					<a href='#' class='frg-button button-wide color-green state-disabled'>Search</a>
 				</td>
 			</tr>
 		</table>

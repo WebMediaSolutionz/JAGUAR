@@ -57,7 +57,19 @@ var JAG = {
 
 		$( '.toggle_panel' ).click( function () {
 			var clicked = $( this ),
-				associated_section = clicked.attr( 'data-section' );
+				associated_section = clicked.attr( 'data-section' ),
+				advanced_search_table = clicked.closest( '.outer-container' ).find( '.advanced_search_table' ),
+				fields = advanced_search_table.find( 'input' ),
+				submit = advanced_search_table.find( '.frg-button' ),
+				at_least_one = false;
+
+			fields.each( function () {
+				var field = $( this );
+
+				if ( field.val().length > 0 ) {
+					at_least_one = true;
+				}
+			});
 
 			associated_section = ( associated_section === undefined ) ? '.advanced_search_table' : '.' + associated_section;
 
@@ -593,9 +605,59 @@ var JAG = {
 			}
 		});
 
+		$( '.js-email_validation' ).blur( function () {
+			var email = $( this );
+
+			if ( !self.validateEmail( email.val() ) ) {
+				email.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.tooltip_bubble' )
+					.text( 'Please, enter a valid email address' );
+			} else {
+				email.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+			}
+		});
+
+		$( '.advanced_search_table input, .advanced_search_table select' )
+			.keyup( function () {
+				self.validateSearchForm();
+			}).change( function () {
+				self.validateSearchForm();
+			});
+
 		// self.showFakeLinks();
 
 		return self;
+	},
+
+	validateSearchForm: function () {
+		var fields = $( '.advanced_search_table input, .advanced_search_table select' ),
+			validated_fields = $( '.advanced_search_table .status' ),
+			search = $( '.advanced_search_table .frg-button' ),
+			valid = false;
+
+		fields.each( function () {
+			console.info( $( this ).val() );
+
+			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
+				valid = true;
+			}
+		});
+
+		validated_fields.each( function () {
+			if ( $( this ).hasClass( 'negative' ) ) {
+				valid = false;
+			}
+		});
+
+		if ( !valid ) {
+			search.addClass( 'state-disabled' );
+		} else {
+			search.removeClass( 'state-disabled' );
+		}
 	},
 
 	portabilityCheck: function () {
@@ -962,10 +1024,19 @@ var JAG = {
 		return '$' + parseFloat( value, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
 	},
 
+	validateEmail: function ( email ) {
+		var patt = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+
+		return patt.test( email );
+	},
+
 	setupInputMasks: function () {
 		var self = this;
 
+		$.mask.definitions['~']='[+-]';
+
 		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
+		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
 
 		return self;
 	}
