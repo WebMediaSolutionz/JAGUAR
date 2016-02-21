@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$dark_gray".
-        on line 73 of sass/utility.scss
+        on line 74 of sass/utility.scss
 
-68: .separator {
-69: 	border-left: thin solid #979797;
-70: }
-71: 
-72: .horizontal_separator {
-73: 	border-bottom: thin solid $dark_gray;
-74: 	padding-top: 20px;
-75: 	margin-bottom: 15px;
-76: }
-77: 
-78: .separation {
+69: .separator {
+70: 	border-left: thin solid #979797;
+71: }
+72: 
+73: .horizontal_separator {
+74: 	border-bottom: thin solid $dark_gray;
+75: 	padding-top: 20px;
+76: 	margin-bottom: 15px;
+77: }
+78: 
+79: .separation {
 
 Backtrace:
-sass/utility.scss:73
+sass/utility.scss:74
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -71,4 +71,4 @@ C:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.20/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark_gray\".\A         on line 73 of sass/utility.scss\A \A 68: .separator {\A 69: 	border-left: thin solid #979797;\A 70: }\A 71: \A 72: .horizontal_separator {\A 73: 	border-bottom: thin solid $dark_gray;\A 74: 	padding-top: 20px;\A 75: 	margin-bottom: 15px;\A 76: }\A 77: \A 78: .separation {"; }
+  content: "Error: Undefined variable: \"$dark_gray\".\A         on line 74 of sass/utility.scss\A \A 69: .separator {\A 70: 	border-left: thin solid #979797;\A 71: }\A 72: \A 73: .horizontal_separator {\A 74: 	border-bottom: thin solid $dark_gray;\A 75: 	padding-top: 20px;\A 76: 	margin-bottom: 15px;\A 77: }\A 78: \A 79: .separation {"; }
