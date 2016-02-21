@@ -43,6 +43,7 @@ span.status {
 	}
 
 	div.frg-icon {
+		background-color: #FFF;
 		border: thin solid $light_light_gray;
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
@@ -53,7 +54,7 @@ span.status {
 	}
 
 	&.positive {
-		color: #47a526;
+		/*color: #47a526;*/
 
 		span.back-order {
 			display: none;
@@ -1600,6 +1601,14 @@ span.footnote {
 		width: 150px;
 		height: 30px;
 		margin: -5px 0 15px 0;
+	}
+
+	div.status {
+		width: 150px;
+
+		.frg-input-field {
+			margin: 0;
+		}
 	}
 
 	.frg-button {
