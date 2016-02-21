@@ -54,7 +54,11 @@ span.status {
 	}
 
 	&.positive {
-		/*color: #47a526;*/
+		color: #47a526;
+
+		input {
+			color: #000;
+		}
 
 		span.back-order {
 			display: none;
@@ -1385,7 +1389,6 @@ span.footnote {
 					&:first-child {
 						vertical-align: top;
 						width: 100px !important;
-						padding-top: 7px;
 
 						.frg-checkbox {
 							width: 20px;
@@ -1617,8 +1620,6 @@ span.footnote {
 }
 
 .subscriber_list {
-	border-top: thin solid $dark_gray;
-	border-bottom: thin solid $dark_gray;
 	margin-bottom: 20px;
 
 	.heading {
