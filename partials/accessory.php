@@ -2,7 +2,8 @@
 	<div class="h4">Urbanears Plattan</div>
 	<div class="price">$700.00</div>
 	<div class="item center_text">
-		<img src="images/beats.jpg">
+		<img class="js-iphone-6s-space-grey" src="images/beats.jpg">
+		<img class="js-iphone-6s-gold hide" src="images/beats2.jpg">
 	</div>
 
 	<div class="device__variant-container center">
