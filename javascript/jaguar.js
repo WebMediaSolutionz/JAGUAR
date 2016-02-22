@@ -962,7 +962,7 @@ var JAG = {
 		$( '.device-color-button' ).click( function () {
 			var clicked = $( this ),
 				phoneId = clicked.attr( 'data-sku' ),
-				image = clicked.closest( '.image' ),
+				image = clicked.closest( '.image, .object' ),
 				matchingVariant = image.find( '.js-' + phoneId ),
 				allVariants = image.find( 'img' );
 
