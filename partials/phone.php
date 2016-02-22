@@ -30,28 +30,19 @@
 	}
 ?>
 
-<div data-filter="<?php echo $filter; ?> voice_only" class="box phone object clearfix left">
+<div class="box phone object clearfix left" data-filter="<?php echo $filter; ?> voice_only">
 	<div class="image left">
-		<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><img src="images/phone.jpg" alt="Samsung Galaxy S6 32GB"></a>
-
-		<div class="device__variant-container">
-
-			<button aria-label="Change device colour to Space Grey" data-sku="iphone-6s-space-grey" data-lang="en" class="device-color-button device__variant-item">
-				<span style="color: #595859" class="frg-icon icon-circle-solid"></span>
-			</button>
-
-			<button aria-label="Change device colour to Gold" data-sku="iphone-6s-gold" data-lang="en" class="device-color-button device__variant-item">
-				<span style="color: #C2B19D" class="frg-icon icon-circle-solid"></span>
-			</button>
-
-			<button aria-label="Change device colour to Silver" data-sku="iphone-6s-silver" data-lang="en" class="device-color-button device__variant-item">
-				<span style="color: #909090" class="frg-icon icon-circle-solid"></span>
-			</button>
-
-			<button aria-label="Change device colour to Rose Gold" data-sku="iphone-6s-rose-gold" data-lang="en" class="device-color-button device__variant-item">
-				<span style="color: #EDCCBD" class="frg-icon icon-circle-solid"></span>
-			</button>
-
+		<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
+			<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
+			<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
+		</a>
+		<div class="device__variant-container">			
+			<button aria-label="Space Grey" data-sku="iphone-5s-space-grey" data-lang="en" class="device-color-button device__variant-item">				
+				<span style="color: #595859" class="frg-icon icon-circle-solid"></span>			
+			</button>			
+			<button aria-label="Silver" data-sku="iphone-5s-silver" data-lang="en" class="device-color-button device__variant-item">				
+				<span style="color: #909090" class="frg-icon icon-circle-solid"></span>			
+			</button>		
 		</div>
 	</div>
 
@@ -59,7 +50,9 @@
 		<div class="name">
 			<div>
 				<h6>
-					<a class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><strong class="js-ellipsis" data-maxlen="40">Samsung Galaxy S6 32GB </strong></a>
+					<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
+						<strong data-maxlen="40" class="js-ellipsis">Samsung Galaxy S6 32GB </strong>
+					</a>
 				</h6>
 			</div>
 			<div class="status<?php echo ( $status === 'limited' || $status === 'available' ) ? ' positive' : ' negative'; ?>">
@@ -76,7 +69,7 @@
 		<div class="mtm">
 			<div class="gray_text"><strong>$200.99 on 2 year term</strong></div>
 			<div class="gray_text"><strong>$800.99 no term</strong></div>
-			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
+			<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>
 	</div>
 </div>

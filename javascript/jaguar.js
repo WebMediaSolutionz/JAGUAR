@@ -15,17 +15,20 @@ var JAG = {
 
 		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
 
-		// self
-		// 	.getPhones()
-		// 	.attachEvents()
-		// .setupPagination();
-
 		self
+			.showVariants()
 			.attachEvents()
 			.setupPagination()
 			.ellipsis()
 			.setupDueNow()
 			.setupInputMasks();
+
+		// self
+		// 	.attachEvents()
+		// 	.setupPagination()
+		// 	.ellipsis()
+		// 	.setupDueNow()
+		// 	.setupInputMasks();
 
 		return self;
 	},
@@ -954,6 +957,8 @@ var JAG = {
 	},
 
 	showVariants: function () {
+		var self = this;
+
 		$( '.device-color-button' ).click( function () {
 			var clicked = $( this ),
 				phoneId = clicked.attr( 'data-sku' ),
@@ -964,6 +969,8 @@ var JAG = {
 			allVariants.addClass( 'hide' );
 			matchingVariant.removeClass( 'hide' );
 		});
+
+		return self;
 	},
 
 	setupPagination: function () {
