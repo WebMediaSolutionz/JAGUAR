@@ -21,8 +21,8 @@
 			<label>Colour</label><br />
 			<div class='frg-select-container color-light'>
 				<select>
-					<option>Option</option>
-					<option>Option</option>
+					<option>Black</option>
+					<option>Green</option>
 				</select>
 			</div>
 		</div>

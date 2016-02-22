@@ -1,11 +1,13 @@
 .inner-container {
-	margin: 0 17px 0 9px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .inner-container,
 .modal-dialog {
 	/*max-width: 1200px;*/
 	min-width: 1000px;
+	width: 90%;
 }
 
 .modal-dialog {
