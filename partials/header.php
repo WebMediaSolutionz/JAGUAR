@@ -21,8 +21,8 @@
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/lib/html5shim.js"></script><![end if]-->
 	</head>
 	<body>
-		<link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=kt58-ah69-ht47-ye97" />
-		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=kt58-ah69-ht47-ye97"></script>
+		<link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
+		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=zh57-pk62-rn95-ny31"></script>
 		
 		<div class="header_bg white_bg">
 			<div class="outer-container header frg-drop-shadow">
