@@ -631,6 +631,19 @@ var JAG = {
 				self.validateSearchForm();
 			});
 
+		$( '.js-loading' ).click( function () {
+			var content = $( '.js-loaded-content' ),
+				spinner = $( '.js-loading-spinner' );
+
+			content.addClass( 'hide' );
+			spinner.removeClass( 'hide' );
+
+			setTimeout( function () {
+				content.removeClass( 'hide' );
+				spinner.addClass( 'hide' );
+			}, 5000);
+		});
+
 		// self.showFakeLinks();
 
 		return self;
