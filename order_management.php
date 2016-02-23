@@ -65,12 +65,13 @@
 				</td>
 				<td>
 					<label class="block">BAN</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='BAN' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
+					<div class='frg-select-container color-light'>
+						<select>
+							<option>Select</option>
+							<option>1051231215615</option>
+							<option>8512198423165</option>
+							<option>7441125898338</option>
+						</select>
 					</div>
 				</td>
 			</tr>
