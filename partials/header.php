@@ -100,8 +100,8 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'upgrade' ) ? 'current ': ''; ?>block" href="upgrade.php">
-									<strong>Upgrade</strong>
+								<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
+									<strong>Upgrades</strong>
 								</a>
 							</li>
 							<li class="left">
