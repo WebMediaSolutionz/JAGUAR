@@ -84,7 +84,7 @@
 					<input class='frg-input-field small' placeholder='Last Name' />
 				</td>
 				<td>
-					<label class="block">Phone Number</label>
+					<label class="block">Shipping Phone Number</label>
 					<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
 				</td>
 				<td>
