@@ -122,18 +122,6 @@
 					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
 				</td>
 				<td>
-					<label class="block">SKU</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='SKU' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
 					<label class="block">IMEI</label>
 					<div class="status clearfix positive">
 						<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
@@ -143,6 +131,8 @@
 						</div>
 					</div>
 				</td>
+			</tr>
+			<tr>
 				<td>
 					<label class="block">SIM Serial Number</label>
 					<div class="status clearfix positive">
@@ -153,6 +143,7 @@
 						</div>
 					</div>
 				</td>
+				<td></td>
 				<td></td>
 				<td>
 					<label class="block">&nbsp;</label>
