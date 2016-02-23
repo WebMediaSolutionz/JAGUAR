@@ -205,11 +205,6 @@
 						</div>
 					</th>
 					<th class="clearfix">
-						<div>
-							<a class="block js-sort gray_text left" href="#">Department</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="5" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
 						<span>Type</span>
 					</th>
 					<th class="clearfix">
@@ -246,9 +241,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -279,9 +271,6 @@
 					</td>
 					<td>
 						<span>Jan 15, 2016</span>
-					</td>
-					<td>
-						<span>Sales</span>
 					</td>
 					<td>
 						<span>Purchase</span>
@@ -316,9 +305,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -349,9 +335,6 @@
 					</td>
 					<td>
 						<span>Jan 15, 2016</span>
-					</td>
-					<td>
-						<span>Sales</span>
 					</td>
 					<td>
 						<span>Purchase</span>
