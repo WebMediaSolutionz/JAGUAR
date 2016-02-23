@@ -164,9 +164,9 @@
 			<div class="frg-select-container color-light left">
 				<select>
 					<option>Actions</option>
-					<option>Move to cart to edit</option>
+					<option>Edit</option>
 					<option>Copy order to cart</option>
-					<option>cancel order</option>
+					<option>Cancel order</option>
 				</select>
 			</div>
 		</div>
