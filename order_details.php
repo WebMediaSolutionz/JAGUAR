@@ -33,14 +33,16 @@
 	<div class="inner-container clearfix">
 		<table class="gray_text wide">
 			<thead class="gray_text">
-				<tr class="outline">
+				<tr class="wide outline">
 					<?php if ( $status === 'shipped' ) { ?>
 						<th>Select</th>
 					<?php } ?>
 					<th>Item</th>
 					<th>Quantity</th>
 					<th class="wide">Description</th>
-					<th>Estimated arrival</th>
+					<?php if ( $status !== 'shipped' ) { ?>
+						<th>Estimated arrival</th>
+					<?php } ?>
 					<th class="right_align">Due Monthly</th>
 					<th class="right_align">Due Now</th>
 				</tr>
@@ -69,17 +71,16 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr class="outline">
+				<tr class="wide outline">
 					<?php if ( $status === 'shipped' ) { ?>
 						<th>Select</th>
 					<?php } ?>
 					<th>Item</th>
-					<th>Accessory</th>
-					<th></th>
-					<th></th>
-					<th></th>
 					<th>Quantity</th>
-					<th>Estimated arrival</th>
+					<th class="description">Description</th>
+					<?php if ( $status !== 'shipped' ) { ?>
+						<th>Estimated arrival</th>
+					<?php } ?>
 					<th></th>
 					<th class="right_align">Due Now</th>
 				</tr>
@@ -102,26 +103,17 @@
 						<span>Order-1</span>
 					</td>
 					<td>
-						<a href="#">Beats ear buds</a>
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
 						<span>50</span>
 					</td>
-					<td>
-						<span class="status positive">5 days</span>
+					<td class="description">
+						<a href="#">iPhone Case</a>
 					</td>
-					<td>
-						
-					</td>
+					<?php if ( $status !== 'shipped' ) { ?>
+						<td>
+							<span class="status positive">5 days from approval date</span>
+						</td>
+					<?php } ?>
+					<td></td>
 					<td class="right_align amount_due">
 						<span>$25,500</span>
 					</td>
@@ -143,26 +135,17 @@
 						<span>Order-1</span>
 					</td>
 					<td>
-						<a href="#">Beats ear buds</a>
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
 						<span>50</span>
 					</td>
-					<td>
-						<span class="status positive">5 days</span>
+					<td class="description">
+						<a href="#">iPhone Case</a>
 					</td>
-					<td>
-						
-					</td>
+					<?php if ( $status !== 'shipped' ) { ?>
+						<td>
+							<span class="status positive">5 days from approval date</span>
+						</td>
+					<?php } ?>
+					<td></td>
 					<td class="right_align amount_due">
 						<span>$25,500</span>
 					</td>
@@ -184,26 +167,17 @@
 						<span>Order-1</span>
 					</td>
 					<td>
-						<a href="#">Beats ear buds</a>
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
-						
-					</td>
-					<td>
 						<span>50</span>
 					</td>
-					<td>
-						<span class="status positive">5 days</span>
+					<td class="description">
+						<a href="#">iPhone Case</a>
 					</td>
-					<td>
-						
-					</td>
+					<?php if ( $status !== 'shipped' ) { ?>
+						<td>
+							<span class="status positive">5 days from approval date</span>
+						</td>
+					<?php } ?>
+					<td></td>
 					<td class="right_align amount_due">
 						<span>$25,500</span>
 					</td>

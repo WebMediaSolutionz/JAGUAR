@@ -27,9 +27,11 @@
 
 		<a class="js-show_list" href="#">View List</a>
 	</td>
-	<td>
-		<span class="status positive">5 days from approval date</span>
-	</td>
+	<?php if ( $status !== 'shipped' ) { ?>
+		<td>
+			<span class="status positive">5 days from approval date</span>
+		</td>
+	<?php } ?>
 	<td class="right_align amount_due">
 		<span>$5,500.00</span>
 	</td>
