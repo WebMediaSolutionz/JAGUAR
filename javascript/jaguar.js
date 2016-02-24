@@ -644,6 +644,42 @@ var JAG = {
 			}, 5000);
 		});
 
+		$( '.subscriber_upgrades input[type=checkbox]' ).click( function () {
+			var action_buttons = $( '.operations .frg-button' ),
+				checkboxes = $( 'input[type=checkbox]' ),
+				enable = false;
+
+			checkboxes.each( function () {
+				var checkbox = $( this );
+
+				if ( checkbox.is( ':checked' ) ) {
+					enable = true;
+				}
+			});
+
+			if ( enable ) {
+				action_buttons.removeClass( 'state-disabled' );
+			} else {
+				action_buttons.addClass( 'state-disabled' );
+			}
+		});
+
+		// TODO: add select / deselect all functionality
+		// $( '.js-check-all' ).click( function () {
+		// 	var clicked = $( this ),
+		// 		checkboxes = $( '.frg-checkbox' );
+
+		// 	if ( clicked.is( ':checked' ) ) {
+		// 		checkboxes
+		// 			.find( '.frg-icon' )
+		// 			.addClass( 'icon-checkmark' );
+		// 	} else {
+		// 		checkboxes
+		// 			.find( '.frg-icon' )
+		// 			.removeClass( 'icon-checkmark' );
+		// 	}
+		// });
+
 		// self.showFakeLinks();
 
 		return self;

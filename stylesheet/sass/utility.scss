@@ -231,6 +231,10 @@ ul {
 
 .vertical_gap_top {
 	margin-top: 20px;
+
+	&.small_gap {
+		margin-top: 8px;
+	}
 }
 
 .no_horizontal_padding {
@@ -601,4 +605,8 @@ table {
 
 .icon-warning-inverted {
 	color: #f5a623 !important;
+}
+
+.bit_lower {
+	margin-top: 5px !important;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-currentpage="<?php echo $page; ?>">
+<html class="<?php echo $page; ?>" lang="en" data-currentpage="<?php echo $page; ?>">
 	<head>
 		<title>TELUS</title>
 

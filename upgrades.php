@@ -49,7 +49,7 @@ After you add your first subscriber you will be able to add additional
 subscribers on the next page.
 		</p>
 
-		<div class="clearfix ">
+		<div class="clearfix">
 			<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />
 			<a href='#' class='frg-button color-purple left gap_left_small side_padding'>Add</a>
 		</div>

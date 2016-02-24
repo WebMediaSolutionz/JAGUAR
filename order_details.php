@@ -29,9 +29,9 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg order_summary">
+<div class="outer-container content white_bg order_details">
 	<div class="inner-container clearfix">
-		<table class="gray_text wide">
+		<table class="gray_text wide datagrid">
 			<thead class="gray_text">
 				<tr class="wide outline">
 					<?php if ( $status === 'shipped' ) { ?>
@@ -67,9 +67,9 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg order_summary">
+<div class="outer-container content white_bg order_details">
 	<div class="inner-container clearfix">
-		<table class="wide">
+		<table class="wide datagrid">
 			<thead class="gray_text">
 				<tr class="wide outline">
 					<?php if ( $status === 'shipped' ) { ?>
@@ -187,7 +187,7 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg order_summary small">
+<div class="outer-container content white_bg order_details small">
 	<div class="inner-container clearfix">
 		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
@@ -213,7 +213,7 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg order_summary small">
+<div class="outer-container content white_bg order_details small">
 	<div class="inner-container clearfix">
 		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
