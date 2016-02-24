@@ -664,6 +664,17 @@ var JAG = {
 			}
 		});
 
+		$( '.js-phone_input_mask' ).keyup( function () {
+			var clicked = $( this ),
+				buttons = $( '.js-validated_options' );
+
+			if ( $( this ).val().indexOf( '_' ) === -1 ) {
+				buttons.removeClass( 'state-disabled' );
+			} else {
+				buttons.addClass( 'state-disabled' );
+			}
+		});
+
 		// TODO: add select / deselect all functionality
 		// $( '.js-check-all' ).click( function () {
 		// 	var clicked = $( this ),
