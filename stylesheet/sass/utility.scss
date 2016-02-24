@@ -86,6 +86,10 @@
 	border-bottom: thin solid $dark_gray;
 	padding-top: 20px;
 	margin-bottom: 15px;
+
+	&.light_gray {
+		border-bottom: thin solid $very_light_gray;
+	}
 }
 
 .separation {
@@ -96,10 +100,18 @@
 	border-top: thin solid $dark_gray;
 	margin-top: 15px;
 	padding-top: 15px !important;
+
+	&.light_gray {
+		border-top: thin solid $very_light_gray;
+	}
 }
 
 .bottom_horizontal_separator {
 	border-bottom: thin solid $dark_gray;
+
+	&.light_gray {
+		border-bottom: thin solid $very_light_gray;
+	}
 }
 
 .hide {
@@ -585,4 +597,8 @@ table {
 
 .super_dark_gray_text {
 	color: $super_dar_gray;
+}
+
+.icon-warning-inverted {
+	color: #f5a623 !important;
 }

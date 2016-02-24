@@ -1,4 +1,16 @@
-<tr class="wide">
+<tr class="wide outline">
+	<?php if ( $status === 'shipped' ) { ?>
+		<td>
+			<div class="frg-checkbox regular small">
+				<div class="inner">
+					<input id="chkbox-option-<?php echo $i; ?>" type="checkbox" name="option-<?php echo $i; ?>" value="Option <?php echo $i; ?>">
+					<div class="icon">
+						<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+		</td>
+	<?php } ?>
 	<td>
 		<span>Group-1</span>
 	</td>

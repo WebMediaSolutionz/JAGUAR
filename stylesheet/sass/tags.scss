@@ -92,10 +92,21 @@ input[type=text] {
 	border: thin solid $gray;
 }
 
-table.outline {
+table {
+	&.outline {
+		tr {
+			td {
+				border: thin solid red;
+			}
+		}
+	}
+
 	tr {
-		td {
-			border: thin solid red;
+		&.outline {
+			td,
+			th {
+				border-bottom : thin solid #f4f5f6;
+			}
 		}
 	}
 }

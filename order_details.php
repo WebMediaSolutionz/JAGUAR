@@ -3,9 +3,10 @@
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
-		<div class="left gray_text">
-			<div class="h3">Order #12345678 Summary</div>
-			<h4 class="no_padding">Pending approval (<span class="small"><a href="#">james H.</a> approval required</span>)</h4>
+		<div class="left">
+			<p class="h3">Order Summary: #12345678</p>
+
+			<h4 class="no_padding gray_text">Status: <span class="frg-icon <?php echo ( $status === 'pending_approval' ) ? 'icon-warning-inverted' : 'icon-checkmark-inverted'; ?>"></span> <?php echo ( $status === 'pending_approval' ) ? 'Pending approval' : 'Shipped'; ?></h4>
 		</div>
 	</div>
 </div>
@@ -15,8 +16,8 @@
 		<div class="left gray_text">
 			<h4 class="no_padding">Devices and Plans</h4>
 		</div>
-		<div class="right">
-			<div class='frg-select-container color-light'>
+		<?php if ( $status === 'shipped' ) { ?>
+			<div class="frg-select-container right color-light">
 				<select>
 					<option>Action</option>
 					<option>Select all</option>
@@ -24,7 +25,7 @@
 					<option>Deselect all</option>
 				</select>
 			</div>
-		</div>
+		<?php } ?>
 	</div>
 </div>
 
@@ -32,7 +33,10 @@
 	<div class="inner-container clearfix">
 		<table class="gray_text wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
+					<?php if ( $status === 'shipped' ) { ?>
+						<th>Select</th>
+					<?php } ?>
 					<th>Item</th>
 					<th>Quantity</th>
 					<th class="wide">Description</th>
@@ -54,10 +58,6 @@
 </div>
 
 <div class="outer-container secondary_bg white_bg">
-	<div class="inner-container horizontal_separator dark_gray"></div>
-</div>
-
-<div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<div class="left gray_text">
 			<h4 class="no_padding">Accessories</h4>
@@ -69,8 +69,10 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
-					<th>Select</th>
+				<tr class="outline">
+					<?php if ( $status === 'shipped' ) { ?>
+						<th>Select</th>
+					<?php } ?>
 					<th>Item</th>
 					<th>Accessory</th>
 					<th></th>
@@ -83,17 +85,19 @@
 				</tr>
 			</thead>
 			<tbody class="small">
-				<tr class="wide">
-					<td>
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+				<tr class="wide outline">
+					<?php if ( $status === 'shipped' ) { ?>
+						<td>
+							<div class="frg-checkbox regular small">
+								<div class="inner">
+									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+									<div class="icon">
+										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</td>
+						</td>
+					<?php } ?>
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -122,17 +126,19 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr class="wide">
-					<td>
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+				<tr class="wide outline">
+					<?php if ( $status === 'shipped' ) { ?>
+						<td>
+							<div class="frg-checkbox regular small">
+								<div class="inner">
+									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+									<div class="icon">
+										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</td>
+						</td>
+					<?php } ?>
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -161,17 +167,19 @@
 						<span>$25,500</span>
 					</td>
 				</tr>
-				<tr class="wide">
-					<td>
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+				<tr class="wide outline">
+					<?php if ( $status === 'shipped' ) { ?>
+						<td>
+							<div class="frg-checkbox regular small">
+								<div class="inner">
+									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+									<div class="icon">
+										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</td>
+						</td>
+					<?php } ?>
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -207,7 +215,7 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
@@ -233,7 +241,7 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align total">
 					<tr>
@@ -249,11 +257,11 @@
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
-		<div class="col-xs-offset-7 col-xs-2 right_align">
-			<a class="previous block" href="#">Previous step</a>
+		<div class="col-xs-offset-6 col-xs-3 right_align">
+			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
 		</div>
-		<div class="col-xs-3 right_align">
-			<a class="frg-button color-green full_lenght" href="#">Continue</a>
+		<div class="col-xs-3 no_padding right_align">
+			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
 		</div>
 	</div>
 </div>
