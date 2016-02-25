@@ -9,6 +9,18 @@
 
 <div class="outer-container secondary_bg separation white_bg">
 	<div class="inner-container clearfix">
+		<div class='frg-select-container color-light vertical_gap clearfix'>
+			<select class="js-sort-by">
+				<option>Select</option>
+				<option value="device">iPhone</option>
+				<option value="device">Blackberry</option>
+				<option value="brand">Samsung</option>
+				<option value="brand">NOKIA</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="inner-container clearfix">
 		<?php if ( !$home_page1 ) { ?>
 			<nav class="left">
 				<ul class="no_styles">
