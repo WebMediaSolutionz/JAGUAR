@@ -46,11 +46,16 @@
 
 					<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
 
-					<div class="btn_group">
-						<a class="btn no_horizontal_padding smaller current" href="#">Voice &amp; Data</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Voice &amp; Data Lite</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Voice Only</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Data Only</a>
+					<div class="vertical_gap small_gap">
+						<div class='frg-select-container color-light'>
+							<select class="js-sort-by">
+								<option>Select</option>
+								<option value="device">Voice &amp; data ($50/subscriber/month)</option>
+								<option value="device">Voice &amp; Data Lite</option>
+								<option value="brand">Voice Only ($45/subscriber/month)</option>
+								<option value="brand">Data Only ($40/subscriber/month)</option>
+							</select>
+						</div>
 					</div>
 
 					<span>Minimum Monthly Service Commitment: $20/subscriber</span>
