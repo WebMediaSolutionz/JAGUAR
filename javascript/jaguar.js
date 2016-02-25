@@ -644,7 +644,7 @@ var JAG = {
 			}, 5000);
 		});
 
-		$( '.subscriber_upgrades input[type=checkbox]' ).click( function () {
+		$( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
 			var action_buttons = $( '.operations .frg-button' ),
 				checkboxes = $( 'input[type=checkbox]' ),
 				enable = false;
