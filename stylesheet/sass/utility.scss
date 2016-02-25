@@ -328,11 +328,20 @@ a.underline {
 	padding: 20px;
 
 	&.error {
-		background-color: red;
+		background-color: #fde9ed;
+		color: $super_dark_gray;
+
+		.icon-warning-inverted {
+			color: #d0021b !important;
+		}
 	}
 
 	&.warning {
 		background-color: $purple3;
+
+		.icon-warning-inverted {
+			color: #f5a623 !important;
+		}
 	}
 
 	&.confirmation {
@@ -341,10 +350,10 @@ a.underline {
 
 	.close {
 		font-size: 21px;
-		color: #49166D;
+		color: $super_dark_gray;
 
 		.frg-icon {
-			color: #49166D;
+			color: $super_dark_gray;
 		}
 	}
 
@@ -363,12 +372,12 @@ a.underline {
 		.h4,
 		.h5,
 		.h6 {
-			color: $dark_gray !important;
+			color: $super_dark_gray !important;
 		}
 
 		.text {
 			width: 90%;
-			color: $dark_gray;
+			color: $super_dark_gray;
 		}
 	}
 }
@@ -604,11 +613,7 @@ table {
 }
 
 .super_dark_gray_text {
-	color: $super_dar_gray;
-}
-
-.icon-warning-inverted {
-	color: #f5a623 !important;
+	color: $super_dark_gray;
 }
 
 .bit_lower {

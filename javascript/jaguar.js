@@ -881,13 +881,16 @@ var JAG = {
 	},
 
 	displayErrorMessage: function ( type, title, text ) {
-		var error_container = $( '.error_message_container' );
+		var error_container = $( '.error_message_container' ),
+			icon = null;
 
 		switch ( type ) {
-			case 'warning' : 	type = 'icon-warning-inverted';
+			case 'error' 	:
+			case 'warning' 	: 	icon = 'icon-warning-inverted';
+								break;
 		}
 
-		error_container.append( '<div class="error_message warning clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + type + ' left"></div><div class="text left"><div class="h3 title">' + title + '</div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
 
 		$( '.error_message .close' ).click( function () {
 			$( this ).closest( '.error_message' ).fadeOut();

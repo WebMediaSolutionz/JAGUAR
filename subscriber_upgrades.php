@@ -9,6 +9,8 @@
 	</div>
 </div>
 
+<?php include( 'partials/error_message_mockup.php' ); ?>
+
 <div class="outer-container content purple_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
 		<div class="col-xs-offset-7 col-xs-1 right_align">
