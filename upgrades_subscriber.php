@@ -13,15 +13,12 @@
 
 <div class="outer-container content purple_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
-		<div class="col-xs-offset-7 col-xs-1 right_align">
-			<div class="vertical_gap_top small_gap">
-				<strong class="bold">Actions:</strong>
-			</div>	
-		</div>
-
-		<div class="col-xs-4 no_padding operations">
+		<div class="col-xs-offset-7 col-xs-5 no_padding operations">
 			<a href='#' class='frg-button color-purple right state-disabled'>Remove</a>
 			<a href='#' class='frg-button color-purple right gap_right state-disabled'>Add device &amp; plan</a>
+			<div class="vertical_gap_top small_gap right gap_right">
+				<strong class="bold">Actions:</strong>
+			</div>
 		</div>
 	</div>
 </div>
