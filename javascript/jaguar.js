@@ -693,7 +693,33 @@ var JAG = {
 
 		// self.showFakeLinks();
 
+		$( '.js-required' ).keyup( function () {
+			self.checkRequiredField();
+		}).change( function () {
+			self.checkRequiredField();
+		});
+
 		return self;
+	},
+
+	checkRequiredField: function () {
+		var fields = $( '.js-required' ),
+			button = $( '.js-submit' ),
+			valid = true;
+
+		fields.each( function () {
+			console.info( $( this ).val().toLowerCase() !== 'select' );
+
+			if ( $( this ).val() === '' || $( this ).val().toLowerCase() === 'select' || $( this ).val().indexOf( '_' ) !== -1 ) {
+				valid = false;
+			}
+		});
+
+		if ( !valid ) {
+			button.addClass( 'state-disabled' );
+		} else {
+			button.removeClass( 'state-disabled' );
+		}
 	},
 
 	validateSearchForm: function () {
