@@ -1,5 +1,5 @@
-<?php include_once( 'config.php' ); ?>
-<?php include_once( 'partials/header.php' ); ?>
+<?php include_once( '../config.php' ); ?>
+<?php include_once( '../partials/header.php' ); ?>
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container padding_bottom clearfix">
@@ -321,20 +321,17 @@
 
 		<div class="clearfix">
 			<div class="purple_bg left add_subscriber">
-				<p class="h3">Add another subscriber that is on TELUS account #898927383:</p>
+				<p class="h3">Add another subscriber to upgrade:</p>
 
 				<div class="clearfix">
 					<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />
 					<a href='#' class='frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled'>Add</a>
-				</div>
-				<div class="vertical_gap_top small_gap">
-					<span class="gray_text small">To upgrade subscribers on other TELUS accounts you need to repeat this process again</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<?php include( 'partials/checkout_sticky.php' ); ?>
+<?php include( '../partials/checkout_sticky.php' ); ?>
 
-<?php include( 'partials/footer.php' ); ?>
+<?php include( '../partials/footer.php' ); ?>
