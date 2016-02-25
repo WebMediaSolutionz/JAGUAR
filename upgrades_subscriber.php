@@ -73,7 +73,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -81,7 +81,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -101,7 +101,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -109,7 +109,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -129,7 +129,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -137,96 +137,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td colspan="7">
-						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
-					</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="right_align side_padding">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select>
-								<option>Select</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="right_align side_padding">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select>
-								<option>Select</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="right_align side_padding">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select>
-								<option>Select</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-								<option>Technology refresh ($50.00)</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -251,7 +162,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -259,7 +170,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -279,7 +190,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -287,7 +198,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -307,7 +218,7 @@
 					<td class="right_align side_padding">$0.00</td>
 					<td>
 						<div class='frg-select-container color-light'>
-							<select>
+							<select class="js-upgrade-offer">
 								<option>Select</option>
 								<option>Technology refresh ($50.00)</option>
 								<option>Technology refresh ($50.00)</option>
@@ -315,7 +226,96 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span>Pending device &amp; plan</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
+					<td class="right_align top_bottom_small_padding">-</td>
+				</tr>
+				<tr>
+					<td colspan="7">
+						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="top_bottom_small_padding">
+						<div class="frg-checkbox regular small">
+							<div class="inner">
+								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+								<div class="icon bit_lower">
+									<span aria-hidden="true" class="frg-icon"></span>
+								</div>
+								<label for="chkbox-option-2"></label>
+							</div>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding">555-555-5555</td>
+					<td class="top_bottom_small_padding">John Doe</td>
+					<td class="right_align side_padding">$0.00</td>
+					<td>
+						<div class='frg-select-container color-light'>
+							<select class="js-upgrade-offer">
+								<option>Select</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+							</select>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Complete</span></td>
+					<td class="right_align top_bottom_small_padding">-</td>
+				</tr>
+				<tr>
+					<td class="top_bottom_small_padding">
+						<div class="frg-checkbox regular small">
+							<div class="inner">
+								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+								<div class="icon bit_lower">
+									<span aria-hidden="true" class="frg-icon"></span>
+								</div>
+								<label for="chkbox-option-2"></label>
+							</div>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding">555-555-5555</td>
+					<td class="top_bottom_small_padding">John Doe</td>
+					<td class="right_align side_padding">$0.00</td>
+					<td>
+						<div class='frg-select-container color-light'>
+							<select class="js-upgrade-offer">
+								<option>Select</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+							</select>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Complete</span></td>
+					<td class="right_align top_bottom_small_padding">-</td>
+				</tr>
+				<tr>
+					<td class="top_bottom_small_padding">
+						<div class="frg-checkbox regular small">
+							<div class="inner">
+								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+								<div class="icon bit_lower">
+									<span aria-hidden="true" class="frg-icon"></span>
+								</div>
+								<label for="chkbox-option-2"></label>
+							</div>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding">555-555-5555</td>
+					<td class="top_bottom_small_padding">John Doe</td>
+					<td class="right_align side_padding">$0.00</td>
+					<td>
+						<div class='frg-select-container color-light'>
+							<select class="js-upgrade-offer">
+								<option>Select</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+								<option>Technology refresh ($50.00)</option>
+							</select>
+						</div>
+					</td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 			</tbody>

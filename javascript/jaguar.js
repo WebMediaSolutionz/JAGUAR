@@ -699,6 +699,21 @@ var JAG = {
 			self.checkRequiredField();
 		});
 
+		$( '.js-upgrade-offer' ).change( function () {
+			var dropdown = $( this ),
+				status = dropdown.closest( 'tr' ).find( '.status' );
+
+			if ( dropdown.val().toLowerCase() !== 'select' ) {
+				if ( status.text().toLowerCase() !== 'complete' ) {
+					status.text( 'Pending device & plan' );
+				}
+			} else {
+				if ( status.text().toLowerCase() !== 'complete' ) {
+					status.text( 'Pending upgrade offer' );
+				}
+			}
+		});
+
 		return self;
 	},
 
