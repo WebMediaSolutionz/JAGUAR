@@ -31,7 +31,7 @@
 			</div>
 		</div>
 	</div>
-<?php } else if ( $page === 'subscriber_upgrades' ) { ?>
+<?php } else if ( $page === 'upgrades_subscriber' ) { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-4 no_padding">
@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-sm-offset-3 col-sm-3 amounts bold clearfix">
 				<div class="right">
-					<p>Due Now</p>
+					<p>Due</p>
 					<p class="h4">$0.00</p>
 				</div>
 				<div class="right gap_right">

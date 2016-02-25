@@ -180,4 +180,6 @@
 	</div>
 </div>
 
+<?php include( 'partials/checkout_sticky.php' ); ?>
+
 <?php include( 'partials/footer.php' ); ?>

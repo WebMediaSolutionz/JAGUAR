@@ -80,10 +80,15 @@
 			<h3 class="js-applied_filter">All</h3>
 			<div>
 				<h3 class="no_padding"><span class="left gap_right_small smaller">Select your service category: </span></h3>
-				<div class="btn_group left">
-					<a class="current btn js-filter js-default" data-filter="voice_data" href="#">Voice &amp; Data</a> 
-					<a class="btn js-filter" data-filter="voice_only" href="#">Voice Only</a> 
-					<a class="btn js-filter" data-filter="data_only" href="#">Data Only</a>
+				<div class="left">
+					<div class='right frg-select-container color-light'>
+						<select class="js-sort-by">
+							<option>Select</option>
+							<option value="device">Voice &amp; data ($50/subscriber/month)</option>
+							<option value="brand">Voice Only ($45/subscriber/month)</option>
+							<option value="brand">Data Only ($40/subscriber/month)</option>
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
