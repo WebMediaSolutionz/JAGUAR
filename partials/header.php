@@ -126,9 +126,3 @@
 				<?php } ?>
 			</div>
 		</div>
-
-		<?php 
-			if ( $page !== 'accessories2' && $page !== 'addons' && $page !== 'confirm_shipping' && $page !== 'confirmation' && $page !== 'confirmation2' && $page !== 'order_summary' && $page !== 'payment_options' && $page !== 'plans2' && $page !== 'subscriber' ) {
-				// include( 'partials/error_message.php' ); 
-			}
-		?>
