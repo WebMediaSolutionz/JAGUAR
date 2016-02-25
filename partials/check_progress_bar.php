@@ -31,5 +31,3 @@
 		</div>
 	</div>
 </div>
-
-<?php include( 'partials/error_message.php' ); ?>

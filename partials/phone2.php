@@ -32,7 +32,7 @@
 
 <div class="box phone object clearfix left" data-filter="<?php echo $filter; ?> voice_only">
 	<div class="image left">
-		<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
+		<a href="<?php echo ( $status !== 'back order' ) ? 'device2.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
 			<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
 			<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
 		</a>
@@ -50,7 +50,7 @@
 		<div class="name">
 			<div>
 				<h6>
-					<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
+					<a href="<?php echo ( $status !== 'back order' ) ? 'device2.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
 						<strong data-maxlen="40" class="js-ellipsis">Samsung Galaxy S6 32GB </strong>
 					</a>
 				</h6>
@@ -69,7 +69,7 @@
 		<div class="mtm">
 			<div class="gray_text"><strong>$50.00 on technology refresh</strong></div>
 			<div class="gray_text"><strong>$75.00 on allotment</strong></div>
-			<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
+			<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device2.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>
 	</div>
 </div>
