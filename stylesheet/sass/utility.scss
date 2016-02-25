@@ -227,6 +227,10 @@ ul {
 
 .vertical_gap {
 	margin-bottom: 20px;
+
+	&.small_gap {
+		margin-bottom: 8px;
+	}
 }
 
 .vertical_gap_top {

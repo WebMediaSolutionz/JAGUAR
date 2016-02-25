@@ -4,9 +4,24 @@
 	margin-top: 35px;
 }
 
-.frg-select-container select {
-	height: 30px;
-	padding: 0 5px 0 10px;
+.frg-select-container {
+	select {
+		height: 30px;
+		padding: 0 5px 0 10px;
+	}
+
+	&.style2 {
+		width: 388px;
+		
+		&::after {
+			top: -35px;
+			color: $purple2 !important;
+		}
+
+		select {
+			height: 42px !important;
+		}
+	}
 }
 
 .frg-icon {
