@@ -56,7 +56,7 @@
 
 		<div class="clearfix vertical_gap_top small_gap">
 			<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />
-			<a href='#' class='frg-button color-purple left gap_left_small side_padding'>Add</a>
+			<a href='#' class='frg-button color-purple left gap_left_small side_padding state-disabled'>Add</a>
 		</div>
 	</div>
 </div>

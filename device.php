@@ -59,8 +59,8 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option1" type="radio" name="option" value="Option 1">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option1" type="radio" name="option" value="Option 1">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option1">
 								<strong>
 									<span class="value" data-value="200">$200</span> Starting at $70 per month on a 3-year plan
@@ -71,8 +71,8 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option2" type="radio" name="option" value="Option 2">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option2" type="radio" name="option" value="Option 2">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option2">
 								<strong>
 									<span class="value" data-value="995">$995</span> Month to month
@@ -83,8 +83,8 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option3" type="radio" name="option" value="Option 3">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option3" type="radio" name="option" value="Option 3">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option3">
 								<strong>
 									<span class="value" data-value="995">$995</span> Device only (no plan)
