@@ -1,5 +1,6 @@
 <?php
 	$banner = ( isset( $_GET[ 'banner' ] ) ) ? $_GET[ 'banner' ] : 'banner1'; 
+	$status = ( isset( $_GET[ 'status' ] ) ) ? $_GET[ 'status' ] : 'pending_approval'; 
 	$next = null;
 	$home_page1 = $home_page2 = $home_page3 = false;
 
@@ -66,5 +67,6 @@
 	}
 
 	define( 'DOMAIN', 'http://publishedactiveint-qa1.tmi.telus.com/tm_pep/' );
+	define( 'NBR_DEVICES', 50 );
 	$folder = "WCM_EOF/static_content/jaguar/";
 ?>

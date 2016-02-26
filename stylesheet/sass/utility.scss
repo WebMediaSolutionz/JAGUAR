@@ -1,6 +1,6 @@
 .inner-container {
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .inner-container,
@@ -8,7 +8,20 @@
 	/*max-width: 1200px;*/
 	min-width: 1000px;
 	width: 90%;
+}
+
+.modal-dialog {
 	padding: 0 10px;
+}
+
+.side_padding {
+	padding-left: 45px;
+	padding-right: 45px;
+
+	&.frg-input-field {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
 }
 
 .left {
@@ -73,6 +86,10 @@
 	border-bottom: thin solid $dark_gray;
 	padding-top: 20px;
 	margin-bottom: 15px;
+
+	&.light_gray {
+		border-bottom: thin solid $very_light_gray;
+	}
 }
 
 .separation {
@@ -83,10 +100,18 @@
 	border-top: thin solid $dark_gray;
 	margin-top: 15px;
 	padding-top: 15px !important;
+
+	&.light_gray {
+		border-top: thin solid $very_light_gray;
+	}
 }
 
 .bottom_horizontal_separator {
 	border-bottom: thin solid $dark_gray;
+
+	&.light_gray {
+		border-bottom: thin solid $very_light_gray;
+	}
 }
 
 .hide {
@@ -116,6 +141,10 @@ div.h6 {
 		font-size: 34px;
 		vertical-align: middle;
 	}
+
+	&.gray_text {
+		color: $dark_gray !important;
+	}
 }
 
 p.h1,
@@ -131,6 +160,11 @@ div.h2 {
 p.h3,
 div.h3 {
 	font-size: 22px !important;
+
+	.title {
+		margin-left: 5px;
+		line-height: 35px;
+	}
 }
 
 p.h4,
@@ -193,10 +227,18 @@ ul {
 
 .vertical_gap {
 	margin-bottom: 20px;
+
+	&.small_gap {
+		margin-bottom: 8px;
+	}
 }
 
 .vertical_gap_top {
-	margin-top: 20px;
+	margin-top: 20px !important;
+
+	&.small_gap {
+		margin-top: 8px !important;
+	}
 }
 
 .no_horizontal_padding {
@@ -286,11 +328,20 @@ a.underline {
 	padding: 20px;
 
 	&.error {
-		background-color: red;
+		background-color: #fde9ed;
+		color: $super_dark_gray;
+
+		.icon-warning-inverted {
+			color: #d0021b !important;
+		}
 	}
 
 	&.warning {
 		background-color: $purple3;
+
+		.icon-warning-inverted {
+			color: #f5a623 !important;
+		}
 	}
 
 	&.confirmation {
@@ -299,10 +350,10 @@ a.underline {
 
 	.close {
 		font-size: 21px;
-		color: #49166D;
+		color: $super_dark_gray;
 
 		.frg-icon {
-			color: #49166D;
+			color: $super_dark_gray;
 		}
 	}
 
@@ -321,12 +372,12 @@ a.underline {
 		.h4,
 		.h5,
 		.h6 {
-			color: $dark_gray !important;
+			color: $super_dark_gray !important;
 		}
 
 		.text {
 			width: 90%;
-			color: $dark_gray;
+			color: $super_dark_gray;
 		}
 	}
 }
@@ -488,7 +539,7 @@ a.underline {
 
 .circle {
 	border-radius: 30px;
-	padding: 10px 18px;
+	padding: 10px 18px !important;
 	font-size: 26px;
 }
 
@@ -534,4 +585,45 @@ table {
 
 .cursor_pointer {
 	cursor: auto;
+}
+
+.vl_gray {
+	border-bottom: thin solid $very_light_gray;
+}
+
+.frg-icon {
+	&.small {
+		font-size: 15px;
+	}
+
+	&.white_text {
+		color: #FFF;
+	}
+}
+
+.icon-upgrades {
+	width: 35px;
+	height: 35px;
+	background: transparent url( '../../images/upgrades.png' ) no-repeat;
+}
+
+.green_bg {
+	background-color: $green;
+	color: #FFF;
+}
+
+.super_dark_gray_text {
+	color: $super_dark_gray;
+}
+
+.bit_lower {
+	margin-top: 5px !important;
+}
+
+.full_width {
+	width: 100% !important;
+}
+
+.half_width {
+	width: 45% !important;
 }

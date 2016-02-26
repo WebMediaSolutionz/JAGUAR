@@ -31,20 +31,31 @@
 									</select>
 								</div>
 							</td>
-							<td>
-								<input class='frg-input-field back-order' />
-								<span class="frg-icon icon-info back-order"></span>
+							<td class="vertical_align_top">
+								<div class="status positive clearfix">
+									<input class='frg-input-field js-quantity back-order left' value='1' />
+									<div class="frg-icon icon-info back-order left"></div>
+									<div class="tooltip_bubble">
+										<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+									</div>
+									<input type="hidden" class="js-max_quantity" name="max_quantity" value="100" />
+								</div>
 							</td>
 						</tr>
 					</table>
 
 					<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
 
-					<div class="btn_group">
-						<a class="btn no_horizontal_padding smaller current" href="#">Voice &amp; Data</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Voice &amp; Data Lite</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Voice Only</a>
-						<a class="btn no_horizontal_padding smaller" href="#">Data Only</a>
+					<div class="vertical_gap small_gap">
+						<div class='frg-select-container color-light'>
+							<select class="js-sort-by">
+								<option>Select</option>
+								<option value="device">Voice &amp; data ($50/subscriber/month)</option>
+								<option value="device">Voice &amp; Data Lite</option>
+								<option value="brand">Voice Only ($45/subscriber/month)</option>
+								<option value="brand">Data Only ($40/subscriber/month)</option>
+							</select>
+						</div>
 					</div>
 
 					<span>Minimum Monthly Service Commitment: $20/subscriber</span>
@@ -53,11 +64,11 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option1" type="radio" name="option" value="Option 1">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option1" type="radio" name="option" value="Option 1">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option1">
 								<strong>
-									<span class="value">$200</span> Starting at $70 per month on a 3-year plan
+									<span class="value" data-value="200">$200</span> Starting at $70 per month on a 3-year plan
 								</strong>
 							</label>
 						</div>
@@ -65,11 +76,11 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option2" type="radio" name="option" value="Option 2">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option2" type="radio" name="option" value="Option 2">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option2">
 								<strong>
-									<span class="value">$995</span> Month to month
+									<span class="value" data-value="995">$995</span> Month to month
 								</strong>
 							</label>
 						</div>
@@ -77,11 +88,11 @@
 
 					<div class="frg-checkbox regular">
 						<div class="inner">
-							<input id="radio-option3" type="radio" name="option" value="Option 3">
-							<div class="icon"></div>
+							<input class="vertical_gap_top small_gap" id="radio-option3" type="radio" name="option" value="Option 3">
+							<div class="icon vertical_gap_top small_gap"></div>
 							<label for="radio-option3">
 								<strong>
-									<span class="value">$995</span> Device only (no plan)
+									<span class="value" data-value="995">$995</span> Device only (no plan)
 								</strong>
 							</label>
 						</div>
@@ -106,8 +117,10 @@
 							<td>
 								<div class='frg-select-container color-light'>
 									<select>
-										<option>Yes</option>
-										<option>Yes</option>
+										<option>Default: Select</option>
+										<option>[Account Number] - $[50]/subscriber</option>
+										<option>[Account Number] - $[60]/subscriber</option>
+										<option>Do not enroll</option>
 									</select>
 								</div>
 							</td>
@@ -120,7 +133,7 @@
 					<table class="table2 right">
 						<tr>
 							<td><span>Due now</span></td>
-							<td><span class="total">$500</span></td>
+							<td><span class="total">$0</span></td>
 						</tr>
 					</table>
 					<a href='<?php echo $next_step; ?>' class='frg-button color-green'>Add to cart</a>

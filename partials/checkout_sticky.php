@@ -31,6 +31,31 @@
 			</div>
 		</div>
 	</div>
+<?php } else if ( $page === 'upgrades_subscriber' ) { ?>
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+		<div class="inner-container clearfix">
+			<div class="col-sm-4 no_padding">
+				<div class="left bold clearfix">
+					<div class="left circle gap_right_small green_bg">17</div>
+					<div class="left gap_right_small">
+						<p>Allotment<br />balance</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-offset-3 col-sm-3 amounts bold clearfix">
+				<div class="right">
+					<p>Due</p>
+					<p class="h4">$0.00</p>
+				</div>
+				<div class="right gap_right">
+					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+				</div>
+			</div>
+			<div class="col-xs-2 col-sm-2 no_padding right_align">
+				<a class="frg-button color-green full_lenght state-disabled" href="<?php echo $next_step; ?>">Save &amp; continue</a>
+			</div>
+		</div>
+	</div>
 <?php } else if ( $page === 'confirm_shipping' || $page === 'order_summary' ) { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
@@ -40,7 +65,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
+				<a class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
 			</div>
 		</div>
 	</div>
@@ -63,11 +88,11 @@
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">
 					<p>Due Now</p>
-					<p class="h4 now">$25,500</p>
+					<p class="h4 now">$25,500.00</p>
 				</div>
 				<div class="right gap_right">
 					<p>Due Monthly</p>
-					<p class="h4 monthly">$0</p>
+					<p class="h4 monthly">$0.00</p>
 				</div>
 				<div class="right gap_right">
 					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>

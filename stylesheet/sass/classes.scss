@@ -4,9 +4,24 @@
 	margin-top: 35px;
 }
 
-.frg-select-container select {
-	height: 30px;
-	padding: 0 5px 0 10px;
+.frg-select-container {
+	select {
+		height: 30px;
+		padding: 0 5px 0 10px;
+	}
+
+	&.style2 {
+		width: 388px;
+		
+		&::after {
+			top: -35px;
+			color: $purple2 !important;
+		}
+
+		select {
+			height: 42px !important;
+		}
+	}
 }
 
 .frg-icon {
@@ -21,30 +36,73 @@ span.back-order {
 
 input.back-order {
 	padding-right: 30px;
+
+	&.js-phone_input_mask {
+		padding-right: 0;
+	}
 }
 
-.status {
+div.status,
+span.status {
 	font-size: inherit;
+	vertical-align: top !important;
 
 	span.back-order {
 		margin: -5px 0 0 10px;
 	}
 
+	.frg-input-field {
+		border-right: transparent !important;
+		border-radius: 5px 0 0 5px;
+		width: 75% !important;
+	}
+
+	div.frg-icon {
+		background-color: #FFF;
+		border: thin solid $light_light_gray;
+		border-left: transparent;
+		border-radius: 0 5px 5px 0;
+		height: 30px;
+		width: 25%;
+		color: #8c68a6;
+		line-height: 30px;
+	}
+
 	&.positive {
 		color: #47a526;
 
+		input {
+			color: #000;
+		}
+
 		span.back-order {
 			display: none;
+		}
+
+		div.back-order.frg-icon.icon-info::before {
+			content: '';
 		}
 	}
 
 	&.negative {
 		color: #d3142e;
+
+		.tooltip_bubble {
+			&::before {
+				left: 120px;
+			}
+		}
+
+		.back-order:hover {
+			& + .tooltip_bubble {
+				display: block;
+			}
+		}
 	}
 }
 
 .shopping_cart {
-	width: 300px;
+	width: 180px;
 
 	.item_count {
 		position: absolute;
@@ -87,13 +145,16 @@ input.back-order {
 	font-size: 80% !important;
 
 	div:first-child {
-		margin-top: 8px;
+		margin-top: 10px;
 	}
 
 	.icon-arrow-down {
 		display: inline-block;
 		margin-left: 10px;
 		color: $white;
+		padding-top: 9px;
+		line-height: 25px;
+		font-size: 14px;
 	}
 }
 
@@ -138,10 +199,16 @@ h3 {
 .header {
 	@include primary_bg_color;
 
-	padding: 19px 0 0 0;
+	padding: 40px 0 0 0;
 
 	.logo {
-		margin-right: 50px;
+		width: 155px;
+		height: 29px;
+		margin-right: 78px;
+
+		& + nav .gap_right {
+			margin-right: 32px;
+		}
 	}
 
 	a:link,
@@ -153,17 +220,17 @@ h3 {
 	}
 
 	nav {
-		margin-top: -19px;
+		margin-top: -40px;
 
 		ul {
 			margin: 0;
 
 			li a {
-				padding-top: 19px;
+				padding-top: 36px;
 
 				&:hover,
 				&.current {
-					padding-top: 13px;
+					padding-top: 30px;
 					border-top: 6px solid $green;
 				}
 			}
@@ -254,7 +321,7 @@ h3 {
 
 	.description {
 		color: $dark_gray;
-		font-size: 17px;
+		/*font-size: 17px;*/
 	}
 
 	.white_bg {
@@ -495,6 +562,7 @@ h3 {
 
 				.status {
 					font-size: inherit;
+					margin: 2px 0;
 
 					&.positive {
 						color: #47a526;
@@ -597,6 +665,12 @@ h3 {
 
 					div:first-child {
 						height: 50px;
+
+						& h6,
+						& h6 a {
+							display: block;
+							height: 50px;
+						}
 					}
 				}
 
@@ -617,8 +691,12 @@ h3 {
 						margin: 0;
 					}
 
-					div {
-						margin: 2px 0;
+					div:first-child {
+						margin-top: 5px;
+					}
+
+					div:nth-child(2) {
+						margin: -10px 0 5px;
 					}
 
 					.frg-button {
@@ -645,7 +723,7 @@ h3 {
 				}
 
 				h4 {
-					font-size: 46px;
+					font-size: 30px;
 				}
 
 				h5 {
@@ -684,11 +762,16 @@ h3 {
 }
 
 .sub_footer {
-	padding: 20px 0;
+	padding: 20px 0 30px;
 	width: 400px;
 
 	div {
 		padding-top: 15px;
+
+		&.chat,
+		&.chat + div {
+			padding-top: 0;
+		}
 	}
 
 	& > div:first-child {
@@ -1068,6 +1151,7 @@ span.footnote {
 .accessory {
 	padding: 0 35px;
 	margin-bottom: 50px;
+	min-width: 360px;
 
 	.frg-input-field,
 	.frg-select-container {
@@ -1305,7 +1389,7 @@ span.footnote {
 					/*height: 30px;*/
 					vertical-align: top;
 
-					.backorder {
+					.status {
 						margin-top: -20px;
 					}
 
@@ -1329,7 +1413,6 @@ span.footnote {
 					&:first-child {
 						vertical-align: top;
 						width: 100px !important;
-						padding-top: 7px;
 
 						.frg-checkbox {
 							width: 20px;
@@ -1364,27 +1447,23 @@ span.footnote {
 }
 
 .cart_review table tbody tr td:first-child .frg-checkbox {
-	margin-top: -5px;
+	margin-top: 2px;
 }
 
-.order_management,
-.order_summary,
-.cart_review {
-	table.wide {
-		width: 100% !important;
+table.wide {
+	width: 100% !important;
 
-		tbody {
-			tr.wide {
-				& > td {
-					width: 9% !important;
+	tbody {
+		tr.wide {
+			& > td {
+				width: 9% !important;
 
-					table.wide {
-						width: 95% !important;
-					}
+				table.wide {
+					width: 95% !important;
+				}
 
-					&.description {
-						width: 50% !important;
-					}
+				&.description {
+					width: 50% !important;
 				}
 			}
 		}
@@ -1547,14 +1626,20 @@ span.footnote {
 		margin: -5px 0 15px 0;
 	}
 
+	div.status {
+		width: 150px;
+
+		.frg-input-field {
+			margin: 0;
+		}
+	}
+
 	.frg-button {
 		padding: 5px 20px 14px;
 	}
 }
 
 .subscriber_list {
-	border-top: thin solid $dark_gray;
-	border-bottom: thin solid $dark_gray;
 	margin-bottom: 20px;
 
 	.heading {
@@ -1574,6 +1659,21 @@ span.footnote {
 
 	input:not([disabled]):hover {
 		cursor: pointer;
+	}
+
+	input[type=checkbox],
+	input[type=radio],
+	.icon {
+		top: 0;
+		margin-top: 0;
+	}
+
+	&.small {
+		input[type=checkbox],
+		input[type=radio],
+		.icon {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -1699,6 +1799,48 @@ span.footnote {
 
 .phones {
 	padding-bottom: 30px;
+}
+
+.sim_nbr {
+	.status {
+		height: 50px;
+
+		.frg-input-field {
+			width: 75% !important;
+		}
+	}
+}
+
+.existing_phone_nbr {
+	.status {
+		width: 90%;
+		height: 10px;
+	}
+}
+
+.js-phone_input_mask {
+	padding: 0;
+}
+
+.js-auto-complete-results {
+	position: absolute;
+	background-color: #FFF;
+	border: thin solid $light_gray;
+	z-index: 99;
+
+	a {
+		padding: 0 20px;
+		
+		&:hover {
+			background-color: blue;
+			color: #FFF;
+		}
+	}
+}
+
+.add_subscriber {
+	padding: 0 30px 20px 30px;
+	margin: 30px 0;
 }
 
 @media screen and (max-width: 1260px) {

@@ -1,6 +1,6 @@
 		<div class="outer-container content purple_bg">
 			<div class="inner-container">
-				<div class="sub_footer center">
+				<div class="sub_footer center clearfix">
 					<div class="col6 center_text left">
 						<a class="support block" target="_blank" href="https://www.telus.com/support">
 							<span class="support-footer__icon frg-icon icon-lifesaver"></span>
@@ -8,12 +8,11 @@
 						<a href="#">Get support online</a>
 					</div>
 					<div class="col6 separator center_text offline left">
-						<a id="ctaBtnChat" class="chat agentonline block" href="#" onclick="lpMTagConfig.dynButton1.actionHook();;">
+						<div class="chat agentonline block">
 							<span class="support-footer__icon frg-icon icon-chat-dots"></span>
-						</a>
-						<a href="#">Chat offline</a>
+						</div>
+						<div>Chat offline</div>
 					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
@@ -33,9 +32,10 @@
 		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
 		<script type="text/javascript" src="javascript/lib/bootstrap-datepicker.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
-
+		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
 
+		<script type="text/javascript" src="javascript/cities.js"></script>
 		<script type="text/javascript" src="javascript/jaguar.js"></script>
 
 		<script type="text/javascript">

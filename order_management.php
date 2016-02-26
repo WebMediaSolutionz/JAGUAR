@@ -33,7 +33,13 @@
 			<tr>
 				<td>
 					<label class="block">Order ID (#)</label>
-					<input class='frg-input-field small' placeholder='Order ID' />
+					<div class="status clearfix positive">
+						<input class="frg-input-field small js-validate_number left" placeholder='Order ID'>
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 				<td>
 					<label class="block">Date Range</label>
@@ -59,7 +65,14 @@
 				</td>
 				<td>
 					<label class="block">BAN</label>
-					<input class='frg-input-field small' placeholder='BAN' />
+					<div class='frg-select-container color-light'>
+						<select>
+							<option>Select</option>
+							<option>1051231215615</option>
+							<option>8512198423165</option>
+							<option>7441125898338</option>
+						</select>
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -72,12 +85,18 @@
 					<input class='frg-input-field small' placeholder='Last Name' />
 				</td>
 				<td>
-					<label class="block">Phone Number</label>
-					<input class='frg-input-field small' placeholder='Phone Number' />
+					<label class="block">Shipping Phone Number</label>
+					<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
 				</td>
 				<td>
 					<label class="block">Email</label>
-					<input class='frg-input-field small' placeholder='E-mail' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-email_validation left' placeholder='E-mail' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -101,26 +120,35 @@
 				</td>
 				<td>
 					<label class="block">Shipping Postal Code</label>
-					<input class='frg-input-field small' placeholder='Shipping Postal Code' />
+					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
 				</td>
 				<td>
-					<label class="block">SKU</label>
-					<input class='frg-input-field small' placeholder='SKU' />
+					<label class="block">IMEI</label>
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<label class="block">IMEI</label>
-					<input class='frg-input-field small' placeholder='IMEI' />
-				</td>
-				<td>
 					<label class="block">SIM Serial Number</label>
-					<input class='frg-input-field small' placeholder='SIM Serial Number' />
+					<div class="status clearfix positive">
+						<input class='frg-input-field small js-validate_number left' placeholder='SIM Serial Number' />
+						<div class="frg-icon icon-info back-order left"></div>
+						<div class="tooltip_bubble">
+							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+						</div>
+					</div>
 				</td>
+				<td></td>
 				<td></td>
 				<td>
 					<label class="block">&nbsp;</label>
-					<a href='#' class='frg-button button-wide color-green'>Search</a>
+					<a href='#' class='frg-button button-wide color-green js-loading state-disabled'>Search</a>
 				</td>
 			</tr>
 		</table>
@@ -136,14 +164,14 @@
 			<div class="frg-select-container color-light left">
 				<select>
 					<option>Actions</option>
-					<option>Move to cart to edit</option>
+					<option>Edit</option>
 					<option>Copy order to cart</option>
-					<option>cancel order</option>
+					<option>Cancel order</option>
 				</select>
 			</div>
 		</div>
 	</div>
-	<div class="inner-container clearfix">
+	<div class="inner-container js-loaded-content clearfix">
 		<table class="wide">
 			<thead class="gray_text">
 				<tr>
@@ -169,11 +197,6 @@
 						</div>
 					</th>
 					<th class="clearfix">
-						<div>
-							<a class="block js-sort gray_text left" href="#">Department</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="5" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
 						<span>Type</span>
 					</th>
 					<th class="clearfix">
@@ -189,13 +212,11 @@
 			<tbody id="sortable" class="small">
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 1" name="option" id="radio-option1">
+								<div class="icon"></div>
+								<label for="radio-option1"></label>
 							</div>
 						</div>
 					</td>
@@ -212,9 +233,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -226,13 +244,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 2" name="option" id="radio-option2">
+								<div class="icon"></div>
+								<label for="radio-option2"></label>
 							</div>
 						</div>
 					</td>
@@ -249,9 +265,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -263,13 +276,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 3" name="option" id="radio-option3">
+								<div class="icon"></div>
+								<label for="radio-option3"></label>
 							</div>
 						</div>
 					</td>
@@ -286,9 +297,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -300,13 +308,11 @@
 				</tr>
 				<tr>
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox small regular">
 							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
+								<input type="radio" value="Option 4" name="option" id="radio-option4">
+								<div class="icon"></div>
+								<label for="radio-option4"></label>
 							</div>
 						</div>
 					</td>
@@ -323,9 +329,6 @@
 						<span>Jan 15, 2016</span>
 					</td>
 					<td>
-						<span>Sales</span>
-					</td>
-					<td>
 						<span>Purchase</span>
 					</td>
 					<td>
@@ -338,6 +341,8 @@
 			</tbody>
 		</table>
 	</div>
+
+	<?php include( 'partials/loading.php' ); ?>
 </div>
 
 <div class="outer-container content white_bg top_bottom_padding order_management">

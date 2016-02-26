@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" data-currentpage="<?php echo $page; ?>">
+<html class="<?php echo $page; ?>" lang="en" data-currentpage="<?php echo $page; ?>">
 	<head>
 		<title>TELUS</title>
 
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/reset.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/frogger.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/telus-fonts.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/telus-bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/bootstrap-datepicker.standalone.min.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/dropit.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick.css">
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/reset.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/frogger.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/telus-fonts.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/telus-bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/bootstrap-datepicker.standalone.min.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/dropit.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick-theme.css" />
 
-		<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css" />
 
-		<link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2">
+		<link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2" />
 
-		<link href="images/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon">
+		<link href="images/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon" />
 
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/lib/html5shim.js"></script><![end if]-->
 	</head>
 	<body>
+		<link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
+		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=zh57-pk62-rn95-ny31"></script>
+		
 		<div class="header_bg white_bg">
 			<div class="outer-container header frg-drop-shadow">
 				<div class="inner-container">
 					<header class="clearfix">
 						<div class="left clearfix">
 							<a class="logo block left" href="index.php">
-								<img alt="TELUS / Home" src="images/TELUS-logo-white.svg">
+								<img class="logo" src="images/TELUS-logo-white.svg" alt="TELUS / Home" />
 							</a>
 							<nav class="left">
 								<ul class="no_styles clearfix">
@@ -97,8 +100,8 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'upgrade' ) ? 'current ': ''; ?>block" href="upgrade.php">
-									<strong>Upgrade</strong>
+								<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
+									<strong>Upgrades</strong>
 								</a>
 							</li>
 							<li class="left">
@@ -115,17 +118,11 @@
 							<div class="item_count"><span>5</span></div>
 							<span class="frg-icon icon-cart"></span>
 						</div>
-						<div class="col-xs-10 status">
-							<div><strong>Cart empty</strong></div>
-							<div>Last saved: 2:38 PM EST</div>
+						<div class="col-xs-10 status right_align">
+							<div><strong>Last Saved:</strong></div>
+							<div>2:38 PM EST</div>
 						</div>
 					</div>
 				<?php } ?>
 			</div>
 		</div>
-
-		<?php 
-			if ( $page !== 'accessories2' && $page !== 'addons' && $page !== 'confirm_shipping' && $page !== 'confirmation' && $page !== 'confirmation2' && $page !== 'order_summary' && $page !== 'payment_options' && $page !== 'plans2' && $page !== 'subscriber' ) {
-				// include( 'partials/error_message.php' ); 
-			}
-		?>

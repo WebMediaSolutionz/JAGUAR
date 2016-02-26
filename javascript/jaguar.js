@@ -8,19 +8,27 @@ var JAG = {
 
 	phones: null,
 
+	cities: cities,
+
 	init: function () {
 		var self = this;
 
 		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
 
-		// self
-		// 	.getPhones()
-		// 	.attachEvents()
-		// .setupPagination();
-
 		self
+			.showVariants()
 			.attachEvents()
-			.setupPagination();
+			.setupPagination()
+			.ellipsis()
+			.setupDueNow()
+			.setupInputMasks();
+
+		// self
+		// 	.attachEvents()
+		// 	.setupPagination()
+		// 	.ellipsis()
+		// 	.setupDueNow()
+		// 	.setupInputMasks();
 
 		return self;
 	},
@@ -52,7 +60,19 @@ var JAG = {
 
 		$( '.toggle_panel' ).click( function () {
 			var clicked = $( this ),
-				associated_section = clicked.attr( 'data-section' );
+				associated_section = clicked.attr( 'data-section' ),
+				advanced_search_table = clicked.closest( '.outer-container' ).find( '.advanced_search_table' ),
+				fields = advanced_search_table.find( 'input' ),
+				submit = advanced_search_table.find( '.frg-button' ),
+				at_least_one = false;
+
+			fields.each( function () {
+				var field = $( this );
+
+				if ( field.val().length > 0 ) {
+					at_least_one = true;
+				}
+			});
 
 			associated_section = ( associated_section === undefined ) ? '.advanced_search_table' : '.' + associated_section;
 
@@ -186,10 +206,15 @@ var JAG = {
 
 		$( '.port select' ).change( function () {
 			var clicked = $( this ),
-				account_empty_box = clicked.closest( 'tr' ).find( '.account_nbr' ).find( '.empty' ),
-				account_inputbox = clicked.closest( 'tr' ).find( '.account_nbr' ).find( 'input' ),
-				phone_empty_box = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.empty' ),
-				phone_inputbox = clicked.closest( 'tr' ).find( '.existing_phone_nbr' ).find( '.input_error_tooltip' );
+				tr = clicked.closest( 'tr' ),
+				account_empty_box = tr.find( '.account_nbr' ).find( '.empty' ),
+				account_inputbox = tr.find( '.account_nbr' ).find( 'input' ),
+				phone_empty_box = tr.find( '.existing_phone_nbr' ).find( '.empty' ),
+				phone_inputbox = tr.find( '.existing_phone_nbr' ).find( '.status' ),
+				calling_city_empty_box = tr.find( '.js-calling-city' ).find( '.empty' ),
+				calling_city_inputbox = tr.find( '.js-calling-city' ).find( 'input' ),
+				area_codes_empty_box = tr.find( '.js-preferred-area-code' ).find( '.empty' ),
+				area_codes_inputbox = tr.find( '.js-preferred-area-code' ).find( '.frg-select-container' );
 
 			if ( clicked.val() === 'yes' ) {
 				$( '.account_nbr' ).removeClass( 'hide' );
@@ -199,28 +224,38 @@ var JAG = {
 				phone_empty_box.addClass( 'hide' );
 				account_inputbox.removeClass( 'hide' );
 				phone_inputbox.removeClass( 'hide' );
+				calling_city_empty_box.removeClass( 'hide' );
+				calling_city_inputbox.addClass( 'hide' );
+				area_codes_empty_box.removeClass( 'hide' );
+				area_codes_inputbox.addClass( 'hide' );
 			} else if ( clicked.val() === 'no' ) {
 				account_empty_box.removeClass( 'hide' );
 				phone_empty_box.removeClass( 'hide' );
 				account_inputbox.addClass( 'hide' );
 				phone_inputbox.addClass( 'hide' );
+				calling_city_empty_box.addClass( 'hide' );
+				calling_city_inputbox.removeClass( 'hide' );
+				area_codes_empty_box.addClass( 'hide' );
+				area_codes_inputbox.removeClass( 'hide' );
 			}
 		});
 
 		$( '.sim select' ).change( function () {
 			var clicked = $( this ),
 				sim_empty_box = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.empty' ),
-				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container' );
+				sim_inputbox = clicked.closest( 'tr' ).find( '.sim_nbr' ).find( '.frg-select-container, .status' );
 
-			if ( clicked.val() === 'yes' ) {
+			if ( clicked.val() === '0' ) {
 				$( '.sim_nbr' ).removeClass( 'hide' );
 
 				sim_empty_box.addClass( 'hide' );
 				sim_inputbox.removeClass( 'hide' );
-			} else if ( clicked.val() === 'no' ) {
+			} else {
 				sim_empty_box.removeClass( 'hide' );
 				sim_inputbox.addClass( 'hide' );
 			}
+
+			self.setupDueNow();
 		});
 
 		$( '.frg-checkbox' ).click( function () {
@@ -236,11 +271,20 @@ var JAG = {
 
 		$( '.frg-checkbox' ).click( function () {
 			var clicked = $( this ),
-				price = clicked.find( '.value' ).text(),
-				total = clicked.closest( 'section' ).closest( 'div' ).find( '.total' );
+				price = clicked.find( '.value' ).attr( 'data-value' ),
+				quantity_txt = $( '.js-quantity' ),
+				quantity = quantity_txt.val(),
+				total = null;
 
-			total.text( price );
+			if ( $.isNumeric( quantity ) ) {
+				// quantity_txt.removeClass( 'error' );
+				total = ( quantity * price ) + ( quantity * 10 );
+			} else {
+				// quantity_txt.addClass( 'error' );
+				total = parseInt( price ) + 10;
+			}
 
+			clicked.closest( 'section' ).closest( 'div' ).find( '.total' ).text( '$' + total );
 		});
 
 		$( '.edit_name' ).click( function () {
@@ -259,9 +303,22 @@ var JAG = {
 				value = textbox.val(),
 				closest = textbox.closest( 'p' ),
 				edit_name = closest.find( '.edit_name' ),
+				title = closest.find( 'span, strong' ),
+				code = e.which || e.keyCode;
+
+			if ( ( code == 13 || code == 9 ) && value !== '' ) {
+				textbox.addClass( 'hide' );
+				edit_name.removeClass( 'hide' );
+				title.text( value ).removeClass( 'hide' );
+			}
+		}).blur( function ( e ) {
+			var textbox = $( this ),
+				value = textbox.val(),
+				closest = textbox.closest( 'p' ),
+				edit_name = closest.find( '.edit_name' ),
 				title = closest.find( 'span, strong' );
 
-			if ( e.which == 13 && value !== '' ) {
+			if ( value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
@@ -282,7 +339,7 @@ var JAG = {
 			selects.removeClass( 'current' ).text( 'Select' );
 			select.addClass( 'current' ).text( 'Selected' );
 
-			monthly_balance = '$' + parseFloat( monthly_balance, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
+			monthly_balance = self.currencyFormat( monthly_balance );
 
 			monthly.text( monthly_balance.substring( 0, monthly_balance.indexOf( '.' ) ) );
 		});
@@ -379,6 +436,7 @@ var JAG = {
 			self.setupPagination();
 		});
 
+		/* error handling portability */
 		$( '.js-phone_nbr' ).blur( function () {
 			var el = $( this ),
 				parent = el.closest( '.input_error_tooltip' ),
@@ -388,10 +446,384 @@ var JAG = {
 				parent.addClass( 'error' );
 			}
 		});
+		/******************************************/
+
+		$( '.js-quantity' ).keyup( function () {
+			var quantity_field = $( this ),
+				entered_value = quantity_field.val(),
+				status = quantity_field.closest( '.status' ),
+				accessory_atc = status.closest( '.accessory' ).find( '.frg-button' ),
+				device_atc = status.closest( 'section' ).closest( 'div' ).find( '.frg-button.color-green' ),
+				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() ),
+				availability = $( 'span.status' );
+
+			if ( $.isNumeric( entered_value ) ) {
+				if ( entered_value >= max_quantity ) {
+					status
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble span' )
+						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
+
+					accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+					device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+
+					availability
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.text( 'Back order' );
+				} else {
+					status
+						.removeClass( 'negative' )
+						.addClass( 'positive' );
+						
+					accessory_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
+					device_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
+
+					availability
+						.removeClass( 'negative' )
+						.addClass( 'positive' )
+						.text( 'Available' );
+				}
+			} else {
+				accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+				device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+
+				if ( entered_value !== '' ) {
+					availability
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.text( 'Invalid entry' );
+
+					status
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble span' )
+						.text( 'please, enter a valid number' );	
+				} else {
+					status
+						.removeClass( 'negative' )
+						.addClass( 'positive' );
+
+					availability.text( '' );
+				}
+				
+			}
+		});
+
+		$( '.js-validate_number' ).keyup( function () {
+			var clicked = $( this ),
+				value = clicked.val(),
+				status = clicked.closest( '.status' ),
+				tooltip_bubble = status.find( '.tooltip_bubble span' );
+
+			if ( value !== '' && !$.isNumeric( value ) ) {
+				status
+					.removeClass( 'positive' )
+					.addClass( 'negative' );
+
+				tooltip_bubble.text( 'Please, enter a valid number' );
+			} else {
+				status
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+			}
+		});
+
+		$( '.js-form-complete' ).keyup( function () {
+			self.formCompleted();
+		}).click( function () {
+			self.formCompleted();
+		});
+
+		$( '.existing_phone_nbr .js-phone_input_mask' ).blur( function () {
+			var clicked = $( this );
+
+			if ( self.portabilityCheck() ) {
+				clicked.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+			} else {
+				clicked.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' );
+			}
+		});
+
+		$( '.js-cities-auto-complete' ).keyup( function () {
+			var field = $( this ),
+				field_text = field.val(),
+				results = [],
+				results_box = field.parent().find( '.js-auto-complete-results' );
+
+			if ( field_text.length >=  3 ) {
+				for ( var i = 0; i < self.cities.length; i++ ) {
+					if ( self.cities[ i ].value.toLowerCase().indexOf( field_text ) !== -1 ) {
+						results.push( self.cities[ i ] );
+					} 
+				}
+			}
+
+			results_box.text( '' );
+
+			if ( results.length > 0 ) {
+				results_box.removeClass( 'hide' );
+
+ 				for ( var i = 0; i < results.length; i++ ) {
+					results_box.append( '<a class="block js-auto-complete-result" data-areacodes="' + results[ i ].data + '" href="#">' + results[ i ].value + '</a>' );
+				}
+			} else {
+				results_box.addClass( 'hide' );
+			}
+
+			$( '.js-auto-complete-result' ).click( function ( e ) {
+				var clicked = $( this ),
+					results_box = clicked.parent(),
+					field = results_box.parent().find( '.js-cities-auto-complete' ),
+					area_codes_box = clicked.closest( 'tr' ).find( '.js-area-codes' ),
+					area_codes = clicked.attr( 'data-areacodes' );
+
+				e.preventDefault();
+
+				results_box
+					.text( '' )
+					.addClass( 'hide' );
+
+				field.val( clicked.text().toLowerCase() );
+
+				area_codes = area_codes.split( ',' );
+				area_codes_box.text( '' );
+
+				for ( var i = 0; i < area_codes.length; i++ ) {
+					area_codes_box.append( '<option value="' + area_codes[ i ] + '">' + area_codes[ i ] + '</option>' );
+				}
+			});
+		});
+
+		$( '.js-cities-auto-complete' ).blur( function () {
+			var field = $( this );
+
+			if ( !self.callingCityCheck( field ) ) {
+				field.val( '' );
+			}
+		});
+
+		$( '.js-email_validation' ).blur( function () {
+			var email = $( this );
+
+			if ( !self.validateEmail( email.val() ) ) {
+				email.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.tooltip_bubble' )
+					.text( 'Please, enter a valid email address' );
+			} else {
+				email.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+			}
+		});
+
+		$( '.advanced_search_table input, .advanced_search_table select' )
+			.keyup( function () {
+				self.validateSearchForm();
+			}).change( function () {
+				self.validateSearchForm();
+			});
+
+		$( '.js-loading' ).click( function () {
+			var content = $( '.js-loaded-content' ),
+				spinner = $( '.js-loading-spinner' );
+
+			content.addClass( 'hide' );
+			spinner.removeClass( 'hide' );
+
+			setTimeout( function () {
+				content.removeClass( 'hide' );
+				spinner.addClass( 'hide' );
+			}, 5000);
+		});
+
+		$( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
+			var action_buttons = $( '.operations .frg-button' ),
+				checkboxes = $( 'input[type=checkbox]' ),
+				enable = false;
+
+			checkboxes.each( function () {
+				var checkbox = $( this );
+
+				if ( checkbox.is( ':checked' ) ) {
+					enable = true;
+				}
+			});
+
+			if ( enable ) {
+				action_buttons.removeClass( 'state-disabled' );
+			} else {
+				action_buttons.addClass( 'state-disabled' );
+			}
+		});
+
+		$( '.js-phone_input_mask' ).keyup( function () {
+			var clicked = $( this ),
+				buttons = $( '.js-validated_options' );
+
+			if ( $( this ).val().indexOf( '_' ) === -1 ) {
+				buttons.removeClass( 'state-disabled' );
+			} else {
+				buttons.addClass( 'state-disabled' );
+			}
+		});
+
+		// TODO: add select / deselect all functionality
+		// $( '.js-check-all' ).click( function () {
+		// 	var clicked = $( this ),
+		// 		checkboxes = $( '.frg-checkbox' );
+
+		// 	if ( clicked.is( ':checked' ) ) {
+		// 		checkboxes
+		// 			.find( '.frg-icon' )
+		// 			.addClass( 'icon-checkmark' );
+		// 	} else {
+		// 		checkboxes
+		// 			.find( '.frg-icon' )
+		// 			.removeClass( 'icon-checkmark' );
+		// 	}
+		// });
 
 		// self.showFakeLinks();
 
+		$( '.js-required' ).keyup( function () {
+			self.checkRequiredField();
+		}).change( function () {
+			self.checkRequiredField();
+		});
+
+		$( '.js-upgrade-offer' ).change( function () {
+			var dropdown = $( this ),
+				status = dropdown.closest( 'tr' ).find( '.status' );
+
+			if ( dropdown.val().toLowerCase() !== 'select' ) {
+				if ( status.text().toLowerCase() !== 'complete' ) {
+					status.text( 'Pending device & plan' );
+				}
+			} else {
+				if ( status.text().toLowerCase() !== 'complete' ) {
+					status.text( 'Pending upgrade offer' );
+				}
+			}
+		});
+
 		return self;
+	},
+
+	checkRequiredField: function () {
+		var fields = $( '.js-required' ),
+			button = $( '.js-submit' ),
+			valid = true;
+
+		fields.each( function () {
+			console.info( $( this ).val().toLowerCase() !== 'select' );
+
+			if ( $( this ).val() === '' || $( this ).val().toLowerCase() === 'select' || $( this ).val().indexOf( '_' ) !== -1 ) {
+				valid = false;
+			}
+		});
+
+		if ( !valid ) {
+			button.addClass( 'state-disabled' );
+		} else {
+			button.removeClass( 'state-disabled' );
+		}
+	},
+
+	validateSearchForm: function () {
+		var fields = $( '.advanced_search_table input, .advanced_search_table select' ),
+			validated_fields = $( '.advanced_search_table .status' ),
+			search = $( '.advanced_search_table .frg-button' ),
+			valid = false;
+
+		fields.each( function () {
+			console.info( $( this ).val() );
+
+			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
+				valid = true;
+			}
+		});
+
+		validated_fields.each( function () {
+			if ( $( this ).hasClass( 'negative' ) ) {
+				valid = false;
+			}
+		});
+
+		if ( !valid ) {
+			search.addClass( 'state-disabled' );
+		} else {
+			search.removeClass( 'state-disabled' );
+		}
+	},
+
+	portabilityCheck: function () {
+		// TODO: put in real code to make ajax call for portability check
+		return false;
+	},
+
+	callingCityCheck: function ( el ) {
+		var self = this,
+			el_text = el.val();
+
+ 		for ( var i = 0; i < self.cities.length; i++ ) {
+			if ( el_text.toLowerCase() === self.cities[ i ].value.toLowerCase() ) {
+				return true;
+			}
+		}
+
+		return false;
+	},
+
+	autoSave: function ( e ) {
+		var textbox = $( this ),
+			value = textbox.val(),
+			closest = textbox.closest( 'p' ),
+			edit_name = closest.find( '.edit_name' ),
+			title = closest.find( 'span, strong' ),
+			code = e.which || e.keyCode;
+
+		if ( ( code == 13 || code == 9 ) && value !== '' ) {
+			textbox.addClass( 'hide' );
+			edit_name.removeClass( 'hide' );
+			title.text( value ).removeClass( 'hide' );
+		}
+	},
+
+	formCompleted: function () {
+		var fields = $( '.js-form-complete' ),
+			text_form_completed = true,
+			radio_form_completed = false,
+			save_continue = $( '.frg-button' );
+
+		fields.each( function () {
+			var field = $( this );
+
+			if ( field.attr( 'type' ) === 'text' ) {
+				if ( field.val() === '' ) {
+					text_form_completed = false;
+				}
+			}
+
+			if ( field.attr( 'type' ) === 'radio' ) {
+				if ( field.is( ':checked' ) ) {
+					radio_form_completed = true;
+				}
+			}
+		});
+
+		if ( text_form_completed || radio_form_completed ) {
+			save_continue.removeClass( 'state-disabled' );
+		} else {
+			save_continue.addClass( 'state-disabled' );
+		}
 	},
 
 	setupFilters: function () {
@@ -490,13 +922,16 @@ var JAG = {
 	},
 
 	displayErrorMessage: function ( type, title, text ) {
-		var error_container = $( '.error_message_container' );
+		var error_container = $( '.error_message_container' ),
+			icon = null;
 
 		switch ( type ) {
-			case 'warning' : 	type = 'icon-warning-inverted';
+			case 'error' 	:
+			case 'warning' 	: 	icon = 'icon-warning-inverted';
+								break;
 		}
 
-		error_container.append( '<div class="error_message warning clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + type + ' left"></div><div class="text left"><div class="h3 title">' + title + '</div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
 
 		$( '.error_message .close' ).click( function () {
 			$( this ).closest( '.error_message' ).fadeOut();
@@ -626,20 +1061,25 @@ var JAG = {
 	},
 
 	showVariants: function () {
+		var self = this;
+
 		$( '.device-color-button' ).click( function () {
 			var clicked = $( this ),
 				phoneId = clicked.attr( 'data-sku' ),
-				image = clicked.closest( '.image' ),
+				image = clicked.closest( '.image, .object' ),
 				matchingVariant = image.find( '.js-' + phoneId ),
 				allVariants = image.find( 'img' );
 
 			allVariants.addClass( 'hide' );
 			matchingVariant.removeClass( 'hide' );
 		});
+
+		return self;
 	},
 
 	setupPagination: function () {
-		var display = $( '.paging_display' ),
+		var self = this,
+			display = $( '.paging_display' ),
 			from_txt = display.find( '.from' ),
 			to_txt = display.find( '.to' ),
 			total = display.find( '.total' ),
@@ -654,5 +1094,61 @@ var JAG = {
 		from_txt.text( parseInt( current_table.attr( 'data-from' ) ) + 1 );
 		to_txt.text( parseInt( current_table.attr( 'data-from' ) ) + current_table.find( 'tbody tr' ).length );
 		total.text( nbr_rows.length );
+
+		return self;
+	},
+
+	ellipsis: function () {
+		var self = this,
+			string = $( '.js-ellipsis' );
+
+		string.each( function () {
+			var str = $( this ),
+				len = str.attr( 'data-maxlen' );
+
+			if ( str.text().length > len ) {
+				str.text( str.text().substr( 0, parseInt(len) - 3 ) + '...' );
+			}
+		});
+
+		return self;
+	},
+
+	setupDueNow: function () {
+		var self = this,
+			base_total = parseInt( $( '[name=base_total]' ).val() ),
+			sims = $( '.sim select' ),
+			sims_total = 0,
+			due_now_total = base_total,
+			due_now = $( 'p.now' );
+
+		sims.each( function () {
+			sims_total += parseInt( $( this ).val() );
+		});
+
+		due_now.text( self.currencyFormat( base_total + sims_total ) );
+
+		return self;
+	},
+
+	currencyFormat: function ( value ) {
+		return '$' + parseFloat( value, 10 ).toFixed( 2 ).replace( /(\d)(?=(\d{3})+\.)/g, "$1," ).toString();
+	},
+
+	validateEmail: function ( email ) {
+		var patt = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+
+		return patt.test( email );
+	},
+
+	setupInputMasks: function () {
+		var self = this;
+
+		$.mask.definitions['~']='[+-]';
+
+		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
+		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
+
+		return self;
 	}
 };

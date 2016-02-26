@@ -29,11 +29,16 @@
 		<table class="gray_text">
 			<tr>
 				<td>
-					<label>Name</label>
+					<label>First Name</label>
 				</td>
-				<td></td>
+				<td>
+					<label>Last Name</label>
+				</td>
 				<td>
 					<label>Address</label>
+				</td>
+				<td>
+					<label>Apt/Suite</label>
 				</td>
 				<td>
 					<label>City</label>
@@ -49,13 +54,14 @@
 				</td>
 			</tr>
 			<tr>
-				<td><input type="text" name="firstname"></td>
-				<td><input type="text" name="lastname"></td>
-				<td><input type="text" name="address"></td>
-				<td><input type="text" name="city"></td>
-				<td><input type="text" name="province"></td>
-				<td><input type="text" name="postal_code"></td>
-				<td><input type="text" name="phone_number"></td>
+				<td><input class="js-form-complete" type="text" name="firstname"></td>
+				<td><input class="js-form-complete" type="text" name="lastname"></td>
+				<td><input class="js-form-complete" type="text" name="address"></td>
+				<td><input class="js-form-complete" type="text" name="apt_suite"></td>
+				<td><input class="js-form-complete" type="text" name="city"></td>
+				<td><input class="js-form-complete" type="text" name="province"></td>
+				<td><input class="js-form-complete" type="text" name="postal_code"></td>
+				<td><input class="js-form-complete js-phone_input_mask" type="text" name="phone_number"></td>
 			</tr>
 		</table>
 	</div>
@@ -69,7 +75,7 @@
 			<div class="col-xs-1">
 				<div class="frg-checkbox regular">
 					<div class="inner">
-						<input type="radio" value="Option 1" name="option" id="radio-option1">
+						<input class="js-form-complete" id="radio-option1" type="radio" value="Option 1" name="option">
 						<div class="icon"></div>
 					</div>
 				</div>
@@ -82,7 +88,11 @@
 				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-1">
+				<label class="bold">Apt/Suite</label>
+				<p>101</p>
+			</div>
+			<div class="col-xs-1">
 				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
@@ -104,7 +114,7 @@
 			<div class="col-xs-1">
 				<div class="frg-checkbox regular">
 					<div class="inner">
-						<input type="radio" value="Option 2" name="option" id="radio-option2">
+						<input class="js-form-complete" id="radio-option2" type="radio" value="Option 2" name="option">
 						<div class="icon"></div>
 					</div>
 				</div>
@@ -117,7 +127,11 @@
 				<label class="bold">Address</label>
 				<p>123 Main St.</p>
 			</div>
-			<div class="col-xs-2">
+			<div class="col-xs-1">
+				<label class="bold">Apt/Suite</label>
+				<p>101</p>
+			</div>
+			<div class="col-xs-1">
 				<label class="bold">City</label>
 				<p>Ottawa</p>
 			</div>
