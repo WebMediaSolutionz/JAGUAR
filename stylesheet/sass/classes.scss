@@ -1120,11 +1120,13 @@ span.footnote {
 }
 
 .service {
+	height: 300px;
+
 	&.col-xs-3 {
 		width: 23%;
 		margin-right: 2.6%;
 
-		&:last-child {
+		&:nth-child(4n) {
 			margin-right: 0;
 		}
 	}
