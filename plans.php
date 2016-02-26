@@ -9,13 +9,15 @@
 
 <div class="outer-container secondary_bg separation white_bg">
 	<div class="inner-container clearfix">
+		<span>Select your device type:</span>
 		<div class='frg-select-container color-light vertical_gap clearfix'>
-			<select class="js-sort-by">
+			<select class="js-sort-by" autocomplete="off">
 				<option>Select</option>
-				<option value="device">iPhone</option>
-				<option value="device">Blackberry</option>
-				<option value="brand">Samsung</option>
-				<option value="brand">NOKIA</option>
+				<option value="smartphone" selected>Smartphone / BlackBerry 10+</option>
+				<option value="tablet">Tablet</option>
+				<option value="modem">Modem / smart hub / internet key</option>
+				<option value="legacy">Legacy BlackBerry</option>
+				<option value="regular">Regular cell phone</option>
 			</select>
 		</div>
 	</div>
