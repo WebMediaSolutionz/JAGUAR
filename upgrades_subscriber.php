@@ -263,7 +263,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Complete</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Complete ( <a href="#">edit</a> )</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
@@ -292,7 +292,7 @@
 							</select>
 						</div>
 					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Complete</span></td>
+					<td class="top_bottom_small_padding purple_text"><span class="status">Complete ( <a href="#">edit</a> )</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
