@@ -11,13 +11,13 @@
 		</div>
 		<div class="right advanced_options">
 			<div class="frg-select-container color-light left gap_right">
-				<select class="advanced_option">
+				<select class="advanced_option" autocomplete="off">
 					<option value="advanced_option" selected="selected">Advanced options</option>
 					<option value="import">Import</option>
 				</select>
 			</div>
 			<div class="frg-select-container color-light left">
-				<select>
+				<select autocomplete="off">
 					<option>Actions</option>
 					<option>Copy</option>
 					<option>Duplicate to all</option>

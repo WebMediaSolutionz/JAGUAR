@@ -465,8 +465,8 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
 
-					accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-					device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+					accessory_atc.addClass( 'state-disabled' );
+					device_atc.addClass( 'state-disabled' );
 
 					availability
 						.removeClass( 'positive' )
@@ -486,8 +486,8 @@ var JAG = {
 						.text( 'Available' );
 				}
 			} else {
-				accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-				device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+				accessory_atc.addClass( 'state-disabled' );
+				device_atc.addClass( 'state-disabled' );
 
 				if ( entered_value !== '' ) {
 					availability
@@ -693,10 +693,10 @@ var JAG = {
 
 		// self.showFakeLinks();
 
-		$( '.js-required' ).keyup( function () {
-			self.checkRequiredField();
-		}).change( function () {
-			self.checkRequiredField();
+		$( '.js-required' ).keyup( function ( e ) {
+			self.checkRequiredField( e );
+		}).change( function ( e ) {
+			self.checkRequiredField( e );
 		});
 
 		$( '.js-upgrade-offer' ).change( function () {
@@ -717,17 +717,22 @@ var JAG = {
 		return self;
 	},
 
-	checkRequiredField: function () {
-		var fields = $( '.js-required' ),
-			button = $( '.js-submit' ),
+	checkRequiredField: function ( el ) {
+		var form = $( el.target ).closest( 'form' ),
+			fields = form.find( '.js-required' ),
+			button = form.find( '.js-submit' ),
 			valid = true;
 
 		fields.each( function () {
-			console.info( $( this ).val().toLowerCase() !== 'select' );
+			var field = $( this );
 
-			if ( $( this ).val() === '' || $( this ).val().toLowerCase() === 'select' || $( this ).val().indexOf( '_' ) !== -1 ) {
+			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+				valid = false;
+			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
 			}
+
+			console.info( $( this ).val().toLowerCase() !== 'select' );
 		});
 
 		if ( !valid ) {

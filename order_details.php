@@ -18,7 +18,7 @@
 		</div>
 		<?php if ( $status === 'shipped' ) { ?>
 			<div class="frg-select-container right color-light">
-				<select>
+				<select autocomplete="off">
 					<option>Action</option>
 					<option>Select all</option>
 					<option>Remove item(s)</option>

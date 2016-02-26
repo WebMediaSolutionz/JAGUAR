@@ -64,7 +64,7 @@
 				</nav>
 			<?php } ?>
 			<div class='right frg-select-container color-light'>
-				<select class="js-sort-by">
+				<select class="js-sort-by" autocomplete="off">
 					<option value="device">Sort by: Device</option>
 					<option value="brand">Sort by: Brand</option>
 				</select>
@@ -83,7 +83,7 @@
 				</h3>
 				<div class="left">
 					<div class='right frg-select-container color-light'>
-						<select class="js-sort-by">
+						<select class="js-sort-by" autocomplete="off">
 							<option>Select</option>
 							<option value="device">Voice &amp; data ($50/subscriber/month)</option>
 							<option value="brand">Voice Only ($45/subscriber/month)</option>
