@@ -627,3 +627,15 @@ table {
 .half_width {
 	width: 45% !important;
 }
+
+.alert {
+	margin-bottom: 0;
+
+	&.error {
+		color: $alert_red;
+
+		.frg-icon {
+			color: $alert_red;
+		}
+	}
+}
