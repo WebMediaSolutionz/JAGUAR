@@ -39,25 +39,27 @@
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
-		<p class="h3 no_margin">How to upgrade your subscribers:</p>
+		<form>
+			<p class="h3 no_margin">How to upgrade your subscribers:</p>
 
-		<div class="gray_text vertical_gap_top"><span>Step 1: Enter the first phone number you would like to upgrade</span></div>
+			<div class="gray_text vertical_gap_top"><span>Step 1: Enter the first phone number you would like to upgrade</span></div>
 
-		<div class='frg-select-container style2 color-light vertical_gap_top small_gap'>
-			<select class="js-required" autocomplete="off">
-				<option>Select</option>
-				<option>TELUS account</option>
-				<option>TELUS account</option>
-				<option>TELUS account</option>
-			</select>
-		</div>
+			<div class='frg-select-container style2 color-light vertical_gap_top small_gap'>
+				<select class="js-required" autocomplete="off">
+					<option>Select</option>
+					<option>TELUS account</option>
+					<option>TELUS account</option>
+					<option>TELUS account</option>
+				</select>
+			</div>
 
-		<div class="gray_text vertical_gap_top"><span>Step 2: Enter the first phone number you would like to upgrade</span></div>
+			<div class="gray_text vertical_gap_top"><span>Step 2: Enter the first phone number you would like to upgrade</span></div>
 
-		<div class="clearfix vertical_gap_top small_gap">
-			<input class='frg-input-field left js-phone_input_mask side_padding js-required' placeholder="Enter a phone number" />
-			<a href='#' class='frg-button color-purple left gap_left_small side_padding state-disabled js-submit'>Add</a>
-		</div>
+			<div class="clearfix vertical_gap_top small_gap">
+				<input class='frg-input-field left js-phone_input_mask side_padding js-required' placeholder="Enter a phone number" />
+				<a href='#' class='frg-button color-purple left gap_left_small side_padding state-disabled js-submit'>Add</a>
+			</div>
+		</form>
 	</div>
 </div>
 
