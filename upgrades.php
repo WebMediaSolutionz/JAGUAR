@@ -44,7 +44,7 @@
 		<div class="gray_text vertical_gap_top"><span>Step 1: Enter the first phone number you would like to upgrade</span></div>
 
 		<div class='frg-select-container style2 color-light vertical_gap_top small_gap'>
-			<select class="js-required">
+			<select class="js-required" autocomplete="off">
 				<option>Select</option>
 				<option>TELUS account</option>
 				<option>TELUS account</option>

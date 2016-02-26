@@ -20,7 +20,7 @@
 		<div class="col-xs-6">
 			<label>Colour</label><br />
 			<div class='frg-select-container color-light'>
-				<select>
+				<select autocomplete="off">
 					<option>Black</option>
 					<option>Green</option>
 				</select>

@@ -66,7 +66,7 @@
 				<td>
 					<label class="block">BAN</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>1051231215615</option>
 							<option>8512198423165</option>
@@ -103,7 +103,7 @@
 				<td>
 					<label class="block">Status</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>Select</option>
 						</select>
@@ -112,7 +112,7 @@
 				<td>
 					<label class="block">Order Type</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>Select</option>
 						</select>
@@ -162,7 +162,7 @@
 		</div>
 		<div class="right">
 			<div class="frg-select-container color-light left">
-				<select>
+				<select autocomplete="off">
 					<option>Actions</option>
 					<option>Edit</option>
 					<option>Copy order to cart</option>

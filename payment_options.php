@@ -13,7 +13,7 @@
 			<p class="h4">Select an account for payment:</p>
 
 			<div class='frg-select-container color-light'>
-				<select>
+				<select autocomplete="off">
 					<option>Choose account type</option>
 					<option>Option 1</option>
 					<option>Option 2</option>

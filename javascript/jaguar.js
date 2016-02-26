@@ -465,8 +465,8 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
 
-					accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-					device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+					accessory_atc.addClass( 'state-disabled' );
+					device_atc.addClass( 'state-disabled' );
 
 					availability
 						.removeClass( 'positive' )
@@ -486,8 +486,8 @@ var JAG = {
 						.text( 'Available' );
 				}
 			} else {
-				accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-				device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+				accessory_atc.addClass( 'state-disabled' );
+				device_atc.addClass( 'state-disabled' );
 
 				if ( entered_value !== '' ) {
 					availability

@@ -48,7 +48,7 @@
 	</td>
 	<td>
 		<div class="frg-select-container color-light left">
-			<select>
+			<select autocomplete="off">
 				<option>English</option>
 				<option>French</option>
 			</select>

@@ -20,7 +20,7 @@
 		<h3 class="title no_margin left">Devices and Plans</h3>
 		<div class="right">
 			<div class="frg-select-container color-light left gap_right">
-				<select>
+				<select autocomplete="off">
 					<option>Actions</option>
 					<option>Actions</option>
 				</select>

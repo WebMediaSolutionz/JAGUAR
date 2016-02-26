@@ -23,7 +23,7 @@
 				<a class="left frg-button" href="#">Find a device</a>
 			</div>
 			<div class='left gap_left frg-select-container color-light'>
-				<select>
+				<select autocomplete="off">
 					<option>Action</option>
 					<option>Select all</option>
 					<option>Remove item(s)</option>

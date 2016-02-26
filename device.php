@@ -25,15 +25,16 @@
 						<tr>
 							<td>
 								<div class='frg-select-container color-light'>
-									<select>
-										<option>Option</option>
-										<option>Option</option>
+									<select class="js-required" autocomplete="off">
+										<option selected>Select</option>
+										<option>Black</option>
+										<option>White</option>
 									</select>
 								</div>
 							</td>
 							<td class="vertical_align_top">
 								<div class="status positive clearfix">
-									<input class='frg-input-field js-quantity back-order left' value='1' />
+									<input class='frg-input-field js-quantity back-order left js-required' value='1' />
 									<div class="frg-icon icon-info back-order left"></div>
 									<div class="tooltip_bubble">
 										<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
@@ -48,8 +49,8 @@
 
 					<div class="vertical_gap small_gap">
 						<div class='frg-select-container color-light'>
-							<select class="js-sort-by">
-								<option>Select</option>
+							<select class="js-sort-by js-required" autocomplete="off">
+								<option selected>Select</option>
 								<option value="device">Voice &amp; data ($50/subscriber/month)</option>
 								<option value="device">Voice &amp; Data Lite</option>
 								<option value="brand">Voice Only ($45/subscriber/month)</option>
@@ -108,7 +109,8 @@
 						<tr>
 							<td>
 								<div class='frg-select-container color-light'>
-									<select>
+									<select class="js-required" autocomplete="off">
+										<option selected>Select</option>
 										<option>Choose BAN</option>
 										<option>Choose BAN</option>
 									</select>
@@ -116,8 +118,8 @@
 							</td>
 							<td>
 								<div class='frg-select-container color-light'>
-									<select>
-										<option>Default: Select</option>
+									<select class="js-required" autocomplete="off">
+										<option selected>Select</option>
 										<option>[Account Number] - $[50]/subscriber</option>
 										<option>[Account Number] - $[60]/subscriber</option>
 										<option>Do not enroll</option>
@@ -136,7 +138,7 @@
 							<td><span class="total">$0</span></td>
 						</tr>
 					</table>
-					<a href='<?php echo $next_step; ?>' class='frg-button color-green'>Add to cart</a>
+					<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit state-disabled'>Add to cart</a>
 				</section>
 			</div>
 		</div>
