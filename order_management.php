@@ -14,10 +14,11 @@
 		<div class="left">
 			<nav>
 				<ul class="no_styles">
+					<li class="left"><a class="block current" href="#">Show all</a></li>
 					<li class="left"><a class="block" href="#">Pending approval</a></li>
-					<li class="left"><a class="block" href="#">Orders with errors</a></li>
-					<li class="left"><a class="block" href="#">Pending activation</a></li>
-					<li class="left"><a class="block current" href="#">Show all</a></li> 
+					<li class="left"><a class="block" href="#">Orders approved</a></li>
+					<li class="left"><a class="block" href="#">Returns</a></li>
+					<li class="left"><a class="block" href="#">Repairs</a></li>
 				</ul>
 			</nav>
 		</div>
