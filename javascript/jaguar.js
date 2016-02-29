@@ -451,11 +451,12 @@ var JAG = {
 		$( '.js-quantity' ).keyup( function () {
 			var quantity_field = $( this ),
 				entered_value = quantity_field.val(),
+				num = quantity_field.attr( 'data-num' ) || null,
 				status = quantity_field.closest( '.status' ),
 				accessory_atc = status.closest( '.accessory' ).find( '.frg-button' ),
 				device_atc = status.closest( 'section' ).closest( 'div' ).find( '.frg-button.color-green' ),
 				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() ),
-				availability = $( 'span.status' );
+				availability = ( num !== null ) ? $( 'span.status[data-num=' + num + ']' ) : $( 'span.status' );
 
 			if ( $.isNumeric( entered_value ) ) {
 				if ( entered_value >= max_quantity ) {
