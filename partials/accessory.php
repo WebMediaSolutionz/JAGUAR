@@ -29,9 +29,9 @@
 				</div>
 			</div>
 			<div class="col-xs-6">
-				<label>Quantity <span class="status positive">Available</span></label><br />
+				<label>Quantity <span class="status positive" data-num="<?php echo $i; ?>">Available</span></label><br />
 				<div class="status positive clearfix">
-					<input class='frg-input-field js-quantity back-order left js-required' value='1' />
+					<input class='frg-input-field js-quantity back-order left js-required' data-num="<?php echo $i; ?>" value='1' />
 					<div class="frg-icon icon-info back-order left"></div>
 					<div class="tooltip_bubble">
 						<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
