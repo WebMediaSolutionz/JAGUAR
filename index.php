@@ -58,7 +58,7 @@
 		<div class="box left">
 			<div class="top">
 				<h3 class="order">
-					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order Management</a>
+					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>
 				</h3>
 
 				<h6 class="description">View, update and confirm your recent and pending orders.</h6>
@@ -117,7 +117,7 @@
 
 				<div class="ticket_number_status">
 					<input class="left frg-input-field" placeholder="Repair ticket number"/>
-					<a class="left frg-button" href="#">Repair Status</a>
+					<a class="left frg-button" href="#">Repair status</a>
 				</div>
 			</div>
 			<div class="clear"></div>

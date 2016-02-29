@@ -62,12 +62,12 @@
 
 		<div class="prices clearfix">
 			<div class="no-term left">
-				<h4><strong>$130.99</strong> <span class="time_period">3 year term</span></h4>
+				<h4><strong>$130.99</strong> <span class="time_period">3-year term</span></h4>
 			</div>
 		</div>
 
 		<div class="mtm">
-			<div class="gray_text"><strong>$200.99 on 2 year term</strong></div>
+			<div class="gray_text"><strong>$200.99 on 2-year term</strong></div>
 			<div class="gray_text"><strong>$800.99 no term</strong></div>
 			<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 		</div>

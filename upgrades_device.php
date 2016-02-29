@@ -12,7 +12,7 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4>samsung galaxy s6 32GB</h4>
+		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
 	</div>
 </div>
 
@@ -65,7 +65,7 @@
 						</select>
 					</div>
 
-					<h6 class="padding_top"><strong>Step 3: Select your service committment:</strong></h6>
+					<h6 class="padding_top"><strong>Step 3: Select your service committment</strong></h6>
 
 					<div class='frg-select-container style2 full_width color-light'>
 						<select class="js-sort-by" autocomplete="off">

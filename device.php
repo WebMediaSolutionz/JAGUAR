@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4>samsung galaxy s6 32GB</h4>
+		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
 	</div>
 </div>
 
@@ -60,7 +60,7 @@
 							</div>
 						</div>
 
-						<span>Minimum Monthly Service Commitment: $20/subscriber</span>
+						<span>Minimum monthly service commitment: $20/subscriber</span>
 
 						<h6 class="padding_top"><strong>Step 3: Select your device price</strong></h6>
 
@@ -105,7 +105,7 @@
 						<table class="table1">
 							<tr>
 								<td><span>Account</span></td>
-								<td colspan="2"><span>Apple DEP Enrollment</span></td>
+								<td colspan="2"><span>Apple DEP enrollment</span></td>
 							</tr>
 							<tr>
 								<td>

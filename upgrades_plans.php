@@ -14,7 +14,7 @@
 
 <div class="outer-container content white_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
-		<span class="gray_text small">Minimum Monthly Service Commitment: $20/subscriber</span>
+		<span class="gray_text small">Minimum monthly service commitment: $20/subscriber</span>
 	</div>
 </div>
 
@@ -22,23 +22,23 @@
 	<div class="inner-container clearfix">
 		<div class="plan clearfix frg-drop-shadow">
 			<div class="col-xs-5 top_bottom_padding">
-				<p class="h2 big">Unlimited nation wide minutes</p>
-				<p>The right choice for occasional local calls. Plus you get unlimited weelemds and evenings after 6pm.</p>
+				<p class="h2 big">Unlimited nationwide minutes</p>
+				<p>The right choice for occasional local calls. Plus you get unlimited weekends and evenings after 6pm.</p>
 			</div>
 			<div class="col-xs-4 top_bottom_padding">
 				<p class="big">Features included:</p>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+					<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 					<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 					<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 					</ul>
@@ -57,23 +57,23 @@
 
 		<div class="plan clearfix frg-drop-shadow">
 			<div class="col-xs-5 top_bottom_padding">
-				<p class="h2 big">Unlimited nation wide minutes</p>
-				<p>The right choice for occasional local calls. Plus you get unlimited weelemds and evenings after 6pm.</p>
+				<p class="h2 big">Unlimited nationwide minutes</p>
+				<p>The right choice for occasional local calls. Plus you get unlimited weekends and evenings after 6pm.</p>
 			</div>
 			<div class="col-xs-4 top_bottom_padding">
 				<p class="big">Features included:</p>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+					<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 					<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 					<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 					</ul>
@@ -92,23 +92,23 @@
 
 		<div class="plan clearfix frg-drop-shadow">
 			<div class="col-xs-5 top_bottom_padding">
-				<p class="h2 big">Unlimited nation wide minutes</p>
-				<p>The right choice for occasional local calls. Plus you get unlimited weelemds and evenings after 6pm.</p>
+				<p class="h2 big">Unlimited nationwide minutes</p>
+				<p>The right choice for occasional local calls. Plus you get unlimited weekends and evenings after 6pm.</p>
 			</div>
 			<div class="col-xs-4 top_bottom_padding">
 				<p class="big">Features included:</p>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+					<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 					<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 					<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 					</ul>
@@ -127,23 +127,23 @@
 
 		<div class="plan clearfix frg-drop-shadow">
 			<div class="col-xs-5 top_bottom_padding">
-				<p class="h2 big">Unlimited nation wide minutes</p>
-				<p>The right choice for occasional local calls. Plus you get unlimited weelemds and evenings after 6pm.</p>
+				<p class="h2 big">Unlimited nationwide minutes</p>
+				<p>The right choice for occasional local calls. Plus you get unlimited weekends and evenings after 6pm.</p>
 			</div>
 			<div class="col-xs-4 top_bottom_padding">
 				<p class="big">Features included:</p>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+					<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 					<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 					<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 					</ul>
@@ -162,23 +162,23 @@
 
 		<div class="plan clearfix frg-drop-shadow">
 			<div class="col-xs-5 top_bottom_padding">
-				<p class="h2 big">Unlimited nation wide minutes</p>
-				<p>The right choice for occasional local calls. Plus you get unlimited weelemds and evenings after 6pm.</p>
+				<p class="h2 big">Unlimited nationwide minutes</p>
+				<p>The right choice for occasional local calls. Plus you get unlimited weekends and evenings after 6pm.</p>
 			</div>
 			<div class="col-xs-4 top_bottom_padding">
 				<p class="big">Features included:</p>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+					<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 					<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 					<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
-						<li><span class="frg-icon icon-checkmark"></span> no commitment, contracts or credit checkes</li>
+						<li><span class="frg-icon icon-checkmark"></span> No commitment, contracts or credit checks</li>
 						<li><span class="frg-icon icon-checkmark"></span> Low calling rates of $0.15 per min</li>
 						<li><span class="frg-icon icon-checkmark"></span> Voice Mail 3, call display, call waiting and conference calling for free</li>
 					</ul>

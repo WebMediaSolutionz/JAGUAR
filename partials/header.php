@@ -90,7 +90,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>Plans</strong>
+									<strong>Plans only</strong>
 								</a>
 							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
@@ -106,7 +106,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
-									<strong>Order Management</strong>
+									<strong>Order management</strong>
 								</a>
 							</li>
 						</ul>
@@ -119,7 +119,7 @@
 							<span class="frg-icon icon-cart"></span>
 						</div>
 						<div class="col-xs-10 status right_align">
-							<div><strong>Last Saved:</strong></div>
+							<div><strong>Last saved:</strong></div>
 							<div>2:38 PM EST</div>
 						</div>
 					</div>
