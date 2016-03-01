@@ -4,3 +4,6 @@ stylesheet/css/
 stylesheet/css/*
 stylesheet/css/*.css
 stylesheet/css/*.map
+!stylesheet/css/styles.css
+!stylesheet/css/lib/
+!stylesheet/css/lib/*
