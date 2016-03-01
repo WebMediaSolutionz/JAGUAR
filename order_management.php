@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left gray_text">
-			<div class="h3">Order Management</div>
+			<div class="h3">Order management</div>
 		</div>
 	</div>
 </div>
@@ -189,12 +189,12 @@
 					</th>
 					<th class="clearfix">
 						<div>	
-							<a class="block js-sort gray_text left" href="#">Payment Method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
+							<a class="block js-sort gray_text left" href="#">Payment method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
 						</div>
 					</th>
 					<th class="clearfix">
 						<div>
-							<a class="block js-sort gray_text left" href="#">Date Submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
+							<a class="block js-sort gray_text left" href="#">Date submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
 						</div>
 					</th>
 					<th class="clearfix">
@@ -206,7 +206,7 @@
 						</div>
 					</th>
 					<th class="clearfix">
-						<span>Due Now</span>
+						<span>Due now</span>
 					</th>
 				</tr>
 			</thead>

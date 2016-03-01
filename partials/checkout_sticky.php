@@ -15,11 +15,11 @@
 			</div>
 			<div class="col-sm-3 amounts bold right_align clearfix">
 				<div class="right separator">
-					<p>Due Now</p>
+					<p>Due now</p>
 					<p class="h4">$25,500</p>
 				</div>
 				<div class="right gap_right">
-					<p>Due Monthly</p>
+					<p>Due monthly</p>
 					<p class="h4">$5,500</p>
 				</div>
 			</div>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
+				<a class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" href="<?php echo $next_step; ?>">Save &amp; continue</a>
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Place Order</a>
+				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Place order</a>
 			</div>
 		</div>
 	</div>
@@ -87,11 +87,11 @@
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">
-					<p>Due Now</p>
+					<p>Due now</p>
 					<p class="h4 now">$25,500.00</p>
 				</div>
 				<div class="right gap_right">
-					<p>Due Monthly</p>
+					<p>Due monthly</p>
 					<p class="h4 monthly">$0.00</p>
 				</div>
 				<div class="right gap_right">
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Save &amp; Continue</a>
+				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Save &amp; continue</a>
 			</div>
 		</div>
 	</div>

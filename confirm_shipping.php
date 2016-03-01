@@ -12,7 +12,7 @@
 
 			<ul class="list gray_text">
 				<li><span>Someone must be available to accept delivery at your selected shipping address</span></li>
-				<li><span>Deliveries will arrive Monday to Friday between 9am-5pm</span></li>
+				<li><span>Deliveries will arrive Monday to Friday between 9am to 5pm</span></li>
 				<li><span>Use the Shipping Instructions box below if you have additional instructions</span></li>
 			</ul>
 
@@ -29,10 +29,10 @@
 		<table class="gray_text">
 			<tr>
 				<td>
-					<label>First Name</label>
+					<label>First name</label>
 				</td>
 				<td>
-					<label>Last Name</label>
+					<label>Last name</label>
 				</td>
 				<td>
 					<label>Address</label>
@@ -47,10 +47,10 @@
 					<label>Province</label>
 				</td>
 				<td>
-					<label>Postal Code</label>
+					<label>Postal code</label>
 				</td>
 				<td>
-					<label>Phone Number</label>
+					<label>Phone number</label>
 				</td>
 			</tr>
 			<tr>
@@ -101,11 +101,11 @@
 				<p>ON</p>
 			</div>
 			<div class="col-xs-2">
-				<label class="bold">Postal Code</label>
+				<label class="bold">Postal code</label>
 				<p>A1B C2D</p>
 			</div>
 			<div class="col-xs-2">
-				<label class="bold">Phone Number</label>
+				<label class="bold">Phone number</label>
 				<p>613 555 1234</p>
 			</div>
 		</div>
@@ -140,11 +140,11 @@
 				<p>ON</p>
 			</div>
 			<div class="col-xs-2">
-				<label class="bold">Postal Code</label>
+				<label class="bold">Postal code</label>
 				<p>A1B C2D</p>
 			</div>
 			<div class="col-xs-2">
-				<label class="bold">Phone Number</label>
+				<label class="bold">Phone number</label>
 				<p>613 555 1234</p>
 			</div>
 		</div>

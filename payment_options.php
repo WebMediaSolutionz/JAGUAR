@@ -6,11 +6,11 @@
 <div class="outer-container content white_bg title_shopping_cart">
 	<div class="inner-container clearfix">
 		<div class="col-xs-6 no_padding">
-			<div class="h3">Payment Options</div>
+			<div class="h3">Payment options</div>
 
 			<br />
 			
-			<p class="h4">Select an account for payment:</p>
+			<p class="h4">Select an account for payment</p>
 
 			<div class='frg-select-container color-light'>
 				<select autocomplete="off">

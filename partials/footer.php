@@ -20,7 +20,7 @@
 		<div class="outer-container">
 			<footer class="inner-container">
 				<img class="logo" alt="TELUS logo" src="images/TELUS-logo-white.svg">
-				<p>&copy; 2015 TELUS Communications Company</p>
+				<p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
 			</footer>
 		</div>
 

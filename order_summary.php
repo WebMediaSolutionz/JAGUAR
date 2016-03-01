@@ -6,7 +6,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left gray_text">
-			<div class="h3">Confirm Order</div>
+			<div class="h3">Confirm order</div>
 		</div>
 	</div>
 </div>
@@ -28,8 +28,8 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
@@ -43,12 +43,12 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
 						<ul class="gap_left_small">
-							<li>no commitment, contracts or credit checkes</li>
+							<li>No commitment, contracts or credit checks</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<a class="js-show_list" href="#">View List</a>
+						<a class="js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -172,8 +172,8 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
@@ -187,12 +187,12 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
 						<ul class="gap_left_small">
-							<li>no commitment, contracts or credit checkes</li>
+							<li>No commitment, contracts or credit checks</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<a class="js-show_list" href="#">View List</a>
+						<a class="js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -317,8 +317,8 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
@@ -353,7 +353,7 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Sub Total</td>
+						<td>Subtotal</td>
 						<td>$5,500.00</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>

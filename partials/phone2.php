@@ -62,7 +62,7 @@
 
 		<div class="prices clearfix">
 			<div class="no-term left">
-				<h4><strong>$130.99</strong> <span class="time_period">3 year term</span></h4>
+				<h4><strong>$130.99</strong> <span class="time_period">3-year term</span></h4>
 			</div>
 		</div>
 

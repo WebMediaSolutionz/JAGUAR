@@ -47,8 +47,8 @@
 					<th>Subscribers</th>
 					<th>Quantity</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small">
@@ -76,7 +76,7 @@
 						<a href="#">TELUS Link,<br />Travel Passport</a>
 					</td>
 					<td>
-						<a class="underline js-show_list" href="#">View List</a>
+						<a class="underline js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span>50<span/>
@@ -214,7 +214,7 @@
 						<a href="#">TELUS Link,<br />Travel Passport</a>
 					</td>
 					<td>
-						<a class="underline js-show_list" href="#">View List</a>
+						<a class="underline js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span>50<span/>
@@ -352,7 +352,7 @@
 						<a href="#">TELUS Link,<br />Travel Passport</a>
 					</td>
 					<td>
-						<a class="underline js-show_list" href="#">View List</a>
+						<a class="underline js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span>50<span/>
@@ -497,7 +497,7 @@
 					<th>Quantity</th>
 					<th>Estimated arrival</th>
 					<th></th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small">
@@ -629,7 +629,7 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Sub Total</td>
+						<td>Subtotal</td>
 						<td>$5,500</td>
 						<td class="right_align">$25,500</td>
 					</tr>

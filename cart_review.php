@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<div class="left">
-			<p class="h3"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart Items</p>
+			<p class="h3"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart items</p>
 		</div>
 	</div>
 </div>
@@ -39,8 +39,8 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Availability</th>
-					<th>Due Monthly</th>
-					<th>Due Now</th>
+					<th>Due monthly</th>
+					<th>Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
@@ -64,7 +64,7 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Prime (<a href="device.php">edit</a>)</p>
 						<ul class="gap_left_small">
-							<li>Plan: Unlimited Nation Wide 60 (<a href="plans2.php">edit</a>)</li>
+							<li>Plan: Unlimited nationwide 60 (<a href="plans2.php">edit</a>)</li>
 							<li>Add-ons: TELUS Link, TELUS MDM, US Roaming (<a href="addons.php">edit</a>)</li>
 							<li>Subscribers: 50 Micro SIM cards (<a href="subscriber.php">edit</a>)</li>
 						</ul>
@@ -97,7 +97,7 @@
 						<span>100</span>
 					</td>
 					<td class="description">
-						<p class="big no_margin">Unlimited Nation Wide 60 (<a href="device.php">edit</a>)</p>
+						<p class="big no_margin">Unlimited nationwide 60 (<a href="device.php">edit</a>)</p>
 						<ul class="gap_left_small">
 							<li>Add-ons: TELUS Link, US Roaming (<a href="addons.php">edit</a>)</li>
 							<li>Subscribers: 100 Micro SIM cards (<a href="subscriber.php">edit</a>)</li>
@@ -175,8 +175,8 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Availability</th>
-					<th>Due Monthly</th>
-					<th>Due Now</th>
+					<th>Due monthly</th>
+					<th>Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
@@ -200,7 +200,7 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Prime (<a href="upgrade.php">edit</a>)</p>
 						<ul class="gap_left_small">
-							<li>Plan: Unlimited Nation Wide 60 (<a href="plans2.php">edit</a>)</li>
+							<li>Plan: Unlimited nationwide 60 (<a href="plans2.php">edit</a>)</li>
 							<li>Add-ons: TELUS Link, TELUS MDM, US Roaming (<a href="addons.php">edit</a>)</li>
 							<li>Subscribers: 25 Micro SIM cards (<a href="subscriber.php">edit</a>)</li>
 						</ul>
@@ -247,7 +247,7 @@
 					<th>Description</th>
 					<th>Availability</th>
 					<th></th>
-					<th>Due Now</th>
+					<th>Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">

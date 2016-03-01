@@ -110,7 +110,7 @@ var JAG = {
 				row_number = parseInt( row_number ) + 2;
 
 			switch ( wording ) {
-				case "View List": 	wording = "Hide List";
+				case "View list": 	wording = "Hide list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).removeClass( 'hide' ).find( 'div' ).removeClass( 'hide' );
 
 									$( '.js-hide_subscribers_list' ).click( function () {
@@ -119,11 +119,11 @@ var JAG = {
 											row_number = parseInt( row_number );
 
 										$( this ).closest( '.subscriber_list' ).addClass( 'hide' ).closest( 'tr' ).addClass( 'hide' );
-										word2.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).find( '.js-show_list' ).text( 'View List' );
+										word2.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).find( '.js-show_list' ).text( 'View list' );
 									});
 									break;
 
-				case "Hide List": 	wording = "View List";
+				case "Hide list": 	wording = "View list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).addClass( 'hide' ).find( 'div' ).addClass( 'hide' );
 									break;					
 			}
@@ -1043,7 +1043,7 @@ var JAG = {
 
 					listing += '			<div class="long-term right">';
 					listing += '				<h4>$50</h4>';
-					listing += '				<span class="time_period">3 year term</span>';
+					listing += '				<span class="time_period">3-year term</span>';
 					listing += '			</div>';
 					listing += '			<div class="clear"></div>';
 					listing += '		</div>';
