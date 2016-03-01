@@ -5,20 +5,20 @@
 	<div class="inner-container padding_bottom clearfix">
 		<p class="h3"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
 
-		<span>Want to upgrade your subscribers to a new smartphone? Upgrading is easy!</span>
+		<span>It's easy to give subscribers a new smartphone.</span>
 	</div>
 </div>
 
 <div class="outer-container content purple_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
-		<p class="h3 gray_text">ABC Company is eligible for these upgrade programs:</p>
+		<p class="h3 gray_text">ABC Company is eligible for the following:</p>
 
 		<div class="clearfix vertical_gap vertical_gap_top">
 			<div class="left circle green_bg bold">20</div>
 			<div class="left gap_left super_dark_gray_text">
 				<strong>Allotment program</strong>
 				<p class="top_bottom_small_padding no_margin">
-					You currently have an allotment balance of 20.<br />You can use your allotment to upgrade any subscriber to any new smartphone for $75.00.<br />This program expires 6 months before the end of your corporate agreement with TELUS.
+					Your current allotment balance is 20.<br />Use your allotment to upgrade any subscriber to a new smartphone  for only $75.00.<br />This program expires 6 months before your corporate agreement with TELUS ends.
 				</p>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 			<div class="left gap_left super_dark_gray_text">
 				<strong>Technology refresh program</strong>
 				<p class="top_bottom_small_padding no_margin">
-					The TELUS technology refresh program allows you to upgrade any subscriber to a new smartphone once they are 24 months into their term.<br />This program requires the subscriber to extend their contract for another 36 months.
+					The TELUS Technology Refresh Program allows you to upgrade any subscriber to a new smartphone after 24 months on their current term.<br />The refresh program requires the subscriber to extend their contract for another 36 months.
 				</p>
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
 		<form>
-			<p class="h3 no_margin">How to upgrade your subscribers:</p>
+			<p class="h3 no_margin">How to upgrade subscribers</p>
 
 			<div class="gray_text vertical_gap_top"><span>Step 1: Enter the first phone number you would like to upgrade</span></div>
 
