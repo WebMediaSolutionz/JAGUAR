@@ -1126,10 +1126,17 @@ var JAG = {
 			sims = $( '.sim select' ),
 			sims_total = 0,
 			due_now_total = base_total,
-			due_now = $( 'p.now' );
+			due_now = $( 'p.now' ),
+			ff,
+			price;
 
 		sims.each( function () {
-			sims_total += parseInt( $( this ).val() );
+			ff = $( this ).val();
+
+			if( ff != "0" ) { 
+				price = ff.split( "__" ); 
+				sims_total += parseInt( price[ 2 ] ); 
+			} 
 		});
 
 		due_now.text( self.currencyFormat( base_total + sims_total ) );
