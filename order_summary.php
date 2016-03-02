@@ -23,7 +23,7 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
@@ -33,7 +33,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -145,7 +145,7 @@
 								</tbody>
 							</table>
 							<div class="heading clearfix">
-								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span></a></div>
 							</div>
 						</div>
 					</td>
@@ -167,7 +167,7 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
@@ -177,7 +177,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -290,7 +290,7 @@
 								</tbody>
 							</table>
 							<div class="heading clearfix">
-								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span></a></div>
 							</div>
 						</div>
 					</td>
@@ -312,7 +312,7 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
@@ -322,7 +322,7 @@
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -349,7 +349,7 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
@@ -375,7 +375,7 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align total">
 					<tr>
@@ -391,7 +391,7 @@
 
 <div class="outer-container content white_bg order_summary">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator bottom_horizontal_separator top_bottom_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator bottom_horizontal_separator light_gray top_bottom_padding clearfix">
 			<div class="row">
 				<div class="col-xs-6 small gray_text terms_conditions">
 					<h5>Terms &amp; conditions</h5>
