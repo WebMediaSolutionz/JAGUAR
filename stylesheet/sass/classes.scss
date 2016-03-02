@@ -928,7 +928,7 @@ h3 {
 		color: #000;
 	}
 
-	.inner-container {
+	&.outer-container .inner-container {
 		background: transparent url( '../../images/flower.jpg' ) no-repeat 85% center;
 	}
 

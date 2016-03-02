@@ -1,5 +1,5 @@
 <div class="<?php echo ( ( $i - 1 ) % 3 === 0 ) ? '' : 'separator '; ?>accessory object col-xs-4" data-filter="audio charging smart_watches">
-	<form>
+	<div class="js-all-required-fields">
 		<div class="h4">Urbanears Plattan</div>
 		<div class="price">$700.00</div>
 		<div class="item center_text">
@@ -43,5 +43,5 @@
 		<div class="center_text">
 			<a class="frg-button select js-submit state-disabled" href="#">Add to cart</a>
 		</div>
-	</form>
+	</div>
 </div>
