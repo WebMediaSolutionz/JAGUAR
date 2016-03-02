@@ -13,7 +13,7 @@
 			<div class="col-xs-3 col-xs-offset-2 center_text">
 				<img src="images/phone_big.jpg">
 			</div>
-			<form>
+			<div class="js-all-required-fields">
 				<div class="col-xs-5 col-xs-offset-1">
 					<section>
 						<h6><strong>Step 1: Select your device options</strong></h6>
@@ -142,7 +142,7 @@
 						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit state-disabled'>Add to cart</a>
 					</section>
 				</div>
-			</form>
+			</div>
 		</div>
 	</div>
 </div>

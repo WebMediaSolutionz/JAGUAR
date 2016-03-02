@@ -719,7 +719,7 @@ var JAG = {
 	},
 
 	checkRequiredField: function ( el ) {
-		var form = $( el.target ).closest( 'form' ),
+		var form = $( el.target ).closest( '.js-all-required-fields' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true;
