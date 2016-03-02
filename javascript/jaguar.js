@@ -722,21 +722,27 @@ var JAG = {
 		var form = $( el.target ).closest( 'form' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
-			valid = true;
+			valid = true,
+			radios = form.find( 'input[type=radio].js-required' ),
+			radios_valid = ( radios.length > 0 ) ? false : true;
 
 		fields.each( function () {
 			var field = $( this );
+
+			radios.each( function () {
+				if ( $( this ).is( ':checked' ) ) {
+					radios_valid = true;
+				}
+			});
 
 			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
 				valid = false;
 			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
 			}
-
-			console.info( $( this ).val().toLowerCase() !== 'select' );
 		});
 
-		if ( !valid ) {
+		if ( !( valid && radios_valid ) ) {
 			button.addClass( 'state-disabled' );
 		} else {
 			button.removeClass( 'state-disabled' );

@@ -66,7 +66,7 @@
 
 						<div class="frg-checkbox regular">
 							<div class="inner">
-								<input class="vertical_gap_top small_gap" id="radio-option1" type="radio" name="option" value="Option 1">
+								<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option" value="Option 1">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option1">
 									<strong>
@@ -78,7 +78,7 @@
 
 						<div class="frg-checkbox regular">
 							<div class="inner">
-								<input class="vertical_gap_top small_gap" id="radio-option2" type="radio" name="option" value="Option 2">
+								<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option" value="Option 2">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option2">
 									<strong>
@@ -90,7 +90,7 @@
 
 						<div class="frg-checkbox regular">
 							<div class="inner">
-								<input class="vertical_gap_top small_gap" id="radio-option3" type="radio" name="option" value="Option 3">
+								<input class="vertical_gap_top small_gap js-required" id="radio-option3" type="radio" name="option" value="Option 3">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option3">
 									<strong>
