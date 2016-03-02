@@ -39,7 +39,7 @@
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
-		<form>
+		<div class="js-all-required-fields">
 			<p class="h3 no_margin">How to upgrade your subscribers:</p>
 
 			<div class="gray_text vertical_gap_top"><span>Step 1: Enter the first phone number you would like to upgrade</span></div>
@@ -59,7 +59,7 @@
 				<input class='frg-input-field left js-phone_input_mask side_padding js-required' placeholder="Enter a phone number" />
 				<a href='#' class='frg-button color-purple left gap_left_small side_padding state-disabled js-submit'>Add</a>
 			</div>
-		</form>
+		</div>
 	</div>
 </div>
 
