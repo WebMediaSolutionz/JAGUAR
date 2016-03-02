@@ -1,0 +1,67 @@
+.outer-container {
+	padding-right: 9px;
+	padding-left: 9px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.inner-container {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.light_gray_bg {
+	background-color: $light_gray;
+}
+
+.devil_gray_text {
+	color: $devil_gray;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.line {
+	&.light_gray2 {
+		border-bottom: thin solid $light_gray2;
+	}
+}
+
+.vertical_padding30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.top_margin20 {
+	margin-top: 20px;
+}
+
+.top_margin50 {
+	margin-top: 50px;
+}
+
+.bottom_margin20 {
+	margin-bottom: 20px;
+}
+
+.bottom_margin50 {
+	margin-bottom: 50px;
+}
+
+.block {
+	display: block;
+}
+
+.full_width {
+	width: 100%;
+}
+
+.frg-button {
+	&.color-green:hover {
+		text-decoration: none;
+	}
+}
