@@ -592,6 +592,12 @@ table {
 }
 
 .frg-icon {
+	color: #57a708;
+
+	&.icon-warning-inverted {
+		color: #f5a623;
+	}
+
 	&.small {
 		font-size: 15px;
 	}
