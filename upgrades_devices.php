@@ -83,11 +83,11 @@
 				</h3>
 				<div class="left">
 					<div class='right frg-select-container color-light'>
-						<select class="js-sort-by" autocomplete="off">
+						<select class="js-filter-service-category" autocomplete="off">
 							<option>Select</option>
-							<option value="device">Voice &amp; data ($50/subscriber/month)</option>
-							<option value="brand">Voice Only ($45/subscriber/month)</option>
-							<option value="brand">Data Only ($40/subscriber/month)</option>
+							<option value="voice_data">Voice &amp; data ($50/subscriber/month)</option>
+							<option value="voice_only">Voice Only ($45/subscriber/month)</option>
+							<option value="data_only">Data Only ($40/subscriber/month)</option>
 						</select>
 					</div>
 				</div>

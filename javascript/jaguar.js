@@ -715,6 +715,26 @@ var JAG = {
 			}
 		});
 
+		$( '.js-filter-service-category' ).change( function () {
+			var sort_value = $( this ).val(),
+				phones = $( '.phone' ).addClass( 'hide' );
+
+			if ( sort_value.toLowerCase() === 'select' ) {
+				phones.removeClass( 'hide' );
+			} else {
+				phones
+					.addClass( 'hide' )
+					.each( function () {
+						var phone = $( this ),
+							type = phone.attr( 'data-filter' );
+
+						if ( type.indexOf( sort_value ) !== -1 ) {
+							phone.removeClass( 'hide' );
+						}
+					});
+			}
+		});
+
 		return self;
 	},
 
