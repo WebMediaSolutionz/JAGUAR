@@ -13,9 +13,9 @@ var JAG = {
 	init: function () {
 		var self = this;
 
-		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
-
 		self
+			.setupCurrentPage()
+			.setupTabs()
 			.showVariants()
 			.attachEvents()
 			.setupPagination()
@@ -23,12 +23,23 @@ var JAG = {
 			.setupDueNow()
 			.setupInputMasks();
 
-		// self
-		// 	.attachEvents()
-		// 	.setupPagination()
-		// 	.ellipsis()
-		// 	.setupDueNow()
-		// 	.setupInputMasks();
+		return self;
+	},
+
+	setupCurrentPage: function () {
+		var self = this;
+
+		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
+
+		return self;
+	},
+
+	setupTabs: function () {
+		var self = this;
+
+		$('#tab-container').easytabs({
+			animate: false
+		});
 
 		return self;
 	},
