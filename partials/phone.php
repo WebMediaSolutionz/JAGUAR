@@ -1,36 +1,34 @@
 <?php
-	$filter = $status = null;
-
-	switch ( $i ) {
-		case 0 : 	$filter = 'all';
-					break;
-
-		case 1 : 	$filter = 'iphones';
-					break;
-
-		case 2 : 	$filter = 'blackberry';
-					break;
-					
-		case 3 : 	$filter = 'android';
-					break;
-
-		case 4 : 	$filter = 'windows_phone';
-					break;
-
-		case 5 : 	$filter = 'other';
-					break;			
-	}
+	$filter = $filter2 = $status = null;
 
 	if ( $i % 2 === 0 ) {
-		$status = 'limited';
+		$status = 'available';
+		$filter = 'all';
+		$filter2 = 'voice_data';
 	} else if ( $i % 3 === 0 ) {
 		$status = 'back order';
+		$filter = 'iphones';
+		$filter2 = 'voice_only';
+	} else if ( $i % 5 === 0 ) {
+		$status = 'available';
+		$filter = 'blackberry';
+		$filter2 = 'data_only';
+	} else if ( $i % 7 === 0 ) {
+		$status = 'available';
+		$filter = 'android';
+		$filter2 = 'data_only';
+	} else if ( $i % 11 === 0 ) {
+		$status = 'back order';
+		$filter = 'windows_phone';
+		$filter2 = 'voice_only';
 	} else {
 		$status = 'available';
+		$filter = 'other';
+		$filter2 = 'voice_data';
 	}
 ?>
 
-<div class="box phone object clearfix left" data-filter="<?php echo $filter; ?> voice_only">
+<div class="box phone object clearfix left" data-filter="<?php echo "{$filter} {$filter2}"; ?>">
 	<div class="image left">
 		<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
 			<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
