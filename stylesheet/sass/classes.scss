@@ -1839,6 +1839,20 @@ table.wide {
 	margin: 30px 0;
 }
 
+.borders {
+	border-top: thin solid $gray;
+	border-bottom: thin solid #ececec; 
+
+	.inner-container {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+.tabs-container {
+	margin-top: -42px;
+}
+
 @media screen and (max-width: 1260px) {
     .support_section .headset {
 		width: 40%;

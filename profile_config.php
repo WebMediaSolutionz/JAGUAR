@@ -16,7 +16,7 @@
 				Don't have an Apple DEP account? <a href="#">Get one here</a>
 			</p>
 
-			<div class="row lenght60 top_margin20">
+			<div class="row lenght70 top_margin20">
 				<div class="col-xs-6">
 					<label class="block devil_gray_text">DEP number</label>
 					<input class='frg-input-field full_width' />
@@ -35,7 +35,7 @@
 				To help display real time hardware availibility from the nearest warehouse please add a default shipping address.<br />You can change this address at any time during the checkout process or in your corporate settings.
 			</p>
 
-			<div class="row lenght60 top_margin20">
+			<div class="row lenght70 top_margin20">
 				<div class="col-xs-6">
 					<label class="block devil_gray_text">First name</label>
 					<input class='frg-input-field full_width' />
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<div class="row lenght60 top_margin20">
+			<div class="row lenght70 top_margin20">
 				<div class="col-xs-12">
 					<label class="block devil_gray_text">Phone number</label>
 					<input class='frg-input-field full_width' />
@@ -82,7 +82,7 @@
 		<div class="vertical_padding30">
 			<h4>Step 3: Tell us a little bit more about you and your company</h4>
 
-			<div class="row lenght60 top_padding20">
+			<div class="row lenght70 top_padding20">
 				<div class="col-xs-12">
 					<label class="block devil_gray_text">What mobile device management software does your company use today?</label>
 					<div class='frg-select-container color-light full_width'>

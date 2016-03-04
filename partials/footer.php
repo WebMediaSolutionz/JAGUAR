@@ -17,7 +17,7 @@
 			</div>
 		</div>
 
-		<div class="outer-container">
+		<div class="outer-container footer">
 			<footer class="inner-container">
 				<img class="logo" alt="TELUS logo" src="images/TELUS-logo-white.svg">
 				<p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
@@ -34,6 +34,8 @@
 		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
 		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
+		<script type="text/javascript" src="javascript/lib/jquery.hashchange.min.js"></script>
+  		<script type="text/javascript" src="javascript/lib/jquery.easytabs.min.js"></script>
 
 		<script type="text/javascript" src="javascript/cities.js"></script>
 		<script type="text/javascript" src="javascript/jaguar.js"></script>

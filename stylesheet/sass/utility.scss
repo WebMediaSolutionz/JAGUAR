@@ -645,3 +645,64 @@ table {
 		}
 	}
 }
+
+.vertical_padding10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.vertical_padding20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.vertical_padding30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.top_margin20 {
+	margin-top: 20px;
+}
+
+.top_margin50 {
+	margin-top: 50px;
+}
+
+.bottom_margin20 {
+	margin-bottom: 20px;
+}
+
+.bottom_margin50 {
+	margin-bottom: 50px;
+}
+
+.top_padding20 {
+	padding-top: 20px;
+}
+
+.top_padding50 {
+	padding-top: 50px;
+}
+
+.bottom_padding20 {
+	padding-bottom: 20px;
+}
+
+.bottom_padding50 {
+	padding-bottom: 50px;
+}
+
+.footer {
+	@include primary_bg_color;
+}
+
+.lenght70 {
+	width: 70%;
+}
+
+.frg-select-container {
+	&::after {
+		color: $purple !important;
+	}
+}
