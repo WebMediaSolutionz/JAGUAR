@@ -57,7 +57,7 @@
 				<td><input class="js-form-complete" type="text" name="firstname"></td>
 				<td><input class="js-form-complete" type="text" name="lastname"></td>
 				<td><input class="js-form-complete" type="text" name="address"></td>
-				<td><input class="js-form-complete" type="text" name="apt_suite"></td>
+				<td><input type="text" name="apt_suite"></td>
 				<td><input class="js-form-complete" type="text" name="city"></td>
 				<td><input class="js-form-complete" type="text" name="province"></td>
 				<td><input class="js-form-complete" type="text" name="postal_code"></td>

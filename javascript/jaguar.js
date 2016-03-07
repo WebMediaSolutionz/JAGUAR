@@ -943,7 +943,7 @@ var JAG = {
 			var field = $( this );
 
 			if ( field.attr( 'type' ) === 'text' ) {
-				if ( field.val() === '' ) {
+				if ( field.val() === '' || field.val().indexOf( '_' ) !== -1 ) {
 					text_form_completed = false;
 				}
 			}
