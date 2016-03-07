@@ -10,18 +10,23 @@ var JAG = {
 
 	cities: cities,
 
+	formEntriesValid: true,
+
 	init: function () {
 		var self = this;
 
 		self
 			.setupCurrentPage()
-			.setupTabs()
 			.showVariants()
 			.attachEvents()
 			.setupPagination()
 			.ellipsis()
 			.setupDueNow()
 			.setupInputMasks();
+
+		if ( self.currentPage === 'corporate_settings' ) {
+			self.setupTabs();
+		}
 
 		return self;
 	},
@@ -620,22 +625,6 @@ var JAG = {
 			}
 		});
 
-		$( '.js-email_validation' ).blur( function () {
-			var email = $( this );
-
-			if ( !self.validateEmail( email.val() ) ) {
-				email.closest( '.status' )
-					.removeClass( 'positive' )
-					.addClass( 'negative' )
-					.find( '.tooltip_bubble' )
-					.text( 'Please, enter a valid email address' );
-			} else {
-				email.closest( '.status' )
-					.removeClass( 'negative' )
-					.addClass( 'positive' );
-			}
-		});
-
 		$( '.advanced_search_table input, .advanced_search_table select' )
 			.keyup( function () {
 				self.validateSearchForm();
@@ -705,12 +694,6 @@ var JAG = {
 
 		// self.showFakeLinks();
 
-		$( '.js-required' ).keyup( function ( e ) {
-			self.checkRequiredField( e );
-		}).change( function ( e ) {
-			self.checkRequiredField( e );
-		});
-
 		$( '.js-upgrade-offer' ).change( function () {
 			var dropdown = $( this ),
 				status = dropdown.closest( 'tr' ).find( '.status' );
@@ -746,11 +729,111 @@ var JAG = {
 			}
 		});
 
+		$( '.js-not-empty' ).blur( function () {
+			var field = $( this );
+
+			if ( field.val() === '' ) {
+				field
+					.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-checkmark-inverted' )
+					.addClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = false;
+			} else {
+				field
+					.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-warning-inverted' )
+					.addClass( 'icon-checkmark-inverted' );
+
+				self.formEntriesValid = true;
+			}
+		});
+
+		$( '.js-email_validation' ).blur( function () {
+			var email = $( this );
+
+			if ( !self.validateEmail( email.val() ) ) {
+				email.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.tooltip_bubble' )
+					.text( 'Please, enter a valid email address' );
+
+				email
+					.closest( '.status' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-checkmark-inverted' )
+					.addClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = false;
+			} else {
+				email.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+
+				email
+					.closest( '.status' )
+					.find( '.frg-icon' )
+					.addClass( 'icon-checkmark-inverted' )
+					.removeClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = true;
+			}
+		});
+
+		$( '.js-match-validation' ).blur( function () {
+			var emails = $( '.js-match-validation' ),
+				second_email = $( 'input[name=email2]' );
+
+			console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
+
+			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
+				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
+					second_email
+						.closest( '.status' )
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble' )
+						.text( 'The emails you entered do not match.' )
+						.closest( '.status' )
+						.find( '.frg-icon' )
+						.removeClass( 'icon-checkmark-inverted' )
+						.addClass( 'icon-warning-inverted' );
+
+					self.formEntriesValid = false;
+				} else {
+					second_email
+						.closest( '.status' )
+						.removeClass( 'negative' )
+						.addClass( 'positive' )
+						.closest( '.status' )
+						.find( '.frg-icon' )
+						.addClass( 'icon-checkmark-inverted' )
+						.removeClass( 'icon-warning-inverted' );
+
+					self.formEntriesValid = true;
+				}
+			}
+		});
+
+		$( '.js-required' ).keyup( function ( e ) {
+			self.checkRequiredField( e );
+		}).change( function ( e ) {
+			self.checkRequiredField( e );
+		});
+
 		return self;
 	},
 
 	checkRequiredField: function ( el ) {
-		var form = $( el.target ).closest( '.js-all-required-fields' ),
+		var self = this,
+			form = $( el.target ).closest( '.js-all-required-fields' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true,
@@ -773,11 +856,15 @@ var JAG = {
 			}
 		});
 
-		if ( !( valid && radios_valid ) ) {
+		console.info( self.formEntriesValid );
+
+		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
 			button.addClass( 'state-disabled' );
 		} else {
 			button.removeClass( 'state-disabled' );
 		}
+
+		return self;
 	},
 
 	validateSearchForm: function () {
