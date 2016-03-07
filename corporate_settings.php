@@ -34,16 +34,20 @@
 						Don't have an Apple DEP account? <a href="#">Get one here</a>
 					</p>
 
-					<div class="row lenght70 top_margin20">
-						<div class="col-xs-6">
-							<label class="block devil_gray_text">DEP number</label>
-							<input class='frg-input-field full_width' />
-						</div>
-						<div class="col-xs-6">
-							<label class="block devil_gray_text">Description</label>
-							<input class='frg-input-field full_width' />
+					<div class="dep_accounts">
+						<div class="row lenght70 top_margin20">
+							<div class="col-xs-6">
+								<label class="block devil_gray_text">DEP number</label>
+								<input class='frg-input-field full_width' />
+							</div>
+							<div class="col-xs-6">
+								<label class="block devil_gray_text">Description</label>
+								<input class='frg-input-field full_width' />
+							</div>
 						</div>
 					</div>
+
+					<a class="js-more" href="#">more</a>
 				</div>
 			</div>
 
