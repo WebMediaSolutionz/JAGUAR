@@ -828,6 +828,12 @@ var JAG = {
 			self.checkRequiredField( e );
 		});
 
+		$( '.js-more' ).click( function () {
+			var container = $( '.dep_accounts' );
+
+			container.append( '<div class="row lenght70 top_margin20"><div class="col-xs-6"><label class="block devil_gray_text">DEP number</label><input class="frg-input-field full_width" /></div><div class="col-xs-6"><label class="block devil_gray_text">Description</label><input class="frg-input-field full_width" /></div></div>' );
+		});
+
 		return self;
 	},
 
