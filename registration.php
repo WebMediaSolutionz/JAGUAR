@@ -77,19 +77,42 @@
 
 					<div class="bottom_margin20">
 						<label class="block devil_gray_text">Create your password</label>
-						<input class='frg-input-field full_width js-required' name='' />
+
+						<div class="clearfix status">
+							<input class="frg-input-field js-required js-not-empty left" maxlength="60" name="password">
+							<div class="frg-icon left"></div>
+							<div class="tooltip_bubble">
+								<span>Please enter your first name.</span>
+							</div>
+						</div>
 					</div>
 
 					<h5 class="devil_gray_text bottom_margin20 top_margin20">Just in case you forget your profile details...</h5>
 
 					<div class="bottom_margin20">
 						<label class="block devil_gray_text">Choose a security question</label>
-						<input class='frg-input-field full_width js-required' name='' />
+						<!-- <input class='frg-input-field full_width js-required' name='' /> -->
+
+						<div class='frg-select-container full_width color-light'>
+							<select name="security_question">	
+			                    <option value="">Select a question</option>
+			                    <option value="First school you attended?">First school you attended?</option>
+			                    <option value="Country of your dream vacation?">Country of your dream vacation?</option>
+			                    <option value="City of your first job?">City of your first job?</option>
+			                    <option value="Name of your childhood hero?">Name of your childhood hero?</option>
+			                    <option value="First concert you attended?">First concert you attended?</option>
+			                    <option value="Favourite childhood teacher?">Favourite childhood teacher?</option>
+			                    <option value="Best childhood friend?">Best childhood friend?</option>
+			                    <option value="Mother's middle name?">Mother's middle name?</option>
+			                    <option value="Father's middle name?">Father's middle name?</option>
+			                    <option value="Mother's year of birth?">Mother's year of birth?</option>
+							</select>
+						</div>
 					</div>
 
 					<div class="bottom_margin20">
 						<label class="block devil_gray_text">Answer</label>
-						<input class='frg-input-field full_width js-required' name='' />
+						<input class="frg-input-field full_width" maxlength="60" name="answer">
 					</div>
 
 					<div class="top_margin20 bottom_margin20">
