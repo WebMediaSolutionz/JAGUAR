@@ -1,5 +1,5 @@
 		<div class="outer-container content purple_bg">
-			<div class="inner-container">
+			<div class="inner-container grid">
 				
 			</div>
 		</div>

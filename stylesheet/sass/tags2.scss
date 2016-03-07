@@ -1,3 +1,7 @@
+body {
+	font-size: 17px;
+}
+
 header {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -15,4 +19,10 @@ a {
 footer {
 	background-color: $dark_gray;
 	color: #FFF;
+}
+
+ol,
+ul {
+	list-style: disc;
+	margin-left: 15px;
 }
