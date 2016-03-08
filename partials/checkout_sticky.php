@@ -1,7 +1,7 @@
 <?php if ( $page === 'cart_review' ) { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
-			<div class="col-sm-4 no_padding">
+			<div class="col-sm-3 no_padding">
 				<div class="left bold clearfix">
 					<div class="left circle gap_right_small white_bg">20</div>
 					<div class="left gap_right_small">
@@ -13,7 +13,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 amounts bold right_align clearfix">
+			<div class="col-sm-4 amounts bold right_align clearfix">
 				<div class="right separator">
 					<p>Due now</p>
 					<p class="h4">$25,500</p>
