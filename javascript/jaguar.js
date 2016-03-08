@@ -327,6 +327,8 @@ var JAG = {
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
 			}
+
+			self.ellipsis();
 		}).blur( function ( e ) {
 			var textbox = $( this ),
 				value = textbox.val(),
@@ -339,6 +341,8 @@ var JAG = {
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
 			}
+
+			self.ellipsis();
 		});
 
 		$( '.plan .select' ).click( function () {
