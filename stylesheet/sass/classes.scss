@@ -1142,8 +1142,7 @@ span.footnote {
 	margin-bottom: 25px;
 }
 
-.select.frg-button,
-.frg-button:focus {
+.select.frg-button {
 	@include select;
 }
 
