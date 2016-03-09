@@ -465,7 +465,7 @@ a.underline {
 }
 
 .frg-input-field {
-	border: thin solid #E2E2E2;
+	border: thin solid $light_gray2;
 	margin: 0;
 
 	&.small {
@@ -637,6 +637,10 @@ table {
 
 .half_width {
 	width: 45% !important;
+}
+
+.halfwidth {
+	width: 50% !important;
 }
 
 .alert {

@@ -55,7 +55,7 @@ span.status {
 
 	div.frg-icon {
 		background-color: #FFF;
-		border: thin solid $light_light_gray;
+		border: thin solid $light_gray2;
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
 		height: 30px;
@@ -525,7 +525,7 @@ h3 {
 		padding-top: 45px;
 
 		section {
-			border-bottom: thin solid #000;
+			border-bottom: thin solid #9b9b9b;
 			padding: 15px 0;
 			color: $dark_gray;
 
@@ -551,7 +551,7 @@ h3 {
 			table {
 				input,
 				select {
-					border: thin solid #CCC;
+					/*border: thin solid #CCC;*/
 					width: 139px;
 					height: 30px;
 				}
@@ -575,7 +575,7 @@ h3 {
 
 				&.table2 {
 					tr td {
-						width: 100px;
+						/*width: 100px;*/
 					}
 				}
 
@@ -625,26 +625,6 @@ h3 {
 				a {
 					img {
 						height: 173px;
-					}
-				}
-
-				.device__variant-container {
-					width: 87px;
-					margin-top: 5px;
-
-					button {
-						width: 25px;
-						height: 25px;
-						border: none;
-						background: transparent;
-
-						&:nth-child(4) {
-							margin-left: 30px;
-						}
-
-						span {
-							margin-left: -5px;
-						}
 					}
 				}
 			}
@@ -1858,6 +1838,44 @@ table.wide {
 
 .tabs-container {
 	margin-top: -42px;
+}
+
+.device {
+	.frg-input-field.js-quantity {
+		width: 95% !important;
+	}
+
+	.frg-icon.icon-info {
+		width: 5% !important;
+	}
+}
+
+.phone_details.image {
+	a {
+		img {
+			height: 470px;
+		}
+	}
+}
+
+.device__variant-container {
+	width: 87px;
+	margin-top: 5px;
+
+	button {
+		width: 25px;
+		height: 25px;
+		border: none;
+		background: transparent;
+
+		&:nth-child(4) {
+			margin-left: 30px;
+		}
+
+		span {
+			margin-left: -5px;
+		}
+	}
 }
 
 @media screen and (max-width: 1260px) {
