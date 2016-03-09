@@ -41,7 +41,7 @@
 			</div>
 		</div>
 		<div class="center_text">
-			<a class="frg-button select js-submit state-disabled" href="#">Add to cart</a>
+			<a class="frg-button select js-submit js-display-overlay state-disabled" href="#">Add to cart</a>
 		</div>
 	</div>
 </div>

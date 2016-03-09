@@ -364,21 +364,10 @@ var JAG = {
 			monthly.text( monthly_balance.substring( 0, monthly_balance.indexOf( '.' ) ) );
 		});
 
-		$( '.accessory .select, .service .select' ).click( function () {
+		$( '.service .select' ).click( function () {
 			var clicked = $( this ),
-				selected_text,
-				unselected_text;
-
-			switch ( self.currentPage ) {
-				case 'addons' 		: 	selected_text = 'Add service';
-										unselected_text = 'Remove service';
-										break;
-
-				case 'accessories' 	:
-				case 'accessories2' :  	selected_text = 'Add to cart';
-										unselected_text = 'Remove from cart';
-										break;
-			}
+				selected_text = 'Add service',
+				unselected_text = 'Remove service';
 
 			if ( clicked.hasClass( 'current' ) ) {
 				clicked.removeClass( 'current' ).text( selected_text );
@@ -838,6 +827,10 @@ var JAG = {
 			container.append( '<div class="row lenght70 top_margin20"><div class="col-xs-6"><label class="block devil_gray_text">DEP number</label><input class="frg-input-field full_width" /></div><div class="col-xs-6"><label class="block devil_gray_text">Description</label><input class="frg-input-field full_width" /></div></div>' );
 		});
 
+		$( '.js-display-overlay' ).click( function () {
+			self.displayOverlay( $( this ) );
+		});
+
 		return self;
 	},
 
@@ -1288,6 +1281,29 @@ var JAG = {
 
 		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
 		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
+
+		return self;
+	},
+
+	displayOverlay: function ( el ) {
+		var self = this;
+
+		// Show full page Loading Overlay
+		$.LoadingOverlay( "show" );
+
+		// Hide it after 3 seconds
+		setTimeout( function () {
+			$.LoadingOverlay( "hide" );
+
+			var selected_text = 'Add to cart',
+				unselected_text = 'Remove from cart';
+
+			if ( el.hasClass( 'current' ) ) {
+				el.removeClass( 'current' ).text( selected_text );
+			} else {
+				el.addClass( 'current' ).text( unselected_text );
+			}
+		}, 3000);
 
 		return self;
 	}

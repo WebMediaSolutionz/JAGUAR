@@ -36,6 +36,7 @@
 		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/jquery.hashchange.min.js"></script>
   		<script type="text/javascript" src="javascript/lib/jquery.easytabs.min.js"></script>
+  		<script type="text/javascript" src="javascript/lib/loadingoverlay.min.js"></script>
 
 		<script type="text/javascript" src="javascript/cities.js"></script>
 		<script type="text/javascript" src="javascript/jaguar.js"></script>
