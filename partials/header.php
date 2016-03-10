@@ -91,7 +91,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>Plans only</strong>
+									<strong>BYOD Plans</strong>
 								</a>
 							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
@@ -102,7 +102,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
-									<strong>Upgrades</strong>
+									<strong>Upgrade</strong>
 								</a>
 							</li>
 							<li class="left">
