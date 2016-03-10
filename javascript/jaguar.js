@@ -980,7 +980,12 @@ var JAG = {
 				second_filter_text = ( second_filter.length === 1 ) ? second_filter.attr( 'data-filter' ) : null,
 				items = $( '.object' );
 
-			items.show();
+			if ( self.currentPage === 'plans' ) {
+				items.closest( '.js-element' ).show();
+			} else {
+				items.show();
+			}
+
 			applied_filter.text( applied_filter_text );
 
 			items.each( function () {
@@ -988,14 +993,30 @@ var JAG = {
 
 				if ( filter_text === 'all' ) {
 					if ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) !== -1 ) {
-						item.show();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).show();
+						} else {
+							item.show();
+						}
 					} else if( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) {
-						item.hide();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).hide();
+						} else {
+							item.hide();
+						}
 					} else if ( second_filter_text === null ) {
-						item.show();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).show();
+						} else {
+							item.show();
+						}
 					}
 				} else if ( item.attr( 'data-filter' ).indexOf( filter_text ) === -1 || ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) ) {
-					item.hide();
+					if ( self.currentPage === 'plans' ) {
+						item.closest( '.js-element' ).hide();
+					} else {
+						item.hide();
+					}
 				}
 			});
 
