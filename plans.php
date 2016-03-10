@@ -54,7 +54,7 @@
 	<div class="inner-container clearfix">
 		<div class="row">
 			<?php for ( $i = 0; $i < 4; $i++ ) { ?>
-				<div class="col-xs-6">
+				<div class="col-xs-6 js-element">
 					<?php include( 'partials/plan.php' ); ?>
 				</div>
 			<?php } ?>
