@@ -38,15 +38,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>1</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
@@ -62,15 +65,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>2</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
@@ -86,15 +92,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>3</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
@@ -110,15 +119,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>*</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
