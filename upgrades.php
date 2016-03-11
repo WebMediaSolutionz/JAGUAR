@@ -16,7 +16,7 @@
 		<div class="clearfix vertical_gap vertical_gap_top">
 			<div class="left circle green_bg bold">20</div>
 			<div class="left gap_left super_dark_gray_text">
-				<strong>Allotment program</strong>
+				<strong class="big">Allotment program</strong>
 				<p class="top_bottom_small_padding no_margin">
 					Your current allotment balance is 20.<br />Use your allotment to upgrade any subscriber to a new smartphone  for only $75.00.<br />This program expires 6 months before your corporate agreement with TELUS ends.
 				</p>
@@ -28,7 +28,7 @@
 				<span class="frg-icon icon-checkmark white_text"></span>
 			</div>
 			<div class="left gap_left super_dark_gray_text">
-				<strong>Technology refresh program</strong>
+				<strong class="big">Technology refresh program</strong>
 				<p class="top_bottom_small_padding no_margin">
 					The TELUS Technology Refresh Program allows you to upgrade any subscriber to a new smartphone after 24 months on their current term.<br />The refresh program requires the subscriber to extend their contract for another 36 months.
 				</p>
