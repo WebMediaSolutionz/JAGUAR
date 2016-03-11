@@ -29,12 +29,6 @@
 					</ul>
 				</nav>
 			<?php } ?>
-			<div class='right frg-select-container color-light'>
-				<select class="js-sort-by" autocomplete="off">
-					<option value="device">Sort by: Device</option>
-					<option value="brand">Sort by: Brand</option>
-				</select>
-			</div>
 		</div>
 	</div>
 </div>
