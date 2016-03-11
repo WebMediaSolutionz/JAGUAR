@@ -7,29 +7,11 @@
 			<img class="js-iphone-6s-gold hide" src="images/beats2.jpg">
 		</div>
 
-		<div class="device__variant-container center">
-			<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-space-grey" aria-label="Change device colour to Space Grey">
-				<span class="frg-icon icon-circle-solid" style="color: #595859"></span>
-			</button>
-
-			<button class="device-color-button device__variant-item" data-lang="en" data-sku="iphone-6s-gold" aria-label="Change device colour to Gold">
-				<span class="frg-icon icon-circle-solid" style="color: #C2B19D"></span>
-			</button>
-		</div>
-
-		<div class="clearfix">
-			<div class="col-xs-6">
-				<label>Colour</label><br />
-				<div class='frg-select-container color-light'>
-					<select class="js-required" autocomplete="off">
-						<option selected>Select</option>
-						<option>Black</option>
-						<option>Green</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-xs-6">
-				<label>Quantity <span class="status positive" data-num="<?php echo $i; ?>">Available</span></label><br />
+		<div class="row">
+			<div class="col-xs-6 col-xs-offset-3">
+				<label class="full_width">
+					Quantity <span class="status positive right" data-num="<?php echo $i; ?>">Available</span>
+				</label><br />
 				<div class="status positive clearfix">
 					<input class='frg-input-field js-quantity back-order left js-required' data-num="<?php echo $i; ?>" value='1' />
 					<div class="frg-icon icon-info back-order left"></div>
@@ -40,6 +22,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="center_text">
 			<a class="frg-button select js-submit js-display-overlay state-disabled" href="#">Add to cart</a>
 		</div>
