@@ -11,6 +11,7 @@
 
 	$previous_step = null;
 	$next_step = null;
+	$byod = ( isset( $_GET[ 'byod' ] ) ) ? $_GET[ 'byod' ] : false;
 
 	switch ( $banner ) {
 		case 'banner1' :	$next = 'banner2';
@@ -44,6 +45,7 @@
 
 		case 'subscriber':			$previous_step = 'accessories2.php';
 									$next_step = 'cart_review.php';
+									$byod = ( $byod === 'true' );
 									break;
 
 		case 'cart_review':			$previous_step = 'subscriber.php';
