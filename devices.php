@@ -95,11 +95,13 @@
 
 		<div class="phones clearfix">
 			<div class="page current clearfix">
-				<?php 
-					for ( $i = 1; $i < 20; $i++ ) { 
-						include( 'partials/phone.php' );
-					} 
-				?>
+				<div class="row">
+					<?php 
+						for ( $i = 1; $i < 20; $i++ ) { 
+							include( 'partials/phone.php' );
+						} 
+					?>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -709,21 +709,26 @@ var JAG = {
 
 		$( '.js-filter-service-category' ).change( function () {
 			var sort_value = $( this ).val(),
-				phones = $( '.phone' ).addClass( 'hide' );
+				phones = $( '.phone' );
 
 			if ( sort_value.toLowerCase() === 'select' ) {
-				phones.removeClass( 'hide' );
+				phones.each( function () {
+					$( this )
+						.closest( '.js-element' )
+						.removeClass( 'hide' );
+				});
 			} else {
-				phones
-					.addClass( 'hide' )
-					.each( function () {
-						var phone = $( this ),
-							type = phone.attr( 'data-filter' );
+				phones.each( function () {
+					var phone = $( this ),
+						parent = phone.closest( '.js-element' ),
+						type = phone.attr( 'data-filter' );
 
-						if ( type.indexOf( sort_value ) !== -1 ) {
-							phone.removeClass( 'hide' );
-						}
-					});
+					if ( type.indexOf( sort_value ) !== -1 ) {
+						parent.removeClass( 'hide' );
+					} else {
+						parent.addClass( 'hide' );
+					}
+				});
 			}
 		});
 
