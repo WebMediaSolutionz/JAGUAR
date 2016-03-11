@@ -157,7 +157,7 @@
 							<tr>
 								<td colspan="2">
 									<div class='frg-select-container full_width color-light'>
-										<select class="full_width" autocomplete="off">
+										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>[Account Number] - $[50]/subscriber</option>
 											<option>[Account Number] - $[60]/subscriber</option>
