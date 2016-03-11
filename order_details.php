@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left">
-			<p class="h3">Order Summary: #12345678</p>
+			<p class="h3">Order summary: #12345678</p>
 
 			<h4 class="no_padding gray_text">Status: <span class="frg-icon <?php echo ( $status === 'pending_approval' ) ? 'icon-warning-inverted' : 'icon-checkmark-inverted'; ?>"></span> <?php echo ( $status === 'pending_approval' ) ? 'Pending approval' : 'Shipped'; ?></h4>
 		</div>
@@ -18,7 +18,7 @@
 		</div>
 		<?php if ( $status === 'shipped' ) { ?>
 			<div class="frg-select-container right color-light">
-				<select>
+				<select autocomplete="off">
 					<option>Action</option>
 					<option>Select all</option>
 					<option>Remove item(s)</option>
@@ -43,8 +43,8 @@
 					<?php if ( $status !== 'shipped' ) { ?>
 						<th>Estimated arrival</th>
 					<?php } ?>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small">
@@ -82,7 +82,7 @@
 						<th>Estimated arrival</th>
 					<?php } ?>
 					<th></th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small">
@@ -193,7 +193,7 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Sub Total</td>
+						<td>Subtotal</td>
 						<td>$5,500</td>
 						<td class="right_align">$25,500</td>
 					</tr>

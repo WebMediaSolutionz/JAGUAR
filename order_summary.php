@@ -6,7 +6,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left gray_text">
-			<div class="h3">Confirm Order</div>
+			<div class="h3">Confirm order</div>
 		</div>
 	</div>
 </div>
@@ -23,17 +23,17 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -43,12 +43,12 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
 						<ul class="gap_left_small">
-							<li>no commitment, contracts or credit checkes</li>
+							<li>No commitment, contracts or credit checks</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<a class="js-show_list" href="#">View List</a>
+						<a class="js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -145,7 +145,7 @@
 								</tbody>
 							</table>
 							<div class="heading clearfix">
-								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span></a></div>
 							</div>
 						</div>
 					</td>
@@ -167,17 +167,17 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -187,12 +187,12 @@
 					<td class="description">
 						<p class="big no_margin">Samsung Galaxy Grand Prime</p>
 						<ul class="gap_left_small">
-							<li>no commitment, contracts or credit checkes</li>
+							<li>No commitment, contracts or credit checks</li>
 							<li>Low calling rates of $0.15 per min</li>
 							<li>Voice Mail 3, call display, call waiting and conference calling for free</li>
 						</ul>
 
-						<a class="js-show_list" href="#">View List</a>
+						<a class="js-show_list" href="#">View list</a>
 					</td>
 					<td>
 						<span class="status positive">5-10 days</span>
@@ -290,7 +290,7 @@
 								</tbody>
 							</table>
 							<div class="heading clearfix">
-								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Less details</span></a></div>
+								<div class="left gap_left"><a class="js-hide_subscribers_list" href="#"><span>Hide list</span></a></div>
 							</div>
 						</div>
 					</td>
@@ -312,17 +312,17 @@
 	<div class="inner-container clearfix">
 		<table class="wide">
 			<thead class="gray_text">
-				<tr>
+				<tr class="outline">
 					<th>Item</th>
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Estimated arrival</th>
-					<th class="right_align">Due Monthly</th>
-					<th class="right_align">Due Now</th>
+					<th class="right_align">Due monthly</th>
+					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
-				<tr class="wide">
+				<tr class="wide outline">
 					<td>
 						<span>Order-1</span>
 					</td>
@@ -349,11 +349,11 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Sub Total</td>
+						<td>Subtotal</td>
 						<td>$5,500.00</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>
@@ -375,7 +375,7 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
 			<div class="right">
 				<table class="right_align total">
 					<tr>
@@ -391,7 +391,7 @@
 
 <div class="outer-container content white_bg order_summary">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator bottom_horizontal_separator top_bottom_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator bottom_horizontal_separator light_gray top_bottom_padding clearfix">
 			<div class="row">
 				<div class="col-xs-6 small gray_text terms_conditions">
 					<h5>Terms &amp; conditions</h5>

@@ -24,10 +24,6 @@
 	}
 }
 
-.frg-icon {
-	color: #57a708;
-}
-
 span.back-order {
 	color: #8c68a6;
 	position: absolute;
@@ -59,7 +55,7 @@ span.status {
 
 	div.frg-icon {
 		background-color: #FFF;
-		border: thin solid $light_light_gray;
+		border: thin solid $light_gray2;
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
 		height: 30px;
@@ -529,7 +525,7 @@ h3 {
 		padding-top: 45px;
 
 		section {
-			border-bottom: thin solid #000;
+			border-bottom: thin solid #9b9b9b;
 			padding: 15px 0;
 			color: $dark_gray;
 
@@ -555,7 +551,7 @@ h3 {
 			table {
 				input,
 				select {
-					border: thin solid #CCC;
+					/*border: thin solid #CCC;*/
 					width: 139px;
 					height: 30px;
 				}
@@ -579,7 +575,7 @@ h3 {
 
 				&.table2 {
 					tr td {
-						width: 100px;
+						/*width: 100px;*/
 					}
 				}
 
@@ -629,26 +625,6 @@ h3 {
 				a {
 					img {
 						height: 173px;
-					}
-				}
-
-				.device__variant-container {
-					width: 87px;
-					margin-top: 5px;
-
-					button {
-						width: 25px;
-						height: 25px;
-						border: none;
-						background: transparent;
-
-						&:nth-child(4) {
-							margin-left: 30px;
-						}
-
-						span {
-							margin-left: -5px;
-						}
 					}
 				}
 			}
@@ -723,7 +699,7 @@ h3 {
 				}
 
 				h4 {
-					font-size: 30px;
+					font-size: 25px;
 				}
 
 				h5 {
@@ -932,7 +908,7 @@ h3 {
 		color: #000;
 	}
 
-	.inner-container {
+	&.outer-container .inner-container {
 		background: transparent url( '../../images/flower.jpg' ) no-repeat 85% center;
 	}
 
@@ -1119,14 +1095,29 @@ span.footnote {
 	}
 }
 
+.plans,
+.plans2 {
+	.plan {
+		padding: 15px;
+	}
+}
+
 .service {
 	&.col-xs-3 {
 		width: 23%;
 		margin-right: 2.6%;
 
-		&:last-child {
+		&:nth-child(4n) {
 			margin-right: 0;
 		}
+	}
+
+	h3 {
+		height: 90px;
+	}
+
+	.service_desc {
+		height: 100px;
 	}
 }
 
@@ -1138,8 +1129,7 @@ span.footnote {
 	margin-bottom: 25px;
 }
 
-.select.frg-button,
-.frg-button:focus {
+.select.frg-button {
 	@include select;
 }
 
@@ -1841,6 +1831,58 @@ table.wide {
 .add_subscriber {
 	padding: 0 30px 20px 30px;
 	margin: 30px 0;
+}
+
+.borders {
+	border-top: thin solid $gray;
+	border-bottom: thin solid #ececec; 
+
+	.inner-container {
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+}
+
+.tabs-container {
+	margin-top: -42px;
+}
+
+.device {
+	.frg-input-field.js-quantity {
+		width: 95% !important;
+	}
+
+	.frg-icon.icon-info {
+		width: 5% !important;
+	}
+}
+
+.phone_details.image {
+	a {
+		img {
+			height: 470px;
+		}
+	}
+}
+
+.device__variant-container {
+	width: 87px;
+	margin-top: 5px;
+
+	button {
+		width: 25px;
+		height: 25px;
+		border: none;
+		background: transparent;
+
+		&:nth-child(4) {
+			margin-left: 30px;
+		}
+
+		span {
+			margin-left: -5px;
+		}
+	}
 }
 
 @media screen and (max-width: 1260px) {

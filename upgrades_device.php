@@ -12,7 +12,7 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4>samsung galaxy s6 32GB</h4>
+		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
 	</div>
 </div>
 
@@ -34,7 +34,7 @@
 						<tr>
 							<td>
 								<div class='frg-select-container style2 color-light'>
-									<select>
+									<select autocomplete="off">
 										<option>Select</option>
 										<option>Black</option>
 										<option>White</option>
@@ -43,7 +43,7 @@
 							</td>
 							<td class="vertical_align_top">
 								<div class='frg-select-container style2 color-light'>
-									<select>
+									<select autocomplete="off">
 										<option>Select</option>
 										<option>MicroSIM - $10/subscriber</option>
 										<option>MicroSIM - $10/subscriber</option>
@@ -57,7 +57,7 @@
 
 					<div><span>Apple DEP</span></div>
 					<div class='frg-select-container style2 half_width color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>115156 - $5/subscriber</option>
 							<option>115156 - $10/subscriber</option>
@@ -65,10 +65,10 @@
 						</select>
 					</div>
 
-					<h6 class="padding_top"><strong>Step 3: Select your service committment:</strong></h6>
+					<h6 class="padding_top"><strong>Step 3: Select your service committment</strong></h6>
 
 					<div class='frg-select-container style2 full_width color-light'>
-						<select class="js-sort-by">
+						<select class="js-sort-by" autocomplete="off">
 							<option>Select</option>
 							<option value="device">Voice &amp; data ($50/subscriber/month)</option>
 							<option value="brand">Voice Only ($45/subscriber/month)</option>

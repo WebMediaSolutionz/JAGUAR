@@ -21,11 +21,11 @@
 		<a href="#">Samsung Galaxy Prime</a>
 
 		<ul class="gap_left_small">
-			<li>Plan: Unlimited Nation Wide 60</li>
+			<li>Plan: Unlimited nationwide 60</li>
 			<li>Add-ons: TELUS Link, TELUS MDM, US Roaming</li>
 		</ul>
 
-		<a class="js-show_list" href="#">View List</a>
+		<a class="js-show_list" href="#">View list</a>
 	</td>
 	<?php if ( $status !== 'shipped' ) { ?>
 		<td>

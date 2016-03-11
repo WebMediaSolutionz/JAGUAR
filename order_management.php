@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left gray_text">
-			<div class="h3">Order Management</div>
+			<div class="h3">Order management</div>
 		</div>
 	</div>
 </div>
@@ -14,10 +14,11 @@
 		<div class="left">
 			<nav>
 				<ul class="no_styles">
+					<li class="left"><a class="block current" href="#">Show all</a></li>
 					<li class="left"><a class="block" href="#">Pending approval</a></li>
-					<li class="left"><a class="block" href="#">Orders with errors</a></li>
-					<li class="left"><a class="block" href="#">Pending activation</a></li>
-					<li class="left"><a class="block current" href="#">Show all</a></li> 
+					<li class="left"><a class="block" href="#">Orders approved</a></li>
+					<li class="left"><a class="block" href="#">Returns</a></li>
+					<li class="left"><a class="block" href="#">Repairs</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -66,7 +67,7 @@
 				<td>
 					<label class="block">BAN</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>1051231215615</option>
 							<option>8512198423165</option>
@@ -103,7 +104,7 @@
 				<td>
 					<label class="block">Status</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>Select</option>
 						</select>
@@ -112,7 +113,7 @@
 				<td>
 					<label class="block">Order Type</label>
 					<div class='frg-select-container color-light'>
-						<select>
+						<select autocomplete="off">
 							<option>Select</option>
 							<option>Select</option>
 						</select>
@@ -162,7 +163,7 @@
 		</div>
 		<div class="right">
 			<div class="frg-select-container color-light left">
-				<select>
+				<select autocomplete="off">
 					<option>Actions</option>
 					<option>Edit</option>
 					<option>Copy order to cart</option>
@@ -188,12 +189,12 @@
 					</th>
 					<th class="clearfix">
 						<div>	
-							<a class="block js-sort gray_text left" href="#">Payment Method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
+							<a class="block js-sort gray_text left" href="#">Payment method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
 						</div>
 					</th>
 					<th class="clearfix">
 						<div>
-							<a class="block js-sort gray_text left" href="#">Date Submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
+							<a class="block js-sort gray_text left" href="#">Date submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
 						</div>
 					</th>
 					<th class="clearfix">
@@ -205,7 +206,7 @@
 						</div>
 					</th>
 					<th class="clearfix">
-						<span>Due Now</span>
+						<span>Due now</span>
 					</th>
 				</tr>
 			</thead>

@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/dropit.css" />
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick.css" />
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/slick-theme.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet/css/lib/easytabs.min.css" />
 
 		<link rel="stylesheet" type="text/css" href="stylesheet/css/styles.css" />
 
@@ -21,8 +22,8 @@
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/lib/html5shim.js"></script><![end if]-->
 	</head>
 	<body>
-		<link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
-		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=zh57-pk62-rn95-ny31"></script>
+		<link rel="stylesheet" type="text/css" href="https://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
+		<script type="text/javascript" src="https://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=zh57-pk62-rn95-ny31"></script>
 		
 		<div class="header_bg white_bg">
 			<div class="outer-container header frg-drop-shadow">
@@ -63,7 +64,7 @@
 										<li></li>
 							            <li><a href="#">Stan Smith</a></li>
 							            <li><a href="#">English</a></li>
-							            <li><a href="#">Corporate Settings</a></li>
+							            <li><a href="corporate_settings.php#tabs1">Corporate Settings</a></li>
 							            <li><a href="#">Log out</a></li>
 							        </ul>
 								</li>
@@ -90,7 +91,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>Plans</strong>
+									<strong>BYOD Plans</strong>
 								</a>
 							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
@@ -101,12 +102,12 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
-									<strong>Upgrades</strong>
+									<strong>Upgrade</strong>
 								</a>
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
-									<strong>Order Management</strong>
+									<strong>Order management</strong>
 								</a>
 							</li>
 						</ul>
@@ -119,7 +120,7 @@
 							<span class="frg-icon icon-cart"></span>
 						</div>
 						<div class="col-xs-10 status right_align">
-							<div><strong>Last Saved:</strong></div>
+							<div><strong>Last saved:</strong></div>
 							<div>2:38 PM EST</div>
 						</div>
 					</div>

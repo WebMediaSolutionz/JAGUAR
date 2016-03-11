@@ -231,6 +231,10 @@ ul {
 	&.small_gap {
 		margin-bottom: 8px;
 	}
+
+	&.big_gap {
+		margin-bottom: 35px;
+	}
 }
 
 .vertical_gap_top {
@@ -465,7 +469,7 @@ a.underline {
 }
 
 .frg-input-field {
-	border: thin solid #E2E2E2;
+	border: thin solid $light_gray2;
 	margin: 0;
 
 	&.small {
@@ -539,8 +543,13 @@ a.underline {
 
 .circle {
 	border-radius: 30px;
-	padding: 10px 18px !important;
-	font-size: 26px;
+	padding: 0 8px !important;
+	font-size: 20px;
+	margin-top: 5px;
+
+	& + div {
+		font-size: 14px;
+	}
 }
 
 .italics {
@@ -592,6 +601,12 @@ table {
 }
 
 .frg-icon {
+	color: #57a708;
+
+	&.icon-warning-inverted {
+		color: #f5a623;
+	}
+
 	&.small {
 		font-size: 15px;
 	}
@@ -626,4 +641,81 @@ table {
 
 .half_width {
 	width: 45% !important;
+}
+
+.halfwidth {
+	width: 50% !important;
+}
+
+.alert {
+	margin-bottom: 0;
+
+	&.error {
+		color: $alert_red;
+
+		.frg-icon {
+			color: $alert_red;
+		}
+	}
+}
+
+.vertical_padding10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.vertical_padding20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.vertical_padding30 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.top_margin20 {
+	margin-top: 20px;
+}
+
+.top_margin50 {
+	margin-top: 50px;
+}
+
+.bottom_margin20 {
+	margin-bottom: 20px;
+}
+
+.bottom_margin50 {
+	margin-bottom: 50px;
+}
+
+.top_padding20 {
+	padding-top: 20px;
+}
+
+.top_padding50 {
+	padding-top: 50px;
+}
+
+.bottom_padding20 {
+	padding-bottom: 20px;
+}
+
+.bottom_padding50 {
+	padding-bottom: 50px;
+}
+
+.footer {
+	@include primary_bg_color;
+}
+
+.lenght70 {
+	width: 70%;
+}
+
+.frg-select-container {
+	&::after {
+		color: $purple !important;
+	}
 }

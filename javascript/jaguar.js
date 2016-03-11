@@ -10,12 +10,13 @@ var JAG = {
 
 	cities: cities,
 
+	formEntriesValid: true,
+
 	init: function () {
 		var self = this;
 
-		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
-
 		self
+			.setupCurrentPage()
 			.showVariants()
 			.attachEvents()
 			.setupPagination()
@@ -23,12 +24,27 @@ var JAG = {
 			.setupDueNow()
 			.setupInputMasks();
 
-		// self
-		// 	.attachEvents()
-		// 	.setupPagination()
-		// 	.ellipsis()
-		// 	.setupDueNow()
-		// 	.setupInputMasks();
+		if ( self.currentPage === 'corporate_settings' ) {
+			self.setupTabs();
+		}
+
+		return self;
+	},
+
+	setupCurrentPage: function () {
+		var self = this;
+
+		self.currentPage = $( 'html' ).attr( 'data-currentpage' );
+
+		return self;
+	},
+
+	setupTabs: function () {
+		var self = this;
+
+		$('#tab-container').easytabs({
+			animate: false
+		});
 
 		return self;
 	},
@@ -110,7 +126,7 @@ var JAG = {
 				row_number = parseInt( row_number ) + 2;
 
 			switch ( wording ) {
-				case "View List": 	wording = "Hide List";
+				case "View list": 	wording = "Hide list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).removeClass( 'hide' ).find( 'div' ).removeClass( 'hide' );
 
 									$( '.js-hide_subscribers_list' ).click( function () {
@@ -119,11 +135,11 @@ var JAG = {
 											row_number = parseInt( row_number );
 
 										$( this ).closest( '.subscriber_list' ).addClass( 'hide' ).closest( 'tr' ).addClass( 'hide' );
-										word2.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).find( '.js-show_list' ).text( 'View List' );
+										word2.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).find( '.js-show_list' ).text( 'View list' );
 									});
 									break;
 
-				case "Hide List": 	wording = "View List";
+				case "Hide list": 	wording = "View list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).addClass( 'hide' ).find( 'div' ).addClass( 'hide' );
 									break;					
 			}
@@ -184,7 +200,7 @@ var JAG = {
 					.removeClass( 'closed' )
 					.addClass( 'open' )
 					.find( '.text' )
-					.text( 'Hide subscribers' )
+					.text( 'Hide all' )
 					.closest( '.js-view_more' )
 					.find( '.frg-icon' )
 					.addClass( 'icon-minus-circled' )
@@ -196,7 +212,7 @@ var JAG = {
 					.removeClass( 'open' )
 					.addClass( 'closed' )
 					.find( '.text' )
-					.text( 'View subscribers' )
+					.text( 'View all' )
 					.closest( '.js-view_more' )
 					.find( '.frg-icon' )
 					.addClass( 'icon-plus-circled' )
@@ -311,6 +327,8 @@ var JAG = {
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
 			}
+
+			self.ellipsis();
 		}).blur( function ( e ) {
 			var textbox = $( this ),
 				value = textbox.val(),
@@ -323,6 +341,8 @@ var JAG = {
 				edit_name.removeClass( 'hide' );
 				title.text( value ).removeClass( 'hide' );
 			}
+
+			self.ellipsis();
 		});
 
 		$( '.plan .select' ).click( function () {
@@ -344,21 +364,10 @@ var JAG = {
 			monthly.text( monthly_balance.substring( 0, monthly_balance.indexOf( '.' ) ) );
 		});
 
-		$( '.accessory .select, .service .select' ).click( function () {
+		$( '.service .select' ).click( function () {
 			var clicked = $( this ),
-				selected_text,
-				unselected_text;
-
-			switch ( self.currentPage ) {
-				case 'addons' 		: 	selected_text = 'Add service';
-										unselected_text = 'Remove service';
-										break;
-
-				case 'accessories' 	:
-				case 'accessories2' :  	selected_text = 'Add to cart';
-										unselected_text = 'Remove from cart';
-										break;
-			}
+				selected_text = 'Add service',
+				unselected_text = 'Remove service';
 
 			if ( clicked.hasClass( 'current' ) ) {
 				clicked.removeClass( 'current' ).text( selected_text );
@@ -451,11 +460,12 @@ var JAG = {
 		$( '.js-quantity' ).keyup( function () {
 			var quantity_field = $( this ),
 				entered_value = quantity_field.val(),
+				num = quantity_field.attr( 'data-num' ) || null,
 				status = quantity_field.closest( '.status' ),
 				accessory_atc = status.closest( '.accessory' ).find( '.frg-button' ),
 				device_atc = status.closest( 'section' ).closest( 'div' ).find( '.frg-button.color-green' ),
 				max_quantity = parseInt( status.find( '.js-max_quantity' ).val() ),
-				availability = $( 'span.status' );
+				availability = ( num !== null ) ? $( 'span.status[data-num=' + num + ']' ) : $( 'span.status' );
 
 			if ( $.isNumeric( entered_value ) ) {
 				if ( entered_value >= max_quantity ) {
@@ -465,8 +475,8 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
 
-					accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-					device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+					accessory_atc.addClass( 'state-disabled' );
+					device_atc.addClass( 'state-disabled' );
 
 					availability
 						.removeClass( 'positive' )
@@ -486,8 +496,8 @@ var JAG = {
 						.text( 'Available' );
 				}
 			} else {
-				accessory_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
-				device_atc.addClass( 'state-disabled' ).text( 'Unavailable' );
+				accessory_atc.addClass( 'state-disabled' );
+				device_atc.addClass( 'state-disabled' );
 
 				if ( entered_value !== '' ) {
 					availability
@@ -608,22 +618,6 @@ var JAG = {
 			}
 		});
 
-		$( '.js-email_validation' ).blur( function () {
-			var email = $( this );
-
-			if ( !self.validateEmail( email.val() ) ) {
-				email.closest( '.status' )
-					.removeClass( 'positive' )
-					.addClass( 'negative' )
-					.find( '.tooltip_bubble' )
-					.text( 'Please, enter a valid email address' );
-			} else {
-				email.closest( '.status' )
-					.removeClass( 'negative' )
-					.addClass( 'positive' );
-			}
-		});
-
 		$( '.advanced_search_table input, .advanced_search_table select' )
 			.keyup( function () {
 				self.validateSearchForm();
@@ -693,12 +687,6 @@ var JAG = {
 
 		// self.showFakeLinks();
 
-		$( '.js-required' ).keyup( function () {
-			self.checkRequiredField();
-		}).change( function () {
-			self.checkRequiredField();
-		});
-
 		$( '.js-upgrade-offer' ).change( function () {
 			var dropdown = $( this ),
 				status = dropdown.closest( 'tr' ).find( '.status' );
@@ -714,27 +702,172 @@ var JAG = {
 			}
 		});
 
+		$( '.js-filter-service-category' ).change( function () {
+			var sort_value = $( this ).val(),
+				phones = $( '.phone' ).addClass( 'hide' );
+
+			if ( sort_value.toLowerCase() === 'select' ) {
+				phones.removeClass( 'hide' );
+			} else {
+				phones
+					.addClass( 'hide' )
+					.each( function () {
+						var phone = $( this ),
+							type = phone.attr( 'data-filter' );
+
+						if ( type.indexOf( sort_value ) !== -1 ) {
+							phone.removeClass( 'hide' );
+						}
+					});
+			}
+		});
+
+		$( '.js-not-empty' ).blur( function () {
+			var field = $( this );
+
+			if ( field.val() === '' ) {
+				field
+					.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-checkmark-inverted' )
+					.addClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = false;
+			} else {
+				field
+					.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-warning-inverted' )
+					.addClass( 'icon-checkmark-inverted' );
+
+				self.formEntriesValid = true;
+			}
+		});
+
+		$( '.js-email_validation' ).blur( function () {
+			var email = $( this );
+
+			if ( !self.validateEmail( email.val() ) ) {
+				email.closest( '.status' )
+					.removeClass( 'positive' )
+					.addClass( 'negative' )
+					.find( '.tooltip_bubble' )
+					.text( 'Please, enter a valid email address' );
+
+				email
+					.closest( '.status' )
+					.find( '.frg-icon' )
+					.removeClass( 'icon-checkmark-inverted' )
+					.addClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = false;
+			} else {
+				email.closest( '.status' )
+					.removeClass( 'negative' )
+					.addClass( 'positive' );
+
+				email
+					.closest( '.status' )
+					.find( '.frg-icon' )
+					.addClass( 'icon-checkmark-inverted' )
+					.removeClass( 'icon-warning-inverted' );
+
+				self.formEntriesValid = true;
+			}
+		});
+
+		$( '.js-match-validation' ).blur( function () {
+			var emails = $( '.js-match-validation' ),
+				second_email = $( 'input[name=email2]' );
+
+			console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
+
+			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
+				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
+					second_email
+						.closest( '.status' )
+						.removeClass( 'positive' )
+						.addClass( 'negative' )
+						.find( '.tooltip_bubble' )
+						.text( 'The emails you entered do not match.' )
+						.closest( '.status' )
+						.find( '.frg-icon' )
+						.removeClass( 'icon-checkmark-inverted' )
+						.addClass( 'icon-warning-inverted' );
+
+					self.formEntriesValid = false;
+				} else {
+					second_email
+						.closest( '.status' )
+						.removeClass( 'negative' )
+						.addClass( 'positive' )
+						.closest( '.status' )
+						.find( '.frg-icon' )
+						.addClass( 'icon-checkmark-inverted' )
+						.removeClass( 'icon-warning-inverted' );
+
+					self.formEntriesValid = true;
+				}
+			}
+		});
+
+		$( '.js-required' ).keyup( function ( e ) {
+			self.checkRequiredField( e );
+		}).change( function ( e ) {
+			self.checkRequiredField( e );
+		});
+
+		$( '.js-more' ).click( function () {
+			var container = $( '.dep_accounts' );
+
+			container.append( '<div class="row lenght70 top_margin20"><div class="col-xs-6"><label class="block devil_gray_text">DEP number</label><input class="frg-input-field full_width" /></div><div class="col-xs-6"><label class="block devil_gray_text">Description</label><input class="frg-input-field full_width" /></div></div>' );
+		});
+
+		$( '.js-display-overlay' ).click( function () {
+			self.displayOverlay( $( this ) );
+		});
+
 		return self;
 	},
 
-	checkRequiredField: function () {
-		var fields = $( '.js-required' ),
-			button = $( '.js-submit' ),
-			valid = true;
+	checkRequiredField: function ( el ) {
+		var self = this,
+			form = $( el.target ).closest( '.js-all-required-fields' ),
+			fields = form.find( '.js-required' ),
+			button = form.find( '.js-submit' ),
+			valid = true,
+			radios = form.find( 'input[type=radio].js-required' ),
+			radios_valid = ( radios.length > 0 ) ? false : true;
 
 		fields.each( function () {
-			console.info( $( this ).val().toLowerCase() !== 'select' );
+			var field = $( this );
 
-			if ( $( this ).val() === '' || $( this ).val().toLowerCase() === 'select' || $( this ).val().indexOf( '_' ) !== -1 ) {
+			radios.each( function () {
+				if ( $( this ).is( ':checked' ) ) {
+					radios_valid = true;
+				}
+			});
+
+			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+				valid = false;
+			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
 			}
 		});
 
-		if ( !valid ) {
+		console.info( self.formEntriesValid );
+
+		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
 			button.addClass( 'state-disabled' );
 		} else {
 			button.removeClass( 'state-disabled' );
 		}
+
+		return self;
 	},
 
 	validateSearchForm: function () {
@@ -807,7 +940,7 @@ var JAG = {
 			var field = $( this );
 
 			if ( field.attr( 'type' ) === 'text' ) {
-				if ( field.val() === '' ) {
+				if ( field.val() === '' || field.val().indexOf( '_' ) !== -1 ) {
 					text_form_completed = false;
 				}
 			}
@@ -847,7 +980,12 @@ var JAG = {
 				second_filter_text = ( second_filter.length === 1 ) ? second_filter.attr( 'data-filter' ) : null,
 				items = $( '.object' );
 
-			items.show();
+			if ( self.currentPage === 'plans' ) {
+				items.closest( '.js-element' ).show();
+			} else {
+				items.show();
+			}
+
 			applied_filter.text( applied_filter_text );
 
 			items.each( function () {
@@ -855,14 +993,30 @@ var JAG = {
 
 				if ( filter_text === 'all' ) {
 					if ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) !== -1 ) {
-						item.show();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).show();
+						} else {
+							item.show();
+						}
 					} else if( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) {
-						item.hide();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).hide();
+						} else {
+							item.hide();
+						}
 					} else if ( second_filter_text === null ) {
-						item.show();
+						if ( self.currentPage === 'plans' ) {
+							item.closest( '.js-element' ).show();
+						} else {
+							item.show();
+						}
 					}
 				} else if ( item.attr( 'data-filter' ).indexOf( filter_text ) === -1 || ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) ) {
-					item.hide();
+					if ( self.currentPage === 'plans' ) {
+						item.closest( '.js-element' ).hide();
+					} else {
+						item.hide();
+					}
 				}
 			});
 
@@ -1037,7 +1191,7 @@ var JAG = {
 
 					listing += '			<div class="long-term right">';
 					listing += '				<h4>$50</h4>';
-					listing += '				<span class="time_period">3 year term</span>';
+					listing += '				<span class="time_period">3-year term</span>';
 					listing += '			</div>';
 					listing += '			<div class="clear"></div>';
 					listing += '		</div>';
@@ -1148,6 +1302,29 @@ var JAG = {
 
 		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
 		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
+
+		return self;
+	},
+
+	displayOverlay: function ( el ) {
+		var self = this;
+
+		// Show full page Loading Overlay
+		$.LoadingOverlay( "show" );
+
+		// Hide it after 3 seconds
+		setTimeout( function () {
+			$.LoadingOverlay( "hide" );
+
+			var selected_text = 'Add to cart',
+				unselected_text = 'Remove from cart';
+
+			if ( el.hasClass( 'current' ) ) {
+				el.removeClass( 'current' ).text( selected_text );
+			} else {
+				el.addClass( 'current' ).text( unselected_text );
+			}
+		}, 3000);
 
 		return self;
 	}
