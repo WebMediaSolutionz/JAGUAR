@@ -306,26 +306,28 @@ var JAG = {
 		$( '.edit_name' ).click( function () {
 			var clicked = $( this ),
 				closest = clicked.closest( 'p' ),
-				title = closest.find( 'span, strong' ),
+				container = closest.find( '.group_name_container' ),
 				textbox = closest.find( 'input' );
 
 			clicked.addClass( 'hide' );
-			title.addClass( 'hide' );
-			textbox.removeClass( 'hide' );
+			container.addClass( 'hide' );
+			textbox.removeClass( 'hide' ).focus();
 		});
 
 		$( '.js-auto_save' ).keypress( function ( e ) {
 			var textbox = $( this ),
 				value = textbox.val(),
 				closest = textbox.closest( 'p' ),
+				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( 'span, strong' ),
+				title = closest.find( '.group_name' ),
 				code = e.which || e.keyCode;
 
 			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value ).removeClass( 'hide' );
+				title.text( value );
+				container.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
@@ -333,13 +335,16 @@ var JAG = {
 			var textbox = $( this ),
 				value = textbox.val(),
 				closest = textbox.closest( 'p' ),
+				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( 'span, strong' );
+				title = closest.find( '.group_name' ),
+				code = e.which || e.keyCode;
 
-			if ( value !== '' ) {
+			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value ).removeClass( 'hide' );
+				title.text( value );
+				container.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
