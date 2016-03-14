@@ -375,9 +375,22 @@ var JAG = {
 				unselected_text = 'Remove service';
 
 			if ( clicked.hasClass( 'current' ) ) {
-				clicked.removeClass( 'current' ).text( selected_text );
+				clicked.removeClass( 'current' );
+
+				if ( clicked.is( 'input' ) ) {
+					clicked.val( selected_text );
+				} else {
+					clicked.text( selected_text );
+				}
+				
 			} else {
-				clicked.addClass( 'current' ).text( unselected_text );
+				clicked.addClass( 'current' );
+
+				if ( clicked.is( 'input' ) ) {
+					clicked.val( unselected_text );
+				} else {
+					clicked.text( unselected_text );
+				}
 			}
 		});
 
