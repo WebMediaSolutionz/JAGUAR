@@ -1110,6 +1110,11 @@ span.footnote {
 		}
 	}
 
+	h3,
+	.service_desc {
+		overflow: hidden;
+	}
+
 	h3 {
 		height: 90px;
 	}
