@@ -473,7 +473,7 @@ var JAG = {
 				availability = ( num !== null ) ? $( 'span.status[data-num=' + num + ']' ) : $( 'span.status' );
 
 			if ( $.isNumeric( entered_value ) ) {
-				if ( entered_value >= max_quantity ) {
+				if ( entered_value > max_quantity ) {
 					status
 						.removeClass( 'positive' )
 						.addClass( 'negative' )
