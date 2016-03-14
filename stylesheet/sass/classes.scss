@@ -1174,11 +1174,23 @@ span.footnote {
 
 	.select {
 		margin-top: 20px;
+
+		&.frg-button {
+			padding: 10px 0;
+		}
 	}
 
 	img {
 		width: 182px;
 		height: 171px;
+	}
+
+	.price {
+		color: $dark_gray;
+	}
+
+	.bottom_section {
+		width: 180px;
 	}
 }
 
