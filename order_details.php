@@ -189,7 +189,7 @@
 
 <div class="outer-container content white_bg order_details small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 no_padding clearfix">
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
