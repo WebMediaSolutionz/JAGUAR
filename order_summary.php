@@ -353,17 +353,17 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Subtotal</td>
+						<td>Subtotal:</td>
 						<td>$5,500.00</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>
 					<tr>
-						<td>Shipping</td>
+						<td>Shipping:</td>
 						<td>Free</td>
 						<td class="right_align">Free</td>
 					</tr>
 					<tr>
-						<td>Taxes HST</td>
+						<td>Taxes HST:</td>
 						<td>$5,500.00</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>
@@ -379,7 +379,7 @@
 			<div class="right">
 				<table class="right_align total">
 					<tr>
-						<td>Total</td>
+						<td>Total:</td>
 						<td>$6,215.00</td>
 						<td class="right_align">$31,922.50</td>
 					</tr>
