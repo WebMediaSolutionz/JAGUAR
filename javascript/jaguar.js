@@ -505,7 +505,14 @@ var JAG = {
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
 						
-					accessory_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
+					accessory_atc.removeClass( 'state-disabled' );
+
+					if ( accessory_atc.hasClass( 'added' ) ) {
+						accessory_atc.text( 'Update' );
+					} else {
+						accessory_atc.text( 'Add to cart' );
+					}
+
 					device_atc.removeClass( 'state-disabled' ).text( 'Add to cart' );
 
 					availability
@@ -1339,13 +1346,24 @@ var JAG = {
 		setTimeout( function () {
 			$.LoadingOverlay( "hide" );
 
-			var selected_text = 'Add to cart',
-				unselected_text = 'Remove from cart';
+			var bottom_section = el.closest( '.bottom_section' ),
+				quantity = bottom_section.find( '.js-quantity' ).val(),
+				quantity_prompt = bottom_section.find( '.js-quantity-prompt' );
 
-			if ( el.hasClass( 'current' ) ) {
-				el.removeClass( 'current' ).text( selected_text );
-			} else {
-				el.addClass( 'current' ).text( unselected_text );
+			if ( $.isNumeric( quantity ) && quantity > 0 ) {
+				el
+				.addClass( 'current' )
+				.addClass( 'added' )
+				.text( 'Update' );
+
+				quantity_prompt.text( 'Qty: ' + quantity + ' items added to cart' );
+			} else if ( $.isNumeric( quantity ) && quantity == 0 ) {
+				el
+				.removeClass( 'current' )
+				.removeClass( 'added' )
+				.text( 'Add to cart' );
+
+				quantity_prompt.text( '' );
 			}
 		}, 3000);
 

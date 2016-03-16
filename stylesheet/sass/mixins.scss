@@ -54,6 +54,11 @@
     	background-color: $purple !important;
     	background-image: none;
     	color: $white;
+
+    	&.state-disabled {
+    		background-color: $disabled_gray !important;
+    		color: $purple_link;
+    	}
     }
 }
 
