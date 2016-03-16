@@ -71,6 +71,6 @@
 			</div>
 		</div>
 
-		<a class="frg-button color-green full_lenght" href="#">Add to cart</a>
+		<input class="frg-button color-green full_lenght" type="submit" name="submit" value="Add to cart" />
 	</div>
 </div>
