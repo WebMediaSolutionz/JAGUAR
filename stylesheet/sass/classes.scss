@@ -1079,7 +1079,8 @@ span.footnote {
 		margin: 0;
 	}
 
-	.select {
+	.select,
+	.js-update-quantity {
 		margin-bottom: 20px;
 	}
 
@@ -1132,7 +1133,8 @@ span.footnote {
 	margin-bottom: 25px;
 }
 
-.select.frg-button {
+.select.frg-button,
+.js-update-quantity.frg-button {
 	@include select;
 }
 
@@ -1177,7 +1179,8 @@ span.footnote {
 		}
 	}
 
-	.select {
+	.select,
+	.js-update-quantity {
 		margin-top: 20px;
 
 		&.frg-button {
@@ -1892,6 +1895,11 @@ table.wide {
 			margin-left: -5px;
 		}
 	}
+}
+
+.js-quantity-prompt {
+	height: 25px;
+	font-size: 14px;
 }
 
 @media screen and (max-width: 1260px) {

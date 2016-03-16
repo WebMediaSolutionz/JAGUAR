@@ -26,6 +26,7 @@
 		<div class="bottom_section vertical_gap_top center">
 			<div class="full_width">
 				<div>
+					<div class="js-quantity-prompt"></div>
 					<label class="full_width">
 						Quantity <span class="status positive right" data-num="<?php echo $i; ?>">Available</span>
 					</label><br />
