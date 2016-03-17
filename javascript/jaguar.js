@@ -1310,7 +1310,9 @@ var JAG = {
 			sims_total += parseInt( $( this ).val() );
 		});
 
-		due_now.text( self.currencyFormat( base_total + sims_total ) );
+		if ( $.isNumeric( base_total ) && $.isNumeric( sims_total ) ) {
+			due_now.text( self.currencyFormat( base_total + sims_total ) );
+		}
 
 		return self;
 	},
