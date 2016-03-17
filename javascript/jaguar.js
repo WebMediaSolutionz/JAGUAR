@@ -406,33 +406,44 @@ var JAG = {
 		$( '.js-previous' ).click( function () {
 			var clicked = $( this ),
 				current_page = $( '.current.page' ),
-				previous_page = ( current_page.length > 0 ) ? $( '.current.page' ).prev() : $( '.page:first-child' ),
+				previous_page = $( '.current.page' ).prev(),
 				view_all_table = $( '.view_all' );
 
-			view_all_table.addClass( 'hide' );
+			if ( previous_page.is( 'table' ) ) {
+				view_all_table.addClass( 'hide' );
 
-			if ( previous_page.length > 0 ) {
-				current_page.removeClass( 'current' ).addClass( 'hide' );
-				previous_page.removeClass( 'hide' ).addClass( 'current' );
+				if ( previous_page.length > 0 ) {
+					current_page.removeClass( 'current' ).addClass( 'hide' );
+					previous_page.removeClass( 'hide' ).addClass( 'current' );
+				}
+
+				if ( !previous_page.prev().is( 'table' ) ) {
+					clicked.text( ' - ' );
+				}
+
+				self.setupPagination();
 			}
-
-			self.setupPagination();
 		});
 
 		$( '.js-next' ).click( function () {
 			var clicked = $( this ),
 				current_page = $( '.current.page' ),
-				next_page = ( current_page.length > 0 ) ? $( '.current.page + .page' ) : $( '.page:first-child' ),
-				view_all_table = $( '.view_all' );
+				next_page = $( '.current.page + .page' ),
+				view_all_table = $( '.view_all' ),
+				previous = $( '.js-previous' );
 
-			view_all_table.addClass( 'hide' );
+			if ( next_page.is( 'table' ) ) {
+				view_all_table.addClass( 'hide' );
+				
+				previous.text( 'Previous 10' );
 
-			if ( next_page.length > 0 ) {
-				current_page.removeClass( 'current' ).addClass( 'hide' );
-				next_page.removeClass( 'hide' ).addClass( 'current' );
+				if ( next_page.length > 0 ) {
+					current_page.removeClass( 'current' ).addClass( 'hide' );
+					next_page.removeClass( 'hide' ).addClass( 'current' );
+				}
+
+				self.setupPagination();
 			}
-
-			self.setupPagination();
 		});
 
 		$( '.js-view_all' ).click( function () {
@@ -1266,6 +1277,8 @@ var JAG = {
 			display = $( '.paging_display' ),
 			from_txt = display.find( '.from' ),
 			to_txt = display.find( '.to' ),
+			next = $( '.js-next' ),
+			remainder = null,
 			total = display.find( '.total' ),
 			pages = $( '.page' ),
 			nbr_rows = pages.find( 'tbody tr' ),
@@ -1278,6 +1291,13 @@ var JAG = {
 		from_txt.text( parseInt( current_table.attr( 'data-from' ) ) + 1 );
 		to_txt.text( parseInt( current_table.attr( 'data-from' ) ) + current_table.find( 'tbody tr' ).length );
 		total.text( nbr_rows.length );
+		remainder = ( parseInt( total.text() ) - parseInt( to_txt.text() ) > 10 ) ? 10 : parseInt( total.text() ) - parseInt( to_txt.text() );
+
+		if ( remainder > 0 ) {
+			next.text( 'Next ' + remainder );
+		} else {
+			next.text( ' - ' );
+		}
 
 		return self;
 	},
