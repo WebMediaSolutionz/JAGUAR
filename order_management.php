@@ -202,7 +202,7 @@
 					</th>
 					<th class="clearfix">
 						<div>
-							<a class="block js-sort gray_text left" href="#">Status</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="7" href="#"></a>
+							<a class="block js-sort gray_text left" href="#">Status</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="6" href="#"></a>
 						</div>
 					</th>
 					<th class="clearfix">
