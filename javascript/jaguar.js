@@ -285,24 +285,6 @@ var JAG = {
 			}
 		});
 
-		$( '.frg-checkbox' ).click( function () {
-			var clicked = $( this ),
-				price = clicked.find( '.value' ).attr( 'data-value' ),
-				quantity_txt = $( '.js-quantity' ),
-				quantity = quantity_txt.val(),
-				total = null;
-
-			if ( $.isNumeric( quantity ) ) {
-				// quantity_txt.removeClass( 'error' );
-				total = ( quantity * price ) + ( quantity * 10 );
-			} else {
-				// quantity_txt.addClass( 'error' );
-				total = parseInt( price ) + 10;
-			}
-
-			clicked.closest( 'section' ).closest( 'div' ).find( '.total' ).text( '$' + total );
-		});
-
 		$( '.edit_name' ).click( function () {
 			var clicked = $( this ),
 				closest = clicked.closest( 'p' ),

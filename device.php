@@ -86,7 +86,7 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option1">
 									<strong>
-										<span class="value" data-value="200">$100.00</span> 3-year plan
+										<span class="value" data-value="100">$100.00</span> 3-year plan
 									</strong>
 								</label>
 							</div>
@@ -98,7 +98,7 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option2">
 									<strong>
-										<span class="value" data-value="995">$775.00</span> Month to month
+										<span class="value" data-value="775">$775.00</span> Month to month
 									</strong>
 								</label>
 							</div>
@@ -110,7 +110,7 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option3">
 									<strong>
-										<span class="value" data-value="995">$775.00</span> Device only (no plan)
+										<span class="value" data-value="775">$775.00</span> Device only (no plan)
 									</strong>
 								</label>
 							</div>
