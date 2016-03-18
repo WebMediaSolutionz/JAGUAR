@@ -1310,8 +1310,8 @@ var JAG = {
 			var str = $( this ),
 				len = str.attr( 'data-maxlen' );
 
-			if ( str.text().length > len ) {
-				str.text( str.text().substr( 0, parseInt(len) - 3 ) + '...' );
+			if ( str.text().trim().length > len ) {
+				str.text( str.text().trim().substr( 0, parseInt(len) - 3 ) + '...' );
 			}
 		});
 
