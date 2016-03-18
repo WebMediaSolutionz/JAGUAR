@@ -1021,7 +1021,7 @@ var JAG = {
 				second_filter_text = ( second_filter.length === 1 ) ? second_filter.attr( 'data-filter' ) : null,
 				items = $( '.object' );
 
-			if ( self.currentPage === 'plans' ) {
+			if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 				items.closest( '.js-element' ).show();
 			} else {
 				items.show();
@@ -1034,26 +1034,26 @@ var JAG = {
 
 				if ( filter_text === 'all' ) {
 					if ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) !== -1 ) {
-						if ( self.currentPage === 'plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					} else if( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) {
-						if ( self.currentPage === 'plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).hide();
 						} else {
 							item.hide();
 						}
 					} else if ( second_filter_text === null ) {
-						if ( self.currentPage === 'plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					}
 				} else if ( item.attr( 'data-filter' ).indexOf( filter_text ) === -1 || ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) ) {
-					if ( self.currentPage === 'plans' ) {
+					if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 						item.closest( '.js-element' ).hide();
 					} else {
 						item.hide();
