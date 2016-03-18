@@ -21,7 +21,7 @@
 	<div class="inner-container clearfix">
 		<div class="row">
 			<div class="col-xs-3 col-xs-offset-2 center_text">
-				<img src="images/phone_big.jpg">
+				<img src="img/phone_big.jpg">
 			</div>
 			<div class="col-xs-5 col-xs-offset-1">
 				<section>
@@ -126,7 +126,7 @@
 						<h6>Ultimate sophisticated style in a sleek unibody</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone1.jpg">
+						<img src="img/phone1.jpg">
 					</div>
 				</div>
 				<div class="cell col-xs-6">
@@ -135,7 +135,7 @@
 						<h6>Touch and play for 4 hours with just 10 minutes of charging</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone2.jpg">
+						<img src="img/phone2.jpg">
 					</div>
 				</div>
 			</section>
@@ -146,7 +146,7 @@
 					<h6>Under a second to catch the moment</h6>
 				</div>
 				<div class="col-xs-6 large-cell">
-					<img src="images/phone3.jpg">
+					<img src="img/phone3.jpg">
 				</div>
 			</section>
 

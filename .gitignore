@@ -1,6 +1,6 @@
-stylesheet/.sass-cache/
-stylesheet/.sass-cache/*
-stylesheet/css/*.css
-stylesheet/css/*.map
-!stylesheet/css/styles.css
-!stylesheet/css/styles2.css
+.sass-cache/
+sass-cache/*
+css/*.css
+css/*.map
+!css/styles.css
+!css/styles2.css

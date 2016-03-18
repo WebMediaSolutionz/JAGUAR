@@ -6,7 +6,7 @@
 			<a href='#' class='frg-button color-green'>View analytics</a>
 		</div>
 		<div class="macbook left">
-			<img src="images/Laptop_02.png" alt="macbook">
+			<img src="img/Laptop_02.png" alt="macbook">
 		</div>
 	</div>
 </div>

@@ -264,7 +264,7 @@ h3 {
 
 				& li:first-child {
 					height: 15px;
-					background: transparent url( '../../images/triangle.png' ) no-repeat 115px 0;
+					background: transparent url( '../img/triangle.png' ) no-repeat 115px 0;
 					border: none;
 				}
 
@@ -907,7 +907,7 @@ h3 {
 	}
 
 	&.outer-container .inner-container {
-		background: transparent url( '../../images/flower.jpg' ) no-repeat 85% center;
+		background: transparent url( '../img/flower.jpg' ) no-repeat 85% center;
 	}
 
 	.confirmation_number {
@@ -1725,19 +1725,19 @@ table.wide {
 
 		.slick-prev {
 			top: 500px;
-			background: transparent url( '../../images/arrow_down.jpg' ) no-repeat;
+			background: transparent url( '../img/arrow_down.jpg' ) no-repeat;
 
 			&:hover {
-				background: transparent url( '../../images/arrow_down_green.jpg' ) no-repeat -5px 0;
+				background: transparent url( '../img/arrow_down_green.jpg' ) no-repeat -5px 0;
 			}
 		}
 
 		.slick-next {
 			top: -30px;
-			background: transparent url( '../../images/arrow_up.jpg' ) no-repeat;
+			background: transparent url( '../img/arrow_up.jpg' ) no-repeat;
 
 			&:hover {
-				background: transparent url( '../../images/arrow_up_green.jpg' ) no-repeat -3px 0;
+				background: transparent url( '../img/arrow_up_green.jpg' ) no-repeat -3px 0;
 			}
 		}
 	}
@@ -1910,7 +1910,7 @@ table.wide {
 
 	.confirmation {
 		.inner-container {
-			background: transparent url( '../../images/flower.jpg' ) no-repeat 95% center;
+			background: transparent url( '../img/flower.jpg' ) no-repeat 95% center;
 		}
 	}
 }

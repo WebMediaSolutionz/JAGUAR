@@ -6,7 +6,7 @@
 			<a href='#' class='frg-button color-green'>Add a passport</a>
 		</div>
 		<div class="fish_bowl left">
-			<img src="images/Goldfish_jumping.jpg" alt="fish bowls">
+			<img src="img/Goldfish_jumping.jpg" alt="fish bowls">
 		</div>
 	</div>
 </div>

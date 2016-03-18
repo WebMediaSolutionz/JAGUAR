@@ -5,7 +5,7 @@
 		</div>
 
 		<footer class="outter-container center vertical_padding30">
-			<img class="logo" alt="TELUS logo" src="images/TELUS-logo-white.svg">
+			<img class="logo" alt="TELUS logo" src="img/TELUS-logo-white.svg">
 			<p class="top_margin20">&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
 		</footer>
 

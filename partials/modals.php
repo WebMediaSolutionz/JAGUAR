@@ -25,7 +25,7 @@
 						<br />
 					</div>
 					<div class="col-xs-offset-2 col-xs-4">
-						<img class="upload_csv" src="images/upload_csv.jpg">
+						<img class="upload_csv" src="img/upload_csv.jpg">
 					</div>
 				</div>
 				<div class="inner-container top_bottom_padding clearfix">
