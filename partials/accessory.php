@@ -20,7 +20,7 @@
 		<div class="h4"><?php echo $name; ?></div>
 		<div class="price"><?php echo "$ {$price}"; ?></div>
 		<div class="item center_text">
-			<img class="js-iphone-6s-space-grey" src="<?php echo "images/accessories{$image}.jpg"; ?>" />
+			<img class="js-iphone-6s-space-grey" src="<?php echo "img/accessories{$image}.jpg"; ?>" />
 		</div>
 
 		<div class="bottom_section vertical_gap_top center">

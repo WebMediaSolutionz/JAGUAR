@@ -19,7 +19,7 @@
 
 		<div class="outer-container footer">
 			<footer class="inner-container">
-				<img class="logo" alt="TELUS logo" src="images/TELUS-logo-white.svg">
+				<img class="logo" alt="TELUS logo" src="img/TELUS-logo-white.svg">
 				<p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
 			</footer>
 		</div>

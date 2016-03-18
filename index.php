@@ -52,7 +52,7 @@
 						<div class="left ellipsis">Manage existing subscribers</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
 					</a>
 				</li>
-				<li class="laptop center_text"><img src="images/Laptop_01.png" alt="laptop"></li>
+				<li class="laptop center_text"><img src="img/Laptop_01.png" alt="laptop"></li>
 			</ul>
 		</div>
 		<div class="box left">
@@ -110,7 +110,7 @@
 					</ul>
 				</div>
 
-				<img class="headset left" src="images/headset.jpg" alt="headset">
+				<img class="headset left" src="img/headset.jpg" alt="headset">
 			</div>
 			<div class="col6 separator left">
 				<h3 class="title">Check repair ticket status</h3>

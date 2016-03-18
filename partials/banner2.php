@@ -6,7 +6,7 @@
 			<a href='#' class='frg-button color-green'>Learn how</a>
 		</div>
 		<div class="birds left">
-			<img src="images/3_Parrot_BLRD_GN_RD_m.jpg" alt="birds">
+			<img src="img/3_Parrot_BLRD_GN_RD_m.jpg" alt="birds">
 		</div>
 	</div>
 </div>

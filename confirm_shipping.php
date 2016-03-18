@@ -19,7 +19,7 @@
 			<span class="footnote gray_text">* Unfortunately we cannot deliver to P.O. Boxes, rural addresses or addresses outside Canada</span>
 		</div>
 		<div class="col-xs-4">
-			<img class="telus_truck" src="images/TELUS_Van.jpg">
+			<img class="telus_truck" src="img/TELUS_Van.jpg">
 		</div>
 	</div>
 </div>
