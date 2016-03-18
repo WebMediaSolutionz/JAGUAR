@@ -131,7 +131,7 @@
 						<span>20</span>
 					</td>
 					<td class="description">
-						<p class="big no_margin">iPhone S6 (<a href="device.php">edit</a>)</p>
+						<p class="big no_margin">iPhone S6</p>
 					</td>
 					<td class="vertical_align_top clearfix">
 						<div class="status negative">
