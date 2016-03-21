@@ -14,7 +14,7 @@
 	<div class="vertical_gap big_gap clearfix">
 		<div class="row">
 			<div class="col-xs-8">
-				<h5 class="ellipsis" data-maxlenght="20">Local Talk 50</h5>
+				<h5>Local Talk 50</h5>
 				<ul class="no_styles">
 					<li><span class="frg-icon icon-checkmark"></span> 300 sharable local minutes</li>
 					<li><span class="frg-icon icon-checkmark"></span> Call display, voice mail, call waiting,</li>
