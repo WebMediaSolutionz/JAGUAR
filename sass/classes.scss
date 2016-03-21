@@ -1393,7 +1393,7 @@ span.footnote {
 		tbody {
 			tr {
 				td {
-					width: 145px !important;
+					/*width: 145px !important;*/
 					/*height: 30px;*/
 					vertical-align: top;
 
@@ -1447,6 +1447,54 @@ span.footnote {
 
 					td:nth-child(4) {
 						width: 1000px !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.order_management {
+	table {
+		tbody {
+			tr {
+				td {
+					&:first-child {
+						min-width: 30px;
+						width: 5%;
+					}
+
+					&:nth-child(2) {
+						width: 10%;
+					}
+
+					&:nth-child(3) {
+						min-width: 85px;
+						width: 10%;
+					}
+
+					&:nth-child(4) {
+						min-width: 130px;
+						width: 20%;
+						padding: 20px 20px 20px 0;
+					}
+
+					&:nth-child(5) {
+						min-width: 130px;
+						width: 15%;
+					}
+
+					&:nth-child(6) {
+						width: 15%;
+					}
+
+					&:nth-child(7) {
+						min-width: 70px;
+						width: 15%;
+					}
+
+					&:nth-child(8) {
+						width: 10%;
 					}
 				}
 			}
@@ -1515,9 +1563,9 @@ table.wide {
 				background-color: $secondary_bg;
 			}
 
-			th,
 			td {
-				padding: 10px 2px;
+				padding: 20px 10px 20px 0;
+				word-wrap: break-word;
 
 				div:last-child {
 					margin:  2px 0 0 5px;
