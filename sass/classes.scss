@@ -1465,6 +1465,7 @@ table.wide {
 		tr.wide {
 			& > td {
 				width: 9% !important;
+				padding: 0 5px;
 
 				table.wide {
 					width: 95% !important;

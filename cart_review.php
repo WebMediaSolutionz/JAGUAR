@@ -56,7 +56,9 @@
 						</div>
 					</td>
 					<td>
-						<span>Order-1</span>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</span>
 					</td>
 					<td>
 						<span>50</span>
