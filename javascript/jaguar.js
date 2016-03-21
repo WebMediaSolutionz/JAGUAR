@@ -480,11 +480,13 @@ var JAG = {
 
 			if ( $.isNumeric( entered_value ) ) {
 				if ( entered_value > max_quantity ) {
+					var tooltip_message = ( max_quantity === 0 ) ? 'sorry, this item is not available at the moment' : 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available';
+
 					status
 						.removeClass( 'positive' )
 						.addClass( 'negative' )
 						.find( '.tooltip_bubble span' )
-						.text( 'The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available' );
+						.text( tooltip_message );
 
 					accessory_atc.addClass( 'state-disabled' );
 					device_atc.addClass( 'state-disabled' );
@@ -529,11 +531,13 @@ var JAG = {
 						.find( '.tooltip_bubble span' )
 						.text( 'please, enter a valid number' );	
 				} else {
-					status
-						.removeClass( 'negative' )
-						.addClass( 'positive' );
+					if ( max_quantity !== 0 ) {
+						status
+							.removeClass( 'negative' )
+							.addClass( 'positive' );
 
-					availability.text( '' );
+						availability.text( '' );
+					}
 				}
 				
 			}
