@@ -124,15 +124,23 @@ table {
 				border-bottom : thin solid #f4f5f6;
 			}
 		}
-	}
-}
 
-td {
-	vertical-align: top;
+		th {
+			vertical-align: top;
 
-	&.side_padding {
-		padding-left: 10px;
-		padding-right: 10px;
+			.frg-icon {
+				margin-top: 5px;
+			}
+		}
+
+		td {
+			vertical-align: top;
+
+			&.side_padding {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
 	}
 }
 
