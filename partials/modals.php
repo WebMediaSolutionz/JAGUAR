@@ -13,13 +13,13 @@
 						<h4>Set up multiple subscribers at once</h4>
 						<h6>Save time by uploading all your subscriber details in one file.</h6>
 
-						<h4 class="padding_top">Step 1.</h5>
+						<h4 class="padding_top">Step 1.</h4>
 						<a class="download_csv block clearfix" href="#"><div class="frg-icon icon-stacked-papers-inverted csv left"></div> <div class="left">Download .CSV template</div></a>
 
-						<h4>Step 2.</h5>
+						<h4>Step 2.</h4>
 						<h6>enter subscriber details into your .CSV file</h6>
 
-						<h4 class="padding_top">Step 3.</h5>
+						<h4 class="padding_top">Step 3.</h4>
 						<h6>Upload your completed .CSV file</h6>
 
 						<br />

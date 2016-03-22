@@ -26,7 +26,7 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="javascript/lib/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/bootstrap.min.js"></script>
 		<script type="text/javascript" src="javascript/lib/bootstrap-modalmanager.js"></script>
 		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
