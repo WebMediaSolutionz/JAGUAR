@@ -1955,6 +1955,13 @@ table.wide {
 	font-size: 14px;
 }
 
+.existing_address {
+	.info {
+		margin-left: 45px;
+		line-height: 20px;
+	}
+}
+
 @media screen and (max-width: 1260px) {
     .support_section .headset {
 		width: 40%;

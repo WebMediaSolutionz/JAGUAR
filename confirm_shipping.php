@@ -24,6 +24,12 @@
 	</div>
 </div>
 
+<div class="outer-container content white_bg gray_text">
+	<div class="inner-container vertical_gap clearfix">
+		<h3>Enter a new address:</h3>
+	</div>
+</div>
+
 <div class="outer-container content purple_bg top_bottom_padding shipping gray_text">
 	<div class="inner-container clearfix">
 		<table class="gray_text">
@@ -35,27 +41,37 @@
 					<label>Last name</label>
 				</td>
 				<td>
-					<label>Address</label>
-				</td>
-				<td>
-					<label>Apt/Suite</label>
-				</td>
-				<td>
-					<label>City</label>
-				</td>
-				<td>
-					<label>Province</label>
-				</td>
-				<td>
-					<label>Postal code</label>
-				</td>
-				<td>
-					<label>Phone number</label>
+					<label>Company</label>
 				</td>
 			</tr>
 			<tr>
 				<td><input class="js-form-complete" type="text" name="firstname"></td>
 				<td><input class="js-form-complete" type="text" name="lastname"></td>
+				<td><input type="text" name="company"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td class="padding_top">
+					<label>Address</label>
+				</td>
+				<td class="padding_top">
+					<label>Apt/Suite</label>
+				</td>
+				<td class="padding_top">
+					<label>City</label>
+				</td>
+				<td class="padding_top">
+					<label>Province</label>
+				</td>
+				<td class="padding_top">
+					<label>Postal code</label>
+				</td>
+				<td class="padding_top">
+					<label>Phone #</label>
+				</td>
+			</tr>
+			<tr>
 				<td><input class="js-form-complete" type="text" name="address"></td>
 				<td><input type="text" name="apt_suite"></td>
 				<td><input class="js-form-complete" type="text" name="city"></td>
@@ -71,88 +87,67 @@
 	<div class="inner-container clearfix">
 		<h3>Or use an existing address</h3>
 
-		<div class="address border gray_text clearfix">
-			<div class="col-xs-1">
-				<div class="frg-checkbox regular">
+		<div class="row top_bottom_padding">
+			<div class="col-xs-3 existing_address clearfix">
+				<div class="frg-checkbox regular left">
 					<div class="inner">
 						<input class="js-form-complete" id="radio-option1" type="radio" value="Option 1" name="option">
 						<div class="icon"></div>
 					</div>
 				</div>
+				<div class="info left">
+					<strong>
+						Jonathan Richman<br />
+						ABC Company<br />
+					</strong>
+					<span>
+						6a-123 Main Street<br />
+						Ottawa, Ontario<br />
+						A1B C2D<br />
+						(613) 555 1234
+					</span>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<label class="bold">Name</label>
-				<p>Jonathan Richman</p>
-			</div>
-			<div class="col-xs-2">
-				<label class="bold">Address</label>
-				<p>123 Main St.</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">Apt/Suite</label>
-				<p>101</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">City</label>
-				<p>Ottawa</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">Province</label>
-				<p>ON</p>
-			</div>
-			<div class="col-xs-2">
-				<label class="bold">Postal code</label>
-				<p>A1B C2D</p>
-			</div>
-			<div class="col-xs-2">
-				<label class="bold">Phone number</label>
-				<p>613 555 1234</p>
-			</div>
-		</div>
-
-		<div class="address border gray_text clearfix">
-			<div class="col-xs-1">
-				<div class="frg-checkbox regular">
+			<div class="col-xs-3 existing_address clearfix">
+				<div class="frg-checkbox regular left">
 					<div class="inner">
-						<input class="js-form-complete" id="radio-option2" type="radio" value="Option 2" name="option">
+						<input class="js-form-complete" id="radio-option1" type="radio" value="Option 1" name="option">
 						<div class="icon"></div>
 					</div>
 				</div>
+				<div class="info left">
+					<strong>
+						Jonathan Richman<br />
+						ABC Company<br />
+					</strong>
+					<span>
+						6a-123 Main Street<br />
+						Ottawa, Ontario<br />
+						A1B C2D<br />
+						(613) 555 1234
+					</span>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<label class="bold">Name</label>
-				<p>Jonathan Richman</p>
+			<div class="col-xs-3 existing_address clearfix">
+				<div class="frg-checkbox regular left">
+					<div class="inner">
+						<input class="js-form-complete" id="radio-option1" type="radio" value="Option 1" name="option">
+						<div class="icon"></div>
+					</div>
+				</div>
+				<div class="info left">
+					<strong>
+						Jonathan Richman<br />
+						ABC Company<br />
+					</strong>
+					<span>
+						6a-123 Main Street<br />
+						Ottawa, Ontario<br />
+						A1B C2D<br />
+						(613) 555 1234
+					</span>
+				</div>
 			</div>
-			<div class="col-xs-2">
-				<label class="bold">Address</label>
-				<p>123 Main St.</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">Apt/Suite</label>
-				<p>101</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">City</label>
-				<p>Ottawa</p>
-			</div>
-			<div class="col-xs-1">
-				<label class="bold">Province</label>
-				<p>ON</p>
-			</div>
-			<div class="col-xs-2">
-				<label class="bold">Postal code</label>
-				<p>A1B C2D</p>
-			</div>
-			<div class="col-xs-2">
-				<label class="bold">Phone number</label>
-				<p>613 555 1234</p>
-			</div>
-		</div>
-
-		<h3>Shipping Instructions</h3>
-
-		<div class="col-xs-4 no_padding gray_text">
-			<textarea class="instructions border">Lorem ipsum dolor sit amet, massa bibendum risus sit lorem et cras. Adipiscing pellentesque, fusce morbi, aliquam consequat ante et vestibulum, et amet pulvinar lacus elit dignissim malesuada, eros urna et.</textarea>
 		</div>
 	</div>
 </div>
