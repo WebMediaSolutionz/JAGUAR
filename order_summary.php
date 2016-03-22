@@ -34,7 +34,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
@@ -75,7 +75,7 @@
 								</thead>
 								<tbody>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -92,7 +92,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -109,7 +109,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -126,7 +126,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -178,7 +178,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
@@ -220,7 +220,7 @@
 								</thead>
 								<tbody>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -237,7 +237,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -254,7 +254,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -271,7 +271,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -323,7 +323,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
