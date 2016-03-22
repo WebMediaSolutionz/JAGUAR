@@ -41,7 +41,6 @@
 
 @mixin outline ( $color ) {
 	border: thin solid $color;
-	min-height: 100px;
 }
 
 @mixin select {
