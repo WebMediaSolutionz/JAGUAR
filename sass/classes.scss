@@ -1520,7 +1520,11 @@ table.wide {
 				}
 
 				&.description {
-					width: 50% !important;
+					width: 30% !important;
+				}
+
+				&.item {
+					width: 20% !important;
 				}
 			}
 		}

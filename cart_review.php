@@ -55,7 +55,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						</span>
@@ -92,7 +92,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-2</span>
 					</td>
 					<td>
@@ -126,7 +126,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-3</span>
 					</td>
 					<td>
@@ -193,7 +193,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-4</span>
 					</td>
 					<td>
@@ -264,7 +264,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-5</span>
 					</td>
 					<td>
