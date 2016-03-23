@@ -72,5 +72,8 @@
 	define( 'NBR_DEVICES', 50 );
 	$folder = "WCM_EOF/static_content/jaguar/";
 
+	$static_content_img = "img";
+	$spinner_img = "{$static_content_img}/spinner.gif";
+
 	$javascipt_form = ( $_SERVER[ 'SERVER_NAME' ] === 'localhost' ) ? 'uncompressed' : 'compressed';
 ?>
