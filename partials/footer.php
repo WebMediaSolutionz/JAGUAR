@@ -26,20 +26,20 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/lib/jquery-1.8.3.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modalmanager.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-datepicker.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
-		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/jquery.hashchange.min.js"></script>
-  		<script type="text/javascript" src="javascript/lib/jquery.easytabs.min.js"></script>
-  		<script type="text/javascript" src="javascript/lib/loadingoverlay.min.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modalmanager.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modal.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/dropit.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/slick.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/jquery.hashchange.js"></script>
+  		<script type="text/javascript" src="javascript/compressed/lib/jquery.easytabs.js"></script>
+  		<script type="text/javascript" src="javascript/compressed/lib/loadingoverlay.js"></script>
 
-		<script type="text/javascript" src="javascript/cities.js"></script>
-		<script type="text/javascript" src="javascript/jaguar.js"></script>
+		<script type="text/javascript" src="javascript/compressed/cities.js"></script>
+		<script type="text/javascript" src="javascript/compressed/jaguar.js"></script>
 
 		<script type="text/javascript">
 			$( document ).ready( function () {
