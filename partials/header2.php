@@ -6,8 +6,8 @@
 		<link rel="stylesheet" type="text/css" href="css/lib/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/frogger.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/telus-fonts.css" />
-		<link rel="stylesheet" type="text/css" href="css/lib/telus-bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-datepicker.standalone.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/telus-bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-datepicker.standalone.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/dropit.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/slick.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/slick-theme.css" />
