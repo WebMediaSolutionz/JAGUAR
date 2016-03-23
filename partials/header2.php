@@ -18,7 +18,7 @@
 
 		<link href="img/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon" />
 
-		<!--[if lt IE 9]><script type="text/javascript" src="javascript/compressed/lib/html5shim.js"></script><![end if]-->
+		<!--[if lt IE 9]><script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/html5shim.js"></script><![end if]-->
 	</head>
 	<body>
 		<!-- <link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
