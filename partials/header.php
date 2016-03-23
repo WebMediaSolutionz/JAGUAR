@@ -25,6 +25,8 @@
 		<link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=ha46-jw92-at99-yh51" />
 		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=ha46-jw92-at99-yh51"></script>
 		
+		<?php include( 'partials/backend_variables.php' ); ?>
+
 		<div class="header_bg white_bg">
 			<div class="outer-container header frg-drop-shadow">
 				<div class="inner-container">

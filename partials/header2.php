@@ -24,6 +24,7 @@
 		<!-- <link rel="stylesheet" type="text/css" href="http://ws1.postescanada-canadapost.ca/css/addresscomplete-2.30.min.css?key=zh57-pk62-rn95-ny31" />
 		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=zh57-pk62-rn95-ny31"></script> -->
 
+		<input type="hidden" name="spinner_img" value="<?php echo $spinner_img; ?>" />
 		<div class="site-header outer-container">
 			<div class="inner-container grid">
 				<header class="outer-container">
