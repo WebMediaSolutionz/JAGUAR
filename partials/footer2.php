@@ -11,17 +11,17 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/lib/jquery.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modalmanager.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-datepicker.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
-		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/jquery.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modalmanager.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modal.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/dropit.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="javascript/compressed/lib/slick.js"></script>
 
-		<script type="text/javascript" src="javascript/cities.js"></script>
-		<script type="text/javascript" src="javascript/jaguar.js"></script>
+		<script type="text/javascript" src="javascript/compressed/cities.js"></script>
+		<script type="text/javascript" src="javascript/compressed/jaguar.js"></script>
 
 		<script type="text/javascript">
 			$( document ).ready( function () {
