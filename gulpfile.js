@@ -1,8 +1,9 @@
 var gulp = require( 'gulp' ),
 	uglify = require( 'gulp-uglify' );
 
-gulp.task( 'default', function () {
-
+// Scripts Task
+// Uglifies
+gulp.task( 'scripts', function () {
 	// minifying my javascript
 	gulp.src( 'javascript/uncompressed/*.js' )
 		.pipe( uglify() )
@@ -13,3 +14,5 @@ gulp.task( 'default', function () {
 		.pipe( uglify() )
 		.pipe( gulp.dest( 'javascript/compressed/lib' ) );
 });
+
+gulp.task( 'default', [ 'scripts' ]);

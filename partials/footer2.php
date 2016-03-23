@@ -11,17 +11,17 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/compressed/lib/jquery.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/bootstrap.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modalmanager.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-modal.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/bootstrap-datepicker.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/dropit.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/jquery.maskedinput.js"></script>
-		<script type="text/javascript" src="javascript/compressed/lib/slick.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?><?php echo $javascipt_form; ?>/lib/jquery.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modalmanager.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modal.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/dropit.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/slick.js"></script>
 
-		<script type="text/javascript" src="javascript/compressed/cities.js"></script>
-		<script type="text/javascript" src="javascript/compressed/jaguar.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/cities.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/jaguar.js"></script>
 
 		<script type="text/javascript">
 			$( document ).ready( function () {
