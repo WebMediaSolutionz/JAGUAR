@@ -64,9 +64,9 @@
 							</tr>
 						</table>
 
-						<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
+						<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
 
-						<div class="vertical_gap small_gap">
+						<div class="vertical_gap small_gap js-hide-not-device-only">
 							<div class='frg-select-container full_width color-light'>
 								<select class="js-sort-by full_width js-required" autocomplete="off">
 									<option selected>Select</option>
@@ -78,9 +78,9 @@
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong>Step 3: Select your device price</strong></h6>
+						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 3</span><span class="js-show-not-device-only hide">Step 2</span>: Select your device price</strong></h6>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option" value="Option 1">
 								<div class="icon vertical_gap_top small_gap"></div>
@@ -92,7 +92,7 @@
 							</div>
 						</div>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option" value="Option 2">
 								<div class="icon vertical_gap_top small_gap"></div>
@@ -104,7 +104,7 @@
 							</div>
 						</div>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint js-device-only regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option3" type="radio" name="option" value="Option 3">
 								<div class="icon vertical_gap_top small_gap"></div>
@@ -116,26 +116,26 @@
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong>Step 4: Select your account configuration</strong></h6>
+						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 4</span><span class="js-show-not-device-only hide">Step 3</span>: Select your account configuration</strong></h6>
 
 						<table class="full_width">
 							<tr>
 								<td><span>Account</span></td>
-								<td><span>SIM type</span></td>
+								<td><span class="js-hide-not-device-only">SIM type</span></td>
 							</tr>
 							<tr>
-								<td class="halfwidth">
-									<div class='frg-select-container color-light' style="width: 95% !important">
-										<select class="js-required" autocomplete="off" style="width: 100% !important">
-											<option selected>Select</option>
+								<td class="halfwidth changeling">
+									<div class='frg-select-container color-light'>
+										<select class="js-required full_width" autocomplete="off">
+											<option value="select" selected>Select</option>
 											<option>Choose BAN</option>
 											<option>Choose BAN</option>
 										</select>
 									</div>
 								</td>
 								<td class="halfwidth">
-									<div class='frg-select-container color-light' style="width: 100% !important">
-										<select class="js-required" autocomplete="off" style="width: 100% !important">
+									<div class='frg-select-container js-hide-not-device-only color-light full_width'>
+										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>Nano SIM ($10.00/device)</option>
 											<option>Nano SIM ($10.00/device)</option>
@@ -151,12 +151,12 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<span>Apple DEP</span>
+									<span class="js-hide-not-device-only">Apple DEP</span>
 								</td>
 							</tr>
 							<tr>
 								<td colspan="2">
-									<div class='frg-select-container full_width color-light'>
+									<div class='frg-select-container full_width js-hide-not-device-only color-light'>
 										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>[Account Number] - $[50]/subscriber</option>
