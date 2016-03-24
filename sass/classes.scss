@@ -1970,6 +1970,20 @@ table.wide {
 	}
 }
 
+.changeling {
+	&.halfwidth {
+		.frg-select-container {
+			width: 95% !important;
+		}
+	}
+
+	&.full_width {
+		.frg-select-container {
+			width: 100% !important;
+		}
+	}
+}
+
 @media screen and (max-width: 1260px) {
     .support_section .headset {
 		width: 40%;

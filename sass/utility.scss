@@ -389,14 +389,6 @@ a.underline {
 	}
 }
 
-.frg-select-container {
-	height: 30px;
-
-	&.small {
-		width: 150px;
-	}
-}
-
 .tooltip_bubble {
 	background-color: $pink;
 	font-size: 12px;
@@ -731,6 +723,12 @@ table {
 }
 
 .frg-select-container {
+	height: 30px;
+
+	&.small {
+		width: 150px;
+	}
+
 	&::after {
 		color: $purple !important;
 	}

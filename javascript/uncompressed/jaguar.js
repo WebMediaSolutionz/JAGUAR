@@ -811,7 +811,7 @@ var JAG = {
 			var emails = $( '.js-match-validation' ),
 				second_email = $( 'input[name=email2]' );
 
-			console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
+			// console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
 
 			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
 				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
@@ -858,6 +858,38 @@ var JAG = {
 			self.displayOverlay( $( this ) );
 		});
 
+		$( '.frg-checkbox.js-pricepoint' ).click( function () {
+			var clicked = $( this ),
+				stuff_to_hide = $( '.js-hide-not-device-only' ),
+				stuff_to_show = $( '.js-show-not-device-only' ),
+				changeling = $( '.changeling' ),
+				hidden_required_stuff = stuff_to_hide.find( '.js-required' );
+
+			if ( clicked.hasClass( 'js-device-only' ) ) {
+				stuff_to_hide.hide();
+				stuff_to_show.removeClass( 'hide' );
+
+				changeling
+					.removeClass( 'halfwidth' )
+					.addClass( 'full_width' );
+
+				hidden_required_stuff
+					.removeClass( 'js-required' )
+					.addClass( 'js-required-hold' );
+			} else {
+				stuff_to_hide.show();
+				stuff_to_show.addClass( 'hide' );
+
+				changeling
+					.removeClass( 'full_width' )
+					.addClass( 'halfwidth' );
+
+				hidden_required_stuff
+					.addClass( 'js-required' )
+					.removeClass( 'js-required-hold' );
+			}
+		});
+
 		return self;
 	},
 
@@ -886,7 +918,7 @@ var JAG = {
 			}
 		});
 
-		console.info( self.formEntriesValid );
+		// console.info( self.formEntriesValid );
 
 		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
 			button.addClass( 'state-disabled' );
@@ -904,7 +936,7 @@ var JAG = {
 			valid = false;
 
 		fields.each( function () {
-			console.info( $( this ).val() );
+			// console.info( $( this ).val() );
 
 			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
 				valid = true;
@@ -1178,7 +1210,7 @@ var JAG = {
 			 	$.each( self.phones, function ( i, phone ) {
 			 		var listing = '';
 
-			 		console.info( phone );
+			 		// console.info( phone );
 
 			 		listing += '<div class="box phone object clearfix left" data-filter="all voice_only">';
 					listing += '	<div class="image left">';
