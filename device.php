@@ -11,7 +11,7 @@
 	<div class="inner-container clearfix">
 		<div class="row">
 			<div class="col-xs-3 col-xs-offset-2 phone_details image center_text">
-				<!-- <img src="images/phone_big.jpg"> -->
+				<!-- <img src="img/phone_big.jpg"> -->
 
 				<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
 					<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
@@ -64,9 +64,9 @@
 							</tr>
 						</table>
 
-						<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
+						<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
 
-						<div class="vertical_gap small_gap">
+						<div class="vertical_gap small_gap js-hide-not-device-only">
 							<div class='frg-select-container full_width color-light'>
 								<select class="js-sort-by full_width js-required" autocomplete="off">
 									<option selected>Select</option>
@@ -78,64 +78,64 @@
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong>Step 3: Select your device price</strong></h6>
+						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 3</span><span class="js-show-not-device-only hide">Step 2</span>: Select your device price</strong></h6>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option" value="Option 1">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option1">
 									<strong>
-										<span class="value" data-value="200">$100.00</span> 3-year plan
+										<span class="value" data-value="100">$100.00</span> 3-year plan
 									</strong>
 								</label>
 							</div>
 						</div>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option" value="Option 2">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option2">
 									<strong>
-										<span class="value" data-value="995">$775.00</span> Month to month
+										<span class="value" data-value="775">$775.00</span> Month to month
 									</strong>
 								</label>
 							</div>
 						</div>
 
-						<div class="frg-checkbox regular">
+						<div class="frg-checkbox js-pricepoint js-device-only regular">
 							<div class="inner">
 								<input class="vertical_gap_top small_gap js-required" id="radio-option3" type="radio" name="option" value="Option 3">
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option3">
 									<strong>
-										<span class="value" data-value="995">$775.00</span> Device only (no plan)
+										<span class="value" data-value="775">$775.00</span> Device only (no plan)
 									</strong>
 								</label>
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong>Step 4: Select your account configuration</strong></h6>
+						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 4</span><span class="js-show-not-device-only hide">Step 3</span>: Select your account configuration</strong></h6>
 
 						<table class="full_width">
 							<tr>
 								<td><span>Account</span></td>
-								<td><span>SIM type</span></td>
+								<td><span class="js-hide-not-device-only">SIM type</span></td>
 							</tr>
 							<tr>
-								<td class="halfwidth">
-									<div class='frg-select-container color-light' style="width: 95% !important">
-										<select class="js-required" autocomplete="off" style="width: 100% !important">
-											<option selected>Select</option>
+								<td class="halfwidth changeling">
+									<div class='frg-select-container color-light'>
+										<select class="js-required full_width" autocomplete="off">
+											<option value="select" selected>Select</option>
 											<option>Choose BAN</option>
 											<option>Choose BAN</option>
 										</select>
 									</div>
 								</td>
 								<td class="halfwidth">
-									<div class='frg-select-container color-light' style="width: 100% !important">
-										<select class="js-required" autocomplete="off" style="width: 100% !important">
+									<div class='frg-select-container js-hide-not-device-only color-light full_width'>
+										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>Nano SIM ($10.00/device)</option>
 											<option>Nano SIM ($10.00/device)</option>
@@ -151,13 +151,13 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<span>Apple DEP</span>
+									<span class="js-hide-not-device-only">Apple DEP</span>
 								</td>
 							</tr>
 							<tr>
 								<td colspan="2">
-									<div class='frg-select-container full_width color-light'>
-										<select class="full_width" autocomplete="off">
+									<div class='frg-select-container full_width js-hide-not-device-only color-light'>
+										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>[Account Number] - $[50]/subscriber</option>
 											<option>[Account Number] - $[60]/subscriber</option>
@@ -213,7 +213,7 @@
 						<h6>Ultimate sophisticated style in a sleek unibody</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone1.jpg">
+						<img src="img/phone1.jpg">
 					</div>
 				</div>
 				<div class="cell col-xs-6">
@@ -222,7 +222,7 @@
 						<h6>Touch and play for 4 hours with just 10 minutes of charging</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone2.jpg">
+						<img src="img/phone2.jpg">
 					</div>
 				</div>
 			</section>
@@ -233,7 +233,7 @@
 					<h6>Under a second to catch the moment</h6>
 				</div>
 				<div class="col-xs-6 large-cell">
-					<img src="images/phone3.jpg">
+					<img src="img/phone3.jpg">
 				</div>
 			</section>
 

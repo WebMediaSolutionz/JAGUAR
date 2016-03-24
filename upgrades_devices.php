@@ -6,7 +6,8 @@
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container clearfix">
 		<h3 class="title">Select a device for: </h3>
-		<p class="h3"><strong>Group-10 Galaxy Prime (## subscribers)</strong> <input class='frg-input-field hide js-auto_save' placeholder="press 'enter' to save" value='Order-1 Galaxy Prime (50 devices)'/> <a class="small edit_name" href="#">edit name</a></p>
+		
+		<?php include( 'partials/edit_name.php' ); ?>
 
 		<div class="clearfix">
 			<?php if ( !$home_page1 ) { ?>
@@ -96,11 +97,13 @@
 
 		<div class="phones clearfix">
 			<div class="page current clearfix">
-				<?php 
-					for ( $i = 1; $i < 20; $i++ ) { 
-						include( 'partials/phone2.php' );
-					} 
-				?>
+				<div class="row">
+					<?php 
+						for ( $i = 1; $i < 20; $i++ ) { 
+							include( 'partials/phone2.php' );
+						} 
+					?>
+				</div>
 			</div>
 		</div>
 	</div>

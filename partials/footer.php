@@ -19,27 +19,27 @@
 
 		<div class="outer-container footer">
 			<footer class="inner-container">
-				<img class="logo" alt="TELUS logo" src="images/TELUS-logo-white.svg">
+				<img class="logo" alt="TELUS logo" src="img/TELUS-logo-white.svg">
 				<p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
 			</footer>
 		</div>
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/lib/jquery.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modalmanager.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-modal.js"></script>
-		<script type="text/javascript" src="javascript/lib/bootstrap-datepicker.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/dropit.js"></script>
-		<script type="text/javascript" src="javascript/lib/jquery.maskedinput.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/slick.min.js"></script>
-		<script type="text/javascript" src="javascript/lib/jquery.hashchange.min.js"></script>
-  		<script type="text/javascript" src="javascript/lib/jquery.easytabs.min.js"></script>
-  		<script type="text/javascript" src="javascript/lib/loadingoverlay.min.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modalmanager.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modal.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/dropit.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.maskedinput.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/slick.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.hashchange.js"></script>
+  		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.easytabs.js"></script>
+  		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/loadingoverlay.js"></script>
 
-		<script type="text/javascript" src="javascript/cities.js"></script>
-		<script type="text/javascript" src="javascript/jaguar.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/cities.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/jaguar.js"></script>
 
 		<script type="text/javascript">
 			$( document ).ready( function () {

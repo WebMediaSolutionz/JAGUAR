@@ -6,7 +6,8 @@
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container">
 		<h3 class="title">Select add-ons for:</h3>
-		<p class="h3"><strong>Order-1 Galaxy Prime (50 devices)</strong> <input class='frg-input-field hide js-auto_save' placeholder="press 'enter' to save" value='Order-1 Galaxy Prime (50 devices)'/> <a class="small edit_name" href="#">edit name</a></p>
+		
+		<?php include( 'partials/edit_name.php' ); ?>
 
 		<?php if ( !$home_page1 ) { ?>
 			<nav>
@@ -37,81 +38,11 @@
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container row clearfix">
-		<div data-filter="roaming" class="service object col-xs-3 clearfix frg-drop-shadow">
-			<h3>TELUS link</h3>
-			
-			<div>
-				<h6 class="price"><span>$60</span> per month</h6>
-			</div>
-
-			<div>
-				<p>Link service turns your mobile phone into a two-way radio so you can connect to individuals or teams with the push of a button from virtually anywhere in North America.
-				</p>
-			</div>
-
-			<br />
-
-			<div class="center_text">
-				<a class="frg-button select" href="#">Add service</a>
-			</div>
-		</div>
-
-		<div data-filter="data" class="service object col-xs-3 clearfix frg-drop-shadow">
-			<h3>TELUS link</h3>
-			
-			<div>
-				<h6 class="price"><span>$60</span> per month</h6>
-			</div>
-
-			<div>
-				<p>Link service turns your mobile phone into a two-way radio so you can connect to individuals or teams with the push of a button from virtually anywhere in North America.
-				</p>
-			</div>
-
-			<br />
-
-			<div class="center_text">
-				<a class="frg-button select" href="#">Add service</a>
-			</div>
-		</div>
-
-		<div data-filter="services" class="service object col-xs-3 clearfix frg-drop-shadow">
-			<h3>TELUS link</h3>
-			
-			<div>
-				<h6 class="price"><span>$60</span> per month</h6>
-			</div>
-
-			<div>
-				<p>Link service turns your mobile phone into a two-way radio so you can connect to individuals or teams with the push of a button from virtually anywhere in North America.
-				</p>
-			</div>
-
-			<br />
-
-			<div class="center_text">
-				<a class="frg-button select" href="#">Add service</a>
-			</div>
-		</div>
-
-		<div data-filter="services" class="service object col-xs-3 clearfix frg-drop-shadow">
-			<h3>TELUS link</h3>
-			
-			<div>
-				<h6 class="price"><span>$60</span> per month</h6>
-			</div>
-
-			<div>
-				<p>Link service turns your mobile phone into a two-way radio so you can connect to individuals or teams with the push of a button from virtually anywhere in North America.
-				</p>
-			</div>
-
-			<br />
-
-			<div class="center_text">
-				<a class="frg-button select" href="#">Add service</a>
-			</div>
-		</div>
+		<?php
+			for ( $i = 0; $i < 16; $i++ ) { 
+				include( 'partials/addon.php' );
+			}
+		?>
 	</div>
 </div>
 

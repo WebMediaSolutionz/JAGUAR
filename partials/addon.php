@@ -13,6 +13,6 @@
 	<br />
 
 	<div class="center_text">
-		<a class="frg-button select" href="#">Add service</a>
+		<input class="frg-button select" type="submit" name="submit" value="Add service">
 	</div>
 </div>

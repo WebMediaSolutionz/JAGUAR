@@ -23,7 +23,7 @@
 					</div>
 				</div>
   
-				<img class="flower" src="images/flower.png" />
+				<img class="flower" src="img/flower.png" />
 			</div>
 			<div class="col-xs-offset-2 col-xs-4 registration_form js-all-required-fields">
 				<form>

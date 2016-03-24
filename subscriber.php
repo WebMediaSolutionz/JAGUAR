@@ -7,7 +7,8 @@
 	<div class="inner-container clearfix">
 		<div class="left">
 			<h3 class="title">Set up your subscribers for:</h3>
-			<p class="h3"><strong class="js-ellipsis" data-maxlen="50">Order-1 Galaxy Prime (<span class="nbr_devices"><?php echo NBR_DEVICES; ?></span> devices)</strong> <input class='frg-input-field hide js-auto_save' placeholder="press 'enter' to save" value='Order-1 Galaxy Prime (50 devices)'/> <a class="small edit_name" href="#">edit name</a></p>
+			
+			<?php include( 'partials/edit_name.php' ); ?>
 		</div>
 		<div class="right advanced_options">
 			<div class="frg-select-container color-light left gap_right">
@@ -37,15 +38,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>1</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
@@ -61,15 +65,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>2</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
@@ -85,20 +92,23 @@
 			<thead class="gray_text">
 				<tr>
 					<th>3</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>
 				<?php 
-					for ( $i = 0; $i < 10; $i++ ) { 
+					for ( $i = 0; $i < 5; $i++ ) { 
 						include( 'partials/subscriber_row.php' );
 					}
 				?>
@@ -109,15 +119,18 @@
 			<thead class="gray_text">
 				<tr>
 					<th>*</th>
-					<th>Name</th>
+					<th>First name</th>
+					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
 					<th>Preferred<br />area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
 					<th>Voicemail<br />language</th>
-					<th>SIM</th>
-					<th class="sim_nbr hide">SIM #</th>
+
+					<?php if ( $byod ) { ?>
+						<th class="sim_nbr hide">SIM #</th>
+					<?php } ?>
 				</tr>
 			</thead>
 			<tbody>

@@ -14,8 +14,9 @@
 <div class="outer-container content purple_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
 		<div class="col-xs-offset-7 col-xs-5 no_padding operations">
-			<a href='#' class='frg-button color-purple right state-disabled'>Remove</a>
-			<a href='#' class='frg-button color-purple right gap_right state-disabled'>Add device &amp; plan</a>
+			<input class="frg-button color-purple right state-disabled" type="submit" name="submit" value="Remove" />
+			<input class="frg-button color-purple right gap_right state-disabled" type="submit" name="submit" value="Add device &amp; plan" />
+
 			<div class="vertical_gap_top small_gap right gap_right">
 				<strong class="bold">Actions:</strong>
 			</div>
@@ -333,7 +334,7 @@
 
 				<div class="clearfix">
 					<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />
-					<a href='#' class='frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled'>Add</a>
+					<input class="frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled" type="submit" name="submit" value="Add">
 				</div>
 				<div class="vertical_gap_top small_gap">
 					<span class="gray_text small">To upgrade subscribers on other TELUS accounts you need to repeat this process again</span>

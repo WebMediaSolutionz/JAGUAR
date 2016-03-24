@@ -55,8 +55,10 @@
 							</div>
 						</div>
 					</td>
-					<td>
-						<span>Order-1</span>
+					<td class="item">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</span>
 					</td>
 					<td>
 						<span>50</span>
@@ -90,7 +92,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-2</span>
 					</td>
 					<td>
@@ -124,14 +126,14 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-3</span>
 					</td>
 					<td>
 						<span>20</span>
 					</td>
 					<td class="description">
-						<p class="big no_margin">iPhone S6 (<a href="device.php">edit</a>)</p>
+						<p class="big no_margin">iPhone S6</p>
 					</td>
 					<td class="vertical_align_top clearfix">
 						<div class="status negative">
@@ -191,7 +193,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-4</span>
 					</td>
 					<td>
@@ -262,7 +264,7 @@
 							</div>
 						</div>
 					</td>
-					<td>
+					<td class="item">
 						<span>Order-5</span>
 					</td>
 					<td>

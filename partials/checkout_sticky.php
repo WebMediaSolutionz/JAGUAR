@@ -27,7 +27,7 @@
 				<a class="frg-button color-purple full_lenght" href="#">Continue shopping</a>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Checkout</a>
+				<input class="frg-button color-green full_lenght" type="submit" name="submit" value="Checkout" />
 			</div>
 		</div>
 	</div>
@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght state-disabled" href="<?php echo $next_step; ?>">Save &amp; continue</a>
+				<input class="frg-button color-green full_lenght state-disabled" type="submit" name="submit" value="Save &amp; continue" />
 			</div>
 		</div>
 	</div>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" href="<?php echo $next_step; ?>">Save &amp; continue</a>
+				<input class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" type="submit" name="submit" value="Save &amp; continue" />
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="<?php echo $next_step; ?>">Place order</a>
+				<input class="frg-button color-green full_lenght" type="submit" name="submit" value="Place order" />
 			</div>
 		</div>
 	</div>

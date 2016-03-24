@@ -34,7 +34,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
@@ -75,7 +75,7 @@
 								</thead>
 								<tbody>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -92,7 +92,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -109,7 +109,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -126,7 +126,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -178,7 +178,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
@@ -220,7 +220,7 @@
 								</thead>
 								<tbody>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -237,7 +237,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -254,7 +254,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -271,7 +271,7 @@
 										</td>
 									</tr>
 									<tr class="wide">
-										<td>
+										<td class="item">
 											<span>John Doe</span>
 										</td>
 										<td>
@@ -323,7 +323,7 @@
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide outline">
-					<td>
+					<td class="item">
 						<span>Order-1</span>
 					</td>
 					<td>
@@ -349,22 +349,19 @@
 
 <div class="outer-container content white_bg order_summary small">
 	<div class="inner-container clearfix">
-		<div class="col-xs-6 col-xs-offset-6 top_horizontal_separator light_gray no_padding clearfix">
+		<div class="col-xs-6 col-xs-offset-6 no_padding clearfix">
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Subtotal</td>
-						<td>$5,500.00</td>
+						<td>Subtotal:</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>
 					<tr>
-						<td>Shipping</td>
-						<td>Free</td>
+						<td>Shipping:</td>
 						<td class="right_align">Free</td>
 					</tr>
 					<tr>
-						<td>Taxes HST</td>
-						<td>$5,500.00</td>
+						<td>Taxes HST:</td>
 						<td class="right_align">$25,500.00</td>
 					</tr>
 				</table>
@@ -379,8 +376,7 @@
 			<div class="right">
 				<table class="right_align total">
 					<tr>
-						<td>Total</td>
-						<td>$6,215.00</td>
+						<td>Total:</td>
 						<td class="right_align">$31,922.50</td>
 					</tr>
 				</table>

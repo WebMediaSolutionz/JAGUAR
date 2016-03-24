@@ -6,7 +6,8 @@
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container clearfix">
 		<h3 class="title">Configure device for: </h3>
-		<p class="h3"><strong>Group-10 Galaxy Prime (## subscribers)</strong> <input class='frg-input-field hide js-auto_save' placeholder="press 'enter' to save" value='Order-1 Galaxy Prime (50 devices)'/> <a class="small edit_name" href="#">edit name</a></p>
+		
+		<?php include( 'partials/edit_name.php' ); ?>
 	</div>
 </div>
 
@@ -20,52 +21,43 @@
 	<div class="inner-container clearfix">
 		<div class="row">
 			<div class="col-xs-3 col-xs-offset-2 center_text">
-				<img src="images/phone_big.jpg">
+				<img src="img/phone_big.jpg">
 			</div>
 			<div class="col-xs-5 col-xs-offset-1">
 				<section>
 					<h6><strong>Step 1: Select your device options</strong></h6>
 
-					<table class="table1">
-						<tr>
-							<td><span>Colour</span></td>
-							<td><span>SIM</span></td>
-						</tr>
-						<tr>
-							<td>
-								<div class='frg-select-container style2 color-light'>
-									<select autocomplete="off">
-										<option>Select</option>
-										<option>Black</option>
-										<option>White</option>
-									</select>
-								</div>
-							</td>
-							<td class="vertical_align_top">
-								<div class='frg-select-container style2 color-light'>
-									<select autocomplete="off">
-										<option>Select</option>
-										<option>MicroSIM - $10/subscriber</option>
-										<option>MicroSIM - $10/subscriber</option>
-									</select>
-								</div>
-							</td>
-						</tr>
-					</table>
-
-					<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
-
-					<div><span>Apple DEP</span></div>
-					<div class='frg-select-container style2 half_width color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>115156 - $5/subscriber</option>
-							<option>115156 - $10/subscriber</option>
-							<option>115156 - $15/subscriber</option>
-						</select>
+					<div class="row">
+						<div class="col-xs-6">
+							<span>Colour</span>
+						</div>
+						<div class="col-xs-6">
+							<span>SIM</span>
+						</div>
 					</div>
 
-					<h6 class="padding_top"><strong>Step 3: Select your service committment</strong></h6>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class='frg-select-container style2 full_width color-light'>
+								<select autocomplete="off">
+									<option>Select</option>
+									<option>Black</option>
+									<option>White</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class='frg-select-container style2 full_width color-light'>
+								<select autocomplete="off">
+									<option>Select</option>
+									<option>MicroSIM - $10/subscriber</option>
+									<option>MicroSIM - $10/subscriber</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<h6 class="padding_top"><strong>Step 2: Select your service category</strong></h6>
 
 					<div class='frg-select-container style2 full_width color-light'>
 						<select class="js-sort-by" autocomplete="off">
@@ -83,25 +75,21 @@
 					<div>
 						<label>
 							<strong>
-								<span class="value" data-value="200">$50.00</span> for technology refresh subscribers
+								<span class="value" data-value="200">$100.00</span> for 1 subscribers with standrad offers
 							</strong>
 						</label>
 					</div>
 
-					<div>
-						<label>
-							<strong>
-								<span class="value" data-value="995">$75.00</span> for allotment subscribers
-							</strong>
-						</label>
-					</div>
+					<h6 class="padding_top"><strong>Step 3: Select your service committment</strong></h6>
 
-					<div>
-						<label>
-							<strong>
-								<span class="value" data-value="995">$130.99</span> for subscribers on a 3-year plan
-							</strong>
-						</label>
+					<div><span>Apple DEP</span></div>
+					<div class='frg-select-container style2 full_width color-light'>
+						<select autocomplete="off">
+							<option>Select</option>
+							<option>115156 - $5/subscriber</option>
+							<option>115156 - $10/subscriber</option>
+							<option>115156 - $15/subscriber</option>
+						</select>
 					</div>
 				</section>
 			</div>
@@ -138,7 +126,7 @@
 						<h6>Ultimate sophisticated style in a sleek unibody</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone1.jpg">
+						<img src="img/phone1.jpg">
 					</div>
 				</div>
 				<div class="cell col-xs-6">
@@ -147,7 +135,7 @@
 						<h6>Touch and play for 4 hours with just 10 minutes of charging</h6>
 					</div>
 					<div class="col-xs-6 center_text">
-						<img src="images/phone2.jpg">
+						<img src="img/phone2.jpg">
 					</div>
 				</div>
 			</section>
@@ -158,7 +146,7 @@
 					<h6>Under a second to catch the moment</h6>
 				</div>
 				<div class="col-xs-6 large-cell">
-					<img src="images/phone3.jpg">
+					<img src="img/phone3.jpg">
 				</div>
 			</section>
 
