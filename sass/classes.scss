@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .pagin {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -15,7 +18,7 @@
 		
 		&::after {
 			top: -35px;
-			color: $purple2 !important;
+			color: #49166d !important;
 		}
 
 		select {
@@ -55,7 +58,7 @@ span.status {
 
 	div.frg-icon {
 		background-color: #FFF;
-		border: thin solid $light_gray2;
+		border: thin solid #e7e7e7;
 		border-left: transparent;
 		border-radius: 0 5px 5px 0;
 		height: 30px;
