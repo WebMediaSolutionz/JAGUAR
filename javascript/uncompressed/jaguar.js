@@ -1296,6 +1296,8 @@ var JAG = {
 			var str = $( this ),
 				len = str.attr( 'data-maxlen' );
 
+			console.info( len );
+
 			if ( str.text().trim().length > len ) {
 				str.text( str.text().trim().substr( 0, parseInt(len) - 3 ) + '...' );
 			}
