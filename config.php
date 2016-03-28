@@ -76,4 +76,5 @@
 	$spinner_img = "{$static_content_img}/spinner.gif";
 
 	$javascipt_form = ( $_SERVER[ 'SERVER_NAME' ] === 'localhost' ) ? 'uncompressed' : 'compressed';
+	$local = ( $_SERVER[ 'SERVER_NAME' ] === 'localhost' );
 ?>
