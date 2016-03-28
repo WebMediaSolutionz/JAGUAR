@@ -113,7 +113,7 @@ span.status {
 	}
 
 	span.frg-icon {
-		color: #d8d8d8;
+		color: $purple2;
 		font-size: 26px;
 	}
 
@@ -127,7 +127,7 @@ span.status {
 		}
 
 		div:last-child {
-			color: $dark_gray;
+			color: $purple2;
 		}
 	}
 }
@@ -854,15 +854,13 @@ h3 {
 	.frg-input-field {
 		width: 240px;
 		font-size: 17px;
-		border-radius: 3px 0 0 3px;
-		border-right: none;
+		border-radius: 0;
 		border-color: #ccc;
 		height: 40px;
 		cursor: pointer;
 	}
 
 	.frg-button {
-		border-radius: 0 3px 3px 0;
 		height: 40px;
 	}
 

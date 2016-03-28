@@ -115,7 +115,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
-									<strong>Order management</strong>
+									<strong>Order Management</strong>
 								</a>
 							</li>
 						</ul>
