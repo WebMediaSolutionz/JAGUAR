@@ -15,7 +15,7 @@
 
 <div class="outer-container content white_bg top_bottom_small_padding">
 	<div class="inner-container clearfix">
-		<span class="gray_text small">Minimum monthly service commitment: $20/subscriber</span>
+		<span class="gray_text small">You have selected a voice &amp; data service category with plans starting at $50/month</span>
 	</div>
 </div>
 

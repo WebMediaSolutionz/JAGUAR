@@ -61,13 +61,13 @@
 
 			<div class='frg-select-container color-light right'>
 				<select class="js-sort-by" autocomplete="off">
-					<option value="brand">Sort by: Brand</option>
-					<option value="price1">Sort by: Price (with term)</option>
-					<option value="price2">Sort by: Price (device only)</option>
-					<option value="price3">Sort by: Price (month to month)</option>
-					<option value="device">Sort by: Device Type</option>
-					<option value="availability">Sort by: Availability</option>
-					<option value="plan_nav">Sort by: Plan</option>
+					<option value="brand">Filter by: Brand</option>
+					<option value="price1">Filter by: Price (with term)</option>
+					<option value="price2">Filter by: Price (device only)</option>
+					<option value="price3">Filter by: Price (month to month)</option>
+					<option value="device">Filter by: Device Type</option>
+					<option value="availability">Filter by: Availability</option>
+					<option value="plan_nav">Filter by: Plan</option>
 				</select>
 			</div>
 		</div>

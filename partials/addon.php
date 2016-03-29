@@ -1,4 +1,4 @@
-<div data-filter="roaming" class="service object col-xs-3 clearfix frg-drop-shadow">
+<div data-filter="roaming" class="service object col-lg-4 col-md-6 clearfix frg-drop-shadow">
 	<h3 class="js-ellipsis" data-maxlen="57">TELUS link TELUS link TELUS link TELUS link TELUS link TELUS link</h3>
 	
 	<div>

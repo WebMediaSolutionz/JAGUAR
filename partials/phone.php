@@ -55,7 +55,7 @@
 					</h6>
 				</div>
 				<div class="status<?php echo ( $status === 'limited' || $status === 'available' ) ? ' positive' : ' negative'; ?>">
-					<strong><?php echo ucfirst( $status ); ?></strong> <span class="frg-icon icon-info back-order right"></span>
+					<strong><?php echo ucfirst( $status ); ?></strong>
 				</div>
 			</div>
 
