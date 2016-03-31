@@ -83,6 +83,10 @@
 
 .separator {
 	border-left: thin solid #979797;
+
+	&.accessory {
+		border-left: thin solid $gray;
+	}
 }
 
 .horizontal_separator {

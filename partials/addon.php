@@ -1,5 +1,5 @@
 <div data-filter="roaming" class="service object col-lg-4 col-md-6 clearfix frg-drop-shadow">
-	<h3 class="js-ellipsis" data-maxlen="57">TELUS link TELUS link TELUS link TELUS link TELUS link TELUS link</h3>
+	<h3 class="js-ellipsis" data-maxlen="57">TELUS link TELUS link TELUS link TELUS link TELUS link TELUS linkTELUS link TELUS link TELUS link TELUS link TELUS link TELUS linkTELUS link TELUS link TELUS link TELUS link TELUS link TELUS linkTELUS link TELUS link TELUS link TELUS link TELUS link TELUS link</h3>
 	
 	<div>
 		<h6 class="price"><span>$60</span> per month</h6>

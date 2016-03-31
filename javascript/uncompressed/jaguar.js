@@ -285,6 +285,30 @@ var JAG = {
 			}
 		});
 
+		$( '.js-select-all' ).click( function () {
+			var clicked = $( this ),
+				clicked_internal_checkbox = clicked.find( 'input[type=checkbox]' ),
+				checked = clicked_internal_checkbox.is( ':checked' ),
+				checkboxes = $( '.frg-checkbox' );
+
+			checkboxes.each( function () {
+				var checkbox = $( this ),
+					actual_checkbox = checkbox.find( 'input[type=checkbox]' );
+
+				if ( !checkbox.hasClass( 'js-select-all' ) ) {
+					if ( checked ) {
+						if ( !actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'select', checkbox );
+						}
+					} else {
+						if ( actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'deselect', checkbox );
+						}
+					}
+				}
+			});
+		});
+
 		$( '.edit_name' ).click( function () {
 			var clicked = $( this ),
 				closest = clicked.closest( 'p' ),
@@ -376,13 +400,8 @@ var JAG = {
 			}
 		});
 
-		$( '.advanced_option' ).change( function () {
-			var $this = $( this ),
-				value = $this.val();
-
-			if ( value === 'import' ) {
-				$('#myModal').modal();
-			}
+		$( '.advanced_import' ).click( function () {
+			$('#myModal').modal();
 		});
 
 		$( '.js-previous' ).click( function () {
@@ -905,11 +924,31 @@ var JAG = {
 					self.checkRequiredField( e )
 						.displayErrorMessage( type, title, text )
 						.scrollTo( error_container, 15, 1000 );
+				} else {
+					self.scrollTo( error_container, 15, 1000 );
 				}
 			}
 		});
 
 		return self;
+	},
+
+	selectCheckbox: function ( action, checkbox ) {
+		if ( action === 'select' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', true )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.addClass( 'icon-checkmark' );
+		} else if ( action === 'deselect' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', false )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.removeClass( 'icon-checkmark' );
+		}
 	},
 
 	scrollTo: function ( el, margin, time ) {
@@ -920,7 +959,7 @@ var JAG = {
 
 	checkRequiredField: function ( el ) {
 		var self = this,
-			form = $( el.target ).closest( '.js-all-required-fields' ),
+			form = ( $( el.target ).closest( '.js-all-required-fields' ).length > 0 ) ? $( el.target ).closest( '.js-all-required-fields' ) : $( '.js-all-required-fields' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true,
@@ -929,6 +968,8 @@ var JAG = {
 			errors = $( '.error_message_container' );
 
 		errors.empty();
+
+		console.info( form );
 
 		fields.removeClass( 'js-error' ).removeClass( 'show_errors' ).each( function () {
 			var field = $( this );
@@ -939,14 +980,12 @@ var JAG = {
 				}
 			});
 
-			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+			if ( field.val() === null || field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
 				valid = false;
 				field.addClass( 'js-error' );
-				console.info( 'mark error' );
 			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
 				field.addClass( 'js-error' );
-				console.info( 'mark error' );
 			}
 		});
 
