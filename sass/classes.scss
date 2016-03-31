@@ -1930,6 +1930,8 @@ table.wide {
 .device__variant-container {
 	width: 87px;
 	margin-top: 5px;
+	height: 70px;
+	text-align: center;
 
 	button {
 		width: 25px;
@@ -1937,9 +1939,9 @@ table.wide {
 		border: none;
 		background: transparent;
 
-		&:nth-child(4) {
+		/*&:nth-child(4) {
 			margin-left: 30px;
-		}
+		}*/
 
 		span {
 			margin-left: -5px;

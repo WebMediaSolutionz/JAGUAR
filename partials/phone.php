@@ -26,6 +26,41 @@
 		$filter = 'other';
 		$filter2 = 'voice_data';
 	}
+
+	$swatches = array( 
+		array( 
+				'sku'	=>	'iphone-5s-space-grey',
+				'label' => 	'Space Grey',
+				'color'	=>	'#595859'
+			),
+		array( 
+				'sku'	=>	'iphone-5s-silver',
+				'label' => 	'Silver',
+				'color'	=>	'#909090'
+		 ),
+		array( 
+				'sku'	=>	'iphone-5s-silver',
+				'label' => 	'Silver',
+				'color'	=>	'#000'
+		 ),
+		array( 
+				'sku'	=>	'iphone-5s-space-grey',
+				'label' => 	'Space Grey',
+				'color'	=>	'#595859'
+			),
+		array( 
+				'sku'	=>	'iphone-5s-silver',
+				'label' => 	'Silver',
+				'color'	=>	'#909090'
+		 ),
+		array( 
+				'sku'	=>	'iphone-5s-silver',
+				'label' => 	'Silver',
+				'color'	=>	'#000'
+		 )
+	);
+
+	$nb_swatches = rand( 1, 6 );
 ?>
 
 <div class="col-xs-4 js-element">
@@ -36,12 +71,11 @@
 				<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
 			</a>
 			<div class="device__variant-container">			
-				<button aria-label="Space Grey" data-sku="iphone-5s-space-grey" data-lang="en" class="device-color-button device__variant-item">				
-					<span style="color: #595859" class="frg-icon icon-circle-solid"></span>			
-				</button>			
-				<button aria-label="Silver" data-sku="iphone-5s-silver" data-lang="en" class="device-color-button device__variant-item">				
-					<span style="color: #909090" class="frg-icon icon-circle-solid"></span>			
-				</button>		
+				<?php for ( $j = 0; $j < $nb_swatches; $j++ ) { ?>
+					<button aria-label="<?php echo $swatches[ $j ][ 'label' ]; ?>" data-sku="<?php echo $swatches[ $j ][ 'sku' ]; ?>" data-lang="en" class="device-color-button device__variant-item">				
+						<span style="color: <?php echo $swatches[ $j ][ 'color' ]; ?>" class="frg-icon icon-circle-solid"></span>			
+					</button>
+				<?php } ?>
 			</div>
 		</div>
 
