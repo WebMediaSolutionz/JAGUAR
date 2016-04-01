@@ -2002,7 +2002,10 @@ table.wide {
 
 /* Small devices (tablets, 768px and up) */
 @media ( min-width: $screen-sm-min ) and ( max-width: $screen-sm-max ) {
-	
+	.price,
+	.prices {
+		font-size: 22px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
