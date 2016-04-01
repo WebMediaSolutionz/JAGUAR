@@ -29,6 +29,8 @@
 			</div>
 			<div class="js-all-required-fields">
 				<div class="col-xs-5 col-xs-offset-1">
+					<div class="error_message_container"></div>
+
 					<section>
 						<h6><strong>Step 1: Select your device options</strong></h6>
 
@@ -176,7 +178,7 @@
 								<td><span class="total">$0</span></td>
 							</tr>
 						</table>
-						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width state-disabled'>Add to cart</a>
+						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width js-incomplete'>Add to cart</a>
 					</section>
 				</div>
 			</div>

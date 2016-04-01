@@ -9,6 +9,8 @@
 		<h2 class="form-heading center devil_gray_text line light_gray2 top_margin0 bottom_padding20">First, let's create your profile</h2>
 
 		<div class="row top_margin50">
+		<div class="error_message_container vertical_gap_top hide"></div>
+
 			<div class="col-xs-offset-1 col-xs-4">
 				<div class="default_text_color">
 					<div class="left_align">
@@ -119,7 +121,7 @@
 						<span class="devil_gray_text">By clicking Continue, you agree to receive My Account updates and to the TELUS <a href="#">Privacy Commitment</a>.</span>
 					</div>
 
-					<a href='#' class='frg-button button-wide color-green bottom_margin50 state-disabled js-submit'>Continue</a>
+					<a href='#' class='frg-button button-wide color-green bottom_margin50 js-incomplete js-submit'>Continue</a>
 				</form>
 			</div>
 		</div>

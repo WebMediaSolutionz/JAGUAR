@@ -11,7 +11,7 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?><?php echo $javascipt_form; ?>/lib/jquery.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery-1.8.3.js"></script>
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap.js"></script>
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modalmanager.js"></script>
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modal.js"></script>

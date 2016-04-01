@@ -155,3 +155,13 @@ b,
 strong {
 	font-weight: 800;
 }
+
+.frg-input-field.color-light, 
+.frg-select-container select.color-light, 
+.frg-select-container.color-light select,
+input,
+select {
+	&.js-error.show_errors {
+		border-color: red;
+	}
+}

@@ -83,6 +83,10 @@
 
 .separator {
 	border-left: thin solid #979797;
+
+	&.accessory {
+		border-left: thin solid $gray;
+	}
 }
 
 .horizontal_separator {
@@ -217,7 +221,7 @@ ul {
 }
 
 .small {
-	font-size: 80%;
+	font-size: 80% !important;
 }
 
 .smaller {
@@ -383,8 +387,9 @@ a.underline {
 		}
 
 		.text {
-			width: 90%;
+			width: 89%;
 			color: $super_dark_gray;
+			margin-top: -10px;
 		}
 	}
 }

@@ -26,17 +26,7 @@
 
 		<?php include( 'partials/modals.php' ); ?>
 
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery-1.8.3.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modalmanager.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-modal.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/bootstrap-datepicker.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/dropit.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.maskedinput.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/slick.js"></script>
-		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.hashchange.js"></script>
-  		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/jquery.easytabs.js"></script>
-  		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/loadingoverlay.js"></script>
+		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/libs.js"></script>
 
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/cities.js"></script>
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/jaguar.js"></script>

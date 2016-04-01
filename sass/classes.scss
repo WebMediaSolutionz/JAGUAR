@@ -1108,15 +1108,6 @@ span.footnote {
 }
 
 .service {
-	&.col-xs-3 {
-		width: 23%;
-		margin-right: 2.6%;
-
-		&:nth-child(4n) {
-			margin-right: 0;
-		}
-	}
-
 	h3,
 	.service_desc {
 		overflow: hidden;
@@ -1931,7 +1922,7 @@ table.wide {
 .phone_details.image {
 	a {
 		img {
-			height: 470px;
+			height: 600px;
 		}
 	}
 }
@@ -1939,6 +1930,8 @@ table.wide {
 .device__variant-container {
 	width: 87px;
 	margin-top: 5px;
+	height: 70px;
+	text-align: center;
 
 	button {
 		width: 25px;
@@ -1946,9 +1939,9 @@ table.wide {
 		border: none;
 		background: transparent;
 
-		&:nth-child(4) {
+		/*&:nth-child(4) {
 			margin-left: 30px;
-		}
+		}*/
 
 		span {
 			margin-left: -5px;
@@ -1995,6 +1988,47 @@ table.wide {
 	.confirmation {
 		.inner-container {
 			background: transparent url( '../img/flower.jpg' ) no-repeat 95% center;
+		}
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Very small devices (smartphones, 767px and down) */
+@media ( max-width: $screen-xs-max ) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media ( min-width: $screen-sm-min ) and ( max-width: $screen-sm-max ) {
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width: $screen-md-min ) and ( max-width: $screen-md-max ) {
+	.service {
+		&.col-md-6 {
+			width: 47.5%;
+			margin-right: 5%;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media ( min-width: $screen-lg-min ) {
+	.service {
+		&.col-lg-4 {
+			width: 30%;
+			margin-right: 5%;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
 		}
 	}
 }

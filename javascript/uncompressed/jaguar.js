@@ -285,6 +285,30 @@ var JAG = {
 			}
 		});
 
+		$( '.js-select-all' ).click( function () {
+			var clicked = $( this ),
+				clicked_internal_checkbox = clicked.find( 'input[type=checkbox]' ),
+				checked = clicked_internal_checkbox.is( ':checked' ),
+				checkboxes = $( '.frg-checkbox' );
+
+			checkboxes.each( function () {
+				var checkbox = $( this ),
+					actual_checkbox = checkbox.find( 'input[type=checkbox]' );
+
+				if ( !checkbox.hasClass( 'js-select-all' ) ) {
+					if ( checked ) {
+						if ( !actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'select', checkbox );
+						}
+					} else {
+						if ( actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'deselect', checkbox );
+						}
+					}
+				}
+			});
+		});
+
 		$( '.edit_name' ).click( function () {
 			var clicked = $( this ),
 				closest = clicked.closest( 'p' ),
@@ -376,13 +400,8 @@ var JAG = {
 			}
 		});
 
-		$( '.advanced_option' ).change( function () {
-			var $this = $( this ),
-				value = $this.val();
-
-			if ( value === 'import' ) {
-				$('#myModal').modal();
-			}
+		$( '.advanced_import' ).click( function () {
+			$('#myModal').modal();
 		});
 
 		$( '.js-previous' ).click( function () {
@@ -890,19 +909,69 @@ var JAG = {
 			}
 		});
 
+		$( '.js-incomplete' ).click( function ( e ) {
+			var el = $( this ),
+				type = 'error',
+				title = 'Please, fill out all of the required fields',
+				text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla scelerisque mi, eget commodo justo euismod eu. Mauris nec scelerisque tortor, vel volutpat sapien.',
+				errors = $( '.error_message' ),
+				error_container = $( '.error_message_container' );
+
+			if ( el.hasClass( 'js-incomplete' ) ) {
+				e.preventDefault();
+
+				if ( errors.length === 0 ) {
+					self.checkRequiredField( e )
+						.displayErrorMessage( type, title, text )
+						.scrollTo( error_container, 15, 1000 );
+				} else {
+					self.scrollTo( error_container, 15, 1000 );
+				}
+			}
+		});
+
 		return self;
+	},
+
+	selectCheckbox: function ( action, checkbox ) {
+		if ( action === 'select' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', true )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.addClass( 'icon-checkmark' );
+		} else if ( action === 'deselect' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', false )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.removeClass( 'icon-checkmark' );
+		}
+	},
+
+	scrollTo: function ( el, margin, time ) {
+		$( 'html, body' ).animate({
+	        scrollTop: el.offset().top - margin
+	    }, time );
 	},
 
 	checkRequiredField: function ( el ) {
 		var self = this,
-			form = $( el.target ).closest( '.js-all-required-fields' ),
+			form = ( $( el.target ).closest( '.js-all-required-fields' ).length > 0 ) ? $( el.target ).closest( '.js-all-required-fields' ) : $( '.js-all-required-fields' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true,
 			radios = form.find( 'input[type=radio].js-required' ),
-			radios_valid = ( radios.length > 0 ) ? false : true;
+			radios_valid = ( radios.length > 0 ) ? false : true,
+			errors = $( '.error_message_container' );
 
-		fields.each( function () {
+		errors.empty();
+
+		console.info( form );
+
+		fields.removeClass( 'js-error' ).removeClass( 'show_errors' ).each( function () {
 			var field = $( this );
 
 			radios.each( function () {
@@ -911,19 +980,20 @@ var JAG = {
 				}
 			});
 
-			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+			if ( field.val() === null || field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
 				valid = false;
+				field.addClass( 'js-error' );
 			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
+				field.addClass( 'js-error' );
 			}
 		});
 
-		// console.info( self.formEntriesValid );
-
 		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
-			button.addClass( 'state-disabled' );
+			button.addClass( 'js-incomplete' );
 		} else {
-			button.removeClass( 'state-disabled' );
+			button.removeClass( 'js-incomplete' );
+			errors.empty();
 		}
 
 		return self;
@@ -1135,7 +1205,9 @@ var JAG = {
 	},
 
 	displayErrorMessage: function ( type, title, text ) {
-		var error_container = $( '.error_message_container' ),
+		var self = this,
+			error_container = $( '.error_message_container' ),
+			errors = $( '.js-error' ),
 			icon = null;
 
 		switch ( type ) {
@@ -1144,11 +1216,14 @@ var JAG = {
 								break;
 		}
 
-		error_container.append( '<div class="error_message ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		errors.addClass( 'show_errors' );
 
 		$( '.error_message .close' ).click( function () {
 			$( this ).closest( '.error_message' ).fadeOut();
 		});
+
+		return self;
 	},
 
 	showFakeLinks: function () {
