@@ -21,21 +21,21 @@
 			<div class="col-xs-7">
 				<h5 class="js-ellipsis" data-maxlen="115"><?php echo $title; ?></h5>
 				<ul class="no_styles">
-					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">300 sharable local minutes</span></li>
-					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60"><?php echo $feature; ?></span></li>
-					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Access to shared data</span></li>
-					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Voice mail to text</span></li>
-					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Roam ready USA</span></li>
+					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">300 sharable local minutes</span></li>
+					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35"><?php echo $feature; ?></span></li>
+					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Access to shared data</span></li>
+					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Voice mail to text</span></li>
+					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Roam ready USA</span></li>
 				</ul>
 
 				<div>
 					<ul class="extra_features no_styles">
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">No commitment, contracts or credit checks</span></li>
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Low calling rates of $0.15 per min</span></li>
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Voice Mail 3, call display, call waiting and conference calling for free</span></li>
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">No commitment, contracts or credit checks</span></li>
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Low calling rates of $0.15 per min</span></li>
-						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Voice Mail 3, call display, call waiting and conference calling for free</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">No commitment, contracts or credit checks</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Low calling rates of $0.15 per min</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Voice Mail 3, call display, call waiting and conference calling for free</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">No commitment, contracts or credit checks</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Low calling rates of $0.15 per min</span></li>
+						<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="35">Voice Mail 3, call display, call waiting and conference calling for free</span></li>
 					</ul>
 
 					<a class="js-view_more closed gap_left" href="#"><span class="text">View all</span> <span class="frg-icon icon-plus-circled purple_text"></span></a>
