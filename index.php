@@ -44,7 +44,7 @@
 					<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
 				</h3>
 
-				<h6 class="description">Gain real-time visibility and control over your mobile workforce.</h6>
+				<h6 class="description">View usage &amp; manage account.</h6>
 			</div>
 			<ul class="no_styles">
 				<li>
