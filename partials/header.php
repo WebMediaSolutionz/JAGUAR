@@ -83,55 +83,57 @@
 			</div>
 		</div>
 
-		<div class="outer-container secondary_bg purple_bg">
-			<div class="inner-container clearfix">
-				<?php if ( $home_page1 || $home_page2 || $home_page3 ) { ?>
-					<h3 class="title no_margin">Welcome to Enterprise Mobility Management</h3>
-				<?php } ?>
+		<?php if ( $page !== 'demo' ) { ?>
+			<div class="outer-container secondary_bg purple_bg">
+				<div class="inner-container clearfix">
+					<?php if ( $home_page1 || $home_page2 || $home_page3 ) { ?>
+						<h3 class="title no_margin">Welcome to Enterprise Mobility Management</h3>
+					<?php } ?>
 
-				<?php if ( !$home_page1 ) { ?>
-					<nav>
-						<ul class="no_styles">
-							<li class="left">
-								<a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>block" href="devices.php">
-									<strong>Devices</strong>
-								</a>
-							</li>
-							<li class="left">
-								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>BYOD Plans</strong>
-								</a>
-							</li>
-							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
-							<li class="left">
-								<a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>block" href="accessories.php">
-									<strong>Accessories</strong>
-								</a>
-							</li>
-							<li class="left">
-								<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
-									<strong>Upgrade</strong>
-								</a>
-							</li>
-							<li class="left">
-								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
-									<strong>Order Management</strong>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				<?php } ?>
-				<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' ) { ?>
-					<div class="shopping_cart clearfix right">
-						<div class="col-xs-2">
-							<div class="item_count"><span>5</span></div>
-							<span class="frg-icon icon-cart"></span>
+					<?php if ( !$home_page1 ) { ?>
+						<nav>
+							<ul class="no_styles">
+								<li class="left">
+									<a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>block" href="devices.php">
+										<strong>Devices</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
+										<strong>BYOD Plans</strong>
+									</a>
+								</li>
+								<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
+								<li class="left">
+									<a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>block" href="accessories.php">
+										<strong>Accessories</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>block" href="upgrades.php">
+										<strong>Upgrade</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
+										<strong>Order Management</strong>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					<?php } ?>
+					<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' ) { ?>
+						<div class="shopping_cart clearfix right">
+							<div class="col-xs-2">
+								<div class="item_count"><span>5</span></div>
+								<span class="frg-icon icon-cart"></span>
+							</div>
+							<div class="col-xs-10 status right_align">
+								<div><strong>Last saved:</strong></div>
+								<div>2:38 PM EST</div>
+							</div>
 						</div>
-						<div class="col-xs-10 status right_align">
-							<div><strong>Last saved:</strong></div>
-							<div>2:38 PM EST</div>
-						</div>
-					</div>
-				<?php } ?>
+					<?php } ?>
+				</div>
 			</div>
-		</div>
+		<?php } ?>

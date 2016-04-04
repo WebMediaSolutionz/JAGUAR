@@ -930,6 +930,16 @@ var JAG = {
 			}
 		});
 
+		$( '.js-uploaded-document' ).click( function ( e ) {
+			e.preventDefault();
+
+			var documents_table = $( '.document_upload tbody' ),
+				close = $( 'button.close' );
+
+			close.trigger( 'click' );
+			documents_table.append( '<tr><td><div class="frg-checkbox small regular"><div class="inner"><input type="radio" value="Option 1" name="option" id="radio-option1"><div class="icon"></div><label for="radio-option1"></label></div></div></td><td><a class="underline" href="#">report</a></td><td></td><td><span>Stan a</span></td><td><span>Jan 15, 2016</span></td><td><span>Purchase</span></td><td><span class="status positive">approved</span></td><td><span>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </span></td></tr>' );
+		});
+
 		return self;
 	},
 

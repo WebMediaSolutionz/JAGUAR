@@ -24,7 +24,13 @@
 			</footer>
 		</div>
 
-		<?php include( 'partials/modals.php' ); ?>
+		<?php 
+			if ( $page === 'demo' ) {
+				include( 'partials/modals2.php' ); 
+			} else {
+				include( 'partials/modals.php' ); 
+			}
+		?>
 
 		<script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/libs.js"></script>
 
