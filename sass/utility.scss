@@ -372,7 +372,7 @@ a.underline {
 		width: 92%;
 
 		.frg-icon {
-			margin: -15px 15px 0 0;
+			margin: -15px 5px 0 0;
 			color: #49166D;
 			font-size: 36px;
 		}
@@ -389,7 +389,6 @@ a.underline {
 		.text {
 			width: 89%;
 			color: $super_dark_gray;
-			margin-top: -10px;
 		}
 	}
 }
@@ -737,4 +736,8 @@ table {
 	&::after {
 		color: $purple !important;
 	}
+}
+
+.inactive {
+	color: $dark_gray;
 }

@@ -1216,7 +1216,7 @@ var JAG = {
 								break;
 		}
 
-		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
 		errors.addClass( 'show_errors' );
 
 		$( '.error_message .close' ).click( function () {

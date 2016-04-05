@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
+		<h4 class="device_title capitalize">samsung galaxy s6 32GB</h4>
 	</div>
 </div>
 

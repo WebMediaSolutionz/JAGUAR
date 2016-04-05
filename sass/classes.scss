@@ -676,7 +676,7 @@ h3 {
 					}
 
 					div:first-child {
-						margin-top: 5px;
+						margin-top: -1px;
 					}
 
 					div:nth-child(2) {
@@ -687,6 +687,10 @@ h3 {
 						width: 100%;
 
 						@include select;
+					}
+
+					.gray_text {
+						font-size: 14px;
 					}
 				}
 
@@ -1344,7 +1348,7 @@ span.footnote {
 }
 
 .time_period {
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .subscriber,
@@ -1981,6 +1985,10 @@ table.wide {
 
 .pig404 img {
 	height: 300px;
+}
+
+.device_title {
+	font-size: 37px;
 }
 
 @media screen and (max-width: 1260px) {
