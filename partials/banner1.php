@@ -2,7 +2,7 @@
 	<div class="inner-container main_banner clearfix">
 		<div class="left">
 			<h1>Worry-free roaming</h1>
-			<p><strong>Automatically add a travel passport whenever an employee lands in a different country.</strong></p>
+			<p>Automatically add a travel passport whenever an employee lands in a different country.</p>
 			<a href='#' class='frg-button color-green'>Add a passport</a>
 		</div>
 		<div class="fish_bowl left">

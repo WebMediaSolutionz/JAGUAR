@@ -5,7 +5,7 @@
 
 <div class="outer-container main_content purple_bg">
 	<div class="inner-container">
-		<h3 class="title">Track, adjust and manage your business mobility needs</h3>
+		<h2 class="title">Track, adjust and manage your business mobility needs</h2>
 
 		<div class="box left">
 			<div class="top">
@@ -115,7 +115,7 @@
 				<h3 class="title">Check repair ticket status</h3>
 
 				<div class="ticket_number_status">
-					<input class="left frg-input-field" placeholder="Repair ticket number"/>
+					<input class="left frg-input-field" />
 					<a class="left frg-button gap_left_small" href="#">Repair Status</a>
 				</div>
 			</div>
