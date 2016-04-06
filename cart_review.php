@@ -12,6 +12,10 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<span class="gray_text">Please select the items that you would like to checkout</span>
+
+		<br /><br />
+
+		<?php include( 'partials/error_message_mockup.php' ); ?>
 	</div>
 </div>
 
@@ -46,11 +50,11 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -83,11 +87,11 @@
 				</tr>
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -117,7 +121,7 @@
 				</tr>
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2"  disabled="disabled">
 								<div class="icon">
@@ -184,11 +188,11 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -255,11 +259,11 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
