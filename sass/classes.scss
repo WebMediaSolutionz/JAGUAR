@@ -631,8 +631,17 @@ h3 {
 
 			.image {
 				a {
+					display: block;
+					width: 92px;
+					height: 173px;
+
 					img {
 						height: 173px;
+
+						&.replacement_img {
+							width: 92px;
+							height: 92px;
+						}
 					}
 				}
 			}
@@ -1196,6 +1205,11 @@ span.footnote {
 	img {
 		width: 182px;
 		height: 171px;
+
+		&.replacement_img {
+			width: 150px;
+			height: 150px;
+		}
 	}
 
 	.price {
@@ -1929,8 +1943,17 @@ table.wide {
 
 .phone_details.image {
 	a {
+		display: block;
+		width: 320px;
+		height: 600px;
+
 		img {
 			height: 600px;
+
+			&.replacement_img {
+				width: 320px;
+				height: 320px;
+			}
 		}
 	}
 }

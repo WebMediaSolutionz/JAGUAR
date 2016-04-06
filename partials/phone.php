@@ -67,8 +67,8 @@
 	<div class="box phone object clearfix" data-filter="<?php echo "{$filter} {$filter2}"; ?>">
 		<div class="image left">
 			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
-				<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
-				<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
+				<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey js-check-availability">			
+				<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver js-check-availability hide">	
 			</a>
 			<div class="device__variant-container">			
 				<?php for ( $j = 0; $j < $nb_swatches; $j++ ) { ?>
