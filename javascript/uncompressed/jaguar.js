@@ -28,6 +28,10 @@ var JAG = {
 			self.setupTabs();
 		}
 
+		if ( self.currentPage === 'devices' || self.currentPage === 'device' || self.currentPage === 'accessories' ) {
+			self.check_image_availability();
+		}
+
 		return self;
 	},
 
@@ -1476,6 +1480,23 @@ var JAG = {
 				.text( 'Add to cart' );
 			}
 		}, 3000);
+
+		return self;
+	},
+
+	check_image_availability: function () {
+		var self = this,
+			images = $( '.js-check-availability' ),
+			default_img = 'img/no-image-available.jpg';
+
+		images.each( function () {
+			var img = $( this );
+
+			img.error( function () {
+				img.attr( 'src', default_img );
+				img.addClass( 'replacement_img' );
+			});
+		});
 
 		return self;
 	}
