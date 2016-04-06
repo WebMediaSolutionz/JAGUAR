@@ -934,6 +934,26 @@ var JAG = {
 			}
 		});
 
+		$( '.js-select-at-least-one' ).click( function () {
+			var checkboxes = $( '.js-select-at-least-one' ),
+				submitButton = $( '.js-submit' ),
+				activate = false;
+
+			checkboxes.each( function () {
+				var checkbox = $( this );
+
+				if ( checkbox.find( '.frg-icon' ).hasClass( 'icon-checkmark' ) ) {
+					activate = true;
+				}
+			});
+
+			if ( activate ) {
+				submitButton.removeClass( 'state-disabled' );
+			} else {
+				submitButton.addClass( 'state-disabled' );
+			}
+		});
+
 		return self;
 	},
 
