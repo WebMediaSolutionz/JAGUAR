@@ -41,25 +41,47 @@
 							<a class="logo block left" href="index.php">
 								<img class="logo" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
 							</a>
-							<nav class="left">
-								<ul class="no_styles clearfix">
-									<li class="left gap_right">
-										<a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">
-											<strong>Buy</strong>
-										</a>
-									</li>
-									<li class="left gap_right">
-										<a class="block" href="#">
-											<strong>Manage</strong>
-										</a>
-									</li>
-									<li class="left">
-										<a class="block" href="#">
-											<strong>Support</strong>
-										</a>
-									</li>
-								</ul>
-							</nav>
+							<?php if ( $page !== 'demo' && $page !== 'demo2' ) { ?>
+								<nav class="left">
+									<ul class="no_styles clearfix">
+										<li class="left gap_right">
+											<a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">
+												<strong>Buy</strong>
+											</a>
+										</li>
+										<li class="left gap_right">
+											<a class="block" href="#">
+												<strong>Manage</strong>
+											</a>
+										</li>
+										<li class="left">
+											<a class="block" href="#">
+												<strong>Support</strong>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							<?php } else { ?>
+								<nav class="left">
+									<ul class="no_styles clearfix">
+										<li class="left gap_right">
+											<a class="block" href="#">
+												<strong>Link 1</strong>
+											</a>
+										</li>
+										<li class="left gap_right">
+											<a class="block" href="#">
+												<strong>Link 2</strong>
+											</a>
+										</li>
+										<li class="left">
+											<a class="block" href="#">
+												<strong>Link 3</strong>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							<?php } ?>
 						</div>
 						<div class="profile right">
 							<ul class="menu clearfix">
@@ -90,7 +112,7 @@
 						<h3 class="title no_margin">Welcome to Enterprise Mobility Management</h3>
 					<?php } ?>
 
-					<?php if ( !$home_page1 ) { ?>
+					<?php if ( !$home_page1 && $page !== 'demo2' ) { ?>
 						<nav>
 							<ul class="no_styles">
 								<li class="left">
@@ -122,7 +144,39 @@
 							</ul>
 						</nav>
 					<?php } ?>
-					<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' ) { ?>
+					<?php if ( $page === 'demo2' ) { ?>
+						<nav>
+							<ul class="no_styles">
+								<li class="left">
+									<a class="block" href="#">
+										<strong>Subnav 1</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="block" href="#">
+										<strong>Subnav 2</strong>
+									</a>
+								</li>
+								<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
+								<li class="left">
+									<a class="block" href="#">
+										<strong>Subnav 3</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="block" href="#">
+										<strong>Subnav 4</strong>
+									</a>
+								</li>
+								<li class="left">
+									<a class="block" href="#">
+										<strong>Subnav 5</strong>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					<?php } ?>
+					<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' && $page !== 'demo2' ) { ?>
 						<div class="shopping_cart clearfix right">
 							<div class="col-xs-2">
 								<div class="item_count"><span>5</span></div>

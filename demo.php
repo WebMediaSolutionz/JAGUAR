@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left gray_text">
-			<div class="h3">Document management</div>
+			<div class="h3">BEST Document Management</div>
 		</div>
 	</div>
 </div>
@@ -108,10 +108,7 @@
 						</select>
 					</div>
 				</td>
-				<td>
-					<label class="block">Postal Code</label>
-					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
-				</td>
+				<td></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -172,9 +169,6 @@
 							<a class="block js-sort gray_text left" href="#">Status</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="6" href="#"></a>
 						</div>
 					</th>
-					<th class="clearfix">
-						<span>Comments</span>
-					</th>
 				</tr>
 			</thead>
 			<tbody id="sortable" class="small">
@@ -189,7 +183,7 @@
 						</div>
 					</td>
 					<td>
-						<a class="underline" href="#">report</a>
+						<a class="underline" href="demo2.php">report</a>
 					</td>
 					<td></td>
 					<td>
@@ -204,13 +198,12 @@
 					<td>
 						<span class="status positive">approved</span>
 					</td>
-					<td>
-						<span>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </span>
-					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+
+	<?php include( 'partials/paging.php' ); ?>
 
 	<?php include( 'partials/loading.php' ); ?>
 </div>
