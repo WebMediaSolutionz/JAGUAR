@@ -67,8 +67,8 @@
 	<div class="box phone object clearfix" data-filter="<?php echo "{$filter} {$filter2}"; ?>">
 		<div class="image left">
 			<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
-				<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
-				<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
+				<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey js-check-availability">			
+				<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver js-check-availability hide">	
 			</a>
 			<div class="device__variant-container">			
 				<?php for ( $j = 0; $j < $nb_swatches; $j++ ) { ?>
@@ -83,9 +83,15 @@
 			<div class="name">
 				<div>
 					<h6>
-						<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
-							<strong data-maxlen="40" class="js-ellipsis">Samsung Galaxy S6 32GB </strong>
-						</a>
+						<?php if ( $status !== 'back order' ) { ?>
+							<a href="device.php">
+								<strong data-maxlen="40" class="js-ellipsis">Samsung Galaxy S6 32GB </strong>
+							</a>
+						<?php } else { ?>
+							<div class="inactive">
+								<strong data-maxlen="40" class="js-ellipsis">Samsung Galaxy S6 32GB </strong>
+							</div>
+						<?php } ?>
 					</h6>
 				</div>
 				<div class="status<?php echo ( $status === 'limited' || $status === 'available' ) ? ' positive' : ' negative'; ?>">
@@ -100,8 +106,8 @@
 			</div>
 
 			<div class="mtm">
-				<div class="gray_text"><strong>$200.99 on 2-year term</strong></div>
-				<div class="gray_text"><strong>$800.99 no term</strong></div>
+				<div class="gray_text"><span>$200.99 on 2-year term</span></div>
+				<div class="gray_text"><span>$800.99 no term</span></div>
 				<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 			</div>
 		</div>

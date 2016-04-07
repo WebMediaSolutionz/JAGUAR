@@ -28,6 +28,10 @@ var JAG = {
 			self.setupTabs();
 		}
 
+		if ( self.currentPage === 'devices' || self.currentPage === 'device' || self.currentPage === 'accessories' ) {
+			self.check_image_availability();
+		}
+
 		return self;
 	},
 
@@ -940,6 +944,26 @@ var JAG = {
 			documents_table.append( '<tr><td><div class="frg-checkbox small regular"><div class="inner"><input type="radio" value="Option 1" name="option" id="radio-option1"><div class="icon"></div><label for="radio-option1"></label></div></div></td><td><a class="underline" href="demo2.php">report</a></td><td></td><td><span>Stan a</span></td><td><span>Jan 15, 2016</span></td><td><span>Purchase</span></td><td><span class="status positive">approved</span></td></tr>' );
 		});
 
+		$( '.js-select-at-least-one' ).click( function () {
+			var checkboxes = $( '.js-select-at-least-one' ),
+				submitButton = $( '.js-submit' ),
+				activate = false;
+
+			checkboxes.each( function () {
+				var checkbox = $( this );
+
+				if ( checkbox.find( '.frg-icon' ).hasClass( 'icon-checkmark' ) ) {
+					activate = true;
+				}
+			});
+
+			if ( activate ) {
+				submitButton.removeClass( 'state-disabled' );
+			} else {
+				submitButton.addClass( 'state-disabled' );
+			}
+		});
+
 		return self;
 	},
 
@@ -1226,7 +1250,7 @@ var JAG = {
 								break;
 		}
 
-		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
 		errors.addClass( 'show_errors' );
 
 		$( '.error_message .close' ).click( function () {
@@ -1486,6 +1510,23 @@ var JAG = {
 				.text( 'Add to cart' );
 			}
 		}, 3000);
+
+		return self;
+	},
+
+	check_image_availability: function () {
+		var self = this,
+			images = $( '.js-check-availability' ),
+			default_img = 'img/no-image-available.jpg';
+
+		images.each( function () {
+			var img = $( this );
+
+			img.error( function () {
+				img.attr( 'src', default_img );
+				img.addClass( 'replacement_img' );
+			});
+		});
 
 		return self;
 	}

@@ -2,7 +2,7 @@
 	<div class="inner-container main_banner clearfix">
 		<div class="left">
 			<h1>Multiple orders made easy</h1>
-			<p><strong>Import a subscriber list to speed<br /> up bulk orders.</strong></p>
+			<p>Import a subscriber list to speed<br /> up bulk orders.</p>
 			<a href='#' class='frg-button color-green'>Learn how</a>
 		</div>
 		<div class="birds left">

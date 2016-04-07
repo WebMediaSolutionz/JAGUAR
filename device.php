@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
+		<h4 class="device_title capitalize">samsung galaxy s6 32GB</h4>
 	</div>
 </div>
 
@@ -14,8 +14,8 @@
 				<!-- <img src="img/phone_big.jpg"> -->
 
 				<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
-					<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
-					<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
+					<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey js-check-availability">			
+					<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver js-check-availability hide">	
 				</a>
 
 				<div class="device__variant-container center">			
@@ -118,12 +118,12 @@
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 4</span><span class="js-show-not-device-only hide">Step 3</span>: Select your account configuration</strong></h6>
+						<h6 class="padding_top js-hide-not-device-only"><strong>Step 4: Select your account configuration</strong></h6>
 
-						<table class="full_width">
+						<table class="full_width js-hide-not-device-only">
 							<tr>
 								<td><span>Account</span></td>
-								<td><span class="js-hide-not-device-only">SIM type</span></td>
+								<td><span>SIM type</span></td>
 							</tr>
 							<tr>
 								<td class="halfwidth changeling">
@@ -136,7 +136,7 @@
 									</div>
 								</td>
 								<td class="halfwidth">
-									<div class='frg-select-container js-hide-not-device-only color-light full_width'>
+									<div class='frg-select-container color-light full_width'>
 										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>Nano SIM ($10.00/device)</option>
@@ -153,12 +153,12 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<span class="js-hide-not-device-only">Apple DEP</span>
+									<span>Apple DEP</span>
 								</td>
 							</tr>
 							<tr>
 								<td colspan="2">
-									<div class='frg-select-container full_width js-hide-not-device-only color-light'>
+									<div class='frg-select-container full_width color-light'>
 										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>[Account Number] - $[50]/subscriber</option>

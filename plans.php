@@ -3,7 +3,7 @@
 
 <div class="outer-container secondary_bg top_bottom_padding white_bg">
 	<div class="inner-container clearfix">
-		<p class="h3"><span class="frg-icon icon-paper-inverted gray_text"></span> BYOD Plans</p>
+		<p class="h3"><span class="frg-icon icon-paper-inverted gray_text"></span> Activate BYOD plan</p>
 	</div>
 </div>
 

@@ -3,6 +3,9 @@
 	<head>
 		<title>TELUS</title>
 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<link rel="stylesheet" type="text/css" href="css/lib/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/frogger.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/telus-fonts.css" />
@@ -14,9 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/lib/easytabs.css" />
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
 		<link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2" />
-
 		<link href="img/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon" />
 
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/html5shim.js"></script><![end if]-->
@@ -111,7 +112,6 @@
 					<?php if ( $home_page1 || $home_page2 || $home_page3 ) { ?>
 						<h3 class="title no_margin">Welcome to Enterprise Mobility Management</h3>
 					<?php } ?>
-
 					<?php if ( !$home_page1 && $page !== 'demo2' ) { ?>
 						<nav>
 							<ul class="no_styles">

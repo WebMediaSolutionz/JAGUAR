@@ -5,7 +5,7 @@
 
 <div class="outer-container main_content purple_bg">
 	<div class="inner-container">
-		<h3 class="title">Track, adjust and manage your business mobility needs</h3>
+		<h2 class="title">Track, adjust and manage your business mobility needs</h2>
 
 		<div class="box left">
 			<div class="top">
@@ -104,7 +104,7 @@
 					<ul class="list">
 						<li><a href="#">Frequently asked questions</a></li>
 						<li><a href="#">Browse support articles</a></li>
-						<li><a href="#">Submit a repair request</a></li>
+						<li><a href="#">Submit a repair or return request</a></li>
 						<li><a target="_blank" href="http://www.telus.com/support">View device starter guides</a></li>
 					</ul>
 				</div>
@@ -115,7 +115,7 @@
 				<h3 class="title">Check repair ticket status</h3>
 
 				<div class="ticket_number_status">
-					<input class="left frg-input-field" placeholder="Repair ticket number"/>
+					<input class="left frg-input-field" />
 					<a class="left frg-button gap_left_small" href="#">Repair Status</a>
 				</div>
 			</div>
