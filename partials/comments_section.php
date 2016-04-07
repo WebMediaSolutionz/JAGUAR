@@ -5,7 +5,7 @@
 				include( 'comment.php' );
 			}
 
-			include( 'comment_control.php' );
+			include( 'partials/comment_control.php' );
 		?>
 	</div>
 </div>

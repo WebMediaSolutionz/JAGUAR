@@ -7,7 +7,7 @@
 	<div class="left gap_left comment_text_field">
 		<input class='frg-input-field full_lenght' placeholder='include comment here' />
 	</div>
-	<div class="left gap_left">
+	<div class="right">
 		<a class='frg-button color-purple' href='#'>Post comment</a>
 	</div>
 </div>
