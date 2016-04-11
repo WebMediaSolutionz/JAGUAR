@@ -683,25 +683,25 @@ var JAG = {
 			}, 5000);
 		});
 
-		$( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
-			var action_buttons = $( '.operations .frg-button' ),
-				checkboxes = $( 'input[type=checkbox]' ),
-				enable = false;
+		// $( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
+		// 	var action_buttons = $( '.operations .frg-button' ),
+		// 		checkboxes = $( 'input[type=checkbox]' ),
+		// 		enable = false;
 
-			checkboxes.each( function () {
-				var checkbox = $( this );
+		// 	checkboxes.each( function () {
+		// 		var checkbox = $( this );
 
-				if ( checkbox.is( ':checked' ) ) {
-					enable = true;
-				}
-			});
+		// 		if ( checkbox.is( ':checked' ) ) {
+		// 			enable = true;
+		// 		}
+		// 	});
 
-			if ( enable ) {
-				action_buttons.removeClass( 'state-disabled' );
-			} else {
-				action_buttons.addClass( 'state-disabled' );
-			}
-		});
+		// 	if ( enable ) {
+		// 		action_buttons.removeClass( 'state-disabled' );
+		// 	} else {
+		// 		action_buttons.addClass( 'state-disabled' );
+		// 	}
+		// });
 
 		$( '.js-phone_input_mask' ).keyup( function () {
 			var clicked = $( this ),
@@ -732,20 +732,20 @@ var JAG = {
 
 		// self.showFakeLinks();
 
-		$( '.js-upgrade-offer' ).change( function () {
-			var dropdown = $( this ),
-				status = dropdown.closest( 'tr' ).find( '.status' );
+		// $( '.js-upgrade-offer' ).change( function () {
+		// 	var dropdown = $( this ),
+		// 		status = dropdown.closest( 'tr' ).find( '.status' );
 
-			if ( dropdown.val().toLowerCase() !== 'select' ) {
-				if ( status.text().toLowerCase() !== 'complete' ) {
-					status.text( 'Pending device & plan' );
-				}
-			} else {
-				if ( status.text().toLowerCase() !== 'complete' ) {
-					status.text( 'Pending upgrade offer' );
-				}
-			}
-		});
+		// 	if ( dropdown.val().toLowerCase() !== 'select' ) {
+		// 		if ( status.text().toLowerCase() !== 'complete' ) {
+		// 			status.text( 'Pending device & plan' );
+		// 		}
+		// 	} else {
+		// 		if ( status.text().toLowerCase() !== 'complete' ) {
+		// 			status.text( 'Pending upgrade offer' );
+		// 		}
+		// 	}
+		// });
 
 		$( '.js-filter-service-category' ).change( function () {
 			var sort_value = $( this ).val(),
