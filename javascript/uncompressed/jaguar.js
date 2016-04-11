@@ -1512,9 +1512,8 @@ var JAG = {
 		images.each( function () {
 			var img = $( this );
 
-			img.error( function () {
-				img.attr( 'src', default_img );
-				img.addClass( 'replacement_img' );
+			$.get( img.attr( 'src' ) ).fail(function() { 
+				img.attr( 'src', default_img ).addClass( 'replacement_img' );
 			});
 		});
 
