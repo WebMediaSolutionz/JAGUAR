@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<?php include( 'partials/error_message.php' ); ?>
+<?php include( 'partials/error_message_mockup.php' ); ?>
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">

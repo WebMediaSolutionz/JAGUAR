@@ -103,6 +103,17 @@
 			</div>
 		</div>
 	</div>
+<?php } else if ( $page === 'repair' ) { ?>
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+		<div class="inner-container clearfix">
+			<div class="col-xs-offset-6 col-xs-3 right_align">
+				<a class="frg-button color-purple full_lenght" href="#">Delete item(s)</a>
+			</div>
+			<div class="col-xs-3 no_padding right_align">
+				<a class="frg-button color-green full_lenght" href="#">Process repair</a>
+			</div>
+		</div>
+	</div>
 <?php } else { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">

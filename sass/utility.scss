@@ -147,6 +147,13 @@ div.h6 {
 	.frg-icon {
 		font-size: 34px;
 		vertical-align: middle;
+
+		&.icon-repair {
+			display: block;
+			width: 35px;
+			height: 35px;
+			background: transparent url( '../img/repair.jpg' ) no-repeat;
+		}
 	}
 
 	&.gray_text {
@@ -506,6 +513,10 @@ a.underline {
 			}
 		}
 	}
+
+	&.textarea {
+		height: 75px;
+	}
 }
 
 .btn {
@@ -639,6 +650,10 @@ table {
 	color: #FFF;
 }
 
+.shade1_of_gray_bg {
+	background-color: #f5f6f7;
+}
+
 .super_dark_gray_text {
 	color: $super_dark_gray;
 }
@@ -684,6 +699,11 @@ table {
 .vertical_padding30 {
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.vertical_margin30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .top_margin20 {
@@ -744,4 +764,8 @@ table {
 
 .frg-checkbox.regular.small .icon {
 	line-height: 15px;
+}
+
+.page_title {
+	margin: 5px 0 0 5px;
 }
