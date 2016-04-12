@@ -28,7 +28,9 @@
 					<th>Issue/Symptom</th>
 					<th>Loaner Required</th>
 					<th class="right_align">
-						<div class="left">Estimated Repair Fee</div> <div class="frg-icon icon-info back-order purple top_margin_minus7 left gap_left_small"></div>
+						<div class="right clearfix">
+							<div class="left">Estimated<br />Repair Fee</div> <div class="frg-icon icon-info back-order purple top_margin_minus7 left gap_left_small"></div>
+						</div>
 					</th>
 				</tr>
 			</thead>
