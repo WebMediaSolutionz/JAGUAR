@@ -228,10 +228,10 @@
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
 		<div class="col-xs-offset-6 col-xs-3 right_align">
-			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
+			<a class="frg-button color-green full_lenght" href="repair.php"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
 		</div>
 		<div class="col-xs-3 no_padding right_align">
-			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
+			<a class="frg-button color-green full_lenght" href="return.php"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
 		</div>
 	</div>
 </div>

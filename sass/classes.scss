@@ -1625,6 +1625,10 @@ table.wide {
 		width: 100px !important;
 		color: $purple;
 
+		&.longer {
+			width: 250px !important;
+		}
+
 		&:first-child {
 			color: #000;
 		}
