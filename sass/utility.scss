@@ -637,6 +637,10 @@ table {
 	&.white_text {
 		color: #FFF;
 	}
+
+	&.purple {
+		color: $purple2;
+	}
 }
 
 .icon-upgrades {
@@ -706,6 +710,10 @@ table {
 	margin-bottom: 30px;
 }
 
+.top_margin_minus7 {
+	margin-top: -7px !important;
+}
+
 .top_margin20 {
 	margin-top: 20px;
 }
@@ -768,4 +776,8 @@ table {
 
 .page_title {
 	margin: 5px 0 0 5px;
+}
+
+.gray_shade1_text {
+	color: $gray_shade1;
 }
