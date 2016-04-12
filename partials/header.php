@@ -115,7 +115,7 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'order_management' || $page === 'repair' ) ? 'current ': ''; ?>block" href="order_management.php">
+								<a class="<?php echo ( $page === 'order_management' || $page === 'repair' || $page === 'confirm_repair' ) ? 'current ': ''; ?>block" href="order_management.php">
 									<strong>Order Management</strong>
 								</a>
 							</li>

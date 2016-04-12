@@ -954,6 +954,15 @@ var JAG = {
 			}
 		});
 
+		$( '.js-delete-row' ).click( function () {
+			var checked_checkboxes = $( '.frg-checkbox .icon-checkmark' ),
+				rows_to_delete = checked_checkboxes.closest( 'tr' ),
+				next_row = rows_to_delete.next();
+
+			rows_to_delete.remove();
+			next_row.remove();
+		});
+
 		return self;
 	},
 
