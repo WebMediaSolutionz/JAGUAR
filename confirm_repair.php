@@ -15,7 +15,7 @@
 	<div class="inner-container clearfix">
 		<table class="gray_text wide datagrid">
 			<thead class="gray_text">
-				<tr class="wide2">
+				<tr>
 					<?php if ( $page !== 'confirm_repair' ) { ?>
 						<th>Select</th>
 					<?php } ?>

@@ -1547,6 +1547,17 @@ table.wide {
 				}
 			}
 		}
+	},
+
+	&.datagrid {
+		tbody {
+			tr.wide {
+				& > td {
+					width: auto !important;
+					padding: 0 5px;
+				}
+			}
+		}
 	}
 }
 
