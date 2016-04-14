@@ -1036,7 +1036,7 @@ var JAG = {
 				button.removeClass( 'js-incomplete' );
 			}
 			
-			// errors.empty();
+			errors.empty();
 		}
 
 		return self;
