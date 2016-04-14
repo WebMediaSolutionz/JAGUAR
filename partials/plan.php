@@ -50,11 +50,11 @@
 	</div>
 	<div class="js-all-required-fields disable">
 		<div class="row gray_text vertical_gap">
-			<div class="col-xs-4">
+			<div class="col-xs-6">
 				<p class="h4">Quantity</p>
 				<input class='frg-input-field short full_width no_margin js-required' value='1'/>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-xs-6">
 				<p class="h4">Account</p>
 				<div class='frg-select-container color-light full_width'>
 					<select class="js-required" autocomplete="off">
@@ -62,17 +62,6 @@
 						<option>Account 1</option>
 						<option>Account 2</option>
 						<option>Account 3</option>
-					</select>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<p class="h4">SIM type</p>
-				<div class='frg-select-container color-light full_width'>
-					<select class="js-required" autocomplete="off">
-						<option selected>Select</option>
-						<option>Nano SIM ($10.00/device)</option>
-						<option>Nano SIM ($10.00/device)</option>
-						<option>Nano SIM ($10.00/device)</option>
 					</select>
 				</div>
 			</div>
