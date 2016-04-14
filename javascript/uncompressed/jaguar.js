@@ -993,6 +993,7 @@ var JAG = {
 	checkRequiredField: function ( el ) {
 		var self = this,
 			form = ( $( el.target ).closest( '.js-all-required-fields' ).length > 0 ) ? $( el.target ).closest( '.js-all-required-fields' ) : $( '.js-all-required-fields' ),
+			disable = form.hasClass( 'disable' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true,
@@ -1023,10 +1024,19 @@ var JAG = {
 		});
 
 		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
-			button.addClass( 'js-incomplete' );
+			if ( disable ) {
+				button.addClass( 'state-disabled' );
+			} else {
+				button.addClass( 'js-incomplete' );
+			}
 		} else {
-			button.removeClass( 'js-incomplete' );
-			errors.empty();
+			if ( disable ) {
+				button.removeClass( 'state-disabled' );
+			} else {
+				button.removeClass( 'js-incomplete' );
+			}
+			
+			// errors.empty();
 		}
 
 		return self;
