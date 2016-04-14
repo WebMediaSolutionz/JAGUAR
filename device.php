@@ -178,7 +178,7 @@
 								<td><span class="total">$0</span></td>
 							</tr>
 						</table>
-						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width state-disabled'>Add to cart</a>
+						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width js-incomplete'>Add to cart</a>
 					</section>
 				</div>
 			</div>

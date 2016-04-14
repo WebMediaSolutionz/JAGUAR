@@ -1023,9 +1023,10 @@ var JAG = {
 		});
 
 		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
-			button.addClass( 'state-disabled' );
+			button.addClass( 'js-incomplete' );
 		} else {
-			button.removeClass( 'state-disabled' );
+			button.removeClass( 'js-incomplete' );
+			errors.empty();
 		}
 
 		return self;
