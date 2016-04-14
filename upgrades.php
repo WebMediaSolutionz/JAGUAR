@@ -59,7 +59,7 @@
 
 			<div class="clearfix vertical_gap_top small_gap">
 				<input class='frg-input-field left js-phone_input_mask side_padding js-required' placeholder="Enter a phone number" />
-				<input class="frg-button color-purple left gap_left_small side_padding js-incomplete js-submit" type="submit" name="submit" value="Add" />
+				<input class="frg-button color-purple left gap_left_small side_padding state-disabled js-submit" type="submit" name="submit" value="Add" />
 			</div>
 		</div>
 	</div>

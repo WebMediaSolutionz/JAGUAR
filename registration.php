@@ -121,7 +121,7 @@
 						<span class="devil_gray_text">By clicking Continue, you agree to receive My Account updates and to the TELUS <a href="#">Privacy Commitment</a>.</span>
 					</div>
 
-					<a href='#' class='frg-button button-wide color-green bottom_margin50 js-incomplete js-submit'>Continue</a>
+					<a href='#' class='frg-button button-wide color-green bottom_margin50 state-disabled js-submit'>Continue</a>
 				</form>
 			</div>
 		</div>
