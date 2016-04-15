@@ -61,7 +61,7 @@
 		<td class="sim_nbr">
 			<div class="empty hide"></div>
 			<div class="status positive clearfix">
-				<input class='frg-input-field js-validate_number js-required back-order short left' />
+				<input class='frg-input-field js-validate_number js-required js-unique back-order short left' />
 				<div class="frg-icon icon-info back-order left"></div>
 				<div class="tooltip_bubble">
 					<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>

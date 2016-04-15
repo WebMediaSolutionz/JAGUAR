@@ -99,7 +99,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght js-incomplete" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+				<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
 			</div>
 		</div>
 	</div>
