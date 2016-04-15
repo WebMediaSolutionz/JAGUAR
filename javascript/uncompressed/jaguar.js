@@ -963,6 +963,29 @@ var JAG = {
 			next_row.remove();
 		});
 
+		$( '.js-unique' ).blur( function () {
+			self.checkForDuplicates();
+		});
+
+		$( '.js-duplicates' ).click( function () {
+			self.checkForDuplicates();
+
+			if ( $( this ).hasClass( 'js-active' ) ) {
+				var error_container = $( '.error_message_container' ),
+					duplicates = $( '[data-duplicate=true]' ),
+					type = 'error',
+					title = "there's duplicates",
+					text = 'Lorem ipsum';
+
+				duplicates
+					.addClass( 'js-error' )
+					.addClass( 'show_errors' );
+
+				self.displayErrorMessage( type, title, text )
+					.scrollTo( error_container, 15, 1000 );
+			}
+		});
+
 		return self;
 	},
 
@@ -988,6 +1011,49 @@ var JAG = {
 		$( 'html, body' ).animate({
 	        scrollTop: el.offset().top - margin
 	    }, time );
+	},
+
+	checkForDuplicates: function () {
+		var self = this,
+			textfields = $( '.js-unique' ),
+			submit_btn = $( '.frg-button' ),
+			duplicates = false,
+			index_a = 0;
+
+		textfields.removeAttr( 'data-duplicate' );
+
+		textfields.each( function () {
+			var textfield1 = $( this ),
+				matches = 0,
+				index_b = 0;
+
+			textfields.each( function () {
+				var textfield2 = $( this );
+
+				if ( textfield1.val() !== '' && textfield2.val() !== '' && textfield1.val() === textfield2.val() && index_a !== index_b ) {
+					matches++;
+
+					textfield1.attr( 'data-duplicate', 'true' );
+					textfield2.attr( 'data-duplicate', 'true' );
+				}
+
+				index_b++;
+			});
+
+			index_a++;
+
+			if ( matches > 0 ) {
+				duplicates = true;
+			}
+		});
+
+		if ( duplicates ) {
+			submit_btn.addClass( 'js-active' );
+		} else {
+			submit_btn.removeClass( 'js-active' );
+		}
+
+		return self;
 	},
 
 	checkRequiredField: function ( el ) {

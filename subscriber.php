@@ -53,7 +53,7 @@
 			</thead>
 			<tbody>
 				<?php 
-					for ( $i = 0; $i < 25; $i++ ) { 
+					for ( $i = 0; $i < 5; $i++ ) { 
 						include( 'partials/subscriber_row.php' );
 					}
 				?>
