@@ -986,6 +986,14 @@ var JAG = {
 			}
 		});
 
+		$( '.js-clear-cart' ).click( function () {
+			$('#clearCart').modal();
+		});
+
+		$( '.js-confirm-clear-cart' ).click( function () {
+			console.info( 'clear cart' );
+		});
+
 		return self;
 	},
 

@@ -23,12 +23,13 @@
 	<div class="inner-container clearfix">
 		<h3 class="title no_margin left">Devices and Plans</h3>
 		<div class="right">
-			<div class="frg-select-container color-light left gap_right">
-				<select autocomplete="off">
-					<option>Actions</option>
-					<option>Actions</option>
-				</select>
+			<div class="left">
+				<span>Actions:</span>
 			</div>
+			<a class='frg-button color-purple state-disabled left gap_left_small' href='#'>Duplicate item</a>
+			<a class='frg-button color-purple state-disabled left gap_left_small' href='#'>Edit item</a>
+			<a class='frg-button color-purple left gap_left_small' href='#'>Delete item</a>
+			<a class='frg-button color-purple left gap_left_small js-clear-cart' href='#'>Clear cart</a>
 		</div>
 	</div>
 </div>
