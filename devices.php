@@ -79,7 +79,7 @@
 		<div class="clearfix">
 			<h3 class="js-applied_filter">All</h3>
 			<div>
-				<h3 class="no_padding"><span class="left gap_right_small small">Select your service category: </span></h3>
+				<h3 class="no_padding"><span class="left gap_right_small small block vertical_gap_top very_small_gap">Select your service category: </span></h3>
 				<div class="left">
 					<div class='right frg-select-container color-light'>
 						<select class="js-filter-service-category" autocomplete="off">
