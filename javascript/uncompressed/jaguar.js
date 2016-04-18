@@ -916,7 +916,7 @@ var JAG = {
 		$( '.js-incomplete' ).click( function ( e ) {
 			var el = $( this ),
 				type = 'error',
-				title = 'Please, fill out all of the required fields',
+				title = 'Highlighted fields are required.',
 				text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla scelerisque mi, eget commodo justo euismod eu. Mauris nec scelerisque tortor, vel volutpat sapien.',
 				errors = $( '.error_message' ),
 				error_container = $( '.error_message_container' );
