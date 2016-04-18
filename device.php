@@ -28,7 +28,7 @@
 				</div>
 			</div>
 			<div class="js-all-required-fields">
-				<div class="col-xs-5 col-xs-offset-1">
+				<div class="col-xs-5 col-xs-offset-2">
 					<div class="error_message_container"></div>
 
 					<section>
