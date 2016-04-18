@@ -45,18 +45,18 @@
 							<nav class="left">
 								<ul class="no_styles clearfix">
 									<li class="left gap_right">
-										<a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">
-											<strong>Buy</strong>
+										<a class="current block" href="index.php?banner=<?php echo $next; ?>">
+											<span>Buy</span>
 										</a>
 									</li>
 									<li class="left gap_right">
 										<a class="block" href="#">
-											<strong>Manage</strong>
+											<span>Manage</span>
 										</a>
 									</li>
 									<li class="left">
 										<a class="block" href="#">
-											<strong>Support</strong>
+											<span>Support</span>
 										</a>
 									</li>
 								</ul>
@@ -66,7 +66,7 @@
 							<ul class="menu clearfix">
 								<li class="left gap_right">
 									<a class="user_name" href="#">
-										<div class="left"><strong>Stan Smith</strong></div>
+										<div class="left username"><span>Stan Smith</span></div>
 										<div class="left frg-icon icon-arrow-down"></div>
 									</a>
 									<ul class="no_styles">
