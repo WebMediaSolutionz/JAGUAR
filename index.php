@@ -102,7 +102,6 @@
 					<h3 class="title">Support shortcuts</h3>
 
 					<ul class="list">
-						<li><a href="#">Frequently asked questions</a></li>
 						<li><a href="#">Browse support articles</a></li>
 						<li><a href="#">Submit a repair or return request</a></li>
 						<li><a target="_blank" href="http://www.telus.com/support">View device starter guides</a></li>
