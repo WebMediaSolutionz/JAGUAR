@@ -149,12 +149,17 @@ span.status {
 
 	.icon-arrow-down {
 		display: inline-block;
-		margin-left: 10px;
+		margin-left: 5px;
 		color: $white;
-		padding-top: 9px;
+		padding-top: 7px;
 		line-height: 25px;
 		font-size: 14px;
 	}
+}
+
+.username {
+	font-size: 12px;
+	font-family: "ProximaNova-Regular",Helvetica,Arial,sans-serif;
 }
 
 h3 {
@@ -198,12 +203,12 @@ h3 {
 .header {
 	@include primary_bg_color;
 
-	padding: 40px 0 0 0;
+	padding: 26px 0 14px 0;
 
 	.logo {
 		width: 155px;
 		height: 29px;
-		margin-right: 78px;
+		margin-right: 76px;
 
 		& + nav .gap_right {
 			margin-right: 32px;
@@ -219,17 +224,18 @@ h3 {
 	}
 
 	nav {
-		margin-top: -40px;
+		margin-top: -26px;
 
 		ul {
 			margin: 0;
 
 			li a {
-				padding-top: 36px;
+				padding-top: 30px;
+				font-weight: 800;
 
 				&:hover,
 				&.current {
-					padding-top: 30px;
+					padding-top: 24px;
 					border-top: 6px solid $green;
 				}
 			}
@@ -237,7 +243,7 @@ h3 {
 	}
 
 	.profile {
-		padding-top: 10px;
+		padding-top: 20px;
 		padding-bottom: 10px;
 
 		.gap_right {
@@ -249,7 +255,7 @@ h3 {
 
 			& > li > ul {
 				width: 200px;
-				margin: -10px 0 0 -90px;
+				margin: -10px 0 0 -110px;
 
 				a:link,
 				a:visited,
@@ -1223,6 +1229,14 @@ span.footnote {
 
 .header_bg {
 	padding-bottom: 7px;
+	height: 90px;
+
+	.inner-container {
+		margin: 0 15px 0 11px;
+		max-width: 100%;
+		min-width: 1000px;
+		width: auto;
+	}
 }
 
 .price,
