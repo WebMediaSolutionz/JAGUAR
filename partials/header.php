@@ -100,7 +100,7 @@
 							</li>
 							<li class="left">
 								<a class="<?php echo ( $page === 'plans' || $page === 'plans2' || $page === 'upgrades_plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>Activate BYOD plan</strong>
+									<strong>BYOD plans</strong>
 								</a>
 							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
