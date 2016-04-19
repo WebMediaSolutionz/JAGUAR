@@ -44,7 +44,7 @@ gulp.task( 'concat', function () {
 // Styles Task
 gulp.task( 'styles', function () {
 	gulp.src( 'sass/**/*.scss' )
-		.pipe( sass({outputStyle: 'compressed'}).on('error', sass.logError) )
+		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.on( 'error', errorLog )
 		.pipe( prefix( 'last 2 versions' ) )
 		.pipe( gulp.dest( 'css/' ) )
