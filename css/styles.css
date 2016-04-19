@@ -667,14 +667,14 @@ a.underline {
   font-size: 14px;
 }
 
-.sticky .circle {
+.stickyFooter .circle {
   border-radius: 30px;
   padding: 0 8px !important;
   font-size: 20px;
   margin-top: 5px;
 }
 
-.sticky .circle + div {
+.stickyFooter .circle + div {
   font-size: 14px;
 }
 
