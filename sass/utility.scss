@@ -798,3 +798,8 @@ table {
 .gray_shade1_text {
 	color: $gray_shade1;
 }
+
+.frg-input-field, 
+.frg-select-container select {
+	margin: 0;
+}

@@ -12,8 +12,8 @@
 		</div>
 		<div class="right advanced_options clearfix">
 			<div class="left">Actions: </div>
-			<a class="frg-button left color-purple gap_left advanced_import" href="#">Advanced import</a>
-			<a class="frg-button left color-purple gap_left" href="#">Clear row(s)</a>
+			<a class="frg-button left color-purple gap_left_small advanced_import" href="#">Advanced import</a>
+			<a class="frg-button left color-purple gap_left_small" href="#">Clear row(s)</a>
 		</div>
 	</div>
 </div>
@@ -28,7 +28,7 @@
 			<thead class="gray_text">
 				<tr>
 					<th>
-						<div class="frg-checkbox js-select-all regular small">
+						<div class="frg-checkbox js-select-all regular small vertical_gap_top very_small_gap">
 							<div class="inner">
 								<input id="chkbox-option-all" type="checkbox" name="option-all" value="Option all">
 								<div class="icon">
@@ -41,10 +41,10 @@
 					<th>Last name</th>
 					<th>Port</th>
 					<th>Calling city</th>
-					<th>Preferred<br />area code</th>
+					<th>Area code</th>
 					<th class="existing_phone_nbr hide">Existing<br />Phone #</th>
 					<th class="account_nbr hide">Account #</th>
-					<th>Voicemail<br />language</th>
+					<th>Voicemail</th>
 
 					<?php if ( $byod ) { ?>
 						<th class="sim_nbr hide">SIM #</th>
