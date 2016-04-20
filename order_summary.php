@@ -409,7 +409,7 @@
 								</div>
 							</td>
 							<td>
-								<span>I accept these contract terms and conditions</span>
+								<div class="gap_left_small">I accept these contract terms and conditions</div>
 							</td>
 						</tr>
 					</table>
@@ -434,7 +434,7 @@
 								</div>
 							</td>
 							<td>
-								<span>I accept these contract terms and conditions</span>
+								<div class="gap_left_small">I accept these contract terms and conditions</div>
 							</td>
 						</tr>
 					</table>
