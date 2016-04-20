@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<div class="left">
-			<p class="h3"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart items</p>
+			<p class="h1"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart items</p>
 		</div>
 	</div>
 </div>

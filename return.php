@@ -3,7 +3,7 @@
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
-		<p class="h3">
+		<p class="h1">
 			<span class="frg-icon icon-return gray_text left"></span> <span class="block left page_title">Returns</span>
 		</p>
 	</div>

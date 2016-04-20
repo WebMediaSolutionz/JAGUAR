@@ -1281,7 +1281,8 @@ span.footnote {
 }
 
 .step_tracker,
-.step_tracker2 {
+.step_tracker2,
+.step_tracker3 {
 	padding: 30px 10%;
 
 	ol {
@@ -1292,6 +1293,7 @@ span.footnote {
 
 			&.done {
 				border-top: 6px solid $green;
+				color: $green;
 			}
 
 			&.current {
@@ -1371,6 +1373,16 @@ span.footnote {
 	ol {
 		li {
 			width: 33%;
+		}
+	}
+}
+
+.step_tracker3 {
+	padding: 30px 15%;
+
+	ol {
+		li {
+			width: 50%;
 		}
 	}
 }

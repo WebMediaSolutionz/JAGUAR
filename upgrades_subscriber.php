@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container padding_bottom clearfix">
-		<p class="h3"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
+		<p class="h1"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
 
 		<span>First select an upgrade offer for each subscriber then select the subscriber(s) and add a device and plan.</span>
 	</div>
@@ -330,7 +330,7 @@
 
 		<div class="clearfix">
 			<div class="purple_bg left add_subscriber">
-				<p class="h3">Add another subscriber that is on TELUS account #898927383:</p>
+				<p class="h1">Add another subscriber that is on TELUS account #898927383:</p>
 
 				<div class="clearfix">
 					<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />

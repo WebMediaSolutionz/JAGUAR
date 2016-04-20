@@ -172,7 +172,7 @@ div.h3 .frg-icon,
 div.h4 .frg-icon,
 div.h5 .frg-icon,
 div.h6 .frg-icon {
-  font-size: 34px;
+  font-size: 40px;
   vertical-align: middle;
 }
 
@@ -2261,53 +2261,63 @@ span.footnote {
 }
 
 .step_tracker,
-.step_tracker2 {
+.step_tracker2,
+.step_tracker3 {
   padding: 30px 10%;
 }
 
 .step_tracker ol li,
-.step_tracker2 ol li {
+.step_tracker2 ol li,
+.step_tracker3 ol li {
   float: left;
   width: 25%;
   border-top: 6px solid #d8d8d8;
 }
 
 .step_tracker ol li.done,
-.step_tracker2 ol li.done {
+.step_tracker2 ol li.done,
+.step_tracker3 ol li.done {
   border-top: 6px solid #57a708;
+  color: #57a708;
 }
 
 .step_tracker ol li.current .symbol,
-.step_tracker2 ol li.current .symbol {
+.step_tracker2 ol li.current .symbol,
+.step_tracker3 ol li.current .symbol {
   background-color: #d8d8d8;
   border: thin solid #d8d8d8;
   color: #666;
 }
 
 .step_tracker ol li.current .frg-icon,
-.step_tracker2 ol li.current .frg-icon {
+.step_tracker2 ol li.current .frg-icon,
+.step_tracker3 ol li.current .frg-icon {
   display: none;
 }
 
 .step_tracker ol li.current .icon-circle-solid,
-.step_tracker2 ol li.current .icon-circle-solid {
+.step_tracker2 ol li.current .icon-circle-solid,
+.step_tracker3 ol li.current .icon-circle-solid {
   display: block !important;
 }
 
 .step_tracker ol li.not_done .symbol,
-.step_tracker2 ol li.not_done .symbol {
+.step_tracker2 ol li.not_done .symbol,
+.step_tracker3 ol li.not_done .symbol {
   background-color: #d8d8d8;
   border: thin solid #d8d8d8;
   color: #666;
 }
 
 .step_tracker ol li.not_done .frg-icon,
-.step_tracker2 ol li.not_done .frg-icon {
+.step_tracker2 ol li.not_done .frg-icon,
+.step_tracker3 ol li.not_done .frg-icon {
   display: none;
 }
 
 .step_tracker ol li.not_done .icon-circle-solid,
-.step_tracker2 ol li.not_done .icon-circle-solid {
+.step_tracker2 ol li.not_done .icon-circle-solid,
+.step_tracker3 ol li.not_done .icon-circle-solid {
   display: block !important;
   color: #d8d8d8;
 }
@@ -2315,7 +2325,9 @@ span.footnote {
 .step_tracker ol li .symbol,
 .step_tracker ol li .frg-icon,
 .step_tracker2 ol li .symbol,
-.step_tracker2 ol li .frg-icon {
+.step_tracker2 ol li .frg-icon,
+.step_tracker3 ol li .symbol,
+.step_tracker3 ol li .frg-icon {
   display: block;
   width: 30px;
   height: 30px;
@@ -2328,7 +2340,8 @@ span.footnote {
 }
 
 .step_tracker ol li .frg-icon,
-.step_tracker2 ol li .frg-icon {
+.step_tracker2 ol li .frg-icon,
+.step_tracker3 ol li .frg-icon {
   font-size: 30px;
   padding: 0;
   color: #57a708;
@@ -2340,12 +2353,14 @@ span.footnote {
 }
 
 .step_tracker ol li:last-child,
-.step_tracker2 ol li:last-child {
+.step_tracker2 ol li:last-child,
+.step_tracker3 ol li:last-child {
   width: 0;
 }
 
 .step_tracker ol li .description,
-.step_tracker2 ol li .description {
+.step_tracker2 ol li .description,
+.step_tracker3 ol li .description {
   display: block;
   width: 200px;
   font-size: 90%;
@@ -2358,6 +2373,14 @@ span.footnote {
 
 .step_tracker2 ol li {
   width: 33%;
+}
+
+.step_tracker3 {
+  padding: 30px 15%;
+}
+
+.step_tracker3 ol li {
+  width: 50%;
 }
 
 .time_period {

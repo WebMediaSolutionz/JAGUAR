@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container clearfix">
-		<p class="h3"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
+		<p class="h1"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
 
 		<div class="clearfix">
 			<nav class="left filter_nav brand">

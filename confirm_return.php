@@ -6,7 +6,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<div class="left">
-			<h4 class="no_padding purple_text">Confirm return</h4>
+			<p class="h1 no_padding purple_text">Confirm return</p>
 		</div>
 	</div>
 </div>

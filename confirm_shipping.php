@@ -6,7 +6,7 @@
 <div class="outer-container content white_bg shipping">
 	<div class="inner-container clearfix">
 		<div class="col-xs-7 no_padding">
-			<p class="h3">Confirm shipping information</p>
+			<p class="h1">Confirm shipping information</p>
 
 			<h5 class="gray_text">Please remember:</h5>
 

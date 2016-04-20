@@ -3,8 +3,8 @@
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
-		<div class="left gray_text">
-			<div class="h3">Order management</div>
+		<div class="left">
+			<p class="h1">Order management</p>
 		</div>
 	</div>
 </div>
