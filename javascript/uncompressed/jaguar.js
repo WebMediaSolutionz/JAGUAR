@@ -921,7 +921,7 @@ var JAG = {
 				errors = $( '.error_message' ),
 				error_container = $( '.error_message_container' );
 
-			if ( el.hasClass( 'js-incomplete' ) ) {
+			if ( el.hasClass( 'js-incomplete' ) && error_container.length !== 0 ) {
 				e.preventDefault();
 
 				if ( errors.length === 0 ) {
@@ -968,21 +968,24 @@ var JAG = {
 		});
 
 		$( '.js-duplicates' ).click( function () {
-			self.checkForDuplicates();
+			var error_container = $( '.error_message_container' );
 
-			if ( $( this ).hasClass( 'js-active' ) ) {
-				var error_container = $( '.error_message_container' ),
-					duplicates = $( '[data-duplicate=true]' ),
-					type = 'error',
-					title = "there's duplicates",
-					text = 'Lorem ipsum';
+			if ( error_container.length !== 0 ) {
+				self.checkForDuplicates();
 
-				duplicates
-					.addClass( 'js-error' )
-					.addClass( 'show_errors' );
+				if ( $( this ).hasClass( 'js-active' ) ) {
+					var duplicates = $( '[data-duplicate=true]' ),
+						type = 'error',
+						title = "there's duplicates",
+						text = 'Lorem ipsum';
 
-				self.displayErrorMessage( type, title, text )
-					.scrollTo( error_container, 15, 1000 );
+					duplicates
+						.addClass( 'js-error' )
+						.addClass( 'show_errors' );
+
+					self.displayErrorMessage( type, title, text )
+						.scrollTo( error_container, 15, 1000 );
+				}
 			}
 		});
 

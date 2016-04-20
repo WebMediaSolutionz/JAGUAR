@@ -15,7 +15,7 @@
 				<a class="frg-button color-purple full_lenght" href="#">Continue shopping</a>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght js-submit state-disabled" type="submit" name="submit" value="Checkout" />
+				<input class="frg-button color-green full_lenght js-submit js-incomplete js-duplicates state-disabled" type="submit" name="submit" value="Checkout" />
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght state-disabled" type="submit" name="submit" value="Save &amp; continue" />
+				<input class="frg-button color-green full_lenght js-incomplete js-duplicates state-disabled" type="submit" name="submit" value="Save &amp; continue" />
 			</div>
 		</div>
 	</div>
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" type="submit" name="submit" value="Save &amp; continue" />
+				<input class="frg-button color-green full_lenght js-incomplete js-duplicates<?php echo ( $page === 'confirm_shipping' ) ? ' state-disabled' : ''; ?>" type="submit" name="submit" value="Save &amp; continue" />
 			</div>
 		</div>
 	</div>
@@ -66,7 +66,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght" type="submit" name="submit" value="Place order" />
+				<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="submit" value="Place order" />
 			</div>
 		</div>
 	</div>
@@ -104,7 +104,7 @@
 				<a class="frg-button color-purple js-delete-row full_lenght" href="#">Delete item(s)</a>
 			</div>
 			<div class="col-xs-3 no_padding right_align">
-				<a class="frg-button color-green full_lenght" href="confirm_repair.php">Process repair</a>
+				<a class="frg-button color-green full_lenght js-incomplete js-duplicates" href="confirm_repair.php">Process repair</a>
 			</div>
 		</div>
 	</div>
@@ -125,7 +125,7 @@
 				</div>
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
-				<input class="frg-button color-green full_lenght" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+				<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
 			</div>
 		</div>
 	</div>
