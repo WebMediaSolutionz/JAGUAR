@@ -44,7 +44,7 @@
 					<th>Subscriber</th>
 					<th>Upgrade offer</th>
 					<th>Device balance</th>
-					<th>Status</th>
+					<th class="center_text">Status</th>
 					<th class="right_align">Due now</th>
 				</tr>
 			</thead>
