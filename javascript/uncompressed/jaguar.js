@@ -919,9 +919,10 @@ var JAG = {
 				title = 'Highlighted fields are required.',
 				text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla scelerisque mi, eget commodo justo euismod eu. Mauris nec scelerisque tortor, vel volutpat sapien.',
 				errors = $( '.error_message' ),
-				error_container = $( '.error_message_container' );
+				error_container = $( '.error_message_container' ),
+				required_fields = $( '.js-required' );
 
-			if ( el.hasClass( 'js-incomplete' ) && error_container.length !== 0 ) {
+			if ( el.hasClass( 'js-incomplete' ) && error_container.length !== 0 && required_fields.length !== 0 ) {
 				e.preventDefault();
 
 				if ( errors.length === 0 ) {
@@ -968,9 +969,10 @@ var JAG = {
 		});
 
 		$( '.js-duplicates' ).click( function () {
-			var error_container = $( '.error_message_container' );
+			var error_container = $( '.error_message_container' ),
+				unique_fields = $( '.js-unique' );
 
-			if ( error_container.length !== 0 ) {
+			if ( error_container.length !== 0 && unique_fields.length !== 0 ) {
 				self.checkForDuplicates();
 
 				if ( $( this ).hasClass( 'js-active' ) ) {
