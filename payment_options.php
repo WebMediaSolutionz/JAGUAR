@@ -6,7 +6,7 @@
 <div class="outer-container content white_bg title_shopping_cart">
 	<div class="inner-container clearfix">
 		<div class="col-xs-6 no_padding">
-			<div class="h3">Payment options</div>
+			<p class="h1">Payment options</p>
 
 			<br />
 			

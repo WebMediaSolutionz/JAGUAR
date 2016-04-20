@@ -1,7 +1,7 @@
 <?php include_once( 'config.php' ); ?>
 <?php include_once( 'partials/header.php' ); ?>
 
-<?php include( 'partials/check_progress_bar2.php' ); ?>
+<?php include( 'partials/check_progress_bar3.php' ); ?>
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">

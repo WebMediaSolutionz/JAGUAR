@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left">
-			<p class="h3">Order summary: #12345678</p>
+			<p class="h1">Order summary: #12345678</p>
 
 			<h4 class="no_padding gray_text">Status: <span class="frg-icon <?php echo ( $status === 'pending_approval' ) ? 'icon-warning-inverted' : 'icon-checkmark-inverted'; ?>"></span> <?php echo ( $status === 'pending_approval' ) ? 'Pending approval' : 'Shipped'; ?></h4>
 		</div>

@@ -5,7 +5,7 @@
 	<div class="inner-container padding_bottom clearfix">
 		<div class="error_message_container vertical_gap_top"></div>
 
-		<p class="h3"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
+		<p class="h1"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
 
 		<span>It's easy to give subscribers a new smartphone.</span>
 	</div>

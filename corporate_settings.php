@@ -3,7 +3,7 @@
 
 <div class="outer-container purple_bg borders">
 	<div class="inner-container">
-		<h4>Corporate Settings</h4>
+		<p class="h1">Corporate Settings</p>
 	</div>
 </div>
 
