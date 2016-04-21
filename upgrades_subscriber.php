@@ -45,16 +45,11 @@
 					<th>Upgrade offer</th>
 					<th>Device balance</th>
 					<th class="center_text">Status</th>
-					<th class="right_align">Due now</th>
+					<th class="right_align">Due</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td colspan="7">
-						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
-					</td>
-				</tr>
-				<tr>
 					<td class="top_bottom_small_padding">
 						<input type="hidden" name="blah" value="#" />
 						<div class="frg-checkbox regular small">
@@ -142,11 +137,6 @@
 					<td class="right_align top_bottom_small_padding">-</td>
 				</tr>
 				<tr>
-					<td colspan="7">
-						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
-					</td>
-				</tr>
-				<tr>
 					<td class="top_bottom_small_padding">
 						<input type="hidden" name="blah" value="#" />
 						<div class="frg-checkbox regular small">
@@ -232,11 +222,6 @@
 					<td class="top_bottom_small_padding side_padding center">$0.00</td>
 					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td colspan="7">
-						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
-					</td>
 				</tr>
 				<tr>
 					<td class="top_bottom_small_padding">
@@ -337,7 +322,7 @@
 					<input class="frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled" type="submit" name="submit" value="Add">
 				</div>
 				<div class="vertical_gap_top small_gap">
-					<span class="gray_text small">To upgrade subscribers on other TELUS accounts you need to repeat this process again</span>
+					<span class="gray_text small">Want to upgrade a subscriber on another TELUS account? You'll need to repeat this process with your other account.</span>
 				</div>
 			</div>
 		</div>
