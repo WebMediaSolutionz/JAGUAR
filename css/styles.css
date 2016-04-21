@@ -328,6 +328,10 @@ ul.no_styles {
   font-size: 120% !important;
 }
 
+.big .frg-icon {
+  font-size: 30px;
+}
+
 .vertical_gap {
   margin-bottom: 20px;
 }
