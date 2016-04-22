@@ -881,6 +881,24 @@ table thead tr th {
   margin: 0;
 }
 
+.input-group {
+  display: block;
+}
+
+.input-group .frg-input-field {
+  width: 75% !important;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-group.datepicker .input-group .form-control,
+.input-group.datepicker .input-group-addon,
+.input-group.datepicker .input-group-btn {
+  display: inline-block;
+  height: 30px;
+  padding: 6px 12px;
+  margin-top: -4px;
+}
+
 /* SHADES OF PURPLE */
 /**********************/
 /* SHADES OF GRAY */
@@ -942,7 +960,7 @@ div.status .frg-input-field,
 span.status .frg-input-field {
   border-right: transparent !important;
   border-radius: 5px 0 0 5px;
-  width: 85% !important;
+  width: 75% !important;
 }
 
 div.status div.frg-icon,
@@ -2403,104 +2421,160 @@ span.footnote {
   text-align: center;
 }
 
-.subscriber table,
-.cart_review table,
-.order_summary table,
-.order_management table {
+.subscriber table.wide,
+.subscriber table.grid,
+.cart_review table.wide,
+.cart_review table.grid,
+.order_summary table.wide,
+.order_summary table.grid,
+.order_management table.wide,
+.order_management table.grid {
   /*width: 100%;*/
   border-collapse: separate;
   border-spacing: 0 10px;
 }
 
-.subscriber table thead tr th .frg-icon,
-.cart_review table thead tr th .frg-icon,
-.order_summary table thead tr th .frg-icon,
-.order_management table thead tr th .frg-icon {
+.subscriber table.wide thead tr th .frg-icon,
+.subscriber table.grid thead tr th .frg-icon,
+.cart_review table.wide thead tr th .frg-icon,
+.cart_review table.grid thead tr th .frg-icon,
+.order_summary table.wide thead tr th .frg-icon,
+.order_summary table.grid thead tr th .frg-icon,
+.order_management table.wide thead tr th .frg-icon,
+.order_management table.grid thead tr th .frg-icon {
   margin: -5px 0 0 5px;
 }
 
-.subscriber table.grid tbody tr td,
-.cart_review table.grid tbody tr td,
-.order_summary table.grid tbody tr td,
-.order_management table.grid tbody tr td {
+.subscriber table.wide.grid tbody tr td,
+.subscriber table.grid.grid tbody tr td,
+.cart_review table.wide.grid tbody tr td,
+.cart_review table.grid.grid tbody tr td,
+.order_summary table.wide.grid tbody tr td,
+.order_summary table.grid.grid tbody tr td,
+.order_management table.wide.grid tbody tr td,
+.order_management table.grid.grid tbody tr td {
   width: 10.5% !important;
 }
 
-.subscriber table.grid tbody tr td:first-child,
-.cart_review table.grid tbody tr td:first-child,
-.order_summary table.grid tbody tr td:first-child,
-.order_management table.grid tbody tr td:first-child {
+.subscriber table.wide.grid tbody tr td:first-child,
+.subscriber table.grid.grid tbody tr td:first-child,
+.cart_review table.wide.grid tbody tr td:first-child,
+.cart_review table.grid.grid tbody tr td:first-child,
+.order_summary table.wide.grid tbody tr td:first-child,
+.order_summary table.grid.grid tbody tr td:first-child,
+.order_management table.wide.grid tbody tr td:first-child,
+.order_management table.grid.grid tbody tr td:first-child {
   width: 2% !important;
 }
 
-.subscriber table.grid tbody tr td:first-child .frg-checkbox,
-.cart_review table.grid tbody tr td:first-child .frg-checkbox,
-.order_summary table.grid tbody tr td:first-child .frg-checkbox,
-.order_management table.grid tbody tr td:first-child .frg-checkbox {
+.subscriber table.wide.grid tbody tr td:first-child .frg-checkbox,
+.subscriber table.grid.grid tbody tr td:first-child .frg-checkbox,
+.cart_review table.wide.grid tbody tr td:first-child .frg-checkbox,
+.cart_review table.grid.grid tbody tr td:first-child .frg-checkbox,
+.order_summary table.wide.grid tbody tr td:first-child .frg-checkbox,
+.order_summary table.grid.grid tbody tr td:first-child .frg-checkbox,
+.order_management table.wide.grid tbody tr td:first-child .frg-checkbox,
+.order_management table.grid.grid tbody tr td:first-child .frg-checkbox {
   margin-top: 6px;
 }
 
-.subscriber table tbody tr td,
-.cart_review table tbody tr td,
-.order_summary table tbody tr td,
-.order_management table tbody tr td {
+.subscriber table.wide tbody tr td,
+.subscriber table.grid tbody tr td,
+.cart_review table.wide tbody tr td,
+.cart_review table.grid tbody tr td,
+.order_summary table.wide tbody tr td,
+.order_summary table.grid tbody tr td,
+.order_management table.wide tbody tr td,
+.order_management table.grid tbody tr td {
   /*width: 145px !important;*/
   /*height: 30px;*/
   vertical-align: top;
 }
 
-.subscriber table tbody tr td .status,
-.cart_review table tbody tr td .status,
-.order_summary table tbody tr td .status,
-.order_management table tbody tr td .status {
+.subscriber table.wide tbody tr td .status,
+.subscriber table.grid tbody tr td .status,
+.cart_review table.wide tbody tr td .status,
+.cart_review table.grid tbody tr td .status,
+.order_summary table.wide tbody tr td .status,
+.order_summary table.grid tbody tr td .status,
+.order_management table.wide tbody tr td .status,
+.order_management table.grid tbody tr td .status {
   margin-top: -20px;
 }
 
-.subscriber table tbody tr td .frg-input-field,
-.subscriber table tbody tr td .frg-select-container,
-.cart_review table tbody tr td .frg-input-field,
-.cart_review table tbody tr td .frg-select-container,
-.order_summary table tbody tr td .frg-input-field,
-.order_summary table tbody tr td .frg-select-container,
-.order_management table tbody tr td .frg-input-field,
-.order_management table tbody tr td .frg-select-container {
+.subscriber table.wide tbody tr td .frg-input-field,
+.subscriber table.wide tbody tr td .frg-select-container,
+.subscriber table.grid tbody tr td .frg-input-field,
+.subscriber table.grid tbody tr td .frg-select-container,
+.cart_review table.wide tbody tr td .frg-input-field,
+.cart_review table.wide tbody tr td .frg-select-container,
+.cart_review table.grid tbody tr td .frg-input-field,
+.cart_review table.grid tbody tr td .frg-select-container,
+.order_summary table.wide tbody tr td .frg-input-field,
+.order_summary table.wide tbody tr td .frg-select-container,
+.order_summary table.grid tbody tr td .frg-input-field,
+.order_summary table.grid tbody tr td .frg-select-container,
+.order_management table.wide tbody tr td .frg-input-field,
+.order_management table.wide tbody tr td .frg-select-container,
+.order_management table.grid tbody tr td .frg-input-field,
+.order_management table.grid tbody tr td .frg-select-container {
   width: 90%;
   /*height: 100%;*/
 }
 
-.subscriber table tbody tr td .frg-input-field select,
-.subscriber table tbody tr td .frg-select-container select,
-.cart_review table tbody tr td .frg-input-field select,
-.cart_review table tbody tr td .frg-select-container select,
-.order_summary table tbody tr td .frg-input-field select,
-.order_summary table tbody tr td .frg-select-container select,
-.order_management table tbody tr td .frg-input-field select,
-.order_management table tbody tr td .frg-select-container select {
+.subscriber table.wide tbody tr td .frg-input-field select,
+.subscriber table.wide tbody tr td .frg-select-container select,
+.subscriber table.grid tbody tr td .frg-input-field select,
+.subscriber table.grid tbody tr td .frg-select-container select,
+.cart_review table.wide tbody tr td .frg-input-field select,
+.cart_review table.wide tbody tr td .frg-select-container select,
+.cart_review table.grid tbody tr td .frg-input-field select,
+.cart_review table.grid tbody tr td .frg-select-container select,
+.order_summary table.wide tbody tr td .frg-input-field select,
+.order_summary table.wide tbody tr td .frg-select-container select,
+.order_summary table.grid tbody tr td .frg-input-field select,
+.order_summary table.grid tbody tr td .frg-select-container select,
+.order_management table.wide tbody tr td .frg-input-field select,
+.order_management table.wide tbody tr td .frg-select-container select,
+.order_management table.grid tbody tr td .frg-input-field select,
+.order_management table.grid tbody tr td .frg-select-container select {
   padding-right: 30%;
 }
 
-.subscriber table tbody tr td div.empty,
-.cart_review table tbody tr td div.empty,
-.order_summary table tbody tr td div.empty,
-.order_management table tbody tr td div.empty {
+.subscriber table.wide tbody tr td div.empty,
+.subscriber table.grid tbody tr td div.empty,
+.cart_review table.wide tbody tr td div.empty,
+.cart_review table.grid tbody tr td div.empty,
+.order_summary table.wide tbody tr td div.empty,
+.order_summary table.grid tbody tr td div.empty,
+.order_management table.wide tbody tr td div.empty,
+.order_management table.grid tbody tr td div.empty {
   width: 90%;
   height: 30px;
   margin-top: 1px;
   background: #CCC;
 }
 
-.subscriber table tbody tr td:first-child,
-.cart_review table tbody tr td:first-child,
-.order_summary table tbody tr td:first-child,
-.order_management table tbody tr td:first-child {
+.subscriber table.wide tbody tr td:first-child,
+.subscriber table.grid tbody tr td:first-child,
+.cart_review table.wide tbody tr td:first-child,
+.cart_review table.grid tbody tr td:first-child,
+.order_summary table.wide tbody tr td:first-child,
+.order_summary table.grid tbody tr td:first-child,
+.order_management table.wide tbody tr td:first-child,
+.order_management table.grid tbody tr td:first-child {
   vertical-align: top;
   width: 100px !important;
 }
 
-.subscriber table tbody tr td:first-child .frg-checkbox,
-.cart_review table tbody tr td:first-child .frg-checkbox,
-.order_summary table tbody tr td:first-child .frg-checkbox,
-.order_management table tbody tr td:first-child .frg-checkbox {
+.subscriber table.wide tbody tr td:first-child .frg-checkbox,
+.subscriber table.grid tbody tr td:first-child .frg-checkbox,
+.cart_review table.wide tbody tr td:first-child .frg-checkbox,
+.cart_review table.grid tbody tr td:first-child .frg-checkbox,
+.order_summary table.wide tbody tr td:first-child .frg-checkbox,
+.order_summary table.grid tbody tr td:first-child .frg-checkbox,
+.order_management table.wide tbody tr td:first-child .frg-checkbox,
+.order_management table.grid tbody tr td:first-child .frg-checkbox {
   width: 20px;
   margin-top: 4px;
 }
@@ -2527,41 +2601,41 @@ span.footnote {
   width: 1000px !important;
 }
 
-.order_management table tbody tr td:first-child {
+.order_management table.grid tbody tr td:first-child {
   min-width: 30px;
   width: 5%;
 }
 
-.order_management table tbody tr td:nth-child(2) {
+.order_management table.grid tbody tr td:nth-child(2) {
   width: 10%;
 }
 
-.order_management table tbody tr td:nth-child(3) {
+.order_management table.grid tbody tr td:nth-child(3) {
   min-width: 85px;
   width: 10%;
 }
 
-.order_management table tbody tr td:nth-child(4) {
+.order_management table.grid tbody tr td:nth-child(4) {
   min-width: 130px;
   width: 20%;
   padding: 20px 20px 20px 0;
 }
 
-.order_management table tbody tr td:nth-child(5) {
+.order_management table.grid tbody tr td:nth-child(5) {
   min-width: 130px;
   width: 15%;
 }
 
-.order_management table tbody tr td:nth-child(6) {
+.order_management table.grid tbody tr td:nth-child(6) {
   width: 15%;
 }
 
-.order_management table tbody tr td:nth-child(7) {
+.order_management table.grid tbody tr td:nth-child(7) {
   min-width: 70px;
   width: 15%;
 }
 
-.order_management table tbody tr td:nth-child(8) {
+.order_management table.grid tbody tr td:nth-child(8) {
   width: 10%;
 }
 
@@ -2615,35 +2689,26 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   vertical-align: top;
 }
 
-.order_management table {
+.order_management table.grid {
   border-spacing: initial;
 }
 
-.order_management table tr {
+.order_management table.grid tr {
   color: #666;
 }
 
-.order_management table tr:nth-child(2n) {
+.order_management table.grid tr:nth-child(2n) {
   background-color: #f4f5f6;
 }
 
-.order_management table tr td {
+.order_management table.grid tr td {
   padding: 20px 10px 20px 0;
   word-wrap: break-word;
 }
 
-.order_management table tr td div:last-child {
+.order_management table.grid tr td div:last-child {
   margin: 2px 0 0 5px;
-  font-size: 90%;
   color: #666;
-}
-
-.order_management table tr th {
-  font-size: 90%;
-}
-
-.order_management table tr td {
-  font-size: 85%;
 }
 
 .order_management > div > div > .frg-select-container {
@@ -2731,18 +2796,42 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   padding: 20px 0;
 }
 
-.advanced_search_table table {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.advanced_search_table .tooltip_bubble {
+  margin-top: 50px;
+}
+
+.advanced_search_table .frg-select-container::after {
+  top: -33px;
+  right: 15px;
+}
+
+.advanced_search_table .frg-icon.icon-info::before {
+  margin-left: 10px;
 }
 
 .advanced_search_table .frg-select-container,
+.advanced_search_table .frg-select-container select,
 .advanced_search_table .frg-input-field,
-.advanced_search_table .frg-button {
-  width: 150px;
-  height: 30px;
-  margin: -5px 0 15px 0;
+.advanced_search_table .frg-button,
+.advanced_search_table div.status {
+  width: 100% !important;
+  height: 44px;
+}
+
+.advanced_search_table .frg-select-container div.frg-icon,
+.advanced_search_table .frg-select-container select div.frg-icon,
+.advanced_search_table .frg-input-field div.frg-icon,
+.advanced_search_table .frg-button div.frg-icon,
+.advanced_search_table div.status div.frg-icon {
+  height: 44px;
+}
+
+.advanced_search_table .frg-select-container .frg-input-field,
+.advanced_search_table .frg-select-container select .frg-input-field,
+.advanced_search_table .frg-input-field .frg-input-field,
+.advanced_search_table .frg-button .frg-input-field,
+.advanced_search_table div.status .frg-input-field {
+  width: 85% !important;
 }
 
 .advanced_search_table div.status {
@@ -2754,7 +2843,28 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 }
 
 .advanced_search_table .frg-button {
-  padding: 5px 20px 14px;
+  padding: 12px 20px 7px;
+}
+
+.advanced_search_table .input-group .frg-input-field {
+  width: 85% !important;
+  border-right: thin solid #FFF;
+}
+
+.advanced_search_table .input-group .input-group-addon {
+  width: 15% !important;
+  height: 44px;
+  margin-top: 0;
+  background-color: #FFF;
+  border-left: thin solid #FFF;
+  padding: 8px 12px 6px;
+}
+
+.advanced_search_table .input-group .input-group-addon .frg-icon {
+  font-size: 25px;
+  color: #49166d;
+  background-color: #FFF;
+  border-left: thin solid #FFF;
 }
 
 .subscriber_list {
@@ -2919,10 +3029,6 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 .existing_phone_nbr .status {
   width: 90%;
   height: 10px;
-}
-
-.js-phone_input_mask {
-  padding: 0;
 }
 
 .js-auto-complete-results {

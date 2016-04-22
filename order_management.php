@@ -29,131 +29,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="inner-container advanced_search_table closed hide clearfix">
-		<table>
-			<tr>
-				<td>
-					<label class="block">Order ID (#)</label>
-					<div class="status clearfix positive">
-						<input class="frg-input-field small js-validate_number left" placeholder='Order ID'>
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-				<td>
-					<label class="block">Date Range</label>
-					<div class="form-group">
-		                <div class='input-group date datepicker'>
-		                    <input class="form-control frg-input-field" placeholder="Date From" />
-		                    <span class="input-group-addon">
-		                        <span class="frg-icon icon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-				</td>
-				<td>
-					<label class="block">&nbsp;</label>
-					<div class="form-group">
-		                <div class='input-group date datepicker'>
-		                    <input class="form-control frg-input-field" placeholder="Date To" />
-		                    <span class="input-group-addon">
-		                        <span class="frg-icon icon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-				</td>
-				<td>
-					<label class="block">BAN</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>1051231215615</option>
-							<option>8512198423165</option>
-							<option>7441125898338</option>
-						</select>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">First Name</label>
-					<input class='frg-input-field small' placeholder='First Name' />
-				</td>
-				<td>
-					<label class="block">Last Name</label>
-					<input class='frg-input-field small' placeholder='Last Name' />
-				</td>
-				<td>
-					<label class="block">Shipping Phone Number</label>
-					<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
-				</td>
-				<td>
-					<label class="block">Email</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-email_validation left' placeholder='E-mail' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">Status</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>Select</option>
-						</select>
-					</div>
-				</td>
-				<td>
-					<label class="block">Order Type</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>Select</option>
-						</select>
-					</div>
-				</td>
-				<td>
-					<label class="block">Shipping Postal Code</label>
-					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
-				</td>
-				<td>
-					<label class="block">IMEI</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">SIM Serial Number</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='SIM Serial Number' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<label class="block">&nbsp;</label>
-					<a href='#' class='frg-button button-wide color-green js-loading state-disabled'>Search</a>
-				</td>
-			</tr>
-		</table>
-	</div>
+	<?php include( 'partials/advanced_search.php' ); ?>
 </div>
 
 <div class="outer-container content white_bg top_bottom_padding order_management">
@@ -173,7 +49,7 @@
 		</div>
 	</div>
 	<div class="inner-container js-loaded-content clearfix">
-		<table class="wide">
+		<table class="grid wide">
 			<thead class="gray_text">
 				<tr>
 					<th class="clearfix">
