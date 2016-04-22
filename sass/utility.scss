@@ -811,3 +811,23 @@ table {
 .frg-select-container select {
 	margin: 0;
 }
+
+.input-group {
+	display: block;
+
+	.frg-input-field {
+		width: 75% !important;
+		border-radius: 5px 0 0 5px;
+	}
+
+	&.datepicker {
+		.input-group .form-control, 
+		.input-group-addon, 
+		.input-group-btn {
+			display: inline-block;
+			height: 30px;
+			padding: 6px 12px;
+			margin-top: -4px;
+		}
+	}
+}

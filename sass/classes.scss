@@ -53,7 +53,7 @@ span.status {
 	.frg-input-field {
 		border-right: transparent !important;
 		border-radius: 5px 0 0 5px;
-		width: 85% !important;
+		width: 75% !important;
 	}
 
 	div.frg-icon {
@@ -1402,7 +1402,8 @@ span.footnote {
 		}
 	}
 
-	table {
+	table.wide,
+	table.grid {
 		/*width: 100%;*/
 		border-collapse: separate;
     	border-spacing: 0 10px;
@@ -1500,7 +1501,7 @@ span.footnote {
 }
 
 .order_management {
-	table {
+	table.grid {
 		tbody {
 			tr {
 				td {
@@ -1613,7 +1614,7 @@ table.wide {
 }
 
 .order_management {
-	table {
+	table.grid {
 		border-spacing: initial;
 
 		tr {
@@ -1629,17 +1630,8 @@ table.wide {
 
 				div:last-child {
 					margin:  2px 0 0 5px;
-					font-size: 90%;
 					color: $dark_gray;
 				}
-			}
-
-			th {
-				font-size: 90%;
-			}
-
-			td {
-				font-size: 85%;
 			}
 		}
 	}
@@ -1727,18 +1719,34 @@ table.wide {
 .advanced_search_table {
 	padding: 20px 0;
 
-	table {
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
+	.tooltip_bubble {
+		margin-top: 50px;
+	}
+
+	.frg-select-container::after {
+		top: -33px;
+		right: 15px;
+	}
+
+	.frg-icon.icon-info::before {
+		margin-left: 10px;
 	}
 
 	.frg-select-container,
+	.frg-select-container select,
 	.frg-input-field,
-	.frg-button {
-		width: 150px;
-		height: 30px;
-		margin: -5px 0 15px 0;
+	.frg-button,
+	div.status {
+		width: 100% !important;
+		height: 44px;
+		
+		div.frg-icon {
+			height: 44px;
+		}
+
+		.frg-input-field {
+			width: 85% !important;
+		}
 	}
 
 	div.status {
@@ -1750,7 +1758,30 @@ table.wide {
 	}
 
 	.frg-button {
-		padding: 5px 20px 14px;
+		padding: 12px 20px 7px;
+	}
+
+	.input-group {
+		.frg-input-field {
+			width: 85% !important;
+			border-right: thin solid #FFF;
+		}
+
+		.input-group-addon {
+			width: 15% !important;
+			height: 44px;
+			margin-top: 0;
+			background-color: #FFF;
+			border-left: thin solid #FFF;
+			padding: 8px 12px 6px;
+
+			.frg-icon {
+				font-size: 25px;
+				color: $purple2;
+				background-color: #FFF;
+				border-left: thin solid #FFF;
+			}
+		}
 	}
 }
 
@@ -1931,10 +1962,6 @@ table.wide {
 		width: 90%;
 		height: 10px;
 	}
-}
-
-.js-phone_input_mask {
-	padding: 0;
 }
 
 .js-auto-complete-results {
