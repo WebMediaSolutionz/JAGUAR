@@ -899,6 +899,10 @@ table thead tr th {
   margin-top: -4px;
 }
 
+.hidden_text {
+  visibility: hidden;
+}
+
 /* SHADES OF PURPLE */
 /**********************/
 /* SHADES OF GRAY */
