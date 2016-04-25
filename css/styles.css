@@ -5,6 +5,8 @@
 /*******************/
 /* SHADES OF RANDOM */
 /*******************/
+/* SHADES OF RED */
+/*****************/
 /* DIFFERENT SCREEN SIZE */
 /*************************/
 /* SHADES OF PURPLE */
@@ -13,6 +15,8 @@
 /*******************/
 /* SHADES OF RANDOM */
 /*******************/
+/* SHADES OF RED */
+/*****************/
 /* DIFFERENT SCREEN SIZE */
 /*************************/
 .inner-container {
@@ -903,12 +907,26 @@ table thead tr th {
   visibility: hidden;
 }
 
+.frg-button:focus {
+  background-color: transparent;
+  color: #491d6b;
+}
+
+.frg-button.color-red {
+  background-color: #d0021b;
+  background-image: linear-gradient(#d0021b 0%, #d0021b 90%, #860010 90%, #860010);
+  border: medium none;
+  color: white;
+}
+
 /* SHADES OF PURPLE */
 /**********************/
 /* SHADES OF GRAY */
 /*******************/
 /* SHADES OF RANDOM */
 /*******************/
+/* SHADES OF RED */
+/*****************/
 /* DIFFERENT SCREEN SIZE */
 /*************************/
 .pagin {
@@ -2167,11 +2185,6 @@ span.footnote {
   color: #3d2557;
 }
 
-.frg-button:focus {
-  background-color: transparent;
-  color: #491d6b;
-}
-
 .accessory {
   padding: 0 35px;
   margin-bottom: 50px;
@@ -3190,6 +3203,8 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 /*******************/
 /* SHADES OF RANDOM */
 /*******************/
+/* SHADES OF RED */
+/*****************/
 /* DIFFERENT SCREEN SIZE */
 /*************************/
 body,

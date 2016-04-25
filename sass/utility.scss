@@ -835,3 +835,17 @@ table {
 .hidden_text {
 	visibility: hidden;
 }
+
+.frg-button {
+	&:focus {
+		background-color: transparent;
+		color: $purple;
+	}
+
+	&.color-red {
+		background-color: $red1;
+	    background-image: linear-gradient($red1 0%, $red1 90%, $red2 90%, $red2);
+	    border: medium none;
+	    color: white;
+	}
+}

@@ -1158,11 +1158,6 @@ span.footnote {
 	@include select;
 }
 
-.frg-button:focus {
-	background-color: transparent;
-	color: $purple;
-}
-
 .accessory {
 	padding: 0 35px;
 	margin-bottom: 50px;
