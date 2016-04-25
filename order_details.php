@@ -86,102 +86,11 @@
 				</tr>
 			</thead>
 			<tbody class="small">
-				<tr class="wide outline">
-					<?php if ( $status === 'shipped' ) { ?>
-						<td>
-							<div class="frg-checkbox regular small">
-								<div class="inner">
-									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-									<div class="icon">
-										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-									</div>
-								</div>
-							</div>
-						</td>
-					<?php } ?>
-					<td>
-						<span>Order-1</span>
-					</td>
-					<td>
-						<span>50</span>
-					</td>
-					<td class="description">
-						<a href="#">iPhone Case</a>
-					</td>
-					<?php if ( $status !== 'shipped' ) { ?>
-						<td>
-							<span class="status positive">5 days from approval date</span>
-						</td>
-					<?php } ?>
-					<td></td>
-					<td class="right_align amount_due">
-						<span>$25,500</span>
-					</td>
-				</tr>
-				<tr class="wide outline">
-					<?php if ( $status === 'shipped' ) { ?>
-						<td>
-							<div class="frg-checkbox regular small">
-								<div class="inner">
-									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-									<div class="icon">
-										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-									</div>
-								</div>
-							</div>
-						</td>
-					<?php } ?>
-					<td>
-						<span>Order-1</span>
-					</td>
-					<td>
-						<span>50</span>
-					</td>
-					<td class="description">
-						<a href="#">iPhone Case</a>
-					</td>
-					<?php if ( $status !== 'shipped' ) { ?>
-						<td>
-							<span class="status positive">5 days from approval date</span>
-						</td>
-					<?php } ?>
-					<td></td>
-					<td class="right_align amount_due">
-						<span>$25,500</span>
-					</td>
-				</tr>
-				<tr class="wide outline">
-					<?php if ( $status === 'shipped' ) { ?>
-						<td>
-							<div class="frg-checkbox regular small">
-								<div class="inner">
-									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-									<div class="icon">
-										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
-									</div>
-								</div>
-							</div>
-						</td>
-					<?php } ?>
-					<td>
-						<span>Order-1</span>
-					</td>
-					<td>
-						<span>50</span>
-					</td>
-					<td class="description">
-						<a href="#">iPhone Case</a>
-					</td>
-					<?php if ( $status !== 'shipped' ) { ?>
-						<td>
-							<span class="status positive">5 days from approval date</span>
-						</td>
-					<?php } ?>
-					<td></td>
-					<td class="right_align amount_due">
-						<span>$25,500</span>
-					</td>
-				</tr>
+				<?php
+					for ( $i = 0; $i < 3; $i++ ) { 
+						include( 'partials/order_details_row2.php' );
+					}
+				?>
 			</tbody>
 		</table>
 	</div>
@@ -194,15 +103,18 @@
 				<table class="right_align subtotal">
 					<tr>
 						<td>Subtotal:</td>
-						<td class="right_align">$25,500</td>
+						<td class="right_align">$16,500.00</td>
+						<td class="right_align">$79,000.00</td>
 					</tr>
 					<tr>
 						<td>Shipping:</td>
 						<td class="right_align">Free</td>
+						<td class="right_align">Free</td>
 					</tr>
 					<tr>
 						<td>Taxes HST:</td>
-						<td class="right_align">$25,500</td>
+						<td class="right_align">$2,145.00</td>
+						<td class="right_align">$10,270.00</td>
 					</tr>
 				</table>
 			</div>
@@ -217,7 +129,8 @@
 				<table class="right_align total">
 					<tr>
 						<td>Total:</td>
-						<td class="right_align">$31,922.50</td>
+						<td class="right_align">$18,645.00</td>
+						<td class="right_align">$89,270.00</td>
 					</tr>
 				</table>
 			</div>
@@ -225,15 +138,6 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg top_bottom_padding">
-	<div class="inner-container clearfix">
-		<div class="col-xs-offset-6 col-xs-3 right_align">
-			<a class="frg-button color-green full_lenght" href="repair.php"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
-		</div>
-		<div class="col-xs-3 no_padding right_align">
-			<a class="frg-button color-green full_lenght" href="return.php"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
-		</div>
-	</div>
-</div>
+<?php include( 'partials/checkout_sticky.php' ); ?>
 
 <?php include( 'partials/footer.php' ); ?>
