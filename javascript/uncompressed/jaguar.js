@@ -671,12 +671,16 @@ var JAG = {
 			});
 
 		$( '.js-loading' ).click( function () {
-			var self = this;
+			var self = this,
+				content = $( '.js-loaded-content' ),
+				spinner = $( '.js-loading-spinner' );
 
-			self.startSpinner();
+			content.addClass( 'hide' );
+			spinner.removeClass( 'hide' );
 
 			setTimeout( function () {
-				self.stopSpinner();
+				content.removeClass( 'hide' );
+				spinner.addClass( 'hide' );
 			}, 5000);
 		});
 
@@ -1000,23 +1004,17 @@ var JAG = {
 	},
 
 	startSpinner: function () {
-		var self = this,
-			content = $( '.js-loaded-content' ),
-			spinner = $( '.js-loading-spinner' );
+		var self = this;
 
-		content.addClass( 'hide' );
-		spinner.removeClass( 'hide' );
+		$.LoadingOverlay( "show" );
 
 		return self;
 	},
 
 	stopSpinner: function () {
-		var self = this,
-			content = $( '.js-loaded-content' ),
-			spinner = $( '.js-loading-spinner' );
+		var self = this;
 
-		content.removeClass( 'hide' );
-		spinner.addClass( 'hide' );
+		$.LoadingOverlay( "hide" );
 
 		return self;
 	},
