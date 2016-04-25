@@ -16,16 +16,6 @@
 		<div class="left gray_text">
 			<h4 class="no_padding">Devices and Plans</h4>
 		</div>
-		<?php if ( $status === 'shipped' ) { ?>
-			<div class="frg-select-container right color-light">
-				<select autocomplete="off">
-					<option>Action</option>
-					<option>Select all</option>
-					<option>Remove item(s)</option>
-					<option>Deselect all</option>
-				</select>
-			</div>
-		<?php } ?>
 	</div>
 </div>
 
@@ -33,7 +23,7 @@
 	<div class="inner-container clearfix">
 		<table class="gray_text wide datagrid">
 			<thead class="gray_text">
-				<tr class="wide outline">
+				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<th>Select</th>
 					<?php } ?>
@@ -43,8 +33,8 @@
 					<?php if ( $status !== 'shipped' ) { ?>
 						<th>Estimated arrival</th>
 					<?php } ?>
-					<th class="right_align">Due monthly</th>
-					<th class="right_align">Due now</th>
+					<th class="right_align">Monthly</th>
+					<th class="right_align">Total</th>
 				</tr>
 			</thead>
 			<tbody class="small">
@@ -71,7 +61,7 @@
 	<div class="inner-container clearfix">
 		<table class="wide datagrid">
 			<thead class="gray_text">
-				<tr class="wide outline">
+				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<th>Select</th>
 					<?php } ?>
@@ -102,7 +92,7 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td>Subtotal:</td>
+						<td>Sub Total:</td>
 						<td class="right_align">$16,500.00</td>
 						<td class="right_align">$79,000.00</td>
 					</tr>
