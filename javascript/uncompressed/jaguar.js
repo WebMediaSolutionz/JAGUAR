@@ -671,15 +671,12 @@ var JAG = {
 			});
 
 		$( '.js-loading' ).click( function () {
-			var content = $( '.js-loaded-content' ),
-				spinner = $( '.js-loading-spinner' );
+			var self = this;
 
-			content.addClass( 'hide' );
-			spinner.removeClass( 'hide' );
+			self.startSpinner();
 
 			setTimeout( function () {
-				content.removeClass( 'hide' );
-				spinner.addClass( 'hide' );
+				self.stopSpinner();
 			}, 5000);
 		});
 
@@ -998,6 +995,28 @@ var JAG = {
 		$( '.js-confirm-clear-cart' ).click( function () {
 			console.info( 'clear cart' );
 		});
+
+		return self;
+	},
+
+	startSpinner: function () {
+		var self = this,
+			content = $( '.js-loaded-content' ),
+			spinner = $( '.js-loading-spinner' );
+
+		content.addClass( 'hide' );
+		spinner.removeClass( 'hide' );
+
+		return self;
+	},
+
+	stopSpinner: function () {
+		var self = this,
+			content = $( '.js-loaded-content' ),
+			spinner = $( '.js-loading-spinner' );
+
+		content.removeClass( 'hide' );
+		spinner.addClass( 'hide' );
 
 		return self;
 	},
