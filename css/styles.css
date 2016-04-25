@@ -2873,6 +2873,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 
 .subscriber_list {
   margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 .subscriber_list .heading .h4 {

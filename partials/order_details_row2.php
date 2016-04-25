@@ -1,4 +1,4 @@
-<tr class="wide outline">
+<tr class="wide">
 	<?php if ( $status === 'shipped' ) { ?>
 		<td>
 			<div class="frg-checkbox regular small">

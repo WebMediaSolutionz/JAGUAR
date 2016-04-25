@@ -10,7 +10,6 @@
 						<th>Subscriber</th>
 						<th>Porting</th>
 						<th>Details</th>
-						<th>Phone</th>
 						<th>SIM details</th>
 						<th>IMEI</th>
 					</tr>
@@ -32,7 +31,6 @@
 						<td>John Doe</td>
 						<td>No</td>
 						<td class="description">City: Ottawa | Preferred area code: 613 | Voicemail in English</td>
-						<td>1 (555) 555-5555</td>
 						<td>SIM provided</td>
 						<td>35145120840121</td>
 					</tr>
@@ -52,7 +50,6 @@
 						<td>John Doe</td>
 						<td>No</td>
 						<td class="description">City: Ottawa | Preferred area code: 613 | Voicemail in English</td>
-						<td>1 (555) 555-5555</td>
 						<td>SIM provided</td>
 						<td>35145120840121</td>
 					</tr>
@@ -72,7 +69,6 @@
 						<td>John Doe</td>
 						<td>No</td>
 						<td class="description">City: Ottawa | Preferred area code: 613 | Voicemail in English</td>
-						<td>1 (555) 555-5555</td>
 						<td>SIM provided</td>
 						<td>35145120840121</td>
 					</tr>
