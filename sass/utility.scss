@@ -537,6 +537,11 @@ a.underline {
 
 	&.textarea {
 		height: 75px;
+
+		&.big {
+			width: 60%;
+			height: 150px;
+		}
 	}
 
 	&.return_additional_notes {

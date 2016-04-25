@@ -620,6 +620,11 @@ a.underline {
   height: 75px;
 }
 
+.frg-input-field.textarea.big {
+  width: 60%;
+  height: 150px;
+}
+
 .frg-input-field.return_additional_notes {
   height: 30px;
 }
