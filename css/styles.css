@@ -316,6 +316,10 @@ ul.no_styles {
   width: 100%;
 }
 
+.tiny {
+  font-size: 65%;
+}
+
 .small {
   font-size: 80% !important;
 }
