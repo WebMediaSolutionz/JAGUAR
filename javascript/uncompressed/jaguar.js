@@ -12,6 +12,28 @@ var JAG = {
 
 	formEntriesValid: true,
 
+	opts2: {
+		color: '#00FF00', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
+		top: '50%', // Top position relative to parent in px or % (use 'x%')
+		left: '50%', // Left position relative to parent in px or % (use 'x%')
+		lines: 13, // The number of lines to draw
+		length: 7, // The length of each line
+		width: 4, // The line thickness
+		radius: 40, // The radius of the inner circle
+		corners: 1, // Corner roundness (0..1)
+		rotate: 0, // The rotation offset
+		speed: 1, // Rounds per second
+		trail: 60, // Afterglow percentage
+		shadow: false, // Whether to render a shadow
+		hwaccel: false, // Whether to use hardware acceleration
+		className: 'spinner', // The CSS class to assign to the spinner
+		zIndex: 2e9 // The z-index (defaults to 2000000000)*/
+	},
+
+	target2: document.getElementById('spinner2'),
+
+	spinner2: null,
+
 	init: function () {
 		var self = this;
 
@@ -834,8 +856,6 @@ var JAG = {
 			var emails = $( '.js-match-validation' ),
 				second_email = $( 'input[name=email2]' );
 
-			// console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
-
 			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
 				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
 					second_email
@@ -999,6 +1019,48 @@ var JAG = {
 			console.info( 'clear cart' );
 		});
 
+		$( '.js-display-overlay' ).click( function () {
+			//self.displayOverlay( $( this ) );
+			self.start();
+		});
+
+		return self;
+	},
+
+	start: function () {
+		var self = this;
+
+		self.startSpinner();
+		self.spinner2 = new Spinner( self.opts2 ).spin( self.target2 );
+
+		setTimeout( function () {
+			self.spinner2.stop();
+		}, 3000 );
+
+		return self.spinner2;
+	},
+
+	stop: function () {
+		var self = this;
+
+		self.stopSpinner().spinner2.spin( self.target2 ).stop();
+
+		return self;
+	},
+
+	startSpinner: function () {
+		var self = this;
+
+		$.LoadingOverlay( "show" );
+
+		return self;
+	},
+
+	stopSpinner: function () {
+		var self = this;
+
+		$.LoadingOverlay( "hide" );
+
 		return self;
 	},
 
@@ -1082,8 +1144,6 @@ var JAG = {
 
 		errors.empty();
 
-		console.info( form );
-
 		fields.removeClass( 'js-error' ).removeClass( 'show_errors' ).each( function () {
 			var field = $( this );
 
@@ -1128,8 +1188,6 @@ var JAG = {
 			valid = false;
 
 		fields.each( function () {
-			// console.info( $( this ).val() );
-
 			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
 				valid = true;
 			}
@@ -1407,8 +1465,6 @@ var JAG = {
 			 	$.each( self.phones, function ( i, phone ) {
 			 		var listing = '';
 
-			 		// console.info( phone );
-
 			 		listing += '<div class="box phone object clearfix left" data-filter="all voice_only">';
 					listing += '	<div class="image left">';
 					listing += '		<a href="device.php">';
@@ -1577,27 +1633,31 @@ var JAG = {
 		var self = this;
 
 		// Show full page Loading Overlay
-		$.LoadingOverlay( "show" );
+		blah = self.start();
 
 		// Hide it after 3 seconds
 		setTimeout( function () {
+			// blah.stop();
 			$.LoadingOverlay( "hide" );
 
-			var bottom_section = el.closest( '.bottom_section' ),
-				quantity = bottom_section.find( '.js-quantity' ).val();
+			// var bottom_section = el.closest( '.bottom_section' ),
+			// 	quantity = bottom_section.find( '.js-quantity' ).val();
 
-			if ( $.isNumeric( quantity ) && quantity > 0 ) {
-				el
-				.addClass( 'current' )
-				.addClass( 'added' )
-				.text( 'Update' );
-			} else if ( $.isNumeric( quantity ) && quantity == 0 ) {
-				el
-				.removeClass( 'current' )
-				.removeClass( 'added' )
-				.text( 'Add to cart' );
-			}
+			// if ( $.isNumeric( quantity ) && quantity > 0 ) {
+			// 	el
+			// 	.addClass( 'current' )
+			// 	.addClass( 'added' )
+			// 	.text( 'Update' );
+			// } else if ( $.isNumeric( quantity ) && quantity == 0 ) {
+			// 	el
+			// 	.removeClass( 'current' )
+			// 	.removeClass( 'added' )
+			// 	.text( 'Add to cart' );
+			// }
 		}, 3000);
+
+		blah.stop();
+		$.LoadingOverlay( "hide" );
 
 		return self;
 	},

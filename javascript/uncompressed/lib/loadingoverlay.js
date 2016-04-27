@@ -10,7 +10,6 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         color           : "rgba(255, 255, 255, 0.8)",
         custom          : "",
         fontawesome     : "",
-        image           : $( 'input[name=spinner_img]' ).val(),
         maxSize         : "100px",
         minSize         : "20px",
         resizeInterval  : 0,
@@ -27,7 +26,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
                 var settings = $.extend(true, {}, _defaults, options);
                 _Show("body", settings);
                 break;
-                
+
             case "hide":
                 _Hide("body", options);
                 break;
@@ -41,7 +40,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
                 return this.each(function(){
                     _Show(this, settings);
                 });
-                
+
             case "hide":
                 return this.each(function(){
                     _Hide(this, options);
@@ -66,11 +65,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
                     "justify-content"   : "center"
                 }
             });
-            if (settings.image) overlay.css({
-                "background-image"      : "url("+settings.image+")",
-                "background-position"   : "center center",
-                "background-repeat"     : "no-repeat"
-            });
+
             if (settings.fontawesome) $("<div>", {
                 class   : "loadingoverlay_fontawesome "+settings.fontawesome
             }).appendTo(overlay);

@@ -16,6 +16,7 @@ var gulp = require( 'gulp' ),
 					'javascript/uncompressed/lib/slick.js',
 					'javascript/uncompressed/lib/jquery.hashchange.js',
 					'javascript/uncompressed/lib/jquery.easytabs.js',
+					'javascript/uncompressed/lib/spin.min.js',
 					'javascript/uncompressed/lib/loadingoverlay.js'
 			 	];
 

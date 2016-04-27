@@ -51,6 +51,8 @@
 	<?php include( 'partials/paging.php' ); ?>
 </div>
 
+<div id="spinner2"></div>
+
 <?php include( 'partials/checkout_sticky.php' ); ?>
 
 <?php include( 'partials/footer.php' ); ?>
