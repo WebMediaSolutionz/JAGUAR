@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width: $screen-md-min ) and ( max-width: $screen-md-max ) {
+	.desktop {
+		display: block;
+	}
+
+	.smartphone,
+	.tablet,
+	.large_desktop {
+		display: none;
+	}
+
+	.service {
+		&.col-md-6 {
+			width: 47.5%;
+			margin-right: 5%;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}

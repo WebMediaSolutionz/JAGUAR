@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+
+/* Very small devices (smartphones, 767px and down) */
+@media ( max-width: $screen-xs-max ) {
+	.smartphone {
+		display: block;
+	}
+
+	.tablet,
+	.desktop,
+	.large_desktop {
+		display: none;
+	}
+}

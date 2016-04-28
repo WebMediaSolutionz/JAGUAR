@@ -3026,29 +3026,77 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   font-size: 37px;
 }
 
-@media screen and (max-width: 1260px) {
-  .support_section .headset {
-    width: 40%;
-    margin-top: 60px;
+.smartphone,
+.tablet,
+.desktop,
+.large_desktop {
+  border: thin solid red;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* SHADES OF PURPLE */
+/**********************/
+/* SHADES OF GRAY */
+/*******************/
+/* SHADES OF RANDOM */
+/*******************/
+/* DIFFERENT SCREEN SIZE */
+/*************************/
+/* Very small devices (smartphones, 767px and down) */
+@media (max-width: 767px) {
+  .smartphone {
+    display: block;
   }
-  .confirmation .inner-container {
-    background: transparent url("../img/flower.jpg") no-repeat 95% center;
+  .tablet,
+  .desktop,
+  .large_desktop {
+    display: none;
   }
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-/* Very small devices (smartphones, 767px and down) */
+/* SHADES OF PURPLE */
+/**********************/
+/* SHADES OF GRAY */
+/*******************/
+/* SHADES OF RANDOM */
+/*******************/
+/* DIFFERENT SCREEN SIZE */
+/*************************/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+  .tablet {
+    display: block;
+  }
+  .smartphone,
+  .desktop,
+  .large_desktop {
+    display: none;
+  }
   .price,
   .prices {
     font-size: 22px;
   }
 }
 
+/* SHADES OF PURPLE */
+/**********************/
+/* SHADES OF GRAY */
+/*******************/
+/* SHADES OF RANDOM */
+/*******************/
+/* DIFFERENT SCREEN SIZE */
+/*************************/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .desktop {
+    display: block;
+  }
+  .smartphone,
+  .tablet,
+  .large_desktop {
+    display: none;
+  }
   .service.col-md-6 {
     width: 47.5%;
     margin-right: 5%;
@@ -3058,14 +3106,40 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
 }
 
+/* SHADES OF PURPLE */
+/**********************/
+/* SHADES OF GRAY */
+/*******************/
+/* SHADES OF RANDOM */
+/*******************/
+/* DIFFERENT SCREEN SIZE */
+/*************************/
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .large_desktop {
+    display: block;
+  }
+  .smartphone,
+  .tablet,
+  .desktop {
+    display: none;
+  }
   .service.col-lg-4 {
     width: 30%;
     margin-right: 5%;
   }
   .service.col-lg-4:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .support_section .headset {
+    width: 40%;
+    margin-top: 60px;
+  }
+  .confirmation .inner-container {
+    background: transparent url("../img/flower.jpg") no-repeat 95% center;
   }
 }
 

@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixins";
+
+/* Large devices (large desktops, 1200px and up) */
+@media ( min-width: $screen-lg-min ) {
+	.large_desktop {
+		display: block;
+	}
+
+	.smartphone,
+	.tablet,
+	.desktop {
+		display: none;
+	}
+
+	.service {
+		&.col-lg-4 {
+			width: 30%;
+			margin-right: 5%;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1260px) {
+    .support_section .headset {
+		width: 40%;
+		margin-top: 60px;
+	}
+
+	.confirmation {
+		.inner-container {
+			background: transparent url( '../img/flower.jpg' ) no-repeat 95% center;
+		}
+	}
+}

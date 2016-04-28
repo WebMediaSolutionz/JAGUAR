@@ -27,6 +27,22 @@
 		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=ha46-jw92-at99-yh51"></script>
 
 		<?php if ( $local ) { ?>
+			<div class="smartphone">
+				<span>smartphone</span>
+			</div>
+
+			<div class="tablet">
+				<span>tablet</span>
+			</div>
+
+			<div class="desktop">
+				<span>desktop</span>
+			</div>
+
+			<div class="large_desktop">
+				<span>large desktop</span>
+			</div>
+
 			<script>
 				document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 			</script>

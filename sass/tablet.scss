@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+
+/* Small devices (tablets, 768px and up) */
+@media ( min-width: $screen-sm-min ) and ( max-width: $screen-sm-max ) {
+	.tablet {
+		display: block;
+	}
+
+	.smartphone,
+	.desktop,
+	.large_desktop {
+		display: none;
+	}
+
+	.price,
+	.prices {
+		font-size: 22px;
+	}
+}
