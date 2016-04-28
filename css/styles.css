@@ -732,6 +732,10 @@ table thead tr th {
   color: #49166d;
 }
 
+.frg-icon.icon-hamburger {
+  color: #FFF;
+}
+
 .icon-upgrades {
   width: 35px;
   height: 35px;
