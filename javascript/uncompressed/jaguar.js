@@ -1018,11 +1018,6 @@ var JAG = {
 
 		$( '.js-display-overlay' ).click( function () {
 			self.displayOverlay( $( this ) );
-			// self.start();
-
-			// setTimeout( function () {
-			// 	self.stop();
-			// }, 3000);
 		});
 
 		return self;
