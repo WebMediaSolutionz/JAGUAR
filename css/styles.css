@@ -18,8 +18,6 @@
 .inner-container {
   margin-right: auto;
   margin-left: auto;
-  /*max-width: 1200px;*/
-  min-width: 1000px;
   width: 93%;
 }
 
@@ -3057,6 +3055,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .large_desktop {
     display: none;
   }
+  .inner-container {
+    width: 100%;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3080,6 +3081,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .price,
   .prices {
     font-size: 22px;
+  }
+  .inner-container {
+    width: 100%;
   }
 }
 
@@ -3108,6 +3112,12 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .service.col-md-6:nth-child(2n) {
     margin-right: 0;
   }
+  .inner-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 93%;
+    min-width: 1000px;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3134,6 +3144,12 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .service.col-lg-4:nth-child(3n) {
     margin-right: 0;
+  }
+  .inner-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 93%;
+    min-width: 1000px;
   }
 }
 

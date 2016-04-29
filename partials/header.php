@@ -27,7 +27,7 @@
 		<script type="text/javascript" src="http://ws1.postescanada-canadapost.ca/js/addresscomplete-2.30.min.js?key=ha46-jw92-at99-yh51"></script>
 
 		<?php if ( $local ) { ?>
-			<div class="visible-xs-block">
+			<div class="smartphone">
 				<span>smartphone</span>
 			</div>
 
@@ -55,13 +55,15 @@
 				<div class="inner-container">
 					<header class="clearfix">
 						<div class="left clearfix">
-							<a class="block left visible-xs-block" href="#">
-								<span class="frg-icon icon-hamburger"></span>
-							</a>
-							<a class="logo block left" href="index.php">
-								<img class="logo img-responsive" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
-							</a>
-							<nav class="left">
+							<div class="col-xs-12 col-sm-4">
+								<a class="left gap_right_small block visible-xs-block" href="#">
+									<span class="frg-icon icon-hamburger"></span>
+								</a>
+								<a class="logo block left" href="index.php">
+									<img class="logo img-responsive" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
+								</a>
+							</div>
+							<nav class="col-xs-12 col-sm-8">
 								<ul class="no_styles clearfix">
 									<li class="left gap_right">
 										<a class="current block" href="index.php?banner=<?php echo $next; ?>">

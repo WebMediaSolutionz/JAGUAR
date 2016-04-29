@@ -23,6 +23,13 @@
 			}
 		}
 	}
+
+	.inner-container {
+		margin-right: auto;
+		margin-left: auto;
+		width: 93%;
+		min-width: 1000px;
+	}
 }
 
 @media screen and (max-width: 1260px) {
