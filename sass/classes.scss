@@ -101,7 +101,7 @@ span.status {
 }
 
 .shopping_cart {
-	width: 180px;
+	width: 195px;
 
 	.item_count {
 		position: absolute;
@@ -2062,4 +2062,10 @@ table.wide {
 	border: thin solid red;
 	text-align: center;
 	padding: 5px 0;
+}
+
+.spinner2 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
 }

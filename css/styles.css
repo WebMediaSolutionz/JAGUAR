@@ -315,7 +315,7 @@ ul.no_styles {
 }
 
 .tiny {
-  font-size: 65%;
+  font-size: 75%;
 }
 
 .small {
@@ -991,7 +991,7 @@ span.status.negative .back-order:hover + .tooltip_bubble {
 }
 
 .shopping_cart {
-  width: 180px;
+  width: 195px;
 }
 
 .shopping_cart .item_count {
@@ -3035,6 +3035,12 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   border: thin solid red;
   text-align: center;
   padding: 5px 0;
+}
+
+.spinner2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
 /* SHADES OF PURPLE */
