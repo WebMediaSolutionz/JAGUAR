@@ -17,6 +17,8 @@
 			</div>
 		</div>
 
+		<div class="spinner2"></div>
+
 		<div class="outer-container footer">
 			<footer class="inner-container">
 				<img class="logo" alt="TELUS logo" src="img/TELUS-logo-white.svg">
