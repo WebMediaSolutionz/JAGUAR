@@ -50,20 +50,17 @@
 		
 		<?php include( 'partials/backend_variables.php' ); ?>
 
-		<div class="header_bg white_bg">
+		<div class="header_bg white_bg hidden-xs">
 			<div class="outer-container header frg-drop-shadow">
 				<div class="inner-container">
 					<header class="clearfix">
 						<div class="left clearfix">
-							<div class="col-xs-12 col-sm-4">
-								<a class="left gap_right_small block visible-xs-block" href="#">
-									<span class="frg-icon icon-hamburger"></span>
-								</a>
+							<div class="left">
 								<a class="logo block left" href="index.php">
 									<img class="logo img-responsive" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
 								</a>
 							</div>
-							<nav class="col-xs-12 col-sm-8">
+							<nav class="left">
 								<ul class="no_styles clearfix">
 									<li class="left gap_right">
 										<a class="current block" href="index.php?banner=<?php echo $next; ?>">
@@ -101,6 +98,64 @@
 							</ul>
 						</div>
 					</header>
+				</div>
+			</div>
+		</div>
+
+		<div class="header_bg header visible-xs-block">
+			<div class="outer-container">
+				<header class="inner-container clearfix">
+					<div class="left clearfix">
+						<div class="clearfix">
+							<a class="block left gap_right_smaller" href="#">
+								<span class="frg-icon icon-hamburger"></span>
+							</a>
+							<a class="logo block left" href="index.php">
+								<img class="logo" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
+							</a>
+						</div>
+						<nav>
+							<ul class="no_styles clearfix">
+								<li class="left gap_right">
+									<a class="current block" href="index.php?banner=<?php echo $next; ?>">
+										<span>Buy</span>
+									</a>
+								</li>
+								<li class="left gap_right">
+									<a class="block" href="#">
+										<span>Manage</span>
+									</a>
+								</li>
+								<li class="left">
+									<a class="block" href="#">
+										<span>Support</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<div class="outer-container">
+			<div class="inner-container">
+				<div class="profile">
+					<ul class="menu clearfix">
+						<li class="left gap_right">
+							<a class="user_name clearfix" href="#">
+								<div class="left username"><span>Menu</span></div>
+								<div class="left frg-icon icon-arrow-down"></div>
+							</a>
+							<ul class="no_styles">
+								<li></li>
+					            <li><a href="#">Stan Smith</a></li>
+					            <li><a href="#">English</a></li>
+					            <li><a href="corporate_settings.php#tabs1">Corporate Settings</a></li>
+					            <li><a href="#">Log out</a></li>
+					        </ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

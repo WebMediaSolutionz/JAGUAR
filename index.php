@@ -7,7 +7,7 @@
 	<div class="inner-container">
 		<h2 class="title">Track, adjust and manage your business mobility needs</h2>
 
-		<div class="box left">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="buy">
 					<a href="index.php?banner=banner2"><span class="support-footer__icon frg-icon icon-user-profile-inverted"></span> Buy</a>
@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box left">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="manage">
 					<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
@@ -64,7 +64,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box left">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="order">
 					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>

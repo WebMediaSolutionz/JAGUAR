@@ -1,4 +1,4 @@
-		<div class="outer-container content purple_bg">
+		<div class="outer-container content purple_bg hidden-xs">
 			<div class="inner-container">
 				<div class="sub_footer center clearfix">
 					<div class="col6 center_text left">
