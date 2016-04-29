@@ -12,6 +12,28 @@ var JAG = {
 
 	formEntriesValid: true,
 
+	opts2: {
+		color: '#00FF00', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
+		top: '5%', // Top position relative to parent in px or % (use 'x%')
+		left: '5%', // Left position relative to parent in px or % (use 'x%')
+		lines: 13, // The number of lines to draw
+		length: 7, // The length of each line
+		width: 4, // The line thickness
+		radius: 40, // The radius of the inner circle
+		corners: 1, // Corner roundness (0..1)
+		rotate: 0, // The rotation offset
+		speed: 1, // Rounds per second
+		trail: 80, // Afterglow percentage
+		shadow: false, // Whether to render a shadow
+		hwaccel: false, // Whether to use hardware acceleration
+		className: 'spinner', // The CSS class to assign to the spinner
+		zIndex: 2e9 // The z-index (defaults to 2000000000)*/
+	},
+
+	target2: null,
+
+	spinner2: null,
+
 	init: function () {
 		var self = this;
 
@@ -145,7 +167,7 @@ var JAG = {
 
 				case "Hide list": 	wording = "View list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).addClass( 'hide' ).find( 'div' ).addClass( 'hide' );
-									break;					
+									break;
 			}
 
 			word.text( wording );
@@ -392,7 +414,7 @@ var JAG = {
 				} else {
 					clicked.text( selected_text );
 				}
-				
+
 			} else {
 				clicked.addClass( 'current' );
 
@@ -439,7 +461,7 @@ var JAG = {
 
 			if ( next_page.is( 'table' ) ) {
 				view_all_table.addClass( 'hide' );
-				
+
 				previous.text( 'Previous 10' );
 
 				if ( next_page.length > 0 ) {
@@ -522,7 +544,7 @@ var JAG = {
 					status
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
-						
+
 					accessory_atc.removeClass( 'state-disabled' );
 
 					if ( accessory_atc.hasClass( 'added' ) ) {
@@ -552,7 +574,7 @@ var JAG = {
 						.removeClass( 'positive' )
 						.addClass( 'negative' )
 						.find( '.tooltip_bubble span' )
-						.text( 'please, enter a valid number' );	
+						.text( 'please, enter a valid number' );
 				} else {
 					if ( max_quantity !== 0 ) {
 						status
@@ -562,7 +584,7 @@ var JAG = {
 						availability.text( '' );
 					}
 				}
-				
+
 			}
 		});
 
@@ -615,7 +637,7 @@ var JAG = {
 				for ( var i = 0; i < self.cities.length; i++ ) {
 					if ( self.cities[ i ].value.toLowerCase().indexOf( field_text ) !== -1 ) {
 						results.push( self.cities[ i ] );
-					} 
+					}
 				}
 			}
 
@@ -834,8 +856,6 @@ var JAG = {
 			var emails = $( '.js-match-validation' ),
 				second_email = $( 'input[name=email2]' );
 
-			// console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
-
 			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
 				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
 					second_email
@@ -877,9 +897,6 @@ var JAG = {
 			container.append( '<div class="row lenght70 top_margin20"><div class="col-xs-6"><label class="block devil_gray_text">DEP number</label><input class="frg-input-field full_width" /></div><div class="col-xs-6"><label class="block devil_gray_text">Description</label><input class="frg-input-field full_width" /></div></div>' );
 		});
 
-		$( '.js-display-overlay' ).click( function () {
-			self.displayOverlay( $( this ) );
-		});
 
 		$( '.frg-checkbox.js-pricepoint' ).click( function () {
 			var clicked = $( this ),
@@ -999,6 +1016,51 @@ var JAG = {
 			console.info( 'clear cart' );
 		});
 
+		$( '.js-display-overlay' ).click( function () {
+			self.displayOverlay( $( this ) );
+			// self.start();
+
+			// setTimeout( function () {
+			// 	self.stop();
+			// }, 3000);
+		});
+
+		return self;
+	},
+
+	start: function () {
+		var self = this;
+
+		target2 = $( '.spinner2' ).get( 0 );
+
+		self.spinner2 = new Spinner( self.opts2 ).spin( target2 );
+
+		self.startSpinner();
+
+		return self;
+	},
+
+	stop: function () {
+		var self = this;
+		self.stopSpinner();
+		self.spinner2.stop();
+
+		return self;
+	},
+
+	startSpinner: function () {
+		var self = this;
+
+		$.LoadingOverlay( "show" );
+
+		return self;
+	},
+
+	stopSpinner: function () {
+		var self = this;
+
+		$.LoadingOverlay( "hide" );
+
 		return self;
 	},
 
@@ -1082,8 +1144,6 @@ var JAG = {
 
 		errors.empty();
 
-		console.info( form );
-
 		fields.removeClass( 'js-error' ).removeClass( 'show_errors' ).each( function () {
 			var field = $( this );
 
@@ -1114,7 +1174,7 @@ var JAG = {
 			} else {
 				button.removeClass( 'js-incomplete' );
 			}
-			
+
 			errors.empty();
 		}
 
@@ -1128,8 +1188,6 @@ var JAG = {
 			valid = false;
 
 		fields.each( function () {
-			// console.info( $( this ).val() );
-
 			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
 				valid = true;
 			}
@@ -1219,7 +1277,7 @@ var JAG = {
 				applied_filter = $( '.js-applied_filter' );
 
 			if ( !clicked.hasClass( 'btn' ) ) {
-				filters.removeClass( 'current' );	
+				filters.removeClass( 'current' );
 				clicked.addClass( 'current' );
 			}
 
@@ -1407,8 +1465,6 @@ var JAG = {
 			 	$.each( self.phones, function ( i, phone ) {
 			 		var listing = '';
 
-			 		// console.info( phone );
-
 			 		listing += '<div class="box phone object clearfix left" data-filter="all voice_only">';
 					listing += '	<div class="image left">';
 					listing += '		<a href="device.php">';
@@ -1576,12 +1632,10 @@ var JAG = {
 	displayOverlay: function ( el ) {
 		var self = this;
 
-		// Show full page Loading Overlay
-		$.LoadingOverlay( "show" );
+		self.start();
 
-		// Hide it after 3 seconds
 		setTimeout( function () {
-			$.LoadingOverlay( "hide" );
+			self.stop();
 
 			var bottom_section = el.closest( '.bottom_section' ),
 				quantity = bottom_section.find( '.js-quantity' ).val();
@@ -1610,7 +1664,7 @@ var JAG = {
 		images.each( function () {
 			var img = $( this );
 
-			$.get( img.attr( 'src' ) ).fail(function() { 
+			$.get( img.attr( 'src' ) ).fail(function() {
 				img.attr( 'src', default_img ).addClass( 'replacement_img' );
 			});
 		});
