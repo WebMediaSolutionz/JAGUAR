@@ -18,7 +18,10 @@
 		font-size: 22px;
 	}
 
-	.inner-container {
-		width: 100%;
+	.secondary_bg, 
+	.main_content {
+		.box {
+			min-height: 420px;
+		}
 	}
 }

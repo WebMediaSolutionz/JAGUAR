@@ -1110,13 +1110,14 @@ h3.buy span, h3.manage span, h3.order span {
   padding: 26px 0 14px 0;
 }
 
-.header .logo {
+.header a.logo {
+  display: block;
   width: 155px;
   height: 29px;
   margin-right: 76px;
 }
 
-.header .logo + nav .gap_right {
+.header a.logo + nav .gap_right {
   margin-right: 32px;
 }
 
@@ -3065,17 +3066,18 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .large_desktop {
     display: none;
   }
-  .outer-container {
-    padding: 0 9px;
-  }
-  .inner-container {
-    width: auto;
-  }
   .header_bg {
     height: auto;
   }
   .header_bg .inner-container {
     margin: 0;
+    min-width: auto;
+  }
+  .outer-container {
+    padding: 1px 9px;
+  }
+  .outer-container .inner-container {
+    width: auto;
   }
   .header {
     padding: 15px 0 0px;
@@ -3097,6 +3099,16 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .secondary_bg .box,
   .main_content .box {
     width: auto;
+    min-height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .secondary_bg .box .top .description,
+  .main_content .box .top .description {
+    margin: -5px 0 10px;
+    line-height: 1;
   }
   .dropit .dropit-submenu {
     position: relative;
@@ -3109,6 +3121,34 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .user_name .icon-arrow-down {
     color: #49166d;
+  }
+  .main_banner > div:first-child {
+    margin: 20px 0;
+    width: auto;
+  }
+  .main_banner > div:first-child p {
+    line-height: 1.2;
+  }
+  .main_banner > div:first-child > .frg-button {
+    width: 100%;
+  }
+  .fish_bowl,
+  .birds,
+  .macbook {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px 0 20px;
+    margin-top: -20px;
+  }
+  .fish_bowl img,
+  .birds img,
+  .macbook img {
+    width: 290px;
+    height: auto;
+  }
+  .ticket_number_status {
+    padding: 5px 0 110px 0;
   }
 }
 
@@ -3134,8 +3174,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .prices {
     font-size: 22px;
   }
-  .inner-container {
-    width: 100%;
+  .secondary_bg .box,
+  .main_content .box {
+    min-height: 420px;
   }
 }
 
@@ -3168,7 +3209,6 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     margin-right: auto;
     margin-left: auto;
     width: 93%;
-    min-width: 1000px;
   }
 }
 

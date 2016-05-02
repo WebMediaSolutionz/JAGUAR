@@ -13,19 +13,20 @@
 		display: none;
 	}
 
-	.outer-container {
-		padding: 0 9px;
-	}
-
-	.inner-container {
-		width: auto;
-	}
-
 	.header_bg {
 		height: auto;
 
 		.inner-container {
 			margin: 0;
+			min-width: auto;
+		}
+	}
+
+	.outer-container {
+		padding: 1px 9px;
+
+		.inner-container {
+			width: auto;
 		}
 	}
 
@@ -60,6 +61,18 @@
 	.main_content {
 		.box {
 			width: auto;
+			min-height: auto;
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: auto !important;
+			margin-right: auto !important;
+
+			.top {
+				.description {
+					margin: -5px 0 10px;
+					line-height: 1;
+				}
+			}
 		}
 	}
 
@@ -77,5 +90,37 @@
 		.icon-arrow-down {
 			color: $purple2;
 		}
+	}
+
+	.main_banner > div:first-child {
+		margin: 20px 0;
+		width: auto;
+
+		p {
+			line-height: 1.2;
+		}
+
+		& > .frg-button {
+			width: 100%;
+		}
+	}
+
+	.fish_bowl, 
+	.birds, 
+	.macbook {
+		width: auto;
+		height: auto;
+		text-align: center;
+		padding: 10px 0 20px;
+		margin-top: -20px;
+
+		img {
+			width: 290px;
+			height: auto;
+		}
+	}
+
+	.ticket_number_status {
+		padding: 5px 0 110px 0;
 	}
 }

@@ -5,9 +5,9 @@
 
 <div class="outer-container main_content purple_bg">
 	<div class="inner-container">
-		<h2 class="title">Track, adjust and manage your business mobility needs</h2>
+		<h2 class="title hidden-xs">Track, adjust and manage your business mobility needs</h2>
 
-		<div class="box col-md-4">
+		<div class="box col-sm-4">
 			<div class="top">
 				<h3 class="buy">
 					<a href="index.php?banner=banner2"><span class="support-footer__icon frg-icon icon-user-profile-inverted"></span> Buy</a>
@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box col-md-4">
+		<div class="box col-sm-4">
 			<div class="top">
 				<h3 class="manage">
 					<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
@@ -64,7 +64,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box col-md-4">
+		<div class="box col-sm-4">
 			<div class="top">
 				<h3 class="order">
 					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>
@@ -94,7 +94,7 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg">
+<div class="outer-container content white_bg hidden-xs">
 	<div class="inner-container">
 		<div class="support_section clearfix">
 			<div class="col6 left">
@@ -108,7 +108,7 @@
 					</ul>
 				</div>
 
-				<img class="headset left" src="img/headset.jpg" alt="headset">
+				<img class="headset hidden-xs left" src="img/headset.jpg" alt="headset">
 			</div>
 			<div class="col6 separator left">
 				<h3 class="title">Check repair ticket status</h3>
@@ -116,6 +116,36 @@
 				<div class="ticket_number_status">
 					<input class="left frg-input-field" />
 					<a class="left frg-button gap_left_small" href="#">Repair Status</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<div class="outer-container content purple_bg visible-xs-block">
+	<div class="inner-container">
+		<div class="support_section clearfix">
+			<div class="col-sm-6 clearfix">
+				<div class="left gap_right">
+					<h3 class="title gray_text">Support</h3>
+
+					<ul class="list">
+						<li><a href="#">Frequently asked questions</a></li>
+						<li><a href="#">Browse support articles</a></li>
+						<li><a href="#">Submit a repair or return request</a></li>
+						<li><a target="_blank" href="http://www.telus.com/support">View device starter guides</a></li>
+					</ul>
+				</div>
+
+				<img class="headset hidden-xs left" src="img/headset.jpg" alt="headset">
+			</div>
+			<div class="col-sm-6 clearfix">
+				<h3 class="title gray_text">Check repair ticket status</h3>
+
+				<div class="ticket_number_status">
+					<input class="left frg-input-field full_width" placeholder="Repair ticket number" />
+					<a class="left frg-button full_width vertical_gap_top small_gap" href="#">View Repair Status</a>
 				</div>
 			</div>
 			<div class="clear"></div>
