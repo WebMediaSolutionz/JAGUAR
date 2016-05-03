@@ -2028,6 +2028,16 @@ table.wide {
 				color: transparent;
 			}
 		}
+
+		img {
+			&.swatch {
+				display: block;   
+				height: 25px;   
+				width: 25px;   
+				border-radius: 15px;   
+				color: transparent;
+			}
+		}
 	}
 }
 

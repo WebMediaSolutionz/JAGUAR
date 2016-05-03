@@ -3010,6 +3010,14 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   color: transparent;
 }
 
+.device__variant-container button img.swatch {
+  display: block;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  color: transparent;
+}
+
 .js-quantity-prompt {
   height: 25px;
   font-size: 14px;
