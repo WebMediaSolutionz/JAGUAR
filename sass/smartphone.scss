@@ -16,9 +16,13 @@
 	.header_bg {
 		height: auto;
 
-		.inner-container {
-			margin: 0;
-			min-width: auto;
+		.outer-container{
+			padding: 0 9px;
+
+			.inner-container {
+				margin: 0;
+				min-width: auto;
+			}
 		}
 	}
 

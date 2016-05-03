@@ -1746,6 +1746,7 @@ h3.buy span, h3.manage span, h3.order span {
   width: 388px;
   height: 258px;
   margin-top: 20px;
+  float: left;
 }
 
 .fish_bowl img,
@@ -3069,7 +3070,10 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .header_bg {
     height: auto;
   }
-  .header_bg .inner-container {
+  .header_bg .outer-container {
+    padding: 0 9px;
+  }
+  .header_bg .outer-container .inner-container {
     margin: 0;
     min-width: auto;
   }
@@ -3176,7 +3180,39 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .secondary_bg .box,
   .main_content .box {
-    min-height: 420px;
+    min-height: auto;
+  }
+  .secondary_bg .box,
+  .main_content .box {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .main_banner > div:first-child {
+    margin: 0;
+  }
+  .fish_bowl,
+  .birds,
+  .macbook {
+    float: right;
+  }
+  .header_bg .inner-container {
+    min-width: auto;
+  }
+  .banner {
+    padding-bottom: 20px;
+  }
+  .ticket_number_status {
+    padding: 10px 0 0 0;
+  }
+  .ticket_number_status input,
+  .ticket_number_status .frg-button {
+    width: 100% !important;
+  }
+  .ticket_number_status .frg-button {
+    margin: 10px 0 0 0;
   }
 }
 

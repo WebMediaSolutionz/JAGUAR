@@ -7,7 +7,7 @@
 	<div class="inner-container">
 		<h2 class="title hidden-xs">Track, adjust and manage your business mobility needs</h2>
 
-		<div class="box col-sm-4">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="buy">
 					<a href="index.php?banner=banner2"><span class="support-footer__icon frg-icon icon-user-profile-inverted"></span> Buy</a>
@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box col-sm-4">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="manage">
 					<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
@@ -64,7 +64,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="box col-sm-4">
+		<div class="box col-md-4">
 			<div class="top">
 				<h3 class="order">
 					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>
@@ -102,19 +102,20 @@
 					<h3 class="title">Support shortcuts</h3>
 
 					<ul class="list">
+						<li><a href="#">Frequently asked questions</a></li>
 						<li><a href="#">Browse support articles</a></li>
 						<li><a href="#">Submit a repair or return request</a></li>
 						<li><a target="_blank" href="http://www.telus.com/support">View device starter guides</a></li>
 					</ul>
 				</div>
 
-				<img class="headset hidden-xs left" src="img/headset.jpg" alt="headset">
+				<img class="headset hidden-xs hidden-sm left" src="img/headset.jpg" alt="headset">
 			</div>
 			<div class="col6 separator left">
 				<h3 class="title">Check repair ticket status</h3>
 
 				<div class="ticket_number_status">
-					<input class="left frg-input-field" />
+					<input class="left frg-input-field" placeholder="Repair ticket number" />
 					<a class="left frg-button gap_left_small" href="#">Repair Status</a>
 				</div>
 			</div>
