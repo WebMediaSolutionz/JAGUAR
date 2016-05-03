@@ -1747,6 +1747,7 @@ h3.buy span, h3.manage span, h3.order span {
   height: 258px;
   margin-top: 20px;
   float: left;
+  overflow: hidden;
 }
 
 .fish_bowl img,
@@ -3144,6 +3145,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     text-align: center;
     padding: 10px 0 20px;
     margin-top: -20px;
+    float: none;
   }
   .fish_bowl img,
   .birds img,
