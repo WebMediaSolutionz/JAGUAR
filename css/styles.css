@@ -2991,6 +2991,8 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   height: 25px;
   border: none;
   background: transparent;
+  line-height: 1.2;
+  margin-top: 5px;
   /*&:nth-child(4) {
 			margin-left: 30px;
 		}*/
@@ -2998,6 +3000,22 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 
 .device__variant-container button span {
   margin-left: -5px;
+}
+
+.device__variant-container button span.swatch {
+  display: block;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  color: transparent;
+}
+
+.device__variant-container button img.swatch {
+  display: block;
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  color: transparent;
 }
 
 .js-quantity-prompt {

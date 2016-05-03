@@ -29,34 +29,40 @@
 
 	$swatches = array( 
 		array( 
-				'sku'	=>	'iphone-5s-space-grey',
-				'label' => 	'Space Grey',
-				'color'	=>	'#595859'
+				'sku'				=>	'iphone-5s-space-grey',
+				'label' 			=> 	'Space Grey',
+				'color'				=>	'#595859',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 			),
 		array( 
-				'sku'	=>	'iphone-5s-silver',
-				'label' => 	'Silver',
-				'color'	=>	'#909090'
+				'sku'				=>	'iphone-5s-silver',
+				'label' 			=> 	'Silver',
+				'color'				=>	'#909090',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 		 ),
 		array( 
-				'sku'	=>	'iphone-5s-silver',
-				'label' => 	'Silver',
-				'color'	=>	'#000'
+				'sku'				=>	'iphone-5s-silver',
+				'label' 			=> 	'Silver',
+				'color'				=>	'#000',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 		 ),
 		array( 
-				'sku'	=>	'iphone-5s-space-grey',
-				'label' => 	'Space Grey',
-				'color'	=>	'#595859'
+				'sku'				=>	'iphone-5s-space-grey',
+				'label' 			=> 	'Space Grey',
+				'color'				=>	'#595859',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 			),
 		array( 
-				'sku'	=>	'iphone-5s-silver',
-				'label' => 	'Silver',
-				'color'	=>	'#909090'
+				'sku'				=>	'iphone-5s-silver',
+				'label' 			=> 	'Silver',
+				'color'				=>	'#909090',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 		 ),
 		array( 
-				'sku'	=>	'iphone-5s-silver',
-				'label' => 	'Silver',
-				'color'	=>	'#000'
+				'sku'				=>	'iphone-5s-silver',
+				'label' 			=> 	'Silver',
+				'color'				=>	'#000',
+				'background-image' 	=>	'https://mobility.telus.com/en/common/images/products/swatches/black.gif'
 		 )
 	);
 
@@ -73,7 +79,7 @@
 			<div class="device__variant-container">			
 				<?php for ( $j = 0; $j < $nb_swatches; $j++ ) { ?>
 					<button aria-label="<?php echo $swatches[ $j ][ 'label' ]; ?>" data-sku="<?php echo $swatches[ $j ][ 'sku' ]; ?>" data-lang="en" class="device-color-button device__variant-item">				
-						<span style="color: <?php echo $swatches[ $j ][ 'color' ]; ?>" class="frg-icon icon-circle-solid"></span>			
+						<span style="background: url('<?php echo $swatches[ $j ][ 'background-image' ]; ?>') no-repeat -2px -2px;" class="frg-icon icon-circle-solid swatch"></span>			
 					</button>
 				<?php } ?>
 			</div>
