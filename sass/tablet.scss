@@ -47,7 +47,10 @@
 	}
 
 	.header_bg {
+		overflow: hidden;
+		
 		.inner-container {
+			width: auto;
 			min-width: auto;
 		}
 	}

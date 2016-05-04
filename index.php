@@ -109,7 +109,7 @@
 					</ul>
 				</div>
 
-				<img class="headset hidden-xs hidden-sm left" src="img/headset.jpg" alt="headset">
+				<img class="headset hidden-xs hidden-sm hidden-md left" src="img/headset.jpg" alt="headset">
 			</div>
 			<div class="col6 separator left">
 				<h3 class="title">Check repair ticket status</h3>

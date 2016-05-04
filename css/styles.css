@@ -3073,16 +3073,23 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .header_bg .outer-container {
     padding: 0 9px;
+    width: auto !important;
+    max-width: auto !important;
+    min-width: auto !important;
+    overflow: hidden;
   }
   .header_bg .outer-container .inner-container {
     margin: 0;
-    min-width: auto;
+    width: auto !important;
+    max-width: auto !important;
+    min-width: auto !important;
   }
   .outer-container {
     padding: 1px 9px;
   }
   .outer-container .inner-container {
     width: auto;
+    min-width: auto;
   }
   .header {
     padding: 15px 0 0px;
@@ -3100,6 +3107,10 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     border-top: none;
     border-bottom: 6px solid #57a708;
     padding: 0 0 10px 0;
+  }
+  .header_bg .inner-container {
+    width: auto;
+    min-width: auto;
   }
   .secondary_bg .box,
   .main_content .box {
@@ -3200,7 +3211,11 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .macbook {
     float: right;
   }
+  .header_bg {
+    overflow: hidden;
+  }
   .header_bg .inner-container {
+    width: auto;
     min-width: auto;
   }
   .banner {
@@ -3247,6 +3262,20 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     margin-right: auto;
     margin-left: auto;
     width: 93%;
+  }
+  .ticket_number_status {
+    padding: 10px 0 0 0;
+  }
+  .ticket_number_status input,
+  .ticket_number_status .frg-button {
+    width: 100% !important;
+  }
+  .ticket_number_status .frg-button {
+    margin: 10px 0 0 0;
+  }
+  .main_content .box,
+  .secondary_bg .box {
+    min-height: 395px;
   }
 }
 

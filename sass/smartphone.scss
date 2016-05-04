@@ -19,9 +19,16 @@
 		.outer-container{
 			padding: 0 9px;
 
+			width: auto !important;
+			max-width: auto !important;
+			min-width: auto !important;
+			overflow: hidden;
+
 			.inner-container {
 				margin: 0;
-				min-width: auto;
+				width: auto !important;
+				max-width: auto !important;
+				min-width: auto !important;
 			}
 		}
 	}
@@ -31,6 +38,7 @@
 
 		.inner-container {
 			width: auto;
+			min-width: auto;
 		}
 	}
 
@@ -58,6 +66,13 @@
 					}
 				}
 			}
+		}
+	}
+
+	.header_bg {
+		.inner-container {
+			width: auto;
+			min-width: auto;
 		}
 	}
 
