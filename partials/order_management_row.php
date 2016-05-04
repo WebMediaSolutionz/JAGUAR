@@ -1,3 +1,21 @@
+<?php
+	$submitter = null;
+
+	switch ( $i ) {
+		case 0 :		$submitter = "Stan a";
+						break;
+
+		case 1 :		$submitter = "stan b";
+						break;
+
+		case 2 :		$submitter = "stan a";
+						break;
+
+		case 3 :		$submitter = "Stan b";
+						break;
+	}
+?>
+
 <tr>
 	<td>
 		<div class="frg-checkbox small regular">
@@ -12,7 +30,7 @@
 		<a class="underline" href="order_details1.php?status=<?php echo ( $i % 2 === 0 ) ? 'shipped' : 'pending' ; ?>">1234567890</a>
 	</td>
 	<td>
-		<span>Stan a</span>
+		<span><?php echo $submitter; ?></span>
 	</td>
 	<td>
 		<span>Airtime Account -70728106 Airtime Account -70728106 Airtime Account -70728106</span>

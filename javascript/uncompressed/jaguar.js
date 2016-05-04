@@ -1370,7 +1370,7 @@ var JAG = {
 
         // sort the array by the specified column number (col) and order (asc)
         arr.sort( function ( a, b ) {
-            return ( a[ field ] == b[ field ] ) ? 0 : ( ( a[ field ] > b[ field ] ) ? direction : -1 * direction );
+            return ( a[ field ].toLowerCase() == b[ field ].toLowerCase() ) ? 0 : ( ( a[ field ].toLowerCase() > b[ field ].toLowerCase() ) ? direction : -1 * direction );
         });
 
         // replace existing rows with new rows created from the sorted array
