@@ -3103,10 +3103,20 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .header nav ul li a {
     padding: 0 0 16px 0;
   }
-  .header nav ul li a:hover, .header nav ul li a.current {
+  .header nav ul li a.current {
     border-top: none;
     border-bottom: 6px solid #57a708;
     padding: 0 0 10px 0;
+  }
+  .header nav ul li a.current:hover {
+    border-top: none;
+    border-bottom: 6px solid #57a708;
+    padding: 0 0 10px 0;
+  }
+  .header nav ul li a:hover {
+    border-top: none;
+    border-bottom: none;
+    padding: 0 0 16px 0;
   }
   .header_bg .inner-container {
     width: auto;
@@ -3193,15 +3203,17 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .secondary_bg .box,
   .main_content .box {
-    min-height: auto;
-  }
-  .secondary_bg .box,
-  .main_content .box {
     width: auto;
+    min-height: auto;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  .secondary_bg nav ul li a:hover,
+  .main_content nav ul li a:hover {
+    border-bottom: none !important;
+    padding: 0 0 15px;
   }
   .main_banner > div:first-child {
     margin: 0;
@@ -3210,6 +3222,18 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .birds,
   .macbook {
     float: right;
+  }
+  .header nav ul li a.current {
+    border-top: 6px solid #57a708;
+    padding-top: 24px;
+  }
+  .header nav ul li a.current:hover {
+    border-top: 6px solid #57a708;
+    padding-top: 24px;
+  }
+  .header nav ul li a:hover {
+    border-top: none;
+    padding-top: 30px;
   }
   .header_bg {
     overflow: hidden;

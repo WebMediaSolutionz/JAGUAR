@@ -57,11 +57,22 @@
 					a {
 						padding: 0 0 16px 0;
 
-						&:hover,
 						&.current {
 							border-top: none;
 							border-bottom: 6px solid $green;
 							padding: 0 0 10px 0;
+
+							&:hover {
+								border-top: none;
+								border-bottom: 6px solid $green;
+								padding: 0 0 10px 0;
+							}
+						}
+
+						&:hover {
+							border-top: none;
+							border-bottom: none;
+							padding: 0 0 16px 0;
 						}
 					}
 				}

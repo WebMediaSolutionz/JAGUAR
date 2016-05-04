@@ -21,18 +21,17 @@
 	.secondary_bg, 
 	.main_content {
 		.box {
-			min-height: auto;
-		}
-	}
-
-	.secondary_bg, 
-	.main_content {
-		.box {
 			width: auto;
+			min-height: auto;
 			padding-left: 0;
 			padding-right: 0;
 			margin-left: auto !important;
 			margin-right: auto !important;
+		}
+
+		nav ul li a:hover {
+			border-bottom: none !important;
+			padding: 0 0 15px;
 		}
 	}
 
@@ -44,6 +43,31 @@
 	.birds,
 	.macbook {
 		float: right;
+	}
+
+	.header {
+		nav {
+			ul {
+				li {
+					a {
+						&.current {
+							border-top: 6px solid $green;
+							padding-top: 24px;
+
+							&:hover {
+								border-top: 6px solid $green;
+								padding-top: 24px;
+							}
+						}
+
+						&:hover {
+							border-top: none;
+							padding-top: 30px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.header_bg {
