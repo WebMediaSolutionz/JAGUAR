@@ -180,4 +180,45 @@
 			}
 		}
 	}
+
+	.content {
+		nav {
+			ul {
+				li {
+					a {
+						&:hover {
+							border-bottom: none !important;
+						}
+
+						&.current {
+							&:hover {
+								border-bottom: 6px solid $purple2 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.box {
+			&.phone {
+				.description {
+					.mtm {
+						.frg-button {
+							&:hover {
+								background-color: $white !important;
+								color: $purple4;
+							}
+
+							&.current {
+								&:hover {
+									background-color: $purple;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -3193,6 +3193,19 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     background-color: #fff !important;
     color: #3d2557;
   }
+  .content nav ul li a:hover {
+    border-bottom: none !important;
+  }
+  .content nav ul li a.current:hover {
+    border-bottom: 6px solid #49166d !important;
+  }
+  .content .box.phone .description .mtm .frg-button:hover {
+    background-color: #fff !important;
+    color: #8c68a6;
+  }
+  .content .box.phone .description .mtm .frg-button.current:hover {
+    background-color: #491d6b;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3292,6 +3305,19 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
     background-color: #fff !important;
     color: #3d2557;
   }
+  .content nav ul li a:hover {
+    border-bottom: none !important;
+  }
+  .content nav ul li a.current:hover {
+    border-bottom: 6px solid #49166d !important;
+  }
+  .content .box.phone .description .mtm .frg-button:hover {
+    background-color: #fff !important;
+    color: #8c68a6;
+  }
+  .content .box.phone .description .mtm .frg-button.current:hover {
+    background-color: #491d6b;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3377,9 +3403,6 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .support_section .headset {
     width: 40%;
     margin-top: 60px;
-  }
-  .confirmation .inner-container {
-    background: transparent url("../img/flower.jpg") no-repeat 95% center;
   }
 }
 
