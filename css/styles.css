@@ -3177,6 +3177,18 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .ticket_number_status {
     padding: 5px 0 110px 0;
   }
+  .frg-button:hover {
+    background-image: linear-gradient(#fff 0%, #fff 90%, #cecece 90%, #cecece);
+    color: #8c68a6;
+  }
+  .frg-button.color-green:hover {
+    background-color: #57a708;
+    background-image: linear-gradient(#57a708 0%, #57a708 90%, #408000 90%, #408000);
+  }
+  .select.frg-button:hover {
+    background-color: #fff !important;
+    color: #8c68a6;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3254,6 +3266,18 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .ticket_number_status .frg-button {
     margin: 10px 0 0 0;
+  }
+  .frg-button:hover {
+    background-image: linear-gradient(#fff 0%, #fff 90%, #cecece 90%, #cecece);
+    color: #8c68a6;
+  }
+  .frg-button.color-green:hover {
+    background-color: #57a708;
+    background-image: linear-gradient(#57a708 0%, #57a708 90%, #408000 90%, #408000);
+  }
+  .select.frg-button:hover {
+    background-color: #fff !important;
+    color: #8c68a6;
   }
 }
 

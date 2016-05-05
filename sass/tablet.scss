@@ -95,4 +95,25 @@
 			margin: 10px 0 0 0;
 		}
 	}
+
+	.frg-button {
+		&:hover {
+			background-image: linear-gradient( $white 0%, $white 90%, $disabled_gray 90%, $disabled_gray );
+			color: $purple4;
+		}
+
+		&.color-green:hover {
+			background-color: $green;
+			background-image: linear-gradient( $green 0%, $green 90%, #408000 90%, #408000);
+		}
+	}
+
+	.select {
+		&.frg-button {
+			&:hover {
+				background-color: $white !important;
+				color: $purple4;
+			}
+		}
+	}
 }
