@@ -933,7 +933,7 @@ h3 {
 		color: #000;
 	}
 
-	&.outer-container .inner-container {
+	&.outer-container > .inner-container:first-child {
 		background: transparent url( '../img/flower.jpg' ) no-repeat 85% center;
 	}
 

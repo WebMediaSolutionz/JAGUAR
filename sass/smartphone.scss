@@ -165,13 +165,18 @@
 			background-color: $green;
 			background-image: linear-gradient( $green 0%, $green 90%, #408000 90%, #408000);
 		}
+
+		&.color-purple:hover {
+			background-color: $purple4;
+			background-image: linear-gradient( $purple4 0%, $purple4 90%, $purple2 90%, $purple2 );
+		}
 	}
 
 	.select {
 		&.frg-button {
 			&:hover {
 				background-color: $white !important;
-				color: $purple4;
+				color: $purple_link;
 			}
 		}
 	}

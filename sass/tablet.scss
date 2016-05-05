@@ -29,9 +29,18 @@
 			margin-right: auto !important;
 		}
 
-		nav ul li a:hover {
-			border-bottom: none !important;
-			padding: 0 0 15px;
+		nav ul li a {
+			&.current {
+				&:hover {
+					border-bottom: 6px solid $purple2 !important;
+					padding: 0 0 9px;
+				}
+			}
+
+			&:hover {
+				border-bottom: none !important;
+				padding: 0 0 15px;
+			}
 		}
 	}
 
@@ -106,13 +115,18 @@
 			background-color: $green;
 			background-image: linear-gradient( $green 0%, $green 90%, #408000 90%, #408000);
 		}
+
+		&.color-purple:hover {
+			background-color: $purple4;
+			background-image: linear-gradient( $purple4 0%, $purple4 90%, $purple2 90%, $purple2 );
+		}
 	}
 
 	.select {
 		&.frg-button {
 			&:hover {
 				background-color: $white !important;
-				color: $purple4;
+				color: $purple_link;
 			}
 		}
 	}
