@@ -10,7 +10,7 @@
 <div class="outer-container content white_bg product">
 	<div class="inner-container clearfix">
 		<div class="row">
-			<div class="col-xs-3 col-xs-offset-2 phone_details image center_text">
+			<div class="col-xs-4 col-xs-offset-1 phone_details image center_text">
 				<!-- <img src="img/phone_big.jpg"> -->
 
 				<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
