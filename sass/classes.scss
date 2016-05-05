@@ -1984,12 +1984,9 @@ table.wide {
 
 .phone_details.image {
 	a {
-		display: block;
-		width: 320px;
-		height: 600px;
-
 		img {
-			height: 600px;
+			max-width: 500px;
+			max-height: 750px;
 
 			&.replacement_img {
 				width: 320px;

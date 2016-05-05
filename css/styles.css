@@ -2964,14 +2964,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   width: 5% !important;
 }
 
-.phone_details.image a {
-  display: block;
-  width: 320px;
-  height: 600px;
-}
-
 .phone_details.image a img {
-  height: 600px;
+  max-width: 500px;
+  max-height: 750px;
 }
 
 .phone_details.image a img.replacement_img {
