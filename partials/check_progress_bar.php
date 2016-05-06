@@ -1,4 +1,4 @@
-<div class="outer-container content white_bg shadow product_header">
+<div class="outer-container content white_bg shadow product_header hidden-xs hidden-sm">
 	<div class="inner-container clearfix">
 		<div class="step_tracker clearfix">
 			<ol>

@@ -28,7 +28,7 @@
 	}
 ?>
 
-<div class="col-xs-4 js-element">
+<div class="col-md-4 js-element">
 	<div class="box phone object clearfix" data-filter="<?php echo "{$filter} {$filter2}"; ?>">
 		<div class="image left">
 			<a href="<?php echo ( $status !== 'back order' ) ? 'upgrades_device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">

@@ -2158,7 +2158,6 @@ span.footnote {
 .accessory {
   padding: 0 35px;
   margin-bottom: 50px;
-  min-width: 360px;
 }
 
 .accessory .frg-input-field,
@@ -3206,6 +3205,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .content .box.phone .description .mtm .frg-button.current:hover {
     background-color: #491d6b;
   }
+  .row {
+    margin: 0;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3317,6 +3319,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .content .box.phone .description .mtm .frg-button.current:hover {
     background-color: #491d6b;
+  }
+  .row {
+    margin: 0;
   }
 }
 

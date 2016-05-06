@@ -27,7 +27,7 @@
 		$status = "backorder";	
 	}
 ?>
-<div class="<?php echo ( ( $i - 1 ) % 3 === 0 ) ? '' : 'separator '; ?>accessory object col-xs-4" data-filter="audio charging smart_watches">
+<div class="<?php echo ( ( $i - 1 ) % 3 === 0 ) ? '' : 'separator '; ?>accessory object col-md-4" data-filter="audio charging smart_watches">
 	<div class="js-all-required-fields">
 		<div class="h4"><?php echo $name; ?></div>
 		<div class="price"><?php echo "$ {$price}"; ?></div>
