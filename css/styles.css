@@ -3208,6 +3208,23 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .row {
     margin: 0;
   }
+  .accessory {
+    border-bottom: thin solid #d8d8d8;
+    padding: 35px 35px;
+    margin: 0;
+  }
+  .accessory.separator {
+    border-left: none;
+  }
+  .accessory:last-child {
+    border: none;
+  }
+  .pagin {
+    font-size: 80%;
+  }
+  .stickyFooter {
+    font-size: 80%;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3322,6 +3339,21 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .row {
     margin: 0;
+  }
+  .accessory {
+    border-bottom: thin solid #d8d8d8;
+    padding: 35px 35px;
+    margin: 0 auto;
+  }
+  .accessory.separator {
+    border-left: none;
+  }
+  .accessory:last-child {
+    border: none;
+  }
+  .inner-container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

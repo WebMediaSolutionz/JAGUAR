@@ -6,7 +6,7 @@
 		<p class="h1"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
 
 		<div class="clearfix">
-			<nav class="left filter_nav brand">
+			<nav class="left filter_nav brand hidden-xs">
 				<ul class="no_styles">
 					<li class="left"><a class="current block js-filter" data-filter="all" href="#">All</a></li>
 					<li class="left"><a class="block js-filter" data-filter="iphones" data-specific-spelling="iPhone" href="#">iPhones</a></li>
@@ -59,7 +59,7 @@
 				</ul>
 			</nav>
 
-			<div class='frg-select-container color-light right'>
+			<div class='frg-select-container color-light right hidden-xs'>
 				<select class="js-sort-by" autocomplete="off">
 					<option value="brand">Filter by: Brand</option>
 					<option value="price1">Filter by: Price (with term)</option>
@@ -76,7 +76,7 @@
 
 <div class="outer-container content white_bg shadow products">
 	<div class="inner-container clearfix">
-		<div class="clearfix">
+		<div class="clearfix hidden-xs">
 			<h3 class="js-applied_filter">All</h3>
 			<div>
 				<h3 class="no_padding"><span class="left gap_right_small small block vertical_gap_top very_small_gap">Select your service category: </span></h3>

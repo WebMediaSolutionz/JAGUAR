@@ -175,4 +175,23 @@
 	.row {
 		margin: 0;
 	}
+
+	.accessory {
+		border-bottom: thin solid #d8d8d8;
+		padding: 35px 35px;
+		margin: 0 auto;
+
+		&.separator {
+			border-left: none;
+		}
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	.inner-container {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

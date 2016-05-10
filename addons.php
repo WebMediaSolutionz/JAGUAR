@@ -10,7 +10,7 @@
 		<?php include( 'partials/edit_name.php' ); ?>
 
 		<?php if ( !$home_page1 ) { ?>
-			<nav>
+			<nav class="hidden-xs">
 				<ul class="no_styles">
 					<li class="left"><a class="current block js-filter" data-filter="all" href="#">All</a></li>
 					<li class="left"><a class="block js-filter" data-filter="roaming" href="#">Roaming</a></li>

@@ -9,7 +9,7 @@
 
 		<?php include( 'partials/edit_name.php' ); ?>
 
-		<div class="clearfix">
+		<div class="clearfix hidden-xs">
 			<?php if ( !$home_page1 ) { ?>
 				<nav class="left filter_nav device">
 					<ul class="no_styles">

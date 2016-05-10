@@ -16,7 +16,7 @@
 	.header_bg {
 		height: auto;
 
-		.outer-container{
+		.outer-container {
 			padding: 0 9px;
 
 			width: auto !important;
@@ -224,5 +224,27 @@
 
 	.row {
 		margin: 0;
+	}
+
+	.accessory {
+		border-bottom: thin solid #d8d8d8;
+		padding: 35px 35px;
+		margin: 0;
+
+		&.separator {
+			border-left: none;
+		}
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	.pagin {
+		font-size: 80%;
+	}
+
+	.stickyFooter {
+		font-size: 80%;
 	}
 }
