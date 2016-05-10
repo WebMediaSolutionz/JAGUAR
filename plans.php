@@ -8,7 +8,7 @@
 </div>
 
 <div class="outer-container secondary_bg separation white_bg">
-	<div class="inner-container clearfix">
+	<div class="inner-container clearfix hidden-xs">
 		<span>Select a device type:</span>
 		<div class='frg-select-container color-light vertical_gap'>
 			<select class="js-sort-by" autocomplete="off">
@@ -24,7 +24,7 @@
 
 	<div class="inner-container clearfix">
 		<?php if ( !$home_page1 ) { ?>
-			<nav class="left">
+			<nav class="left hidden-xs">
 				<ul class="no_styles">
 					<li class="left"><a class="current block js-filter" data-filter="all" href="#">All</a></li>
 					<li class="left"><a class="block js-filter" data-filter="both" href="#">Voice &amp; data</a></li>

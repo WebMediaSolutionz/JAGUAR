@@ -9,7 +9,7 @@
 		
 		<?php include( 'partials/edit_name.php' ); ?>
 
-		<div class="clearfix">
+		<div class="clearfix hidden-xs">
 			<?php if ( !$home_page1 ) { ?>
 				<nav class="left filter_nav brand">
 					<ul class="no_styles">
@@ -76,7 +76,7 @@
 
 <div class="outer-container content white_bg shadow products">
 	<div class="inner-container clearfix">
-		<div class="clearfix">
+		<div class="clearfix hidden-xs">
 			<h3 class="js-applied_filter">All</h3>
 			<div>
 				<h3 class="no_padding">

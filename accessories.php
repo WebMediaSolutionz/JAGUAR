@@ -9,7 +9,7 @@
 
 <div class="outer-container secondary_bg separation white_bg">
 	<div class="inner-container clearfix">
-		<div class="clearfix">
+		<div class="clearfix hidden-xs">
 			<?php if ( !$home_page1 ) { ?>
 				<nav class="left filter_nav device">
 					<ul class="no_styles">
