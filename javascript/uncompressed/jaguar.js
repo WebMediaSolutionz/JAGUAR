@@ -13,12 +13,12 @@ var JAG = {
 	formEntriesValid: true,
 
 	opts2: {
-		color: '#00FF00', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
+		color: '#4B286D', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
 		top: '5%', // Top position relative to parent in px or % (use 'x%')
 		left: '5%', // Left position relative to parent in px or % (use 'x%')
 		lines: 13, // The number of lines to draw
-		length: 7, // The length of each line
-		width: 4, // The line thickness
+		length: 25, // The length of each line
+		width: 10, // The line thickness
 		radius: 40, // The radius of the inner circle
 		corners: 1, // Corner roundness (0..1)
 		rotate: 0, // The rotation offset
