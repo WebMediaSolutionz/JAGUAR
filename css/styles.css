@@ -3043,6 +3043,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1260px) {
