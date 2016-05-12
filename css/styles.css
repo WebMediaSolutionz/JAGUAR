@@ -3237,6 +3237,14 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .separation.secondary_bg {
     border-top: none;
   }
+  .plans .plan h5,
+  .plans2 .plan h5,
+  .upgrades_plans .plan h5 {
+    height: auto;
+  }
+  .js-element:first-child .box {
+    border-top: none;
+  }
 }
 
 /* SHADES OF PURPLE */

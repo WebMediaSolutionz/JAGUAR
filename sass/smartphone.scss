@@ -263,4 +263,18 @@
 			border-top: none;
 		}
 	}
+
+	.plans, 
+	.plans2, 
+	.upgrades_plans {
+		.plan h5 {
+			height: auto;
+		}
+	}
+
+	.js-element:first-child {
+		.box {
+			border-top: none;
+		}
+	}
 }

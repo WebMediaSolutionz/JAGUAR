@@ -20,6 +20,13 @@
 		<div class="row">
 			<div class="col-xs-7">
 				<h5 class="js-ellipsis" data-maxlen="115"><?php echo $title; ?></h5>
+			</div>
+			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap">
+				<div><h6 class="price"><span>$60</span> per month</h6></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7">
 				<ul class="no_styles">
 					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">300 sharable local minutes</span></li>
 					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">Call display, voice mail, call waiting,</span></li>
@@ -40,9 +47,6 @@
 
 					<a class="js-view_more closed gap_left" href="#"><span class="text">View all</span> <span class="frg-icon icon-plus-circled purple_text"></span></a>
 				</div>
-			</div>
-			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap">
-				<div><h6 class="price"><span>$60</span> per month</h6></div>
 			</div>
 		</div>
 	</div>
