@@ -791,8 +791,21 @@ table {
 	color: $dark_gray;
 }
 
-.frg-checkbox.regular.small .icon {
-	line-height: 15px;
+.frg-checkbox.regular.small {
+	.icon {
+		line-height: 15px;
+	}
+
+	.inner {
+		label {
+			display: block;
+			width: 20px;
+			height: 20px;
+			padding: 0;
+			position: absolute;
+			top: 5px;
+		}
+	}
 }
 
 .page_title {
