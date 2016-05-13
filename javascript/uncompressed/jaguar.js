@@ -1620,7 +1620,7 @@ var JAG = {
 
 		$.mask.definitions['~']='[+-]';
 
-		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
+		$( '.js-phone_input_mask' ).mask( '?(999) 999-9999' );
 		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
 
 		return self;
