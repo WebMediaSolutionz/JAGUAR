@@ -3005,7 +3005,8 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 }
 
 .device__variant-container button span {
-  margin-left: -5px;
+  display: block;
+  margin: -5px 0 0 -5px;
 }
 
 .js-quantity-prompt {
