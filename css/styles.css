@@ -864,6 +864,15 @@ table thead tr th {
   line-height: 15px;
 }
 
+.frg-checkbox.regular.small .inner label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+}
+
 .page_title {
   margin: 5px 0 0 5px;
 }
