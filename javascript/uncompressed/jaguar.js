@@ -1627,17 +1627,12 @@ var JAG = {
 		return self;
 	},
 
-	displayOverlay: function ( el, url ) {
-		var self = this,
-			url = url || "http://www.telus.com/services/cms/page/" + self.lang + "/bc/mobility/devices";
+	displayOverlay: function ( el ) {
+		var self = this;
 
 		self.start();
 
-		$.ajax({
-			url: url,
-		}).done( function ( data ) {
-			self.stop();
-
+		$.ajax().done( function ( data ) {
 			var bottom_section = el.closest( '.bottom_section' ),
 				quantity = bottom_section.find( '.js-quantity' ).val();
 
@@ -1652,6 +1647,8 @@ var JAG = {
 				.removeClass( 'added' )
 				.text( 'Add to cart' );
 			}
+
+			self.stop();
 		});
 
 		return self;
