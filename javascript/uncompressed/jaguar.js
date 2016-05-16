@@ -26,7 +26,7 @@ var JAG = {
 		trail: 80, // Afterglow percentage
 		shadow: false, // Whether to render a shadow
 		hwaccel: false, // Whether to use hardware acceleration
-		className: 'spinner', // The CSS class to assign to the spinner
+		className: 'spinner2', // The CSS class to assign to the spinner
 		zIndex: 2e9 // The z-index (defaults to 2000000000)*/
 	},
 
@@ -1026,24 +1026,25 @@ var JAG = {
 	start: function () {
 		var self = this;
 
-		target2 = $( '.spinner2' ).get( 0 );
-
-		self.spinner2 = new Spinner( self.opts2 ).spin( target2 );
-
-		self.startSpinner();
+		self.target2 = $( '.spinner2' ).get( 0 );
+		self.spinner2 = new Spinner( self.opts2 ).spin( self.target2 );
+		self.showOverlay();
 
 		return self;
 	},
 
 	stop: function () {
 		var self = this;
-		self.stopSpinner();
-		self.spinner2.stop();
+
+		self
+			.hideOverlay()
+			.spinner2
+			.stop();
 
 		return self;
 	},
 
-	startSpinner: function () {
+	showOverlay: function () {
 		var self = this;
 
 		$.LoadingOverlay( "show" );
@@ -1051,7 +1052,7 @@ var JAG = {
 		return self;
 	},
 
-	stopSpinner: function () {
+	hideOverlay: function () {
 		var self = this;
 
 		$.LoadingOverlay( "hide" );
@@ -1626,12 +1627,15 @@ var JAG = {
 		return self;
 	},
 
-	displayOverlay: function ( el ) {
-		var self = this;
+	displayOverlay: function ( el, url ) {
+		var self = this,
+			url = url || "http://www.telus.com/services/cms/page/" + self.lang + "/bc/mobility/devices";
 
 		self.start();
 
-		setTimeout( function () {
+		$.ajax({
+			url: url,
+		}).done( function ( data ) {
 			self.stop();
 
 			var bottom_section = el.closest( '.bottom_section' ),
@@ -1648,7 +1652,7 @@ var JAG = {
 				.removeClass( 'added' )
 				.text( 'Add to cart' );
 			}
-		}, 3000);
+		});
 
 		return self;
 	},
