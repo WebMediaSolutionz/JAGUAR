@@ -129,7 +129,20 @@
 }
 
 .outline {
-	@include outline ( red );
+	@include outline;
+
+	&.black {
+		@include outline ( black );		
+	}
+
+	&.gray {
+		@include outline ( $gray );
+	}
+
+	&.menu_dropdown {
+		border-bottom: thin solid $gray;
+		padding: 1px 9px 5px;
+	}
 }
 
 p.h1,
@@ -751,6 +764,14 @@ table {
 
 .bottom_margin20 {
 	margin-bottom: 20px;
+}
+
+.bottom_margin10 {
+	margin-bottom: 10px;
+}
+
+.bottom_margin5 {
+	margin-bottom: 5px;
 }
 
 .bottom_margin50 {

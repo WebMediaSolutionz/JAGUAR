@@ -136,7 +136,7 @@
 		</div>
 
 		<?php if ( !$home_page1 ) { ?>
-			<div class="outer-container visible-xs-block">
+			<div class="menu_dropdown outer-container outline gray visible-xs-block">
 				<div class="inner-container">
 					<div class="profile">
 						<ul class="menu clearfix">
@@ -181,7 +181,7 @@
 			</div>
 		<?php } ?>
 
-		<div class="outer-container secondary_bg purple_bg">
+		<div class="outer-container secondary_bg purple_bg<?php echo ( $page === 'devices' ) ? ' hidden-xs' : ''; ?>">
 			<div class="inner-container clearfix">
 				<?php if ( $home_page1 || $home_page2 || $home_page3 ) { ?>
 					<h3 class="title no_margin hidden-xs">Welcome to Enterprise Mobility Management</h3>

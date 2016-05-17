@@ -38,7 +38,7 @@
 	}
 }
 
-@mixin outline ( $color ) {
+@mixin outline ( $color: red ) {
 	border: thin solid $color;
 }
 

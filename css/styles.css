@@ -146,6 +146,19 @@
   border: thin solid red;
 }
 
+.outline.black {
+  border: thin solid black;
+}
+
+.outline.gray {
+  border: thin solid #d8d8d8;
+}
+
+.outline.menu_dropdown {
+  border-bottom: thin solid #d8d8d8;
+  padding: 1px 9px 5px;
+}
+
 p.h1,
 p.h2,
 p.h3,
@@ -819,6 +832,14 @@ table thead tr th {
 
 .bottom_margin20 {
   margin-bottom: 20px;
+}
+
+.bottom_margin10 {
+  margin-bottom: 10px;
+}
+
+.bottom_margin5 {
+  margin-bottom: 5px;
 }
 
 .bottom_margin50 {
@@ -3243,8 +3264,8 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .upgrades_plans .plan h5 {
     height: auto;
   }
-  .js-element:first-child .box {
-    border-top: none;
+  .sub_footer {
+    width: auto;
   }
 }
 
