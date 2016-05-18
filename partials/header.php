@@ -44,7 +44,7 @@
 			</div>
 
 			<script>
-				document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+				document.write( '<script src="http://' + ( location.host || 'localhost' ).split( ':' )[ 0 ] + ':35729/livereload.js?snipver=1"></' + 'script>' );
 			</script>
 		<?php } ?>
 		
@@ -191,7 +191,12 @@
 			<div class="inner-container clearfix">
 				<?php if ( $home_page1 || $home_page2 || $home_page3 ) { ?>
 					<h3 class="title no_margin hidden-xs">Welcome to Enterprise Mobility Management</h3>
-					<h3 class="title no_margin visible-xs-block gray_text">Welcome to Project Jaguar</h3>
+
+					<div class="row visible-xs-block">
+						<div class="col-md-4">
+							<h3 class="title no_margin gray_text">Welcome to Project Jaguar</h3>	
+						</div>
+					</div>
 				<?php } ?>
 
 				<?php if ( !$home_page1 ) { ?>

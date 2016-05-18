@@ -1,3 +1,4 @@
+		<?php if ( $page === 'devices' ) { ?>
 		<div class="outer-container content purple_bg">
 			<div class="inner-container">
 				<div class="row sub_footer center clearfix">
@@ -16,6 +17,7 @@
 				</div>
 			</div>
 		</div>
+		<?php } ?>
 
 		<div class="spinner2"></div>
 
