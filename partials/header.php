@@ -105,31 +105,33 @@
 		<div class="header_bg header visible-xs-block">
 			<div class="outer-container">
 				<header class="inner-container clearfix">
-					<div class="left clearfix">
-						<div class="clearfix">
-							<a class="logo block left" href="index.php">
-								<img class="logo" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
-							</a>
+					<div class="row left clearfix">
+						<div class="col-md-4">
+							<div class="clearfix">
+								<a class="logo block left" href="index.php">
+									<img class="logo" src="img/TELUS-logo-white.svg" alt="TELUS / Home" />
+								</a>
+							</div>
+							<nav>
+								<ul class="no_styles clearfix">
+									<li class="left gap_right">
+										<a class="current block" href="index.php?banner=<?php echo $next; ?>">
+											<span>Buy</span>
+										</a>
+									</li>
+									<li class="left gap_right">
+										<a class="block" href="#">
+											<span>Manage</span>
+										</a>
+									</li>
+									<li class="left">
+										<a class="block" href="#">
+											<span>Support</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						<nav>
-							<ul class="no_styles clearfix">
-								<li class="left gap_right">
-									<a class="current block" href="index.php?banner=<?php echo $next; ?>">
-										<span>Buy</span>
-									</a>
-								</li>
-								<li class="left gap_right">
-									<a class="block" href="#">
-										<span>Manage</span>
-									</a>
-								</li>
-								<li class="left">
-									<a class="block" href="#">
-										<span>Support</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
 					</div>
 				</header>
 			</div>
@@ -138,44 +140,48 @@
 		<?php if ( !$home_page1 ) { ?>
 			<div class="menu_dropdown outer-container outline gray visible-xs-block">
 				<div class="inner-container">
-					<div class="profile">
-						<ul class="menu clearfix">
-							<li class="left gap_right">
-								<a class="user_name clearfix" href="#">
-									<div class="left username"><span>Menu</span></div>
-									<div class="left frg-icon icon-arrow-down"></div>
-								</a>
-						        <ul class="no_styles small">
-									<li>
-										<a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>" href="devices.php">
-											Devices
+					<div class="row">
+						<div class="col-md-4">
+							<div class="profile">
+								<ul class="menu clearfix">
+									<li class="left gap_right">
+										<a class="user_name clearfix" href="#">
+											<div class="left username"><span>Menu</span></div>
+											<div class="left frg-icon icon-arrow-down"></div>
 										</a>
-									</li>
-									<li>
-										<a class="<?php echo ( $page === 'plans' || $page === 'plans2' || $page === 'upgrades_plans' ) ? 'current ': ''; ?>" href="plans.php">
-											BYOD plans
-										</a>
-									</li>
-									<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
-									<li>
-										<a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>" href="accessories.php">
-											Accessories
-										</a>
-									</li>
-									<li>
-										<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>" href="upgrades.php">
-											Upgrade
-										</a>
-									</li>
-									<li>
-										<a class="<?php echo ( $page === 'order_management' || $page === 'order_management1' || $page === 'repair' || $page === 'confirm_repair' || $page === 'return' || $page === 'confirm_return' ) ? 'current ': ''; ?>" href="order_management.php">
-											Order Management
-										</a>
+								        <ul class="no_styles small">
+											<li>
+												<a class="<?php echo ( $page === 'devices' ) ? 'current ': ''; ?>" href="devices.php">
+													Devices
+												</a>
+											</li>
+											<li>
+												<a class="<?php echo ( $page === 'plans' || $page === 'plans2' || $page === 'upgrades_plans' ) ? 'current ': ''; ?>" href="plans.php">
+													BYOD plans
+												</a>
+											</li>
+											<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
+											<li>
+												<a class="<?php echo ( $page === 'accessories' ) ? 'current ': ''; ?>" href="accessories.php">
+													Accessories
+												</a>
+											</li>
+											<li>
+												<a class="<?php echo ( $page === 'upgrades' ) ? 'current ': ''; ?>" href="upgrades.php">
+													Upgrade
+												</a>
+											</li>
+											<li>
+												<a class="<?php echo ( $page === 'order_management' || $page === 'order_management1' || $page === 'repair' || $page === 'confirm_repair' || $page === 'return' || $page === 'confirm_return' ) ? 'current ': ''; ?>" href="order_management.php">
+													Order Management
+												</a>
+											</li>
+										</ul>
+
 									</li>
 								</ul>
-
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

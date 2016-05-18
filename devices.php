@@ -76,36 +76,44 @@
 
 <div class="outer-container content purple_bg shadow products_header visible-xs-block">
 	<div class="inner-container clearfix">
-		<p class="h1"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
+		<div class="row">
+			<div class="col-md-4">
+				<p class="h1"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
 
-		<div class='frg-select-container full_width color-light bottom_margin5'>
-			<select>
-				<option>Filter by: Brand</option>
-				<option>Filter by: Brand</option>
-			</select>
-		</div>
+				<div class='frg-select-container full_width color-light bottom_margin5'>
+					<select>
+						<option>Filter by: Brand</option>
+						<option>Filter by: Brand</option>
+					</select>
+				</div>
 
-		<div class='frg-select-container full_width color-light bottom_margin10'>
-			<select>
-				<option>Sort by: Apple</option>
-				<option>Sort by: Apple</option>
-			</select>
+				<div class='frg-select-container full_width color-light bottom_margin10'>
+					<select>
+						<option>Sort by: Apple</option>
+						<option>Sort by: Apple</option>
+					</select>
+				</div>	
+			</div>
 		</div>
 	</div>
 </div>
 
 <div class="outer-container content white_bg shadow products_header visible-xs-block">
 	<div class="inner-container gray_text">
-		<p class="h2">Apple</p>
+		<div class="row">
+			<div class="col-md-4">
+				<p class="h2">Apple</p>
 
-		<span>Select your service category:</span>
+				<span>Select your service category:</span>
 
-		<div class='frg-select-container full_width color-light bottom_margin5'>
-			<select>
-				<option>Voice &amp; data (plans starting at $50.00/month)</option>
-				<option>Voice &amp; data (plans starting at $50.00/month)</option>
-				<option>Voice &amp; data (plans starting at $50.00/month)</option>
-			</select>
+				<div class='frg-select-container full_width color-light bottom_margin5'>
+					<select>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+					</select>
+				</div>	
+			</div>
 		</div>
 	</div>
 </div>
