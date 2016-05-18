@@ -13,16 +13,18 @@
 
 <div class="outer-container banner content white_bg up_and_down visible-xs-block">
 	<div class="inner-container main_banner clearfix">
-		<div>
-			<h3>Worry-free roaming</h3>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Worry-free roaming</h3>
 
-			<p class="small">Automatically add a travel passport whenever an employee lands in a different country.</p>
+				<p class="small">Automatically add a travel passport whenever an employee lands in a different country.</p>
 
-			<div class="fish_bowl">
-				<img src="img/Goldfish_jumping.jpg" alt="fish bowls">
+				<div class="fish_bowl">
+					<img src="img/Goldfish_jumping.jpg" alt="fish bowls">
+				</div>
+
+				<a href='#' class='frg-button full_width color-green'>Add a passport</a>
 			</div>
-
-			<a href='#' class='frg-button color-green'>Add a passport</a>
 		</div>
 	</div>
 </div>

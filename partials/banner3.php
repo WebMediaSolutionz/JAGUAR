@@ -13,16 +13,18 @@
 
 <div class="outer-container banner content white_bg shadow visible-xs-block">
 	<div class="inner-container main_banner clearfix">
-		<div>
-			<h3>Study your usage trends</h3>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Study your usage trends</h3>
 
-			<p class="small">Crunch the numbers to confirm your employees have the right plan.</p>
+				<p class="small">Crunch the numbers to confirm your employees have the right plan.</p>
 
-			<div class="macbook">
-				<img src="img/Laptop_02.png" alt="macbook">
+				<div class="macbook">
+					<img src="img/Laptop_02.png" alt="macbook">
+				</div>
+
+				<a href='#' class='frg-button full_width color-green'>View analytics</a>
 			</div>
-
-			<a href='#' class='frg-button color-green'>View analytics</a>
 		</div>
 	</div>
 </div>

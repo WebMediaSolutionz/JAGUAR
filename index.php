@@ -7,90 +7,97 @@
 	<div class="inner-container">
 		<h2 class="title hidden-xs">Track, adjust and manage your business mobility needs</h2>
 
-		<div class="box col-md-4">
-			<div class="top">
-				<h3 class="buy">
-					<a href="index.php?banner=banner2"><span class="support-footer__icon frg-icon icon-user-profile-inverted"></span> Buy</a>
-				</h3>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="box">
+					<div class="top">
+						<h3 class="buy">
+							<a href="index.php?banner=banner2"><span class="support-footer__icon frg-icon icon-user-profile-inverted"></span> Buy</a>
+						</h3>
 
-				<h6 class="description">Get the right devices, SIMs and accessories for your business.</h6>
+						<h6 class="description">Get the right devices, SIMs and accessories for your business.</h6>
+					</div>
+					<ul class="no_styles">
+						<li>
+							<a class="clearfix" href="devices.php">
+								<div class="left ellipsis">Buy devices</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="plans.php">
+								<div class="left ellipsis">Activate BYOD plans</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="upgrade.php">
+								<div class="left ellipsis">Upgrade a subscriber</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="accessories.php">
+								<div class="left ellipsis">Buy accessories</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<ul class="no_styles">
-				<li>
-					<a class="clearfix" href="devices.php">
-						<div class="left ellipsis">Buy devices</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="plans.php">
-						<div class="left ellipsis">Activate BYOD plans</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="upgrade.php">
-						<div class="left ellipsis">Upgrade a subscriber</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="accessories.php">
-						<div class="left ellipsis">Buy accessories</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="box col-md-4">
-			<div class="top">
-				<h3 class="manage">
-					<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
-				</h3>
+			<div class="col-md-4">
+				<div class="box">
+					<div class="top">
+						<h3 class="manage">
+							<a href="http://managebusiness.telus.com/ui/sso/oauth/index.jsp"><span class="support-footer__icon frg-icon icon-smartphone-inverted"></span> Manage</a>
+						</h3>
 
-				<h6 class="description">Gain real-time visibility and control over your mobile workforce.</h6>
+						<h6 class="description">Gain real-time visibility and control over your mobile workforce.</h6>
+					</div>
+					<ul class="no_styles">
+						<li>
+							<a class="clearfix" href="#">
+								<div class="left ellipsis">View usage &amp; manage account</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<div class="left ellipsis">Run custom invoice reports</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="#">
+								<div class="left ellipsis">Set up organizational hierarchy</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<ul class="no_styles">
-				<li>
-					<a class="clearfix" href="#">
-						<div class="left ellipsis">View usage &amp; manage account</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="#">
-						<div class="left ellipsis">Run custom invoice reports</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="#">
-						<div class="left ellipsis">Set up organizational hierarchy</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="box col-md-4">
-			<div class="top">
-				<h3 class="order">
-					<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>
-				</h3>
+			<div class="col-md-4">
+				<div class="box">
+					<div class="top">
+						<h3 class="order">
+							<a href="order_management.php"><span class="support-footer__icon frg-icon icon-cart-inverted"></span> Order management</a>
+						</h3>
 
-				<h6 class="description">View status, edit and approve recent and pending orders.</h6>
+						<h6 class="description">View status, edit and approve recent and pending orders.</h6>
+					</div>
+					<ul class="no_styles">
+						<li>
+							<a class="clearfix" href="order_management.php">
+								<div class="left ellipsis">View recent orders</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="order_management.php">
+								<div class="left ellipsis">Review pending orders</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+						<li>
+							<a class="clearfix" href="cart_review.php">
+								<div class="left ellipsis">View items in cart</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<ul class="no_styles">
-				<li>
-					<a class="clearfix" href="order_management.php">
-						<div class="left ellipsis">View recent orders</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="order_management.php">
-						<div class="left ellipsis">Review pending orders</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-				<li>
-					<a class="clearfix" href="cart_review.php">
-						<div class="left ellipsis">View items in cart</div> <span class="support-footer__icon frg-icon icon-arrow-right right"></span>
-					</a>
-				</li>
-			</ul>
 		</div>
-		<div class="clear"></div>
 	</div>
 </div>
 
