@@ -31,3 +31,32 @@
 		</div>
 	</div>
 </div>
+
+<div class="outer-container content white_bg shadow product_header visible-xs-block visible-sm-block">
+	<div class="inner-container clearfix">
+		<div class="step_tracker clearfix">
+			<ol>
+				<li class="done">
+					<span class="frg-icon icon-checkmark-inverted"></span>
+					<span class="frg-icon icon-circle-solid hide"></span>
+				</li>
+				<li class="done">
+					<span class="frg-icon icon-checkmark-inverted"></span>
+					<span class="frg-icon icon-circle-solid hide"></span>
+				</li>
+				<li class="current">
+					<span class="frg-icon icon-checkmark-inverted"></span>
+					<span class="frg-icon icon-circle-solid hide"></span>
+				</li>
+				<li class="not_done">
+					<span class="frg-icon icon-checkmark-inverted"></span>
+					<span class="frg-icon icon-circle-solid hide"></span>
+				</li>
+				<li class="not_done">
+					<span class="frg-icon icon-checkmark-inverted"></span>
+					<span class="frg-icon icon-circle-solid hide"></span>
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>

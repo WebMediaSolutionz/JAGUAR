@@ -21,7 +21,7 @@
 			<div class="col-xs-7">
 				<h5 class="js-ellipsis" data-maxlen="115"><?php echo $title; ?></h5>
 			</div>
-			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap">
+			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap hidden-xs">
 				<div><h6 class="price"><span>$60</span> per month</h6></div>
 			</div>
 		</div>
@@ -50,6 +50,11 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="vertical_gap_top small_gap visible-xs-block">
+		<div><h6 class="price"><span>$60</span> per month</h6></div>
+	</div>
+
 	<a class="frg-button select full_width" href="#">Select</a>
 	<input type="hidden" name="price_per_month" value="60" />
 </div>
