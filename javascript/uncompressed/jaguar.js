@@ -300,8 +300,8 @@ var JAG = {
 			self.setupDueNow();
 		});
 
-		$( '.frg-checkbox' ).click( function () {
-			var clicked = $( this ),
+		$( '.frg-checkbox input[type=checkbox]' ).click( function () {
+			var clicked = $( this ).closest( '.frg-checkbox' ),
 				icon = clicked.find( '.icon .frg-icon' );
 
 			if ( icon.hasClass( 'icon-checkmark' ) ) {
