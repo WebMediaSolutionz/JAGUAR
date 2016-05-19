@@ -1753,7 +1753,7 @@ h3.buy span, h3.manage span, h3.order span {
   padding-top: 0;
 }
 
-.sub_footer > div:first-child {
+.sub_footer > div > div:first-child {
   padding-right: 45px;
 }
 
@@ -3396,6 +3396,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .inner-container {
     margin-left: auto;
     margin-right: auto;
+  }
+  .sub_footer {
+    width: 400px;
   }
 }
 

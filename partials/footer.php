@@ -1,17 +1,19 @@
-		<div class="outer-container content purple_bg visible-lg-block">
+		<div class="outer-container content purple_bg<?php echo ( $page !== 'index' ) ? '' : ' visible-lg-block'; ?>">
 			<div class="inner-container">
-				<div class="row sub_footer center clearfix">
-					<div class="col-xs-6 center_text left">
-						<a class="support block" target="_blank" href="https://www.telus.com/support">
-							<span class="support-footer__icon frg-icon icon-lifesaver"></span>
-						</a>
-						<a href="#">Get support <span class="hidden-xs">online</span></a>
-					</div>
-					<div class="col-xs-6 separator center_text offline left">
-						<div class="chat agentonline block">
-							<span class="support-footer__icon frg-icon icon-chat-dots"></span>
+				<div class="sub_footer center clearfix">
+					<div class="row">
+						<div class="col-xs-6 center_text left">
+							<a class="support block" target="_blank" href="https://www.telus.com/support">
+								<span class="support-footer__icon frg-icon icon-lifesaver"></span>
+							</a>
+							<a href="#">Get support <span class="visible-md-block">online</span></a>
 						</div>
-						<div>Chat offline</div>
+						<div class="col-xs-6 separator center_text offline left">
+							<div class="chat agentonline block">
+								<span class="support-footer__icon frg-icon icon-chat-dots"></span>
+							</div>
+							<div>Chat offline</div>
+						</div>
 					</div>
 				</div>
 			</div>
