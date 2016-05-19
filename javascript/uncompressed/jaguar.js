@@ -13,12 +13,12 @@ var JAG = {
 	formEntriesValid: true,
 
 	opts2: {
-		color: '#4B286D', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
+		color: '#00FF00', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
 		top: '5%', // Top position relative to parent in px or % (use 'x%')
 		left: '5%', // Left position relative to parent in px or % (use 'x%')
 		lines: 13, // The number of lines to draw
-		length: 25, // The length of each line
-		width: 10, // The line thickness
+		length: 7, // The length of each line
+		width: 4, // The line thickness
 		radius: 40, // The radius of the inner circle
 		corners: 1, // Corner roundness (0..1)
 		rotate: 0, // The rotation offset
@@ -26,7 +26,7 @@ var JAG = {
 		trail: 80, // Afterglow percentage
 		shadow: false, // Whether to render a shadow
 		hwaccel: false, // Whether to use hardware acceleration
-		className: 'spinner2', // The CSS class to assign to the spinner
+		className: 'spinner', // The CSS class to assign to the spinner
 		zIndex: 2e9 // The z-index (defaults to 2000000000)*/
 	},
 
@@ -1020,31 +1020,38 @@ var JAG = {
 			self.displayOverlay( $( this ) );
 		});
 
+		$( '.js-display-spinner' ).click( function () {
+              self.start();
+        });
+
+        $( '.js-display-spinner' ).click( function () {
+              self.start();
+        });
+
 		return self;
 	},
 
 	start: function () {
 		var self = this;
 
-		self.target2 = $( '.spinner2' ).get( 0 );
-		self.spinner2 = new Spinner( self.opts2 ).spin( self.target2 );
-		self.showOverlay();
+		target2 = $( '.spinner2' ).get( 0 );
+
+		self.spinner2 = new Spinner( self.opts2 ).spin( target2 );
+
+		self.startSpinner();
 
 		return self;
 	},
 
 	stop: function () {
 		var self = this;
-
-		self
-			.hideOverlay()
-			.spinner2
-			.stop();
+		self.stopSpinner();
+		self.spinner2.stop();
 
 		return self;
 	},
 
-	showOverlay: function () {
+	startSpinner: function () {
 		var self = this;
 
 		$.LoadingOverlay( "show" );
@@ -1052,7 +1059,7 @@ var JAG = {
 		return self;
 	},
 
-	hideOverlay: function () {
+	stopSpinner: function () {
 		var self = this;
 
 		$.LoadingOverlay( "hide" );
@@ -1285,7 +1292,7 @@ var JAG = {
 				second_filter_text = ( second_filter.length === 1 ) ? second_filter.attr( 'data-filter' ) : null,
 				items = $( '.object' );
 
-			if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
+			if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 				items.closest( '.js-element' ).show();
 			} else {
 				items.show();
@@ -1298,26 +1305,26 @@ var JAG = {
 
 				if ( filter_text === 'all' ) {
 					if ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) !== -1 ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					} else if( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).hide();
 						} else {
 							item.hide();
 						}
 					} else if ( second_filter_text === null ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					}
 				} else if ( item.attr( 'data-filter' ).indexOf( filter_text ) === -1 || ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) ) {
-					if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
+					if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
 						item.closest( '.js-element' ).hide();
 					} else {
 						item.hide();
@@ -1329,8 +1336,6 @@ var JAG = {
 				self.rearrangeSeparators();
 			}
 		});
-
-		return self;
 	},
 
 	getFile: function (){
@@ -1373,7 +1378,7 @@ var JAG = {
 
         // sort the array by the specified column number (col) and order (asc)
         arr.sort( function ( a, b ) {
-            return ( a[ field ].toLowerCase() == b[ field ].toLowerCase() ) ? 0 : ( ( a[ field ].toLowerCase() > b[ field ].toLowerCase() ) ? direction : -1 * direction );
+            return ( a[ field ] == b[ field ] ) ? 0 : ( ( a[ field ] > b[ field ] ) ? direction : -1 * direction );
         });
 
         // replace existing rows with new rows created from the sorted array
@@ -1621,7 +1626,7 @@ var JAG = {
 
 		$.mask.definitions['~']='[+-]';
 
-		$( '.js-phone_input_mask' ).mask( '?(999) 999-9999' );
+		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
 		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
 
 		return self;
@@ -1632,7 +1637,9 @@ var JAG = {
 
 		self.start();
 
-		$.ajax().done( function ( data ) {
+		setTimeout( function () {
+			self.stop();
+
 			var bottom_section = el.closest( '.bottom_section' ),
 				quantity = bottom_section.find( '.js-quantity' ).val();
 
@@ -1647,9 +1654,7 @@ var JAG = {
 				.removeClass( 'added' )
 				.text( 'Add to cart' );
 			}
-
-			self.stop();
-		});
+		}, 3000);
 
 		return self;
 	},
