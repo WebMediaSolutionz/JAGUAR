@@ -1020,6 +1020,10 @@ var JAG = {
 			self.displayOverlay( $( this ) );
 		});
 
+		$( '.js-display-spinner' ).click( function () {
+              self.start();
+        });
+
 		return self;
 	},
 
