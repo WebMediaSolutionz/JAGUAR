@@ -1,5 +1,5 @@
 <?php if ( $page === 'cart_review' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-3 col-sm-4 amounts bold right_align clearfix">
 				<div class="right separator">
@@ -20,7 +20,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'upgrades_subscriber' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-4 no_padding">
 				<div class="left bold clearfix">
@@ -45,7 +45,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'confirm_shipping' || $page === 'order_summary' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right gap_right">
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'payment_options' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right gap_right">
@@ -71,7 +71,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'subscriber' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">
@@ -92,7 +92,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'repair' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-xs-offset-3 col-xs-3 amounts bold clearfix">
 				<div class="right">
@@ -109,7 +109,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'order_details' || $page === 'order_details1' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-xs-offset-6 col-xs-3 right_align">
 				<a class="frg-button color-green full_lenght" href="repair.php"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
@@ -120,7 +120,7 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'order_management1' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-xs-offset-6 col-xs-3 right_align">
 				<a class="frg-button color-green full_lenght" href="#">Repair item(s)</a>
@@ -133,23 +133,35 @@
 <?php } else { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
-			<div class="col-xs-10 col-sm-offset-3 col-sm-6 amounts bold right_align clearfix">
-				<div class="right separator">
-					<p>Due now</p>
-					<p class="h4 now">$25,500.00</p>
+			<div class="row hidden-xs">
+				<div class="col-xs-10 col-sm-offset-3 col-sm-6 amounts bold right_align clearfix">
+					<div class="right separator">
+						<p>Due now</p>
+						<p class="h4 now">$25,500.00</p>
+					</div>
+					<div class="right gap_right">
+						<p>Due monthly</p>
+						<p class="h4 monthly">$0.00</p>
+					</div>
+					<div class="right gap_right hidden-xs">
+						<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+					</div>
 				</div>
-				<div class="right gap_right">
-					<p>Due monthly</p>
-					<p class="h4 monthly">$0.00</p>
-				</div>
-				<div class="right gap_right hidden-xs">
-					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+				<div class="col-xs-2 col-sm-3 no_padding right_align">
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates hidden-xs" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates visible-xs-block" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Go">
 				</div>
 			</div>
-			<div class="col-xs-2 col-sm-3 no_padding right_align">
-				<input class="frg-button color-green full_lenght js-incomplete js-duplicates hidden-xs" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
-
-				<input class="frg-button color-green full_lenght js-incomplete js-duplicates visible-xs-block" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Go">
+			<div class="row visible-xs-block">
+				<div class="col-xs-6">
+					<div class="right gap_right">
+						<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+				</div>
 			</div>
 		</div>
 	</div>

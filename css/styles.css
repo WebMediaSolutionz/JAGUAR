@@ -3253,6 +3253,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .stickyFooter {
     font-size: 80%;
   }
+  .stickyFooter .frg-button {
+    font-size: 100%;
+  }
   .separation {
     border-bottom: none;
   }
