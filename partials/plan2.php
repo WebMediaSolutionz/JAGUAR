@@ -52,9 +52,20 @@
 	</div>
 
 	<div class="vertical_gap_top small_gap visible-xs-block">
-		<div><h6 class="price"><span>$60</span> per month</h6></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<h6 class="price"><span>$60</span> per month</h6>
+			</div>
+		</div>
 	</div>
 
-	<a class="frg-button select full_width" href="#">Select</a>
+	<div class="vertical_gap_top small_gap visible-xs-block">
+		<div class="row">
+			<div class="col-xs-12">
+				<a class="frg-button select full_width" href="#">Select</a>
+			</div>
+		</div>
+	</div>
+	
 	<input type="hidden" name="price_per_month" value="60" />
 </div>

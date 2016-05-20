@@ -3250,8 +3250,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .pagin {
     font-size: 80%;
   }
-  .stickyFooter {
+  .stickyFooter .previous {
     font-size: 80%;
+    margin-top: 10px;
   }
   .stickyFooter .frg-button {
     font-size: 100%;
@@ -3266,6 +3267,27 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .plans2 .plan h5,
   .upgrades_plans .plan h5 {
     height: auto;
+    font-size: 120%;
+  }
+  .plans .plan h6 span,
+  .plans2 .plan h6 span,
+  .upgrades_plans .plan h6 span {
+    font-size: 30px;
+  }
+  .plans .plan .select,
+  .plans2 .plan .select,
+  .upgrades_plans .plan .select {
+    margin-bottom: 10px;
+  }
+  .plans .plan .select.frg-button:hover,
+  .plans2 .plan .select.frg-button:hover,
+  .upgrades_plans .plan .select.frg-button:hover {
+    color: #8c68a6;
+  }
+  .plans .plan > div.vertical_gap.big_gap,
+  .plans2 .plan > div.vertical_gap.big_gap,
+  .upgrades_plans .plan > div.vertical_gap.big_gap {
+    margin-bottom: 15px;
   }
   .sub_footer {
     width: auto;

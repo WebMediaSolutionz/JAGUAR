@@ -154,12 +154,12 @@
 				</div>
 			</div>
 			<div class="row visible-xs-block">
-				<div class="col-xs-6">
+				<div class="col-xs-5">
 					<div class="right gap_right">
 						<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-7">
 					<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
 				</div>
 			</div>

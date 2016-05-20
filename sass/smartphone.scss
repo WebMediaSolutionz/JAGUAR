@@ -253,7 +253,10 @@
 	}
 
 	.stickyFooter {
-		font-size: 80%;
+		.previous {
+			font-size: 80%;
+			margin-top: 10px;
+		}
 
 		.frg-button {
 			font-size: 100%;
@@ -271,8 +274,27 @@
 	.plans, 
 	.plans2, 
 	.upgrades_plans {
-		.plan h5 {
-			height: auto;
+		.plan {
+			h5 {
+				height: auto;
+				font-size: 120%;
+			}
+
+			h6 span {
+				font-size: 30px;
+			}
+
+			.select {
+				margin-bottom: 10px;
+
+				&.frg-button:hover {
+					color: $purple4;
+				}
+			}
+
+			& > div.vertical_gap.big_gap {
+				margin-bottom: 15px;
+			}
 		}
 	}
 

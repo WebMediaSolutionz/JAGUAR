@@ -7,9 +7,13 @@
 
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container clearfix">
-		<h3 class="title">Select a plan for:</h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="title gray_text">Select a plan for:</h3>
 		
-		<?php include( 'partials/edit_name.php' ); ?>
+				<?php include( 'partials/edit_name.php' ); ?>
+			</div>	
+		</div>
 	</div>
 </div>
 <div class="visible-xs-block bottom_margin20"></div>
