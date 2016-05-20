@@ -21,7 +21,7 @@
 			<div class="col-xs-7">
 				<h5 class="js-ellipsis" data-maxlen="115"><?php echo $title; ?></h5>
 			</div>
-			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap">
+			<div class="col-xs-5 right_align clearfix vertical_gap_top small_gap hidden-xs">
 				<div class="left_align">
 					<h6 class="price"><span>$50</span> per month</h6>
 				</div>
@@ -51,6 +51,15 @@
 				</div>
 			</div>
 		</div>
+		<div class="row visible-xs-block">
+			<div class="col-xs-12">
+				<div class="right_align clearfix vertical_gap_top small_gap">
+					<div class="left_align">
+						<h6 class="price"><span>$50</span> per month</h6>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="js-all-required-fields disable">
 		<div class="row gray_text vertical_gap">
@@ -64,6 +73,18 @@
 				<div class='frg-select-container color-light full_width'>
 					<select class="js-required" autocomplete="off">
 						<option selected>Select</option>
+						<option>Account 1</option>
+						<option>Account 2</option>
+						<option>Account 3</option>
+					</select>
+				</div>
+				<div class="visible-xs-block vertical_gap_top small_gap"></div>
+			</div>
+			<div class="col-sm-6 visible-xs-block">
+				<p class="h4">SIM type</p>
+				<div class='frg-select-container color-light full_width'>
+					<select class="js-required" autocomplete="off">
+						<option selected>Please select</option>
 						<option>Account 1</option>
 						<option>Account 2</option>
 						<option>Account 3</option>

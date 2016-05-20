@@ -1,11 +1,31 @@
 <?php include_once( 'config.php' ); ?>
 <?php include_once( 'partials/header.php' ); ?>
 
-<div class="outer-container secondary_bg top_bottom_padding white_bg">
+<div class="outer-container secondary_bg top_bottom_padding white_bg hidden-xs">
 	<div class="inner-container clearfix">
 		<p class="h1"><span class="frg-icon icon-paper-inverted gray_text"></span> Activate BYOD plan</p>
 	</div>
 </div>
+
+<div class="outer-container secondary_bg top_bottom_padding purple_bg visible-xs-block">
+	<div class="inner-container clearfix">
+		<div class="row">
+			<div class="col-xs-12 bottom_padding20">
+				<p class="h1"><span class="frg-icon icon-paper-inverted gray_text"></span> BYOD plan</p>
+
+				<div class='frg-select-container color-light full_width'>
+					<select class="js-required" autocomplete="off">
+						<option selected>Device type: Smartphone</option>
+						<option>Account 1</option>
+						<option>Account 2</option>
+						<option>Account 3</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+<div class="visible-xs-block bottom_margin20"></div>
 
 <div class="outer-container secondary_bg separation white_bg">
 	<div class="inner-container clearfix hidden-xs">
