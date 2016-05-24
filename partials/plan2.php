@@ -16,7 +16,7 @@
 ?>
 
 <div data-filter="<?php echo $service_category; ?>" class="plan clearfix frg-drop-shadow">
-	<div class="vertical_gap big_gap clearfix">
+	<div class="clearfix">
 		<div class="row">
 			<div class="col-xs-7">
 				<h5 class="js-ellipsis" data-maxlen="115"><?php echo $title; ?></h5>
@@ -25,7 +25,7 @@
 				<div><h6 class="price"><span>$60</span> per month</h6></div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row bottom_margin20">
 			<div class="col-sm-7">
 				<ul class="no_styles">
 					<li><span class="frg-icon icon-checkmark"></span> <span class="js-ellipsis" data-maxlen="60">300 sharable local minutes</span></li>
@@ -47,6 +47,12 @@
 
 					<a class="js-view_more closed gap_left" href="#"><span class="text">View all</span> <span class="frg-icon icon-plus-circled purple_text"></span></a>
 				</div>
+			</div>
+		</div>
+
+		<div class="row hidden-xs">
+			<div class="col-sm-12">
+				<a class="frg-button select full_width" href="#">Select</a>
 			</div>
 		</div>
 	</div>

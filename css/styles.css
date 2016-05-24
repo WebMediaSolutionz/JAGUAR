@@ -831,7 +831,7 @@ table thead tr th {
 }
 
 .bottom_margin20 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .bottom_margin10 {
@@ -2116,6 +2116,11 @@ span.footnote {
   border: thin solid #49166d;
 }
 
+.plan a.frg-button,
+.service a.frg-button {
+  color: #491d6b;
+}
+
 .plans .plan,
 .plans2 .plan,
 .upgrades_plans .plan {
@@ -3282,7 +3287,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .plans .plan .select.frg-button:hover,
   .plans2 .plan .select.frg-button:hover,
   .upgrades_plans .plan .select.frg-button:hover {
-    color: #8c68a6;
+    color: #491d6b;
   }
   .plans .plan > div.vertical_gap.big_gap,
   .plans2 .plan > div.vertical_gap.big_gap,

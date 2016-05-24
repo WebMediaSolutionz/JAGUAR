@@ -1119,6 +1119,12 @@ span.footnote {
 	&.highlight {
 		border: thin solid $purple2;
 	}
+
+	a {
+		&.frg-button {
+			color: $purple;
+		}
+	}
 }
 
 .plans,
