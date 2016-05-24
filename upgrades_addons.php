@@ -5,44 +5,49 @@
 
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container">
-		<h3 class="title">Select add-ons for:</h3>
-		
-		<?php include( 'partials/edit_name.php' ); ?>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="title">Select add-ons for:</h3>
+				
+				<?php include( 'partials/edit_name.php' ); ?>
 
-		<?php if ( !$home_page1 ) { ?>
-			<nav class="hidden-xs">
-				<ul class="no_styles">
-					<li class="left"><a class="current block js-filter" data-filter="all" href="#">All</a></li>
-					<li class="left"><a class="block js-filter" data-filter="roaming" href="#">Roaming</a></li>
-					<li class="left"><a class="block js-filter" data-filter="data" href="#">Data</a></li>
-					<li class="left"><a class="block js-filter" data-filter="services" href="#">Services</a></li>
-					<li class="left"><a class="block js-filter" data-filter="other" href="#">Other</a></li>
-				</ul>
-			</nav>
-		<?php } ?>
-		<?php if ( $page === 'device' ) { ?>
-			<div class="shopping_cart clearfix right">
-				<div class="col-xs-2">
-					<div class="item_count"><span>5</span></div>
-					<span class="frg-icon icon-cart"></span>
+				<div class='frg-select-container full_width color-light visible-xs-block'>
+					<select>
+						<option>Sort by: All</option>
+						<option>Sort by: Roaming</option>
+						<option>Sort by: Data</option>
+						<option>Sort by: Services</option>
+						<option>Sort by: Other</option>
+					</select>
 				</div>
-				<div class="col-xs-10 status">
-					<div>Cart empty</div>
-					<div>Last saved: 2:38 PM EST</div>
-				</div>
+
+				<?php if ( !$home_page1 ) { ?>
+					<nav class="hidden-xs">
+						<ul class="no_styles">
+							<li class="left"><a class="current block js-filter" data-filter="all" href="#">All</a></li>
+							<li class="left"><a class="block js-filter" data-filter="roaming" href="#">Roaming</a></li>
+							<li class="left"><a class="block js-filter" data-filter="data" href="#">Data</a></li>
+							<li class="left"><a class="block js-filter" data-filter="services" href="#">Services</a></li>
+							<li class="left"><a class="block js-filter" data-filter="other" href="#">Other</a></li>
+						</ul>
+					</nav>
+				<?php } ?>				
 			</div>
-		<?php } ?>
-		<div class="clear"></div>
+		</div>
 	</div>
 </div>
 
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container row clearfix">
-		<?php
-			for ( $i = 0; $i < 16; $i++ ) { 
-				include( 'partials/addon.php' );
-			}
-		?>
+		<div class="row">
+			<div class="col-xs-12">
+				<?php
+					for ( $i = 0; $i < 16; $i++ ) { 
+						include( 'partials/addon.php' );
+					}
+				?>				
+			</div>
+		</div>
 	</div>
 </div>
 
