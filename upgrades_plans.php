@@ -12,8 +12,9 @@
 		<?php include( 'partials/edit_name.php' ); ?>
 	</div>
 </div>
+<div class="visible-xs-block bottom_margin20"></div>
 
-<div class="outer-container content white_bg top_bottom_small_padding">
+<div class="outer-container content white_bg top_bottom_small_padding hidden-xs">
 	<div class="inner-container clearfix">
 		<span class="gray_text small">Minimum monthly service commitment: $20/subscriber</span>
 	</div>
