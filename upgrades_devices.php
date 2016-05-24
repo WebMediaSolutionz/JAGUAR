@@ -5,10 +5,52 @@
 
 <div class="outer-container secondary_bg purple_bg">
 	<div class="inner-container clearfix">
-		<h3 class="title">Select a device for: </h3>
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="title">Select a device for: </h3>
 		
-		<?php include( 'partials/edit_name.php' ); ?>
+				<?php include( 'partials/edit_name.php' ); ?>
 
+				<div class='frg-select-container full_width color-light bottom_margin5'>
+					<select>
+						<option>Filter by: Brand</option>
+						<option>Filter by: Brand</option>
+					</select>
+				</div>
+
+				<div class='frg-select-container full_width color-light bottom_margin10'>
+					<select>
+						<option>Sort by: Apple</option>
+						<option>Sort by: Apple</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="outer-container content white_bg shadow visible-xs-block">
+	<div class="inner-container gray_text">
+		<div class="row">
+			<div class="col-md-4">
+				<p class="h2">Apple</p>
+
+				<span>Select your service category:</span>
+
+				<div class='frg-select-container full_width color-light bottom_margin5'>
+					<select>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+						<option>Voice &amp; data (plans starting at $50.00/month)</option>
+					</select>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="outer-container secondary_bg white_bg hidden-xs">
+	<div class="inner-container clearfix">
 		<div class="clearfix hidden-xs">
 			<?php if ( !$home_page1 ) { ?>
 				<nav class="left filter_nav brand">
