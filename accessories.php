@@ -3,13 +3,17 @@
 
 <div class="outer-container secondary_bg top_bottom_padding white_bg">
 	<div class="inner-container clearfix">
-		<p class="h1"><span class="frg-icon icon-accessories gray_text"></span> Accessories</p>
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="h1"><span class="frg-icon icon-accessories gray_text"></span> Accessories</p>	
+			</div>
+		</div>
 	</div>
 </div>
 
-<div class="outer-container secondary_bg separation white_bg">
+<div class="outer-container secondary_bg separation white_bg hidden-xs">
 	<div class="inner-container clearfix">
-		<div class="clearfix hidden-xs">
+		<div class="clearfix">
 			<?php if ( !$home_page1 ) { ?>
 				<nav class="left filter_nav device">
 					<ul class="no_styles">
@@ -35,17 +39,21 @@
 </div>
 
 <div class="outer-container content white_bg top_bottom_padding">
-	<div class="inner-container row clearfix">
-		<div class="page current clearfix">
-			<?php 
-				for ( $i = 1; $i < 21; $i++ ) {
-					include( 'partials/accessory.php' );
+	<div class="inner-container clearfix">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page current clearfix">
+					<?php 
+						for ( $i = 1; $i < 21; $i++ ) {
+							include( 'partials/accessory.php' );
 
-					if ( $i % 9 === 0 ) {
-						echo "</div><div class='page hide clearfix'>";
-					}	
-				} 
-			?>
+							if ( $i % 9 === 0 ) {
+								echo "</div><div class='page hide clearfix'>";
+							}	
+						} 
+					?>
+				</div>	
+			</div>
 		</div>
 	</div>
 

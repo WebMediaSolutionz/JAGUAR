@@ -244,7 +244,7 @@
 
 	.accessory {
 		border-bottom: thin solid #d8d8d8;
-		padding: 35px 35px;
+		padding: 25px 0;
 		margin: 0;
 
 		&.separator {
@@ -253,6 +253,16 @@
 
 		&:last-child {
 			border: none;
+		}
+
+		.bottom_section {
+			width: auto;
+			margin-top: 40px !important;
+		}
+
+		img {
+			width: auto;
+			height: auto;
 		}
 	}
 

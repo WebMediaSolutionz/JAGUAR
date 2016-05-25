@@ -3248,7 +3248,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .accessory {
     border-bottom: thin solid #d8d8d8;
-    padding: 35px 35px;
+    padding: 25px 0;
     margin: 0;
   }
   .accessory.separator {
@@ -3256,6 +3256,14 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .accessory:last-child {
     border: none;
+  }
+  .accessory .bottom_section {
+    width: auto;
+    margin-top: 40px !important;
+  }
+  .accessory img {
+    width: auto;
+    height: auto;
   }
   .pagin {
     font-size: 80%;
