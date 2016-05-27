@@ -310,6 +310,10 @@ h3 {
 
 	.section_title {
 		border-bottom: 3px solid $secondary_bg;
+
+		&.not_underlined {
+			border-bottom: none;
+		}
 	}
 
 	.footnote {
@@ -561,27 +565,28 @@ h3 {
 				width: 140px;
 			}
 
+			input,
+			select {
+				/*border: thin solid #CCC;*/
+				width: 139px;
+				height: 30px;
+			}
+
+			.status {
+				font-size: inherit;
+				margin: 2px 0;
+
+				&.positive {
+					color: #47a526;
+					margin-top: -1px;
+				}
+
+				&.negative {
+					color: #d3142e;
+				}
+			}
+
 			table {
-				input,
-				select {
-					/*border: thin solid #CCC;*/
-					width: 139px;
-					height: 30px;
-				}
-
-				.status {
-					font-size: inherit;
-					margin: 2px 0;
-
-					&.positive {
-						color: #47a526;
-					}
-
-					&.negative {
-						color: #d3142e;
-					}
-				}
-
 				&.table1 tr td {
 					width: 160px;
 				}
@@ -1728,7 +1733,7 @@ table.wide {
 	/*margin-top: 15px;*/
 
 	.frg-icon {
-		margin: -5px 0 0 10px;
+		margin: 0 0 0 10px;
 	}
 }
 
@@ -1801,6 +1806,8 @@ table.wide {
 }
 
 .features_section {
+	padding: 5px 0;
+	
 	h2 {
 		font-size: 40px;
 	}

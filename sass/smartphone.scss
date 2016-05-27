@@ -319,4 +319,68 @@
 	.sub_footer {
 		width: auto;
 	}
+
+	.section_title.advanced_search {
+		font-size: 120%;
+	}
+
+	.advanced_search {
+		.frg-icon {
+			margin: 0 -35px 0 10px;
+		}
+	}
+
+	.phone_features {
+		text-align: center;
+
+		.tagline {
+			margin: 0 !important;
+			padding: 10px 0 0 0 !important;
+		}
+	}
+
+	.purple_bg .white_bg section > div.cell:nth-child(2) {
+		border-top: 2px solid $very_light_gray;
+		border-left: none;
+	}
+
+	.purple_bg .white_bg section:nth-child(3) {
+		border-bottom: none;
+		padding-bottom: 20px;
+
+		img {
+			width: 250px;
+		}
+	}
+
+	.purple_bg .white_bg section > div.large-cell {
+		padding: 20px 0 5px 0;
+	}
+
+	.purple_bg .white_bg section > div.cell {
+		padding: 20px 0 50px 0;
+	}
+
+	.content {
+		&.product_header {
+			padding: 0;
+		}
+	}
+
+	.product_header {
+		padding: 0;
+
+		p.h1 {
+			font-size: 24px !important;
+			margin: 15px 0 0 0;
+		}
+	}
+
+	.phone_details.image a {
+		height: 365px;
+
+		img {
+			height: 350px;
+		}
+	}
 }

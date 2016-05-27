@@ -198,4 +198,29 @@
 	.sub_footer {
 		width: 400px;
 	}
+
+	.advanced_search {
+		.frg-icon {
+			margin: 0 -35px 0 10px;
+		}
+	}
+
+	.phone_features {
+		text-align: center;
+
+		.tagline {
+			margin: 0 !important;
+			padding: 10px 0 0 0 !important;
+		}
+	}
+
+	.purple_bg .white_bg section > div.cell:nth-child(2) {
+		border-top: 2px solid $very_light_gray;
+		border-left: none;
+	}
+
+	.purple_bg .white_bg section:nth-child(3) {
+		border-bottom: none;
+		padding-bottom: 20px;
+	}
 }

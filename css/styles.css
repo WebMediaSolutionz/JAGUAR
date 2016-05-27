@@ -803,6 +803,11 @@ table thead tr th {
   padding-bottom: 10px;
 }
 
+.vertical_padding5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .vertical_padding20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1238,6 +1243,10 @@ h3.buy span, h3.manage span, h3.order span {
   border-bottom: 3px solid #f4f5f6;
 }
 
+.white_bg .section_title.not_underlined {
+  border-bottom: none;
+}
+
 .white_bg .footnote {
   border-top: 3px solid #f4f5f6;
 }
@@ -1522,23 +1531,24 @@ h3.buy span, h3.manage span, h3.order span {
   width: 140px;
 }
 
-.content.product section table input,
-.content.product section table select {
+.content.product section input,
+.content.product section select {
   /*border: thin solid #CCC;*/
   width: 139px;
   height: 30px;
 }
 
-.content.product section table .status {
+.content.product section .status {
   font-size: inherit;
   margin: 2px 0;
 }
 
-.content.product section table .status.positive {
+.content.product section .status.positive {
   color: #47a526;
+  margin-top: -1px;
 }
 
-.content.product section table .status.negative {
+.content.product section .status.negative {
   color: #d3142e;
 }
 
@@ -2754,7 +2764,7 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 }
 
 .advanced_search .frg-icon {
-  margin: -5px 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 .advanced_search_table {
@@ -2819,6 +2829,10 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 .frg-checkbox.regular.small input[type=radio],
 .frg-checkbox.regular.small .icon {
   margin-top: 0;
+}
+
+.features_section {
+  padding: 5px 0;
 }
 
 .features_section h2 {
@@ -3310,6 +3324,52 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .sub_footer {
     width: auto;
   }
+  .section_title.advanced_search {
+    font-size: 120%;
+  }
+  .advanced_search .frg-icon {
+    margin: 0 -35px 0 10px;
+  }
+  .phone_features {
+    text-align: center;
+  }
+  .phone_features .tagline {
+    margin: 0 !important;
+    padding: 10px 0 0 0 !important;
+  }
+  .purple_bg .white_bg section > div.cell:nth-child(2) {
+    border-top: 2px solid #f4f5f6;
+    border-left: none;
+  }
+  .purple_bg .white_bg section:nth-child(3) {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+  .purple_bg .white_bg section:nth-child(3) img {
+    width: 250px;
+  }
+  .purple_bg .white_bg section > div.large-cell {
+    padding: 20px 0 5px 0;
+  }
+  .purple_bg .white_bg section > div.cell {
+    padding: 20px 0 50px 0;
+  }
+  .content.product_header {
+    padding: 0;
+  }
+  .product_header {
+    padding: 0;
+  }
+  .product_header p.h1 {
+    font-size: 24px !important;
+    margin: 15px 0 0 0;
+  }
+  .phone_details.image a {
+    height: 365px;
+  }
+  .phone_details.image a img {
+    height: 350px;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3442,6 +3502,24 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   }
   .sub_footer {
     width: 400px;
+  }
+  .advanced_search .frg-icon {
+    margin: 0 -35px 0 10px;
+  }
+  .phone_features {
+    text-align: center;
+  }
+  .phone_features .tagline {
+    margin: 0 !important;
+    padding: 10px 0 0 0 !important;
+  }
+  .purple_bg .white_bg section > div.cell:nth-child(2) {
+    border-top: 2px solid #f4f5f6;
+    border-left: none;
+  }
+  .purple_bg .white_bg section:nth-child(3) {
+    border-bottom: none;
+    padding-bottom: 20px;
   }
 }
 

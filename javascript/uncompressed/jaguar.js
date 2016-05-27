@@ -102,6 +102,7 @@ var JAG = {
 
 		$( '.toggle_panel' ).click( function () {
 			var clicked = $( this ),
+				section_title = clicked.closest( 'h3' ),
 				associated_section = clicked.attr( 'data-section' ),
 				advanced_search_table = clicked.closest( '.outer-container' ).find( '.advanced_search_table' ),
 				fields = advanced_search_table.find( 'input' ),
@@ -121,12 +122,14 @@ var JAG = {
 			if ( clicked.hasClass( 'icon-plus-inverted' ) ) {
 				clicked
 					.closest( '.advanced_search' )
+					.removeClass( 'not_underlined' )
 					.find( '.icon-plus-inverted' )
 					.removeClass( 'icon-plus-inverted' )
 					.addClass( 'icon-minus-inverted' );
 			} else if ( clicked.hasClass( 'icon-minus-inverted' ) ) {
 				clicked
 					.closest( '.advanced_search' )
+					.addClass( 'not_underlined' )
 					.find( '.icon-minus-inverted' )
 					.removeClass( 'icon-minus-inverted' )
 					.addClass( 'icon-plus-inverted' );
