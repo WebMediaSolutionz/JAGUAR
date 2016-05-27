@@ -3370,6 +3370,10 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .phone_details.image a img {
     height: 350px;
   }
+  .confirmation.outer-container > .inner-container:first-child,
+  .confirmation2.outer-container > .inner-container:first-child {
+    background: none;
+  }
 }
 
 /* SHADES OF PURPLE */
@@ -3520,6 +3524,10 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .purple_bg .white_bg section:nth-child(3) {
     border-bottom: none;
     padding-bottom: 20px;
+  }
+  .confirmation.outer-container > .inner-container:first-child,
+  .confirmation2.outer-container > .inner-container:first-child {
+    background: none;
   }
 }
 

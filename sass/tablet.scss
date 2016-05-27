@@ -223,4 +223,9 @@
 		border-bottom: none;
 		padding-bottom: 20px;
 	}
+
+	.confirmation.outer-container > .inner-container:first-child, 
+	.confirmation2.outer-container > .inner-container:first-child {
+		background: none;
+	}
 }
