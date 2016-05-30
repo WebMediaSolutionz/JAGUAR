@@ -2085,3 +2085,16 @@ table.wide {
 	top: 50%;
 	left: 50%;
 }
+
+.subscriber_mobile_row {
+	margin-bottom: 20px;
+
+	h6 {
+		background-color: $gray;
+		padding: 7px 0;
+	}
+
+	.frg-select-container {
+		width: 100px;
+	}
+}

@@ -3090,6 +3090,19 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   left: 50%;
 }
 
+.subscriber_mobile_row {
+  margin-bottom: 20px;
+}
+
+.subscriber_mobile_row h6 {
+  background-color: #d8d8d8;
+  padding: 7px 0;
+}
+
+.subscriber_mobile_row .frg-select-container {
+  width: 100px;
+}
+
 /* SHADES OF PURPLE */
 /**********************/
 /* SHADES OF GRAY */
