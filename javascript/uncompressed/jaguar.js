@@ -661,6 +661,7 @@ var JAG = {
 					results_box = clicked.parent(),
 					field = results_box.parent().find( '.js-cities-auto-complete' ),
 					area_codes_box = clicked.closest( 'tr' ).find( '.js-area-codes' ),
+					area_codes_box_mobile = $( '.subscriber_mobile_row .js-area-codes' ),
 					area_codes = clicked.attr( 'data-areacodes' );
 
 				e.preventDefault();
@@ -673,9 +674,11 @@ var JAG = {
 
 				area_codes = area_codes.split( ',' );
 				area_codes_box.text( '' );
+				area_codes_box_mobile.text( '' );
 
 				for ( var i = 0; i < area_codes.length; i++ ) {
 					area_codes_box.append( '<option value="' + area_codes[ i ] + '">' + area_codes[ i ] + '</option>' );
+					area_codes_box_mobile.append( '<option value="' + area_codes[ i ] + '">' + area_codes[ i ] + '</option>' );
 				}
 			});
 		});
