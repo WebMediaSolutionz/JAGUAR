@@ -680,6 +680,7 @@ a.underline {
   padding: 10px 18px !important;
   font-size: 26px;
   margin-top: 5px;
+  width: 65px;
 }
 
 .circle + div {
@@ -3386,6 +3387,24 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .confirmation.outer-container > .inner-container:first-child,
   .confirmation2.outer-container > .inner-container:first-child {
     background: none;
+  }
+  .circle {
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    padding: 5px 12px !important;
+  }
+  .frg-select-container.style2 {
+    width: 100%;
+  }
+  .js-phone_input_mask.short_text_box {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .side_padding.js-incomplete.js-submit {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

@@ -388,4 +388,34 @@
 	.confirmation2.outer-container > .inner-container:first-child {
 		background: none;
 	}
+
+	.circle {
+		height: 45px;
+		width: 45px;
+		font-size: 20px;
+		padding: 5px 12px !important;
+	}
+
+	.frg-select-container {
+		&.style2 {
+			width: 100%;
+		}
+	}
+
+	.js-phone_input_mask {
+		&.short_text_box {
+			width: 200px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	.side_padding {
+		&.js-incomplete {
+			&.js-submit {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+	}
 }
