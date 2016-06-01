@@ -1674,6 +1674,14 @@ table.wide {
 			width: 185px !important;
 		}
 	}
+
+	&.longer {
+		width: auto !important;
+
+		td:first-child {
+			width: 400px !important;
+		}
+	}
 }
 
 .terms {
