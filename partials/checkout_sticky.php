@@ -23,12 +23,14 @@
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-4 no_padding">
-				<div class="left bold clearfix">
-					<div class="left circle gap_right_small green_bg">17</div>
-					<div class="left gap_right_small">
-						<p>Allotment<br />balance</p>
+				<?php if ( $status !== 'easy_pay' ) { ?>
+					<div class="left bold clearfix">
+						<div class="left circle gap_right_small green_bg">17</div>
+						<div class="left gap_right_small">
+							<p>Allotment<br />balance</p>
+						</div>
 					</div>
-				</div>
+				<?php } ?>
 			</div>
 			<div class="col-sm-offset-3 col-sm-3 amounts bold clearfix">
 				<div class="right">

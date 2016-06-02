@@ -17,9 +17,13 @@
 		<div class='frg-select-container color-light'>
 			<select class="js-upgrade-offer" autocomplete="off">
 				<option>Select</option>
-				<option>Technology refresh</option>
-				<option>Technology refresh</option>
-				<option>Technology refresh</option>
+				<?php if ( $status !== 'easy_pay' ) { ?>
+					<option>Technology refresh</option>
+					<option>Technology refresh</option>
+					<option>Technology refresh</option>
+				<?php } else { ?>
+					<option>Device Upgrade</option>
+				<?php } ?>
 			</select>
 		</div>
 	</td>
