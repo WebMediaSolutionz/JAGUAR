@@ -43,8 +43,11 @@
 					<th>Phone number</th>
 					<th>Subscriber</th>
 					<th>Upgrade offer</th>
+					<?php if ( $status !== 'easy_pay' ) { ?>
+						<th>Device balance</th>
+					<?php } ?>
 					<th class="center_text">Status</th>
-					<th class="right_align">Upgrade Fee*</th>
+					<th class="right_align"><?php echo ( $status !== 'easy_pay' ) ? 'Due' : 'Upgrade Fee*'; ?></th>
 				</tr>
 			</thead>
 			<tbody>
