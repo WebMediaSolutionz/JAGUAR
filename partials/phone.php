@@ -1,4 +1,6 @@
 <?php
+	$easy_pay = ( $status === 'easy_pay' );
+
 	$filter = $filter2 = $status = null;
 
 	if ( $i % 2 === 0 ) {
@@ -107,13 +109,25 @@
 
 			<div class="prices clearfix">
 				<div class="no-term left">
-					<h4><strong>$130.99</strong> <span class="time_period">3-year term</span></h4>
+					<h4>
+						<?php if ( $easy_pay ) { ?>
+							<strong>$20.00</strong><span class="time_period">/month on a 3 yr term</span>
+						<?php } else { ?>
+							<strong>$130.99</strong> <span class="time_period">3-year term</span>
+						<?php } ?>
+					</h4>
 				</div>
 			</div>
 
 			<div class="mtm">
-				<div class="gray_text"><span>$200.99 on 2-year term</span></div>
-				<div class="gray_text"><span>$800.99 no term</span></div>
+				<div class="gray_text">
+					<?php if ( $easy_pay ) { ?>
+						<span>$30.00/month on a 2 year term</span>
+					<?php } else { ?>
+						<span>$200.99 on 2-year term</span>
+					<?php } ?>
+				</div>
+				<div class="gray_text"><span>$700 no term</span></div>
 				<a class="frg-button<?php echo ( $status !== 'back order' ) ? '': ' state-disabled'; ?>" href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>"><?php echo ( $status !== 'back order' ) ? 'Select': 'Unavailable'; ?></a>
 			</div>
 		</div>

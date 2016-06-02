@@ -66,21 +66,25 @@
 							</tr>
 						</table>
 
-						<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
+						<?php if ( $status !== 'easy_pay' ) { ?>
+							<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
 
-						<div class="vertical_gap small_gap js-hide-not-device-only">
-							<div class='frg-select-container full_width color-light'>
-								<select class="js-sort-by full_width js-required" autocomplete="off">
-									<option selected>Select</option>
-									<option value="device">Voice &amp; data ($50/subscriber/month)</option>
-									<option value="device">Voice &amp; Data Lite</option>
-									<option value="brand">Voice Only ($45/subscriber/month)</option>
-									<option value="brand">Data Only ($40/subscriber/month)</option>
-								</select>
+							<div class="vertical_gap small_gap js-hide-not-device-only">
+								<div class='frg-select-container full_width color-light'>
+									<select class="js-sort-by full_width js-required" autocomplete="off">
+										<option selected>Select</option>
+										<option value="device">Voice &amp; data ($50/subscriber/month)</option>
+										<option value="device">Voice &amp; Data Lite</option>
+										<option value="brand">Voice Only ($45/subscriber/month)</option>
+										<option value="brand">Data Only ($40/subscriber/month)</option>
+									</select>
+								</div>
 							</div>
-						</div>
+						<?php } ?>
 
-						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 3</span><span class="js-show-not-device-only hide">Step 2</span>: Select your device price</strong></h6>
+						<h6 class="padding_top">
+							<strong><span class="js-hide-not-device-only">Step <?php echo ( $status !== 'easy_pay' ) ? '3' : '2'; ?></span><span class="js-show-not-device-only hide">Step <?php echo ( $status !== 'easy_pay' ) ? '2' : '1'; ?></span>: Select your device price</strong>
+						</h6>
 
 						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
@@ -88,7 +92,11 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option1">
 									<strong>
-										<span class="value" data-value="100">$100.00</span> 3-year plan
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="100">$100.00</span> 3-year plan
+										<?php } else { ?>
+											<span class="value" data-value="100">$20.00</span>/month on a 3 year term with $200.00 upfront
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
@@ -100,7 +108,11 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option2">
 									<strong>
-										<span class="value" data-value="775">$775.00</span> Month to month
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="775">$775.00</span> Month to month
+										<?php } else { ?>
+											<span class="value" data-value="100">$30.00</span>/month on a 2 year term with $200.00 upfront
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
@@ -112,13 +124,17 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option3">
 									<strong>
-										<span class="value" data-value="775">$775.00</span> Device only (no plan)
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="775">$775.00</span> Device only (no plan)
+										<?php } else { ?>
+											<span class="value" data-value="775">$700.00</span> Device only (no plan)
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
 						</div>
 
-						<h6 class="padding_top js-hide-not-device-only"><strong>Step 4: Select your account configuration</strong></h6>
+						<h6 class="padding_top js-hide-not-device-only"><strong>Step <?php echo ( $status !== 'easy_pay' ) ? '4' : '3'; ?>: Select your account configuration</strong></h6>
 
 						<table class="full_width js-hide-not-device-only">
 							<tr>
@@ -173,6 +189,12 @@
 
 					<section class="right_align clearfix">
 						<table class="table2 right">
+							<?php if ( $status === 'easy_pay' ) { ?>
+								<tr>
+									<td><span class="block top_margin20 gap_right">Due monthly</span></td>
+									<td><span class="total">$5555.00</span></td>
+								</tr>
+							<?php } ?>
 							<tr>
 								<td><span class="block top_margin20 gap_right">Due now</span></td>
 								<td><span class="total">$0</span></td>
