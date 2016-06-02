@@ -23,6 +23,9 @@
 			</select>
 		</div>
 	</td>
+	<?php if ( $status !== 'easy_pay' ) { ?>
+		<td>$0.00</td>
+	<?php } ?>
 	<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
 	<td class="right_align top_bottom_small_padding">-</td>
 </tr>
