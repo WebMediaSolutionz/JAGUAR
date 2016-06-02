@@ -253,7 +253,7 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Availability</th>
-					<th></th>
+					<th><span class="invisible">Due monthly</span></th>
 					<th>Due now</th>
 				</tr>
 			</thead>
