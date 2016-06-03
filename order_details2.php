@@ -17,7 +17,7 @@
 	<div class="outer-container secondary_bg white_bg">
 		<div class="inner-container clearfix">
 			<div class="left gray_text">
-				<strong>Shipping information:</strong><br />
+				<strong>Shipping address:</strong><br />
 				<span>Jonathan Richman, 6b-123 Main St., Ottawa, Ontario, A1B C2D, 613-555-1234</span><br />
 				<span>Tracking number: <a href="#">Canada Post | 61651665161</a></span>
 			</div>
@@ -149,7 +149,7 @@
 			<thead class="gray_text">
 				<tr>
 					<?php if ( $status === 'shipped' ) { ?>
-						<th>Select</th>
+						<th><span class="invisible">Select</span></th>
 					<?php } ?>
 					<th>Item</th>
 					<th>Quantity</th>
@@ -162,16 +162,7 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
-						<td>
-							<div class="frg-checkbox regular small">
-								<div class="inner">
-									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-									<div class="icon">
-										<span class="frg-icon" aria-hidden="true"></span>
-									</div>
-								</div>
-							</div>
-						</td>
+						<td></td>
 					<?php } ?>
 					<td class="item">
 						<span>Group-3</span>
