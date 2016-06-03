@@ -54,7 +54,7 @@
 				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<td>
-							<div class="frg-checkbox regular small">
+							<div class="frg-checkbox parent regular small">
 								<div class="inner">
 									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 									<div class="icon">
@@ -95,7 +95,7 @@
 				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<td>
-							<div class="frg-checkbox regular small">
+							<div class="frg-checkbox parent regular small">
 								<div class="inner">
 									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 									<div class="icon">
@@ -226,7 +226,7 @@
 				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<td>
-							<div class="frg-checkbox regular small">
+							<div class="frg-checkbox parent regular small">
 								<div class="inner">
 									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 									<div class="icon">
@@ -299,7 +299,7 @@
 				<tr class="wide">
 					<?php if ( $status === 'shipped' ) { ?>
 						<td>
-							<div class="frg-checkbox regular small">
+							<div class="frg-checkbox parent regular small">
 								<div class="inner">
 									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 									<div class="icon">
