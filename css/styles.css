@@ -1612,10 +1612,6 @@ h3.buy span, h3.manage span, h3.order span {
   height: 173px;
 }
 
-.content .box.phone .image a img {
-  height: 173px;
-}
-
 .content .box.phone .image a img.replacement_img {
   width: 92px;
   height: 92px;
