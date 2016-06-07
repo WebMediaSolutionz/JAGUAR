@@ -375,14 +375,16 @@ var JAG = {
 				closest = textbox.closest( 'p' ),
 				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( '.group_name' ),
 				code = e.which || e.keyCode;
 
 			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value );
-				container.removeClass( 'hide' );
+
+				container
+					.text( value )
+					.attr( 'fullname', value )
+					.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
@@ -392,14 +394,16 @@ var JAG = {
 				closest = textbox.closest( 'p' ),
 				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( '.group_name' ),
 				code = e.which || e.keyCode;
 
 			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value );
-				container.removeClass( 'hide' );
+				
+				container
+					.text( value )
+					.attr( 'fullname', value )
+					.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
@@ -1047,6 +1051,10 @@ var JAG = {
               self.start();
         });
 
+        $( '.js-ellipsis' ).click( function () {
+        	self.showFullName( $( this ) );
+        });
+
 		return self;
 	},
 
@@ -1604,12 +1612,22 @@ var JAG = {
 
 		string.each( function () {
 			var str = $( this ),
+				str_text = str.text().trim(),
 				len = str.attr( 'data-maxlen' );
 
-			if ( str.text().trim().length > len ) {
-				str.text( str.text().trim().substr( 0, parseInt(len) - 3 ) + '...' );
+			if ( str_text.length > len ) {
+				str.text( str_text.substr( 0, parseInt( len ) - 3 ) + '...' );
 			}
 		});
+
+		return self;
+	},
+
+	showFullName: function ( str ) {
+		var self = this,
+			full = str.attr( 'fullname' );
+
+		str.text( full );
 
 		return self;
 	},
