@@ -3080,10 +3080,6 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   cursor: pointer;
 }
 
-.js-auto_save {
-  /*width: 300px;*/
-}
-
 @media screen and (max-width: 1260px) {
   .support_section .headset {
     width: 40%;
