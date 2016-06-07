@@ -12,7 +12,7 @@
 					
 					<?php include( 'partials/edit_name.php' ); ?>
 				</div>
-				<div class="right advanced_options hidden-xs clearfix">
+				<div class="right advanced_options hidden-xs hidden-sm clearfix">
 					<div class="left">Actions: </div>
 					<a class="frg-button left color-purple gap_left_small advanced_import" href="#">Advanced import</a>
 					<a class="frg-button left color-purple gap_left_small" href="#">Clear row(s)</a>
