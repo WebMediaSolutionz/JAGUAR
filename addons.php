@@ -53,6 +53,8 @@
 	<div class="inner-container row clearfix">
 		<div class="row">
 			<div class="col-xs-12">
+				<p class="h3 gray_text">Roaming:</p>
+
 				<?php
 					for ( $i = 0; $i < 16; $i++ ) { 
 						include( 'partials/addon.php' );

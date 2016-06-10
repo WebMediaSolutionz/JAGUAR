@@ -71,8 +71,8 @@
 		</div>
 	</div>
 <?php } else if ( $page === 'subscriber' ) { ?>
-	<div class="outer-container content white_bg top_bottom_padding actions visible-md-block stickyFooter">
-		<div class="inner-container clearfix">
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+		<div class="inner-container clearfix visible-md-block">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
 				<div class="right separator">
 					<p>Due now</p>
@@ -88,6 +88,38 @@
 			</div>
 			<div class="col-xs-2 col-sm-2 no_padding right_align">
 				<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+			</div>
+		</div>
+		<div class="inner-container clearfix visible-sm-block visible-xs-block">
+			<div class="row hidden-xs">
+				<div class="col-xs-10 col-sm-offset-3 col-sm-6 amounts bold right_align clearfix">
+					<div class="right separator">
+						<p>Due now</p>
+						<p class="h4 now">$25,500.00</p>
+					</div>
+					<div class="right gap_right">
+						<p>Due monthly</p>
+						<p class="h4 monthly">$0.00</p>
+					</div>
+					<div class="right gap_right hidden-xs">
+						<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+					</div>
+				</div>
+				<div class="col-xs-2 col-sm-3 no_padding right_align">
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates hidden-xs" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates visible-xs-block" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Go">
+				</div>
+			</div>
+			<div class="row visible-xs-block">
+				<div class="col-xs-5">
+					<div class="right gap_right">
+						<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+					</div>
+				</div>
+				<div class="col-xs-7">
+					<input class="frg-button color-green full_lenght js-incomplete js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+				</div>
 			</div>
 		</div>
 	</div>

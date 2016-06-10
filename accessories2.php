@@ -9,7 +9,17 @@
 			<div class="col-xs-12">
 				<h3 class="title">Select accessories for: </h3>
 
-				<?php include( 'partials/edit_name.php' ); ?>	
+				<?php include( 'partials/edit_name.php' ); ?>
+
+				<div class='frg-select-container full_width color-light visible-xs-block'>
+					<select>
+						<option>Sort by: Cases &amp; Protection</option>
+						<option>Sort by: Roaming</option>
+						<option>Sort by: Data</option>
+						<option>Sort by: Services</option>
+						<option>Sort by: Other</option>
+					</select>
+				</div>
 			</div>
 		</div>
 	</div>
