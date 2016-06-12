@@ -17,9 +17,10 @@
 		<div class='frg-select-container color-light full_width'>
 			<select class="js-required" autocomplete="off">
 				<option selected>Select a reason</option>
-				<option>Lorem ipsum 1</option>
-				<option>Lorem ipsum 2</option>
-				<option>Lorem ipsum 3</option>
+				<option>I don't want this device anymore</option>
+				<option>Device is damaged</option>
+				<option>Device does not work</option>
+				<option>Other</option>
 			</select>
 		</div>
 		<br /><br />
