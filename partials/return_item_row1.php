@@ -24,7 +24,7 @@
 			</select>
 		</div>
 		<br /><br />
-		<input class='frg-input-field full_width' placeholder="Please provide any additional relevant information" />
+		<input class='frg-input-field full_width js-required' maxlength="1024" placeholder="Please provide additional information in order for us to process your return request" />
 		<br /><br />
 		<?php if ( $i === 0 ) { ?>
 			<div class="clearfix">
