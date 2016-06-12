@@ -140,6 +140,27 @@
 			</div>
 		</div>
 	</div>
+<?php } else if ( $page === 'return1' ) { ?>
+	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
+		<div class="inner-container clearfix">
+			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
+				<div class="right separator">
+					<p>Due now</p>
+					<p class="h4 now">$25,500.00</p>
+				</div>
+				<div class="right gap_right">
+					<p>Due monthly</p>
+					<p class="h4 monthly">$0.00</p>
+				</div>
+				<div class="right gap_right">
+					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
+				</div>
+			</div>
+			<div class="col-xs-2 col-sm-2 no_padding right_align">
+				<input class="frg-button color-green full_lenght js-duplicates" type="submit" name="/telus/commerce/order/purchase/AddPlanToCartFormHandler.addItemToOrder" value="Save &amp; continue">
+			</div>
+		</div>
+	</div>
 <?php } else { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
