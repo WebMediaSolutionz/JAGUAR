@@ -47,16 +47,16 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td class="longer">Sub total</td>
-						<td class="right_align">$4,000.00</td>
+						<td class="longer top_bottom_small_padding gray_text">Sub total</td>
+						<td class="right_align top_bottom_small_padding">$4,000.00</td>
 					</tr>
 					<tr>
-						<td>Shipping</td>
-						<td class="right_align">Free</td>
+						<td class="top_bottom_small_padding gray_text">Shipping</td>
+						<td class="right_align top_bottom_small_padding">Free</td>
 					</tr>
 					<tr>
-						<td>Taxes HST</td>
-						<td class="right_align">$520.00</td>
+						<td class="top_bottom_small_padding gray_text">Taxes HST</td>
+						<td class="right_align top_bottom_small_padding">$520.00</td>
 					</tr>
 				</table>
 			</div>
@@ -70,8 +70,8 @@
 			<div class="right">
 				<table class="right_align total">
 					<tr>
-						<td class="longer">Total return</td>
-						<td class="right_align">$4,520.00</td>
+						<td class="longer gray_text top_bottom_small_padding">Total return</td>
+						<td class="right_align top_bottom_small_padding">$4,520.00</td>
 					</tr>
 				</table>
 			</div>
