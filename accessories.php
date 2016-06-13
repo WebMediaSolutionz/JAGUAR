@@ -1,7 +1,27 @@
 <?php include_once( 'config.php' ); ?>
 <?php include_once( 'partials/header.php' ); ?>
 
-<div class="outer-container secondary_bg top_bottom_padding white_bg">
+<div class="outer-container secondary_bg top_bottom_padding purple_bg visible-xs-block">
+	<div class="inner-container clearfix">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="h1"><span class="frg-icon icon-accessories gray_text"></span> Accessories</p>
+
+				<div class='frg-select-container full_width color-light bottom_margin20'>
+					<select>
+						<option>Sort by: Cases &amp; Protection</option>
+						<option>Sort by: Roaming</option>
+						<option>Sort by: Data</option>
+						<option>Sort by: Services</option>
+						<option>Sort by: Other</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="outer-container secondary_bg top_bottom_padding white_bg hidden-xs">
 	<div class="inner-container clearfix">
 		<div class="row">
 			<div class="col-xs-12">
