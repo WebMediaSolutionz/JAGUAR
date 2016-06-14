@@ -52,16 +52,16 @@
 			<div class="right">
 				<table class="right_align subtotal">
 					<tr>
-						<td class="longer">Sub total</td>
-						<td class="right_align">$500.00</td>
+						<td class="longer top_bottom_small_padding">Sub total</td>
+						<td class="right_align top_bottom_small_padding">$500.00</td>
 					</tr>
 					<tr>
-						<td>Shipping</td>
-						<td class="right_align">Free</td>
+						<td class="top_bottom_small_padding">Shipping</td>
+						<td class="right_align top_bottom_small_padding">Free</td>
 					</tr>
 					<tr>
-						<td>Taxes HST</td>
-						<td class="right_align">$65.00</td>
+						<td class="top_bottom_small_padding">Taxes HST</td>
+						<td class="right_align top_bottom_small_padding">$65.00</td>
 					</tr>
 				</table>
 			</div>
@@ -75,8 +75,8 @@
 			<div class="right">
 				<table class="right_align total">
 					<tr>
-						<td class="longer">Estimated total repair cost</td>
-						<td class="right_align">$565.00</td>
+						<td class="longer top_bottom_small_padding">Estimated total repair cost</td>
+						<td class="right_align top_bottom_small_padding">$565.00</td>
 					</tr>
 				</table>
 			</div>
