@@ -1,15 +1,5 @@
 <tr class="<?php echo ( $page !== 'confirm_repair' ) ? 'wide' : ''; ?>">
 	<td class="bottom_padding20">
-		<div class="frg-checkbox regular small">
-			<div class="inner">
-				<input id="chkbox-option-<?php echo $i; ?>" type="checkbox" name="option-<?php echo $i; ?>" value="Option <?php echo $i; ?>" >
-				<div class="icon">
-					<span class="frg-icon" aria-hidden="true"></span>
-				</div>
-			</div>
-		</div>
-	</td>
-	<td class="bottom_padding20">
 		<span>Device: Apple iPhone 6s</span><br />
 		<span>IMEI: 855389855389855389</span>
 	</td>
@@ -24,11 +14,12 @@
 			</select>
 		</div>
 		<br /><br />
+		<div class="h4 bottom_padding10">please provide details for the return</div>
 		<input class='frg-input-field full_width js-required' maxlength="1024" placeholder="Please provide additional information in order for us to process your return request" />
 		<br /><br />
 		<?php if ( $i === 0 ) { ?>
 			<div class="clearfix">
-				<div class="frg-checkbox regular small left">
+				<div class="frg-checkbox regular small left js-copy_row">
 					<div class="inner">
 						<input id="chkbox-option-<?php echo $i; ?>" type="checkbox" name="option-<?php echo $i; ?>" value="Option <?php echo $i; ?>" >
 						<div class="icon">

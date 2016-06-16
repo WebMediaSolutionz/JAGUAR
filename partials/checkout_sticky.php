@@ -113,10 +113,7 @@
 <?php } else if ( $page === 'order_details' || $page === 'order_details1' ) { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
-			<div class="col-xs-offset-6 col-xs-3 right_align">
-				<a class="frg-button color-green full_lenght" href="repair.php"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
-			</div>
-			<div class="col-xs-3 no_padding right_align">
+			<div class="col-xs-offset-9 col-xs-3 no_padding right_align">
 				<a class="frg-button color-green full_lenght" href="return.php"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
 			</div>
 		</div>
@@ -140,18 +137,10 @@
 			</div>
 		</div>
 	</div>
-<?php } else if ( $page === 'return1' ) { ?>
+<?php } else if ( $page === 'return' || $page === 'confirm_return' ) { ?>
 	<div class="outer-container content white_bg top_bottom_padding actions stickyFooter">
 		<div class="inner-container clearfix">
 			<div class="col-sm-offset-4 col-sm-6 amounts bold right_align clearfix">
-				<div class="right separator">
-					<p>Due now</p>
-					<p class="h4 now">$25,500.00</p>
-				</div>
-				<div class="right gap_right">
-					<p>Due monthly</p>
-					<p class="h4 monthly">$0.00</p>
-				</div>
 				<div class="right gap_right">
 					<a class="previous block" href="<?php echo $previous_step; ?>">Previous step</a>
 				</div>
