@@ -11,7 +11,7 @@
         <meta name="msapplication-TileImage" content="/common/images/header/TELUS-logo-pin.png">
         <meta name="description" content="Get help with your TELUS Mobility services. Learn how to set up your device and account, learn how your services work, and solve common issues.">
         <meta name="keywords" content="phones, mobility, mobile, support">
-        <!-- <meta name="google-site-verification" content="-Dc5Vz5GV13XtKBS-cQduAld5ktjiD4xQCQnZmOW6Dc" /> -->
+
         <!-- Open Graph data -->
         <meta property="og:url" content="http://www.telus.com/en/support/topic/mobility-services">
         <meta property="og:type" content="website">
@@ -19,7 +19,8 @@
         <meta property="og:site_name" content="TELUS">
         <meta property="og:image" content="http://www.telus.com/assets/images/og-image-ladybug.jpg">
         <meta property="og:title" content="Mobility services support homepage | Support | TELUS.com">
-        <meta property="og:description" content="Get help with your TELUS Mobility services. Learn how to set up your device and account, learn how your services work, and solve common issues."> 
+        <meta property="og:description" content="Get help with your TELUS Mobility services. Learn how to set up your device and account, learn how your services work, and solve common issues.">
+
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@TELUS">
@@ -68,6 +69,7 @@
                             <div class="display-form-element">
                                 <form id="language-select-form" action="/actions/preferences/change-locale.do" method="get">
                                     <input name="rd" value="http://www.telus.com/support/topic/mobility-services" type="hidden">
+
                                     <div class="select-container-and-label">
                                         <label for="language-select-dropdown">Language</label>
 
@@ -286,13 +288,13 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article1.html" class="decoration-default">Error message when I try to change a rate plan.</a>
+                                        <a href="articles/article1.php" class="decoration-default">Error message when I try to change a rate plan.</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article2.html" class="decoration-default">Missing items from my order</a>
+                                        <a href="articles/article2.php" class="decoration-default">Missing items from my order</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article3.html" class="decoration-default">I can’t log into the Jaguar portal through TELUS My Account</a>
+                                        <a href="articles/article3.php" class="decoration-default">I can’t log into the Jaguar portal through TELUS My Account</a>
                                     </li>
                                 </ul>
                             </div>
@@ -303,10 +305,10 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article4.html" class="decoration-default">How long will the cart save my order?</a>
+                                        <a href="articles/article4.php" class="decoration-default">How long will the cart save my order?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article5.html" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
+                                        <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
                                     </li>
                                 </ul>
                             </div>
@@ -317,40 +319,40 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article6.html" class="decoration-default">What information can I get from an invoice report?</a>
+                                        <a href="articles/article6.php" class="decoration-default">What information can I get from an invoice report?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article7.html" class="decoration-default">What do the coloured flags mean in the action status column?</a>
+                                        <a href="articles/article7.php" class="decoration-default">What do the coloured flags mean in the action status column?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article8.html" class="decoration-default">What do the features in the Actions drop down menu mean?</a>
+                                        <a href="articles/article8.php" class="decoration-default">What do the features in the Actions drop down menu mean?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article9.html" class="decoration-default">How do I tag subscribers with organization Tags?</a>
+                                        <a href="articles/article9.php" class="decoration-default">How do I tag subscribers with organization Tags?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article10.html" class="decoration-default">How do I run an invoice report?</a>
+                                        <a href="articles/article10.php" class="decoration-default">How do I run an invoice report?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article11.html" class="decoration-default">How do make a subscriber change? A bulk subscriber change?</a>
+                                        <a href="articles/article11.php" class="decoration-default">How do make a subscriber change? A bulk subscriber change?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article12.html" class="decoration-default">How do I change a rate plan?</a>
+                                        <a href="articles/article12.php" class="decoration-default">How do I change a rate plan?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article13.html" class="decoration-default">How do I add or remove features?</a>
+                                        <a href="articles/article13.php" class="decoration-default">How do I add or remove features?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article14.html" class="decoration-default">An employee’s stolen phone is found. How do I reactivate the service?</a>
+                                        <a href="articles/article14.php" class="decoration-default">An employee’s stolen phone is found. How do I reactivate the service?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article15.html" class="decoration-default">An employee’s phone is lost or stolen?</a>
+                                        <a href="articles/article15.php" class="decoration-default">An employee’s phone is lost or stolen?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article16.html" class="decoration-default">An employee’s lost phone is found. How do I reactivate the service?</a>
+                                        <a href="articles/article16.php" class="decoration-default">An employee’s lost phone is found. How do I reactivate the service?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article17.html" class="decoration-default">An employee is going on vacation. How do I suspend her service?</a>
+                                        <a href="articles/article17.php" class="decoration-default">An employee is going on vacation. How do I suspend her service?</a>
                                     </li>
                                 </ul>
                             </div>
@@ -361,7 +363,7 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article18.html" class="decoration-default">Upgrade Subscriber Devices</a>
+                                        <a href="articles/article18.php" class="decoration-default">Upgrade Subscriber Devices</a>
                                     </li>
                                 </ul>
                             </div>
@@ -372,16 +374,16 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article19.html" class="decoration-default">The difference between a master administrator and a customer administrator</a>
+                                        <a href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article20.html" class="decoration-default">Set up/add/remove subscribers</a>
+                                        <a href="articles/article20.php" class="decoration-default">Set up/add/remove subscribers</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article21.html" class="decoration-default">Set up/add/remove administrators</a>
+                                        <a href="articles/article21.php" class="decoration-default">Set up/add/remove administrators</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article22.html" class="decoration-default">Book a Training Session</a>
+                                        <a href="articles/article22.php" class="decoration-default">Book a Training Session</a>
                                     </li>
                                 </ul>
                             </div>
@@ -392,122 +394,19 @@
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article23.html" class="decoration-default">Buy Devices and Plans</a>
+                                        <a href="articles/article23.php" class="decoration-default">Buy Devices and Plans</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article24.html" class="decoration-default">How to Order BYOD Plans?</a>
+                                        <a href="articles/article24.php" class="decoration-default">How to Order BYOD Plans?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article25.html" class="decoration-default">What if a device I want is unavailable?</a>
+                                        <a href="articles/article25.php" class="decoration-default">What if a device I want is unavailable?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article26.html" class="decoration-default">Are the devices shown the ones negotiated in our contract?</a>
+                                        <a href="articles/article26.php" class="decoration-default">Are the devices shown the ones negotiated in our contract?</a>
                                     </li>
                                 </ul>
                             </div>
-
-                            <!-- <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--phone-calls-numbers-and-call-options topic-catalogue__category-icon"></span>Section title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 185px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--text-and-picture-messaging topic-catalogue__category-icon"></span>Section title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 169px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--apps-and-widgets topic-catalogue__category-icon"></span>Section title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 169px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--wireless-bluetooth-and-hotspots topic-catalogue__category-icon"></span>Section title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 169px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--device-activation-set-up-and-compatibility topic-catalogue__category-icon"></span>Section title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 169px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--device-changes-and-upgrades topic-catalogue__category-icon"></span>
-                                    Section Title
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="#" class="decoration-default">Article one</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article two</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="decoration-default">Article three</a>
-                                    </li>
-                                </ul>
-                            </div> -->
                         </div>
                     </section>
                     <!-- / End Topic Catalogue -->
