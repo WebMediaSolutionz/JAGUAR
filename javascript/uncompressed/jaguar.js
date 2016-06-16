@@ -1055,6 +1055,26 @@ var JAG = {
         	self.showFullName( $( this ) );
         });
 
+        $( '.js-copy_row input[type=checkbox]' ).click( function () {
+        	var checkbox = $( this );
+
+        	if ( checkbox.is( ':checked' ) ) {
+        		var td = checkbox.closest( 'td' ),
+        			main_dropdown = td.find( '.frg-select-container select' ),
+        			main_notes = td.find( '.frg-input-field' ),
+        			other_dropdowns = $( '.frg-select-container select' ),
+        			other_notes = $( '.frg-input-field' );
+
+        		other_dropdowns.each( function () {
+        			$( this ).val( main_dropdown.val() );
+        		});
+
+        		other_notes.each( function () {
+        			$( this ).val( main_notes.val() );
+        		});
+        	}
+        });
+
 		return self;
 	},
 
@@ -1429,7 +1449,7 @@ var JAG = {
 								break;
 		}
 
-		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text hide">' + text + '</span></div></div></div>' );
 		errors.addClass( 'show_errors' );
 
 		$( '.error_message .close' ).click( function () {
