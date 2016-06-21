@@ -1280,7 +1280,8 @@ span.footnote {
 
 .step_tracker,
 .step_tracker2,
-.step_tracker3 {
+.step_tracker3,
+.step_tracker4 {
 	padding: 30px 10%;
 
 	ol {
@@ -1664,6 +1665,10 @@ table.wide {
 			width: 250px !important;
 		}
 
+		&.longer2 {
+			width: 350px !important;
+		}
+
 		&:first-child {
 			color: #000;
 		}
@@ -1679,6 +1684,10 @@ table.wide {
 		td:first-child {
 			width: 400px !important;
 		}
+	}
+
+	&.longer2 {
+		width: 500px !important;
 	}
 }
 
