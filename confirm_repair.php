@@ -124,7 +124,7 @@
 			<div class="col-xs-offset-10 col-xs-2 small gray_text terms_conditions">
 				<h5>Terms &amp; conditions</h5>
 				<p>
-					Lorem ipsum dolor sit amet, massa bibendum risus sit lorem et cras. Adipiscing pellentesque, fusce morbi, aliquam consequat ante et vestibulum, et amet pulvinar lacus elit dignissim malesuada, eros urna et. 
+					Please click <a class="underline" target="_blank" href="docs/terms_and_conditions.pdf">here</a> to review the terms and conditions. Once you have read the details, check the box and click Save &amp; continue to proceed with the repair request.
 				</p>
 
 				<table class="terms">
