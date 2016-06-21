@@ -148,6 +148,10 @@
   border: thin solid red;
 }
 
+.outline.black {
+  border: thin solid black;
+}
+
 p.h1,
 p.h2,
 p.h3,
@@ -421,6 +425,31 @@ ul.no_styles {
 .purple_text div.h5,
 .purple_text div.h6 {
   color: #49166d !important;
+}
+
+.black_text {
+  color: #000 !important;
+}
+
+.black_text h1,
+.black_text h2,
+.black_text h3,
+.black_text h4,
+.black_text h5,
+.black_text h6,
+.black_text p.h1,
+.black_text p.h2,
+.black_text p.h3,
+.black_text p.h4,
+.black_text p.h5,
+.black_text p.h6,
+.black_text div.h1,
+.black_text div.h2,
+.black_text div.h3,
+.black_text div.h4,
+.black_text div.h5,
+.black_text div.h6 {
+  color: #000 !important;
 }
 
 .padding_top {
@@ -818,6 +847,10 @@ table thead tr th {
   margin-top: 20px;
 }
 
+.top_margin40 {
+  margin-top: 40px;
+}
+
 .top_margin50 {
   margin-top: 50px;
 }
@@ -832,6 +865,10 @@ table thead tr th {
 
 .bottom_margin50 {
   margin-bottom: 50px;
+}
+
+.top_padding10 {
+  padding-top: 10px;
 }
 
 .top_padding20 {
@@ -1737,6 +1774,10 @@ h3.buy span, h3.manage span, h3.order span {
   line-height: 30px;
   color: #666;
   margin: 0 0 25px 0;
+}
+
+.main_banner.html_version {
+  width: 80%;
 }
 
 .sub_footer {
@@ -3110,6 +3151,27 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
 
 .js-ellipsis {
   cursor: pointer;
+}
+
+.repair_step {
+  width: 75px;
+  height: 75px;
+}
+
+.repair_step.step1 {
+  background: transparent url("../img/repair_graphic.jpg") -35px -70px;
+}
+
+.repair_step.step2 {
+  background: transparent url("../img/repair_graphic.jpg") -295px -70px;
+}
+
+.repair_step.step3 {
+  background: transparent url("../img/repair_graphic.jpg") -555px -70px;
+}
+
+.repair_step.step4 {
+  background: transparent url("../img/repair_graphic.jpg") -815px -70px;
 }
 
 @media screen and (max-width: 1260px) {

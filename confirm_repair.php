@@ -61,7 +61,7 @@
 						<span>A loaner device is required</span><br />
 					</td>
 					<td class="bottom_padding20 right_align">
-						<span class="purple_text">$250.00</span>
+						<span class="purple_text">$325.00</span>
 					</td>
 				</tr>
 			</tbody>
@@ -134,7 +134,7 @@
 								<div class="inner">
 									<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 									<div class="icon">
-										<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+										<span class="frg-icon" aria-hidden="true"></span>
 									</div>
 									<label for="chkbox-option-2"></label>
 								</div>

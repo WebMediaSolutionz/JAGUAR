@@ -1204,7 +1204,7 @@ var JAG = {
 				}
 			});
 
-			if ( field.val() === null || field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+			if ( field.val() === null || field.val() === '' || field.val().toLowerCase().indexOf( 'select' ) !== -1  || field.val().indexOf( '_' ) !== -1 ) {
 				valid = false;
 				field.addClass( 'js-error' );
 			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {

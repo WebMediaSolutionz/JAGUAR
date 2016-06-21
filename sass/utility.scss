@@ -132,6 +132,10 @@
 
 .outline {
 	@include outline ( red );
+
+	&.black {
+		@include outline ( black );
+	}
 }
 
 p.h1,
@@ -340,6 +344,31 @@ ul {
 	div.h5,
 	div.h6 {
 		color: $purple2 !important;
+	}
+}
+
+.black_text {
+	color: #000 !important;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p.h1,
+	p.h2,
+	p.h3,
+	p.h4,
+	p.h5,
+	p.h6,
+	div.h1,
+	div.h2,
+	div.h3,
+	div.h4,
+	div.h5,
+	div.h6 {
+		color: #000 !important;
 	}
 }
 
@@ -750,6 +779,10 @@ table {
 	margin-top: 20px;
 }
 
+.top_margin40 {
+	margin-top: 40px;
+}
+
 .top_margin50 {
 	margin-top: 50px;
 }
@@ -764,6 +797,10 @@ table {
 
 .bottom_margin50 {
 	margin-bottom: 50px;
+}
+
+.top_padding10 {
+	padding-top: 10px;
 }
 
 .top_padding20 {

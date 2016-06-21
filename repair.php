@@ -46,7 +46,7 @@
 						<td>
 							<label class="block bold">Administrator Phone Number</label>
 
-							<input class='frg-input-field short full_width' />
+							<input class='frg-input-field js-phone_input_mask short full_width' />
 						</td>
 						<td>
 							<label class="block bold">Administrator Email</label>
@@ -67,7 +67,7 @@
 										<div class="top_bottom_small_padding">
 											<label class="block bold">What is/was the device phone number?</label>
 
-											<input class='frg-input-field short full_width' />
+											<input class='frg-input-field js-phone_input_mask short full_width' />
 										</div>
 									</td>
 									<td>
@@ -123,7 +123,7 @@
 							<div class="top_bottom_small_padding">
 								<label class="bold">Please provide any additional details on the issue or symptom:</label>
 
-								<input class='frg-input-field textarea full_width js-required' />
+								<input class="frg-input-field textarea full_width js-required" placeholder="ex: my phone fell in the toilet and it no longer turns on." />
 							</div>
 						</td>
 						<td>
@@ -134,120 +134,136 @@
 						</td>
 						<td colspan="3">
 							<div class="top_bottom_small_padding">
-								<label class="bold">What did you try to solve the problem?</label>
+								<label class="bold">What did you do to try to solve the problem?</label>
 
-								<input class='frg-input-field textarea full_width' />
+								<input class='frg-input-field textarea full_width' placeholder="ex: I removed the battery, dried it off and tried to reboot but it does not turn on." />
 
-								<div class="top_bottom_small_padding">
-									<label class="bold">This issue is continuous</label>
+								<div class="top_bottom_small_padding clearfix">
+									<div class="clearfix top_margin20">
+										<div class="left clearfix">
+											<div class="frg-checkbox regular left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_1" value="Option 1">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option1">
+														<strong>
+															<span class="value" data-value="yes">yes</span>
+														</strong>
+													</label>
+												</div>
+											</div>
 
-									<div class="gap_left">
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_1" value="Option 1">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option1">
-													<strong>
-														<span class="value" data-value="yes">yes</span>
-													</strong>
-												</label>
+											<div class="frg-checkbox regular left gap_left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_1" value="Option 2">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option2">
+														<strong>
+															<span class="value" data-value="no">no</span>
+														</strong>
+													</label>
+												</div>
 											</div>
 										</div>
 
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_1" value="Option 2">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option2">
-													<strong>
-														<span class="value" data-value="no">no</span>
-													</strong>
-												</label>
-											</div>
-										</div>
-									</div>
-
-									<label class="bold">The device has physical damage</label>
-
-									<div class="gap_left">
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_2" value="Option 1">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option1">
-													<strong>
-														<span class="value" data-value="yes">yes</span>
-													</strong>
-												</label>
-											</div>
-										</div>
-
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_2" value="Option 2">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option2">
-													<strong>
-														<span class="value" data-value="no">no</span>
-													</strong>
-												</label>
-											</div>
+										<div class="left gap_left top_padding10">
+											<label class="bold">is this issue continuous?</label>
 										</div>
 									</div>
 
-									<label class="bold">The device has liquid damage</label>
+									<div class="clearfix top_margin20">
+										<div class="left clearfix">
+											<div class="frg-checkbox regular left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_2" value="Option 1">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option1">
+														<strong>
+															<span class="value" data-value="yes">yes</span>
+														</strong>
+													</label>
+												</div>
+											</div>
 
-									<div class="gap_left">
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_3" value="Option 1">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option1">
-													<strong>
-														<span class="value" data-value="yes">yes</span>
-													</strong>
-												</label>
+											<div class="frg-checkbox regular left gap_left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_2" value="Option 2">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option2">
+														<strong>
+															<span class="value" data-value="no">no</span>
+														</strong>
+													</label>
+												</div>
 											</div>
 										</div>
 
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_3" value="Option 2">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option2">
-													<strong>
-														<span class="value" data-value="no">no</span>
-													</strong>
-												</label>
-											</div>
+										<div class="left gap_left top_padding10">
+											<label class="bold">Does the device have physical damage?</label>
 										</div>
 									</div>
 
-									<label class="bold">I need to loan a device while this device is being repaired</label>
+									<div class="clearfix top_margin20">
+										<div class="left clearfix">
+											<div class="frg-checkbox regular left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_3" value="Option 1">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option1">
+														<strong>
+															<span class="value" data-value="yes">yes</span>
+														</strong>
+													</label>
+												</div>
+											</div>
 
-									<div class="gap_left">
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_4" value="Option 1">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option1">
-													<strong>
-														<span class="value" data-value="yes">yes</span>
-													</strong>
-												</label>
+											<div class="frg-checkbox regular left gap_left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_3" value="Option 2">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option2">
+														<strong>
+															<span class="value" data-value="no">no</span>
+														</strong>
+													</label>
+												</div>
 											</div>
 										</div>
 
-										<div class="frg-checkbox regular">
-											<div class="inner">
-												<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_4" value="Option 2">
-												<div class="icon vertical_gap_top small_gap"></div>
-												<label for="radio-option2">
-													<strong>
-														<span class="value" data-value="no">no</span>
-													</strong>
-												</label>
+										<div class="left gap_left top_padding10">
+											<label class="bold">Does the device have liquid damage?</label>
+										</div>
+									</div>
+
+									<div class="clearfix top_margin20">
+										<div class="left clearfix">
+											<div class="frg-checkbox regular left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option1" type="radio" name="option_4" value="Option 1">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option1">
+														<strong>
+															<span class="value" data-value="yes">yes</span>
+														</strong>
+													</label>
+												</div>
 											</div>
+
+											<div class="frg-checkbox regular left gap_left">
+												<div class="inner">
+													<input class="vertical_gap_top small_gap js-required" id="radio-option2" type="radio" name="option_4" value="Option 2">
+													<div class="icon vertical_gap_top small_gap"></div>
+													<label for="radio-option2">
+														<strong>
+															<span class="value" data-value="no">no</span>
+														</strong>
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="left gap_left top_padding10">
+											<label class="bold">Do you require a loaner device while this device is being repaired?</label>
 										</div>
 									</div>
 								</div>
