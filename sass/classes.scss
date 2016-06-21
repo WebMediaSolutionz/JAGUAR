@@ -757,6 +757,10 @@ h3 {
 		color: $dark_gray;
 		margin: 0 0 25px 0;
 	}
+
+	&.html_version {
+		width: 80%;
+	}
 }
 
 .sub_footer {
@@ -2096,6 +2100,27 @@ table.wide {
 
 .js-ellipsis {
 	cursor: pointer;
+}
+
+.repair_step {
+	width: 75px;
+	height: 75px;
+
+	&.step1 {
+		background: transparent url( '../img/repair_graphic.jpg' ) -35px -70px;
+	}
+
+	&.step2 {
+		background: transparent url( '../img/repair_graphic.jpg' ) -295px -70px;
+	}
+
+	&.step3 {
+		background: transparent url( '../img/repair_graphic.jpg' ) -555px -70px;
+	}
+
+	&.step4 {
+		background: transparent url( '../img/repair_graphic.jpg' ) -815px -70px;
+	}
 }
 
 @media screen and (max-width: 1260px) {
