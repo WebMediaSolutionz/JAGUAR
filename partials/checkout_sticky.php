@@ -106,7 +106,7 @@
 				<a class="frg-button color-purple js-delete-row full_lenght" href="#">Delete item(s)</a>
 			</div>
 			<div class="col-xs-3 no_padding right_align">
-				<a class="frg-button color-green full_lenght js-incomplete js-duplicates" href="confirm_repair.php">Process repair</a>
+				<a class="frg-button color-green full_lenght js-submit js-incomplete js-duplicates" href="confirm_repair.php">Process repair</a>
 			</div>
 		</div>
 	</div>
