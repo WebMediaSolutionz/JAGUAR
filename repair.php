@@ -41,17 +41,17 @@
 						<td>
 							<label class="block bold">Administrator Name</label>
 
-							<input class='frg-input-field short full_width' />
+							<input class='frg-input-field short full_width js-required' />
 						</td>
 						<td>
 							<label class="block bold">Administrator Phone Number</label>
 
-							<input class='frg-input-field js-phone_input_mask short full_width' />
+							<input class='frg-input-field js-phone_input_mask short full_width js-required' />
 						</td>
 						<td>
 							<label class="block bold">Administrator Email</label>
 
-							<input class='frg-input-field short full_width' />
+							<input class='frg-input-field short full_width js-required' />
 						</td>
 						<td class="right_align">
 							<span class="purple_text">$325.00</span>
@@ -67,7 +67,7 @@
 										<div class="top_bottom_small_padding">
 											<label class="block bold">What is/was the device phone number?</label>
 
-											<input class='frg-input-field js-phone_input_mask short full_width' />
+											<input class='frg-input-field js-phone_input_mask short full_width js-required' />
 										</div>
 									</td>
 									<td>
@@ -75,7 +75,7 @@
 											<label class="block bold">What is the billing account number of this device?</label>
 
 											<div class='frg-select-container full_width color-light'>
-												<select autocomplete="off">
+												<select class="js-required" autocomplete="off">
 													<option selected>Select</option>
 													<option>Black</option>
 													<option>White</option>
@@ -97,7 +97,7 @@
 								<label class="bold">What is the issue?</label>
 
 								<div class='frg-select-container full_width color-light'>
-									<select autocomplete="off">
+									<select class="js-required" autocomplete="off">
 										<option selected>Select</option>
 										<option>Audio issue (i.e. Headset Jack / Earpiece or speaker)</option>
 										<option>Button/keys issue (i.e. Damage/ fell off or loose / unresponsive)</option>
@@ -136,7 +136,7 @@
 							<div class="top_bottom_small_padding">
 								<label class="bold">What did you do to try to solve the problem?</label>
 
-								<input class='frg-input-field textarea full_width' placeholder="ex: I removed the battery, dried it off and tried to reboot but it does not turn on." />
+								<input class='frg-input-field textarea full_width js-required' placeholder="ex: I removed the battery, dried it off and tried to reboot but it does not turn on." />
 
 								<div class="top_bottom_small_padding clearfix">
 									<div class="clearfix top_margin20">
