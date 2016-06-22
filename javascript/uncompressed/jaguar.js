@@ -1199,8 +1199,19 @@ var JAG = {
 			var field = $( this );
 
 			radios.each( function () {
-				if ( $( this ).is( ':checked' ) ) {
-					radios_valid = true;
+				var radio_name = $( this ).attr( 'name' ),
+					all_radios_by_that_name = form.find( 'input[name=' + radio_name + ']' ),
+					radio_set_valid = false;
+
+				all_radios_by_that_name.each( function () {
+					if ( $( this ).is( ':checked' ) ) {
+						radio_set_valid = true;
+					}
+				});
+
+				if ( !radio_set_valid ) {
+					all_radios_by_that_name.addClass( 'js-error' );
+					radios_valid = false;
 				}
 			});
 

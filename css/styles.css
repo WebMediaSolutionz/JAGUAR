@@ -3377,6 +3377,10 @@ select.js-error.show_errors {
   border-color: red;
 }
 
+input[type=radio].js-error.show_errors + div {
+  border: thin solid red !important;
+}
+
 label {
   margin-bottom: 0;
 }
