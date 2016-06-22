@@ -37,6 +37,10 @@ a {
 	&.color-green:hover {
 		text-decoration: none;
 	}
+
+	&.frg-button {
+		color: #8c68a6;
+	}
 }
 
 input.select.frg-button {
@@ -63,8 +67,8 @@ h6 {
 	font-size: 20px;
 }
 
-h3.title {
-	font-size: 23px;
+h2.title {
+	font-size: 27px;
 	line-height: 24px;
 	color: #666;	
 }
@@ -83,13 +87,19 @@ p {
 	margin: 25px 0;
 }
 
-ul.list {
-	padding: 0 0 15px 35px;
-	list-style: disc;
-	margin-top: -5px;
+ul {
+	&.even_list {
+		margin: 0 0 0 15px;
+	}
 
-	li {
-		padding: 5px 0;
+	&.list {
+		padding: 0 0 15px 35px;
+		list-style: disc;
+		margin-top: -5px;
+
+		li {
+			padding: 5px 0;
+		}
 	}
 }
 
@@ -150,4 +160,18 @@ table {
 b,
 strong {
 	font-weight: 800;
+}
+
+.frg-input-field.color-light, 
+.frg-select-container select.color-light, 
+.frg-select-container.color-light select,
+input,
+select {
+	&.js-error.show_errors {
+		border-color: red;
+	}
+}
+
+label {
+	margin-bottom: 0;
 }

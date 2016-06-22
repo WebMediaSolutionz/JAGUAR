@@ -12,6 +12,28 @@ var JAG = {
 
 	formEntriesValid: true,
 
+	opts2: {
+		color: '#4B286D', //#00FF00 green, #8C68A6 for purple #rgb or #rrggbb
+		top: '5%', // Top position relative to parent in px or % (use 'x%')
+		left: '5%', // Left position relative to parent in px or % (use 'x%')
+		lines: 13, // The number of lines to draw
+		length: 25, // The length of each line
+		width: 10, // The line thickness
+		radius: 40, // The radius of the inner circle
+		corners: 1, // Corner roundness (0..1)
+		rotate: 0, // The rotation offset
+		speed: 1, // Rounds per second
+		trail: 80, // Afterglow percentage
+		shadow: false, // Whether to render a shadow
+		hwaccel: false, // Whether to use hardware acceleration
+		className: 'spinner2', // The CSS class to assign to the spinner
+		zIndex: 2e9 // The z-index (defaults to 2000000000)*/
+	},
+
+	target2: null,
+
+	spinner2: null,
+
 	init: function () {
 		var self = this;
 
@@ -26,6 +48,10 @@ var JAG = {
 
 		if ( self.currentPage === 'corporate_settings' ) {
 			self.setupTabs();
+		}
+
+		if ( self.currentPage === 'devices' || self.currentPage === 'device' || self.currentPage === 'accessories' ) {
+			self.check_image_availability();
 		}
 
 		return self;
@@ -141,7 +167,7 @@ var JAG = {
 
 				case "Hide list": 	wording = "View list";
 									word.closest( 'tbody' ).find( 'tr:nth-child( ' + row_number + ' )' ).addClass( 'hide' ).find( 'div' ).addClass( 'hide' );
-									break;					
+									break;
 			}
 
 			word.text( wording );
@@ -274,8 +300,8 @@ var JAG = {
 			self.setupDueNow();
 		});
 
-		$( '.frg-checkbox' ).click( function () {
-			var clicked = $( this ),
+		$( '.frg-checkbox input[type=checkbox]' ).click( function () {
+			var clicked = $( this ).closest( '.frg-checkbox' ),
 				icon = clicked.find( '.icon .frg-icon' );
 
 			if ( icon.hasClass( 'icon-checkmark' ) ) {
@@ -283,6 +309,53 @@ var JAG = {
 			} else {
 				icon.addClass( 'icon-checkmark' );
 			}
+		});
+
+		$( '.frg-checkbox.parent input[type=checkbox]' ).click( function () {
+			 var parent_checkbox = $( this ), 
+			 	checked = parent_checkbox.is( ':checked' ),
+			 	child_checkboxes = parent_checkbox
+			 						.closest( 'tr' )
+			 						.next()
+			 						.find( '.frg-checkbox input[type=checkbox]' );
+
+			 child_checkboxes.each( function () {
+			 	var checkbox = $( this );
+
+			 	if ( checked ) {
+			 		if ( checkbox.is( ':checked' ) ) {
+			 			checkbox.trigger( 'click' );
+			 		}
+			 	} else {
+			 		if ( !checkbox.is( ':checked' ) ) {
+			 			checkbox.trigger( 'click' );
+			 		}
+			 	}
+			 });
+		});
+
+		$( '.js-select-all' ).click( function () {
+			var clicked = $( this ),
+				clicked_internal_checkbox = clicked.find( 'input[type=checkbox]' ),
+				checked = clicked_internal_checkbox.is( ':checked' ),
+				checkboxes = $( '.frg-checkbox' );
+
+			checkboxes.each( function () {
+				var checkbox = $( this ),
+					actual_checkbox = checkbox.find( 'input[type=checkbox]' );
+
+				if ( !checkbox.hasClass( 'js-select-all' ) ) {
+					if ( checked ) {
+						if ( !actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'select', checkbox );
+						}
+					} else {
+						if ( actual_checkbox.is( ':checked' ) ) {
+							self.selectCheckbox( 'deselect', checkbox );
+						}
+					}
+				}
+			});
 		});
 
 		$( '.edit_name' ).click( function () {
@@ -302,14 +375,16 @@ var JAG = {
 				closest = textbox.closest( 'p' ),
 				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( '.group_name' ),
 				code = e.which || e.keyCode;
 
 			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value );
-				container.removeClass( 'hide' );
+
+				container
+					.text( value )
+					.attr( 'fullname', value )
+					.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
@@ -319,14 +394,16 @@ var JAG = {
 				closest = textbox.closest( 'p' ),
 				container = closest.find( '.group_name_container' ),
 				edit_name = closest.find( '.edit_name' ),
-				title = closest.find( '.group_name' ),
 				code = e.which || e.keyCode;
 
 			if ( ( code == 13 || code == 9 ) && value !== '' ) {
 				textbox.addClass( 'hide' );
 				edit_name.removeClass( 'hide' );
-				title.text( value );
-				container.removeClass( 'hide' );
+				
+				container
+					.text( value )
+					.attr( 'fullname', value )
+					.removeClass( 'hide' );
 			}
 
 			self.ellipsis();
@@ -364,7 +441,7 @@ var JAG = {
 				} else {
 					clicked.text( selected_text );
 				}
-				
+
 			} else {
 				clicked.addClass( 'current' );
 
@@ -376,13 +453,8 @@ var JAG = {
 			}
 		});
 
-		$( '.advanced_option' ).change( function () {
-			var $this = $( this ),
-				value = $this.val();
-
-			if ( value === 'import' ) {
-				$('#myModal').modal();
-			}
+		$( '.advanced_import' ).click( function () {
+			$('#myModal').modal();
 		});
 
 		$( '.js-previous' ).click( function () {
@@ -416,7 +488,7 @@ var JAG = {
 
 			if ( next_page.is( 'table' ) ) {
 				view_all_table.addClass( 'hide' );
-				
+
 				previous.text( 'Previous 10' );
 
 				if ( next_page.length > 0 ) {
@@ -499,7 +571,7 @@ var JAG = {
 					status
 						.removeClass( 'negative' )
 						.addClass( 'positive' );
-						
+
 					accessory_atc.removeClass( 'state-disabled' );
 
 					if ( accessory_atc.hasClass( 'added' ) ) {
@@ -529,7 +601,7 @@ var JAG = {
 						.removeClass( 'positive' )
 						.addClass( 'negative' )
 						.find( '.tooltip_bubble span' )
-						.text( 'please, enter a valid number' );	
+						.text( 'please, enter a valid number' );
 				} else {
 					if ( max_quantity !== 0 ) {
 						status
@@ -539,7 +611,7 @@ var JAG = {
 						availability.text( '' );
 					}
 				}
-				
+
 			}
 		});
 
@@ -592,7 +664,7 @@ var JAG = {
 				for ( var i = 0; i < self.cities.length; i++ ) {
 					if ( self.cities[ i ].value.toLowerCase().indexOf( field_text ) !== -1 ) {
 						results.push( self.cities[ i ] );
-					} 
+					}
 				}
 			}
 
@@ -660,25 +732,25 @@ var JAG = {
 			}, 5000);
 		});
 
-		$( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
-			var action_buttons = $( '.operations .frg-button' ),
-				checkboxes = $( 'input[type=checkbox]' ),
-				enable = false;
+		// $( '.upgrades_subscriber input[type=checkbox]' ).click( function () {
+		// 	var action_buttons = $( '.operations .frg-button' ),
+		// 		checkboxes = $( 'input[type=checkbox]' ),
+		// 		enable = false;
 
-			checkboxes.each( function () {
-				var checkbox = $( this );
+		// 	checkboxes.each( function () {
+		// 		var checkbox = $( this );
 
-				if ( checkbox.is( ':checked' ) ) {
-					enable = true;
-				}
-			});
+		// 		if ( checkbox.is( ':checked' ) ) {
+		// 			enable = true;
+		// 		}
+		// 	});
 
-			if ( enable ) {
-				action_buttons.removeClass( 'state-disabled' );
-			} else {
-				action_buttons.addClass( 'state-disabled' );
-			}
-		});
+		// 	if ( enable ) {
+		// 		action_buttons.removeClass( 'state-disabled' );
+		// 	} else {
+		// 		action_buttons.addClass( 'state-disabled' );
+		// 	}
+		// });
 
 		$( '.js-phone_input_mask' ).keyup( function () {
 			var clicked = $( this ),
@@ -709,20 +781,20 @@ var JAG = {
 
 		// self.showFakeLinks();
 
-		$( '.js-upgrade-offer' ).change( function () {
-			var dropdown = $( this ),
-				status = dropdown.closest( 'tr' ).find( '.status' );
+		// $( '.js-upgrade-offer' ).change( function () {
+		// 	var dropdown = $( this ),
+		// 		status = dropdown.closest( 'tr' ).find( '.status' );
 
-			if ( dropdown.val().toLowerCase() !== 'select' ) {
-				if ( status.text().toLowerCase() !== 'complete' ) {
-					status.text( 'Pending device & plan' );
-				}
-			} else {
-				if ( status.text().toLowerCase() !== 'complete' ) {
-					status.text( 'Pending upgrade offer' );
-				}
-			}
-		});
+		// 	if ( dropdown.val().toLowerCase() !== 'select' ) {
+		// 		if ( status.text().toLowerCase() !== 'complete' ) {
+		// 			status.text( 'Pending device & plan' );
+		// 		}
+		// 	} else {
+		// 		if ( status.text().toLowerCase() !== 'complete' ) {
+		// 			status.text( 'Pending upgrade offer' );
+		// 		}
+		// 	}
+		// });
 
 		$( '.js-filter-service-category' ).change( function () {
 			var sort_value = $( this ).val(),
@@ -811,8 +883,6 @@ var JAG = {
 			var emails = $( '.js-match-validation' ),
 				second_email = $( 'input[name=email2]' );
 
-			// console.info( $( emails[0] ).val() + " " + $( emails[1] ).val() );
-
 			if ( $( emails[0] ).val() !== '' && $( emails[1] ).val() !== '' ) {
 				if ( $( emails[0] ).val() !== $( emails[1] ).val() ) {
 					second_email
@@ -854,9 +924,6 @@ var JAG = {
 			container.append( '<div class="row lenght70 top_margin20"><div class="col-xs-6"><label class="block devil_gray_text">DEP number</label><input class="frg-input-field full_width" /></div><div class="col-xs-6"><label class="block devil_gray_text">Description</label><input class="frg-input-field full_width" /></div></div>' );
 		});
 
-		$( '.js-display-overlay' ).click( function () {
-			self.displayOverlay( $( this ) );
-		});
 
 		$( '.frg-checkbox.js-pricepoint' ).click( function () {
 			var clicked = $( this ),
@@ -890,19 +957,245 @@ var JAG = {
 			}
 		});
 
+		$( '.js-incomplete' ).click( function ( e ) {
+			var el = $( this ),
+				type = 'error',
+				title = 'Highlighted fields are required.',
+				text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla scelerisque mi, eget commodo justo euismod eu. Mauris nec scelerisque tortor, vel volutpat sapien.',
+				errors = $( '.error_message' ),
+				error_container = $( '.error_message_container' ),
+				required_fields = $( '.js-required' );
+
+			if ( el.hasClass( 'js-incomplete' ) && error_container.length !== 0 && required_fields.length !== 0 ) {
+				e.preventDefault();
+
+				if ( errors.length === 0 ) {
+					self.checkRequiredField( e )
+						.displayErrorMessage( type, title, text )
+						.scrollTo( error_container, 15, 1000 );
+				} else {
+					self.scrollTo( error_container, 15, 1000 );
+				}
+			}
+		});
+
+		$( '.js-select-at-least-one' ).click( function () {
+			var checkboxes = $( '.js-select-at-least-one' ),
+				submitButton = $( '.js-submit' ),
+				activate = false;
+
+			checkboxes.each( function () {
+				var checkbox = $( this );
+
+				if ( checkbox.find( '.frg-icon' ).hasClass( 'icon-checkmark' ) ) {
+					activate = true;
+				}
+			});
+
+			if ( activate ) {
+				submitButton.removeClass( 'state-disabled' );
+			} else {
+				submitButton.addClass( 'state-disabled' );
+			}
+		});
+
+		$( '.js-delete-row' ).click( function () {
+			var checked_checkboxes = $( '.frg-checkbox .icon-checkmark' ),
+				rows_to_delete = checked_checkboxes.closest( 'tr' ),
+				next_row = rows_to_delete.next();
+
+			rows_to_delete.remove();
+			next_row.remove();
+		});
+
+		$( '.js-unique' ).blur( function () {
+			self.checkForDuplicates();
+		});
+
+		$( '.js-duplicates' ).click( function () {
+			var error_container = $( '.error_message_container' ),
+				unique_fields = $( '.js-unique' );
+
+			if ( error_container.length !== 0 && unique_fields.length !== 0 ) {
+				self.checkForDuplicates();
+
+				if ( $( this ).hasClass( 'js-active' ) ) {
+					var duplicates = $( '[data-duplicate=true]' ),
+						type = 'error',
+						title = "there's duplicates",
+						text = 'Lorem ipsum';
+
+					duplicates
+						.addClass( 'js-error' )
+						.addClass( 'show_errors' );
+
+					self.displayErrorMessage( type, title, text )
+						.scrollTo( error_container, 15, 1000 );
+				}
+			}
+		});
+
+		$( '.js-clear-cart' ).click( function () {
+			$('#clearCart').modal();
+		});
+
+		$( '.js-confirm-clear-cart' ).click( function () {
+			console.info( 'clear cart' );
+		});
+
+		$( '.js-display-overlay' ).click( function () {
+			self.displayOverlay( $( this ) );
+		});
+
+		$( '.js-display-spinner' ).click( function () {
+              self.start();
+        });
+
+        $( '.js-ellipsis' ).click( function () {
+        	self.showFullName( $( this ) );
+        });
+
+        $( '.js-copy_row input[type=checkbox]' ).click( function () {
+        	var checkbox = $( this );
+
+        	if ( checkbox.is( ':checked' ) ) {
+        		var td = checkbox.closest( 'td' ),
+        			main_dropdown = td.find( '.frg-select-container select' ),
+        			main_notes = td.find( '.frg-input-field' ),
+        			other_dropdowns = $( '.frg-select-container select' ),
+        			other_notes = $( '.frg-input-field' );
+
+        		other_dropdowns.each( function () {
+        			$( this ).val( main_dropdown.val() );
+        		});
+
+        		other_notes.each( function () {
+        			$( this ).val( main_notes.val() );
+        		});
+        	}
+        });
+
+		return self;
+	},
+
+	start: function () {
+		var self = this;
+
+		self.target2 = $( '.spinner2' ).get( 0 );
+		self.spinner2 = new Spinner( self.opts2 ).spin( self.target2 );
+		self.showOverlay();
+
+		return self;
+	},
+
+	stop: function () {
+		var self = this;
+
+		self
+			.hideOverlay()
+			.spinner2
+			.stop();
+
+		return self;
+	},
+
+	showOverlay: function () {
+		var self = this;
+
+		$.LoadingOverlay( "show" );
+
+		return self;
+	},
+
+	hideOverlay: function () {
+		var self = this;
+
+		$.LoadingOverlay( "hide" );
+
+		return self;
+	},
+
+	selectCheckbox: function ( action, checkbox ) {
+		if ( action === 'select' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', true )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.addClass( 'icon-checkmark' );
+		} else if ( action === 'deselect' ) {
+			checkbox
+				.find( 'input[type=checkbox]' )
+				.prop( 'checked', false )
+				.closest( '.inner' )
+				.find( '.frg-icon' )
+				.removeClass( 'icon-checkmark' );
+		}
+	},
+
+	scrollTo: function ( el, margin, time ) {
+		$( 'html, body' ).animate({
+	        scrollTop: el.offset().top - margin
+	    }, time );
+	},
+
+	checkForDuplicates: function () {
+		var self = this,
+			textfields = $( '.js-unique' ),
+			submit_btn = $( '.frg-button' ),
+			duplicates = false,
+			index_a = 0;
+
+		textfields.removeAttr( 'data-duplicate' );
+
+		textfields.each( function () {
+			var textfield1 = $( this ),
+				matches = 0,
+				index_b = 0;
+
+			textfields.each( function () {
+				var textfield2 = $( this );
+
+				if ( textfield1.val() !== '' && textfield2.val() !== '' && textfield1.val() === textfield2.val() && index_a !== index_b ) {
+					matches++;
+
+					textfield1.attr( 'data-duplicate', 'true' );
+					textfield2.attr( 'data-duplicate', 'true' );
+				}
+
+				index_b++;
+			});
+
+			index_a++;
+
+			if ( matches > 0 ) {
+				duplicates = true;
+			}
+		});
+
+		if ( duplicates ) {
+			submit_btn.addClass( 'js-active' );
+		} else {
+			submit_btn.removeClass( 'js-active' );
+		}
+
 		return self;
 	},
 
 	checkRequiredField: function ( el ) {
 		var self = this,
-			form = $( el.target ).closest( '.js-all-required-fields' ),
+			form = ( $( el.target ).closest( '.js-all-required-fields' ).length > 0 ) ? $( el.target ).closest( '.js-all-required-fields' ) : $( '.js-all-required-fields' ),
+			disable = form.hasClass( 'disable' ),
 			fields = form.find( '.js-required' ),
 			button = form.find( '.js-submit' ),
 			valid = true,
 			radios = form.find( 'input[type=radio].js-required' ),
-			radios_valid = ( radios.length > 0 ) ? false : true;
+			radios_valid = ( radios.length > 0 ) ? false : true,
+			errors = $( '.error_message_container' );
 
-		fields.each( function () {
+		errors.empty();
+
+		fields.removeClass( 'js-error' ).removeClass( 'show_errors' ).each( function () {
 			var field = $( this );
 
 			radios.each( function () {
@@ -911,19 +1204,29 @@ var JAG = {
 				}
 			});
 
-			if ( field.val() === '' || field.val().toLowerCase() === 'select' || field.val().indexOf( '_' ) !== -1 ) {
+			if ( field.val() === null || field.val() === '' || field.val().toLowerCase().indexOf( 'select' ) !== -1  || field.val().indexOf( '_' ) !== -1 ) {
 				valid = false;
+				field.addClass( 'js-error' );
 			} else if ( field.hasClass( 'js-quantity' ) && field.parent().hasClass( 'status' ) && field.parent().hasClass( 'negative' ) ) {
 				valid = false;
+				field.addClass( 'js-error' );
 			}
 		});
 
-		// console.info( self.formEntriesValid );
-
 		if ( !( valid && radios_valid && self.formEntriesValid ) ) {
-			button.addClass( 'state-disabled' );
+			if ( disable ) {
+				button.addClass( 'state-disabled' );
+			} else {
+				button.addClass( 'js-incomplete' );
+			}
 		} else {
-			button.removeClass( 'state-disabled' );
+			if ( disable ) {
+				button.removeClass( 'state-disabled' );
+			} else {
+				button.removeClass( 'js-incomplete' );
+			}
+
+			errors.empty();
 		}
 
 		return self;
@@ -936,8 +1239,6 @@ var JAG = {
 			valid = false;
 
 		fields.each( function () {
-			// console.info( $( this ).val() );
-
 			if ( $( this ).val() !== '' && $( this ).val() !== 'Select' ) {
 				valid = true;
 			}
@@ -1027,7 +1328,7 @@ var JAG = {
 				applied_filter = $( '.js-applied_filter' );
 
 			if ( !clicked.hasClass( 'btn' ) ) {
-				filters.removeClass( 'current' );	
+				filters.removeClass( 'current' );
 				clicked.addClass( 'current' );
 			}
 
@@ -1039,7 +1340,7 @@ var JAG = {
 				second_filter_text = ( second_filter.length === 1 ) ? second_filter.attr( 'data-filter' ) : null,
 				items = $( '.object' );
 
-			if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
+			if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
 				items.closest( '.js-element' ).show();
 			} else {
 				items.show();
@@ -1052,26 +1353,26 @@ var JAG = {
 
 				if ( filter_text === 'all' ) {
 					if ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) !== -1 ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					} else if( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
 							item.closest( '.js-element' ).hide();
 						} else {
 							item.hide();
 						}
 					} else if ( second_filter_text === null ) {
-						if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
+						if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
 							item.closest( '.js-element' ).show();
 						} else {
 							item.show();
 						}
 					}
 				} else if ( item.attr( 'data-filter' ).indexOf( filter_text ) === -1 || ( second_filter_text !== null && item.attr( 'data-filter' ).indexOf( second_filter_text ) === -1 ) ) {
-					if ( self.currentPage === 'plans' || self.currentPage === 'devices' ) {
+					if ( self.currentPage === 'plans' || self.currentPage === 'devices' || self.currentPage === 'upgrades_devices' || self.currentPage === 'upgrades_plans' ) {
 						item.closest( '.js-element' ).hide();
 					} else {
 						item.hide();
@@ -1083,6 +1384,8 @@ var JAG = {
 				self.rearrangeSeparators();
 			}
 		});
+
+		return self;
 	},
 
 	getFile: function (){
@@ -1125,7 +1428,7 @@ var JAG = {
 
         // sort the array by the specified column number (col) and order (asc)
         arr.sort( function ( a, b ) {
-            return ( a[ field ] == b[ field ] ) ? 0 : ( ( a[ field ] > b[ field ] ) ? direction : -1 * direction );
+            return ( a[ field ].toLowerCase() == b[ field ].toLowerCase() ) ? 0 : ( ( a[ field ].toLowerCase() > b[ field ].toLowerCase() ) ? direction : -1 * direction );
         });
 
         // replace existing rows with new rows created from the sorted array
@@ -1135,7 +1438,9 @@ var JAG = {
 	},
 
 	displayErrorMessage: function ( type, title, text ) {
-		var error_container = $( '.error_message_container' ),
+		var self = this,
+			error_container = $( '.error_message_container' ),
+			errors = $( '.js-error' ),
 			icon = null;
 
 		switch ( type ) {
@@ -1144,11 +1449,14 @@ var JAG = {
 								break;
 		}
 
-		error_container.append( '<div class="error_message ' + type + ' clearfix"><a class="close right" href="#"><span>Close</span> <span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text">' + text + '</span></div></div></div>' );
+		error_container.append( '<div class="error_message bottom_margin20 ' + type + ' clearfix"><a class="close right" href="#"><span class="frg-icon icon-x-circled"></span></a><div class="content clearfix"><div class="frg-icon ' + icon + ' left"></div><div class="text left"><div class="h3 title"><strong>' + title + '</strong></div><span class="text hide">' + text + '</span></div></div></div>' );
+		errors.addClass( 'show_errors' );
 
 		$( '.error_message .close' ).click( function () {
 			$( this ).closest( '.error_message' ).fadeOut();
 		});
+
+		return self;
 	},
 
 	showFakeLinks: function () {
@@ -1209,8 +1517,6 @@ var JAG = {
 
 			 	$.each( self.phones, function ( i, phone ) {
 			 		var listing = '';
-
-			 		// console.info( phone );
 
 			 		listing += '<div class="box phone object clearfix left" data-filter="all voice_only">';
 					listing += '	<div class="image left">';
@@ -1326,12 +1632,22 @@ var JAG = {
 
 		string.each( function () {
 			var str = $( this ),
+				str_text = str.text().trim(),
 				len = str.attr( 'data-maxlen' );
 
-			if ( str.text().trim().length > len ) {
-				str.text( str.text().trim().substr( 0, parseInt(len) - 3 ) + '...' );
+			if ( str_text.length > len ) {
+				str.text( str_text.substr( 0, parseInt( len ) - 3 ) + '...' );
 			}
 		});
+
+		return self;
+	},
+
+	showFullName: function ( str ) {
+		var self = this,
+			full = str.attr( 'fullname' );
+
+		str.text( full );
 
 		return self;
 	},
@@ -1370,7 +1686,7 @@ var JAG = {
 
 		$.mask.definitions['~']='[+-]';
 
-		$( '.js-phone_input_mask' ).mask( '(999) 999-9999' );
+		$( '.js-phone_input_mask' ).mask( '?(999) 999-9999' );
 		$( '.js-postalcode_input_mask' ).mask( 'a9a 9a9' );
 
 		return self;
@@ -1379,13 +1695,9 @@ var JAG = {
 	displayOverlay: function ( el ) {
 		var self = this;
 
-		// Show full page Loading Overlay
-		$.LoadingOverlay( "show" );
+		self.start();
 
-		// Hide it after 3 seconds
-		setTimeout( function () {
-			$.LoadingOverlay( "hide" );
-
+		$.ajax().done( function ( data ) {
 			var bottom_section = el.closest( '.bottom_section' ),
 				quantity = bottom_section.find( '.js-quantity' ).val();
 
@@ -1400,7 +1712,25 @@ var JAG = {
 				.removeClass( 'added' )
 				.text( 'Add to cart' );
 			}
-		}, 3000);
+
+			self.stop();
+		});
+
+		return self;
+	},
+
+	check_image_availability: function () {
+		var self = this,
+			images = $( '.js-check-availability' ),
+			default_img = 'img/no-image-available.jpg';
+
+		images.each( function () {
+			var img = $( this );
+
+			$.get( img.attr( 'src' ) ).fail(function() {
+				img.attr( 'src', default_img ).addClass( 'replacement_img' );
+			});
+		});
 
 		return self;
 	}

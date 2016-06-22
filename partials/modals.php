@@ -64,3 +64,29 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade" id="clearCart" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="frg-icon icon-x-inverted close" aria-hidden="true"></span></button>
+				<h4 class="modal-title hide" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<div class="inner-container gray_text clearfix">
+					<h3>Are you sure you want to clear the cart?</h3>
+				</div>
+				<div class="inner-container top_bottom_padding clearfix">
+					<div class="left">
+						<a class='frg-button color-purple left js-confirm-clear-cart' data-dismiss="modal" href='#'>Yes</a>
+						<a class='frg-button color-purple left gap_left_small' data-dismiss="modal" href='#'>No</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer hide">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>

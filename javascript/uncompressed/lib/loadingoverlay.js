@@ -10,7 +10,7 @@ LoadingOverlay - A flexible loading overlay jQuery plugin
         color           : "rgba(255, 255, 255, 0.8)",
         custom          : "",
         fontawesome     : "",
-        image           : $( 'input[name=spinner_img]' ).val(),
+        image           : null,
         maxSize         : "100px",
         minSize         : "20px",
         resizeInterval  : 0,

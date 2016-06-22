@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left">
-			<p class="h3">Order summary: #12345678</p>
+			<p class="h1">Order summary: #12345678</p>
 
 			<h4 class="no_padding gray_text">Status: <span class="frg-icon <?php echo ( $status === 'pending_approval' ) ? 'icon-warning-inverted' : 'icon-checkmark-inverted'; ?>"></span> <?php echo ( $status === 'pending_approval' ) ? 'Pending approval' : 'Shipped'; ?></h4>
 		</div>
@@ -228,10 +228,10 @@
 <div class="outer-container content white_bg top_bottom_padding">
 	<div class="inner-container clearfix">
 		<div class="col-xs-offset-6 col-xs-3 right_align">
-			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
+			<a class="frg-button color-green full_lenght" href="repair.php"><?php echo ( $status === 'pending_approval' ) ? 'Edit and resubmit order' : 'Repair selected'; ?></a>
 		</div>
 		<div class="col-xs-3 no_padding right_align">
-			<a class="frg-button color-green full_lenght" href="#"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
+			<a class="frg-button color-green full_lenght" href="return.php"><?php echo ( $status === 'pending_approval' ) ? 'Cancel order' : 'Return selected'; ?></a>
 		</div>
 	</div>
 </div>

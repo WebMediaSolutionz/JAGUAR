@@ -3,7 +3,7 @@
 
 <div class="outer-container secondary_bg top_bottom_padding white_bg">
 	<div class="inner-container clearfix">
-		<p class="h3"><span class="frg-icon icon-paper-inverted gray_text"></span> BYOD Plans</p>
+		<p class="h1"><span class="frg-icon icon-paper-inverted gray_text"></span> Activate BYOD plan</p>
 	</div>
 </div>
 
@@ -54,7 +54,7 @@
 	<div class="inner-container clearfix">
 		<div class="row">
 			<?php for ( $i = 0; $i < 4; $i++ ) { ?>
-				<div class="col-xs-6 js-element">
+				<div class="col-xs-12 js-element">
 					<?php include( 'partials/plan.php' ); ?>
 				</div>
 			<?php } ?>

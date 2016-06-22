@@ -5,8 +5,8 @@
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
-		<div class="left gray_text">
-			<div class="h3">Confirm order</div>
+		<div class="left">
+			<p class="h1">Confirm order</p>
 		</div>
 	</div>
 </div>
@@ -409,7 +409,7 @@
 								</div>
 							</td>
 							<td>
-								<span>I accept these contract terms and conditions</span>
+								<div class="gap_left_small">I accept these contract terms and conditions</div>
 							</td>
 						</tr>
 					</table>
@@ -434,7 +434,7 @@
 								</div>
 							</td>
 							<td>
-								<span>I accept these contract terms and conditions</span>
+								<div class="gap_left_small">I accept these contract terms and conditions</div>
 							</td>
 						</tr>
 					</table>

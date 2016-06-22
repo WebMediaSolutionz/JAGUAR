@@ -3,19 +3,19 @@
 
 <div class="outer-container content white_bg shadow product_header">
 	<div class="inner-container clearfix">
-		<h4 class="capitalize">samsung galaxy s6 32GB</h4>
+		<p class="h1 device_title capitalize">samsung galaxy s6 32GB</p>
 	</div>
 </div>
 
 <div class="outer-container content white_bg product">
 	<div class="inner-container clearfix">
 		<div class="row">
-			<div class="col-xs-3 col-xs-offset-2 phone_details image center_text">
+			<div class="col-xs-4 col-xs-offset-1 phone_details image center_text">
 				<!-- <img src="img/phone_big.jpg"> -->
 
 				<a href="<?php echo ( $status !== 'back order' ) ? 'device.php': '#'; ?>" class="<?php echo ( $status !== 'back order' ) ? '': 'cursor_pointer'; ?>">
-					<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey">			
-					<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver hide">	
+					<img alt="Space Grey" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-space-grey.jpg" class="js-iphone-5s-space-grey js-check-availability">			
+					<img alt="Silver" src="http://static.telus.com/common/cms/images/mobility/devices/en/iphone-5s-silver.jpg" class="js-iphone-5s-silver js-check-availability hide">	
 				</a>
 
 				<div class="device__variant-container center">			
@@ -28,7 +28,9 @@
 				</div>
 			</div>
 			<div class="js-all-required-fields">
-				<div class="col-xs-5 col-xs-offset-1">
+				<div class="col-xs-5 col-xs-offset-2">
+					<div class="error_message_container"></div>
+
 					<section>
 						<h6><strong>Step 1: Select your device options</strong></h6>
 
@@ -64,21 +66,25 @@
 							</tr>
 						</table>
 
-						<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
+						<?php if ( $status !== 'easy_pay' ) { ?>
+							<h6 class="padding_top js-hide-not-device-only"><strong>Step 2: Select your service category</strong></h6>
 
-						<div class="vertical_gap small_gap js-hide-not-device-only">
-							<div class='frg-select-container full_width color-light'>
-								<select class="js-sort-by full_width js-required" autocomplete="off">
-									<option selected>Select</option>
-									<option value="device">Voice &amp; data ($50/subscriber/month)</option>
-									<option value="device">Voice &amp; Data Lite</option>
-									<option value="brand">Voice Only ($45/subscriber/month)</option>
-									<option value="brand">Data Only ($40/subscriber/month)</option>
-								</select>
+							<div class="vertical_gap small_gap js-hide-not-device-only">
+								<div class='frg-select-container full_width color-light'>
+									<select class="js-sort-by full_width js-required" autocomplete="off">
+										<option selected>Select</option>
+										<option value="device">Voice &amp; data ($50/subscriber/month)</option>
+										<option value="device">Voice &amp; Data Lite</option>
+										<option value="brand">Voice Only ($45/subscriber/month)</option>
+										<option value="brand">Data Only ($40/subscriber/month)</option>
+									</select>
+								</div>
 							</div>
-						</div>
+						<?php } ?>
 
-						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 3</span><span class="js-show-not-device-only hide">Step 2</span>: Select your device price</strong></h6>
+						<h6 class="padding_top">
+							<strong><span class="js-hide-not-device-only">Step <?php echo ( $status !== 'easy_pay' ) ? '3' : '2'; ?></span><span class="js-show-not-device-only hide">Step <?php echo ( $status !== 'easy_pay' ) ? '2' : '1'; ?></span>: Select your device price</strong>
+						</h6>
 
 						<div class="frg-checkbox js-pricepoint regular">
 							<div class="inner">
@@ -86,7 +92,11 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option1">
 									<strong>
-										<span class="value" data-value="100">$100.00</span> 3-year plan
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="100">$100.00</span> 3-year plan
+										<?php } else { ?>
+											<span class="value" data-value="100">$20.00</span>/month on a 3 year term with $200.00 upfront
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
@@ -98,7 +108,11 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option2">
 									<strong>
-										<span class="value" data-value="775">$775.00</span> Month to month
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="775">$775.00</span> Month to month
+										<?php } else { ?>
+											<span class="value" data-value="100">$30.00</span>/month on a 2 year term with $200.00 upfront
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
@@ -110,18 +124,22 @@
 								<div class="icon vertical_gap_top small_gap"></div>
 								<label for="radio-option3">
 									<strong>
-										<span class="value" data-value="775">$775.00</span> Device only (no plan)
+										<?php if ( $status !== 'easy_pay' ) { ?>
+											<span class="value" data-value="775">$775.00</span> Device only (no plan)
+										<?php } else { ?>
+											<span class="value" data-value="775">$700.00</span> Device only (no plan)
+										<?php } ?>
 									</strong>
 								</label>
 							</div>
 						</div>
 
-						<h6 class="padding_top"><strong><span class="js-hide-not-device-only">Step 4</span><span class="js-show-not-device-only hide">Step 3</span>: Select your account configuration</strong></h6>
+						<h6 class="padding_top js-hide-not-device-only"><strong>Step <?php echo ( $status !== 'easy_pay' ) ? '4' : '3'; ?>: Select your account configuration</strong></h6>
 
-						<table class="full_width">
+						<table class="full_width js-hide-not-device-only">
 							<tr>
 								<td><span>Account</span></td>
-								<td><span class="js-hide-not-device-only">SIM type</span></td>
+								<td><span>SIM type</span></td>
 							</tr>
 							<tr>
 								<td class="halfwidth changeling">
@@ -134,7 +152,7 @@
 									</div>
 								</td>
 								<td class="halfwidth">
-									<div class='frg-select-container js-hide-not-device-only color-light full_width'>
+									<div class='frg-select-container color-light full_width'>
 										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>Nano SIM ($10.00/device)</option>
@@ -151,12 +169,12 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<span class="js-hide-not-device-only">Apple DEP</span>
+									<span>Apple DEP</span>
 								</td>
 							</tr>
 							<tr>
 								<td colspan="2">
-									<div class='frg-select-container full_width js-hide-not-device-only color-light'>
+									<div class='frg-select-container full_width color-light'>
 										<select class="js-required full_width" autocomplete="off">
 											<option selected>Select</option>
 											<option>[Account Number] - $[50]/subscriber</option>
@@ -171,12 +189,18 @@
 
 					<section class="right_align clearfix">
 						<table class="table2 right">
+							<?php if ( $status === 'easy_pay' ) { ?>
+								<tr>
+									<td><span class="block top_margin20 gap_right">Due monthly</span></td>
+									<td><span class="total">$5555.00</span></td>
+								</tr>
+							<?php } ?>
 							<tr>
 								<td><span class="block top_margin20 gap_right">Due now</span></td>
 								<td><span class="total">$0</span></td>
 							</tr>
 						</table>
-						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width state-disabled'>Add to cart</a>
+						<a href='<?php echo $next_step; ?>' class='frg-button color-green js-submit full_width js-incomplete'>Add to cart</a>
 					</section>
 				</div>
 			</div>

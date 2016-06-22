@@ -3,6 +3,9 @@
 	<head>
 		<title>TELUS</title>
 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<link rel="stylesheet" type="text/css" href="css/lib/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/frogger.css" />
 		<link rel="stylesheet" type="text/css" href="css/lib/telus-fonts.css" />
@@ -14,9 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/lib/easytabs.css" />
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
 		<link rel="stylesheet" type="text/css" href="//static.telus.com/common/css/sandboxes/fonts.css?v=1.2" />
-
 		<link href="img/TELUS-favicon-16.png" sizes="16x16" type="image/png" rel="icon" />
 
 		<!--[if lt IE 9]><script type="text/javascript" src="javascript/<?php echo $javascipt_form; ?>/lib/html5shim.js"></script><![end if]-->
@@ -44,18 +45,18 @@
 							<nav class="left">
 								<ul class="no_styles clearfix">
 									<li class="left gap_right">
-										<a class="<?php echo ( $page === 'index' ) ? 'current ' : ''; ?>block" href="index.php?banner=<?php echo $next; ?>">
-											<strong>Buy</strong>
+										<a class="current block" href="index.php?banner=<?php echo $next; ?>">
+											<span>Buy</span>
 										</a>
 									</li>
 									<li class="left gap_right">
 										<a class="block" href="#">
-											<strong>Manage</strong>
+											<span>Manage</span>
 										</a>
 									</li>
 									<li class="left">
 										<a class="block" href="#">
-											<strong>Support</strong>
+											<span>Support</span>
 										</a>
 									</li>
 								</ul>
@@ -65,7 +66,7 @@
 							<ul class="menu clearfix">
 								<li class="left gap_right">
 									<a class="user_name" href="#">
-										<div class="left"><strong>Stan Smith</strong></div>
+										<div class="left username"><span>Stan Smith</span></div>
 										<div class="left frg-icon icon-arrow-down"></div>
 									</a>
 									<ul class="no_styles">
@@ -98,8 +99,8 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'plans' ) ? 'current ': ''; ?>block" href="plans.php">
-									<strong>BYOD Plans</strong>
+								<a class="<?php echo ( $page === 'plans' || $page === 'plans2' || $page === 'upgrades_plans' ) ? 'current ': ''; ?>block" href="plans.php">
+									<strong>BYOD plans</strong>
 								</a>
 							</li>
 							<!-- <li class="left"><a class="block" href="#">BYOD Setup</a></li> -->
@@ -114,24 +115,15 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'order_management' ) ? 'current ': ''; ?>block" href="order_management.php">
-									<strong>Order management</strong>
+								<a class="<?php echo ( $page === 'order_management' || $page === 'order_management1' || $page === 'repair' || $page === 'confirm_repair' || $page === 'return' || $page === 'confirm_return' ) ? 'current ': ''; ?>block" href="order_management.php">
+									<strong>Order Management</strong>
 								</a>
 							</li>
 						</ul>
 					</nav>
 				<?php } ?>
 				<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' ) { ?>
-					<div class="shopping_cart clearfix right">
-						<div class="col-xs-2">
-							<div class="item_count"><span>5</span></div>
-							<span class="frg-icon icon-cart"></span>
-						</div>
-						<div class="col-xs-10 status right_align">
-							<div><strong>Last saved:</strong></div>
-							<div>2:38 PM EST</div>
-						</div>
-					</div>
+					<?php include( 'cart_icon.php' ); ?>
 				<?php } ?>
 			</div>
 		</div>

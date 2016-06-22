@@ -3,14 +3,14 @@
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container top_bottom_padding clearfix">
-		<div class="left gray_text">
-			<div class="h3">Order #12345678 Summary</div>
-			<h4 class="no_padding">Order received</h4>
+		<div class="left">
+			<p class="h1">Order #12345678 Summary</p>
+			<h4 class="no_padding gray_text">Order received</h4>
 		</div>
 	</div>
 </div>
 
-<?php include( 'partials/error_message.php' ); ?>
+<?php include( 'partials/error_message_mockup.php' ); ?>
 
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
