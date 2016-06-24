@@ -1075,6 +1075,26 @@ var JAG = {
         	}
         });
 
+        $( '.search_field' ).keyup( function () {
+        	var search_term = $( this ).val(),
+        		establishments = $( '.establishment' );
+
+    		establishments.each( function () {
+    			var establishment = $( this );
+
+    			if ( establishment.text().toLowerCase().indexOf( search_term ) === -1 ) {
+    				establishment
+    					.parent()
+    					.hide();
+    			} else {
+    				establishment
+    					.parent()
+    					.show();	
+    			}
+    		});
+
+        });
+
 		return self;
 	},
 

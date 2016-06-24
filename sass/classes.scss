@@ -215,6 +215,17 @@ h3 {
 		}
 	}
 
+	.establishments {
+		padding-top: 7px;
+		
+		a:link,
+		a:visited,
+		a:hover,
+		a:active {
+			font-size: 16px;
+		}
+	}
+
 	a:link,
 	a:visited,
 	a:hover,
@@ -248,6 +259,10 @@ h3 {
 
 		.gap_right {
 			margin-right: 5px;
+
+			&.establishments {
+				margin-right: 30px;
+			}
 		}
 
 		ul {

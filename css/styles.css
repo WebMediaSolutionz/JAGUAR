@@ -320,6 +320,11 @@ ul.no_styles {
   padding-bottom: 10px;
 }
 
+.top_bottom_smaller_padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .full_lenght {
   width: 100%;
 }
@@ -1183,6 +1188,17 @@ h3.buy span, h3.manage span, h3.order span {
   margin-right: 32px;
 }
 
+.header .establishments {
+  padding-top: 7px;
+}
+
+.header .establishments a:link,
+.header .establishments a:visited,
+.header .establishments a:hover,
+.header .establishments a:active {
+  font-size: 16px;
+}
+
 .header a:link,
 .header a:visited,
 .header a:hover,
@@ -1216,6 +1232,10 @@ h3.buy span, h3.manage span, h3.order span {
 
 .header .profile .gap_right {
   margin-right: 5px;
+}
+
+.header .profile .gap_right.establishments {
+  margin-right: 30px;
 }
 
 .header .profile ul {
