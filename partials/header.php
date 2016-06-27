@@ -62,8 +62,12 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="profile right">
-							<ul class="menu clearfix">
+						<div class="profile right clearfix">
+							<div class="left gap_right establishments">
+								<a href="establishments.php">establishments</a>	
+							</div>
+
+							<ul class="menu left gap_left clearfix">
 								<li class="left gap_right">
 									<a class="user_name" href="#">
 										<div class="left username"><span>Stan Smith</span></div>
@@ -115,7 +119,7 @@
 								</a>
 							</li>
 							<li class="left">
-								<a class="<?php echo ( $page === 'order_management' || $page === 'repair' || $page === 'confirm_repair' || $page === 'return' || $page === 'confirm_return' ) ? 'current ': ''; ?>block" href="order_management.php">
+								<a class="<?php echo ( $page === 'order_management' || $page === 'order_management1' || $page === 'repair' || $page === 'confirm_repair' || $page === 'return' || $page === 'confirm_return' ) ? 'current ': ''; ?>block" href="order_management.php">
 									<strong>Order Management</strong>
 								</a>
 							</li>
@@ -123,16 +127,7 @@
 					</nav>
 				<?php } ?>
 				<?php if ( $page !== 'index' && $page !== 'confirmation' && $page !== 'confirmation2' ) { ?>
-					<a class="block shopping_cart clearfix right" href="cart_review.php">
-						<div class="col-xs-2">
-							<div class="item_count"><span>5</span></div>
-							<span class="frg-icon icon-cart"></span>
-						</div>
-						<div class="col-xs-10 status right_align">
-							<div><strong>Last saved:</strong></div>
-							<div>2:38 PM EST</div>
-						</div>
-					</a>
+					<?php include( 'cart_icon.php' ); ?>
 				<?php } ?>
 			</div>
 		</div>
