@@ -11,35 +11,37 @@
 	</div>
 </div>
 
-<div class="outer-container content purple_bg top_bottom_small_padding">
-	<div class="inner-container clearfix">
-		<p class="h3 gray_text">ABC Company is eligible for the following:</p>
+<?php if ( $status !== 'easy_pay' ) { ?>
+	<div class="outer-container content purple_bg top_bottom_small_padding">
+		<div class="inner-container clearfix">
+			<p class="h3 gray_text">ABC Company is eligible for the following:</p>
 
-		<div class="clearfix vertical_gap vertical_gap_top">
-			<div class="left circle green_bg bold">20</div>
-			<div class="left gap_left super_dark_gray_text">
-				<strong class="big">Allotment program</strong>
-				<p class="top_bottom_small_padding no_margin">
-					Your current allotment balance is 20.<br />Use your allotment to upgrade any subscriber to a new smartphone  for only $75.00.<br />This program expires 6 months before your corporate agreement with TELUS ends.
-				</p>
+			<div class="clearfix vertical_gap vertical_gap_top">
+				<div class="left circle green_bg bold">20</div>
+				<div class="left gap_left super_dark_gray_text">
+					<strong class="big">Allotment program</strong>
+					<p class="top_bottom_small_padding no_margin">
+						Your current allotment balance is 20.<br />Use your allotment to upgrade any subscriber to a new smartphone  for only $75.00.<br />This program expires 6 months before your corporate agreement with TELUS ends.
+					</p>
+				</div>
 			</div>
-		</div>
 
-		<div class="clearfix">
-			<div class="left circle green_bg bold">
-				<span class="frg-icon icon-checkmark white_text"></span>
-			</div>
-			<div class="left gap_left super_dark_gray_text">
-				<strong class="big">Technology refresh program</strong>
-				<p class="top_bottom_small_padding no_margin">
-					The TELUS Technology Refresh Program allows you to upgrade any subscriber to a new smartphone after 24 months on their current term.<br />The refresh program requires the subscriber to extend their contract for another 36 months.
-				</p>
+			<div class="clearfix">
+				<div class="left circle green_bg bold">
+					<span class="frg-icon icon-checkmark white_text"></span>
+				</div>
+				<div class="left gap_left super_dark_gray_text">
+					<strong class="big">Technology refresh program</strong>
+					<p class="top_bottom_small_padding no_margin">
+						The TELUS Technology Refresh Program allows you to upgrade any subscriber to a new smartphone after 24 months on their current term.<br />The refresh program requires the subscriber to extend their contract for another 36 months.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<?php } ?>
 
-<div class="outer-container content white_bg top_bottom_padding">
+<div class="outer-container content white_bg <?php echo ( $status !== 'easy_pay' ) ? 'top_bottom_padding' : 'bottom_padding50'; ?>">
 	<div class="inner-container clearfix">
 		<div class="js-all-required-fields">
 			<p class="h3 no_margin">How to upgrade subscribers</p>

@@ -87,13 +87,19 @@ p {
 	margin: 25px 0;
 }
 
-ul.list {
-	padding: 0 0 15px 35px;
-	list-style: disc;
-	margin-top: -5px;
+ul {
+	&.even_list {
+		margin: 0 0 0 15px;
+	}
 
-	li {
-		padding: 5px 0;
+	&.list {
+		padding: 0 0 15px 35px;
+		list-style: disc;
+		margin-top: -5px;
+
+		li {
+			padding: 5px 0;
+		}
 	}
 }
 
@@ -163,6 +169,12 @@ input,
 select {
 	&.js-error.show_errors {
 		border-color: red;
+	}
+}
+
+input[type=radio] {
+	&.js-error.show_errors + div {
+		border: thin solid red !important;
 	}
 }
 

@@ -78,19 +78,22 @@
 	<div class="inner-container clearfix">
 		<div class="clearfix">
 			<h3 class="js-applied_filter">All</h3>
-			<div>
-				<h3 class="no_padding"><span class="left gap_right_small small block vertical_gap_top very_small_gap">Select your service category: </span></h3>
-				<div class="left">
-					<div class='right frg-select-container color-light'>
-						<select class="js-filter-service-category" autocomplete="off">
-							<option>Select</option>
-							<option value="voice_data" selected>Voice &amp; data ($50/subscriber/month)</option>
-							<option value="voice_only">Voice Only ($45/subscriber/month)</option>
-							<option value="data_only">Data Only ($40/subscriber/month)</option>
-						</select>
+
+			<?php if ( $status !== 'easy_pay' ) { ?>
+				<div>
+					<h3 class="no_padding"><span class="left gap_right_small small block vertical_gap_top very_small_gap">Select your service category: </span></h3>
+					<div class="left">
+						<div class='right frg-select-container color-light'>
+							<select class="js-filter-service-category" autocomplete="off">
+								<option>Select</option>
+								<option value="voice_data" selected>Voice &amp; data ($50/subscriber/month)</option>
+								<option value="voice_only">Voice Only ($45/subscriber/month)</option>
+								<option value="data_only">Data Only ($40/subscriber/month)</option>
+							</select>
+						</div>
 					</div>
 				</div>
-			</div>
+			<?php } ?>
 		</div>
 
 		<div class="phones clearfix">
