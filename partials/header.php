@@ -55,7 +55,7 @@
 										</a>
 									</li>
 									<li class="left">
-										<a class="block" href="#">
+										<a class="block" href="support/home.php">
 											<span>Support</span>
 										</a>
 									</li>
