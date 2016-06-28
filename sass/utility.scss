@@ -263,6 +263,10 @@ ul {
 
 .big {
 	font-size: 120% !important;
+
+	.frg-icon {
+		font-size: 30px;
+	}
 }
 
 .vertical_gap {
@@ -275,6 +279,10 @@ ul {
 	&.big_gap {
 		margin-bottom: 35px;
 	}
+
+	&.huge_gap {
+		margin-bottom: 70px;
+	} 
 }
 
 .vertical_gap_top {
@@ -880,6 +888,26 @@ table {
 .frg-input-field, 
 .frg-select-container select {
 	margin: 0;
+}
+
+.input-group {
+	display: block;
+
+	.frg-input-field {
+		width: 75% !important;
+		border-radius: 5px 0 0 5px;
+	}
+
+	&.datepicker {
+		.input-group .form-control, 
+		.input-group-addon, 
+		.input-group-btn {
+			display: inline-block;
+			height: 30px;
+			padding: 6px 12px;
+			margin-top: -4px;
+		}
+	}
 }
 
 .invisible {

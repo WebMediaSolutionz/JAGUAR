@@ -7,7 +7,7 @@
 	</div>
 </div>
 
-<div class="outer-container content white_bg confirmation">
+<div class="outer-container content white_bg confirmation vertical_gap huge_gap">
 	<div class="inner-container clearfix center_text">
 		<div>
 			<span class="frg-icon icon-checkmark-inverted"></span>

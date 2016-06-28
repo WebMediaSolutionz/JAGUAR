@@ -720,7 +720,8 @@ var JAG = {
 			});
 
 		$( '.js-loading' ).click( function () {
-			var content = $( '.js-loaded-content' ),
+			var self = this,
+				content = $( '.js-loaded-content' ),
 				spinner = $( '.js-loading-spinner' );
 
 			content.addClass( 'hide' );
@@ -1128,6 +1129,22 @@ var JAG = {
 	},
 
 	hideOverlay: function () {
+		var self = this;
+
+		$.LoadingOverlay( "hide" );
+
+		return self;
+	},
+
+	startSpinner: function () {
+		var self = this;
+
+		$.LoadingOverlay( "show" );
+
+		return self;
+	},
+
+	stopSpinner: function () {
 		var self = this;
 
 		$.LoadingOverlay( "hide" );

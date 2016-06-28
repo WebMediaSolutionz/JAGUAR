@@ -87,7 +87,7 @@
 					<input class="frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled" type="submit" name="submit" value="Add">
 				</div>
 				<div class="vertical_gap_top small_gap">
-					<span class="gray_text small">To upgrade subscribers on other TELUS accounts you need to repeat this process again</span>
+					<span class="gray_text small">Want to upgrade a subscriber on another TELUS account? You'll need to repeat this process with your other account.</span>
 				</div>
 			</div>
 		</div>
