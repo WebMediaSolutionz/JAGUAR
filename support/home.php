@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
+<html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
@@ -41,6 +41,8 @@
         <link rel="canonical" href="http://www.telus.com/en/support/topic/mobility-services" />
         <link rel="stylesheet" type="text/css" href="css/telus-base.css" />
         <link rel="stylesheet" type="text/css" href="css/telus-get-help.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/fix-styles.css" />        
     </head>
     <body>
         <div style="visibility: visible; display: block;" id="mbox-target-global-mbox-1458570808479-843072" class="mboxDefault"></div>
@@ -215,6 +217,23 @@
             <div id="content" class="content">
                 <!-- Template Wrapper -->
                 <div class="template-category">
+                    <header>
+                        <div class="grid">
+                            <div class="clearfix">
+                                <a class="logo left" href="#">
+                                    <img src="../img/TELUS-logo-white.svg" alt="TELUS / Home" />
+                                </a>
+                                <nav class="left main_nav">
+                                    <ul class="clearfix">
+                                        <li class="left"><a href="#">Buy</a></li>
+                                        <li class="left"><a href="#">Manage</a></li>
+                                        <li class="left"><a class="current" href="#">Support</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+
                     <!-- Topic Header -->
                     <div class="topic-header">
                         <section class="topic-header__headline">
@@ -223,53 +242,16 @@
                             </div>
                         </section>
 
-                        <!-- Grid -->
-                        <div class="grid">
-                            <form method="post" action="//www.telus.com/en/on/search/execute.do" class="support-search">
-                                <input value="2" name="activeFilter" type="hidden" />
-                                <input value="0" name="page" type="hidden" />
-
-                                <div class="support-search__input-container">
-                                    <input title="" id="query" name="query" class="support-search__input" autocomplete="off" autocapitalize="off" aria-owns="predictive-list" aria-autocomplete="inline" placeholder="What are you looking for?" type="search" />
-
-                                    <div style="display: none;" class="support-search__suggestion-dropdown" aria-expanded="false" role="listbox" id="predictive-list">
-                                        <ul class="support-search__suggestion-dropdown-suggestions">
-                                            <!-- Results injected here -->
-                                        </ul>
-                                        <ul class="support-search__suggestion-dropdown-promotions">
-                                            <!-- Results injected here -->
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <button class="support-search__submit-btn frg-button color-green" type="submit">
-                                    <span>Search</span>
-                                    <span class="frg-icon icon-magnify-glass"></span>
-                                </button>
-                            </form>			
-                        </div>
-                        <!-- / Grid -->
-
                         <div class="grid">
                             <nav class="topic-header__filter  ">
                                 <ul class="topic-header__filter-list">
                                     <li class="topic-header__filter-list-item jsChangeCategory ctx-active" data-link="get-set-up">
-                                        <a class="decoration-default" role="button" aria-controls="get-set-up" href="#/get-set-up">
-                                            <span>Account</span>
+                                        <a class="decoration-default" role="button" aria-controls="get-set-up" href="#">
+                                            <span>Articles</span>
                                         </a>
                                     </li>
-                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="learn-and-manage">
-                                        <a class="decoration-default" role="button" aria-controls="learn-and-manage" href="#/buy">
-                                            <span>Buy</span>
-                                        </a>
-                                    </li>
-                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="solve-a-problem">
-                                        <a class="decoration-default" role="button" aria-controls="solve-a-problem" href="#/manage">
-                                            <span>Manage</span>
-                                        </a>
-                                    </li>
-                                    <li data-link="contact-us" class="topic-header__filter-list-item jsChangeCategory">
-                                        <a role="button" aria-controls="solve-a-problem" href="#/contact" class="decoration-default">
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="contact-us">
+                                        <a class="decoration-default" role="button" aria-controls="contact-us" href="#">
                                             <span>Contact us</span>
                                         </a>
                                     </li>
@@ -281,10 +263,30 @@
 
                     <!-- Topic Catalogue -->
                     <section role="region" aria-live="polite" id="get-set-up" data-category="get-set-up" class="topic-catalogue" style="display: block;">
-                        <div class="grid">
+                        <div data-tab="get-set-up" class="grid">
+                            <div style="min-height: 185px;" class="topic-catalogue__item">
+                                <h2 class="topic-catalogue__category-title">
+                                    <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Getting set up
+                                </h2>
+                                <ul style="" class="topic-catalogue__item-list">
+                                    <li>
+                                        <a href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article20.php" class="decoration-default">Set up/add/remove subscribers</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article21.php" class="decoration-default">Set up/add/remove administrators</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article22.php" class="decoration-default">Book a Training Session</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <div class="topic-catalogue__item" style="min-height: 185px;">
                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting articles
+                                    <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
@@ -299,23 +301,32 @@
                                 </ul>
                             </div>
 
-                            <div style="min-height: 185px;" class="topic-catalogue__item">
+                            <div class="topic-catalogue__item" style="min-height: 185px;">
                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--travel-and-roaming topic-catalogue__category-icon"></span>Order management
+                                    <span class="frg-icon icon-user-profile-inverted topic-catalogue__category-icon"></span>Buying
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article4.php" class="decoration-default">How long will the cart save my order?</a>
+                                        <a href="articles/article23.php" class="decoration-default">Buy Devices and Plans</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
+                                        <a href="articles/article24.php" class="decoration-default">How to Order BYOD Plans?</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article25.php" class="decoration-default">What if a device I want is unavailable?</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article26.php" class="decoration-default">Are the devices shown the ones negotiated in our contract?</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article18.php" class="decoration-default">Upgrade Subscriber Devices</a>
                                     </li>
                                 </ul>
                             </div>
 
                             <div style="min-height: 185px;" class="topic-catalogue__item">
                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--data-and-data-usage topic-catalogue__category-icon"></span>Manage
+                                    <span class="frg-icon icon-smartphone-inverted topic-catalogue__category-icon"></span>Managing
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
@@ -359,51 +370,14 @@
 
                             <div style="min-height: 185px;" class="topic-catalogue__item">
                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--email topic-catalogue__category-icon"></span>Upgrades
+                                    <span class="frg-icon icon-cart-inverted topic-catalogue__category-icon"></span>Order Management
                                 </h2>
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
-                                        <a href="articles/article18.php" class="decoration-default">Upgrade Subscriber Devices</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--voicemail topic-catalogue__category-icon"></span>Get set up
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
+                                        <a href="articles/article4.php" class="decoration-default">How long will the cart save my order?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article20.php" class="decoration-default">Set up/add/remove subscribers</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article21.php" class="decoration-default">Set up/add/remove administrators</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article22.php" class="decoration-default">Book a Training Session</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 185px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--calling-features topic-catalogue__category-icon"></span>Buy - Support
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="articles/article23.php" class="decoration-default">Buy Devices and Plans</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article24.php" class="decoration-default">How to Order BYOD Plans?</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article25.php" class="decoration-default">What if a device I want is unavailable?</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article26.php" class="decoration-default">Are the devices shown the ones negotiated in our contract?</a>
+                                        <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
                                     </li>
                                 </ul>
                             </div>
@@ -412,7 +386,7 @@
                     <!-- / End Topic Catalogue -->
 
                     <!-- Topic Catalogue -->
-                    <section style="display: none;" class="topic-catalogue" data-category="learn-and-manage" id="learn-and-manage" aria-live="polite" role="region">
+                    <!-- <section style="display: none;" class="topic-catalogue" data-category="learn-and-manage" id="learn-and-manage" aria-live="polite" role="region">
                         <div class="grid">
                             <div style="min-height: 82px;" class="topic-catalogue__item">
                                 <h2 class="topic-catalogue__category-title">
@@ -540,11 +514,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- / End Topic Catalogue -->
 
                     <!-- Topic Catalogue -->
-                    <section role="region" aria-live="polite" id="solve-a-problem" data-category="solve-a-problem" class="topic-catalogue" style="display: none;">
+                    <!-- <section role="region" aria-live="polite" id="solve-a-problem" data-category="solve-a-problem" class="topic-catalogue" style="display: none;">
                         <div class="grid">
                             <div class="topic-catalogue__item" style="min-height: 140px;">
                                 <h2 class="topic-catalogue__category-title">
@@ -616,80 +590,19 @@
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
                     <!-- / End Topic Catalogue -->
 
                     <!-- Topic Catalogue -->
                     <section role="region" aria-live="polite" id="solve-a-problem" data-category="contact-us" class="topic-catalogue" style="display: none;">
-                        <div class="grid">
-                            <div class="topic-catalogue__item" style="min-height: 140px;">
+                        <div data-tab="contact-us" class="grid">
+                            <div style="min-height: 185px;" class="topic-catalogue__item">
                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--travel-and-roaming topic-catalogue__category-icon"></span>Travel &amp; roaming
+                                    <span class="frg-icon icon-phone-handset-inverted topic-catalogue__category-icon"></span>Contact out help desk
                                 </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/troubleshoot-phone-problems-travelling">I can’t get my smartphone to work when travelling</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/billed-roaming-travel-pass">I'm being billed for roaming but I have a travel pass</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/trouble-with-data-us">I can't open apps or browse the web while travelling in the U.S.</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 140px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--data-and-data-usage topic-catalogue__category-icon"></span>Data &amp; data usage
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/troubleshoot-data-prepaid-mobile-device">I can't open apps or browse the web on my Prepaid mobile device</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/airtime-summary-not-showing-bonus-minutes">My Airtime Summary doesn't show rate plan or bonus minutes</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--calling-features topic-catalogue__category-icon"></span>Calling features
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/cant-use-call-forward-mobile">I can't use Call Forward on my mobile device</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/favourite-numbers-not-updating">My favourite numbers are not updating on my smartphone</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--text-and-picture-messaging topic-catalogue__category-icon"></span>Text &amp; picture messaging
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/not-receiving-texts">I'm not receiving text messages</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/cant-text-messages-prepaid">I can't send or receive text messages on my Prepaid device</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--lost-stolen-or-damaged-phones-and-tablets-and-device-protection topic-catalogue__category-icon"></span>Lost, stolen or damaged phones and tablets &amp; device protection
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/disable-lost-stolen-phones">Disable lost or stolen smartphones</a>
-                                    </li>
-                                </ul>
+                                <div>
+                                    <span>1-888-256-8315 (select option 4)<br />Monday - Friday: 8am - 5pm</span>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -701,38 +614,60 @@
 
         <div id="ZN_ezYilXhyzPbAMLP"></div>
 
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/modernizr.js"></script>
+        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/modernizr.js"></script>
+
         <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/Bootstrap.js"></script>
+
         <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/target.js"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ajax.htm"></script>
+
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ajax.htm"></script> -->
 
         <!-- * BEGIN FOOTER WEB COMPONENT INCLUDES * -->
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/webcomponents-lite.js"></script>
+        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/webcomponents-lite.js"></script>
+
         <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/require.js"></script>
+
         <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/require_002.js"></script>
+
         <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/topic.js"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/chat_widget_component.js"></script>
+
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/chat_widget_component.js"></script> -->
 
         <script type="text/javascript">
             window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e18d5781f1","applicationID":"7069898","transactionName":"YVRXZkdUWhBVUExdV1gedkdGQVsOG0BNREhZQ0EdXFtQBkwdSFxIGw9BXUVcV0sd","queueTime":0,"applicationTime":38,"atts":"TRNUEA9OSR4=","errorBeacon":"bam.nr-data.net","agent":""}
         </script>
 
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22.js"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22_002.js" type="text/javascript"></script>
+        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22.js"></script>
+
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22_002.js" type="text/javascript"></script> -->
 
         <div style="display: none;" id="ClickTaleDiv"></div>
 
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/WRf4.js"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ChangeMonitor-latest.js"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/as58.js"></script><script src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a" type="text/javascript"></script>
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_002" type="text/javascript"></script>
+        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/WRf4.js"></script>
 
-        <iframe style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px;" id="32c49f209f6201328ede0024e87a30c2" name="32c49f209f6201328ede0024e87a30c2"></iframe>
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ChangeMonitor-latest.js"></script>
+
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/as58.js"></script>
+
+        <script src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a" type="text/javascript"></script>
+
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_002" type="text/javascript"></script> -->
+
+        <!-- <iframe style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px;" id="32c49f209f6201328ede0024e87a30c2" name="32c49f209f6201328ede0024e87a30c2"></iframe>
 
         <script type="text/javascript" async="true" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/105.js" type="text/javascript"></script>
 
         <iframe src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/105.htm" style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" height="1" width="1"></iframe>
 
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_003" type="text/javascript"></script>
+        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_003" type="text/javascript"></script> -->
+
+        <script type="text/javascript" src="../javascript/uncompressed/lib/libs.js"></script>
+
+        <script type="text/javascript" src="../javascript/uncompressed/cities.js"></script>
+        <script type="text/javascript" src="../javascript/uncompressed/jaguar.js"></script>
+
+        <script type="text/javascript">
+            JAG.init();
+        </script>
     </body>
 </html>

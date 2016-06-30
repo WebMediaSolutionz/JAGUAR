@@ -1096,6 +1096,22 @@ var JAG = {
 
         });
 
+        $( '.jsChangeCategory' ).click( function () {
+        	var tab = $( this ),
+        		tabs = $( '.jsChangeCategory' ),
+        		category = tab.attr( 'data-link' ),
+        		categories = $( 'section[data-category]' );
+
+        	if ( !tab.hasClass( 'ctx-active' ) ) {
+        		tabs.removeClass( 'ctx-active' );
+        		tab.addClass( 'ctx-active' );
+        	}
+
+        	categories.hide();
+
+        	$( 'section[data-category=' + category + ']' ).show();
+        });
+
 		return self;
 	},
 

@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+.main_nav {
+	ul {
+		li {
+			margin-right: 32px;
+
+			a {
+				&:link,
+				&:visited,
+				&:hover,
+				&:active {
+					font-size: 17px;
+					font-weight: 800px;
+					color: $white;
+					text-decoration: none;
+	    			padding-top: 29px;
+				}
+
+				&:hover,
+				&.current {
+					border-top: 6px solid $green;
+				}
+			}
+		}
+	}
+}

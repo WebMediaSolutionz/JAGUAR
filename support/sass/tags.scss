@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+header {
+	background-color: $dark_gray;
+    color: $white;
+    padding: 37px 0 32px;
+    font-family: "telusweb", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 17px;
+
+    .grid {
+    	margin: 0 15px 0 11px;
+	    max-width: 100%;
+	    min-width: 1000px;
+	    width: auto;
+	    padding: 0;
+
+	    a.logo {
+	    	width: 155px;
+		    height: 29px;
+		    margin: -8px 76px 0 0;
+			    
+	    	img {
+	    		width: 155px;
+			    height: 29px;
+			    margin-right: 76px;
+			}
+	    }
+    }
+}
