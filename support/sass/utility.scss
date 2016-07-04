@@ -2,6 +2,10 @@
 	border: thin solid red;
 }
 
+.block {
+	display: block;
+}
+
 .left {
 	float: left;
 }
@@ -10,6 +14,24 @@
 	float: right;
 }
 
-.clearfix {
+.clearfix,
+.clear {
 	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.center_element {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col6 {
+	width: 50%;
+}
+
+.separator {
+	border-left: thin solid $gray;
 }

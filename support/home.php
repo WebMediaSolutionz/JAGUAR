@@ -230,6 +230,13 @@
                                         <li class="left"><a class="current" href="#">Support</a></li>
                                     </ul>
                                 </nav>
+
+                                <nav class="right secondary_nav">
+                                    <ul class="clearfix">
+                                        <li class="left"><a href="#">establishments</a></li>
+                                        <li class="left"><a href="#">Stan Smith</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </header>
@@ -386,214 +393,6 @@
                     <!-- / End Topic Catalogue -->
 
                     <!-- Topic Catalogue -->
-                    <!-- <section style="display: none;" class="topic-catalogue" data-category="learn-and-manage" id="learn-and-manage" aria-live="polite" role="region">
-                        <div class="grid">
-                            <div style="min-height: 82px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--travel-and-roaming topic-catalogue__category-icon"></span>Travel &amp; roaming
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/understanding-roaming-charges-on-bill" class="decoration-default">Understanding roaming charges on your bill</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 82px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--data-and-data-usage topic-catalogue__category-icon"></span>Data &amp; data usage
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/mobility-data-blocks" class="decoration-default">Manage data usage on your mobile device with data blocks</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 82px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--voicemail topic-catalogue__category-icon"></span>Voicemail
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/send-mobile-voice-message" class="decoration-default">Send, reply to, and forward voice messages with your mobile</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 82px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--phone-calls-numbers-and-call-options topic-catalogue__category-icon"></span>Phone calls, numbers &amp; call options
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/unsolicited-calls-texts-mobile" class="decoration-default">Unsolicited calls and text messages to your mobile device</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--text-and-picture-messaging topic-catalogue__category-icon"></span>Text &amp; picture messaging
-                                </h2>
-                                <ul style="overflow: hidden; transition: all 0.3s ease 0s; height: 0px;" data-collapsed-height="0" data-collapse-id="16" data-expanded-height="0" class="topic-catalogue__item-list">
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/text-911" class="decoration-default">Understanding Text with 911</a>
-                                    </li>
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/photo-video-messaging" class="decoration-default">Photo and video messaging</a>
-                                    </li>
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/text-messages-north-america" class="decoration-default">Send and receive text messages in North America</a>
-                                    </li>
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/text-messages-international" class="decoration-default">Send and receive text messages internationally</a>
-                                    </li>
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/blackberry-messenger" class="decoration-default">BlackBerry Messenger</a>
-                                    </li>
-                                    <li style="display: list-item;">
-                                        <a href="http://www.telus.com/support/article/report-spam-texts-smartphone" class="decoration-default">Report spam text messages sent to your smartphone</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--device-activation-set-up-and-compatibility topic-catalogue__category-icon"></span>Device activation, set up &amp; compatibility
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/electromagnetic-radiation-sar" class="decoration-default">Understanding electromagnetic radiation and specific absorption rate</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/identity-theft-fraud" class="decoration-default">Understanding identity theft and fraud</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 140px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--device-changes-and-upgrades topic-catalogue__category-icon"></span>Device changes &amp; upgrades
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/replace-change-mobile" class="decoration-default">Replace or change your mobile device</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 140px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--lost-stolen-or-damaged-phones-and-tablets-and-device-protection topic-catalogue__category-icon"></span>Lost, stolen or damaged phones and tablets &amp; device protection
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/telus-device-protection-plan" class="decoration-default">TELUS Device Protection Plan</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/telus-device-care" class="decoration-default">TELUS Device Care</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div style="min-height: 140px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--warranty-and-repairs topic-catalogue__category-icon"></span>Warranty &amp; repairs
-                                </h2>
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/warranty-accessories" class="decoration-default">Warranty for accessories</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/track-mobile-device-repair" class="decoration-default">Track the repair of your mobility device</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.telus.com/support/article/smartphone-tablet-repair" class="decoration-default">Smartphone and tablet repair</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- / End Topic Catalogue -->
-
-                    <!-- Topic Catalogue -->
-                    <!-- <section role="region" aria-live="polite" id="solve-a-problem" data-category="solve-a-problem" class="topic-catalogue" style="display: none;">
-                        <div class="grid">
-                            <div class="topic-catalogue__item" style="min-height: 140px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--travel-and-roaming topic-catalogue__category-icon"></span>Travel &amp; roaming
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/troubleshoot-phone-problems-travelling">I can’t get my smartphone to work when travelling</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/billed-roaming-travel-pass">I'm being billed for roaming but I have a travel pass</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/trouble-with-data-us">I can't open apps or browse the web while travelling in the U.S.</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 140px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--data-and-data-usage topic-catalogue__category-icon"></span>Data &amp; data usage
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/troubleshoot-data-prepaid-mobile-device">I can't open apps or browse the web on my Prepaid mobile device</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/airtime-summary-not-showing-bonus-minutes">My Airtime Summary doesn't show rate plan or bonus minutes</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--calling-features topic-catalogue__category-icon"></span>Calling features
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/cant-use-call-forward-mobile">I can't use Call Forward on my mobile device</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/favourite-numbers-not-updating">My favourite numbers are not updating on my smartphone</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--text-and-picture-messaging topic-catalogue__category-icon"></span>Text &amp; picture messaging
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/not-receiving-texts">I'm not receiving text messages</a>
-                                    </li>
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/cant-text-messages-prepaid">I can't send or receive text messages on my Prepaid device</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="topic-catalogue__item" style="min-height: 111px;">
-                                <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--lost-stolen-or-damaged-phones-and-tablets-and-device-protection topic-catalogue__category-icon"></span>Lost, stolen or damaged phones and tablets &amp; device protection
-                                </h2>
-                                <ul class="topic-catalogue__item-list" style="">
-                                    <li>
-                                        <a class="decoration-default" href="http://www.telus.com/support/article/disable-lost-stolen-phones">Disable lost or stolen smartphones</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section> -->
-                    <!-- / End Topic Catalogue -->
-
-                    <!-- Topic Catalogue -->
                     <section role="region" aria-live="polite" id="solve-a-problem" data-category="contact-us" class="topic-catalogue" style="display: none;">
                         <div data-tab="contact-us" class="grid">
                             <div style="min-height: 185px;" class="topic-catalogue__item">
@@ -606,6 +405,34 @@
                             </div>
                         </div>
                     </section>
+
+                    <div class="purple_bg second_footer">
+                        <div class="grid">
+                            <div class="sub_footer center_element clearfix">
+                                <div class="col6 center left">
+                                    <a href="#" target="_blank" class="support block center_element">
+                                        <span class="support-footer__icon frg-icon icon-lifesaver"></span>
+                                    </a>
+                                    <a href="#">Get support online</a>
+                                </div>
+                                <div class="col6 separator center offline left">
+                                    <div class="chat agentonline block center_element">
+                                        <span class="support-footer__icon frg-icon icon-chat-dots"></span>
+                                    </div>
+                                    <div>Chat offline</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="center">
+                        <div class="grid">   
+                            <img class="logo" alt="TELUS logo" src="../img/TELUS-logo-white.svg">
+                            <p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
+                        </div>
+                    </footer>
+
                 <!-- / End Topic Catalogue -->
                 </div>
                 <!-- / End Template Wrapper -->

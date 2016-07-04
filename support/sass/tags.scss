@@ -4,7 +4,7 @@
 header {
 	background-color: $dark_gray;
     color: $white;
-    padding: 37px 0 32px;
+    padding-bottom: 15px;
     font-family: "telusweb", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 17px;
 
@@ -18,7 +18,7 @@ header {
 	    a.logo {
 	    	width: 155px;
 		    height: 29px;
-		    margin: -8px 76px 0 0;
+		    margin: 29px 76px 0 0;
 			    
 	    	img {
 	    		width: 155px;
@@ -26,5 +26,20 @@ header {
 			    margin-right: 76px;
 			}
 	    }
+    }
+}
+
+footer {
+	background-color: #333 !important;
+    color: #fff;
+    padding: 50px 0;
+
+    img.logo {
+    	margin: 10px 0;
+
+    	& + p {
+    		margin: 25px 0;
+    		font-size: 17px !important;
+    	}
     }
 }
