@@ -1,0 +1,81 @@
+@import "variables";
+@import "mixins";
+
+.main_nav {
+	margin-top: 37px;
+
+	ul {
+		li {
+			margin-right: 32px;
+
+			a {
+				&:link,
+				&:visited,
+				&:hover,
+				&:active {
+					font-size: 17px;
+					font-weight: 800px;
+					color: $white;
+					text-decoration: none;
+	    			padding-top: 29px;
+				}
+
+				&:hover,
+				&.current {
+					border-top: 6px solid $green;
+				}
+			}
+		}
+	}
+}
+
+.secondary_nav {
+	margin-top: 65px;
+
+	ul {
+		li {
+			margin-right: 32px;
+
+			a {
+				&:link,
+				&:visited,
+				&:hover,
+				&:active {
+					font-size: 16px;
+					color: $white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.sub_footer {
+	width: 400px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.second_footer {
+	padding: 20px 0 30px;
+}
+
+.support,
+.chat.agentonline {
+	width: 48px;
+	height: 78px;
+	padding-top: 30px;
+	text-decoration: none;
+
+	span {
+		font-size: 42px;
+	}
+}
+
+.jsChangeCategory {
+	a:hover {
+		text-decoration: none;
+	}
+}
