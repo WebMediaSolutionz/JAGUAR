@@ -217,29 +217,7 @@
             <div id="content" class="content">
                 <!-- Template Wrapper -->
                 <div class="template-category">
-                    <header>
-                        <div class="grid">
-                            <div class="clearfix">
-                                <a class="logo left" href="#">
-                                    <img src="../img/TELUS-logo-white.svg" alt="TELUS / Home" />
-                                </a>
-                                <nav class="left main_nav">
-                                    <ul class="clearfix">
-                                        <li class="left"><a href="#">Buy</a></li>
-                                        <li class="left"><a href="#">Manage</a></li>
-                                        <li class="left"><a class="current" href="#">Support</a></li>
-                                    </ul>
-                                </nav>
-
-                                <nav class="right secondary_nav">
-                                    <ul class="clearfix">
-                                        <li class="left"><a href="#">establishments</a></li>
-                                        <li class="left"><a href="#">Stan Smith</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </header>
+                    <?php include( 'partials/header.php' ); ?>
 
                     <!-- Topic Header -->
                     <div class="topic-header">
@@ -406,7 +384,7 @@
                         </div>
                     </section>
 
-                    <div class="purple_bg second_footer">
+                    <div class="purple_bg second_footer hide">
                         <div class="grid">
                             <div class="sub_footer center_element clearfix">
                                 <div class="col6 center left">
@@ -426,12 +404,7 @@
                         </div>
                     </div>
 
-                    <footer class="center">
-                        <div class="grid">   
-                            <img class="logo" alt="TELUS logo" src="../img/TELUS-logo-white.svg">
-                            <p>&copy; <?php echo date( 'Y' ); ?> TELUS Communications Company</p>
-                        </div>
-                    </footer>
+                    <?php include( 'partials/footer.php' ); ?>
 
                 <!-- / End Topic Catalogue -->
                 </div>
