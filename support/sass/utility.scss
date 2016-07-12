@@ -1,5 +1,8 @@
+@import "variables";
+@import "mixins";
+
 .outline {
-	border: thin solid red;
+	border: thin solid green;
 }
 
 .block {
@@ -34,4 +37,8 @@
 
 .separator {
 	border-left: thin solid $gray;
+}
+
+.italics {
+	font-style: italic;
 }

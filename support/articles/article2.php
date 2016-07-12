@@ -15,7 +15,7 @@
                     </nav>
                 </div>
 
-                <h1>I can't log into the Jaguar portal through TELUS My Account</h1>
+                <h1>Missing items from my order</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -24,15 +24,19 @@
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
                 <p>
-                    <strong>TELUS My Account won’t let me register online or log in. What should I do?</strong>
+                    <strong>Some items are missing from my submitted order. How did this happen?</strong>
                 </p>
 
                 <p>
-                    To ensure a positive customer experience, TELUS will register and set up your login information with TELUS My Account as well as perform operation acceptance testing before you are provided with access. If you can’t register or login, it’s possible that your account is not fully activated or testing is still being performed.
+                    The reason for this could be that you submitted an order with unselected items (items that were not checked off).
                 </p>
 
                 <p>
-                    Please contact your concierge for a status update of your Jaguar account.
+                    If you did not check off all items in your order, those unselected items are lost and you will have to prepare a new order for the missing items. 
+                </p>
+
+                <p>
+                    If all your items were checked off, and you are still missing items, please call 1-888-256-8315, and select Option 4.
                 </p>
             </div>
         </div>
@@ -51,6 +55,5 @@
     </script>
 
 </div>
-<hy-footer region="on" lang="en"></hy-footer>
 
 <?php include( '../partials/article_footer.php' ); ?>
