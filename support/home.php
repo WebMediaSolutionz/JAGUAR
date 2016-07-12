@@ -414,52 +414,11 @@
 
         <div id="ZN_ezYilXhyzPbAMLP"></div>
 
-        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/modernizr.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/Bootstrap.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/target.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ajax.htm"></script> -->
-
-        <!-- * BEGIN FOOTER WEB COMPONENT INCLUDES * -->
-        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/webcomponents-lite.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/require.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/require_002.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/topic.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/chat_widget_component.js"></script> -->
-
         <script type="text/javascript">
             window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e18d5781f1","applicationID":"7069898","transactionName":"YVRXZkdUWhBVUExdV1gedkdGQVsOG0BNREhZQ0EdXFtQBkwdSFxIGw9BXUVcV0sd","queueTime":0,"applicationTime":38,"atts":"TRNUEA9OSR4=","errorBeacon":"bam.nr-data.net","agent":""}
         </script>
 
-        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/1ba617de-0163-4d95-b353-57c69c5ebb22_002.js" type="text/javascript"></script> -->
-
         <div style="display: none;" id="ClickTaleDiv"></div>
-
-        <!-- <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/WRf4.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/ChangeMonitor-latest.js"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/as58.js"></script>
-
-        <script src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a" type="text/javascript"></script>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_002" type="text/javascript"></script> -->
-
-        <!-- <iframe style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px;" id="32c49f209f6201328ede0024e87a30c2" name="32c49f209f6201328ede0024e87a30c2"></iframe>
-
-        <script type="text/javascript" async="true" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/105.js" type="text/javascript"></script>
-
-        <iframe src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/105.htm" style="visibility: hidden; width: 1px; height: 1px; position: absolute; top: -1px; left: -1px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" height="1" width="1"></iframe>
-
-        <script type="text/javascript" src="Mobility%20services%20support%20homepage%20_%20Support%20_%20TELUS.com_files/a_003" type="text/javascript"></script> -->
 
         <script type="text/javascript" src="../javascript/uncompressed/lib/libs.js"></script>
 

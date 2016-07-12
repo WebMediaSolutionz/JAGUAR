@@ -24,7 +24,7 @@
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
                 <p>
-                    I want to upgrade a subscriber rate plan, but I keep getting an error message. Why?
+                    <strong>I want to change a subscriber rate plan, but I keep getting an error message. Why?</strong>
                 </p>
 
                 <p>
@@ -32,7 +32,7 @@
                 </p>
 
                 <p>
-                    At the time of your contract negotiations, your subscribers or groups of subscribers were assigned to one of seven Rate Plan Categories:
+                    At the time of your contract negotiations, your subscribers or groups of subscribers were assigned to one of seven rate plan categories:
                 </p>
 
                 <ul>
@@ -46,13 +46,13 @@
                 </ul>
 
                 <p>
-                    You can only change rate plans that are available within your category. (Payal, is there a way to confirm what category they are in? )
+                    You can only change rate plans that are available within your category. Your rate plan category is listed in the Category column.
                 </p>
 
                 <img src="../images/article1.png" />
 
                 <p>
-                    Another reason for getting an error message might be that you have selected subscribers that are in different categories or linked to different BANs (Business Account Numbers).
+                    Another reason for getting an error message might be that you have selected subscribers that are in different categories or linked to different BANs (Billing Account Numbers).
                 </p>
 
                 <p>
@@ -75,6 +75,5 @@
     </script>
 
 </div>
-<hy-footer region="on" lang="en"></hy-footer>
 
 <?php include( '../partials/article_footer.php' ); ?>
