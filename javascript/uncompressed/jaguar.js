@@ -39,6 +39,10 @@ var JAG = {
 	init: function () {
 		var self = this;
 
+		for ( var i = 0; i < 50000; i++ ) {
+			console.info( 'blah ' + i );
+		}
+
 		self
 			.setEnvironment()
 			.setupCurrentPage()
@@ -96,7 +100,10 @@ var JAG = {
 	attachEvents: function () {
 		var self = this;
 
-	    $( '.menu' ).dropit();
+	    $( '.menu' )
+	    	.dropit()
+	    	.find( '.hide' )
+	    	.removeClass( 'hide' );
 
 	    $( '.slider' ).slick({
 	    	vertical: true
