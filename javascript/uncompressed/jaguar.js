@@ -34,10 +34,13 @@ var JAG = {
 
 	spinner2: null,
 
+	environment: null,
+
 	init: function () {
 		var self = this;
 
 		self
+			.setEnvironment()
 			.setupCurrentPage()
 			.showVariants()
 			.attachEvents()
@@ -52,6 +55,21 @@ var JAG = {
 
 		if ( self.currentPage === 'devices' || self.currentPage === 'device' || self.currentPage === 'accessories' ) {
 			self.check_image_availability();
+		}
+
+		return self;
+	},
+
+	setEnvironment: function () {
+		var self = this,
+			currentURL = $( location ).attr( 'href' );
+
+		if ( currentURL.indexOf( 'localhost' ) != -1 ) {
+			self.environment = 'local';
+		} else if ( currentURL.indexOf( 'webmediasolutionz' ) != -1 ) {
+			self.environment = 'staging';
+		} else {
+			self.environment = 'production';
 		}
 
 		return self;
@@ -311,28 +329,30 @@ var JAG = {
 			}
 		});
 
-		$( '.frg-checkbox.parent input[type=checkbox]' ).click( function () {
-			 var parent_checkbox = $( this ), 
-			 	checked = parent_checkbox.is( ':checked' ),
-			 	child_checkboxes = parent_checkbox
-			 						.closest( 'tr' )
-			 						.next()
-			 						.find( '.frg-checkbox input[type=checkbox]' );
+		if ( self.environment != 'production' ) {
+			$( '.frg-checkbox.parent input[type=checkbox]' ).click( function () {
+				 var parent_checkbox = $( this ), 
+				 	checked = parent_checkbox.is( ':checked' ),
+				 	child_checkboxes = parent_checkbox
+				 						.closest( 'tr' )
+				 						.next()
+				 						.find( '.frg-checkbox input[type=checkbox]' );
 
-			 child_checkboxes.each( function () {
-			 	var checkbox = $( this );
+				 child_checkboxes.each( function () {
+				 	var checkbox = $( this );
 
-			 	if ( checked ) {
-			 		if ( checkbox.is( ':checked' ) ) {
-			 			checkbox.trigger( 'click' );
-			 		}
-			 	} else {
-			 		if ( !checkbox.is( ':checked' ) ) {
-			 			checkbox.trigger( 'click' );
-			 		}
-			 	}
-			 });
-		});
+				 	if ( checked ) {
+				 		if ( checkbox.is( ':checked' ) ) {
+				 			checkbox.trigger( 'click' );
+				 		}
+				 	} else {
+				 		if ( !checkbox.is( ':checked' ) ) {
+				 			checkbox.trigger( 'click' );
+				 		}
+				 	}
+				 });
+			});
+		}
 
 		$( '.js-select-all' ).click( function () {
 			var clicked = $( this ),
