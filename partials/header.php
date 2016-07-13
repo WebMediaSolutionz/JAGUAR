@@ -67,13 +67,13 @@
 								<a href="establishments.php">establishments</a>	
 							</div>
 
-							<ul class="menu left gap_left clearfix">
+							<ul class="menu no_styles left gap_left clearfix">
 								<li class="left gap_right">
 									<a class="user_name" href="#">
 										<div class="left username"><span>Stan Smith</span></div>
 										<div class="left frg-icon icon-arrow-down"></div>
 									</a>
-									<ul class="no_styles">
+									<ul class="no_styles hide">
 										<li></li>
 							            <li><a href="#">Stan Smith</a></li>
 							            <li><a href="#">English</a></li>

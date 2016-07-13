@@ -96,7 +96,10 @@ var JAG = {
 	attachEvents: function () {
 		var self = this;
 
-	    $( '.menu' ).dropit();
+	    $( '.menu' )
+	    	.dropit()
+	    	.find( '.hide' )
+	    	.removeClass( 'hide' );
 
 	    $( '.slider' ).slick({
 	    	vertical: true
