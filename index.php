@@ -111,11 +111,18 @@
 				<img class="headset left" src="img/headset.jpg" alt="headset">
 			</div>
 			<div class="col6 separator left">
-				<h3 class="title">Check repair ticket status</h3>
+				<h3 class="title gray_text">Repairs</h3>
 
 				<div class="ticket_number_status">
-					<input class="left frg-input-field" />
-					<a class="left frg-button gap_left_small" href="#">Repair Status</a>
+					<div class="clearfix">
+						<input class="left frg-input-field" placeholder="Enter the IMEI of the device" />
+						<a class="left frg-button gap_left_small" href="#">Submit Repair</a>
+					</div>
+
+					<div class="links">
+						<a href="#">Have you tried these troubleshooting steps?</a><br />
+						<a href="#">What is an IMEI?</a>
+					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
