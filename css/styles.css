@@ -1936,13 +1936,20 @@ h3.buy span, h3.manage span, h3.order span {
   margin: 5px auto;
 }
 
-.ticket_number_status,
+.ticket_number_status .links {
+  padding-top: 10px;
+}
+
+.ticket_number_status .frg-input-field {
+  width: 300px;
+  border: thin solid #CCC;
+}
+
 .browse_files,
 .find_a_device {
   padding: 24px 0 55px 0;
 }
 
-.ticket_number_status .frg-input-field,
 .browse_files .frg-input-field,
 .find_a_device .frg-input-field {
   width: 240px;
@@ -1953,13 +1960,11 @@ h3.buy span, h3.manage span, h3.order span {
   cursor: pointer;
 }
 
-.ticket_number_status .frg-button,
 .browse_files .frg-button,
 .find_a_device .frg-button {
   height: 40px;
 }
 
-.ticket_number_status .hidden_control,
 .browse_files .hidden_control,
 .find_a_device .hidden_control {
   height: 0px;
