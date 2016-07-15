@@ -325,6 +325,8 @@
 	}
 
 	.advanced_search {
+		padding-right: 33px;
+
 		.frg-icon {
 			margin: 0 -35px 0 10px;
 		}
@@ -417,5 +419,9 @@
 				padding-right: 20px;
 			}
 		}
+	}
+
+	.order_management table tr:nth-child(2n) {
+		background-color: $white;
 	}
 }

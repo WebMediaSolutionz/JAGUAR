@@ -3341,6 +3341,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .section_title.advanced_search {
     font-size: 120%;
   }
+  .advanced_search {
+    padding-right: 33px;
+  }
   .advanced_search .frg-icon {
     margin: 0 -35px 0 10px;
   }
@@ -3405,6 +3408,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .side_padding.js-incomplete.js-submit {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .order_management table tr:nth-child(2n) {
+    background-color: #fff;
   }
 }
 
@@ -3539,6 +3545,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .sub_footer {
     width: 400px;
   }
+  .advanced_search {
+    padding-right: 33px;
+  }
   .advanced_search .frg-icon {
     margin: 0 -35px 0 10px;
   }
@@ -3560,6 +3569,9 @@ table.wide tbody tr.wide > td, table.wide.datagrid tbody tr.wide > td {
   .confirmation.outer-container > .inner-container:first-child,
   .confirmation2.outer-container > .inner-container:first-child {
     background: none;
+  }
+  .order_management table tr:nth-child(2n) {
+    background-color: #fff;
   }
 }
 

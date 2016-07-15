@@ -200,6 +200,8 @@
 	}
 
 	.advanced_search {
+		padding-right: 33px;
+
 		.frg-icon {
 			margin: 0 -35px 0 10px;
 		}
@@ -227,5 +229,9 @@
 	.confirmation.outer-container > .inner-container:first-child, 
 	.confirmation2.outer-container > .inner-container:first-child {
 		background: none;
+	}
+
+	.order_management table tr:nth-child(2n) {
+		background-color: $white;
 	}
 }

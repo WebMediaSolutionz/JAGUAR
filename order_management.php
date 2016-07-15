@@ -1,7 +1,7 @@
 <?php include_once( 'config.php' ); ?>
 <?php include_once( 'partials/header.php' ); ?>
 
-<div class="outer-container secondary_bg white_bg">
+<div class="outer-container secondary_bg white_bg hidden-xs hidden-sm">
 	<div class="inner-container top_bottom_padding clearfix">
 		<div class="left">
 			<p class="h1">Order management</p>
@@ -11,219 +11,253 @@
 
 <div class="outer-container secondary_bg purple_bg">	
 	<div class="inner-container clearfix">
-		<div class="left">
-			<nav>
-				<ul class="no_styles">
-					<li class="left"><a class="block current" href="#">Show all</a></li>
-					<li class="left"><a class="block" href="#">Pending approval</a></li>
-					<li class="left"><a class="block" href="#">Orders approved</a></li>
-					<li class="left"><a class="block" href="#">Returns</a></li>
-					<li class="left"><a class="block" href="#">Repairs</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="right padding_top">
-			<a class="block advanced_search" href="#">
-				<div class="left icon-plus-inverted toggle_panel">Show advanced search</div> 
-				<div class="left frg-icon icon-plus-inverted toggle_panel"></div>
-			</a>
+		<div class="row">
+			<div class="col-md-4 col-lg-12">
+				<div class="left hidden-xs hidden-sm">
+					<nav>
+						<ul class="no_styles">
+							<li class="left"><a class="block current" href="#">Show all</a></li>
+							<li class="left"><a class="block" href="#">Pending approval</a></li>
+							<li class="left"><a class="block" href="#">Orders approved</a></li>
+							<li class="left"><a class="block" href="#">Returns</a></li>
+							<li class="left"><a class="block" href="#">Repairs</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="visible-xs-block visible-sm-block">
+					<p class="h1"><span class="support-footer__icon frg-icon icon-cart-inverted gray_text"></span> Order Management</p>
+				</div>
+
+				<div class="visible-xs-block visible-sm-block">
+					<div class="frg-select-container full_width">
+						<select autocomplete="off">
+							<option>Actions</option>
+							<option>Edit</option>
+							<option>Copy order to cart</option>
+							<option>Cancel order</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="right padding_top">
+					<a class="block advanced_search" href="#">
+						<div class="clearfix">
+							<div class="left icon-plus-inverted toggle_panel">Show advanced search</div> 
+							<div class="left frg-icon icon-plus-inverted toggle_panel"></div>
+						</div>
+					</a>
+				</div>	
+			</div>
 		</div>
 	</div>
 	<div class="inner-container advanced_search_table closed hide clearfix">
-		<table>
-			<tr>
-				<td>
-					<label class="block">Order ID (#)</label>
-					<div class="status clearfix positive">
-						<input class="frg-input-field small js-validate_number left" placeholder='Order ID'>
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-				<td>
-					<label class="block">Date Range</label>
-					<div class="form-group">
-		                <div class='input-group date datepicker'>
-		                    <input class="form-control frg-input-field" placeholder="Date From" />
-		                    <span class="input-group-addon">
-		                        <span class="frg-icon icon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-				</td>
-				<td>
-					<label class="block">&nbsp;</label>
-					<div class="form-group">
-		                <div class='input-group date datepicker'>
-		                    <input class="form-control frg-input-field" placeholder="Date To" />
-		                    <span class="input-group-addon">
-		                        <span class="frg-icon icon-calendar"></span>
-		                    </span>
-		                </div>
-		            </div>
-				</td>
-				<td>
-					<label class="block">BAN</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>1051231215615</option>
-							<option>8512198423165</option>
-							<option>7441125898338</option>
-						</select>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">First Name</label>
-					<input class='frg-input-field small' placeholder='First Name' />
-				</td>
-				<td>
-					<label class="block">Last Name</label>
-					<input class='frg-input-field small' placeholder='Last Name' />
-				</td>
-				<td>
-					<label class="block">Shipping Phone Number</label>
-					<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
-				</td>
-				<td>
-					<label class="block">Email</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-email_validation left' placeholder='E-mail' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">Status</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>Select</option>
-						</select>
-					</div>
-				</td>
-				<td>
-					<label class="block">Order Type</label>
-					<div class='frg-select-container color-light'>
-						<select autocomplete="off">
-							<option>Select</option>
-							<option>Select</option>
-						</select>
-					</div>
-				</td>
-				<td>
-					<label class="block">Shipping Postal Code</label>
-					<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
-				</td>
-				<td>
-					<label class="block">IMEI</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label class="block">SIM Serial Number</label>
-					<div class="status clearfix positive">
-						<input class='frg-input-field small js-validate_number left' placeholder='SIM Serial Number' />
-						<div class="frg-icon icon-info back-order left"></div>
-						<div class="tooltip_bubble">
-							<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
-						</div>
-					</div>
-				</td>
-				<td></td>
-				<td></td>
-				<td>
-					<label class="block">&nbsp;</label>
-					<a href='#' class='frg-button button-wide color-green js-loading state-disabled'>Search</a>
-				</td>
-			</tr>
-		</table>
+		<div class="row">
+			<div class="col-md-4 col-lg-12">
+				<table>
+					<tr>
+						<td>
+							<label class="block">Order ID (#)</label>
+							<div class="status clearfix positive">
+								<input class="frg-input-field small js-validate_number left" placeholder='Order ID'>
+								<div class="frg-icon icon-info back-order left"></div>
+								<div class="tooltip_bubble">
+									<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<label class="block">Date Range</label>
+							<div class="form-group">
+				                <div class='input-group date datepicker'>
+				                    <input class="form-control frg-input-field" placeholder="Date From" />
+				                    <span class="input-group-addon">
+				                        <span class="frg-icon icon-calendar"></span>
+				                    </span>
+				                </div>
+				            </div>
+						</td>
+						<td>
+							<label class="block">&nbsp;</label>
+							<div class="form-group">
+				                <div class='input-group date datepicker'>
+				                    <input class="form-control frg-input-field" placeholder="Date To" />
+				                    <span class="input-group-addon">
+				                        <span class="frg-icon icon-calendar"></span>
+				                    </span>
+				                </div>
+				            </div>
+						</td>
+						<td>
+							<label class="block">BAN</label>
+							<div class='frg-select-container color-light'>
+								<select autocomplete="off">
+									<option>Select</option>
+									<option>1051231215615</option>
+									<option>8512198423165</option>
+									<option>7441125898338</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="block">First Name</label>
+							<input class='frg-input-field small' placeholder='First Name' />
+						</td>
+						<td>
+							<label class="block">Last Name</label>
+							<input class='frg-input-field small' placeholder='Last Name' />
+						</td>
+						<td>
+							<label class="block">Shipping Phone Number</label>
+							<input class='frg-input-field small js-phone_input_mask' placeholder='Phone Number' />
+						</td>
+						<td>
+							<label class="block">Email</label>
+							<div class="status clearfix positive">
+								<input class='frg-input-field small js-email_validation left' placeholder='E-mail' />
+								<div class="frg-icon icon-info back-order left"></div>
+								<div class="tooltip_bubble">
+									<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="block">Status</label>
+							<div class='frg-select-container color-light'>
+								<select autocomplete="off">
+									<option>Select</option>
+									<option>Select</option>
+								</select>
+							</div>
+						</td>
+						<td>
+							<label class="block">Order Type</label>
+							<div class='frg-select-container color-light'>
+								<select autocomplete="off">
+									<option>Select</option>
+									<option>Select</option>
+								</select>
+							</div>
+						</td>
+						<td>
+							<label class="block">Shipping Postal Code</label>
+							<input class='frg-input-field small js-postalcode_input_mask' placeholder='Shipping Postal Code' />
+						</td>
+						<td>
+							<label class="block">IMEI</label>
+							<div class="status clearfix positive">
+								<input class='frg-input-field small js-validate_number left' placeholder='IMEI' />
+								<div class="frg-icon icon-info back-order left"></div>
+								<div class="tooltip_bubble">
+									<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label class="block">SIM Serial Number</label>
+							<div class="status clearfix positive">
+								<input class='frg-input-field small js-validate_number left' placeholder='SIM Serial Number' />
+								<div class="frg-icon icon-info back-order left"></div>
+								<div class="tooltip_bubble">
+									<span>The quantity you are trying to order is on back order. Please try reducing the quantity until the indicator changes to available</span>
+								</div>
+							</div>
+						</td>
+						<td></td>
+						<td></td>
+						<td>
+							<label class="block">&nbsp;</label>
+							<a href='#' class='frg-button button-wide color-green js-loading state-disabled'>Search</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 </div>
 
 <div class="outer-container content white_bg top_bottom_padding order_management">
 	<div class="inner-container clearfix">
-		<div class="left gray_text">
-			<h4 class="no_padding">Orders</h4>
-		</div>
-		<div class="right">
-			<div class="frg-select-container color-light left">
-				<select autocomplete="off">
-					<option>Actions</option>
-					<option>Edit</option>
-					<option>Copy order to cart</option>
-					<option>Cancel order</option>
-				</select>
+		<div class="row">
+			<div class="col-md-4 col-lg-12">
+				<div class="left gray_text">
+					<h4 class="no_padding">Orders</h4>
+				</div>
+				<div class="right hidden-xs hidden-sm">
+					<div class="frg-select-container color-light left">
+						<select autocomplete="off">
+							<option>Actions</option>
+							<option>Edit</option>
+							<option>Copy order to cart</option>
+							<option>Cancel order</option>
+						</select>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="inner-container js-loaded-content clearfix">
-		<table class="wide">
-			<thead class="gray_text">
-				<tr>
-					<th class="clearfix">
-						<span>Select</span>
-					</th>
-					<th class="clearfix">
-						<span>Order ID (#)</span>
-					</th>
-					<th class="clearfix">
-						<div>
-							<a class="block js-sort gray_text left" href="#">Submitter</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="2" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
-						<div>	
-							<a class="block js-sort gray_text left" href="#">Payment method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
-						<div>
-							<a class="block js-sort gray_text left" href="#">Date submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
-						<span>Type</span>
-					</th>
-					<th class="clearfix">
-						<div>
-							<a class="block js-sort gray_text left" href="#">Status</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="6" href="#"></a>
-						</div>
-					</th>
-					<th class="clearfix">
-						<span>Due now</span>
-					</th>
-				</tr>
-			</thead>
-			<tbody id="sortable" class="small">
-				<?php 
-					for ( $i = 0; $i < 4; $i++ ) { 
-						include( 'partials/order_management_row.php' );
-					}
-				?>
-			</tbody>
-		</table>
+		<div class="row">
+			<div class="col-md-4 col-lg-12">
+				<table class="wide">
+					<thead class="gray_text">
+						<tr>
+							<th class="hidden-xs hidden-sm clearfix">
+								<span>Select</span>
+							</th>
+							<th class="clearfix">
+								<span>Order ID (#)</span>
+							</th>
+							<th class="hidden-xs hidden-sm clearfix">
+								<div>
+									<a class="block js-sort gray_text left" href="#">Submitter</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="2" href="#"></a>
+								</div>
+							</th>
+							<th class="hidden-xs hidden-sm clearfix">
+								<div>	
+									<a class="block js-sort gray_text left" href="#">Payment method</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="3" href="#"></a>
+								</div>
+							</th>
+							<th class="hidden-xs hidden-sm clearfix">
+								<div>
+									<a class="block js-sort gray_text left" href="#">Date submitted</a> <a class="left js-sort frg-icon icon-arrow-down block purple_text" data-field="4" href="#"></a>
+								</div>
+							</th>
+							<th class="hidden-xs hidden-sm clearfix">
+								<span>Type</span>
+							</th>
+							<th class="clearfix">
+								<div>
+									<a class="block js-sort gray_text left" href="#">Status</a> <a class="left js-sort frg-icon icon-arrow-down hidden-xs hidden-sm block purple_text" data-field="6" href="#"></a>
+								</div>
+							</th>
+							<th class="clearfix right_align">
+								<span>Due now</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="sortable" class="small">
+						<?php 
+							for ( $i = 0; $i < 4; $i++ ) { 
+								include( 'partials/order_management_row.php' );
+							}
+						?>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
 
 	<?php include( 'partials/loading.php' ); ?>
 </div>
 
-<div class="outer-container content white_bg top_bottom_padding order_management">
+<div class="outer-container content white_bg top_bottom_padding order_management hidden-xs hidden-sm">
 	<div class="inner-container clearfix">
 		<?php include( 'partials/paging.php' ); ?>		
 	</div>

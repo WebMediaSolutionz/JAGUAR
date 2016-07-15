@@ -1,5 +1,5 @@
 <tr>
-	<td>
+	<td class="hidden-xs hidden-sm">
 		<div class="frg-checkbox small regular">
 			<div class="inner">
 				<input type="radio" value="Option 1" name="option" id="radio-option1">
@@ -11,22 +11,22 @@
 	<td>
 		<a class="underline" href="order_details1.php?status=<?php echo ( $i % 2 === 0 ) ? 'shipped' : 'pending' ; ?>">1234567890</a>
 	</td>
-	<td>
+	<td class="hidden-xs hidden-sm">
 		<span>Stan a</span>
 	</td>
-	<td>
+	<td class="hidden-xs hidden-sm">
 		<span>Airtime Account -70728106 Airtime Account -70728106 Airtime Account -70728106</span>
 	</td>
-	<td>
+	<td class="hidden-xs hidden-sm">
 		<span>Jan 15, 2016</span>
 	</td>
-	<td>
+	<td class="hidden-xs hidden-sm">
 		<span>Purchase</span>
 	</td>
 	<td>
 		<span class="status positive">Pending approval</span>
 	</td>
-	<td>
+	<td class="right_align">
 		<span class="purple_text">$25,750</span>
 	</td>
 </tr>
