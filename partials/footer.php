@@ -39,5 +39,10 @@
 				// JAG.displayErrorMessage( 'warning', 'test', 'testing' );
 			});
 		</script>
+
+		<script>
+			var _elev = window._elev || {};(function() {var i,e;i=document.createElement("script"),i.type='text/javascript';i.async=1,i.src="https://static.elev.io/js/v3.js",e=document.getElementsByTagName("script")[0],e.parentNode.insertBefore(i,e);})();
+			_elev.account_id = '578d12d9c857f';
+		</script>
 	</body>
 </html> 
