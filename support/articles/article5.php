@@ -30,18 +30,16 @@
                 </p>
 
                 <p>
-                    Unfortunately once an order is submitted, there is no cancellation option available in the Jaguar portal. Our warehouse is very efficient at picking, packing and shipping every order promptly upon receipt. It is quite likely that your order is already in transit.
+                    If you wish to cancel or change your order after it has been submitted, please call TELUS at 1-888-256-8315.
                 </p>
 
                 <p>
-                    If you wish to cancel or change your order after you have submitted it, you will have to send the original order back to TELUS and we will manually make the adjustments.
+                    If your order has been been processed or shipped, wait until you recieve your order. Then call TELUS at 1-888-256-8315 for cancellation and return options.
                 </p>
 
                 <p>
-                    Note that there are prompts through the workflow (lower right corner) to remind you to proceed or allow you to go back to the previous step to help ensure an order is accurate before actually submitting it.  
+                    Find out if your order has been shipped.
                 </p>
-
-                <img src="../images/article5.jpg">
             </div>
         </div>
         <!-- End of Article Content -->
