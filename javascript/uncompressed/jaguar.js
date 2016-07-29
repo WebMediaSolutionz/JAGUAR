@@ -49,6 +49,8 @@ var JAG = {
 			.setupDueNow()
 			.setupInputMasks();
 
+		$("img.lazy").lazyload();
+
 		if ( self.currentPage === 'corporate_settings' ) {
 			self.setupTabs();
 		}
