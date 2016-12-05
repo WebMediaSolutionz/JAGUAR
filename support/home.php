@@ -232,7 +232,32 @@
                                 <ul class="topic-header__filter-list">
                                     <li class="topic-header__filter-list-item jsChangeCategory ctx-active" data-link="get-set-up">
                                         <a class="decoration-default" role="button" aria-controls="get-set-up" href="#">
-                                            <span>Articles</span>
+                                            <span>Getting set up</span>
+                                        </a>
+                                    </li>
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="buying">
+                                        <a class="decoration-default" role="button" aria-controls="buying" href="#">
+                                            <span>Buying</span>
+                                        </a>
+                                    </li>
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="managing">
+                                        <a class="decoration-default" role="button" aria-controls="managing" href="#">
+                                            <span>Managing</span>
+                                        </a>
+                                    </li>
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="order-management">
+                                        <a class="decoration-default" role="button" aria-controls="order-management" href="#">
+                                            <span>Order Management</span>
+                                        </a>
+                                    </li>
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="troubleshooting">
+                                        <a class="decoration-default" role="button" aria-controls="troubleshooting" href="#">
+                                            <span>Troubleshooting</span>
+                                        </a>
+                                    </li>
+                                    <li class="topic-header__filter-list-item jsChangeCategory" data-link="release-notes">
+                                        <a class="decoration-default" role="button" aria-controls="release-notes" href="#">
+                                            <span>Release Notes</span>
                                         </a>
                                     </li>
                                     <li class="topic-header__filter-list-item jsChangeCategory" data-link="contact-us">
@@ -250,9 +275,9 @@
                     <section role="region" aria-live="polite" id="get-set-up" data-category="get-set-up" class="topic-catalogue" style="display: block;">
                         <div data-tab="get-set-up" class="grid">
                             <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
+<!--                                 <h2 class="topic-catalogue__category-title">
                                     <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Getting set up
-                                </h2>
+                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
@@ -268,11 +293,17 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
 
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="troubleshooting" class="topic-catalogue" style="display: none;">
+                        <div data-tab="troubleshooting" class="grid">
                             <div class="topic-catalogue__item" style="min-height: 185px;">
-                                <h2 class="topic-catalogue__category-title">
+                                <!-- <h2 class="topic-catalogue__category-title">
                                     <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
-                                </h2>
+                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article1.php" class="decoration-default">Error message when I try to change a rate plan.</a>
@@ -285,11 +316,17 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
 
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="buying" class="topic-catalogue" style="display: none;">
+                        <div data-tab="buying" class="grid">
                             <div class="topic-catalogue__item" style="min-height: 185px;">
-                                <h2 class="topic-catalogue__category-title">
+                                <!-- <h2 class="topic-catalogue__category-title">
                                     <span class="frg-icon icon-user-profile-inverted topic-catalogue__category-icon"></span>Buying
-                                </h2>
+                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article23.php" class="decoration-default">Buy Devices and Plans</a>
@@ -308,11 +345,17 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
 
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="managing" class="topic-catalogue" style="display: none;">
+                        <div data-tab="managing" class="grid">
                             <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
+                                <!-- <h2 class="topic-catalogue__category-title">
                                     <span class="frg-icon icon-smartphone-inverted topic-catalogue__category-icon"></span>Managing
-                                </h2>
+                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article6.php" class="decoration-default">What information can I get from an invoice report?</a>
@@ -352,11 +395,17 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
 
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="order-management" class="topic-catalogue" style="display: none;">
+                        <div data-tab="order-management" class="grid">
                             <div style="min-height: 185px;" class="topic-catalogue__item">
-                                <h2 class="topic-catalogue__category-title">
+                                <!-- <h2 class="topic-catalogue__category-title">
                                     <span class="frg-icon icon-cart-inverted topic-catalogue__category-icon"></span>Order Management
-                                </h2>
+                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article4.php" class="decoration-default">How long will the cart save my order?</a>
@@ -365,6 +414,18 @@
                                         <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
                                     </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
+
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="release-notes" class="topic-catalogue" style="display: none;">
+                        <div data-tab="release-notes" class="grid">
+                            <div style="min-height: 185px;" class="topic-catalogue__item">
+                                <h2 class="topic-catalogue__category-title">
+                                    <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Release Notes
+                                </h2>
                             </div>
                         </div>
                     </section>
