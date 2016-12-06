@@ -230,8 +230,8 @@
                         <div class="grid">
                             <nav class="topic-header__filter  ">
                                 <ul class="topic-header__filter-list">
-                                    <li class="topic-header__filter-list-item jsChangeCategory ctx-active" data-link="get-set-up">
-                                        <a class="decoration-default" role="button" aria-controls="get-set-up" href="#">
+                                    <li class="topic-header__filter-list-item jsChangeCategory ctx-active" data-link="getting-set-up">
+                                        <a class="decoration-default" role="button" aria-controls="getting-set-up" href="#">
                                             <span>Getting set up</span>
                                         </a>
                                     </li>
@@ -272,12 +272,9 @@
                     <!-- / End Topic Header -->
 
                     <!-- Topic Catalogue -->
-                    <section role="region" aria-live="polite" id="get-set-up" data-category="get-set-up" class="topic-catalogue" style="display: block;">
-                        <div data-tab="get-set-up" class="grid">
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="getting-set-up" class="topic-catalogue" style="display: block;">
+                        <div data-tab="getting-set-up" class="grid">
                             <div style="min-height: 185px;" class="topic-catalogue__item">
-<!--                                 <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Getting set up
-                                </h2> -->
                                 <ul style="" class="topic-catalogue__item-list">
                                     <li>
                                         <a href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
@@ -290,29 +287,6 @@
                                     </li>
                                     <li>
                                         <a href="articles/article22.php" class="decoration-default">Book a Training Session</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- / End Topic Catalogue -->
-
-                    <!-- Topic Catalogue -->
-                    <section role="region" aria-live="polite" id="get-set-up" data-category="troubleshooting" class="topic-catalogue" style="display: none;">
-                        <div data-tab="troubleshooting" class="grid">
-                            <div class="topic-catalogue__item" style="min-height: 185px;">
-                                <!-- <h2 class="topic-catalogue__category-title">
-                                    <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
-                                </h2> -->
-                                <ul style="" class="topic-catalogue__item-list">
-                                    <li>
-                                        <a href="articles/article1.php" class="decoration-default">Error message when I try to change a rate plan.</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article2.php" class="decoration-default">Missing items from my order</a>
-                                    </li>
-                                    <li>
-                                        <a href="articles/article3.php" class="decoration-default">I can’t log into the Jaguar portal through TELUS My Account</a>
                                     </li>
                                 </ul>
                             </div>
@@ -342,6 +316,24 @@
                                     </li>
                                     <li>
                                         <a href="articles/article18.php" class="decoration-default">Upgrade Subscriber Devices</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article100.php" class="decoration-default">How do I port subscribers from another carrier</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article101.php" class="decoration-default">How do I send a device in for repair</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article102.php" class="decoration-default">How to bulk upload subscriber device information</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article103.php" class="decoration-default">What financing is available for devices</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article104.php" class="decoration-default">What is an IMEI</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article105.php" class="decoration-default">Where can I find the SIM number</a>
                                     </li>
                                 </ul>
                             </div>
@@ -412,6 +404,29 @@
                                     </li>
                                     <li>
                                         <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- / End Topic Catalogue -->
+
+                    <!-- Topic Catalogue -->
+                    <section role="region" aria-live="polite" id="get-set-up" data-category="troubleshooting" class="topic-catalogue" style="display: none;">
+                        <div data-tab="troubleshooting" class="grid">
+                            <div class="topic-catalogue__item" style="min-height: 185px;">
+                                <!-- <h2 class="topic-catalogue__category-title">
+                                    <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
+                                </h2> -->
+                                <ul style="" class="topic-catalogue__item-list">
+                                    <li>
+                                        <a href="articles/article1.php" class="decoration-default">Error message when I try to change a rate plan.</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article2.php" class="decoration-default">Missing items from my order</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article3.php" class="decoration-default">I can’t log into the Jaguar portal through TELUS My Account</a>
                                     </li>
                                 </ul>
                             </div>
