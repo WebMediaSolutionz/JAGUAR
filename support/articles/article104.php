@@ -1,6 +1,4 @@
-<?php include( '../partials/article_header.php' ); ?>
-
-<div id="content" class="content">
+    <?php include( '../partials/article_header.php' ); ?>
 
     <!-- Article -->
     <section class="article">
@@ -17,7 +15,7 @@
                     </nav>
                 </div>
 
-                <h1>How do I tag subscribers with Organization Tags?</h1>
+                <h1>What is an IMEI?</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -26,38 +24,16 @@
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
                 <p>
-                    Only the Super Administrator has the authority to create and manage Organization Tags. 
+                    The IMEI is a 15-digit (no letters) identification number for a mobile device. It can be located in the following ways: 
                 </p>
 
-                <p>
-                    You can use the Organization Tags to tag subscribers and sort them into groups. Here’s how:
-                </p>
-
-                <p>
-                    <strong>LOCATION:</strong> Manage -> Services -> 
-                </p>
-
-                <p>
-                    First select the subscriber(s) that you wish to tag.
-                </p>
-
-                <img src="../images/article9a.jpg">
-
-                <p>
-                    Click on Actions, and select Organize from the menu.
-                </p>
-
-                <img src="../images/article9b.jpg">
-
-                <p>
-                    A pop-up box appears. Select the desired values under each label pertaining to the account subscriber(s).  Click Save.
-                </p>
-
-                <img src="../images/article9c.jpg">
-
-                <p>
-                    The Organization Tags will appear in the subscribers summary page in about 60 seconds.
-                </p>
+                <ul>
+                    <li>Look on the side of the device box</li>
+                    <li>Look on the back of the phone under the battery</li>
+                    <li>Look inside the SIM or SD card tray</li>
+                    <li>Remove the battery and locate the small ticker</li>
+                    <li>Press *#06# using the keypad on your phone</li>
+                </ul>
             </div>
         </div>
         <!-- End of Article Content -->

@@ -359,7 +359,7 @@
                                         <a href="articles/article8.php" class="decoration-default">What do the features in the Actions drop down menu mean?</a>
                                     </li>
                                     <li>
-                                        <a href="articles/article9.php" class="decoration-default">How do I tag subscribers with organization Tags?</a>
+                                        <a href="articles/article106.php" class="decoration-default">How do I tag subscribers with organization Tags?</a>
                                     </li>
                                     <li>
                                         <a href="articles/article10.php" class="decoration-default">How do I run an invoice report?</a>
@@ -385,6 +385,24 @@
                                     <li>
                                         <a href="articles/article17.php" class="decoration-default">An employee is going on vacation. How do I suspend her service?</a>
                                     </li>
+                                    <li>
+                                        <a href="articles/article107.php" class="decoration-default">How do I easily track when a contract is about to expire</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article108.php" class="decoration-default">How do I see my available inventory</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article109.php" class="decoration-default">How do I see the device for each employee</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article110.php" class="decoration-default">How do I use advanced capabilities to search for assets</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article111.php" class="decoration-default">How near realtime is the usage information</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article112.php" class="decoration-default">How to move a mobile device from inventory to assigned without assigning an employee</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -404,6 +422,12 @@
                                     </li>
                                     <li>
                                         <a href="articles/article5.php" class="decoration-default">How do I cancel or change an order after it’s submitted?</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article113.php" class="decoration-default">How do I check the status of my order</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article114.php" class="decoration-default">How long does device activation take</a>
                                     </li>
                                 </ul>
                             </div>
@@ -427,6 +451,12 @@
                                     </li>
                                     <li>
                                         <a href="articles/article3.php" class="decoration-default">I can’t log into the Jaguar portal through TELUS My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article115.php" class="decoration-default">A device is not working. Any suggestions</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles/article116.php" class="decoration-default">Items ordered are not in stock</a>
                                     </li>
                                 </ul>
                             </div>
