@@ -375,6 +375,8 @@
         }
         </style>
 
+        <link rel="stylesheet" type="text/css" href="../../css/lib/dropit.css" />  
+
         <link rel="stylesheet" type="text/css" href="../css/fix-styles.css" />  
     </head>
 

@@ -42,7 +42,121 @@
         <link rel="stylesheet" type="text/css" href="css/telus-base.css" />
         <link rel="stylesheet" type="text/css" href="css/telus-get-help.css" />
 
-        <link rel="stylesheet" type="text/css" href="css/fix-styles.css" />        
+        <link rel="stylesheet" type="text/css" href="css/fix-styles.css" />
+
+        <style type="text/css">
+            .header {
+                padding: 26px 0 14px 0;
+
+                .logo {
+                    width: 155px;
+                    height: 29px;
+                    margin-right: 76px;
+
+                    & + nav .gap_right {
+                        margin-right: 32px;
+                    }
+                }
+
+                .establishments {
+                    padding-top: 7px;
+                    
+                    a:link,
+                    a:visited,
+                    a:hover,
+                    a:active {
+                        font-size: 16px;
+                    }
+                }
+
+                a:link,
+                a:visited,
+                a:hover,
+                a:active {
+                    color: #FFF;
+                    font-size: 17px;
+                }
+
+                nav {
+                    margin-top: -26px;
+
+                    ul {
+                        margin: 0;
+
+                        li a {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+
+                .profile {
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+
+                    .gap_right {
+                        margin-right: 5px;
+
+                        &.establishments {
+                            margin-right: 30px;
+                        }
+                    }
+
+                    ul {
+                        margin: 20px 0 0 0;
+
+                        & > li > ul {
+                            width: 200px;
+                            margin: 0 0 0 -95px;
+
+                            a:link,
+                            a:visited,
+                            a:hover,
+                            a:active {
+                                color: #3d2557;
+                                padding: 0 23px;
+                                display: block;
+                            }
+
+                            li {
+                                background-color: #FFF;
+                                border-left: thin solid #ececec;
+                                border-right: thin solid #ececec;
+                            }
+
+                            & li:first-child {
+                                height: 15px;
+                                background: transparent url( '../../img/triangle.png' ) no-repeat 115px 0;
+                                border: none;
+                            }
+
+                            & li:nth-child(2) a {
+                                padding: 9px 23px;
+                                border-bottom: thin solid #ececec;
+                            }
+
+                            & li:nth-child(3) a {
+                                padding: 9px 23px 0 23px;
+                            }
+
+                            & li:last-child a {
+                                padding: 0 23px 15px 23px;
+                                border-bottom: thin solid #ececec;
+                            }
+                        }
+
+                        li .guy {
+                            margin-top: -5px;
+                        }
+
+                        li .bottom_arrow {
+                            margin-top: -1px;
+                        }
+                    }
+                }
+            }
+        </style>
+
+        <link rel="stylesheet" type="text/css" href="../css/lib/dropit.css" />  
     </head>
     <body>
         <div style="visibility: visible; display: block;" id="mbox-target-global-mbox-1458570808479-843072" class="mboxDefault"></div>
