@@ -43,6 +43,8 @@
             </div>
         </div>
         <!-- End of Article Content -->
+
+        <?php include( '../partials/second_footer.php' ); ?>
     </section>
     <!-- / End Article -->
 

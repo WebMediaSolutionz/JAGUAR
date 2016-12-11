@@ -8,6 +8,7 @@ body {
 
 .main_nav {
 	margin-top: 37px;
+	font-weight: bold;
 
 	ul {
 		li {
@@ -35,8 +36,6 @@ body {
 }
 
 .secondary_nav {
-	margin-top: 65px;
-
 	ul {
 		li {
 			margin-right: 32px;
@@ -76,6 +75,7 @@ body {
 
 	span {
 		font-size: 42px;
+		color: #8c68a6;
 	}
 }
 
@@ -122,8 +122,6 @@ body {
 	}
 
 	nav {
-		margin-top: -26px;
-
 		ul {
 			margin: 0;
 
@@ -134,7 +132,8 @@ body {
 	}
 
 	.profile {
-		padding-top: 20px;
+		margin-top: 10px;
+		padding-bottom: 0;
 
 		.gap_right {
 			margin-right: 5px;
@@ -145,11 +144,11 @@ body {
 		}
 
 		ul {
-			margin: 20px 0 0 0;
+			margin: 0;
 
 			& > li > ul {
 				width: 200px;
-				margin: 0 0 0 -95px;
+				margin: 0 0 0 -105px;
 
 				a:link,
 				a:visited,
@@ -196,4 +195,25 @@ body {
 			}
 		}
 	}
+}
+
+.topic-header__headline h2 {
+	color: $purple;
+}
+
+.article-content {
+	padding-bottom: 30px;
+}
+
+.dropit-trigger {
+	.username {
+		span {
+			font-size: 13px;
+			font-weight: 600;
+		}
+	}
+}
+
+.frg-icon.icon-arrow-down {
+	margin: 1px 0 0 5px;
 }
