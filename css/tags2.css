@@ -1,0 +1,23 @@
+body {
+  font-size: 17px;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+}
+
+ol,
+ul {
+  list-style: disc;
+  margin-left: 15px;
+}

@@ -1,0 +1,167 @@
+/* SHADES OF PURPLE */
+/**********************/
+/* SHADES OF GRAY */
+/*******************/
+/* SHADES OF RANDOM */
+/*******************/
+/* DIFFERENT SCREEN SIZE */
+/*************************/
+body,
+html {
+  font-family: "telusweb", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 17px;
+}
+
+footer.inner-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer.inner-container .logo {
+  margin: 10px 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #3d2557;
+  text-decoration: none;
+}
+
+a:link:focus, a:visited:focus, a:hover:focus, a:active:focus {
+  outline: none;
+}
+
+a:link.frg-icon, a:visited.frg-icon, a:hover.frg-icon, a:active.frg-icon {
+  color: #57a708;
+}
+
+a.color-green:focus, a.color-green:hover {
+  text-decoration: none;
+}
+
+a.frg-button {
+  color: #8c68a6;
+}
+
+input.select.frg-button {
+  color: #3d2557;
+  padding: 10px 20px 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+
+h1.price span,
+h2.price span,
+h3.price span,
+h4.price span,
+h5.price span,
+h6.price span {
+  font-size: 40px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+h2.title {
+  font-size: 27px;
+  line-height: 24px;
+  color: #666;
+}
+
+h3.title + .h1,
+h3.title + .h2,
+h3.title + .h3,
+h3.title + .h4,
+h3.title + .h5,
+h3.title + .h6 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+p {
+  margin: 25px 0;
+}
+
+ul.even_list {
+  margin: 0 0 0 15px;
+}
+
+ul.list {
+  padding: 0 0 15px 35px;
+  list-style: disc;
+  margin-top: -5px;
+}
+
+ul.list li {
+  padding: 5px 0;
+}
+
+input[type=text] {
+  height: 30px;
+  border-radius: 0;
+  border: thin solid #d8d8d8;
+}
+
+table.outline tr td {
+  border: thin solid red;
+}
+
+table.datagrid tr th,
+table.datagrid tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+table tr.outline {
+  border: none;
+}
+
+table tr.outline td,
+table tr.outline th {
+  border-bottom: thin solid #f4f5f6;
+}
+
+table tr th {
+  vertical-align: top;
+}
+
+table tr th .frg-icon {
+  margin-top: 5px;
+}
+
+table tr td {
+  vertical-align: top;
+}
+
+table tr td.side_padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+b,
+strong {
+  font-weight: 800;
+}
+
+.frg-input-field.color-light.js-error.show_errors,
+.frg-select-container select.color-light.js-error.show_errors,
+.frg-select-container.color-light select.js-error.show_errors,
+input.js-error.show_errors,
+select.js-error.show_errors {
+  border-color: red;
+}
+
+input[type=radio].js-error.show_errors + div {
+  border: thin solid red !important;
+}
+
+label {
+  margin-bottom: 0;
+}
