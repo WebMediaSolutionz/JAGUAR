@@ -4,7 +4,7 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<div class="left">
-			<p class="h3"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart items</p>
+			<p class="h1"><span class="frg-icon icon-cart-inverted gray_text"></span> Cart items</p>
 		</div>
 	</div>
 </div>
@@ -12,6 +12,10 @@
 <div class="outer-container secondary_bg white_bg">
 	<div class="inner-container clearfix">
 		<span class="gray_text">Please select the items that you would like to checkout</span>
+
+		<br /><br />
+
+		<?php include( 'partials/error_message_mockup.php' ); ?>
 	</div>
 </div>
 
@@ -19,12 +23,13 @@
 	<div class="inner-container clearfix">
 		<h3 class="title no_margin left">Devices and Plans</h3>
 		<div class="right">
-			<div class="frg-select-container color-light left gap_right">
-				<select autocomplete="off">
-					<option>Actions</option>
-					<option>Actions</option>
-				</select>
+			<div class="left">
+				<span>Actions:</span>
 			</div>
+			<a class='frg-button color-purple state-disabled left gap_left_small' href='#'>Duplicate item</a>
+			<a class='frg-button color-purple state-disabled left gap_left_small' href='#'>Edit item</a>
+			<a class='frg-button color-purple left gap_left_small' href='#'>Delete item</a>
+			<a class='frg-button color-purple left gap_left_small js-clear-cart' href='#'>Clear cart</a>
 		</div>
 	</div>
 </div>
@@ -46,11 +51,11 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -83,11 +88,11 @@
 				</tr>
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -117,7 +122,7 @@
 				</tr>
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2"  disabled="disabled">
 								<div class="icon">
@@ -184,11 +189,11 @@
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>
@@ -248,18 +253,18 @@
 					<th>Quantity</th>
 					<th>Description</th>
 					<th>Availability</th>
-					<th></th>
+					<th><span class="invisible">Due monthly</span></th>
 					<th>Due now</th>
 				</tr>
 			</thead>
 			<tbody class="small gray_text">
 				<tr class="wide">
 					<td>
-						<div class="frg-checkbox regular small">
+						<div class="frg-checkbox js-select-at-least-one regular small">
 							<div class="inner">
 								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
 								<div class="icon">
-									<span class="frg-icon icon-checkmark" aria-hidden="true"></span>
+									<span class="frg-icon" aria-hidden="true"></span>
 								</div>
 							</div>
 						</div>

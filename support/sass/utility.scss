@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+
+.outline {
+	border: thin solid green;
+}
+
+.block {
+	display: block;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix,
+.clear {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.center_element {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col6 {
+	width: 50%;
+}
+
+.separator {
+	border-left: thin solid $gray;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}

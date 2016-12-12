@@ -3,3 +3,6 @@ css/
 !css/styles.css
 !css/styles2.css
 node_modules/
+sass/lib/
+support/sass/
+work_files/

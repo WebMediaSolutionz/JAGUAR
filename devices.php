@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container clearfix">
-		<p class="h3"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
+		<p class="h1"><span class="support-footer__icon frg-icon icon-smartphone-inverted gray_text"></span> Devices</p>
 
 		<div class="clearfix">
 			<nav class="left filter_nav brand">
@@ -61,13 +61,13 @@
 
 			<div class='frg-select-container color-light right'>
 				<select class="js-sort-by" autocomplete="off">
-					<option value="brand">Sort by: Brand</option>
-					<option value="price1">Sort by: Price (with term)</option>
-					<option value="price2">Sort by: Price (device only)</option>
-					<option value="price3">Sort by: Price (month to month)</option>
-					<option value="device">Sort by: Device Type</option>
-					<option value="availability">Sort by: Availability</option>
-					<option value="plan_nav">Sort by: Plan</option>
+					<option value="brand">Filter by: Brand</option>
+					<option value="price1">Filter by: Price (with term)</option>
+					<option value="price2">Filter by: Price (device only)</option>
+					<option value="price3">Filter by: Price (month to month)</option>
+					<option value="device">Filter by: Device Type</option>
+					<option value="availability">Filter by: Availability</option>
+					<option value="plan_nav">Filter by: Plan</option>
 				</select>
 			</div>
 		</div>
@@ -78,19 +78,22 @@
 	<div class="inner-container clearfix">
 		<div class="clearfix">
 			<h3 class="js-applied_filter">All</h3>
-			<div>
-				<h3 class="no_padding"><span class="left gap_right_small smaller">Select your service category: </span></h3>
-				<div class="left">
-					<div class='right frg-select-container color-light'>
-						<select class="js-filter-service-category" autocomplete="off">
-							<option>Select</option>
-							<option value="voice_data">Voice &amp; data ($50/subscriber/month)</option>
-							<option value="voice_only">Voice Only ($45/subscriber/month)</option>
-							<option value="data_only">Data Only ($40/subscriber/month)</option>
-						</select>
+
+			<?php if ( $status !== 'easy_pay' ) { ?>
+				<div>
+					<h3 class="no_padding"><span class="left gap_right_small small block vertical_gap_top very_small_gap">Select your service category: </span></h3>
+					<div class="left">
+						<div class='right frg-select-container color-light'>
+							<select class="js-filter-service-category" autocomplete="off">
+								<option>Select</option>
+								<option value="voice_data" selected>Voice &amp; data ($50/subscriber/month)</option>
+								<option value="voice_only">Voice Only ($45/subscriber/month)</option>
+								<option value="data_only">Data Only ($40/subscriber/month)</option>
+							</select>
+						</div>
 					</div>
 				</div>
-			</div>
+			<?php } ?>
 		</div>
 
 		<div class="phones clearfix">

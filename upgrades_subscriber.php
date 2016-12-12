@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container padding_bottom clearfix">
-		<p class="h3"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
+		<p class="h1"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
 
 		<span>First select an upgrade offer for each subscriber then select the subscriber(s) and add a device and plan.</span>
 	</div>
@@ -32,20 +32,22 @@
 					<th>
 						<div class="frg-checkbox regular small">
 							<div class="inner">
-								<input class="js-check-all" id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
+								<input class="js-check-all" id="chkbox-option-0" type="checkbox" name="option-0" value="Option 0">
 								<div class="icon bit_lower">
 									<span aria-hidden="true" class="frg-icon"></span>
 								</div>
 							</div>
-							<label for="chkbox-option-2"></label>
+							<label for="chkbox-option-0"></label>
 						</div>
 					</th>
 					<th>Phone number</th>
 					<th>Subscriber</th>
-					<th>Device balance</th>
 					<th>Upgrade offer</th>
-					<th>Status</th>
-					<th class="right_align">Due now</th>
+					<?php if ( $status !== 'easy_pay' ) { ?>
+						<th>Device balance</th>
+					<?php } ?>
+					<th class="center_text">Status</th>
+					<th class="right_align"><?php echo ( $status !== 'easy_pay' ) ? 'Due' : 'Upgrade Fee*'; ?></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -54,293 +56,43 @@
 						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
 					</td>
 				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
+				<?php for( $i = 1; $i <= 3; $i++ ) { ?>
+					<?php include( 'partials/upgrades_subscriber_row.php' ); ?>
+				<?php } ?>
 				<tr>
 					<td colspan="7">
 						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
 					</td>
 				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
+				<?php for( $i = 4; $i <= 6; $i++ ) { ?>
+					<?php include( 'partials/upgrades_subscriber_row.php' ); ?>
+				<?php } ?>
 				<tr>
 					<td colspan="7">
 						<div class="top_bottom_small_padding">The following subscribers have a minimum service committment of $50.00/month</div>
 					</td>
 				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Complete ( <a href="#">edit</a> )</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Complete ( <a href="#">edit</a> )</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
-				<tr>
-					<td class="top_bottom_small_padding">
-						<input type="hidden" name="blah" value="#" />
-						<div class="frg-checkbox regular small">
-							<div class="inner">
-								<input id="chkbox-option-2" type="checkbox" name="option-2" value="Option 2">
-								<div class="icon bit_lower">
-									<span aria-hidden="true" class="frg-icon"></span>
-								</div>
-								<label for="chkbox-option-2"></label>
-							</div>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding">555-555-5555</td>
-					<td class="top_bottom_small_padding">John Doe</td>
-					<td class="side_padding center">$0.00</td>
-					<td>
-						<div class='frg-select-container color-light'>
-							<select class="js-upgrade-offer" autocomplete="off">
-								<option>Select</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-								<option>Technology refresh</option>
-							</select>
-						</div>
-					</td>
-					<td class="top_bottom_small_padding purple_text"><span class="status">Pending upgrade offer</span></td>
-					<td class="right_align top_bottom_small_padding">-</td>
-				</tr>
+				<?php for( $i = 7; $i <= 9; $i++ ) { ?>
+					<?php include( 'partials/upgrades_subscriber_row.php' ); ?>
+				<?php } ?>
 			</tbody>
 		</table>
 
 		<div class="clearfix">
 			<div class="purple_bg left add_subscriber">
-				<p class="h3">Add another subscriber that is on TELUS account #898927383:</p>
+				<p class="h1">Add another subscriber that is on TELUS account #898927383:</p>
 
 				<div class="clearfix">
 					<input class='frg-input-field left js-phone_input_mask side_padding' placeholder="Enter a phone number" />
 					<input class="frg-button color-purple left gap_left_small side_padding js-validated_options state-disabled" type="submit" name="submit" value="Add">
 				</div>
 				<div class="vertical_gap_top small_gap">
-					<span class="gray_text small">To upgrade subscribers on other TELUS accounts you need to repeat this process again</span>
+					<span class="gray_text small">Want to upgrade a subscriber on another TELUS account? You'll need to repeat this process with your other account.</span>
 				</div>
 			</div>
 		</div>
+
+		<span class="small">*Does not include hardware or rate plan charges</span>
 	</div>
 </div>
 

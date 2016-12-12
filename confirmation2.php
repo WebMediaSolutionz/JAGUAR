@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow confirmation_header">
 	<div class="inner-container clearfix">
-		<h4 class="manage">Order Confirmation</h4>
+		<p class="h1 manage">Order Confirmation</p>
 	</div>
 </div>
 

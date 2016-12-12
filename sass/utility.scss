@@ -4,11 +4,12 @@
 .inner-container {
 	margin-right: auto;
 	margin-left: auto;
+	/*max-width: 1200px;*/
+	min-width: 1000px;
+	width: 93%;
 }
 
-.inner-container,
 .modal-dialog {
-	/*max-width: 1200px;*/
 	min-width: 1000px;
 	width: 90%;
 }
@@ -77,12 +78,20 @@
 	margin-left: 15px;
 }
 
+.gap_left_smaller {
+	margin-left: 5px;
+}
+
 .gap_right_small {
 	margin-right: 15px;
 }
 
 .separator {
 	border-left: thin solid #979797;
+
+	&.accessory {
+		border-left: thin solid $gray;
+	}
 }
 
 .horizontal_separator {
@@ -123,6 +132,10 @@
 
 .outline {
 	@include outline ( red );
+
+	&.black {
+		@include outline ( black );
+	}
 }
 
 p.h1,
@@ -141,8 +154,23 @@ div.h6 {
 	font-family: "telusweb","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 
 	.frg-icon {
-		font-size: 34px;
+		font-size: 40px;
 		vertical-align: middle;
+
+		&.icon-repair,
+		&.icon-return {
+			display: block;
+			width: 35px;
+			height: 35px;
+		}
+
+		&.icon-repair {
+			background: transparent url( '../img/repair.jpg' ) no-repeat;
+		}
+
+		&.icon-return {
+			background: transparent url( '../img/return.jpg' ) no-repeat;
+		}
 	}
 
 	&.gray_text {
@@ -212,12 +240,21 @@ ul {
 	padding-bottom: 10px;
 }
 
+.top_bottom_smaller_padding {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .full_lenght {
 	width: 100%;
 }
 
+.tiny {
+	font-size: 75%;
+}
+
 .small {
-	font-size: 80%;
+	font-size: 80% !important;
 }
 
 .smaller {
@@ -226,6 +263,10 @@ ul {
 
 .big {
 	font-size: 120% !important;
+
+	.frg-icon {
+		font-size: 30px;
+	}
 }
 
 .vertical_gap {
@@ -238,6 +279,10 @@ ul {
 	&.big_gap {
 		margin-bottom: 35px;
 	}
+
+	&.huge_gap {
+		margin-bottom: 70px;
+	} 
 }
 
 .vertical_gap_top {
@@ -245,6 +290,10 @@ ul {
 
 	&.small_gap {
 		margin-top: 8px !important;
+	}
+
+	&.very_small_gap {
+		margin-top: 5px !important;
 	}
 }
 
@@ -311,6 +360,31 @@ ul {
 	}
 }
 
+.black_text {
+	color: #000 !important;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p.h1,
+	p.h2,
+	p.h3,
+	p.h4,
+	p.h5,
+	p.h6,
+	div.h1,
+	div.h2,
+	div.h3,
+	div.h4,
+	div.h5,
+	div.h6 {
+		color: #000 !important;
+	}
+}
+
 .padding_top {
 	padding-top: 15px !important;
 }
@@ -368,7 +442,7 @@ a.underline {
 		width: 92%;
 
 		.frg-icon {
-			margin: -15px 15px 0 0;
+			margin: -15px 5px 0 0;
 			color: #49166D;
 			font-size: 36px;
 		}
@@ -383,7 +457,7 @@ a.underline {
 		}
 
 		.text {
-			width: 90%;
+			width: 89%;
 			color: $super_dark_gray;
 		}
 	}
@@ -501,6 +575,14 @@ a.underline {
 				font-size: 18px;
 			}
 		}
+	}
+
+	&.textarea {
+		height: 75px;
+	}
+
+	&.return_additional_notes {
+		height: 30px;
 	}
 }
 
@@ -622,17 +704,32 @@ table {
 	&.white_text {
 		color: #FFF;
 	}
+
+	&.purple {
+		color: $purple2;
+	}
 }
 
 .icon-upgrades {
 	width: 35px;
 	height: 35px;
 	background: transparent url( '../img/upgrades.png' ) no-repeat;
+
+	&.small {
+		width: 25px;
+		height: 25px;
+		background: transparent url( '../img/upgrades.png' ) no-repeat 0 0 / 25px 25px;
+		margin-top: 5px;
+	}
 }
 
 .green_bg {
 	background-color: $green;
 	color: #FFF;
+}
+
+.shade1_of_gray_bg {
+	background-color: #f5f6f7;
 }
 
 .super_dark_gray_text {
@@ -682,8 +779,21 @@ table {
 	padding-bottom: 30px;
 }
 
+.vertical_margin30 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.top_margin_minus7 {
+	margin-top: -7px !important;
+}
+
 .top_margin20 {
 	margin-top: 20px;
+}
+
+.top_margin40 {
+	margin-top: 40px;
 }
 
 .top_margin50 {
@@ -694,8 +804,16 @@ table {
 	margin-bottom: 20px;
 }
 
+.bottom_margin5 {
+	margin-bottom: 5px;
+}
+
 .bottom_margin50 {
 	margin-bottom: 50px;
+}
+
+.top_padding10 {
+	padding-top: 10px;
 }
 
 .top_padding20 {
@@ -707,11 +825,15 @@ table {
 }
 
 .bottom_padding20 {
-	padding-bottom: 20px;
+	padding-bottom: 20px !important;
 }
 
 .bottom_padding50 {
 	padding-bottom: 50px;
+}
+
+.bottom_padding10 {
+	padding-bottom: 10px;
 }
 
 .footer {
@@ -732,4 +854,62 @@ table {
 	&::after {
 		color: $purple !important;
 	}
+}
+
+.inactive {
+	color: $dark_gray;
+}
+
+.frg-checkbox.regular.small {
+	.icon {
+		line-height: 15px;
+	}
+
+	.inner {
+		label {
+			display: block;
+			width: 20px;
+			height: 20px;
+			padding: 0;
+			position: absolute;
+			top: 5px;
+		}
+	}
+}
+
+.page_title {
+	margin: 0 0 0 10px;
+}
+
+.gray_shade1_text {
+	color: $gray_shade1;
+}
+
+.frg-input-field, 
+.frg-select-container select {
+	margin: 0;
+}
+
+.input-group {
+	display: block;
+
+	.frg-input-field {
+		width: 75% !important;
+		border-radius: 5px 0 0 5px;
+	}
+
+	&.datepicker {
+		.input-group .form-control, 
+		.input-group-addon, 
+		.input-group-btn {
+			display: inline-block;
+			height: 30px;
+			padding: 6px 12px;
+			margin-top: -4px;
+		}
+	}
+}
+
+.invisible {
+	visibility: hidden;
 }

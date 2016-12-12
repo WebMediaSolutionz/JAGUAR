@@ -1,0 +1,50 @@
+@import "variables";
+@import "mixins";
+
+header {
+	background-color: $dark_gray;
+    color: $white;
+    padding-bottom: 15px;
+    font-family: "telusweb", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 17px;
+
+    .grid {
+    	margin: 0 15px 0 11px;
+	    max-width: 100%;
+	    min-width: 1000px;
+	    width: auto;
+	    padding: 0;
+
+	    a.logo {
+	    	width: 155px;
+		    height: 29px;
+		    margin: 29px 76px 0 0;
+			    
+	    	img {
+	    		width: 155px;
+			    height: 29px;
+			    margin-right: 76px;
+			}
+	    }
+    }
+}
+
+footer {
+	background-color: #333 !important;
+    color: #fff;
+    padding: 50px 0;
+
+    img.logo {
+    	margin: 10px 0;
+
+    	& + p {
+    		margin: 25px 0;
+    		font-size: 17px !important;
+    	}
+    }
+}
+
+ul.no_styles {
+	list-style: none;
+	padding-left: 0 !important;
+}

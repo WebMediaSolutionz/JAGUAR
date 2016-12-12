@@ -3,7 +3,7 @@
 
 <div class="outer-container secondary_bg top_bottom_padding white_bg">
 	<div class="inner-container clearfix">
-		<p class="h3"><span class="frg-icon icon-accessories gray_text"></span> Accessories</p>
+		<p class="h1"><span class="frg-icon icon-accessories gray_text"></span> Accessories</p>
 	</div>
 </div>
 

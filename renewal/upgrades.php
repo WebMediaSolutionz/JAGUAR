@@ -3,7 +3,7 @@
 
 <div class="outer-container content white_bg shadow products_header">
 	<div class="inner-container padding_bottom clearfix">
-		<p class="h3"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
+		<p class="h1"><span class="frg-icon icon-upgrades block left"></span> <span class="title">Upgrades</span></p>
 
 		<span>Want to upgrade your subscribers to a new smartphone? Upgrading is easy!</span>
 	</div>
@@ -41,7 +41,7 @@
 	<div class="inner-container clearfix">
 		<p class="h3 gray_text no_margin">How to upgrade your subscribers:</p>
 
-		<p class="h3">Simple Upgrade:</p>
+		<p class="h1">Simple Upgrade:</p>
 
 		<p class="gray_text">
 			Enter the phone numbers of the subscribers you would like to upgrade.
