@@ -217,3 +217,10 @@ body {
 .frg-icon.icon-arrow-down {
 	margin: 1px 0 0 5px;
 }
+
+.article-content__inner {
+	h3,
+	p > strong {
+		color: $purple;
+	}
+}
