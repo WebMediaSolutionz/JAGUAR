@@ -1,0 +1,109 @@
+.header {
+  padding: 26px 0 14px 0;
+}
+
+.header .logo {
+  width: 155px;
+  height: 29px;
+  margin-right: 76px;
+}
+
+.header .logo + nav .gap_right {
+  margin-right: 32px;
+}
+
+.header .establishments {
+  padding-top: 7px;
+}
+
+.header .establishments a:link,
+.header .establishments a:visited,
+.header .establishments a:hover,
+.header .establishments a:active {
+  font-size: 16px;
+}
+
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active {
+  color: #FFF;
+  font-size: 17px;
+}
+
+.header nav {
+  margin-top: -26px;
+}
+
+.header nav ul {
+  margin: 0;
+}
+
+.header nav ul li a {
+  padding-top: 30px;
+}
+
+.header .profile {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.header .profile .gap_right {
+  margin-right: 5px;
+}
+
+.header .profile .gap_right.establishments {
+  margin-right: 30px;
+}
+
+.header .profile ul {
+  margin: 20px 0 0 0;
+}
+
+.header .profile ul > li > ul {
+  width: 200px;
+  margin: 0 0 0 -95px;
+}
+
+.header .profile ul > li > ul a:link,
+.header .profile ul > li > ul a:visited,
+.header .profile ul > li > ul a:hover,
+.header .profile ul > li > ul a:active {
+  color: #3d2557;
+  padding: 0 23px;
+  display: block;
+}
+
+.header .profile ul > li > ul li {
+  background-color: #FFF;
+  border-left: thin solid #ececec;
+  border-right: thin solid #ececec;
+}
+
+.header .profile ul > li > ul li:first-child {
+  height: 15px;
+  background: transparent url("../../img/triangle.png") no-repeat 115px 0;
+  border: none;
+}
+
+.header .profile ul > li > ul li:nth-child(2) a {
+  padding: 9px 23px;
+  border-bottom: thin solid #ececec;
+}
+
+.header .profile ul > li > ul li:nth-child(3) a {
+  padding: 9px 23px 0 23px;
+}
+
+.header .profile ul > li > ul li:last-child a {
+  padding: 0 23px 15px 23px;
+  border-bottom: thin solid #ececec;
+}
+
+.header .profile ul li .guy {
+  margin-top: -5px;
+}
+
+.header .profile ul li .bottom_arrow {
+  margin-top: -1px;
+}

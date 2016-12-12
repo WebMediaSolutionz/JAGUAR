@@ -1,0 +1,197 @@
+html,
+body {
+  color: #000;
+}
+
+.main_nav {
+  margin-top: 37px;
+  font-weight: bold;
+}
+
+.main_nav ul li {
+  margin-right: 32px;
+}
+
+.main_nav ul li a:link, .main_nav ul li a:visited, .main_nav ul li a:hover, .main_nav ul li a:active {
+  font-size: 17px;
+  font-weight: 800px;
+  color: #FFF;
+  text-decoration: none;
+  padding-top: 29px;
+}
+
+.main_nav ul li a:hover, .main_nav ul li a.current {
+  border-top: 6px solid #57a708;
+}
+
+.secondary_nav ul li {
+  margin-right: 32px;
+}
+
+.secondary_nav ul li a:link, .secondary_nav ul li a:visited, .secondary_nav ul li a:hover, .secondary_nav ul li a:active {
+  font-size: 16px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.sub_footer {
+  width: 400px;
+}
+
+.sub_footer a {
+  text-decoration: none;
+}
+
+.second_footer {
+  padding: 20px 0 30px;
+}
+
+.support,
+.chat.agentonline {
+  width: 48px;
+  height: 78px;
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+.support span,
+.chat.agentonline span {
+  font-size: 42px;
+  color: #8c68a6;
+}
+
+.jsChangeCategory a:hover {
+  text-decoration: none;
+}
+
+.article-header {
+  display: none;
+}
+
+.header {
+  padding: 26px 0 14px 0;
+}
+
+.header .logo {
+  width: 155px;
+  height: 29px;
+  margin-right: 76px;
+}
+
+.header .logo + nav .gap_right {
+  margin-right: 32px;
+}
+
+.header .establishments {
+  padding-top: 7px;
+}
+
+.header .establishments a:link,
+.header .establishments a:visited,
+.header .establishments a:hover,
+.header .establishments a:active {
+  font-size: 16px;
+}
+
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active {
+  color: #FFF;
+  font-size: 17px;
+}
+
+.header nav ul {
+  margin: 0;
+}
+
+.header nav ul li a {
+  padding-top: 30px;
+}
+
+.header .profile {
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+
+.header .profile .gap_right {
+  margin-right: 5px;
+}
+
+.header .profile .gap_right.establishments {
+  margin-right: 30px;
+}
+
+.header .profile ul {
+  margin: 0;
+}
+
+.header .profile ul > li > ul {
+  width: 200px;
+  margin: 0 0 0 -105px;
+}
+
+.header .profile ul > li > ul a:link,
+.header .profile ul > li > ul a:visited,
+.header .profile ul > li > ul a:hover,
+.header .profile ul > li > ul a:active {
+  color: #3d2557;
+  padding: 0 23px;
+  display: block;
+}
+
+.header .profile ul > li > ul li {
+  background-color: #FFF;
+  border-left: thin solid #ececec;
+  border-right: thin solid #ececec;
+}
+
+.header .profile ul > li > ul li:first-child {
+  height: 15px;
+  background: transparent url("../../img/triangle.png") no-repeat 115px 0;
+  border: none;
+}
+
+.header .profile ul > li > ul li:nth-child(2) a {
+  padding: 9px 23px;
+  border-bottom: thin solid #ececec;
+}
+
+.header .profile ul > li > ul li:nth-child(3) a {
+  padding: 9px 23px 0 23px;
+}
+
+.header .profile ul > li > ul li:last-child a {
+  padding: 0 23px 15px 23px;
+  border-bottom: thin solid #ececec;
+}
+
+.header .profile ul li .guy {
+  margin-top: -5px;
+}
+
+.header .profile ul li .bottom_arrow {
+  margin-top: -1px;
+}
+
+.topic-header__headline h2 {
+  color: #49166d;
+}
+
+.article-content {
+  padding-bottom: 30px;
+}
+
+.dropit-trigger .username span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.frg-icon.icon-arrow-down {
+  margin: 1px 0 0 5px;
+}
+
+.article-content__inner h3,
+.article-content__inner p > strong {
+  color: #49166d;
+}
