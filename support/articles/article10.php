@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I run an invoice report?</h3>
+
                 <p>
                     Currently, only the Super Administrator can run an invoice report. The invoice report provides a high-level view of monthly spend for all accounts within a company or organization. 
                 </p>

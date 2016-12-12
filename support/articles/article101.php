@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I send a device in for repair?</h3>
+
                 <p>
                     Before sending the device in for repair, try these basic troubleshooting steps. 
                 </p>

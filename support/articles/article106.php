@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I tag subscribers with Organization Tags?</h3>
+
                 <p>
                     You can use the Organization Tags to tag subscribers and sort them into groups. Here's how:
                 </p>

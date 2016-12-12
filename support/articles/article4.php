@@ -23,9 +23,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>How long will the cart save my order?</strong>
-                </p>
+                <h3>How long will the cart save my order?</h3>
 
                 <p>
                     Your order will be saved in the cart for up to two months.

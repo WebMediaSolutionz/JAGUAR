@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>An employee thought his phone was stolen, but it has been found. How do I reactivate the service?</h3>
+
                 <p>
                     To reactivate service for a stolen device, you must call TELUS at 1-888-256-8315 (press 4 then press 1). You cannot reactivate the device online through TELUS IQ. 
                 </p>

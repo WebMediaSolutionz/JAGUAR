@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>What is an IMEI?</h3>
+
                 <p>
                     The IMEI is a 15-digit (no letters) identification number for a mobile device. It can be located in the following ways: 
                 </p>

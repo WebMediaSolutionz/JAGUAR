@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>An employee’s phone is lost or stolen. What do I do?</h3>
+
                 <p>
                     Simply change the subscriber’s status to Suspended (Lost) or Suspended (Stolen). See the other example I created for an alternate approach for the text and images:<br />
                     <a href="https://docs.google.com/document/d/1e-up5Do6cS9LHi5xxhibyhHJ_jlKEfPVfP2JHHIvrZ8/edit">https://docs.google.com/document/d/1e-up5Do6cS9LHi5xxhibyhHJ_jlKEfPVfP2JHHIvrZ8/edit</a>

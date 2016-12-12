@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I port phone numbers from another carrier?</h3>
+
                 <p>
                     New TELUS customers can port phone numbers from another carrier when purchasing new devices or activating BYOD plans. 
                 </p>

@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How to bulk upload subscriber device information</h3>
+
                 <p>
                     If you have a large number of subscribers or employees, you can save time by uploading subscriber device information in one Excel file. This process applies to both new device purchases and BYOD plans. 
                 </p>

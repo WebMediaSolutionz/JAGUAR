@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Are the devices shown the same ones negotiated in our contract?</h3>
+
                 <p>
                     The devices displayed are the mobile devices that TELUS offers all corporate customers – but with special negotiated pricing as per your contract. For more details, please refer to your corporate clients agreement (CCA) and/or speak with your TELUS Sales Account Manager. 
                 </p>

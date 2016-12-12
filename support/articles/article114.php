@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How long does device activation take?</h3>
+
                 <p>
                     When you order new devices online, activation happens in a few minutes per subscriber. Your order is then processed in our warehouse, and you will receive it in 1 to 5 business days.   
                 </p>

@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>What if a device I want is unavailable?</h3>
+
                 <p>
                     You may see "Unavailable" next to device listings on the catalogue page.  
                 </p>

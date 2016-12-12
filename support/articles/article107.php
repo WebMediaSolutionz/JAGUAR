@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How can I easily track when a contract is about to expire?</h3>
+
                 <p>
                     You can proactively manage how to handle the expiration of a device contract by reviewing the months to go in the contract. You can upgrade a device at no charge if there are 6 months or less remaining on the device contract.
                 </p>

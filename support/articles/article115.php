@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>A device is not working. Any suggestions?</h3>
+
                 <p>
                     There may be a few reasons why a device is not working. Try these basic troubleshooting steps for specific problems:   
                 </p>

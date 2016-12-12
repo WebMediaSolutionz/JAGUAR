@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I add or remove features?</h3>
+
                 <p>
                     A feature is a service that enhances a rate plan such as extra data or international long distance. You add or remove features by selecting the desired action under Actions.
                 </p>

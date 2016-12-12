@@ -25,9 +25,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>What information can I get from an invoice report?</strong>
-                </p>
+                <h3>What information can I get from an invoice report?</h3>
 
                 <p>
                     Currently, only the Super Administrator can run an invoice report. 

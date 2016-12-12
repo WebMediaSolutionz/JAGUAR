@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How to Order BYOD Plans?</h3>
+
                 <p>
                     <strong class="italics">Note, each device must have a SIM card before you can complete the order process.</strong>
                 </p>

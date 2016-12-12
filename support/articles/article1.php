@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Error message when I try to change a rate plan.</h3>
+
                 <p>
                     <strong>I want to change a subscriber rate plan, but I keep getting an error message. Why?</strong>
                 </p>

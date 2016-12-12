@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>An employee is going on vacation. How do I suspend her service?</h3>
+
                 <p>
                     When an employee is going on vacation, you must call TELUS at 1-888-256-8315 -> Option 4 to request a Vacation Disconnect. 
                 </p>

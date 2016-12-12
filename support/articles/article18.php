@@ -25,9 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>Upgrade Subscriber Devices</strong>
-                </p>
+                <h3>Upgrade Subscriber Device</h3>
+
                 <p>
                     You can upgrade a device for one or more subscribers and even upgrade different features for sub-groups easily from the self-serve portal. 
                 </p>

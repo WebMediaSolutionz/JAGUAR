@@ -25,9 +25,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>Book A Training Session</strong>
-                </p>
+                <h3>Book a Training Session</h3>
 
                 <p>
                     At TELUS, our goal is to make sure that you are not only familiar with, but also very comfortable using the TELUS IQ Portal to fulfill and manage your wireless device needs. 

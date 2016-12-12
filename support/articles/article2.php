@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Missing items from my order</h3>
+
                 <p>
                     <strong>Some items are missing from my submitted order. How did this happen?</strong>
                 </p>

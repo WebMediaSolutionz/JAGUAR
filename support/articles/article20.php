@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Set up/add/remove subscribers</h3>
+
                 <p>
                     <strong>How to set up, add and remove subscribers - current TELUS customer</strong>
                 </p>

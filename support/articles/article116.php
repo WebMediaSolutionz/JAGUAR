@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Some of the devices I ordered are not in stock. What do I do now?</h3>
+
                 <p>
                     This reason for this is likely that you prepared your order, but you did not submit it until later. During that time, the device(s) you selected were sold.   
                 </p>

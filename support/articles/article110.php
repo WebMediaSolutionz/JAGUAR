@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I use advanced capabilities to search for mobile devices?</h3>
+
                 <p>
                     LOCATION: Manage > Assets 
                 </p>

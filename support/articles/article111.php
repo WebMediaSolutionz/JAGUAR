@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How near real-time is the usage information?</h3>
+
                 <p>
                     The information that displays represents current data usage. Usage information refreshes every 24 hours. 
                 </p>

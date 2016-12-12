@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3> I can't log into the TELUS IQ portal through TELUS My Account</h3>
+
                 <p>
                     <strong>TELUS My Account won't let me register online or log in. What should I do?</strong>
                 </p>

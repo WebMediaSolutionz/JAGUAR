@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I check the status of my order?</h3>
+
                 <p>
                     LOCATION: Home -> Order Management -> Review my Orders  
                 </p>

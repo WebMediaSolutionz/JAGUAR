@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Where can I find the SIM number?</h3>
+
                 <p>
                     The SIM number is a long 19-digit number that uniquely identifies a SIM card and is linked to a specific mobile device number and account. The SIM number is printed on the back of your SIM card and also stored inside it. 
                 </p>

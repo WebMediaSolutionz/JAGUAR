@@ -25,9 +25,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>What do the coloured flags mean in the action status column?</strong>
-                </p>
+                <h3>What do the coloured flags mean in the action status column?</h3>
 
                 <img src="../images/article7.png">
 

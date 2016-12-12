@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>Buy Devices and Plans</h3>
+
                 <p>
                     You can purchase devices with a plan or without a plan. Select "Devices".
                 </p>

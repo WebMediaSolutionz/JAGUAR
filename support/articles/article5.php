@@ -25,9 +25,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>How do I cancel or change an order after it's submitted?</strong>
-                </p>
+                <h3>How do I cancel or change an order after it's submitted?</h3>
 
                 <p>
                     If you wish to cancel or change your order after it has been submitted, please call TELUS at 1-888-256-8315.

@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I make an individual subscriber change? A bulk subscriber change?</h3>
+
                 <p>
                     <strong>Location:</strong> Manage -> Services -> 
                 </p>

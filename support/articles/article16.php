@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>An employee's lost phone has been found. How do I reactivate the service?</h3>
+
                 <p>
                     All you need to do is change the subscriber's status to Active.    
                 </p>

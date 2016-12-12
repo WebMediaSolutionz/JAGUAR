@@ -23,6 +23,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>What financing is available for devices?</h3>
+
                 <p>
                     As a TELUS client, you may be eligible for financing, which means that you pay off each device in monthly installments over a 2- or 3-year term. 
                 </p>

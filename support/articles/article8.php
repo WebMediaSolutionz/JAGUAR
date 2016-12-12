@@ -25,9 +25,7 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <p>
-                    <strong>What do the actions in the Actions drop‐down menu mean?</strong>
-                </p>
+                <h3>What do the actions in the Actions drop‐down menu mean?</h3>
 
                 <p>
                     <strong>Location:</strong> Manage -> Services -> Subscribers -> Subscriber checkbox -> Actions menu

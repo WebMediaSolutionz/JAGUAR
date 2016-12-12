@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>How do I set up, add and remove administrators?</h3>
+
                 <p>
                     Setting up, adding or removing administrators cannot be performed through the Jaguar portal at this time.
                 </p>

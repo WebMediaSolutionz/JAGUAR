@@ -25,6 +25,8 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
+                <h3>What is the difference between a Customer Master Administrator and a Customer Administrator?</h3>
+
                 <p>
                     Each Jaguar customer has a Customer Master Administrator (Master Admin) and a number of Customer Administrators (Customer Admin). 
                 </p>
