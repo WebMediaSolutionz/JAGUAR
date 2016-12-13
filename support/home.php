@@ -56,6 +56,9 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="getting-set-up" class="topic-catalogue" style="display: block;">
     <div data-tab="getting-set-up" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
+            <h2 class="topic-catalogue__category-title">
+                <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Getting set up
+            </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
                     <a target="_blank" href="articles/article19.php" class="decoration-default">The difference between a master administrator and a customer administrator</a>
@@ -79,9 +82,9 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="buying" class="topic-catalogue" style="display: none;">
     <div data-tab="buying" class="grid">
         <div class="topic-catalogue__item" style="min-height: 185px;">
-            <!-- <h2 class="topic-catalogue__category-title">
+            <h2 class="topic-catalogue__category-title">
                 <span class="frg-icon icon-user-profile-inverted topic-catalogue__category-icon"></span>Buying
-            </h2> -->
+            </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
                     <a target="_blank" href="articles/article23.php" class="decoration-default">Buy Devices and Plans</a>
@@ -126,9 +129,9 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="managing" class="topic-catalogue" style="display: none;">
     <div data-tab="managing" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <!-- <h2 class="topic-catalogue__category-title">
+            <h2 class="topic-catalogue__category-title">
                 <span class="frg-icon icon-smartphone-inverted topic-catalogue__category-icon"></span>Managing
-            </h2> -->
+            </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
                     <a target="_blank" href="articles/article6.php" class="decoration-default">What information can I get from an invoice report?</a>
@@ -194,9 +197,9 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="order-management" class="topic-catalogue" style="display: none;">
     <div data-tab="order-management" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <!-- <h2 class="topic-catalogue__category-title">
+            <h2 class="topic-catalogue__category-title">
                 <span class="frg-icon icon-cart-inverted topic-catalogue__category-icon"></span>Order Management
-            </h2> -->
+            </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
                     <a target="_blank" href="articles/article4.php" class="decoration-default">How long will the cart save my order?</a>
@@ -220,9 +223,9 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="troubleshooting" class="topic-catalogue" style="display: none;">
     <div data-tab="troubleshooting" class="grid">
         <div class="topic-catalogue__item" style="min-height: 185px;">
-            <!-- <h2 class="topic-catalogue__category-title">
+            <h2 class="topic-catalogue__category-title">
                 <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
-            </h2> -->
+            </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
                     <a target="_blank" href="articles/article1.php" class="decoration-default">Error message when I try to change a rate plan.</a>
@@ -252,6 +255,12 @@
             <h2 class="topic-catalogue__category-title">
                 <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Release Notes
             </h2>
+
+            <ul style="" class="topic-catalogue__item-list">
+                <li>
+                    <a target="_blank" href="articles/article117.php" class="decoration-default">Release Notes</a>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

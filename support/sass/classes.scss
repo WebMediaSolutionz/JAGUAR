@@ -223,4 +223,26 @@ body {
 	p > strong {
 		color: $purple;
 	}
+
+	table.second_style {
+		tr {
+			th {
+				background-color: $light_orange;
+				color: $black;
+				border: thin solid $dark_gray;
+			}
+
+			td {
+				border: thin solid $dark_gray;
+
+				&:nth-child( 3 ) {
+					background-color: $light_gray;
+				}
+
+				&:nth-child( 4 ) {
+					background-color: $light_blue;
+				}
+			}
+		}
+	}
 }
