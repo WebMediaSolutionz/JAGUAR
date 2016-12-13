@@ -195,3 +195,21 @@ body {
 .article-content__inner p > strong {
   color: #49166d;
 }
+
+.article-content__inner table.second_style tr th {
+  background-color: #FFC000;
+  color: #000;
+  border: thin solid #333;
+}
+
+.article-content__inner table.second_style tr td {
+  border: thin solid #333;
+}
+
+.article-content__inner table.second_style tr td:nth-child(3) {
+  background-color: #CCC;
+}
+
+.article-content__inner table.second_style tr td:nth-child(4) {
+  background-color: #C5D9F1;
+}
