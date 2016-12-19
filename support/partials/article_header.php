@@ -1,3 +1,7 @@
+<?php
+    include( '../../../functions.php' );
+    include( '../../../initialize.php' );
+?>
 <!DOCTYPE html>
 <html lang="en" class="js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
     <head>
@@ -43,11 +47,11 @@
           
           <link rel="canonical" href="http://www.telus.com/en/support/article/roaming-rates-travel-passes">
 
-          <link rel="stylesheet" type="text/css" href="../css/telus-base.css" />
-          <link rel="stylesheet" type="text/css" href="../css/telus-get-help.css" />
+          <link rel="stylesheet" type="text/css" href="../../css/telus-base.css" />
+          <link rel="stylesheet" type="text/css" href="../../css/telus-get-help.css" />
 
-          <link rel="stylesheet" type="text/css" href="../css/fix-styles.css" />
-          <link rel="stylesheet" type="text/css" href="../../css/lib/dropit.css" />
+          <link rel="stylesheet" type="text/css" href="../../css/fix-styles.css" />
+          <link rel="stylesheet" type="text/css" href="../../../css/lib/dropit.css" />
           
           <title>Roaming rates and travel passes | Support | TELUS.com</title>
 

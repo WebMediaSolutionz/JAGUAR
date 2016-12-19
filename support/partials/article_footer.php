@@ -1,9 +1,9 @@
-            <?php include( '../partials/footer.php' ); ?>
+            <?php include( '../../partials/footer.php' ); ?>
         </div>
 
-        <script type="text/javascript" src="../../javascript/uncompressed/lib/libs.js"></script>
-        <script type="text/javascript" src="../../javascript/uncompressed/cities.js"></script>
-        <script type="text/javascript" src="../../javascript/uncompressed/jaguar.js"></script>
+        <script type="text/javascript" src="../../../javascript/uncompressed/lib/libs.js"></script>
+        <script type="text/javascript" src="../../../javascript/uncompressed/cities.js"></script>
+        <script type="text/javascript" src="../../../javascript/uncompressed/jaguar.js"></script>
 
 		<script type="text/javascript">
 			$( document ).ready( function () {

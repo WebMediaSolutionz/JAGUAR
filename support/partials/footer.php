@@ -1,5 +1,5 @@
 <?php
-    $img_path = array( '../img/TELUS-logo-white.svg', '../../img/TELUS-logo-white.svg' );
+    $img_path = array( '../img/TELUS-logo-white.svg', '../../img/TELUS-logo-white.svg', '../../../img/TELUS-logo-white.svg' );
 
     for ( $i = 0; $i < count( $img_path ); $i++ ) { 
         if ( file_exists( $img_path[ $i ] ) ) {
