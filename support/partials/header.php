@@ -1,5 +1,5 @@
 <?php
-    $img_path = array( '../img/TELUS-logo-white.svg', '../../img/TELUS-logo-white.svg' );
+    $img_path = array( '../img/TELUS-logo-white.svg', '../../img/TELUS-logo-white.svg', '../../../img/TELUS-logo-white.svg' );
 
     for ( $i = 0; $i < count( $img_path ); $i++ ) { 
         if ( file_exists( $img_path[ $i ] ) ) {
@@ -38,7 +38,7 @@
                             <ul class="no_styles hide">
                                 <li></li>
                                 <li><a href="#">Stan Smith</a></li>
-                                <li><a href="#">English</a></li>
+                                <li><a href="<?php echo $opp_lang_page; ?>"><?php echo $language[ 'opp_language' ]; ?></a></li>
                                 <li><a href="corporate_settings.php#tabs1">Corporate Settings</a></li>
                                 <li><a href="#">Log out</a></li>
                             </ul>
