@@ -17,7 +17,7 @@
                     </nav>
                 </div>
 
-                <h1>Some of the devices I ordered are not in stock. What do I do now?</h1>
+                <h1>Certains des appareils que j’ai commandés ne sont pas en stock. Que dois-je faire?</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -25,18 +25,18 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <h3>Some of the devices I ordered are not in stock. What do I do now?</h3>
+                <h3>Certains des appareils que j’ai commandés ne sont pas en stock. Que dois-je faire?</h3>
 
                 <p>
-                    This reason for this is likely that you prepared your order, but you did not submit it until later. During that time, the device(s) you selected were sold.   
+                    Cela s'est probablement produit parce que vous avez préparé votre commande, mais vous ne l'avez pas envoyé immédiatement. Durant la période avant l'envoi, certains appareils que vous avez sélectionnés ont été vendus.  
                 </p>
 
                 <p>
-                    TELUS IQ will not allow your order to be processed if a device is out of stock. You must login and select another in-stock device to complete your order.  
+                    Le portail Gestion mobile intelligente de TELUS n'autorise pas le traitement d'une commande si l'un des appareils n'est pas en stock. Vous devez ouvrir une session et sélectionner un autre appareil en stock pour finaliser votre commande.  
                 </p>
 
                 <p>
-                    For more information on a device that is unavailable, please contact our dedicated Help Desk at 1-888-256-8315 (Select Option 4 for TELUS IQ).
+                    FPour en savoir plus sur un appareil qui n'est pas en stock, communiquez avec notre centre d'assistance spécialisé au 1-888- 256-8315 (faites le 4 pour Gestion mobile intelligente de TELUS).
                 </p>
             </div>
         </div>

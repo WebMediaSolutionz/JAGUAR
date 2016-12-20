@@ -17,7 +17,7 @@
                     </nav>
                 </div>
 
-                <h1>How do I check the status of my order?</h1>
+                <h1>Que dois-je faire pour connaître l'état de ma commande?</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -25,16 +25,16 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <h3>How do I check the status of my order?</h3>
+                <h3>Que dois-je faire pour connaître l'état de ma commande?</h3>
 
                 <p>
-                    LOCATION: Home -> Order Management -> Review my Orders  
+                    CHEMIN : Accueil -> Gestion des commandes -> Revoir mes commandes  
                 </p>
 
                 <img src="../../images/article113_a.png">
 
                 <p>
-                    Click on your Order ID number to see the status of your order. 
+                    Cliquez sur le numéro de votre commande pour connaître l'état de celle-ci. 
                 </p>
 
                 <img src="../../images/article113_b.png">

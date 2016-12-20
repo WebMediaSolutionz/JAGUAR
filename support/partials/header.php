@@ -16,9 +16,9 @@
             </a>
             <nav class="left main_nav">
                 <ul class="clearfix">
-                    <li class="left"><a href="#">Buy</a></li>
-                    <li class="left"><a href="#">Manage</a></li>
-                    <li class="left"><a class="current" href="#">Support</a></li>
+                    <li class="left"><a class="capitalize" href="#"><?php echo $language[ 'nav1' ]; ?></a></li>
+                    <li class="left"><a class="capitalize" href="#"><?php echo $language[ 'nav2' ]; ?></a></li>
+                    <li class="left"><a class="current capitalize" href="#"><?php echo $language[ 'nav3' ]; ?></a></li>
                 </ul>
             </nav>
 
@@ -39,8 +39,8 @@
                                 <li></li>
                                 <li><a href="#">Stan Smith</a></li>
                                 <li><a href="<?php echo $opp_lang_page; ?>"><?php echo $language[ 'opp_language' ]; ?></a></li>
-                                <li><a href="corporate_settings.php#tabs1">Corporate Settings</a></li>
-                                <li><a href="#">Log out</a></li>
+                                <li><a href="corporate_settings.php#tabs1"><?php echo $language[ 'dropdown1' ]; ?></a></li>
+                                <li><a href="#"><?php echo $language[ 'dropdown2' ]; ?></a></li>
                             </ul>
                         </li>
                     </ul>

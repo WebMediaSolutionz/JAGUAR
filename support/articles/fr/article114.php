@@ -17,7 +17,7 @@
                     </nav>
                 </div>
 
-                <h1>How long does device activation take?</h1>
+                <h1>Combien de temps faut-il pour mettre en service un appareil?</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -25,30 +25,30 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <h3>How long does device activation take?</h3>
+                <h3>Combien de temps faut-il pour mettre en service un appareil?</h3>
 
                 <p>
-                    When you order new devices online, activation happens in a few minutes per subscriber. Your order is then processed in our warehouse, and you will receive it in 1 to 5 business days.   
+                    Lorsque vous commandez de nouveaux appareils en ligne, la mise en service ne prend que quelques minutes par abonné. Votre commande est alors traitée dans notre entrepôt, et vous recevez l'appareil dans les cinq jours ouvrables suivants.
                 </p>
 
                 <p>
-                    New devices with new numbers are ready to be used right out of the box. 
+                    Lorsque vous recevez les nouveaux appareils associés à de nouveaux numéros, ils sont prêts à l'emploi.
                 </p>
 
                 <p>
-                    <strong>Devices for subscribers' numbers ported from other carriers</strong>
+                    <strong>Appareils associés à des numéros transférés d'autres fournisseurs de services</strong>
                 </p>
 
                 <p>
-                    Once a port request is initialized in TELUS IQ, you will receive a text message directing you to call 1-877-TO-TELUS (1-877-868-3587) to complete the request.  
+                    Lorsque vous faites une demande de transfert dans le portail Gestion mobile intelligente de TELUS, vous recevez un message vous demandant d'appeler au 1-877- TO-TELUS (18778683587).
                 </p>
 
                 <p>
-                    <strong>Related articles</strong>
+                    <strong>Articles connexes</strong>
                 </p>
 
                 <p>
-                    How do I port subscribers from another carrier?
+                    Que dois-je faire pour transférer un abonné d'un autre fournisseur?
                 </p>
             </div>
         </div>
