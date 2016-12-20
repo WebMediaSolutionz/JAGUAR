@@ -17,7 +17,7 @@
                     </nav>
                 </div>
 
-                <h1>Upgrade Subscriber Device</h1>
+                <h1>Comment changer d'appareil</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -25,88 +25,88 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <h3>Upgrade Subscriber Device</h3>
+                <h3>Comment changer d'appareil</h3>
 
                 <p>
-                    You can upgrade a device for one or more subscribers and even upgrade different features for sub-groups easily from the self-serve portal. 
+                    Dans le portail de libre-service, vous pouvez facilement changer l'appareil d'un ou de plusieurs abonnés d'un sous-groupe et même changer leurs options. 
                 </p>
 
                 <p>
-                    On the TELUS IQ home page, click on "Upgrade a Subscriber".
+                    À la page d'accueil du portail Gestion mobile intelligente de TELUS, cliquez sur Changer un appareil.
                 </p>
 
                 <img src="../../images/article18a.jpg">
 
                 <p>
-                    Step 1 – Select the account number or BAN (Billing Account Number) linked to the subscriber(s) you are upgrading 
+                    Étape 1 : Sélectionnez le numéro de compte associé à l'abonné ou aux abonnés concernés. 
                 </p>
 
                 <p>
-                    Step 2 – Enter the mobile phone number for the first subscriber. Click "Add".
+                    Étape 2 : Saisissez le numéro de téléphone du premier abonné. Cliquez sur Ajouter.
                 </p>
 
                 <img src="../../images/article18b.jpg">
 
                 <p>
-                    <strong>To upgrade devices for more than one subscriber</strong>
+                    <strong>Pour changer l'appareil de plus d'un abonné</strong>
                 </p>
 
                 <p>
-                    If you are upgrading devices for more than one subscriber within a group, type in the mobile phone number for the next subscriber in the box in the lower left corner, and click "Add".  Repeat this step until you have added the phone numbers of all subscribers within a group that you wish to upgrade.
+                    Si vous souhaitez changer l'appareil de plus d'un abonné dans un groupe, entrez le numéro de téléphone mobile du prochain abonné dans le champ situé dans le coin inférieur gauche, puis cliquez sur Ajouter. Répétez cette étape jusqu'à ce que vous ayez ajouté les numéros de téléphone de tous les abonnés concernés.
                 </p>
 
                 <img src="../../images/article18c.jpg">
 
                 <p>
-                    <strong>To select subscriber upgrades</strong>
+                    <strong>Pour sélectionner le nouvel appareil de l'abonné</strong>
                 </p>
 
                 <p>
-                    Under offer, select an upgrade offer. 
+                    Sous Offre, sélectionnez une offre de changement d'appareil. 
                 </p>
 
                 <p>
-                    The Upgrade Fee column indicates if there is an upgrade fee owing for that subscriber's device. **This fee does not include the cost of the device, accessories, services or rate plan charges.
+                    La colonne Frais pour changement d'appareil indique si des frais sont exigés pour l'appareil de cet abonné. **Ces frais ne comprennent pas le prix de l'appareil, des accessoires ou des services ni les mensualités du forfait.
                 </p>
 
                 <p>
-                    Using the checkboxes next to the subscribers' names, select the subscribers who you want to upgrade to <span class="italics">the same device and features.</span>
+                    Cochez la case à côté du nom des abonnés qui obtiendront <span class="italics">le même appareil et les mêmes fonctions.</span>
                 </p>
 
                 <p>
-                    Note under Status, it says "Pending devices &amp; plan". 
+                    Remarquez sous État la mention Appareil et forfait en attente. 
                 </p>
 
                 <p>
-                    Click "Add device and plan" -> Devices page -> Select device ->
-                </p>
-
-                <img src="../../images/article18d.jpg">
-
-                <p>
-                    Select the Plan -> Add-ons -> Accessories -> Save &amp; Continue
+                    Cliquez sur Ajouter un appareil et un forfait -> page Appareils -> sélectionnez un appareil ->
                 </p>
 
                 <img src="../../images/article18d.jpg">
 
                 <p>
-                    You're returned to the Upgrade page. 
+                    Sélectionnez un forfait -> des options -> des accessoires -> Enregistrer et continuer
+                </p>
+
+                <img src="../../images/article18d.jpg">
+
+                <p>
+                    Vous serez réacheminé à la page Changement d'appareil. 
                 </p>
 
                 <p>
-                    Note that Status is now "Complete" for each subscriber. If you need to make any changes, click Edit under Status, and begin again. 
+                    Remarquez que l'État est maintenant à Terminé pour chaque abonné. Si vous souhaitez apporter des modifications, cliquez sur Modifier sous État, puis recommencez. 
                 </p>
 
                 <p>
-                    To upgrade another sub-group of subscribers with the <span class="italics">same devices and features</span> (that are different from the previous group), simply check the boxes next to their mobile numbers, and repeat the process above.  
+                    Pour changer les appareils et les fonctions d'un autre sous-groupe d'abonnés par le même appareil et les mêmes fonctions (mais différents de l'appareil et des fonctions du sous-groupe précédent), cochez simplement la case à côté de leurs numéros de téléphones mobiles et répétez le processus ci-dessus.  
                 </p>
 
                 <p>
-                    When you have completed ordering the upgrades for all subscribers, click Continue. You're taken to a shopping cart page that details your complete order. 
+                    Lorsque vous avez terminé les changements d'appareil, cliquez sur Continuer. Vous serez redirigé vers la page du panier comprenant les détails de l'ensemble de votre commande.
                 </p>
 
                 <p>
-                    Review the order to make sure it is correct. If each item is correct, check the box next to it. Edit and delete as necessary. You can also continue shopping if required. When the shopping cart details are correct, and every box is checked, click Checkout.
+                    Examinez la commande pour en vérifier l'exactitude. Si un article est correct, cochez la case à côté de celui-ci. S'il n'est pas correct, modifiez-le ou supprimez-le, au besoin. Vous pouvez aussi continuer de magasiner. Lorsque tous les détails du panier ont été vérifiés et que toutes les cases ont été cochées, cliquez sur Passer à la caisse.
                 </p>
             </div>
         </div>

@@ -4,7 +4,7 @@
 <div class="topic-header">
     <section class="topic-header__headline">
         <div class="grid">
-            <h2>Support</h2>
+            <h2 class="capitalize"><?php echo $language[ 'page_title' ]; ?></h2>
         </div>
     </section>
 
@@ -13,37 +13,37 @@
             <ul class="topic-header__filter-list">
                 <li class="topic-header__filter-list-item jsChangeCategory ctx-active" data-link="getting-set-up">
                     <a class="decoration-default" role="button" aria-controls="getting-set-up" href="#">
-                        <span>Getting set up</span>
+                        <span class="capitalize"><?php echo $language[ 'tab1' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="buying">
                     <a class="decoration-default" role="button" aria-controls="buying" href="#">
-                        <span>Buying</span>
+                        <span class="capitalize"><?php echo $language[ 'tab2' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="managing">
                     <a class="decoration-default" role="button" aria-controls="managing" href="#">
-                        <span>Managing</span>
+                        <span class="capitalize"><?php echo $language[ 'tab3' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="order-management">
                     <a class="decoration-default" role="button" aria-controls="order-management" href="#">
-                        <span>Order Management</span>
+                        <span class="capitalize"><?php echo $language[ 'tab4' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="troubleshooting">
                     <a class="decoration-default" role="button" aria-controls="troubleshooting" href="#">
-                        <span>Troubleshooting</span>
+                        <span class="capitalize"><?php echo $language[ 'tab5' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="release-notes">
                     <a class="decoration-default" role="button" aria-controls="release-notes" href="#">
-                        <span>Release Notes</span>
+                        <span class="capitalize"><?php echo $language[ 'tab6' ]; ?></span>
                     </a>
                 </li>
                 <li class="topic-header__filter-list-item jsChangeCategory" data-link="contact-us">
                     <a class="decoration-default" role="button" aria-controls="contact-us" href="#">
-                        <span>Contact us</span>
+                        <span class="capitalize"><?php echo $language[ 'tab7' ]; ?></span>
                     </a>
                 </li>
             </ul>
@@ -56,8 +56,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="getting-set-up" class="topic-catalogue" style="display: block;">
     <div data-tab="getting-set-up" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Getting set up
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'tab1' ]; ?>
             </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
@@ -82,8 +82,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="buying" class="topic-catalogue" style="display: none;">
     <div data-tab="buying" class="grid">
         <div class="topic-catalogue__item" style="min-height: 185px;">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-user-profile-inverted topic-catalogue__category-icon"></span>Buying
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-user-profile-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'tab2' ]; ?>
             </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
@@ -129,8 +129,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="managing" class="topic-catalogue" style="display: none;">
     <div data-tab="managing" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-smartphone-inverted topic-catalogue__category-icon"></span>Managing
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-smartphone-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'tab3' ]; ?>
             </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
@@ -197,8 +197,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="order-management" class="topic-catalogue" style="display: none;">
     <div data-tab="order-management" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-cart-inverted topic-catalogue__category-icon"></span>Order Management
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-cart-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'tab1' ]; ?>
             </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
@@ -223,8 +223,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="troubleshooting" class="topic-catalogue" style="display: none;">
     <div data-tab="troubleshooting" class="grid">
         <div class="topic-catalogue__item" style="min-height: 185px;">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span>Troubleshooting
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon support-icon support-icon--prepaid topic-catalogue__category-icon"></span><?php echo $language[ 'tab1' ]; ?>
             </h2>
             <ul style="" class="topic-catalogue__item-list">
                 <li>
@@ -252,8 +252,8 @@
 <section role="region" aria-live="polite" id="get-set-up" data-category="release-notes" class="topic-catalogue" style="display: none;">
     <div data-tab="release-notes" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span>Release Notes
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-star-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'tab1' ]; ?>
             </h2>
 
             <ul style="" class="topic-catalogue__item-list">
@@ -270,8 +270,8 @@
 <section role="region" aria-live="polite" id="solve-a-problem" data-category="contact-us" class="topic-catalogue" style="display: none;">
     <div data-tab="contact-us" class="grid">
         <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title">
-                <span class="frg-icon icon-phone-handset-inverted topic-catalogue__category-icon"></span>Contact our help desk
+            <h2 class="topic-catalogue__category-title capitalize">
+                <span class="frg-icon icon-phone-handset-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'help_desk' ]; ?>
             </h2>
             <div>
                 <span>1-888-256-8315 (select option 4)<br />Monday - Friday: 8am - 5pm</span>

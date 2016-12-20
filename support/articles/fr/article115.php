@@ -17,7 +17,7 @@
                     </nav>
                 </div>
 
-                <h1>A device is not working. Any suggestions?</h1>
+                <h1>Un des appareils est défectueux. Avez-vous des suggestions?</h1>
             </div>
         </header>
         <!-- / End Article Header -->
@@ -25,30 +25,30 @@
         <!-- Start of Article Content -->
         <div class="article-content article-content--troubleshooting">
             <div class="article-content__inner">
-                <h3>A device is not working. Any suggestions?</h3>
+                <h3>Un des appareils est défectueux. Avez-vous des suggestions?</h3>
 
                 <p>
-                    There may be a few reasons why a device is not working. Try these basic troubleshooting steps for specific problems:   
+                    Plusieurs raisons peuvent expliquer la défectuosité de l'appareil. Veuillez suivre les étapes de dépannage ci-dessous, selon le problème. 
                 </p>
 
                 <p>
-                    <strong>Restart the device</strong> - Remove the battery and SIM card from the device, wait for few seconds and insert the SIM card and battery. Turn on the device. If the battery can be removed, perform a soft reset by restarting the device using the power button on the phone, which is equivalent to a battery pull.
+                    <strong>Redémarrage de l'appareil :</strong> Retirez la pile et la carte SIM de l'appareil. Attendez quelques secondes, puis réinsérez-les. Allumez l'appareil. Si la pile ne peut pas être retirée, effectuez un redémarrage à chaud en utilisant le bouton d'alimentation. C’est l'équivalent de retirer la pile.
                 </p>
 
                 <p>
-                    <strong>Power and charging problems</strong> – Try using another cable, wall plug or battery if it is removable.
+                    <strong>Problèmes d'alimentation et de recharge :</strong> Essayez d'utiliser un autre câble, prise murale ou pile, si celle-ci peut être retirée.
                 </p>
 
                 <p>
-                    <strong>SIM card error or problems connecting to network</strong> – Remove the SIM card and place it into another handset and/or put another SIM card in the device to confirm it is a handset issue. <strong>NOTE:</strong> If the device needing repair was previously reported as lost or stolen, it cannot access the network. If a lost/stolen device has been found and needs repair, you must call TELUS at 1-888-256-8315, press Option 4 then Option 1.
+                    <strong>Erreur de carte SIM ou problèmes de connexion au réseau :</strong> Retirez la carte SIM et insérez-la dans un autre appareil (ou insérez une autre carte SIM dans l'appareil problématique) pour vérifier si le problème provient de l'appareil. <strong>REMARQUE :</strong> Si l'appareil problématique a déjà été signalé comme perdu ou volé, il ne peut pas accéder au réseau. Si un appareil perdu ou volé a été retrouvé et que des réparations sont nécessaires, appelez TELUS au 1-888- 256-8315, faites le 4, puis le 1.
                 </p>
 
                 <p>
-                    <strong>Problems with speaker volume, microphone or image quality</strong> - Make sure all protective plastics on the device have been removed. 
+                    <strong>Problèmes avec le volume du haut-parleur, avec le micro ou avec la qualité de l'image :</strong> Vérifiez que tous les plastiques protecteurs ont été retirés de l'appareil. 
                 </p>
 
                 <p>
-                    If the device problem is not fixed using the above suggestions, you can send the device to TELUS for repair. See "How do I submit a device for repair?"
+                    Si vous n'avez pas pu régler le problème avec les suggestions ci-dessus, vous pouvez envoyer l'appareil en réparation à TELUS. Consultez la page « Que dois-je faire pour envoyer un appareil en réparation? »
                 </p>
             </div>
         </div>
