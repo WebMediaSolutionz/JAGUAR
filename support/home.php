@@ -41,11 +41,6 @@
                         <span class="capitalize"><?php echo $language[ 'tab6' ]; ?></span>
                     </a>
                 </li>
-                <li class="topic-header__filter-list-item jsChangeCategory" data-link="contact-us">
-                    <a class="decoration-default" role="button" aria-controls="contact-us" href="#">
-                        <span class="capitalize"><?php echo $language[ 'tab7' ]; ?></span>
-                    </a>
-                </li>
             </ul>
         </nav>
     </div>
@@ -265,20 +260,6 @@
     </div>
 </section>
 <!-- / End Topic Catalogue -->
-
-<!-- Topic Catalogue -->
-<section role="region" aria-live="polite" id="solve-a-problem" data-category="contact-us" class="topic-catalogue" style="display: none;">
-    <div data-tab="contact-us" class="grid">
-        <div style="min-height: 185px;" class="topic-catalogue__item">
-            <h2 class="topic-catalogue__category-title capitalize">
-                <span class="frg-icon icon-phone-handset-inverted topic-catalogue__category-icon"></span><?php echo $language[ 'help_desk' ]; ?>
-            </h2>
-            <div>
-                <span>1-888-256-8315 (select option 4)<br />Monday - Friday: 8am - 5pm</span>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php include( 'partials/second_footer.php' ); ?>
 
