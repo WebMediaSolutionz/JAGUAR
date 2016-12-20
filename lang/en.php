@@ -18,9 +18,6 @@
 		'tab4'				=>			'order management',
 		'tab5'				=>			'troubleshooting',
 		'tab6'				=>			'release notes',
-		'tab7'				=>			'contact us',
-
-		'help_desk'			=>			'Contact our help desk'
 	);
 
 ?>
